@@ -85,12 +85,12 @@ transport.verify(function(error, success) {
     }
 });
 var commands = {};
-function getUntitledName() {
+function getUntitledName(projects) {
     var projectName = "";
     while (projectName === "") {
         var tempName = 0;
         var exist = false;
-        for (key in users[socketIDs[socket.id]].projects) {
+        for (key in projects) {
             if (key === "Untitled" + (tempName || "")) {
                 tempName ++;
                 exist = true;
@@ -202,7 +202,7 @@ io.on('connection', function (socket) {
     });
     socket.on('untitledProject', function () {
         if (socket.id in socketIDs) {
-            var projectName = getUntitledName();
+            var projectName = getUntitledName(users[socketIDs[socket.id]].projects);
             if (projectName in users[socketIDs[socket.id]].projects) {
                 socket.emit("project", projectName, users[socketIDs[socket.id]].projects[projectName], socket.id);
             }else {
