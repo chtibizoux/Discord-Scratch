@@ -85,6 +85,23 @@ transport.verify(function(error, success) {
     }
 });
 var commands = {};
+function getUntitledName() {
+    var projectName = "";
+    while (projectName === "") {
+        var tempName = 0;
+        var exist = false;
+        for (key in users[socketIDs[socket.id]].projects) {
+            if (key === "Untitled" + (tempName || "")) {
+                tempName ++;
+                exist = true;
+            }
+        }
+        if (exist === false) {
+            projectName = "Untitled" + (tempName || "");
+        }
+    }
+    return projectName;
+}
 // Socket.io
 io.on('connection', function (socket) {
     console.log("Un client c'est connecté !");
@@ -170,6 +187,22 @@ io.on('connection', function (socket) {
     });
     socket.on('getProject', function (projectName) {
         if (socket.id in socketIDs) {
+            if (projectName in users[socketIDs[socket.id]].projects) {
+                socket.emit("project", projectName, users[socketIDs[socket.id]].projects[projectName], socket.id);
+            }else {
+                var path = socketIDs[socket.id] + projectName.toLowerCase().split(" ").join("_").split(".").join("").split("/").join("");
+                users[socketIDs[socket.id]].projects[projectName] = {
+                    xml: '<xml><block type="discord_token" deletable="false" movable="false"><field name="TEXT">token</field></block><block type="event_on" id="h0$AV2pq84-nP;=z49~P" x="0" y="96"><value name="ACTION"><shadow type="event_on_menu" id="Z|4X@}#cKvPPf4kz~:l)"><field name="ACTION">ready</field></shadow></value><statement name="DO"><block type="sensing_log" id="^Hbrdm97i9]$/SJ@K:F8"><value name="TEXT"><shadow type="text" id="^jxJW~)+]xnB#+UtlQy*"><field name="TEXT">Bot is online !</field></shadow></value></block></statement></block><block type="event_on" id=":Rd+teh^G@KsewvDIxwD" x="0" y="272"><value name="ACTION"><shadow type="event_on_menu" id="fd_k+_6fGiEQfNAcXG/)"><field name="ACTION">message</field></shadow></value><statement name="DO"><block type="control_if" id=")XmGcc6]At{uGvs%7`=s"><value name="CONDITION"><block type="operator_startswith" id="VoaA9kyY=yq4mqyBkoIr"><value name="STRING1"><shadow type="text" id="3aK~d81kQ8f}0U/PZXPL"><field name="TEXT">hello world !</field></shadow><block type="event_on_message_content" id="7HW8[+$@#]gE{:7c;((n"></block></value><value name="STRING2"><shadow type="text" id="~HVIZDaP}7iuJ-J;pqoh"><field name="TEXT">!ping</field></shadow></value></block></value><statement name="SUBSTACK"><block type="event_reply" id="1t=K?nqBO{iQ#C3tz/e["><value name="TEXT"><shadow type="text" id="2UOm-;]*c~@oa[hXn_mW"><field name="TEXT">pong !</field></shadow></value></block></statement></block></statement></block></xml>',
+                    path: path
+                };
+                socket.emit("project", projectName, users[socketIDs[socket.id]].projects[projectName], socket.id);
+                fs.writeFileSync('./users.json', JSON.stringify(users));
+            }
+        }
+    });
+    socket.on('untitledProject', function () {
+        if (socket.id in socketIDs) {
+            var projectName = getUntitledName();
             if (projectName in users[socketIDs[socket.id]].projects) {
                 socket.emit("project", projectName, users[socketIDs[socket.id]].projects[projectName], socket.id);
             }else {

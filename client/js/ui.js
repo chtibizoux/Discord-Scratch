@@ -27,6 +27,8 @@ socket.on('cookieSucces', function(username, tutorial, socketID){
         const name = urlParams.get('name');
         if (name !== "" && name !== null) {
             socket.emit("getProject", name);
+        }else{
+            socket.emit("untitledProject");
         }
     }
 });
