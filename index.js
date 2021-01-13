@@ -32,17 +32,22 @@ app.get('/redirect', function(req, res){
                     authorization: `${info.token_type} ${info.access_token}`,
                 },
             }).then(res => res.json()).then(info => {
-                if (!(info.id in users)) {
-                    users[info.id] = {
-                        username: info.username,
-                        tutorial: false,
-                        projects: {},
-                    };
-                    fs.writeFileSync('./users.json', JSON.stringify(users));
-                }else {
-                    users[info.id].username = info.username;
+                if (info.message){
+                    console.error(info.message);
+                    res.end("<script>document.location.href='/';</script>");
+                } else {
+                    if (!(info.id in users)) {
+                        users[info.id] = {
+                            username: info.username,
+                            tutorial: false,
+                            projects: {},
+                        };
+                        fs.writeFileSync('./users.json', JSON.stringify(users));
+                    }else {
+                        users[info.id].username = info.username;
+                    }
+                    res.end("<script>document.cookie='id=" + passwordHash.generate(info.id) + ";path=/';document.location.href='/';</script>");
                 }
-                res.end("<script>document.cookie='id=" + passwordHash.generate(info.id) + ";path=/';document.location.href='/';</script>");
             }));
     }else {
         res.end("<script>document.location.href='/';</script>");
