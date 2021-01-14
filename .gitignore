@@ -1,5 +1,5 @@
 config.json
 users.json
 node_modules
-userfiles
+userfiles/*
 package-lock.json
