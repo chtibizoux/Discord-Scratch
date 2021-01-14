@@ -158,18 +158,18 @@ a{
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-#tutorial-div::-webkit-scrollbar {
+.tutorial-div::-webkit-scrollbar {
     display: none;
 }
-#tutorial-div h1{
+.tutorial-div h1{
     text-align: center;
     margin: 20px;
 }
-#tutorial-div li{
+.tutorial-div li{
     font-size: 18px;
     margin: 20px;
 }
-#tutorial-background{
+.tutorial-background{
     content: "";
     position: absolute;
     left: 0;

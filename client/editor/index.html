@@ -59,8 +59,8 @@
             <h3>To save and use your project please <a id="save-link" href="#">Login</a></h3>
             <button class="save-cancel-button" onclick="document.getElementById('save-div').style.display = 'none'">Cancel</button>
         </div>
-        <div id="tutorial-background">
-            <div id="tutorial-div">
+        <div class="tutorial-background" id="tutorial1">
+            <div class="tutorial-div">
                 <h1>Create Discord Application</h1>
                 <ol>
                     <li><a href="https://discord.com/developers/applications">Open Discord developers pannel</a> and click on "New Application"<br><img src="/assets/images/tutorial1.jpg" alt="New Application"></li>
@@ -70,7 +70,22 @@
                     <li>Click on "Copy"<br><img src="/assets/images/tutorial5.jpg" alt="Copy"></li>
                     <li>And paste token in<br><img src="/assets/images/tutorial6.jpg" alt="Paste"></li>
                 </ol>
-                <button class="tutorial-close-button" onclick="document.getElementById('tutorial-background').style.display = 'none';socket.emit('disableTutorial')">Close</button>
+                <button class="tutorial-close-button" onclick="document.getElementById('tutorial1').style.display = 'none';socket.emit('disableTutorial')">Close</button>
+            </div>
+        </div>
+        <div class="tutorial-background" style="display: none;" id="tutorial2">
+            <div class="tutorial-div">
+                <h1>Invite Discord Bot</h1>
+                <ol>
+                    <li><a href="https://discord.com/developers/applications">Open Discord developers pannel</a> and click on your application</li>
+                    <li>Go to "OAuth2"<br><img src="/assets/images/tutorial3.jpg" alt="Bot"></li>
+                    <li>Select "bot"<br><img src="/assets/images/tutorial7.jpg" alt="scopes"></li>
+                    <li>Select your bot permissions<br><img src="/assets/images/tutorial8.jpg" alt="permissions"></li>
+                    <li>And click on "copy" after the url<br><img src="/assets/images/tutorial9.jpg" alt="Copy"></li>
+                    <li>And past URL in a new tab</li>
+                    <li>Now you can select your server and click on "Authorize"</li>
+                </ol>
+                <button class="tutorial-close-button" onclick="document.getElementById('tutorial2').style.display = 'none';socket.emit('disableTutorial')">Close</button>
             </div>
         </div>
         <script>

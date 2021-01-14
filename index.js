@@ -128,7 +128,7 @@ io.on('connection', function (socket) {
                 socket.emit("stop", code, socket.id);
                 console.log("Une commande à été arreter !");
             });
-            socket.emit("start");
+            socket.emit("start", socket.id);
         }else {
             commands[filename].stdin.pause();
             commands[filename].kill();

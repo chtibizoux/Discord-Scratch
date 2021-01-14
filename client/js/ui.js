@@ -1,4 +1,5 @@
 var connected = false;
+var tutorial = true;
 var projectPath = "";
 var projectName = "";
 var href = "";
@@ -19,7 +20,7 @@ for(var i = 0; i < decodeURIComponent(document.cookie).split(';').length; i++) {
         socket.emit("cookie", c.substring(name.length, c.length).slice(3));
     }
 }
-socket.on('cookieSucces', function(username, tutorial, socketID){
+socket.on('cookieSucces', function(username, tuto, socketID){
     if (socketID === socket.id) {
         document.getElementById("logout-button").style.display = "inline-block";
         document.getElementById("name-input").style.display = "inline-block";
@@ -29,8 +30,9 @@ socket.on('cookieSucces', function(username, tutorial, socketID){
             buttons[i].innerHTML = username;
             buttons[i].setAttribute('onclick',"document.location.href = '/account'");
         }
-        if (tutorial === false) {
-            document.getElementById("tutorial-background").style.display = "none";
+        tutorial = tuto;
+        if (tuto === false) {
+            document.getElementById("tutorial1").style.display = "none";
         }
         const urlParams = new URLSearchParams(window.location.search);
         const name = urlParams.get('name');
@@ -46,6 +48,10 @@ function logout() {
     document.location.href = "/";
 }
 function play() {
+    if (tutorial) {
+        document.getElementById("tutorial2").style.display = 'block';
+        tutorial = false;
+    }
     if (connected) {
         socket.emit("play", projectPath);
     } else {
@@ -80,7 +86,7 @@ socket.on("stdin", function(data, socketID){
         scroll();
     }
 });
-socket.on("start", function(data, socketID){
+socket.on("start", function(socketID){
     if (socketID === socket.id) {
         document.getElementById("play").innerHTML = '<img src="/assets/images/stop.svg" alt="Stop">';
         document.getElementById("console-content").innerHTML += "node .<br>";
