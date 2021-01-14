@@ -138,10 +138,10 @@ a{
     color: #27c4f5;
     text-decoration: none;
 }
-#tutorial-div img{
+.tutorial-div img{
     max-width: 100%;
 }
-#tutorial-div{
+.tutorial-div{
     position: absolute;
     left: 0;
     right: 0;
