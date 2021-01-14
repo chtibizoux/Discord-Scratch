@@ -1,0 +1,132 @@
+body{
+    background-color: #cce1fc;
+    padding: 0;
+    margin: 0;
+}
+*{
+    font-family: Arial;
+}
+header{
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(77, 151, 255);
+    display: flex;
+    height: 54px;
+    justify-content: space-between;
+}
+.logo{
+    height: 54px;
+    vertical-align: middle;
+}
+.header-button{
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 54px;
+}
+.logo-button{
+    padding-left: 0;
+    padding-right: 0;
+}
+.header-button:hover{
+    background-color: rgb(15, 189, 140);
+}
+button{
+    outline: none;
+    cursor: pointer;
+}
+input{
+    outline: none;
+    border: solid #bbbbbb 2px;
+    height: 20px;
+    width: 400px;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 20px;
+}
+input:hover{
+    border-color: #7eaffc;
+}
+input[type=checkbox]{
+    padding: 0;
+    height: auto;
+    border: none;
+}
+a{
+    color: #2f6dc4;
+    text-decoration: none;
+}
+.presentation{
+    color: white;
+    height: 400px;
+    background: url("/assets/images/background.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #6eaaff;
+    padding-top: 54px;
+}
+.presentation::after{
+    content: "";
+    position: absolute;
+    transform: translate(0, -30px);
+    left: 200px;
+    width: 122px;
+    height: 81px;
+    background: url("https://scratch.mit.edu/svgs/intro/hat-block.svg");
+}
+.title-div{
+    line-height: 2.5em;
+    margin: 70px;
+}
+.title-div h1{
+    font-size: 2rem;
+}
+.title-div h2{
+    font-size: 1.8rem;
+}
+.title-div h3{
+    font-size: 1.5rem;
+}
+.title-buttons-div{
+    margin: 30px;
+}
+.title-button{
+    margin: 5px;
+    font-size: 1rem;
+    background-color: white;
+    border: solid #bbbbbb 2px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.content{
+    height: 800px;
+    text-align: center;
+    padding: 40px;
+}
+.new-div{
+    padding: 50px;
+    text-align: right;
+    padding-top: 104px;
+}
+.new-button{
+    border: none;
+    background-color: rgb(15, 189, 140);
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 54px;
+}
+footer{
+    color: white;
+    text-align: center;
+    padding: 30px;
+    background-color: #17181b;
+}

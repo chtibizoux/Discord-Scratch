@@ -62,54 +62,6 @@ a{
     color: #27c4f5;
     text-decoration: none;
 }
-.presentation a{
-    color: #2f6dc4;
-}
-.presentation{
-    color: white;
-    height: 400px;
-    background: url("/assets/images/background.svg");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-color: #6eaaff;
-    padding-top: 54px;
-}
-.presentation::after{
-    content: "";
-    position: absolute;
-    transform: translate(0, -30px);
-    left: 200px;
-    width: 122px;
-    height: 81px;
-    background: url("https://scratch.mit.edu/svgs/intro/hat-block.svg");
-}
-.title-div{
-    line-height: 2.5em;
-    margin: 70px;
-}
-.title-div h1{
-    font-size: 2rem;
-}
-.title-div h2{
-    font-size: 1.8rem;
-}
-.title-div h3{
-    font-size: 1.5rem;
-}
-.title-buttons-div{
-    margin: 30px;
-}
-.title-button{
-    margin: 5px;
-    font-size: 1rem;
-    background-color: white;
-    border: solid #bbbbbb 2px;
-    border-radius: 10px;
-    padding: 10px;
-}
-.content{
-    height: 800px;
-}
 .new-div{
     padding: 50px;
     text-align: right;

@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="index">
         <meta name="keywords" content="discord,scratch,bot">
-        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/account.css">
         <script src="https://kit.fontawesome.com/740353a2ba.js"></script>
         <script src="/socket.io/socket.io.js"></script>
     </head>
@@ -21,6 +21,7 @@
             <div>
                 <button class="header-button logo-button" onclick="document.location.href = '/'"><img class="logo" src="/assets/images/logo.png" alt="Logo"></button>
                 <button class="header-button" onclick="document.location.href = '/editor'">Editor</button>
+                <button class="header-button" onclick="document.location.href = '/wiki'">Wiki</button>
                 <button class="header-button" onclick="document.location.href = 'https://clementsongis.wordpress.com/'">Author WebSite</button>
                 <button class="header-button" onclick="document.location.href = 'https://discord.gg/jwVzMKuNym'">Discord Serveur</button>
                 <!-- <button class="header-button" onclick="document.location.href = '/extentions'">Extentions</button> -->
@@ -73,7 +74,7 @@
                     var buttons = document.getElementsByClassName("login-button");
                     for (var i = 0; i < buttons.length; i++) {
                         buttons[i].innerHTML = username;
-                        buttons[i].setAttribute('onclick',"document.location.href = '/account'");
+                        buttons[i].setAttribute('onclick',"document.location.href = '#'");
                     }
                 }
             });

@@ -12,16 +12,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="index">
         <meta name="keywords" content="discord,scratch,bot">
-        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="/css/wiki.css">
         <script src="https://kit.fontawesome.com/740353a2ba.js"></script>
         <script src="/socket.io/socket.io.js"></script>
     </head>
     <body>
         <header>
             <div>
-                <button class="header-button logo-button" onclick="document.location.href = '#'"><img class="logo" src="/assets/images/logo.png" alt="Logo"></button>
+                <button class="header-button logo-button" onclick="document.location.href = '/'"><img class="logo" src="/assets/images/logo.png" alt="Logo"></button>
                 <button class="header-button" onclick="document.location.href = '/editor'">Editor</button>
-                <button class="header-button" onclick="document.location.href = '/wiki'">Wiki</button>
+                <button class="header-button" onclick="document.location.href = '#'">Wiki</button>
                 <button class="header-button" onclick="document.location.href = 'https://clementsongis.wordpress.com/'">Author WebSite</button>
                 <button class="header-button" onclick="document.location.href = 'https://discord.gg/jwVzMKuNym'">Discord Serveur</button>
                 <!-- <button class="header-button" onclick="document.location.href = '/extentions'">Extentions</button> -->
@@ -31,23 +31,9 @@
                 <button class="header-button login-button" id="header-login-button">Login</button>
             </div>
         </header>
-        <section class="presentation">
-            <div class="title-div">
-                <h1>Discord Scratch</h1>
-                <h2>Easily create discord bots</h2>
-                <h3>Based on <a href="https://scratch.mit.edu/">Scratch</a> the simplest language</h3>
-                <div class="title-buttons-div">
-                    <button class="title-button" onclick="document.location.href = '/editor'">Start Create</button>
-                    <button class="title-button login-button">Login</button>
-                </div>
-            </div>
-        </section>
         <section class="content">
-            <p>The project is <a href="https://github.com/chtibizoux/Discord-Scratch">opensource</a> and in beta.</p>
+            <h2>Comming Soon !</h2>
         </section>
-        <footer>
-            Copyright 2020 Clément Songis <a href="https://clementsongis.wordpress.com/contact/">Contact</a>
-        </footer>
         <script>
             var socket = io();
             var href = "";
@@ -79,12 +65,7 @@
             });
             function logout() {
                 document.cookie = "id=;path=/";
-                document.getElementById("logout-button").style.display = "none";
-                var buttons = document.getElementsByClassName("login-button");
-                for (var i = 0; i < buttons.length; i++) {
-                    buttons[i].innerHTML = "Login";
-                    buttons[i].setAttribute('onclick',"document.location.href = '" + href + "'");
-                }
+                document.location.href = "/";
             }
         </script>
     </body>
