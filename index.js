@@ -17,7 +17,7 @@ app.get('/redirect', function(req, res){
         	client_id: config.client_id,
         	client_secret: config.client_secret,
         	grant_type: 'authorization_code',
-        	redirect_uri: "http://localhost:8080/redirect/",
+        	redirect_uri: config.redirect_uri,
         	code: accessCode,
         	scope: 'identify%20email',
         };
@@ -89,18 +89,19 @@ transport.verify(function(error, success) {
 });
 var commands = {};
 function getUntitledName(projects) {
-    var projectName = "";
-    while (projectName === "") {
-        var tempName = 0;
+    var projectName = "Untitled";
+    var tempName = 0;
+    while (projectName === "Untitled") {
         var exist = false;
         for (key in projects) {
-            if (key === "Untitled" + (tempName || "")) {
+            if (key === "Untitled" + tempName) {
                 tempName ++;
                 exist = true;
             }
         }
         if (exist === false) {
-            projectName = "Untitled" + (tempName || "");
+            projectName = "Untitled" + tempName;
+            break;
         }
     }
     return projectName;
@@ -108,6 +109,7 @@ function getUntitledName(projects) {
 // Socket.io
 io.on('connection', function (socket) {
     console.log("Un client c'est connecté !");
+    socket.emit("href", config.redirect_uri, config.client_id);
     socket.on('play', function(filename) {
         if (!commands[filename]) {
             console.log("Une commande à été démmarer !");

@@ -1,6 +1,15 @@
 var connected = false;
 var projectPath = "";
 var projectName = "";
+var href = "";
+socket.on("href", function(redirect_uri, client_id) {
+    href = "https://discord.com/api/oauth2/authorize?client_id=" + client_id + "&redirect_uri=" + redirect_uri + "&response_type=code&scope=identify%20email"
+    var buttons = document.getElementsByClassName("login-button");
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].setAttribute('onclick',"document.location.href = '" + href + "'");
+    }
+    document.getElementById("save-link").setAttribute('href',"document.location.href = '" + href + "'");
+});
 for(var i = 0; i < decodeURIComponent(document.cookie).split(';').length; i++) {
     var c = decodeURIComponent(document.cookie).split(';')[i];
     while (c.charAt(0) == ' ') {

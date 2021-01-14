@@ -27,7 +27,7 @@
             </div>
             <div>
                 <button class="header-button" id="logout-button" style="display: none;" onclick="logout()">Logout</button>
-                <button class="header-button login-button" id="header-login-button" onclick="document.location.href = 'https://discord.com/api/oauth2/authorize?client_id=797107487689932842&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fredirect%2F&response_type=code&scope=identify%20email'">Login</button>
+                <button class="header-button login-button" id="header-login-button">Login</button>
             </div>
         </header>
         <section class="presentation">
@@ -37,7 +37,7 @@
                 <h3>Based on <a href="https://scratch.mit.edu/">Scratch</a> the simplest language</h3>
                 <div class="title-buttons-div">
                     <button class="title-button" onclick="document.location.href = '/editor'">Start Create</button>
-                    <button class="title-button login-button" onclick="document.location.href = 'https://discord.com/api/oauth2/authorize?client_id=797107487689932842&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fredirect%2F&response_type=code&scope=identify%20email'">Login</button>
+                    <button class="title-button login-button">Login</button>
                 </div>
             </div>
         </section>
@@ -49,6 +49,14 @@
         </footer>
         <script>
             var socket = io();
+            var href = "";
+            socket.on("href", function(redirect_uri, client_id) {
+                href = "https://discord.com/api/oauth2/authorize?client_id=" + client_id + "&redirect_uri=" + redirect_uri + "&response_type=code&scope=identify%20email"
+                var buttons = document.getElementsByClassName("login-button");
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].setAttribute('onclick',"document.location.href = '" + href + "'");
+                }
+            });
             for(var i = 0; i < decodeURIComponent(document.cookie).split(';').length; i++) {
                 var c = decodeURIComponent(document.cookie).split(';')[i];
                 while (c.charAt(0) == ' ') {
@@ -74,7 +82,7 @@
                 var buttons = document.getElementsByClassName("login-button");
                 for (var i = 0; i < buttons.length; i++) {
                     buttons[i].innerHTML = "Login";
-                    buttons[i].setAttribute('onclick',"document.location.href = 'https://discord.com/api/oauth2/authorize?client_id=797107487689932842&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fredirect%2F&response_type=code&scope=identify%20email'");
+                    buttons[i].setAttribute('onclick',"document.location.href = '" + href + "'");
                 }
             }
         </script>

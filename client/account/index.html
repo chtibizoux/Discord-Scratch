@@ -19,7 +19,7 @@
     <body>
         <header>
             <div>
-                <button class="header-button logo-button" onclick="document.location.href = '#'"><img class="logo" src="/assets/images/logo.png" alt="Logo"></button>
+                <button class="header-button logo-button" onclick="document.location.href = '/'"><img class="logo" src="/assets/images/logo.png" alt="Logo"></button>
                 <button class="header-button" onclick="document.location.href = '/editor'">Editor</button>
                 <button class="header-button" onclick="document.location.href = 'https://clementsongis.wordpress.com/'">Author WebSite</button>
                 <button class="header-button" onclick="document.location.href = 'https://discord.gg/jwVzMKuNym'">Discord Serveur</button>
@@ -27,7 +27,7 @@
             </div>
             <div>
                 <button class="header-button" id="logout-button" style="display: none;" onclick="logout()">Logout</button>
-                <button class="header-button login-button" id="header-login-button" onclick="document.location.href = 'https://discord.com/api/oauth2/authorize?client_id=797107487689932842&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fredirect%2F&response_type=code&scope=identify%20email'">Login</button>
+                <button class="header-button login-button" id="header-login-button">Login</button>
             </div>
         </header>
         <div class="new-div">
@@ -50,6 +50,14 @@
         </div>
         <script>
             var socket = io();
+            var href = "";
+            socket.on("href", function(redirect_uri, client_id) {
+                href = "https://discord.com/api/oauth2/authorize?client_id=" + client_id + "&redirect_uri=" + redirect_uri + "&response_type=code&scope=identify%20email"
+                var buttons = document.getElementsByClassName("login-button");
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].setAttribute('onclick',"document.location.href = '" + href + "'");
+                }
+            });
             for(var i = 0; i < decodeURIComponent(document.cookie).split(';').length; i++) {
                 var c = decodeURIComponent(document.cookie).split(';')[i];
                 while (c.charAt(0) == ' ') {
@@ -76,16 +84,17 @@
             socket.emit("projects");
             socket.on('projects', function(projects, socketID){
                 if (socketID === socket.id) {
-                    var html = '<h2>Create a new project to start making cool discord bot !</h2><img src="/assets/images/bot.svg" alt="Bot" style="padding-top: 50px;">';
+                    var html = "";
                     for (var projectName in projects) {
                         html += '<div class="project-button" projectName="' + projectName + '" onclick="document.location.href = \'/editor/?name=' + projectName + '\'"><div class="project-img"><img src="/assets/images/project.png" alt=""></div><div class="project-button-name">' + projectName + '</div><button class="project-delete-button" onclick="event.stopPropagation();socket.emit(\'deleteProject\', \'' + projectName + '\');"><img src="/assets/images/trash.svg" alt=""></button></div>';
                     }
-                    if (html !== '<h2>Create a new project to start making cool discord bot !</h2><img src="/assets/images/bot.svg" alt="Bot" style="padding-top: 50px;">') {
+                    if (html !== "") {
                         document.getElementById("projects").style.display = "flex";
+                        document.getElementById("projects").innerHTML = html;
                     }else{
                         document.getElementById("projects").style.display = "block";
+                        document.getElementById("projects").innerHTML = '<h2>Create a new project to start making cool discord bot !</h2><img src="/assets/images/bot.svg" alt="Bot" style="padding-top: 50px;">';
                     }
-                    document.getElementById("projects").innerHTML = html;
                     for (i = 0; i < document.getElementsByClassName("project-button").length; i++) {
                         const button = document.getElementsByClassName("project-button")[i];
                         button.addEventListener('contextmenu', e => {

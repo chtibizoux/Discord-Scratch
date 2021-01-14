@@ -37,7 +37,7 @@
             </div>
             <div>
                 <button class="header-button" id="logout-button" style="display: none;" onclick="logout()">Logout</button>
-                <button class="header-button login-button" onclick="document.location.href = 'https://discord.com/api/oauth2/authorize?client_id=797107487689932842&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fredirect%2F&response_type=code&scope=identify%20email'">Login</button>
+                <button class="header-button login-button">Login</button>
             </div>
         </header>
         <section class="editor">
@@ -56,7 +56,7 @@
             </div>
         </section>
         <div id="save-div" style="display: none;">
-            <h3>To save and use your project please <a href="https://discord.com/api/oauth2/authorize?client_id=797107487689932842&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fredirect%2F&response_type=code&scope=identify%20email">Login</a></h3>
+            <h3>To save and use your project please <a id="save-link" href="#">Login</a></h3>
             <button class="save-cancel-button" onclick="document.getElementById('save-div').style.display = 'none'">Cancel</button>
         </div>
         <div id="tutorial-background">
