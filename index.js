@@ -39,7 +39,7 @@ app.get('/redirect', function(req, res){
                     if (!(info.id in users)) {
                         users[info.id] = {
                             username: info.username,
-                            tutorial: false,
+                            tutorial: true,
                             projects: {},
                         };
                         fs.writeFileSync('./users.json', JSON.stringify(users));
