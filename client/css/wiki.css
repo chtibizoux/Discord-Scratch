@@ -41,7 +41,7 @@ button{
 }
 input{
     outline: none;
-    border: solid #bbbbbb 2px;
+    border: solid #bbbbbb 1px;
     height: 20px;
     width: 400px;
     border-radius: 20px;
