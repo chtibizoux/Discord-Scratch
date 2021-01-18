@@ -569,8 +569,7 @@ Blockly.Variables.generateVariableFieldXml_ = function(variableModel, opt_name) 
  *     or name + type combination.
  * @package
  */
-Blockly.Variables.getOrCreateVariablePackage = function(workspace, id, opt_name,
-    opt_type) {
+Blockly.Variables.getOrCreateVariablePackage = function(workspace, id, opt_name, opt_type) {
   var variable = Blockly.Variables.getVariable(workspace, id, opt_name,
       opt_type);
   if (!variable) {
@@ -628,8 +627,7 @@ Blockly.Variables.getVariable = function(workspace, id, opt_name, opt_type) {
  *     or name + type combination.
  * @private
  */
-Blockly.Variables.createVariable_ = function(workspace, id, opt_name,
-    opt_type) {
+Blockly.Variables.createVariable_ = function(workspace, id, opt_name, opt_type) {
   var potentialVariableMap = workspace.getPotentialVariableMap();
   // Variables without names get uniquely named for this workspace.
   if (!opt_name) {

@@ -207,7 +207,7 @@ Blockly.JavaScript['event_on_message_content'] = function(block) {
     if (!"message" in surroundOn.variables.split(", "))  return "";
     return ["message.content", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['event_reply'] = function(block) {
+Blockly.JavaScript['discord_reply'] = function(block) {
     var text = Blockly.JavaScript.valueToCode(block, 'TEXT', Blockly.JavaScript.ORDER_NONE) || "";
     var surroundOn = getSurroundOn(block);
     if (surroundOn === null) return "";

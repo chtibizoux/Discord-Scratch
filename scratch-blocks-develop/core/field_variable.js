@@ -109,8 +109,9 @@ Blockly.FieldVariable.prototype.initModel = function() {
   // Initialize this field if it's in a broadcast block in the flyout
   var variable = this.initFlyoutBroadcast_(this.workspace_);
   if (!variable) {
-    var variable = Blockly.Variables.getOrCreateVariablePackage(
-        this.workspace_, null, this.defaultVariableName, this.defaultType_);
+    // var variable = Blockly.Variables.getOrCreateVariablePackage(
+    //     this.workspace_, null, this.defaultVariableName, this.defaultType_);
+    return;
   }
   // Don't fire a change event for this setValue.  It would have null as the
   // old value, which is not valid.

@@ -30,6 +30,21 @@ goog.require('Blockly.Blocks');
 
 Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: none">' +
   '<category name="%{BKY_CATEGORY_DISCORD}" id="discord" colour="#4C97FF" secondaryColour="#3373CC">' +
+    '<block type="discord_reply" id="discord_reply">' +
+      '<value name="TEXT">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">Hello word !</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="discord_send" id="discord_send">' +
+      '<value name="TEXT">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">Hello word !</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="discord_delete_message" id="discord_delete_message"></block>' +
     // '<block type="discord_gotoxyz" id="discord_gotoxyz">' +
     //   '<value name="X">' +
     //     '<shadow id="movex" type="math_number">' +
@@ -134,16 +149,7 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
       '</value>' +
     '</block>' +
     '<block type="event_on_message_content" id="event_on_message_content"></block>' +
-    '<block type="event_reply" id="event_reply">' +
-      '<value name="TEXT">' +
-        '<shadow type="text">' +
-          '<field name="TEXT">Hello word !</field>' +
-        '</shadow>' +
-      '</value>' +
-    '</block>' +
     '<block type="event_whenflagclicked" id="event_whenflagclicked"></block>' +
-    '<block type="event_whenbroadcastreceived" id="event_whenbroadcastreceived">' +
-    '</block>' +
   '</category>' +
   '<category name="%{BKY_CATEGORY_CONTROL}" id="control" colour="#FFAB19" secondaryColour="#CF8B17">' +
     '<block type="control_wait" id="control_wait">' +

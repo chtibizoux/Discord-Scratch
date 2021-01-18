@@ -42,12 +42,11 @@ Blockly.Blocks['data_variable'] = {
         {
           "type": "field_variable_getter",
           "text": "",
-          "name": "VAR",
+          "name": "VARIABLE",
           "variableType": ""
         }
       ],
       "category": Blockly.Categories.data,
-      "checkboxInFlyout": true,
       "extensions": ["contextMenu_getVariableBlock", "colours_data", "output_string"]
     });
   }
@@ -64,7 +63,7 @@ Blockly.Blocks['data_setvariableto'] = {
       "args0": [
         {
           "type": "field_variable",
-          "name": "VAR"
+          "name": "VARIABLE"
         },
         {
           "type": "input_value",
@@ -88,7 +87,7 @@ Blockly.Blocks['data_changevariableby'] = {
       "args0": [
         {
           "type": "field_variable",
-          "name": "VAR"
+          "name": "VARIABLE"
         },
         {
           "type": "input_value",
@@ -97,54 +96,6 @@ Blockly.Blocks['data_changevariableby'] = {
       ],
       "category": Blockly.Categories.data,
       "extensions": ["colours_data", "shape_statement"]
-    });
-  }
-};
-
-Blockly.Blocks['data_showvariable'] = {
-  /**
-   * Block to show a variable
-   * @this Blockly.Block
-   */
-  init: function() {
-    this.jsonInit({
-      "message0": Blockly.Msg.DATA_SHOWVARIABLE,
-      "args0": [
-        {
-          "type": "field_variable",
-          "name": "VAR"
-        }
-      ],
-      "previousStatement": null,
-      "nextStatement": null,
-      "category": Blockly.Categories.data,
-      "colour": Blockly.Colours.data.primary,
-      "colourSecondary": Blockly.Colours.data.secondary,
-      "colourTertiary": Blockly.Colours.data.tertiary
-    });
-  }
-};
-
-Blockly.Blocks['data_hidevariable'] = {
-  /**
-   * Block to hide a variable
-   * @this Blockly.Block
-   */
-  init: function() {
-    this.jsonInit({
-      "message0": Blockly.Msg.DATA_HIDEVARIABLE,
-      "args0": [
-        {
-          "type": "field_variable",
-          "name": "VAR"
-        }
-      ],
-      "previousStatement": null,
-      "nextStatement": null,
-      "category": Blockly.Categories.data,
-      "colour": Blockly.Colours.data.primary,
-      "colourSecondary": Blockly.Colours.data.secondary,
-      "colourTertiary": Blockly.Colours.data.tertiary
     });
   }
 };
@@ -166,8 +117,7 @@ Blockly.Blocks['data_listcontents'] = {
         }
       ],
       "category": Blockly.Categories.dataLists,
-      "extensions": ["contextMenu_getListBlock", "colours_data_lists", "output_string"],
-      "checkboxInFlyout": true
+      "extensions": ["contextMenu_getListBlock", "colours_data_lists", "output_string"]
     });
   }
 };
@@ -453,48 +403,6 @@ Blockly.Blocks['data_listcontainsitem'] = {
       ],
       "category": Blockly.Categories.dataLists,
       "extensions": ["colours_data_lists", "output_boolean"]
-    });
-  }
-};
-
-Blockly.Blocks['data_showlist'] = {
-  /**
-   * Block to show a list.
-   * @this Blockly.Block
-   */
-  init: function() {
-    this.jsonInit({
-      "message0": Blockly.Msg.DATA_SHOWLIST,
-      "args0": [
-        {
-          "type": "field_variable",
-          "name": "LIST",
-          "variableTypes": [Blockly.LIST_VARIABLE_TYPE]
-        }
-      ],
-      "category": Blockly.Categories.dataLists,
-      "extensions": ["colours_data_lists", "shape_statement"]
-    });
-  }
-};
-
-Blockly.Blocks['data_hidelist'] = {
-  /**
-   * Block to hide a list.
-   * @this Blockly.Block
-   */
-  init: function() {
-    this.jsonInit({
-      "message0": Blockly.Msg.DATA_HIDELIST,
-      "args0": [
-        {
-          "type": "field_variable",
-          "name": "LIST",
-          "variableTypes": [Blockly.LIST_VARIABLE_TYPE]
-        }
-      ],
-      "category": Blockly.Categories.dataLists,
-      "extensions": ["colours_data_lists", "shape_statement"]
     });
   }
 };

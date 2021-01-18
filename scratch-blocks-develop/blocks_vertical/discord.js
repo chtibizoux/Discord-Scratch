@@ -27,6 +27,74 @@ goog.require('Blockly.Colours');
 goog.require('Blockly.constants');
 goog.require('Blockly.ScratchBlocks.VerticalExtensions');
 
+Blockly.Blocks['discord_reply'] = {
+  /**
+   * Block to Report if its touching a Object.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "reply %1",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "TEXT"
+        }
+      ],
+      "category": Blockly.Categories.sensing,
+      "extensions": ["colours_discord", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['discord_send'] = {
+  /**
+   * Block to Report if its touching a Object.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "send %1",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "TEXT"
+        }
+      ],
+      "category": Blockly.Categories.sensing,
+      "extensions": ["colours_discord", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['discord_delete_message'] = {
+  /**
+   * Block to Report if its touching a Object.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "delete message",
+      "category": Blockly.Categories.sensing,
+      "extensions": ["colours_discord", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['discord_react'] = {
+  /**
+   * Block to Report if its touching a Object.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "react",
+      "category": Blockly.Categories.sensing,
+      "extensions": ["colours_discord", "shape_statement"]
+    });
+  }
+};
+
 Blockly.Blocks['discord_gotoxyz'] = {
   /**
    * Block to go to X, Y.

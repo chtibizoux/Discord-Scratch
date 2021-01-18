@@ -281,26 +281,6 @@ Blockly.Blocks['event_on_message_content'] = {
 // };
 // Blockly.Extensions.registerMixin('event_on_variables_options', Blockly.Blocks.event.EVENT_ON_VARIABLES_OPTIONS);
 
-Blockly.Blocks['event_reply'] = {
-  /**
-   * Block to Report if its touching a Object.
-   * @this Blockly.Block
-   */
-  init: function() {
-    this.jsonInit({
-      "message0": "reply %1",
-      "args0": [
-        {
-          "type": "input_value",
-          "name": "TEXT"
-        }
-      ],
-      "category": Blockly.Categories.sensing,
-      "extensions": ["colours_event", "shape_statement"]
-    });
-  }
-};
-
 Blockly.Blocks['event_whenflagclicked'] = {
   /**
    * Block for when flag clicked.
