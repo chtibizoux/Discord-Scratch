@@ -178,6 +178,60 @@ Blockly.Blocks['data_listindexrandom'] = {
   }
 };
 
+Blockly.Blocks['data_splittolist'] = {
+  /**
+   * Block to add item to list.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "split %1 with %2 to %3",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "TEXTTOSPLIT"
+        },
+        {
+          "type": "input_value",
+          "name": "VALUE"
+        },
+        {
+          "type": "field_variable",
+          "name": "LIST",
+          "variableTypes": [Blockly.LIST_VARIABLE_TYPE]
+        }
+      ],
+      "category": Blockly.Categories.dataLists,
+      "extensions": ["colours_data_lists", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['data_listjoin'] = {
+  /**
+   * Block to add item to list.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "join %1 with %2",
+      "args0": [
+        {
+          "type": "field_variable",
+          "name": "LIST",
+          "variableTypes": [Blockly.LIST_VARIABLE_TYPE]
+        },
+        {
+          "type": "input_value",
+          "name": "VALUE"
+        }
+      ],
+      "category": Blockly.Categories.dataLists,
+      "extensions": ["colours_data_lists", "output_string"]
+    });
+  }
+};
+
 Blockly.Blocks['data_addtolist'] = {
   /**
    * Block to add item to list.

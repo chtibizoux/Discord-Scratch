@@ -120,7 +120,6 @@ Blockly.Xml.fieldToDomVariable_ = function(field) {
   // because the flyout defers deleting blocks until the next time the flyout is
   // opened.
   var variable = field.getVariable();
-
   if (!variable) {
     throw Error('Tried to serialize a variable field with no variable.');
   }
