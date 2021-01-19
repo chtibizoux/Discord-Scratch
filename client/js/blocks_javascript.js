@@ -7,23 +7,51 @@ var end = "\nbot.login(token);";
 //     }
 // }
 // console.log(message);
-Blockly.Blocks['discord_token'] = {
-    init: function() {
-        this.jsonInit({
-            "message0": "token: %1",
-            "args0": [
-                {
-                    "type": "field_input",
-                    "name": "TEXT"
-                }
-            ],
-            "category": Blockly.Categories.motion,
-            "extensions": ["colours_discord"]
-        });
-    }
-};
 Blockly.JavaScript['discord_token'] = function(block) {
     return ["const token = '" + block.getFieldValue('TEXT') + "';\n", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['discord_reply'] = function(block) {
+    var text = Blockly.JavaScript.valueToCode(block, 'TEXT', Blockly.JavaScript.ORDER_NONE) || "";
+    var surroundOn = getSurroundOn(block);
+    if (surroundOn === null) return "";
+    if (!surroundOn.variables)  return "";
+    if (surroundOn.variables.split(", ").includes("message")) return "message.reply(" + text + ");\n";
+    return "";
+};
+Blockly.JavaScript['discord_send'] = function(block) {
+    var text = Blockly.JavaScript.valueToCode(block, 'TEXT', Blockly.JavaScript.ORDER_NONE) || "";
+    var surroundOn = getSurroundOn(block);
+    if (surroundOn === null) return "";
+    if (!surroundOn.variables)  return "";
+    if (surroundOn.variables.split(", ").includes("message")) return "message.channel.send(" + text + ");\n";
+    if (surroundOn.variables.split(", ").includes("channel")) return "channel.send(" + text + ");\n";
+    return "";
+};
+Blockly.JavaScript['discord_editmessage'] = function(block) {
+    var text = Blockly.JavaScript.valueToCode(block, 'TEXT', Blockly.JavaScript.ORDER_NONE) || "";
+    var surroundOn = getSurroundOn(block);
+    if (surroundOn === null) return "";
+    if (!surroundOn.variables)  return "";
+    if (surroundOn.variables.split(", ").includes("message")) return "message.edit(" + text + ");\n";
+    return "";
+};
+Blockly.JavaScript['discord_deletemessage'] = function(block) {
+    var surroundOn = getSurroundOn(block);
+    if (surroundOn === null) return "";
+    if (!surroundOn.variables)  return "";
+    if (surroundOn.variables.split(", ").includes("message")) return "message.delete();\n";
+    return "";
+};
+Blockly.JavaScript['discord_reaction'] = function(block) {
+    return [block.getFieldValue('REACTION'), Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['discord_react'] = function(block) {
+    var reaction = Blockly.JavaScript.valueToCode(block, 'REACTION', Blockly.JavaScript.ORDER_NONE) || "";
+    var surroundOn = getSurroundOn(block);
+    if (surroundOn === null) return "";
+    if (!surroundOn.variables)  return "";
+    if (surroundOn.variables.split(", ").includes("message")) return "message.react(" + reaction + ");\n";
+    return "";
 };
 Blockly.JavaScript['event_on_menu'] = function(block) {
     return [block.getFieldValue('ACTION'), Blockly.JavaScript.ORDER_NONE];
@@ -153,7 +181,7 @@ Blockly.JavaScript['event_on_variables'] = function (block) {
     }else {
         return [block.getFieldValue("VARIABLE"), Blockly.JavaScript.ORDER_NONE];
     }
-}
+};
 function getSurroundOn(block) {
     do {
         if (block.type === 'event_on') {
@@ -163,43 +191,6 @@ function getSurroundOn(block) {
     } while (block);
     return null;
 }
-// Blockly.JavaScript['controls_flow_statements'] = function(block) {
-//   // Flow statements: continue, break.
-//   var xfix = '';
-//   if (Blockly.JavaScript.STATEMENT_PREFIX) {
-//     // Automatic prefix insertion is switched off for this block.  Add manually.
-//     xfix += Blockly.JavaScript.injectId(Blockly.JavaScript.STATEMENT_PREFIX,
-//         block);
-//   }
-//   if (Blockly.JavaScript.STATEMENT_SUFFIX) {
-//     // Inject any statement suffix here since the regular one at the end
-//     // will not get executed if the break/continue is triggered.
-//     xfix += Blockly.JavaScript.injectId(Blockly.JavaScript.STATEMENT_SUFFIX,
-//         block);
-//   }
-//   if (Blockly.JavaScript.STATEMENT_PREFIX) {
-//     var loop = Blockly.Constants.Loops
-//         .CONTROL_FLOW_IN_LOOP_CHECK_MIXIN.getSurroundLoop(block);
-//     if (loop && !loop.suppressPrefixSuffix) {
-//       // Inject loop's statement prefix here since the regular one at the end
-//       // of the loop will not get executed if 'continue' is triggered.
-//       // In the case of 'break', a prefix is needed due to the loop's suffix.
-//       xfix += Blockly.JavaScript.injectId(Blockly.JavaScript.STATEMENT_PREFIX,
-//           loop);
-//     }
-//   }
-//   switch (block.getFieldValue('FLOW')) {
-//     case 'BREAK':
-//       return xfix + 'break;\n';
-//     case 'CONTINUE':
-//       return xfix + 'continue;\n';
-//   }
-//   throw Error('Unknown flow statement.');
-// };
-Blockly.JavaScript['sensing_log'] = function(block) {
-    var text = Blockly.JavaScript.valueToCode(block, 'TEXT', Blockly.JavaScript.ORDER_NONE) || "";
-    return "console.log(" + text + ");\n";
-};
 Blockly.JavaScript['event_on_message_content'] = function(block) {
     var surroundOn = getSurroundOn(block);
     if (surroundOn === null) return "";
@@ -207,13 +198,9 @@ Blockly.JavaScript['event_on_message_content'] = function(block) {
     if (!"message" in surroundOn.variables.split(", "))  return "";
     return ["message.content", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['discord_reply'] = function(block) {
+Blockly.JavaScript['sensing_log'] = function(block) {
     var text = Blockly.JavaScript.valueToCode(block, 'TEXT', Blockly.JavaScript.ORDER_NONE) || "";
-    var surroundOn = getSurroundOn(block);
-    if (surroundOn === null) return "";
-    if (!surroundOn.variables)  return "";
-    if (!"message" in surroundOn.variables.split(", "))  return "";
-    return "message.reply(" + text + ");\n";
+    return "console.log(" + text + ");\n";
 };
 Blockly.JavaScript['operator_startswith'] = function(block) {
     var string1 = Blockly.JavaScript.valueToCode(block, 'STRING1') || "";
