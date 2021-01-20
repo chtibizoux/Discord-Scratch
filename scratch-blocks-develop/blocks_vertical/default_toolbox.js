@@ -97,15 +97,25 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
         '</shadow>' +
       '</value>' +
     '</block>' +
-    '<block type="sensing_timer" id="sensing_timer"></block>' +
-    '<block type="sensing_resettimer" id="sensing_resettimer"></block>' +
-    '<block type="sensing_of" id="sensing_of">' +
-      '<value name="OBJECT">' +
-        '<shadow type="sensing_of_object_menu"></shadow>' +
+    '<block type="sensing_resetdatetonow" id="sensing_resetdatetonow"></block>' +
+    '<block type="sensing_resetdate" id="sensing_resetdate">' +
+      '<value name="VALUE">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">December 17, 1995 03:24:00</field>' +
+        '</shadow>' +
       '</value>' +
     '</block>' +
+    '<block type="sensing_setdate" id="sensing_setdate">' +
+      '<value name="VALUE">' +
+        '<shadow type="math_number">' +
+          '<field name="NUM"></field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="sensing_getdate" id="sensing_getdate"></block>' +
     '<block type="sensing_current" id="sensing_current"></block>' +
-    '<block type="sensing_dayssince2000" id="sensing_dayssince2000"></block>' +
+    '<block type="sensing_username" id="sensing_username"></block>' +
+    '<block type="sensing_userid" id="sensing_userid"></block>' +
   '</category>' +
   '<category name="%{BKY_CATEGORY_OPERATORS}" id="operators" colour="#40BF4A" secondaryColour="#389438">' +
     '<block type="operator_add" id="operator_add">' +

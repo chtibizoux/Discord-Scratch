@@ -207,9 +207,6 @@ Blockly.JavaScript['operator_startswith'] = function(block) {
     var string2 = Blockly.JavaScript.valueToCode(block, 'STRING2') || "";
     return [string1 + ".startsWith(" + string2 + ")", Blockly.JavaScript.ORDER_EQUALITY];
 };
-Blockly.JavaScript['math_angle'] = function(block) {
-    return [block.getFieldValue('NUM'), Blockly.JavaScript.ORDER_NONE];
-};
 Blockly.JavaScript['control_wait'] = function(block) {
     var argument0 = Blockly.JavaScript.valueToCode(block, 'DURATION', Blockly.JavaScript.ORDER_FUNCTION_CALL) || 0;
     var argument1 = Blockly.JavaScript.statementToCode(block, 'DO', Blockly.JavaScript.ORDER_FUNCTION_CALL) || '';
@@ -235,6 +232,121 @@ Blockly.JavaScript['control_wait_until'] = function(block) {
 Blockly.JavaScript['event_whenflagclicked'] = function(block) {
     return "// Flag";
 };
+Blockly.JavaScript['sensing_resetdatetonow'] = function(block) {
+    var date = Blockly.JavaScript.provideFunction_('date',['var ' + Blockly.JavaScript.FUNCTION_NAME_PLACEHOLDER_ + ' = new Date()']);
+    var code = date + " = new Date();\n";
+    return code;
+};
+Blockly.JavaScript['sensing_resetdate'] = function(block) {
+    var argument0 = Blockly.JavaScript.valueToCode(block, 'VALUE', Blockly.JavaScript.ORDER_NONE) || "";
+    var date = Blockly.JavaScript.provideFunction_('date',['var ' + Blockly.JavaScript.FUNCTION_NAME_PLACEHOLDER_ + ' = new Date()']);
+    var code = date + " = new Date(" + argument0 + ");\n";
+    return code;
+};
+Blockly.JavaScript['sensing_setdate'] = function(block) {
+    var argument0 = Blockly.JavaScript.valueToCode(block, 'VALUE', Blockly.JavaScript.ORDER_NONE) || "0";
+    var date = Blockly.JavaScript.provideFunction_('date',['var ' + Blockly.JavaScript.FUNCTION_NAME_PLACEHOLDER_ + ' = new Date()']);
+    switch (block.getFieldValue('CURRENTMENU')) {
+        case 'YEAR':
+            var code = date + ".setFullYear(" + argument0 + ");\n";
+            break;
+        case 'MONTH':
+            var code = date + ".setMonth(" + argument0 + ");\n";
+            break;
+        case 'DATE':
+            var code = date + ".setDate(" + argument0 + ");\n";
+            break;
+        case 'HOUR':
+            var code = date + ".setHours(" + argument0 + ");\n";
+            break;
+        case 'MINUTE':
+            var code = date + ".setMinutes(" + argument0 + ");\n";
+            break;
+        case 'SECOND':
+            var code = date + ".setSeconds(" + argument0 + ");\n";
+            break;
+        case 'MILLISECOND':
+            var code = date + ".setMilliseconds(" + argument0 + ");\n";
+            break;
+    }
+    return code;
+};
+Blockly.JavaScript['sensing_getdate'] = function(block) {
+    var argument0 = Blockly.JavaScript.valueToCode(block, 'VALUE', Blockly.JavaScript.ORDER_NONE) || "0";
+    var date = Blockly.JavaScript.provideFunction_('date',['var ' + Blockly.JavaScript.FUNCTION_NAME_PLACEHOLDER_ + ' = new Date()']);
+    switch (block.getFieldValue('CURRENTMENU')) {
+        case 'YEAR':
+            var code = date + ".getFullYear(" + argument0 + ")";
+            break;
+        case 'MONTH':
+            var code = date + ".getMonth(" + argument0 + ")";
+            break;
+        case 'DATE':
+            var code = date + ".getDate(" + argument0 + ")";
+            break;
+        case 'HOUR':
+            var code = date + ".getHours(" + argument0 + ")";
+            break;
+        case 'MINUTE':
+            var code = date + ".getMinutes(" + argument0 + ")";
+            break;
+        case 'SECOND':
+            var code = date + ".getSeconds(" + argument0 + ")";
+            break;
+        case 'MILLISECOND':
+            var code = date + ".getMilliseconds(" + argument0 + ")";
+            break;
+        case 'DAYOFWEEK':
+            var code = date + ".getDay(" + argument0 + ")";
+            break;
+        case 'MILLISECONDSINCE1970':
+            var code = date + ".getTime(" + argument0 + ")";
+            break;
+    }
+    return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['sensing_current'] = function(block) {
+    var argument0 = Blockly.JavaScript.valueToCode(block, 'VALUE', Blockly.JavaScript.ORDER_NONE) || "0";
+    var date = Blockly.JavaScript.provideFunction_('date',['var ' + Blockly.JavaScript.FUNCTION_NAME_PLACEHOLDER_ + ' = new Date()']);
+    switch (block.getFieldValue('CURRENTMENU')) {
+        case 'YEAR':
+            var code = "new Date().getFullYear(" + argument0 + ")";
+            break;
+        case 'MONTH':
+            var code = "new Date().getMonth(" + argument0 + ")";
+            break;
+        case 'DATE':
+            var code = "new Date().getDate(" + argument0 + ")";
+            break;
+        case 'HOUR':
+            var code = "new Date().getHours(" + argument0 + ")";
+            break;
+        case 'MINUTE':
+            var code = "new Date().getMinutes(" + argument0 + ")";
+            break;
+        case 'SECOND':
+            var code = "new Date().getSeconds(" + argument0 + ")";
+            break;
+        case 'MILLISECOND':
+            var code = "new Date().getMilliseconds(" + argument0 + ")";
+            break;
+        case 'DAYOFWEEK':
+            var code = "new Date().getDay(" + argument0 + ")";
+            break;
+        case 'MILLISECONDSINCE1970':
+            var code = "new Date().getTime(" + argument0 + ")";
+            break;
+    }
+    return [code, Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['sensing_userid'] = function(block) {
+    return ["bot.client.id", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['sensing_username'] = function(block) {
+    return ["bot.client.username", Blockly.JavaScript.ORDER_NONE];
+};
+
 // Blockly.JavaScript['when_anykeypress'] = function(block) {
 //     var variable_key = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('KEY'), Blockly.Variables.NAME_TYPE);
 //     var argument0 = Blockly.JavaScript.statementToCode(block, 'DO', Blockly.JavaScript.ORDER_FUNCTION_CALL) || '';
