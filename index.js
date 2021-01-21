@@ -146,15 +146,6 @@ io.on('connection', function (socket) {
             }
         }
     });
-    socket.on('commandExist', function(filename) {
-        if (socket.id in socketIDs) {
-            if (commands[filename]) {
-                socket.emit("commandExist", true, socket.id);
-            }else {
-                socket.emit("commandExist", false, socket.id);
-            }
-        }
-    });
     socket.on('cookie', function(hashedID) {
         for (var userID in users) {
             if (passwordHash.verify(userID, hashedID)) {
@@ -194,14 +185,14 @@ io.on('connection', function (socket) {
     socket.on('getProject', function (projectName) {
         if (socket.id in socketIDs) {
             if (projectName in users[socketIDs[socket.id]].projects) {
-                socket.emit("project", projectName, users[socketIDs[socket.id]].projects[projectName], socket.id);
+                socket.emit("project", projectName, users[socketIDs[socket.id]].projects[projectName], commands[users[socketIDs[socket.id]].projects[projectName].path] ? true : false, socket.id);
             }else {
                 var path = socketIDs[socket.id] + projectName.toLowerCase().split(" ").join("_").split(".").join("").split("/").join("");
                 users[socketIDs[socket.id]].projects[projectName] = {
                     xml: defaultXML,
                     path: path
                 };
-                socket.emit("project", projectName, users[socketIDs[socket.id]].projects[projectName], socket.id);
+                socket.emit("project", projectName, users[socketIDs[socket.id]].projects[projectName], false, socket.id);
                 fs.writeFileSync('./users.json', JSON.stringify(users));
             }
         }
@@ -217,7 +208,7 @@ io.on('connection', function (socket) {
                     xml: defaultXML,
                     path: path
                 };
-                socket.emit("project", projectName, users[socketIDs[socket.id]].projects[projectName], socket.id);
+                socket.emit("project", projectName, users[socketIDs[socket.id]].projects[projectName], false, socket.id);
                 fs.writeFileSync('./users.json', JSON.stringify(users));
             }
         }
