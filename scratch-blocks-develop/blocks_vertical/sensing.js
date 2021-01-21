@@ -28,10 +28,6 @@ goog.require('Blockly.constants');
 goog.require('Blockly.ScratchBlocks.VerticalExtensions');
 
 Blockly.Blocks['sensing_log'] = {
-  /**
-   * Block to Report if its touching a Object.
-   * @this Blockly.Block
-   */
   init: function() {
     this.jsonInit({
       "message0": "log %1",
@@ -47,11 +43,136 @@ Blockly.Blocks['sensing_log'] = {
   }
 };
 
+Blockly.Blocks["sensing_bot"] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "bot client",
+      "category": Blockly.Categories.sensing,
+      "extensions": ["colours_sensing", "output_string"]
+    });
+  }
+};
+
+Blockly.Blocks['sensing_getid'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "get id of %1",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "OBJECT"
+        }
+      ],
+      "category": Blockly.Categories.sensing,
+      "extensions": ["colours_sensing", "output_string"]
+    });
+  }
+};
+
+Blockly.Blocks['sensing_systemchannel'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "system channel id of %1",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "GUILD"
+        }
+      ],
+      "category": Blockly.Categories.sensing,
+      "extensions": ["colours_sensing", "output_string"]
+    });
+  }
+};
+
+Blockly.Blocks['sensing_message_content'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "content of %1",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "MESSAGE"
+        }
+      ],
+      "category": Blockly.Categories.sensing,
+      "extensions": ["colours_sensing", "output_string"]
+    });
+  }
+};
+
+Blockly.Blocks['sensing_getobject'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "%1 of %2",
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "OBJECTMENU",
+          "options": [
+            ["channel", 'channel'],
+            ["guild", 'guild']
+          ]
+        },
+        {
+          "type": "input_value",
+          "name": "OBJECT"
+        }
+      ],
+      "category": Blockly.Categories.sensing,
+      "extensions": ["colours_sensing", "output_string"]
+    });
+  }
+};
+
+Blockly.Blocks['sensing_getwithid'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "fetch %1 with id %2 in %3",
+      "message1": "%1",
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "OBJECTMENU",
+          "options": [
+            ["message", 'MESSAGE'],
+            ["channel", 'CHANNEL'],
+            ["guild", 'GUILD'],
+            ["role", 'ROLE']
+          ]
+        },
+        {
+          "type": "input_value",
+          "name": "ID"
+        },
+        {
+          "type": "input_value",
+          "name": "OBJECT"
+        }
+      ],
+      "args1": [
+        {
+          "type": "input_statement",
+          "name": "DO"
+        }
+      ],
+      "category": Blockly.Categories.sensing,
+      "extensions": ["colours_sensing", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['sensing_getwithidobject'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "fetched object",
+      "category": Blockly.Categories.sensing,
+      "extensions": ["colours_sensing", "output_string"]
+    });
+  }
+};
+
 Blockly.Blocks['sensing_resetdatetonow'] = {
-  /**
-   * Block to Report the current option.
-   * @this Blockly.Block
-   */
   init: function() {
     this.jsonInit({
       "message0": "reset date to now",
@@ -62,10 +183,6 @@ Blockly.Blocks['sensing_resetdatetonow'] = {
 };
 
 Blockly.Blocks['sensing_resetdate'] = {
-  /**
-   * Block to Report the current option.
-   * @this Blockly.Block
-   */
   init: function() {
     this.jsonInit({
       "message0": "reset date to %1",
@@ -82,10 +199,6 @@ Blockly.Blocks['sensing_resetdate'] = {
 };
 
 Blockly.Blocks['sensing_setdate'] = {
-  /**
-   * Block to Report the current option.
-   * @this Blockly.Block
-   */
   init: function() {
     this.jsonInit({
       "message0": "set date %1 at %2",
@@ -115,10 +228,6 @@ Blockly.Blocks['sensing_setdate'] = {
 };
 
 Blockly.Blocks['sensing_getdate'] = {
-  /**
-   * Block to Report the current option.
-   * @this Blockly.Block
-   */
   init: function() {
     this.jsonInit({
       "message0": "date %1",
@@ -145,10 +254,6 @@ Blockly.Blocks['sensing_getdate'] = {
 };
 
 Blockly.Blocks['sensing_current'] = {
-  /**
-   * Block to Report the current option.
-   * @this Blockly.Block
-   */
   init: function() {
     this.jsonInit({
       "message0": Blockly.Msg.SENSING_CURRENT,
@@ -176,26 +281,16 @@ Blockly.Blocks['sensing_current'] = {
 };
 
 Blockly.Blocks['sensing_username'] = {
-  /**
-   * Block to report user's username
-   * @this Blockly.Block
-   */
   init: function() {
     this.jsonInit({
       "message0": Blockly.Msg.SENSING_USERNAME,
       "category": Blockly.Categories.sensing,
-      "extensions": ["colours_sensing", "output_number"]
+      "extensions": ["colours_sensing", "output_string"]
     });
   }
 };
 
 Blockly.Blocks['sensing_userid'] = {
-  /**
-   * Block to report user's ID. Does not actually do anything. This is an
-   * obsolete block that is implemented for compatibility with Scratch 2.0
-   * projects.
-   * @this Blockly.Block
-   */
   init: function() {
     this.jsonInit({
       "message0": Blockly.Msg.SENSING_USERID,

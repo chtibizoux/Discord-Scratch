@@ -37,7 +37,7 @@ Blockly.Blocks['discord_token'] = {
                   "name": "TEXT"
               }
           ],
-          "category": Blockly.Categories.motion,
+          "category": Blockly.Categories.sensing,
           "extensions": ["colours_discord"]
       });
   }
@@ -50,11 +50,15 @@ Blockly.Blocks['discord_reply'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "reply %1",
+      "message0": "reply %1 at %2",
       "args0": [
         {
           "type": "input_value",
           "name": "TEXT"
+        },
+        {
+          "type": "input_value",
+          "name": "OBJECT"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -70,11 +74,15 @@ Blockly.Blocks['discord_send'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "send %1",
+      "message0": "send %1 in %2",
       "args0": [
         {
           "type": "input_value",
           "name": "TEXT"
+        },
+        {
+          "type": "input_value",
+          "name": "OBJECT"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -90,11 +98,15 @@ Blockly.Blocks['discord_editmessage'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "edit with %1",
+      "message0": "edit %2 with %1",
       "args0": [
         {
           "type": "input_value",
           "name": "TEXT"
+        },
+        {
+          "type": "input_value",
+          "name": "OBJECT"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -110,7 +122,13 @@ Blockly.Blocks['discord_deletemessage'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "delete message",
+      "message0": "delete %1",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "OBJECT"
+        }
+      ],
       "category": Blockly.Categories.sensing,
       "extensions": ["colours_discord", "shape_statement"]
     });
@@ -147,11 +165,15 @@ Blockly.Blocks['discord_react'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "react with %1",
+      "message0": "react at %2 with %1",
       "args0": [
         {
           "type": "input_value",
           "name": "REACTION"
+        },
+        {
+          "type": "input_value",
+          "name": "OBJECT"
         }
       ],
       "category": Blockly.Categories.sensing,

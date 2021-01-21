@@ -36,12 +36,18 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
           '<field name="TEXT">Hello word !</field>' +
         '</shadow>' +
       '</value>' +
+      '<value name="OBJECT">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
     '</block>' +
     '<block type="discord_send" id="discord_send">' +
       '<value name="TEXT">' +
         '<shadow type="text">' +
           '<field name="TEXT">Hello word !</field>' +
         '</shadow>' +
+      '</value>' +
+      '<value name="OBJECT">' +
+        '<block type="event_variables"></block>' +
       '</value>' +
     '</block>' +
     '<block type="discord_editmessage" id="discord_editmessage">' +
@@ -50,11 +56,21 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
           '<field name="TEXT">Hello word !</field>' +
         '</shadow>' +
       '</value>' +
+      '<value name="OBJECT">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
     '</block>' +
-    '<block type="discord_deletemessage" id="discord_delete_message"></block>' +
+    '<block type="discord_deletemessage" id="discord_delete_message">' +
+      '<value name="OBJECT">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
     '<block type="discord_react" id="discord_react">' +
       '<value name="REACTION">' +
         '<shadow type="discord_reaction"></shadow>' +
+      '</value>' +
+      '<value name="OBJECT">' +
+        '<block type="event_variables"></block>' +
       '</value>' +
     '</block>' +
   '</category>' +
@@ -65,7 +81,7 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
         '</shadow>' +
       '</value>' +
     '</block>' +
-    '<block type="event_on_message_content" id="event_on_message_content"></block>' +
+    '<block type="event_variables" id="event_variables"></block>' +
     '<block type="event_whenflagclicked" id="event_whenflagclicked"></block>' +
   '</category>' +
   '<category name="%{BKY_CATEGORY_CONTROL}" id="control" colour="#FFAB19" secondaryColour="#CF8B17">' +
@@ -95,6 +111,38 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
         '<shadow type="text">' +
           '<field name="TEXT"></field>' +
         '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="sensing_bot" id="sensing_bot"></block>' +
+    '<block type="sensing_systemchannel" id="sensing_systemchannel">' +
+      '<value name="GUILD">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="sensing_message_content" id="sensing_message_content">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="sensing_getobject" id="sensing_message_content">' +
+      '<value name="OBJECT">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="sensing_getwithid" id="sensing_getwithid">' +
+      '<value name="ID">' +
+        '<shadow type="text">' +
+          '<field name="TEXT"></field>' +
+        '</shadow>' +
+      '</value>' +
+      '<value name="OBJECT">' +
+        '<block type="sensing_bot"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="sensing_getwithidobject" id="sensing_getwithidobject"></block>' +
+    '<block type="sensing_getid" id="sensing_getid">' +
+      '<value name="OBJECT">' +
+        '<block type="sensing_bot"></block>' +
       '</value>' +
     '</block>' +
     '<block type="sensing_resetdatetonow" id="sensing_resetdatetonow"></block>' +

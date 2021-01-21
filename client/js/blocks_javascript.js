@@ -12,46 +12,30 @@ Blockly.JavaScript['discord_token'] = function(block) {
 };
 Blockly.JavaScript['discord_reply'] = function(block) {
     var text = Blockly.JavaScript.valueToCode(block, 'TEXT', Blockly.JavaScript.ORDER_NONE) || "";
-    var surroundOn = getSurroundOn(block);
-    if (surroundOn === null) return "";
-    if (!surroundOn.variables)  return "";
-    if (surroundOn.variables.split(", ").includes("message")) return "message.reply(" + text + ");\n";
-    return "";
+    var object = Blockly.JavaScript.valueToCode(block, 'OBJECT', Blockly.JavaScript.ORDER_NONE) || "";
+    return object + ".reply(" + text + ");\n";
 };
 Blockly.JavaScript['discord_send'] = function(block) {
     var text = Blockly.JavaScript.valueToCode(block, 'TEXT', Blockly.JavaScript.ORDER_NONE) || "";
-    var surroundOn = getSurroundOn(block);
-    if (surroundOn === null) return "";
-    if (!surroundOn.variables)  return "";
-    if (surroundOn.variables.split(", ").includes("message")) return "message.channel.send(" + text + ");\n";
-    if (surroundOn.variables.split(", ").includes("channel")) return "channel.send(" + text + ");\n";
-    return "";
+    var object = Blockly.JavaScript.valueToCode(block, 'OBJECT', Blockly.JavaScript.ORDER_NONE) || "";
+    return object + ".send(" + text + ");\n";
 };
 Blockly.JavaScript['discord_editmessage'] = function(block) {
     var text = Blockly.JavaScript.valueToCode(block, 'TEXT', Blockly.JavaScript.ORDER_NONE) || "";
-    var surroundOn = getSurroundOn(block);
-    if (surroundOn === null) return "";
-    if (!surroundOn.variables)  return "";
-    if (surroundOn.variables.split(", ").includes("message")) return "message.edit(" + text + ");\n";
-    return "";
+    var object = Blockly.JavaScript.valueToCode(block, 'OBJECT', Blockly.JavaScript.ORDER_NONE) || "";
+    return object + ".edit(" + text + ");\n";
 };
 Blockly.JavaScript['discord_deletemessage'] = function(block) {
-    var surroundOn = getSurroundOn(block);
-    if (surroundOn === null) return "";
-    if (!surroundOn.variables)  return "";
-    if (surroundOn.variables.split(", ").includes("message")) return "message.delete();\n";
-    return "";
+    var object = Blockly.JavaScript.valueToCode(block, 'OBJECT', Blockly.JavaScript.ORDER_NONE) || "";
+    return object + ".delete();\n";
 };
 Blockly.JavaScript['discord_reaction'] = function(block) {
     return [block.getFieldValue('REACTION'), Blockly.JavaScript.ORDER_NONE];
 };
 Blockly.JavaScript['discord_react'] = function(block) {
     var reaction = Blockly.JavaScript.valueToCode(block, 'REACTION', Blockly.JavaScript.ORDER_NONE) || "";
-    var surroundOn = getSurroundOn(block);
-    if (surroundOn === null) return "";
-    if (!surroundOn.variables)  return "";
-    if (surroundOn.variables.split(", ").includes("message")) return "message.react(" + reaction + ");\n";
-    return "";
+    var object = Blockly.JavaScript.valueToCode(block, 'OBJECT', Blockly.JavaScript.ORDER_NONE) || "";
+    return object + ".react(" + reaction + ");\n";
 };
 Blockly.JavaScript['event_on_menu'] = function(block) {
     return [block.getFieldValue('ACTION'), Blockly.JavaScript.ORDER_NONE];
@@ -174,7 +158,7 @@ Blockly.JavaScript['event_on'] = function(block) {
     block.variables = variables;
     return ["bot.on('" + action + "', (" + variables + ") => {\n" + d + "});\n", Blockly.JavaScript.ORDER_FUNCTION_CALL];
 };
-Blockly.JavaScript['event_on_variables'] = function (block) {
+Blockly.JavaScript['event_variables'] = function (block) {
     var surroundOn = getSurroundOn(block);
     if (surroundOn === null) {
         return "";
@@ -185,23 +169,12 @@ Blockly.JavaScript['event_on_variables'] = function (block) {
 function getSurroundOn(block) {
     do {
         if (block.type === 'event_on') {
-              return block;
+            return block;
         }
         block = block.getSurroundParent();
     } while (block);
     return null;
 }
-Blockly.JavaScript['event_on_message_content'] = function(block) {
-    var surroundOn = getSurroundOn(block);
-    if (surroundOn === null) return "";
-    if (!surroundOn.variables)  return "";
-    if (!"message" in surroundOn.variables.split(", "))  return "";
-    return ["message.content", Blockly.JavaScript.ORDER_NONE];
-};
-Blockly.JavaScript['sensing_log'] = function(block) {
-    var text = Blockly.JavaScript.valueToCode(block, 'TEXT', Blockly.JavaScript.ORDER_NONE) || "";
-    return "console.log(" + text + ");\n";
-};
 Blockly.JavaScript['operator_startswith'] = function(block) {
     var string1 = Blockly.JavaScript.valueToCode(block, 'STRING1') || "";
     var string2 = Blockly.JavaScript.valueToCode(block, 'STRING2') || "";
@@ -231,6 +204,18 @@ Blockly.JavaScript['control_wait_until'] = function(block) {
 };
 Blockly.JavaScript['event_whenflagclicked'] = function(block) {
     return "// Flag";
+};
+Blockly.JavaScript['sensing_log'] = function(block) {
+    var text = Blockly.JavaScript.valueToCode(block, 'TEXT', Blockly.JavaScript.ORDER_NONE) || "";
+    return "console.log(" + text + ");\n";
+};
+Blockly.JavaScript['sensing_message_content'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + ".content", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['sensing_systemchannel'] = function(block) {
+    var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [guild + ".systemChannelID", Blockly.JavaScript.ORDER_NONE];
 };
 Blockly.JavaScript['sensing_resetdatetonow'] = function(block) {
     var date = Blockly.JavaScript.provideFunction_('date',['var ' + Blockly.JavaScript.FUNCTION_NAME_PLACEHOLDER_ + ' = new Date()']);
@@ -276,75 +261,108 @@ Blockly.JavaScript['sensing_getdate'] = function(block) {
     var date = Blockly.JavaScript.provideFunction_('date',['var ' + Blockly.JavaScript.FUNCTION_NAME_PLACEHOLDER_ + ' = new Date()']);
     switch (block.getFieldValue('CURRENTMENU')) {
         case 'YEAR':
-            var code = date + ".getFullYear(" + argument0 + ")";
+            var code = date + ".getFullYear()";
             break;
         case 'MONTH':
-            var code = date + ".getMonth(" + argument0 + ")";
+            var code = date + ".getMonth()";
             break;
         case 'DATE':
-            var code = date + ".getDate(" + argument0 + ")";
+            var code = date + ".getDate()";
             break;
         case 'HOUR':
-            var code = date + ".getHours(" + argument0 + ")";
+            var code = date + ".getHours()";
             break;
         case 'MINUTE':
-            var code = date + ".getMinutes(" + argument0 + ")";
+            var code = date + ".getMinutes()";
             break;
         case 'SECOND':
-            var code = date + ".getSeconds(" + argument0 + ")";
+            var code = date + ".getSeconds()";
             break;
         case 'MILLISECOND':
-            var code = date + ".getMilliseconds(" + argument0 + ")";
+            var code = date + ".getMilliseconds()";
             break;
         case 'DAYOFWEEK':
-            var code = date + ".getDay(" + argument0 + ")";
+            var code = date + ".getDay()";
             break;
         case 'MILLISECONDSINCE1970':
-            var code = date + ".getTime(" + argument0 + ")";
+            var code = date + ".getTime()";
             break;
     }
     return [code, Blockly.JavaScript.ORDER_NONE];
 };
-
 Blockly.JavaScript['sensing_current'] = function(block) {
-    var argument0 = Blockly.JavaScript.valueToCode(block, 'VALUE', Blockly.JavaScript.ORDER_NONE) || "0";
-    var date = Blockly.JavaScript.provideFunction_('date',['var ' + Blockly.JavaScript.FUNCTION_NAME_PLACEHOLDER_ + ' = new Date()']);
     switch (block.getFieldValue('CURRENTMENU')) {
         case 'YEAR':
-            var code = "new Date().getFullYear(" + argument0 + ")";
+            var code = "new Date().getFullYear()";
             break;
         case 'MONTH':
-            var code = "new Date().getMonth(" + argument0 + ")";
+            var code = "new Date().getMonth()";
             break;
         case 'DATE':
-            var code = "new Date().getDate(" + argument0 + ")";
+            var code = "new Date().getDate()";
             break;
         case 'HOUR':
-            var code = "new Date().getHours(" + argument0 + ")";
+            var code = "new Date().getHours()";
             break;
         case 'MINUTE':
-            var code = "new Date().getMinutes(" + argument0 + ")";
+            var code = "new Date().getMinutes()";
             break;
         case 'SECOND':
-            var code = "new Date().getSeconds(" + argument0 + ")";
+            var code = "new Date().getSeconds()";
             break;
         case 'MILLISECOND':
-            var code = "new Date().getMilliseconds(" + argument0 + ")";
+            var code = "new Date().getMilliseconds()";
             break;
         case 'DAYOFWEEK':
-            var code = "new Date().getDay(" + argument0 + ")";
+            var code = "new Date().getDay()";
             break;
         case 'MILLISECONDSINCE1970':
-            var code = "new Date().getTime(" + argument0 + ")";
+            var code = "new Date().getTime()";
             break;
     }
     return [code, Blockly.JavaScript.ORDER_NONE];
 };
 Blockly.JavaScript['sensing_userid'] = function(block) {
-    return ["bot.client.id", Blockly.JavaScript.ORDER_NONE];
+    return ["bot.user.id", Blockly.JavaScript.ORDER_NONE];
 };
 Blockly.JavaScript['sensing_username'] = function(block) {
-    return ["bot.client.username", Blockly.JavaScript.ORDER_NONE];
+    return ["bot.user.username", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['sensing_bot'] = function(block) {
+    return ["bot", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['sensing_getid'] = function(block) {
+    var argument0 = Blockly.JavaScript.valueToCode(block, 'OBJECT', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [argument0 + ".id", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['sensing_getobject'] = function(block) {
+    var argument0 = Blockly.JavaScript.valueToCode(block, 'OBJECT', Blockly.JavaScript.ORDER_NONE) || "null";
+    var argument1 = Blockly.JavaScript.valueToCode(block, 'OBJECTMENU', Blockly.JavaScript.ORDER_NONE);
+    return [argument0 + "." + argument1, Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['sensing_getwithid'] = function(block) {
+    var argument0 = Blockly.JavaScript.valueToCode(block, 'ID', Blockly.JavaScript.ORDER_NONE) || "''";
+    var argument1 = Blockly.JavaScript.valueToCode(block, 'OBJECT', Blockly.JavaScript.ORDER_NONE) || "null";
+    var argument2 = Blockly.JavaScript.statementToCode(block, 'DO') || "";
+    var code = "";
+    switch (block.getFieldValue('OBJECTMENU')) {
+        case "MESSAGE":
+            code = argument1 + ".messages.fetch(" + argument0 + ").then(function(object) {\n" + argument2 + "});\n";
+            break;
+        case "CHANNEL":
+            code = argument1 + ".channels.fetch(" + argument0 + ").then(function(object) {\n" + argument2 + "});\n";
+            break;
+        case "GUILD":
+            code = argument1 + ".guilds.fetch(" + argument0 + ").then(function(object) {\n" + argument2 + "});\n";
+            break;
+        case "ROLE":
+            code = argument1 + ".roles.fetch(" + argument0 + ").then(function(object) {\n" + argument2 + "});\n";
+            break;
+    }
+    return code;
+};
+Blockly.JavaScript['sensing_getwithidobject'] = function(block) {
+    return ["object", Blockly.JavaScript.ORDER_NONE];
 };
 
 // Blockly.JavaScript['when_anykeypress'] = function(block) {

@@ -113,173 +113,160 @@ Blockly.Blocks['event_on'] = {
     }
 };
 
-Blockly.Blocks['event_on_message_content'] = {
+Blockly.Blocks['event_variables'] = {
   /**
    * @this Blockly.Block
    */
   variables: [["message", "message"]],
   init: function() {
     this.jsonInit({
-      "message0": "message content",
+      "message0": "on output variable %1",
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "VARIABLE",
+          "options": this.generateOptions
+        }
+      ],
       "category": Blockly.Categories.event,
-      "checkboxInFlyout": true,
-      "extensions": ["colours_event", "output_string"]
+      "extensions": ["colours_event", "output_string", "event_on_variables_options"]
     });
+    // this.appendDummyInput()
+    //   .appendField('on output variable')
+    //   .appendField(new Blockly.FieldDropdown(this.generateOptions, 'VARIABLE'));
+    // this.setOutput(true);
+    // this.setColour(Blockly.Colours.event.primary);
+  },
+  generateOptions: function() {
+    if (this.sourceBlock_) {
+      return this.sourceBlock_.variables;
+    }else{
+      return [["message", "message"]];
+    }
   }
 };
-
-// Blockly.Blocks['event_on_variables'] = {
-//   /**
-//    * @this Blockly.Block
-//    */
-//   variables: [["message", "message"]],
-//   init: function() {
-//     this.jsonInit({
-//       "message0": "on output variables %1",
-//       "args0": [
-//         {
-//           "type": "field_dropdown",
-//           "name": "VARIABLE",
-//           "options": this.variables
-//         }
-//       ],
-//       "category": Blockly.Categories.event,
-//       "checkboxInFlyout": true,
-//       "extensions": ["colours_event", "output_string", "event_on_variables_options"]
-//     });
-//   }
-// };
-// Blockly.Blocks.event.EVENT_ON_VARIABLES_OPTIONS = {
-//   onchange: function(e) {
-//     var surroundOn = getSurroundOn(this);
-//     var variables = [];
-//     if (surroundOn !== null) {
-//         var action = Blockly.JavaScript.valueToCode(surroundOn, 'ACTION', Blockly.JavaScript.ORDER_NONE) || "";
-//         switch (action) {
-//             case "channelCreate":
-//             case "channelDelete":
-//             case "webhookUpdate":
-//                 variables = [["channel", "channel"]];
-//                 break;
-//             case "channelPinsUpdate":
-//                 variables = [["channel", "channel"], ["time", "time"]];
-//                 break;
-//             case "channelUpdate":
-//                 variables = [["oldChannel", "oldChannel"], ["newChannel", "newChannel"]];
-//                 break;
-//             case "warn":
-//             case "debug":
-//                 variables = [["info", "info"]];
-//                 break;
-//             case "emojiCreate":
-//             case "emojiDelete":
-//                 variables = [["emoji", "emoji"]];
-//                 break;
-//             case "emojiUpdate":
-//                 variables = [["oldEmoji", "oldEmoji"], ["newEmoji", "newEmoji"]];
-//                 break;
-//             case "error":
-//                 variables = [["error", "error"]];
-//                 break;
-//             case "guildBanAdd":
-//             case "guildBanRemove":
-//                 variables = [["guild", "guild"], ["user", "user"]];
-//                 break;
-//             case "guildCreate":
-//             case "guildDelete":
-//             case "guildUnavailable":
-//             case "guildIntegrationsUpdate":
-//                 variables = [["guild", "guild"]];
-//                 break;
-//             case "guildMemberAdd":
-//             case "guildMemberAvailable":
-//             case "guildMemberRemove":
-//                 variables = [["member", "member"]];
-//                 break;
-//             case "guildMembersChunk":
-//                 variables = [["members", "members"], ["guild", "guild"], ["chunk", "chunk"], ["index", "index"], ["count", "count"], ["nonce", "nonce"]];
-//                 break;
-//             case "guildMemberSpeaking":
-//                 variables = [["member", "member"], ["speaking", "speaking"]];
-//                 break;
-//             case "guildMemberUpdate":
-//                 variables = [["oldMember", "oldMember"], ["newMember", "newMember"]];
-//                 break;
-//             case "guildUpdate":
-//                 variables = [["oldGuild", "oldGuild"], ["newGuild", "newGuild"], ["invalidated", "invalidated"]];
-//                 break;
-//             case "inviteCreate":
-//             case "inviteDelete":
-//                 variables = [["invite", "invite"]];
-//                 break;
-//             case "message":
-//             case "messageDelete":
-//             case "messageReactionRemoveAll":
-//                 variables = [["message", "message"]];
-//                 break;
-//             case "messageDeleteBulk":
-//                 variables = [["messages", "messages"]];
-//                 break;
-//             case "messageReactionAdd":
-//             case "messageReactionRemove":
-//                 variables = [["messageReaction", "messageReaction"]];
-//                 break;
-//             case "messageReactionRemoveEmoji":
-//                 variabless = [["reaction", "reaction"]];
-//                 break;
-//             case "messageUpdate":
-//             case "presenceUpdate":
-//                 variables = [["oldPresence", "oldPresence"], ["newPresence", "newPresence"]];
-//                 break;
-//             case "rateLimit":
-//                 variables = [["rateLimitInfo", "rateLimitInfo"], ["timeout", "timeout"], ["limit", "limit"], ["method", "method"], ["path", "path"], ["route", "route"]];
-//                 break;
-//             case "roleCreate":
-//             case "roleDelete":
-//                 variables = [["role", "role"]];
-//                 break;
-//             case "roleUpdate":
-//                 variables = [["oldRole", "oldRole"], ["newRole", "newRole"]];
-//                 break;
-//             case "shardDisconnect":
-//                 variables = [["event", "event"], ["id", "id"]];
-//                 break;
-//             case "shardError":
-//                 variables = [["error", "error"], ["shardID", "shardID"]];
-//                 break;
-//             case "shardReady":
-//                 variables = [["id", "id"], ["unavailableGuilds", "unavailableGuilds"]];
-//                 break;
-//             case "shardReconnecting":
-//                 variables = [["id", "id"]];
-//                 break;
-//             case "shardResume":
-//                 variables = [["id", "id"], ["replayedEvents", "replayedEvents"]];
-//                 break;
-//             case "typingStart":
-//                 variables = [["channel", "channel"], ["user", "user"]];
-//                 break;
-//             case "userUpdate":
-//                 variables = [["oldUser", "oldUser"], ["newUser", "newUser"]];
-//                 break;
-//             case "voiceStateUpdate":
-//                 variables = [["oldState", "oldState"], ["newState", "newState"]];
-//                 break;
-//         }
-//     }
-//     console.log(variables);
-//     this.variables = variables;
-//     // this.setWarningText(enabled ? null :
-//     //     Blockly.Msg['CONTROLS_FLOW_STATEMENTS_WARNING']);
-//     // if (!this.isInFlyout) {
-//     //   var group = Blockly.Events.getGroup();
-//     //   Blockly.Events.setGroup(e.group);
-//     //   this.setEnabled(enabled);
-//     //   Blockly.Events.setGroup(group);
-//     // }
-//   }
-// };
-// Blockly.Extensions.registerMixin('event_on_variables_options', Blockly.Blocks.event.EVENT_ON_VARIABLES_OPTIONS);
+Blockly.Blocks.event.EVENT_ON_VARIABLES_OPTIONS = {
+  onchange: function(e) {
+    var surroundOn = getSurroundOn(this);
+    var variables = [];
+    if (surroundOn !== null) {
+        var action = Blockly.JavaScript.valueToCode(surroundOn, 'ACTION', Blockly.JavaScript.ORDER_NONE) || "";
+        switch (action) {
+            case "channelCreate":
+            case "channelDelete":
+            case "webhookUpdate":
+                variables = [["channel", "channel"]];
+                break;
+            case "channelPinsUpdate":
+                variables = [["channel", "channel"], ["time", "time"]];
+                break;
+            case "channelUpdate":
+                variables = [["oldChannel", "oldChannel"], ["newChannel", "newChannel"]];
+                break;
+            case "warn":
+            case "debug":
+                variables = [["info", "info"]];
+                break;
+            case "emojiCreate":
+            case "emojiDelete":
+                variables = [["emoji", "emoji"]];
+                break;
+            case "emojiUpdate":
+                variables = [["oldEmoji", "oldEmoji"], ["newEmoji", "newEmoji"]];
+                break;
+            case "error":
+                variables = [["error", "error"]];
+                break;
+            case "guildBanAdd":
+            case "guildBanRemove":
+                variables = [["guild", "guild"], ["user", "user"]];
+                break;
+            case "guildCreate":
+            case "guildDelete":
+            case "guildUnavailable":
+            case "guildIntegrationsUpdate":
+                variables = [["guild", "guild"]];
+                break;
+            case "guildMemberAdd":
+            case "guildMemberAvailable":
+            case "guildMemberRemove":
+                variables = [["member", "member"]];
+                break;
+            case "guildMembersChunk":
+                variables = [["members", "members"], ["guild", "guild"], ["chunk", "chunk"], ["index", "index"], ["count", "count"], ["nonce", "nonce"]];
+                break;
+            case "guildMemberSpeaking":
+                variables = [["member", "member"], ["speaking", "speaking"]];
+                break;
+            case "guildMemberUpdate":
+                variables = [["oldMember", "oldMember"], ["newMember", "newMember"]];
+                break;
+            case "guildUpdate":
+                variables = [["oldGuild", "oldGuild"], ["newGuild", "newGuild"], ["invalidated", "invalidated"]];
+                break;
+            case "inviteCreate":
+            case "inviteDelete":
+                variables = [["invite", "invite"]];
+                break;
+            case "message":
+            case "messageDelete":
+            case "messageReactionRemoveAll":
+                variables = [["message", "message"]];
+                break;
+            case "messageDeleteBulk":
+                variables = [["messages", "messages"]];
+                break;
+            case "messageReactionAdd":
+            case "messageReactionRemove":
+                variables = [["messageReaction", "messageReaction"]];
+                break;
+            case "messageReactionRemoveEmoji":
+                variabless = [["reaction", "reaction"]];
+                break;
+            case "messageUpdate":
+            case "presenceUpdate":
+                variables = [["oldPresence", "oldPresence"], ["newPresence", "newPresence"]];
+                break;
+            case "rateLimit":
+                variables = [["rateLimitInfo", "rateLimitInfo"], ["timeout", "timeout"], ["limit", "limit"], ["method", "method"], ["path", "path"], ["route", "route"]];
+                break;
+            case "roleCreate":
+            case "roleDelete":
+                variables = [["role", "role"]];
+                break;
+            case "roleUpdate":
+                variables = [["oldRole", "oldRole"], ["newRole", "newRole"]];
+                break;
+            case "shardDisconnect":
+                variables = [["event", "event"], ["id", "id"]];
+                break;
+            case "shardError":
+                variables = [["error", "error"], ["shardID", "shardID"]];
+                break;
+            case "shardReady":
+                variables = [["id", "id"], ["unavailableGuilds", "unavailableGuilds"]];
+                break;
+            case "shardReconnecting":
+                variables = [["id", "id"]];
+                break;
+            case "shardResume":
+                variables = [["id", "id"], ["replayedEvents", "replayedEvents"]];
+                break;
+            case "typingStart":
+                variables = [["channel", "channel"], ["user", "user"]];
+                break;
+            case "userUpdate":
+                variables = [["oldUser", "oldUser"], ["newUser", "newUser"]];
+                break;
+            case "voiceStateUpdate":
+                variables = [["oldState", "oldState"], ["newState", "newState"]];
+                break;
+        }
+    }
+    this.variables = variables;
+  }
+};
+Blockly.Extensions.registerMixin('event_on_variables_options', Blockly.Blocks.event.EVENT_ON_VARIABLES_OPTIONS);
 
 Blockly.Blocks['event_whenflagclicked'] = {
   /**
