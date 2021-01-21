@@ -165,6 +165,9 @@ a{
     text-align: center;
     margin: 20px;
 }
+.tutorial-div p{
+    font-size: 18px;
+}
 .tutorial-div li{
     font-size: 18px;
     margin: 20px;

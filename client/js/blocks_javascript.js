@@ -215,7 +215,7 @@ Blockly.JavaScript['sensing_message_content'] = function(block) {
 };
 Blockly.JavaScript['sensing_systemchannel'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
-    return [guild + ".systemChannelID", Blockly.JavaScript.ORDER_NONE];
+    return [guild + ".systemChannel", Blockly.JavaScript.ORDER_NONE];
 };
 Blockly.JavaScript['sensing_resetdatetonow'] = function(block) {
     var date = Blockly.JavaScript.provideFunction_('date',['var ' + Blockly.JavaScript.FUNCTION_NAME_PLACEHOLDER_ + ' = new Date()']);

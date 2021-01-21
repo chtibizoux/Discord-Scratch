@@ -1,7 +1,11 @@
+html{
+    height: 100%;
+}
 body{
     background-color: #cce1fc;
     padding: 0;
     margin: 0;
+    height: 100%;
 }
 *{
     font-family: Arial;
@@ -62,10 +66,76 @@ a{
     color: #2f6dc4;
     text-decoration: none;
 }
+.wiki{
+    padding-top: 54px;
+    min-height: calc(100% - 132.4px);
+    display: flex;
+}
+ul, #navigation-menu {
+    list-style-type: none;
+}
+#navigation-menu {
+    position: fixed;
+    display: block;
+    text-align: left;
+    top: 54px;
+    bottom: 78px;
+    left: 0;
+    width: 350px;
+    margin: 0;
+    padding: 20px;
+    overflow: auto;
+}
+#navigation-menu a{
+    color: black;
+}
+.caret {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+.caret-down::before {
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);  
+}
+.nested {
+    display: none;
+}
+.active {
+    display: block;
+}
 .content{
-    height: 800px;
+    background-color: white;
+    text-align: left;
+    width: 100%;
+    min-height: 100%;
+    margin-left: 390px;
+}
+.content div{
+    padding: 50px;
+}
+.content h1{
     text-align: center;
-    padding: 40px;
+    margin: 20px;
+}
+.content p{
+    font-size: 18px;
+}
+.content li{
+    font-size: 18px;
+    margin: 20px;
+}
+.content img{
+    max-width: 100%;
 }
 footer{
     color: white;

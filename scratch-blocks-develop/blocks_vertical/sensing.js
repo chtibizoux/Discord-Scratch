@@ -72,7 +72,7 @@ Blockly.Blocks['sensing_getid'] = {
 Blockly.Blocks['sensing_systemchannel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "system channel id of %1",
+      "message0": "system channel of %1",
       "args0": [
         {
           "type": "input_value",
