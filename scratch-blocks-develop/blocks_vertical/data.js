@@ -226,6 +226,98 @@ Blockly.Blocks['data_dictionaryin'] = {
   }
 };
 
+Blockly.Blocks['data_dictionaryparse'] = {
+  /**
+   * Block to add item to list.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "json parse %1 to %2",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "VALUE"
+        },
+        {
+          "type": "field_variable",
+          "name": "DICTIONARY",
+          "variableTypes": [Blockly.DICTIONARY_VARIABLE_TYPE]
+        }
+      ],
+      "category": Blockly.Categories.dataLists,
+      "extensions": ["colours_data_dictionary", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['data_dictionarystringify'] = {
+  /**
+   * Block to add item to list.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "json stringify %1",
+      "args0": [
+        {
+          "type": "field_variable",
+          "name": "DICTIONARY",
+          "variableTypes": [Blockly.DICTIONARY_VARIABLE_TYPE]
+        }
+      ],
+      "category": Blockly.Categories.dataLists,
+      "extensions": ["colours_data_dictionary", "output_string"]
+    });
+  }
+};
+
+Blockly.Blocks['data_listparse'] = {
+  /**
+   * Block to add item to list.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "json parse %1 to %2",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "VALUE"
+        },
+        {
+          "type": "field_variable",
+          "name": "LIST",
+          "variableTypes": [Blockly.LIST_VARIABLE_TYPE]
+        }
+      ],
+      "category": Blockly.Categories.dataLists,
+      "extensions": ["colours_data_lists", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['data_liststringify'] = {
+  /**
+   * Block to add item to list.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "json stringify %1",
+      "args0": [
+        {
+          "type": "field_variable",
+          "name": "LIST",
+          "variableTypes": [Blockly.LIST_VARIABLE_TYPE]
+        }
+      ],
+      "category": Blockly.Categories.dataLists,
+      "extensions": ["colours_data_lists", "output_string"]
+    });
+  }
+};
+
 Blockly.Blocks['data_listcontents'] = {
   /**
    * List reporter.

@@ -114,10 +114,7 @@ Blockly.Blocks['event_on'] = {
 };
 
 Blockly.Blocks['event_variables'] = {
-  /**
-   * @this Blockly.Block
-   */
-  variables: [["message", "message"]],
+  variables: [["null", "null"]],
   init: function() {
     this.jsonInit({
       "message0": "on output variable %1",
@@ -131,24 +128,19 @@ Blockly.Blocks['event_variables'] = {
       "category": Blockly.Categories.event,
       "extensions": ["colours_event", "output_string", "event_on_variables_options"]
     });
-    // this.appendDummyInput()
-    //   .appendField('on output variable')
-    //   .appendField(new Blockly.FieldDropdown(this.generateOptions, 'VARIABLE'));
-    // this.setOutput(true);
-    // this.setColour(Blockly.Colours.event.primary);
   },
   generateOptions: function() {
     if (this.sourceBlock_) {
       return this.sourceBlock_.variables;
     }else{
-      return [["message", "message"]];
+      return [["null", "null"]];
     }
   }
 };
 Blockly.Blocks.event.EVENT_ON_VARIABLES_OPTIONS = {
   onchange: function(e) {
     var surroundOn = getSurroundOn(this);
-    var variables = [];
+    var variables = [["null", "null"]];
     if (surroundOn !== null) {
         var action = Blockly.JavaScript.valueToCode(surroundOn, 'ACTION', Blockly.JavaScript.ORDER_NONE) || "";
         switch (action) {
@@ -263,6 +255,7 @@ Blockly.Blocks.event.EVENT_ON_VARIABLES_OPTIONS = {
                 break;
         }
     }
+    this.inputList[0].fieldRow[1].setValue(variables[0][0]);
     this.variables = variables;
   }
 };

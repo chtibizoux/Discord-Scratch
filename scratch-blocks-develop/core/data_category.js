@@ -84,8 +84,9 @@ Blockly.DataCategory = function(workspace) {
     Blockly.DataCategory.addLengthOfList(xmlList, firstVariable);
     Blockly.DataCategory.addListContainsItem(xmlList, firstVariable);
     Blockly.DataCategory.addSep(xmlList);
+    Blockly.DataCategory.addListParse(xmlList, firstVariable);
+    Blockly.DataCategory.addListStringify(xmlList, firstVariable);
   }
-
   // Now add dictionary variables to the flyout
   Blockly.DataCategory.addCreateButton(xmlList, workspace, 'DICTIONARY');
   variableModelList = workspace.getVariablesOfType(Blockly.DICTIONARY_VARIABLE_TYPE);
@@ -102,6 +103,9 @@ Blockly.DataCategory = function(workspace) {
     Blockly.DataCategory.addSep(xmlList);
     Blockly.DataCategory.addDictionaryGet(xmlList, firstVariable);
     Blockly.DataCategory.addDictionaryIn(xmlList, firstVariable);
+    Blockly.DataCategory.addSep(xmlList);
+    Blockly.DataCategory.addDictionaryParse(xmlList, firstVariable);
+    Blockly.DataCategory.addDictionaryStringify(xmlList, firstVariable);
   }
 
   return xmlList;
@@ -174,6 +178,18 @@ Blockly.DataCategory.addDictionaryGet = function(xmlList, variable) {
 };
 Blockly.DataCategory.addDictionaryIn = function(xmlList, variable) {
   Blockly.DataCategory.addBlock(xmlList, variable, 'data_dictionaryin', 'DICTIONARY', ['KEY', 'text', "key"]);
+};
+Blockly.DataCategory.addDictionaryParse = function(xmlList, variable) {
+  Blockly.DataCategory.addBlock(xmlList, variable, 'data_dictionaryparse', 'DICTIONARY', ['VALUE', 'text', "{\"key\": \"value\"}"]);
+};
+Blockly.DataCategory.addDictionaryStringify = function(xmlList, variable) {
+  Blockly.DataCategory.addBlock(xmlList, variable, 'data_dictionarystringify', 'DICTIONARY');
+};
+Blockly.DataCategory.addListParse = function(xmlList, variable) {
+  Blockly.DataCategory.addBlock(xmlList, variable, 'data_liststringify', 'LIST', ['VALUE', 'text', "{\"key\": \"value\"}"]);
+};
+Blockly.DataCategory.addListStringify = function(xmlList, variable) {
+  Blockly.DataCategory.addBlock(xmlList, variable, 'data_listparse', 'LIST');
 };
 /**
  * Construct and add a data_listcontents block to 
