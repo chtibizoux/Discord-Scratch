@@ -181,6 +181,9 @@ Blockly.JavaScript['event_variables'] = function (block) {
         return [block.getFieldValue("VARIABLE"), Blockly.JavaScript.ORDER_NONE];
     }
 };
+Blockly.JavaScript['event_whenflagclicked'] = function(block) {
+    return "// Flag";
+};
 function getSurroundOn(block) {
     do {
         if (block.type === 'event_on') {
@@ -224,9 +227,6 @@ Blockly.JavaScript['control_wait_until'] = function(block) {
     // Generate the function call for this block.
     var code = waitFor + "(_ => " + argument0 + ").then(_ => {\n" + argument1 + "});\n";
     return code;
-};
-Blockly.JavaScript['event_whenflagclicked'] = function(block) {
-    return "// Flag";
 };
 Blockly.JavaScript['sensing_log'] = function(block) {
     var text = Blockly.JavaScript.valueToCode(block, 'TEXT', Blockly.JavaScript.ORDER_NONE) || "";
