@@ -190,6 +190,14 @@ function getSurroundOn(block) {
     } while (block);
     return null;
 }
+Blockly.JavaScript['event_trycatch'] = function (block) {
+    var substrack = Blockly.JavaScript.statementToCode(block, 'SUBSTACK') || "";
+    var substrack2 = Blockly.JavaScript.statementToCode(block, 'SUBSTACK2') || "";
+    return "try {\n" + substrack + "} catch(error) {\n" + substrack2 + "}\n";
+};
+Blockly.JavaScript['event_catcherror'] = function (block) {
+    return "error";
+};
 Blockly.JavaScript['operator_startswith'] = function(block) {
     var string1 = Blockly.JavaScript.valueToCode(block, 'STRING1') || "";
     var string2 = Blockly.JavaScript.valueToCode(block, 'STRING2') || "";

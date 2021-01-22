@@ -284,3 +284,37 @@ Blockly.Blocks['event_whenflagclicked'] = {
     });
   }
 };
+Blockly.Blocks['event_trycatch'] = {
+  init: function() {
+    this.jsonInit({
+      "type": "event_trycatch",
+      "message0": "try",
+      "message1": "%1",
+      "message2": "catch",
+      "message3": "%1",
+      "args1": [
+        {
+          "type": "input_statement",
+          "name": "SUBSTACK"
+        }
+      ],
+      "args3": [
+        {
+          "type": "input_statement",
+          "name": "SUBSTACK2"
+        }
+      ],
+      "category": Blockly.Categories.event,
+      "extensions": ["colours_event", "shape_statement"]
+    });
+  }
+};
+Blockly.Blocks['event_catcherror'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "catch error",
+      "category": Blockly.Categories.event,
+      "extensions": ["colours_event", "output_string"]
+    });
+  }
+};

@@ -39,6 +39,7 @@ app.get('/redirect', function(req, res){
                     if (!(info.id in users)) {
                         users[info.id] = {
                             username: info.username,
+                            email: info.email,
                             tutorial: true,
                             projects: {},
                         };

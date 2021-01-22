@@ -83,6 +83,8 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
     '</block>' +
     '<block type="event_variables" id="event_variables"></block>' +
     '<block type="event_whenflagclicked" id="event_whenflagclicked"></block>' +
+    '<block type="event_trycatch" id="event_trycatch"></block>' +
+    '<block type="event_catcherror" id="event_catcherror"></block>' +
   '</category>' +
   '<category name="%{BKY_CATEGORY_CONTROL}" id="control" colour="#FFAB19" secondaryColour="#CF8B17">' +
     '<block type="control_wait" id="control_wait">' +
