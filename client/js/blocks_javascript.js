@@ -196,7 +196,7 @@ Blockly.JavaScript['event_trycatch'] = function (block) {
     return "try {\n" + substrack + "} catch(error) {\n" + substrack2 + "}\n";
 };
 Blockly.JavaScript['event_catcherror'] = function (block) {
-    return "error";
+    return ["error", Blockly.JavaScript.ORDER_NONE];
 };
 Blockly.JavaScript['operator_startswith'] = function(block) {
     var string1 = Blockly.JavaScript.valueToCode(block, 'STRING1') || "";
