@@ -3,3 +3,5 @@ users.json
 node_modules
 userfiles/*
 package-lock.json
+.openode
+Dockerfile

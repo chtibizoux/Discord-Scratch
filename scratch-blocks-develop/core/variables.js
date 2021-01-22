@@ -285,6 +285,9 @@ Blockly.Variables.createVariable = function(workspace, opt_callback, opt_type) {
   } else if (opt_type == Blockly.LIST_VARIABLE_TYPE) {
     newMsg = Blockly.Msg.NEW_LIST_TITLE;
     modalTitle = Blockly.Msg.LIST_MODAL_TITLE;
+  } else if (opt_type == Blockly.DICTIONARY_VARIABLE_TYPE) {
+    newMsg = "New dictionary name:";
+    modalTitle = "New dictionary";
   } else {
     // Note: this case covers 1) scalar variables, 2) any new type of
     // variable not explicitly checked for above, and 3) a null or undefined
@@ -384,6 +387,9 @@ Blockly.Variables.nameValidator_ = function(type, text, workspace, additionalVar
   } else if (type == Blockly.LIST_VARIABLE_TYPE) {
     return Blockly.Variables.validateScalarVarOrListName_(text, workspace, additionalVars, false, type,
         Blockly.Msg.LIST_ALREADY_EXISTS);
+  } else if (type == Blockly.DICTIONARY_VARIABLE_TYPE) {
+    return Blockly.Variables.validateScalarVarOrListName_(text, workspace, additionalVars, false, type,
+        Blockly.Msg.LIST_ALREADY_EXISTS);
   } else {
     return Blockly.Variables.validateScalarVarOrListName_(text, workspace, additionalVars, isCloud, type,
         Blockly.Msg.VARIABLE_ALREADY_EXISTS);
@@ -481,6 +487,9 @@ Blockly.Variables.renameVariable = function(workspace, variable,
   if (varType == Blockly.LIST_VARIABLE_TYPE) {
     promptMsg = Blockly.Msg.RENAME_LIST_TITLE;
     modalTitle = Blockly.Msg.RENAME_LIST_MODAL_TITLE;
+  } else if (varType == Blockly.DICTIONARY_VARIABLE_TYPE) {
+    promptMsg = "Rename all \"%1\" dictionarys to:";
+    modalTitle = "Rename dictionary";
   } else {
     // Default for all other types of variables
     promptMsg = Blockly.Msg.RENAME_VARIABLE_TITLE;

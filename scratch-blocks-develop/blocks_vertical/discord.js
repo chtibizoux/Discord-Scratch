@@ -134,7 +134,6 @@ Blockly.Blocks['discord_deletemessage'] = {
     });
   }
 };
-
 Blockly.Blocks['discord_reaction'] = {
   /**
    * Block to Report if its touching a Object.

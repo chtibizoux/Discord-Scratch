@@ -86,6 +86,24 @@ Blockly.DataCategory = function(workspace) {
     Blockly.DataCategory.addSep(xmlList);
   }
 
+  // Now add dictionary variables to the flyout
+  Blockly.DataCategory.addCreateButton(xmlList, workspace, 'DICTIONARY');
+  variableModelList = workspace.getVariablesOfType(Blockly.DICTIONARY_VARIABLE_TYPE);
+  variableModelList.sort(Blockly.VariableModel.compareByName);
+  for (var i = 0; i < variableModelList.length; i++) {
+    Blockly.DataCategory.addDataDictionary(xmlList, variableModelList[i]);
+  }
+
+  if (variableModelList.length > 0) {
+    xmlList[xmlList.length - 1].setAttribute('gap', 24);
+    var firstVariable = variableModelList[0];
+    Blockly.DataCategory.addDictionarySet(xmlList, firstVariable);
+    Blockly.DataCategory.addDictionaryDelete(xmlList, firstVariable);
+    Blockly.DataCategory.addSep(xmlList);
+    Blockly.DataCategory.addDictionaryGet(xmlList, firstVariable);
+    Blockly.DataCategory.addDictionaryIn(xmlList, firstVariable);
+  }
+
   return xmlList;
 };
 
@@ -136,6 +154,27 @@ Blockly.DataCategory.addChangeVariableBy = function(xmlList, variable) {
       'VARIABLE', ['VALUE', 'math_number', 1]);
 };
 
+/**
+ * @param {!Array.<!Element>} xmlList Array of XML block elements.
+ * @param {?Blockly.VariableModel} variable Variable to select in the field.
+ */
+Blockly.DataCategory.addDataDictionary = function(xmlList, variable) {
+  Blockly.DataCategory.addBlock(xmlList, variable, 'data_dictionarycontents', 'DICTIONARY');
+  xmlList[xmlList.length - 1].setAttribute('id', variable.getId());
+};
+
+Blockly.DataCategory.addDictionarySet = function(xmlList, variable) {
+  Blockly.DataCategory.addBlock(xmlList, variable, 'data_dictionaryset', 'DICTIONARY', ['KEY', 'text', "key"], ['VALUE', 'text', "value"]);
+};
+Blockly.DataCategory.addDictionaryDelete = function(xmlList, variable) {
+  Blockly.DataCategory.addBlock(xmlList, variable, 'data_dictionarydelete', 'DICTIONARY', ['KEY', 'text', "key"]);
+};
+Blockly.DataCategory.addDictionaryGet = function(xmlList, variable) {
+  Blockly.DataCategory.addBlock(xmlList, variable, 'data_dictionaryget', 'DICTIONARY', ['KEY', 'text', "key"]);
+};
+Blockly.DataCategory.addDictionaryIn = function(xmlList, variable) {
+  Blockly.DataCategory.addBlock(xmlList, variable, 'data_dictionaryin', 'DICTIONARY', ['KEY', 'text', "key"]);
+};
 /**
  * Construct and add a data_listcontents block to 
   //   </value>
@@ -356,6 +395,12 @@ Blockly.DataCategory.addCreateButton = function(xmlList, workspace, type) {
     callback = function(button) {
       Blockly.Variables.createVariable(button.getTargetWorkspace(), null,
           Blockly.LIST_VARIABLE_TYPE);};
+  }else if (type === 'DICTIONARY') {
+    msg = "Make a Dictionary";
+    callbackKey = 'CREATE_DICTIONARY';
+    callback = function(button) {
+      Blockly.Variables.createVariable(button.getTargetWorkspace(), null,
+          Blockly.DICTIONARY_VARIABLE_TYPE);};
   }
   button.setAttribute('text', msg);
   button.setAttribute('callbackKey', callbackKey);

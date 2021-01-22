@@ -37,6 +37,21 @@ Blockly.JavaScript['discord_react'] = function(block) {
     var object = Blockly.JavaScript.valueToCode(block, 'OBJECT', Blockly.JavaScript.ORDER_NONE) || "";
     return object + ".react(" + reaction + ");\n";
 };
+Blockly.JavaScript['discord_createChannel'] = function(block) {
+    var name = Blockly.JavaScript.valueToCode(block, 'NAME', Blockly.JavaScript.ORDER_NONE) || "";
+    var type = Blockly.JavaScript.valueToCode(block, 'TYPE', Blockly.JavaScript.ORDER_NONE) || "";
+    var rateLimitPerUser = Blockly.JavaScript.valueToCode(block, 'USERLIMIT', Blockly.JavaScript.ORDER_NONE) || "";
+    var permissions = Blockly.JavaScript.valueToCode(block, 'PERMISSIONS', Blockly.JavaScript.ORDER_NONE) || "";
+    var position = Blockly.JavaScript.valueToCode(block, 'POSITION', Blockly.JavaScript.ORDER_NONE) || "";
+    var parent = Blockly.JavaScript.valueToCode(block, 'PARENT', Blockly.JavaScript.ORDER_NONE) || "";
+    var nsfw = Blockly.JavaScript.valueToCode(block, 'NSFW', Blockly.JavaScript.ORDER_NONE) || "";
+    var reason = Blockly.JavaScript.valueToCode(block, 'REASON', Blockly.JavaScript.ORDER_NONE) || "";
+    var topic = Blockly.JavaScript.valueToCode(block, 'TOPIC', Blockly.JavaScript.ORDER_NONE) || "";
+    var bitrate = Blockly.JavaScript.valueToCode(block, 'BITRATE', Blockly.JavaScript.ORDER_NONE) || "";
+    var userLimit = Blockly.JavaScript.valueToCode(block, 'USERLIMIT', Blockly.JavaScript.ORDER_NONE) || "";
+    var object = Blockly.JavaScript.valueToCode(block, 'OBJECT', Blockly.JavaScript.ORDER_NONE) || "";
+    return object + ".channels.create(" + name + ", { rateLimitPerUser: " + rateLimitPerUser + ", userLimit: " + userLimit + ", bitrate: " + bitrate + ", parent: " + parent + ", topic: " + topic + ", nsfw: " + nsfw + ", position: " + position + ", type: " + type + ", reason: " + reason + ", permissionOverwrites: " + permissions + " });\n";
+};
 Blockly.JavaScript['event_on_menu'] = function(block) {
     return [block.getFieldValue('ACTION'), Blockly.JavaScript.ORDER_NONE];
 };
@@ -364,6 +379,18 @@ Blockly.JavaScript['sensing_getwithid'] = function(block) {
 Blockly.JavaScript['sensing_getwithidobject'] = function(block) {
     return ["object", Blockly.JavaScript.ORDER_NONE];
 };
+
+// fs.existsSync(path)
+// fs.accessSync(path[, mode])
+// fs.appendFileSync(path, data[, options])
+// fs.copyFileSync(src, dest[, mode])
+// fs.readdirSync(path[, options])
+// fs.readFileSync(path[, options])
+// fs.mkdirSync(path[, options])
+// fs.writeFileSync(file, data[, options])
+// fs.renameSync(oldPath, newPath)
+// fs.rmdirSync(path[, options])
+// fs.rmSync(path[, options])
 
 // Blockly.JavaScript['when_anykeypress'] = function(block) {
 //     var variable_key = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('KEY'), Blockly.Variables.NAME_TYPE);

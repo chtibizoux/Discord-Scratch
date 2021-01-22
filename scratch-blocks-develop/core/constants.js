@@ -348,6 +348,7 @@ Blockly.BROADCAST_MESSAGE_VARIABLE_TYPE = 'broadcast_msg';
  * @const {string}
  */
 Blockly.LIST_VARIABLE_TYPE = 'list';
+Blockly.DICTIONARY_VARIABLE_TYPE = 'dictionary';
 
 // TODO (#1251) Replace '' below with 'scalar', and start using this constant
 // everywhere.
