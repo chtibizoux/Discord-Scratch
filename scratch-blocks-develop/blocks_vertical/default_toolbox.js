@@ -29,62 +29,384 @@ goog.require('Blockly.Blocks');
  */
 
 Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: none">' +
-  '<category name="%{BKY_CATEGORY_DISCORD}" id="discord" colour="#4C97FF" secondaryColour="#3373CC">' +
-    '<block type="discord_reply" id="discord_reply">' +
+  '<category name="%{BKY_CATEGORY_MESSAGE}" id="message" colour="#4C97FF" secondaryColour="#3373CC">' +
+    '<block type="message_content" id="message_content">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_cleancontent" id="message_cleancontent">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_attachements" id="message_attachements">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_url" id="message_url">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_type" id="message_type">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_webhookID" id="message_webhookID">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_edits" id="message_edits">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_embeds" id="message_embeds">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_reactions" id="message_reactions">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_removereactions" id="message_removereactions">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_reactionsresolve" id="message_reactionsresolve">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_reactionsresolveid" id="message_reactionsresolveid">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_mentionseveryone" id="message_mentionseveryone">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_mentionscollection" id="message_mentionscollection">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_mentionshas" id="message_mentionshas">' +
+      '<value name="OBJECT">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_getboolean" id="message_getobject">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_getobject" id="message_getobject">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_timestamps" id="message_timestamps">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_reference" id="message_reference">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_flagsbitfield" id="message_flagsbitfield">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_flagsadd" id="message_flagsadd">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+      '<value name="BITS">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">CROSSPOSTED</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_flagsany" id="message_flagsany">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+      '<value name="BIT">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">CROSSPOSTED</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_flagsfreeze" id="message_flagsfreeze">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_flagshas" id="message_flagshas">' +
+      '<value name="OBJECT">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">CROSSPOSTED</field>' +
+        '</shadow>' +
+      '</value>' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_flagsmissing" id="message_flagsmissing">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+      '<value name="BITS">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">CROSSPOSTED</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_flagsremove" id="message_flagsremove">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+      '<value name="BITS">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">CROSSPOSTED</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_flagsserialize" id="message_flagsserialize">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_flagstoarray" id="message_flagstoarray">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_activitypartyID" id="message_activitypartyID">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_activitytype" id="message_activitytype">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_reply" id="message_reply">' +
       '<value name="TEXT">' +
         '<shadow type="text">' +
           '<field name="TEXT">Hello word !</field>' +
         '</shadow>' +
       '</value>' +
-      '<value name="OBJECT">' +
+      '<value name="MESSAGE">' +
         '<block type="event_variables"></block>' +
       '</value>' +
     '</block>' +
-    '<block type="discord_send" id="discord_send">' +
+    '<block type="message_edit" id="message_edit">' +
       '<value name="TEXT">' +
         '<shadow type="text">' +
           '<field name="TEXT">Hello word !</field>' +
         '</shadow>' +
       '</value>' +
-      '<value name="OBJECT">' +
+      '<value name="MESSAGE">' +
         '<block type="event_variables"></block>' +
       '</value>' +
     '</block>' +
-    '<block type="discord_editmessage" id="discord_editmessage">' +
-      '<value name="TEXT">' +
-        '<shadow type="text">' +
-          '<field name="TEXT">Hello word !</field>' +
+    '<block type="message_delete" id="message_delete">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+      '<value name="TIMEOUT">' +
+        '<shadow type="math_number">' +
+          '<field name="NUM"></field>' +
         '</shadow>' +
       '</value>' +
-      '<value name="OBJECT">' +
-        '<block type="event_variables"></block>' +
+      '<value name="REASON">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">Important</field>' +
+        '</shadow>' +
       '</value>' +
     '</block>' +
-    '<block type="discord_deletemessage" id="discord_delete_message">' +
-      '<value name="OBJECT">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="discord_react" id="discord_react">' +
+    '<block type="message_react" id="message_react">' +
       '<value name="REACTION">' +
-        '<shadow type="discord_reaction"></shadow>' +
+        '<shadow type="message_reaction"></shadow>' +
       '</value>' +
-      '<value name="OBJECT">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_pin" id="message_pin">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+      '<value name="REASON">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">Important</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_unpin" id="message_unpin">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+      '<value name="REASON">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">No longer relevant</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_crosspost" id="message_crosspost">' +
+      '<value name="MESSAGE">' +
+        '<block type="event_variables"></block>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_suppressembeds" id="message_suppressembeds">' +
+      '<value name="MESSAGE">' +
         '<block type="event_variables"></block>' +
       '</value>' +
     '</block>' +
   '</category>' +
-  '<category name="%{BKY_CATEGORY_EVENTS}" id="events" colour="#FFD500" secondaryColour="#CC9900">' +
-    '<block type="event_on" id="event_on">' +
-      '<value name="ACTION">' +
-        '<shadow type="event_on_menu">' +
+  '<category name="%{BKY_CATEGORY_CLIENT}" id="client" colour="#4C97FF" secondaryColour="#3373CC">' +
+  '</category>' +
+  '<category name="%{BKY_CATEGORY_USER}" id="user" colour="#4C97FF" secondaryColour="#3373CC">' +
+  '</category>' +
+  '<category name="%{BKY_CATEGORY_CHANNEL}" id="channel" colour="#4C97FF" secondaryColour="#3373CC">' +
+  // '<block type="channel_send" id="channel_send">' +
+  //   '<value name="TEXT">' +
+  //     '<shadow type="text">' +
+  //       '<field name="TEXT">Hello word !</field>' +
+  //     '</shadow>' +
+  //   '</value>' +
+  //   '<value name="OBJECT">' +
+  //     '<block type="event_variables"></block>' +
+  //   '</value>' +
+  // '</block>' +
+  '</category>' +
+  '<category name="%{BKY_CATEGORY_GUILD}" id="guild" colour="#4C97FF" secondaryColour="#3373CC">' +
+  '</category>' +
+  '<category name="%{BKY_CATEGORY_MEMBER}" id="member" colour="#4C97FF" secondaryColour="#3373CC">' +
+  '</category>' +
+  '<category name="%{BKY_CATEGORY_ROLE}" id="role" colour="#4C97FF" secondaryColour="#3373CC">' +
+  '</category>' +
+  '<category name="%{BKY_CATEGORY_REACTION}" id="reaction" colour="#4C97FF" secondaryColour="#3373CC">' +
+  '</category>' +
+  '<category name="%{BKY_CATEGORY_COLLECTION}" id="collection" colour="#4C97FF" secondaryColour="#3373CC">' +
+  '</category>' +
+  '<category name="%{BKY_CATEGORY_FILESYSTEM}" id="filesystem" colour="#9966FF" secondaryColour="#855CD6">' +
+    '<block type="filesystem_exists" id="filesystem_exists">' +
+      '<value name="PATH">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">file.txt</field>' +
         '</shadow>' +
       '</value>' +
     '</block>' +
+    '<block type="filesystem_readfile" id="filesystem_readfile">' +
+      '<value name="PATH">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">file.txt</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="filesystem_writefile" id="filesystem_writefile">' +
+      '<value name="PATH">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">file.txt</field>' +
+        '</shadow>' +
+      '</value>' +
+      '<value name="DATA">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">Hello word !</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="filesystem_appendfile" id="filesystem_appendfile">' +
+      '<value name="PATH">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">file.txt</field>' +
+        '</shadow>' +
+      '</value>' +
+      '<value name="DATA">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">Hello word !</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="filesystem_copyfile" id="filesystem_copyfile">' +
+      '<value name="SRC">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">file.txt</field>' +
+        '</shadow>' +
+      '</value>' +
+      '<value name="DEST">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">file copy.txt</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="filesystem_renamefile" id="filesystem_renamefile">' +
+      '<value name="OLD">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">file.txt</field>' +
+        '</shadow>' +
+      '</value>' +
+      '<value name="NEW">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">new file.txt</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="filesystem_removefile" id="filesystem_removefile">' +
+      '<value name="PATH">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">file.txt</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="filesystem_readdir" id="filesystem_readdir">' +
+      '<value name="PATH">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">directory</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="filesystem_mkdir" id="filesystem_mkdir">' +
+      '<value name="PATH">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">directory</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="filesystem_rmdir" id="filesystem_rmdir">' +
+      '<value name="PATH">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">directory</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+  '</category>' +
+  '<category name="%{BKY_CATEGORY_EVENTS}" id="events" colour="#FFD500" secondaryColour="#CC9900">' +
+    '<block type="event_on" id="event_on"></block>' +
     '<block type="event_variables" id="event_variables"></block>' +
     '<block type="event_whenflagclicked" id="event_whenflagclicked"></block>' +
     '<block type="event_trycatch" id="event_trycatch"></block>' +
     '<block type="event_catcherror" id="event_catcherror"></block>' +
+    '<block type="event_exit" id="event_exit"></block>' +
   '</category>' +
   '<category name="%{BKY_CATEGORY_CONTROL}" id="control" colour="#FFAB19" secondaryColour="#CF8B17">' +
     '<block type="control_wait" id="control_wait">' +
@@ -118,16 +440,6 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
     '<block type="sensing_bot" id="sensing_bot"></block>' +
     '<block type="sensing_systemchannel" id="sensing_systemchannel">' +
       '<value name="GUILD">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="sensing_message_content" id="sensing_message_content">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="sensing_getobject" id="sensing_message_content">' +
-      '<value name="OBJECT">' +
         '<block type="event_variables"></block>' +
       '</value>' +
     '</block>' +

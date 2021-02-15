@@ -85,46 +85,6 @@ Blockly.Blocks['sensing_systemchannel'] = {
   }
 };
 
-Blockly.Blocks['sensing_message_content'] = {
-  init: function() {
-    this.jsonInit({
-      "message0": "content of %1",
-      "args0": [
-        {
-          "type": "input_value",
-          "name": "MESSAGE"
-        }
-      ],
-      "category": Blockly.Categories.sensing,
-      "extensions": ["colours_sensing", "output_string"]
-    });
-  }
-};
-
-Blockly.Blocks['sensing_getobject'] = {
-  init: function() {
-    this.jsonInit({
-      "message0": "%1 of %2",
-      "args0": [
-        {
-          "type": "field_dropdown",
-          "name": "OBJECTMENU",
-          "options": [
-            ["channel", 'channel'],
-            ["guild", 'guild']
-          ]
-        },
-        {
-          "type": "input_value",
-          "name": "OBJECT"
-        }
-      ],
-      "category": Blockly.Categories.sensing,
-      "extensions": ["colours_sensing", "output_string"]
-    });
-  }
-};
-
 Blockly.Blocks['sensing_getwithid'] = {
   init: function() {
     this.jsonInit({

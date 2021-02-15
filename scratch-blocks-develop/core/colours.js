@@ -25,10 +25,55 @@ goog.provide('Blockly.Colours');
 Blockly.Colours = {
   // SVG colours: these must be specificed in #RRGGBB style
   // To add an opacity, this must be specified as a separate property (for SVG fill-opacity)
-  "discord": {
+  'role': {
     "primary": "#4C97FF",
     "secondary": "#4280D7",
     "tertiary": "#3373CC"
+  },
+  'channel': {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  'message': {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  'guild': {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  'client': {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  'user': {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  'member': {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  'reaction': {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  'collection': {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  "filesystem": {
+    "primary": "#9966FF",
+    "secondary": "#855CD6",
+    "tertiary": "#774DCB"
   },
   "control": {
     "primary": "#FFAB19",

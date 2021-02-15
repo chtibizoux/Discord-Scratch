@@ -27,19 +27,15 @@ goog.require('Blockly.Colours');
 goog.require('Blockly.constants');
 goog.require('Blockly.ScratchBlocks.VerticalExtensions');
 
-Blockly.Blocks['event_on_menu'] = {
+Blockly.Blocks['event_on'] = {
   /**
-   * Go to drop-down menu.
+   * Block for when a sprite is touching an object.
    * @this Blockly.Block
    */
-  init: function() {
-    this.jsonInit({
-      "message0": "%1",
-      "args0": [
-        {
-          "type": "field_dropdown",
-          "name": "ACTION",
-          "options": [
+    init: function() {
+        this.appendDummyInput()
+          .appendField('on')
+          .appendField(new Blockly.FieldDropdown([
             ["ready", "ready"],
             ["warn", "warn"],
             ["debug", "debug"],
@@ -89,25 +85,7 @@ Blockly.Blocks['event_on_menu'] = {
             ["typingStart", "typingStart"],
             ["voiceStateUpdate", "voiceStateUpdate"],
             ["webhookUpdate", "webhookUpdate"]
-          ]
-        }
-      ],
-      "colour": Blockly.Colours.event.secondary,
-      "colourSecondary": Blockly.Colours.event.secondary,
-      "colourTertiary": Blockly.Colours.event.tertiary,
-      "extensions": ["output_string"]
-    });
-  }
-};
-
-Blockly.Blocks['event_on'] = {
-  /**
-   * Block for when a sprite is touching an object.
-   * @this Blockly.Block
-   */
-    init: function() {
-        this.appendValueInput("ACTION")
-            .appendField('on');
+          ]), "ACTION");
         this.appendStatementInput('DO');
         this.setColour(Blockly.Colours.event.primary);
     }
@@ -142,7 +120,7 @@ Blockly.Blocks.event.EVENT_ON_VARIABLES_OPTIONS = {
     var surroundOn = getSurroundOn(this);
     var variables = [["null", "null"]];
     if (surroundOn !== null) {
-        var action = Blockly.JavaScript.valueToCode(surroundOn, 'ACTION', Blockly.JavaScript.ORDER_NONE) || "";
+        var action = surroundOn.getFieldValue('ACTION');
         switch (action) {
             case "channelCreate":
             case "channelDelete":
@@ -315,6 +293,15 @@ Blockly.Blocks['event_catcherror'] = {
       "message0": "catch error",
       "category": Blockly.Categories.event,
       "extensions": ["colours_event", "output_string"]
+    });
+  }
+};
+Blockly.Blocks['event_exit'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "exit application",
+      "category": Blockly.Categories.event,
+      "extensions": ["colours_event", "shape_statement"]
     });
   }
 };

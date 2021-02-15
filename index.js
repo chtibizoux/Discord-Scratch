@@ -68,7 +68,65 @@ if (!fs.existsSync("./userfiles")) {
 var users = JSON.parse(fs.readFileSync("users.json"));
 var config = JSON.parse(fs.readFileSync("config.json"));
 var socketIDs = {};
-var defaultXML = '<xml xmlns="http://www.w3.org/1999/xhtml"><variables></variables><block type="discord_token" id="f^}(kcWM:P]0Ki-7PH,4" deletable="false" movable="false" x="0" y="0"><field name="TEXT">token</field></block><block type="event_on" id="h0$AV2pq84-nP;=z49~P" x="0" y="96"><value name="ACTION"><shadow type="event_on_menu" id="Z|4X@}#cKvPPf4kz~:l)"><field name="ACTION">ready</field></shadow></value><statement name="DO"><block type="sensing_log" id="^Hbrdm97i9]$/SJ@K:F8"><value name="TEXT"><shadow type="text" id="^jxJW~)+]xnB#+UtlQy*"><field name="TEXT">Bot is online !</field></shadow></value></block></statement></block><block type="event_on" id=":Rd+teh^G@KsewvDIxwD" x="0" y="272"><value name="ACTION"><shadow type="event_on_menu" id="fd_k+_6fGiEQfNAcXG/)"><field name="ACTION">message</field></shadow></value><statement name="DO"><block type="control_if" id=")XmGcc6]At{uGvs%7`=s"><value name="CONDITION"><block type="operator_startswith" id="VoaA9kyY=yq4mqyBkoIr"><value name="STRING1"><shadow xmlns="" type="text" id="3aK~d81kQ8f}0U/PZXPL"><field name="TEXT">hello world !</field></shadow><block type="sensing_message_content" id="ExL;Bf!|#wZ4J|QK;X0Q"><value name="MESSAGE"><block type="event_variables" id="q]{Tkhs;k?~pfEna%cUT"><field name="VARIABLE">message</field></block></value></block></value><value name="STRING2"><shadow type="text" id="~HVIZDaP}7iuJ-J;pqoh"><field name="TEXT">!ping</field></shadow></value></block></value><statement name="SUBSTACK"><block type="discord_reply" id="1t=K?nqBO{iQ#C3tz/e["><value name="TEXT"><shadow type="text" id="2UOm-;]*c~@oa[hXn_mW"><field name="TEXT">pong !</field></shadow></value><value name="OBJECT"><block type="event_variables" id="etv#Xb68BMy*uHMb/aMd"><field name="VARIABLE">message</field></block></value></block></statement></block></statement></block></xml>';
+var defaultXML = '<xml xmlns="http://www.w3.org/1999/xhtml">' +
+    '<block type="discord_token" id="f^}(kcWM:P]0Ki-7PH,4" deletable="false" movable="false" x="0" y="0">' +
+        '<field name="TEXT">token</field>' +
+    '</block>' +
+    '<block type="event_on" id="h0$AV2pq84-nP;=z49~P" x="0" y="96">' +
+        '<field name="ACTION">ready</field>' +
+        '<statement name="DO">' +
+            '<block type="sensing_log" id="^Hbrdm97i9]$/SJ@K:F8">' +
+                '<value name="TEXT">' +
+                    '<shadow type="text" id="^jxJW~)+]xnB#+UtlQy*">' +
+                        '<field name="TEXT">Bot is online !</field>' +
+                    '</shadow>' +
+                '</value>' +
+            '</block>' +
+        '</statement>' +
+    '</block>' +
+    '<block type="event_on" id=":Rd+teh^G@KsewvDIxwD" x="0" y="272">' +
+        '<field name="ACTION">message</field>' +
+        '<statement name="DO">' +
+            '<block type="control_if" id=")XmGcc6]At{uGvs%7`=s">' +
+                '<value name="CONDITION">' +
+                    '<block type="operator_startswith" id="VoaA9kyY=yq4mqyBkoIr">' +
+                        '<value name="STRING1">' +
+                            '<shadow xmlns="" type="text" id="3aK~d81kQ8f}0U/PZXPL">' +
+                                '<field name="TEXT">hello world !</field>' +
+                            '</shadow>' +
+                            '<block type="message_content" id="ExL;Bf!|#wZ4J|QK;X0Q">' +
+                                '<value name="MESSAGE">' +
+                                    '<block type="event_variables" id="q]{Tkhs;k?~pfEna%cUT">' +
+                                        '<field name="VARIABLE">message</field>' +
+                                    '</block>' +
+                                '</value>' +
+                            '</block>' +
+                        '</value>' +
+                        '<value name="STRING2">' +
+                            '<shadow type="text" id="~HVIZDaP}7iuJ-J;pqoh">' +
+                                '<field name="TEXT">!ping</field>' +
+                            '</shadow>' +
+                        '</value>' +
+                    '</block>' +
+                '</value>' +
+                '<statement name="SUBSTACK">' +
+                    '<block type="message_reply" id="1t=K?nqBO{iQ#C3tz/e[">' +
+                        '<value name="TEXT">' +
+                            '<shadow type="text" id="2UOm-;]*c~@oa[hXn_mW">' +
+                                '<field name="TEXT">pong !</field>' +
+                            '</shadow>' +
+                        '</value>' +
+                        '<value name="MESSAGE">' +
+                            '<block type="event_variables" id="etv#Xb68BMy*uHMb/aMd">' +
+                                '<field name="VARIABLE">message</field>' +
+                            '</block>' +
+                        '</value>' +
+                    '</block>' +
+                '</statement>' +
+            '</block>' +
+        '</statement>' +
+    '</block>' +
+'</xml>';
 // Mails
 var transport = nodemailer.createTransport({
     host: config.smtp,

@@ -786,9 +786,9 @@ Blockly.Css.CONTENT = [
   '}',
 
   '.blocklyAngleCircle {',
-    'stroke: ' + Blockly.Colours.discord.tertiary + ';',
+    'stroke: ' + Blockly.Colours.message.tertiary + ';',
     'stroke-width: 1;',
-    'fill: ' + Blockly.Colours.discord.secondary + ';',
+    'fill: ' + Blockly.Colours.message.secondary + ';',
   '}',
 
   '.blocklyAngleCenterPoint {',
@@ -1271,8 +1271,8 @@ Blockly.Css.CONTENT = [
   '}',
 
   '.checked > .blocklyFlyoutCheckbox {',
-    'fill: ' + Blockly.Colours.discord.primary + ';',
-    'stroke: ' + Blockly.Colours.discord.tertiary + ';',
+    'fill: ' + Blockly.Colours.message.primary + ';',
+    'stroke: ' + Blockly.Colours.message.tertiary + ';',
   '}',
 
   '.blocklyFlyoutCheckboxPath {',

@@ -10,34 +10,185 @@ var end = "\nbot.login(token);";
 Blockly.JavaScript['discord_token'] = function(block) {
     return ["const token = '" + block.getFieldValue('TEXT') + "';\n", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['discord_reply'] = function(block) {
+Blockly.JavaScript['message_activitypartyID'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + ".activity.partyID", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_activitytype'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + ".activity.type", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_content'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + ".content", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_cleancontent'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + ".cleanContent", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_attachementscollection'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + ".attachments", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_url'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + ".url", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_type'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + ".type", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_webhookID'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + ".webhookID", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_edits'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + ".edits", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_embeds'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + ".embeds", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_reactions'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + ".reactions.cache", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_removereactions'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return message + ".reactions.removeAll();\n";
+};
+Blockly.JavaScript['message_reactionsresolve'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    var reaction = Blockly.JavaScript.valueToCode(block, 'REACTION', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + ".reactions.resolve(" + reaction + ")", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_reactionsresolveid'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    var reaction = Blockly.JavaScript.valueToCode(block, 'REACTION', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + ".reactions.resolveID(" + reaction + ")", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_mentionseveryone'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + ".mentions.everyone", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_mentionscollection'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + ".mentions." + block.getFieldValue("OBJECTMENU"), Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_mentionshas'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    var object = Blockly.JavaScript.valueToCode(block, 'OBJECT', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + ".mentions.has(" + object + ")", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_timestamps'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + "." + block.getFieldValue("OBJECTMENU"), Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_reference'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + ".reference." + block.getFieldValue("OBJECTMENU"), Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_flagsbitfield'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + ".flags.bitfield", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_flagsadd'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    var bits = Blockly.JavaScript.valueToCode(block, 'BITS', Blockly.JavaScript.ORDER_NONE) || "''";
+    return message + ".flags.add(" + bits + ");\n";
+};
+Blockly.JavaScript['message_flagsany'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    var bit = Blockly.JavaScript.valueToCode(block, 'BIT', Blockly.JavaScript.ORDER_NONE) || "''";
+    return message + ".flags.any(" + bit + ");\n";
+};
+Blockly.JavaScript['message_flagsfreeze'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return message + ".flags.freeze();\n";
+};
+Blockly.JavaScript['message_flagshas'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    var object = Blockly.JavaScript.valueToCode(block, 'OBJECT', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + ".flags.has(" + object + ")", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_flagsmissing'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    var bits = Blockly.JavaScript.valueToCode(block, 'BITS', Blockly.JavaScript.ORDER_NONE) || "''";
+    return [message + ".flags.missing(" + bits + ")", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_flagsremove'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    var bits = Blockly.JavaScript.valueToCode(block, 'BITS', Blockly.JavaScript.ORDER_NONE) || "''";
+    return message + ".flags.remove(" + bits + ");\n";
+};
+Blockly.JavaScript['message_flagsserialize'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + ".flags.serialize()", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_flagsserialize'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + ".flags.toArray()", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_getboolean'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + "." + block.getFieldValue("OBJECTMENU"), Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_getobject'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [message + "." + block.getFieldValue("OBJECTMENU"), Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_reply'] = function(block) {
     var text = Blockly.JavaScript.valueToCode(block, 'TEXT', Blockly.JavaScript.ORDER_NONE) || "";
-    var object = Blockly.JavaScript.valueToCode(block, 'OBJECT', Blockly.JavaScript.ORDER_NONE) || "";
+    var object = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "";
     return object + ".reply(" + text + ");\n";
 };
-Blockly.JavaScript['discord_send'] = function(block) {
+Blockly.JavaScript['message_edit'] = function(block) {
     var text = Blockly.JavaScript.valueToCode(block, 'TEXT', Blockly.JavaScript.ORDER_NONE) || "";
-    var object = Blockly.JavaScript.valueToCode(block, 'OBJECT', Blockly.JavaScript.ORDER_NONE) || "";
-    return object + ".send(" + text + ");\n";
-};
-Blockly.JavaScript['discord_editmessage'] = function(block) {
-    var text = Blockly.JavaScript.valueToCode(block, 'TEXT', Blockly.JavaScript.ORDER_NONE) || "";
-    var object = Blockly.JavaScript.valueToCode(block, 'OBJECT', Blockly.JavaScript.ORDER_NONE) || "";
+    var object = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "";
     return object + ".edit(" + text + ");\n";
 };
-Blockly.JavaScript['discord_deletemessage'] = function(block) {
-    var object = Blockly.JavaScript.valueToCode(block, 'OBJECT', Blockly.JavaScript.ORDER_NONE) || "";
+Blockly.JavaScript['message_delete'] = function(block) {
+    var object = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "";
     return object + ".delete();\n";
 };
-Blockly.JavaScript['discord_reaction'] = function(block) {
+Blockly.JavaScript['message_reaction'] = function(block) {
     return [block.getFieldValue('REACTION'), Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['discord_react'] = function(block) {
+Blockly.JavaScript['message_react'] = function(block) {
     var reaction = Blockly.JavaScript.valueToCode(block, 'REACTION', Blockly.JavaScript.ORDER_NONE) || "";
-    var object = Blockly.JavaScript.valueToCode(block, 'OBJECT', Blockly.JavaScript.ORDER_NONE) || "";
+    var object = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "";
     return object + ".react(" + reaction + ");\n";
 };
-Blockly.JavaScript['discord_createChannel'] = function(block) {
+Blockly.JavaScript['message_pin'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    var reason = Blockly.JavaScript.valueToCode(block, 'REASON', Blockly.JavaScript.ORDER_NONE) || "''";
+    return message + ".pin({ reason: '" + reason + "' });\n";
+};
+Blockly.JavaScript['message_unpin'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    var message = Blockly.JavaScript.valueToCode(block, 'REASON', Blockly.JavaScript.ORDER_NONE) || "''";
+    return message + ".unpin({ reason: '" + reason + "' });\n";
+};
+Blockly.JavaScript['message_crosspost'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return message + ".crosspost();\n";
+};
+Blockly.JavaScript['message_suppressembeds'] = function(block) {
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return message + ".suppressEmbeds();\n";
+};
+
+// message.awaitReactions()
+// message.createReactionCollector()
+// message.fetchWebhook()
+
+Blockly.JavaScript['channel_send'] = function(block) {
+    var text = Blockly.JavaScript.valueToCode(block, 'TEXT', Blockly.JavaScript.ORDER_NONE) || "";
+    var object = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "";
+    return object + ".send(" + text + ");\n";
+};
+Blockly.JavaScript['channel_create'] = function(block) {
     var name = Blockly.JavaScript.valueToCode(block, 'NAME', Blockly.JavaScript.ORDER_NONE) || "";
     var type = Blockly.JavaScript.valueToCode(block, 'TYPE', Blockly.JavaScript.ORDER_NONE) || "";
     var rateLimitPerUser = Blockly.JavaScript.valueToCode(block, 'USERLIMIT', Blockly.JavaScript.ORDER_NONE) || "";
@@ -52,11 +203,8 @@ Blockly.JavaScript['discord_createChannel'] = function(block) {
     var object = Blockly.JavaScript.valueToCode(block, 'OBJECT', Blockly.JavaScript.ORDER_NONE) || "";
     return object + ".channels.create(" + name + ", { rateLimitPerUser: " + rateLimitPerUser + ", userLimit: " + userLimit + ", bitrate: " + bitrate + ", parent: " + parent + ", topic: " + topic + ", nsfw: " + nsfw + ", position: " + position + ", type: " + type + ", reason: " + reason + ", permissionOverwrites: " + permissions + " });\n";
 };
-Blockly.JavaScript['event_on_menu'] = function(block) {
-    return [block.getFieldValue('ACTION'), Blockly.JavaScript.ORDER_NONE];
-};
 Blockly.JavaScript['event_on'] = function(block) {
-    var action = Blockly.JavaScript.valueToCode(block, 'ACTION', Blockly.JavaScript.ORDER_NONE) || "";
+    var action = block.getFieldValue('ACTION');
     var d = Blockly.JavaScript.statementToCode(block, 'DO') || "";
     var variables = "";
     switch (action) {
@@ -182,7 +330,7 @@ Blockly.JavaScript['event_variables'] = function (block) {
     }
 };
 Blockly.JavaScript['event_whenflagclicked'] = function(block) {
-    return "// Flag";
+    return "// Flag\n";
 };
 function getSurroundOn(block) {
     do {
@@ -200,6 +348,9 @@ Blockly.JavaScript['event_trycatch'] = function (block) {
 };
 Blockly.JavaScript['event_catcherror'] = function (block) {
     return ["error", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['event_exit'] = function (block) {
+    return "process.exit(1);\n";
 };
 Blockly.JavaScript['operator_startswith'] = function(block) {
     var string1 = Blockly.JavaScript.valueToCode(block, 'STRING1') || "";
@@ -231,10 +382,6 @@ Blockly.JavaScript['control_wait_until'] = function(block) {
 Blockly.JavaScript['sensing_log'] = function(block) {
     var text = Blockly.JavaScript.valueToCode(block, 'TEXT', Blockly.JavaScript.ORDER_NONE) || "";
     return "console.log(" + text + ");\n";
-};
-Blockly.JavaScript['sensing_message_content'] = function(block) {
-    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
-    return [message + ".content", Blockly.JavaScript.ORDER_NONE];
 };
 Blockly.JavaScript['sensing_systemchannel'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
@@ -387,106 +534,55 @@ Blockly.JavaScript['sensing_getwithid'] = function(block) {
 Blockly.JavaScript['sensing_getwithidobject'] = function(block) {
     return ["object", Blockly.JavaScript.ORDER_NONE];
 };
-
-// fs.existsSync(path)
-// fs.accessSync(path[, mode])
-// fs.appendFileSync(path, data[, options])
-// fs.copyFileSync(src, dest[, mode])
-// fs.readdirSync(path[, options])
-// fs.readFileSync(path[, options])
-// fs.mkdirSync(path[, options])
-// fs.writeFileSync(file, data[, options])
-// fs.renameSync(oldPath, newPath)
-// fs.rmdirSync(path[, options])
-// fs.rmSync(path[, options])
-
-// Blockly.JavaScript['when_anykeypress'] = function(block) {
-//     var variable_key = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('KEY'), Blockly.Variables.NAME_TYPE);
-//     var argument0 = Blockly.JavaScript.statementToCode(block, 'DO', Blockly.JavaScript.ORDER_FUNCTION_CALL) || '';
-//     var code = "document.addEventListener('keypress', function(event) {\n  " + variable_key + " = event.code;\n" + argument0 + "});\n";
-//     return code;
-// };
-// Blockly.JavaScript['when_keypress'] = function(block) {
-//     var argument0 = Blockly.JavaScript.statementToCode(block, 'DO', Blockly.JavaScript.ORDER_FUNCTION_CALL) || '';
-//     var code = "document.addEventListener('mousepress', function(event) {\nif (" + block.getFieldValue('KEY') + " == event.code) {\n" + argument0 + "}\n});\n";
-//     return code;
-// };
-// Blockly.JavaScript['when_keydown'] = function(block) {
-//     var argument0 = Blockly.JavaScript.statementToCode(block, 'DO', Blockly.JavaScript.ORDER_FUNCTION_CALL) || '';
-//     var code = "document.addEventListener('keydown', function(event) {\nif (" + block.getFieldValue('KEY') + " == event.code) {\n" + argument0 + "}\n});\n";
-//     return code;
-// };
-// Blockly.JavaScript['when_keyup'] = function(block) {
-//     var argument0 = Blockly.JavaScript.statementToCode(block, 'DO', Blockly.JavaScript.ORDER_FUNCTION_CALL) || '';
-//     var code = "document.addEventListener('keyup', function(event) {\nif (" + block.getFieldValue('KEY') + " == event.code) {\n" + argument0 + "}\n});\n";
-//     return code;
-// };
-// Blockly.JavaScript['when_mousedown'] = function(block) {
-//     var variable_mouseX = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('MOUSEX'), Blockly.Variables.NAME_TYPE);
-//     var variable_mouseY = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('MOUSEY'), Blockly.Variables.NAME_TYPE);
-//     var argument0 = Blockly.JavaScript.statementToCode(block, 'DO', Blockly.JavaScript.ORDER_FUNCTION_CALL) || '';
-//     var code = "document.addEventListener('mousedown', function(event) {\nif (" + block.getFieldValue('MOUSE_BUTTON') + " == event.button) {\n  " + variable_mouseX + " = event.mouseX;\n  " + variable_mouseY + " = event.mouseY;\n" + argument0 + "}\n});\n";
-//     return code;
-// };
-// Blockly.JavaScript['when_mouseup'] = function(block) {
-//     var variable_mouseX = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('MOUSEX'), Blockly.Variables.NAME_TYPE);
-//     var variable_mouseY = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('MOUSEY'), Blockly.Variables.NAME_TYPE);
-//     var argument0 = Blockly.JavaScript.statementToCode(block, 'DO', Blockly.JavaScript.ORDER_FUNCTION_CALL) || '';
-//     var code = "document.addEventListener('mouseup', function(event) {\nif (" + block.getFieldValue('MOUSE_BUTTON') + " == event.button) {\n  " + variable_mouseX + " = event.mouseX;\n  " + variable_mouseY + " = event.mouseY;\n" + argument0 + "}\n});\n";
-//     return code;
-// };
-// Blockly.JavaScript['when_mousemove'] = function(block) {
-//     var variable_mouseX = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('MOUSEX'), Blockly.Variables.NAME_TYPE);
-//     var variable_mouseY = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('MOUSEY'), Blockly.Variables.NAME_TYPE);
-//     var argument0 = Blockly.JavaScript.statementToCode(block, 'DO', Blockly.JavaScript.ORDER_FUNCTION_CALL) || '';
-//     var code = "document.addEventListener('mousemove', function(event) {\n  " + variable_mouseX + " = event.mouseX;\n  " + variable_mouseY + " = event.mouseY;\n" + argument0 + "});\n";
-//     return code;
-// };
-// Blockly.JavaScript['when_mouseclick'] = function(block) {
-//     var argument0 = Blockly.JavaScript.statementToCode(block, 'DO', Blockly.JavaScript.ORDER_FUNCTION_CALL) || '';
-//     var code = "sprite.addEventListener('mouseclick', function() {\n" + argument0 + "});\n"
-//     return code;
-// };
-// Blockly.JavaScript['when_mousehover'] = function(block) {
-//     var argument0 = Blockly.JavaScript.statementToCode(block, 'DO', Blockly.JavaScript.ORDER_FUNCTION_CALL) || '';
-//     var code = "sprite.addEventListener('mousehover', function() {\n" + argument0 + "});\n"
-//     return code;
-// };
-// Blockly.JavaScript['when_mouseout'] = function(block) {
-//     var argument0 = Blockly.JavaScript.statementToCode(block, 'DO', Blockly.JavaScript.ORDER_FUNCTION_CALL) || '';
-//     var code = "sprite.addEventListener('mouseout', function() {\n" + argument0 + "});\n"
-//     return code;
-// };
-// Blockly.JavaScript['date_get'] = function(block) {
-//     var code = '0';
-//     switch (block.getFieldValue('TYPE')) {
-//         case "YEAR":
-//             code = 'new Date().getFullYear()';
-//             break;
-//         case "MONTH":
-//             code = 'new Date().getMonth()';
-//             break;
-//         case "DATE":
-//             code = 'new Date().getDate()';
-//             break;
-//         case "DAY":
-//             code = 'new Date().getDay()';
-//             break;
-//         case "HOUR":
-//             code = 'new Date().getHours()';
-//             break;
-//         case "MINUTE":
-//             code = 'new Date().getMinutes()';
-//             break;
-//         case "SECOND":
-//             code = 'new Date().getSeconds()';
-//             break;
-//     }
-//     return code;
-// };
-// Blockly.JavaScript['text_includes'] = function(block) {
-//     var argument0 = Blockly.JavaScript.valueToCode(block, 'CONTENT', Blockly.JavaScript.ORDER_FUNCTION_CALL) || '\'\'';
-//     var argument1 = Blockly.JavaScript.valueToCode(block, 'VALUE', Blockly.JavaScript.ORDER_FUNCTION_CALL) || '\'\'';
-//     var code = argument0 + '.includes(' + argument1 + ')';
-//     return code;
-// };
+function getPath(name, block) {
+    var path = Blockly.JavaScript.valueToCode(block, name, Blockly.JavaScript.ORDER_NONE) || "''";
+    path = path.split("..").join("");
+    if (path.startsWith("'/") || path.startsWith("'\\")) path = "'" + path.slice(2);
+    if (path.startsWith("'./") || path.startsWith("'.\\")) path = "'" + path.slice(3);
+    path = path.split("\\").join("\\\\");
+    return "__dirname + " + path;
+}
+Blockly.JavaScript['filesystem_exists'] = function(block) {
+    var path = getPath('PATH', block);
+    return ["fs.existsSync(" + path + ")", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['filesystem_readfile'] = function(block) {
+    var path = getPath('PATH', block);
+    return ["fs.readFileSync(" + path + ")", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['filesystem_writefile'] = function(block) {
+    var path = getPath('PATH', block);
+    var data = Blockly.JavaScript.valueToCode(block, 'DATA', Blockly.JavaScript.ORDER_NONE) || "''";
+    return "fs.writeFileSync(" + path + ", " + data + ");\n";
+};
+Blockly.JavaScript['filesystem_appendfile'] = function(block) {
+    var path = getPath('PATH', block);
+    var data = Blockly.JavaScript.valueToCode(block, 'DATA', Blockly.JavaScript.ORDER_NONE) || "''";
+    return "fs.appendFileSync(" + path + ", " + data + ");\n";
+};
+Blockly.JavaScript['filesystem_copyfile'] = function(block) {
+    var src = getPath('SRC', block);
+    var dest = getPath('DEST', block);
+    return "fs.copyFileSync(" + src + ", " + dest + ", fs.constants.COPYFILE_EXCL);\n";
+};
+Blockly.JavaScript['filesystem_renamefile'] = function(block) {
+    var oldFile = getPath('OLD', block);
+    var newFile = getPath('NEW', block);
+    return "fs.renameSync(" + oldFile + ", " + newFile + ");\n";
+};
+Blockly.JavaScript['filesystem_removefile'] = function(block) {
+    var path = getPath('PATH', block);
+    return "fs.rmSync(" + path + ");\n";
+};
+Blockly.JavaScript['filesystem_readdir'] = function(block) {
+    var path = getPath('PATH', block);
+    return "fs.readdirSync(" + path + ");\n";
+};
+Blockly.JavaScript['filesystem_mkdir'] = function(block) {
+    var path = getPath('PATH', block);
+    return "fs.mkdirSync(" + path + ");\n";
+};
+Blockly.JavaScript['filesystem_rmdir'] = function(block) {
+    var path = getPath('PATH', block);
+    return "fs.rmdirSync(" + path + ");\n";
+};

@@ -221,7 +221,7 @@ Blockly.ScratchBlocks.VerticalExtensions.SCRATCH_EXTENSION = function() {
  */
 Blockly.ScratchBlocks.VerticalExtensions.registerAll = function() {
   var categoryNames =
-      ['control', 'data', 'data_lists', 'data_dictionary', 'discord', 'event',
+      ['control', 'data', 'data_lists', 'data_dictionary', 'collection', 'client', 'role', 'channel', 'message', 'guild', 'user', 'member', 'reaction', 'filesystem', 'event',
         'sensing', 'operators', 'more'];
   // Register functions for all category colours.
   for (var i = 0; i < categoryNames.length; i++) {

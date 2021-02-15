@@ -122,6 +122,31 @@ Blockly.Blocks['data_dictionarycontents'] = {
   }
 };
 
+Blockly.Blocks['data_settodictionary'] = {
+  /**
+   * Block to add item to list.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "set %2 to %1",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "VALUE"
+        },
+        {
+          "type": "field_variable",
+          "name": "DICTIONARY",
+          "variableTypes": [Blockly.DICTIONARY_VARIABLE_TYPE]
+        }
+      ],
+      "category": Blockly.Categories.dataDictionary,
+      "extensions": ["colours_data_dictionary", "shape_statement"]
+    });
+  }
+};
+
 Blockly.Blocks['data_dictionaryset'] = {
   /**
    * Block to add item to list.
@@ -145,7 +170,28 @@ Blockly.Blocks['data_dictionaryset'] = {
           "variableTypes": [Blockly.DICTIONARY_VARIABLE_TYPE]
         }
       ],
-      "category": Blockly.Categories.dataLists,
+      "category": Blockly.Categories.dataDictionary,
+      "extensions": ["colours_data_dictionary", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['data_dictionarydeleteall'] = {
+  /**
+   * Block to add item to list.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "delete all of %1",
+      "args0": [
+        {
+          "type": "field_variable",
+          "name": "DICTIONARY",
+          "variableTypes": [Blockly.DICTIONARY_VARIABLE_TYPE]
+        }
+      ],
+      "category": Blockly.Categories.dataDictionary,
       "extensions": ["colours_data_dictionary", "shape_statement"]
     });
   }
@@ -170,7 +216,7 @@ Blockly.Blocks['data_dictionarydelete'] = {
           "variableTypes": [Blockly.DICTIONARY_VARIABLE_TYPE]
         }
       ],
-      "category": Blockly.Categories.dataLists,
+      "category": Blockly.Categories.dataDictionary,
       "extensions": ["colours_data_dictionary", "shape_statement"]
     });
   }
@@ -195,7 +241,7 @@ Blockly.Blocks['data_dictionaryget'] = {
           "variableTypes": [Blockly.DICTIONARY_VARIABLE_TYPE]
         }
       ],
-      "category": Blockly.Categories.dataLists,
+      "category": Blockly.Categories.dataDictionary,
       "extensions": ["colours_data_dictionary", "output_string"]
     });
   }
@@ -220,7 +266,7 @@ Blockly.Blocks['data_dictionaryin'] = {
           "variableTypes": [Blockly.DICTIONARY_VARIABLE_TYPE]
         }
       ],
-      "category": Blockly.Categories.dataLists,
+      "category": Blockly.Categories.dataDictionary,
       "extensions": ["colours_data_dictionary", "output_boolean"]
     });
   }
@@ -245,7 +291,7 @@ Blockly.Blocks['data_dictionaryparse'] = {
           "variableTypes": [Blockly.DICTIONARY_VARIABLE_TYPE]
         }
       ],
-      "category": Blockly.Categories.dataLists,
+      "category": Blockly.Categories.dataDictionary,
       "extensions": ["colours_data_dictionary", "shape_statement"]
     });
   }
@@ -266,7 +312,7 @@ Blockly.Blocks['data_dictionarystringify'] = {
           "variableTypes": [Blockly.DICTIONARY_VARIABLE_TYPE]
         }
       ],
-      "category": Blockly.Categories.dataLists,
+      "category": Blockly.Categories.dataDictionary,
       "extensions": ["colours_data_dictionary", "output_string"]
     });
   }
@@ -446,6 +492,31 @@ Blockly.Blocks['data_listjoin'] = {
       ],
       "category": Blockly.Categories.dataLists,
       "extensions": ["colours_data_lists", "output_string"]
+    });
+  }
+};
+
+Blockly.Blocks['data_settolist'] = {
+  /**
+   * Block to add item to list.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "set %2 to %1",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "VALUE"
+        },
+        {
+          "type": "field_variable",
+          "name": "LIST",
+          "variableTypes": [Blockly.LIST_VARIABLE_TYPE]
+        }
+      ],
+      "category": Blockly.Categories.dataLists,
+      "extensions": ["colours_data_lists", "shape_statement"]
     });
   }
 };

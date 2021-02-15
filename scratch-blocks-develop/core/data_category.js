@@ -70,6 +70,7 @@ Blockly.DataCategory = function(workspace) {
   if (variableModelList.length > 0) {
     xmlList[xmlList.length - 1].setAttribute('gap', 24);
     var firstVariable = variableModelList[0];
+    Blockly.DataCategory.addDataSetToList(xmlList, firstVariable);
     Blockly.DataCategory.addAddToList(xmlList, firstVariable);
     Blockly.DataCategory.addSplitToList(xmlList, firstVariable);
     Blockly.DataCategory.addSep(xmlList);
@@ -98,8 +99,10 @@ Blockly.DataCategory = function(workspace) {
   if (variableModelList.length > 0) {
     xmlList[xmlList.length - 1].setAttribute('gap', 24);
     var firstVariable = variableModelList[0];
+    Blockly.DataCategory.addDataSetToDictionary(xmlList, firstVariable);
     Blockly.DataCategory.addDictionarySet(xmlList, firstVariable);
     Blockly.DataCategory.addDictionaryDelete(xmlList, firstVariable);
+    Blockly.DataCategory.addDictionaryDeleteAll(xmlList, firstVariable);
     Blockly.DataCategory.addSep(xmlList);
     Blockly.DataCategory.addDictionaryGet(xmlList, firstVariable);
     Blockly.DataCategory.addDictionaryIn(xmlList, firstVariable);
@@ -167,11 +170,20 @@ Blockly.DataCategory.addDataDictionary = function(xmlList, variable) {
   xmlList[xmlList.length - 1].setAttribute('id', variable.getId());
 };
 
+Blockly.DataCategory.addDataSetToDictionary = function(xmlList, variable) {
+  Blockly.DataCategory.addBlock(xmlList, variable, 'data_settodictionary', 'DICTIONARY');
+};
+Blockly.DataCategory.addDataSetToList = function(xmlList, variable) {
+  Blockly.DataCategory.addBlock(xmlList, variable, 'data_settolist', 'LIST');
+};
 Blockly.DataCategory.addDictionarySet = function(xmlList, variable) {
   Blockly.DataCategory.addBlock(xmlList, variable, 'data_dictionaryset', 'DICTIONARY', ['KEY', 'text', "key"], ['VALUE', 'text', "value"]);
 };
 Blockly.DataCategory.addDictionaryDelete = function(xmlList, variable) {
   Blockly.DataCategory.addBlock(xmlList, variable, 'data_dictionarydelete', 'DICTIONARY', ['KEY', 'text', "key"]);
+};
+Blockly.DataCategory.addDictionaryDeleteAll = function(xmlList, variable) {
+  Blockly.DataCategory.addBlock(xmlList, variable, 'data_dictionarydeleteall', 'DICTIONARY');
 };
 Blockly.DataCategory.addDictionaryGet = function(xmlList, variable) {
   Blockly.DataCategory.addBlock(xmlList, variable, 'data_dictionaryget', 'DICTIONARY', ['KEY', 'text', "key"]);
@@ -186,10 +198,10 @@ Blockly.DataCategory.addDictionaryStringify = function(xmlList, variable) {
   Blockly.DataCategory.addBlock(xmlList, variable, 'data_dictionarystringify', 'DICTIONARY');
 };
 Blockly.DataCategory.addListParse = function(xmlList, variable) {
-  Blockly.DataCategory.addBlock(xmlList, variable, 'data_liststringify', 'LIST', ['VALUE', 'text', "{\"key\": \"value\"}"]);
+  Blockly.DataCategory.addBlock(xmlList, variable, 'data_listparse', 'LIST', ['VALUE', 'text', "{\"key\": \"value\"}"]);
 };
 Blockly.DataCategory.addListStringify = function(xmlList, variable) {
-  Blockly.DataCategory.addBlock(xmlList, variable, 'data_listparse', 'LIST');
+  Blockly.DataCategory.addBlock(xmlList, variable, 'data_liststringify', 'LIST');
 };
 /**
  * Construct and add a data_listcontents block to 
