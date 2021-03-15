@@ -4259,6 +4259,8 @@ Blockly.ScratchMsgs.locales["en"] =
     "CATEGORY_CHANNEL": "Channel",
     "CATEGORY_MESSAGE": "Message",
     "CATEGORY_GUILD": "Guild",
+    "CATEGORY_CLIENT": "Client",
+    "CATEGORY_COLLECTION": "Collection",
     "CATEGORY_USER": "User",
     "CATEGORY_MEMBER": "Member",
     "CATEGORY_REACTION": "Reaction",

@@ -42,3 +42,19 @@ goog.require('Blockly.ScratchBlocks.VerticalExtensions');
 //     });
 //   }
 // };
+
+Blockly.Blocks['guild_systemchannel'] = {
+    init: function() {
+      this.jsonInit({
+        "message0": "system channel of %1",
+        "args0": [
+          {
+            "type": "input_value",
+            "name": "GUILD"
+          }
+        ],
+        "category": Blockly.Categories.guild,
+        "extensions": ["colours_guild", "output_string"]
+      });
+    }
+  };

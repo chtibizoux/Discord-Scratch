@@ -287,18 +287,23 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
   '<category name="%{BKY_CATEGORY_USER}" id="user" colour="#4C97FF" secondaryColour="#3373CC">' +
   '</category>' +
   '<category name="%{BKY_CATEGORY_CHANNEL}" id="channel" colour="#4C97FF" secondaryColour="#3373CC">' +
-  // '<block type="channel_send" id="channel_send">' +
-  //   '<value name="TEXT">' +
-  //     '<shadow type="text">' +
-  //       '<field name="TEXT">Hello word !</field>' +
-  //     '</shadow>' +
-  //   '</value>' +
-  //   '<value name="OBJECT">' +
-  //     '<block type="event_variables"></block>' +
-  //   '</value>' +
-  // '</block>' +
+    // '<block type="channel_send" id="channel_send">' +
+    //   '<value name="TEXT">' +
+    //     '<shadow type="text">' +
+    //       '<field name="TEXT">Hello word !</field>' +
+    //     '</shadow>' +
+    //   '</value>' +
+    //   '<value name="OBJECT">' +
+    //     '<block type="event_variables"></block>' +
+    //   '</value>' +
+    // '</block>' +
   '</category>' +
   '<category name="%{BKY_CATEGORY_GUILD}" id="guild" colour="#4C97FF" secondaryColour="#3373CC">' +
+    // '<block type="guild_systemchannel" id="guild_systemchannel">' +
+    //   '<value name="GUILD">' +
+    //     '<block type="event_variables"></block>' +
+    //   '</value>' +
+    // '</block>' +
   '</category>' +
   '<category name="%{BKY_CATEGORY_MEMBER}" id="member" colour="#4C97FF" secondaryColour="#3373CC">' +
   '</category>' +
@@ -438,11 +443,9 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
       '</value>' +
     '</block>' +
     '<block type="sensing_bot" id="sensing_bot"></block>' +
-    '<block type="sensing_systemchannel" id="sensing_systemchannel">' +
-      '<value name="GUILD">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
+    '<block type="sensing_then" id="sensing_then"></block>' +
+    '<block type="sensing_thenobject" id="sensing_thenobject"></block>' +
+    '<block type="sensing_catcherror" id="sensing_catcherror"></block>' +
     '<block type="sensing_getwithid" id="sensing_getwithid">' +
       '<value name="ID">' +
         '<shadow type="text">' +

@@ -117,3 +117,20 @@ function updateName() {
     socket.emit("updateName", projectName, document.getElementById("name-input").value);
     projectName = document.getElementById("name-input").value;
 }
+document.getElementById("hide-show-arrow").addEventListener("click", function(event) {
+    if (document.getElementsByClassName("console-div")[0].style.display === "none") {
+        document.getElementsByClassName("console-div")[0].style.display = "";
+        document.getElementsByClassName("js-viewer-div")[0].style.display = "";
+        document.getElementsByClassName("editor-div")[0].style.right = "";
+        document.getElementById("hide-show-arrow").style.left = "";
+        document.getElementById("hide-show-arrow").style.transform = "";
+        Blockly.svgResize(workspace);
+    } else {
+        document.getElementsByClassName("console-div")[0].style.display = "none";
+        document.getElementsByClassName("js-viewer-div")[0].style.display = "none";
+        document.getElementsByClassName("editor-div")[0].style.right = "20px";
+        document.getElementById("hide-show-arrow").style.left = "100%";
+        document.getElementById("hide-show-arrow").style.transform = "translate(-35px, -8px) rotate(90deg)";
+        Blockly.svgResize(workspace);
+    }
+});

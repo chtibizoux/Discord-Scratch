@@ -139,50 +139,162 @@ Blockly.JavaScript['message_getobject'] = function(block) {
     return [message + "." + block.getFieldValue("OBJECTMENU"), Blockly.JavaScript.ORDER_NONE];
 };
 Blockly.JavaScript['message_reply'] = function(block) {
+    var finalstring = ";\n";
+    if (block.getNextBlock()) {
+        if (block.getNextBlock().type === "sensing_then") {
+            finalstring = "";
+        }
+    }
     var text = Blockly.JavaScript.valueToCode(block, 'TEXT', Blockly.JavaScript.ORDER_NONE) || "";
     var object = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "";
-    return object + ".reply(" + text + ");\n";
+    return object + ".reply(" + text + ")" + finalstring;
 };
 Blockly.JavaScript['message_edit'] = function(block) {
+    var finalstring = ";\n";
+    if (block.getNextBlock()) {
+        if (block.getNextBlock().type === "sensing_then") {
+            finalstring = "";
+        }
+    }
     var text = Blockly.JavaScript.valueToCode(block, 'TEXT', Blockly.JavaScript.ORDER_NONE) || "";
     var object = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "";
-    return object + ".edit(" + text + ");\n";
+    return object + ".edit(" + text + ")" + finalstring;
 };
 Blockly.JavaScript['message_delete'] = function(block) {
+    var finalstring = ";\n";
+    if (block.getNextBlock()) {
+        if (block.getNextBlock().type === "sensing_then") {
+            finalstring = "";
+        }
+    }
     var object = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "";
-    return object + ".delete();\n";
+    return object + ".delete()" + finalstring;
 };
 Blockly.JavaScript['message_reaction'] = function(block) {
     return [block.getFieldValue('REACTION'), Blockly.JavaScript.ORDER_NONE];
 };
 Blockly.JavaScript['message_react'] = function(block) {
+    var finalstring = ";\n";
+    if (block.getNextBlock()) {
+        if (block.getNextBlock().type === "sensing_then") {
+            finalstring = "";
+        }
+    }
     var reaction = Blockly.JavaScript.valueToCode(block, 'REACTION', Blockly.JavaScript.ORDER_NONE) || "";
     var object = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "";
-    return object + ".react(" + reaction + ");\n";
+    return object + ".react(" + reaction + ")" + finalstring;
 };
-Blockly.JavaScript['message_pin'] = function(block) {
+Blockly.JavaScript['message_pin'] = function (block) {
+    var finalstring = ";\n";
+    if (block.getNextBlock()) {
+        if (block.getNextBlock().type === "sensing_then") {
+            finalstring = "";
+        }
+    }
     var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
     var reason = Blockly.JavaScript.valueToCode(block, 'REASON', Blockly.JavaScript.ORDER_NONE) || "''";
-    return message + ".pin({ reason: '" + reason + "' });\n";
+    return message + ".pin({ reason: '" + reason + "' })" + finalstring;
 };
 Blockly.JavaScript['message_unpin'] = function(block) {
+    var finalstring = ";\n";
+    if (block.getNextBlock()) {
+        if (block.getNextBlock().type === "sensing_then") {
+            finalstring = "";
+        }
+    }
     var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
     var message = Blockly.JavaScript.valueToCode(block, 'REASON', Blockly.JavaScript.ORDER_NONE) || "''";
-    return message + ".unpin({ reason: '" + reason + "' });\n";
+    return message + ".unpin({ reason: '" + reason + "' })" + finalstring;
 };
 Blockly.JavaScript['message_crosspost'] = function(block) {
+    var finalstring = ";\n";
+    if (block.getNextBlock()) {
+        if (block.getNextBlock().type === "sensing_then") {
+            finalstring = "";
+        }
+    }
     var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
-    return message + ".crosspost();\n";
+    return message + ".crosspost()" + finalstring;
 };
 Blockly.JavaScript['message_suppressembeds'] = function(block) {
+    var finalstring = ";\n";
+    if (block.getNextBlock()) {
+        if (block.getNextBlock().type === "sensing_then") {
+            finalstring = "";
+        }
+    }
     var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
-    return message + ".suppressEmbeds();\n";
+    return message + ".suppressEmbeds()" + finalstring;
 };
-
-// message.awaitReactions()
-// message.createReactionCollector()
-// message.fetchWebhook()
-
+Blockly.JavaScript['message_awaitreactions'] = function (block) {
+    var finalstring = ";\n";
+    if (block.getNextBlock()) {
+        if (block.getNextBlock().type === "sensing_then") {
+            finalstring = "";
+        }
+    }
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return message + ".awaitReactions(" + filter + ", { time: " + time + ", idle: " + idle + ", dispose: " + dispose + ", max: " + max + ", maxEmojis: " + maxEmojis + ", maxUsers: " + maxUsers + " })" + finalstring;
+};
+Blockly.JavaScript['message_reactioncollector'] = function (block) {
+    var finalstring = ";\n";
+    if (block.getNextBlock()) {
+        if (block.getNextBlock().type === "sensing_then") {
+            finalstring = "";
+        }
+    }
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return "const collector = " +  message + ".createReactionCollector(" + filter + ", { time: " + time + ", idle: " + idle + ", dispose: " + dispose + ", max: " + max + ", maxEmojis: " + maxEmojis + ", maxUsers: " + maxUsers + " })" + finalstring;
+};
+Blockly.JavaScript['message_reactioncollectoron'] = function (block) {
+    var statement = Blockly.JavaScript.statementToCode(block, 'DO') || "";
+    var finalstring = ";\n";
+    if (block.getNextBlock()) {
+        if (block.getNextBlock().type === "sensing_then") {
+            finalstring = "";
+        }
+    }
+    return "collector.on('" + block.getFieldValue('ACTION') + "', function(object){\n" + statement + "})" + finalstring;
+};
+Blockly.JavaScript['message_reactioncollectoronobject'] = function (block) {
+    return ["object", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['message_fetchwebhook'] = function (block) {
+    var finalstring = ";\n";
+    if (block.getNextBlock()) {
+        if (block.getNextBlock().type === "sensing_then") {
+            finalstring = "";
+        }
+    }
+    var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
+    return message + ".fetchWebhook()" + finalstring;
+};
+// bot.user.client
+// bot.user.flags
+// bot.user.avatar
+// bot.user.createdAt
+// bot.user.createdTimestamp
+// bot.user.defaultAvatarURL
+// bot.user.discriminator
+// bot.user.dmChannel
+// bot.user.lastMessage
+// bot.user.lastMessageChannelID
+// bot.user.lastMessageID
+// bot.user.locale
+// bot.user.partial
+// bot.user.presence
+// bot.user.system
+// bot.user.tag
+// bot.user.avatarURL()
+// bot.user.createDM()
+// bot.user.deleteDM()
+// bot.user.displayAvatarURL()
+// bot.user.equals()
+// bot.user.fetchFlags()
+// bot.user.send()
+// bot.user.typingDurationIn()
+// bot.user.typingIn()
+// bot.user.typingSinceIn()
 Blockly.JavaScript['channel_send'] = function(block) {
     var text = Blockly.JavaScript.valueToCode(block, 'TEXT', Blockly.JavaScript.ORDER_NONE) || "";
     var object = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "";
@@ -202,6 +314,10 @@ Blockly.JavaScript['channel_create'] = function(block) {
     var userLimit = Blockly.JavaScript.valueToCode(block, 'USERLIMIT', Blockly.JavaScript.ORDER_NONE) || "";
     var object = Blockly.JavaScript.valueToCode(block, 'OBJECT', Blockly.JavaScript.ORDER_NONE) || "";
     return object + ".channels.create(" + name + ", { rateLimitPerUser: " + rateLimitPerUser + ", userLimit: " + userLimit + ", bitrate: " + bitrate + ", parent: " + parent + ", topic: " + topic + ", nsfw: " + nsfw + ", position: " + position + ", type: " + type + ", reason: " + reason + ", permissionOverwrites: " + permissions + " });\n";
+};
+Blockly.JavaScript['guild_systemchannel'] = function(block) {
+    var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
+    return [guild + ".systemChannel", Blockly.JavaScript.ORDER_NONE];
 };
 Blockly.JavaScript['event_on'] = function(block) {
     var action = block.getFieldValue('ACTION');
@@ -383,10 +499,6 @@ Blockly.JavaScript['sensing_log'] = function(block) {
     var text = Blockly.JavaScript.valueToCode(block, 'TEXT', Blockly.JavaScript.ORDER_NONE) || "";
     return "console.log(" + text + ");\n";
 };
-Blockly.JavaScript['sensing_systemchannel'] = function(block) {
-    var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
-    return [guild + ".systemChannel", Blockly.JavaScript.ORDER_NONE];
-};
 Blockly.JavaScript['sensing_resetdatetonow'] = function(block) {
     var date = Blockly.JavaScript.provideFunction_('date',['var ' + Blockly.JavaScript.FUNCTION_NAME_PLACEHOLDER_ + ' = new Date()']);
     var code = date + " = new Date();\n";
@@ -533,6 +645,17 @@ Blockly.JavaScript['sensing_getwithid'] = function(block) {
 };
 Blockly.JavaScript['sensing_getwithidobject'] = function(block) {
     return ["object", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['sensing_then'] = function(block) {
+    var thenStatement = Blockly.JavaScript.statementToCode(block, 'THEN') || "";
+    var catchStatement = Blockly.JavaScript.statementToCode(block, 'CATCH') || "";
+    return ".then(function(object){\n" + thenStatement + "}).catch(function(error){\n" + catchStatement + "});\n";
+};
+Blockly.JavaScript['sensing_thenobject'] = function(block) {
+    return ["object", Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['sensing_catcherror'] = function(block) {
+    return ["error", Blockly.JavaScript.ORDER_NONE];
 };
 function getPath(name, block) {
     var path = Blockly.JavaScript.valueToCode(block, name, Blockly.JavaScript.ORDER_NONE) || "''";

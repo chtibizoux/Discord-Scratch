@@ -795,3 +795,19 @@ Blockly.Blocks['message_suppressembeds'] = {
     });
   }
 };
+
+Blockly.Blocks['message_fetchwebhook'] = {
+  init: function () {
+    this.jsonInit({
+      "message0": "fetch webhook of %1",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "MESSAGE"
+        }
+      ],
+      "category": Blockly.Categories.message,
+      "extensions": ["colours_message", "shape_statement"]
+    });
+  }
+};

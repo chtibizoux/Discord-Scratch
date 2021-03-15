@@ -64,6 +64,43 @@ header{
     overflow: hidden;
     background-color: white;
 }
+#hide-show-arrow {
+    cursor: pointer;
+    z-index: 30;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-10px, 8px) rotate(-90deg);
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 6px;
+    height: 8px;
+    width: 50px;
+}
+#hide-show-arrow:before {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 51%;
+    background: #bbbbbb;
+    transform: skew(0deg, 15deg);
+}
+#hide-show-arrow:after {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background: #bbbbbb;
+    transform: skew(0deg, -15deg);
+}
 .console-div{
     position: absolute;
     right: 0;
@@ -78,6 +115,7 @@ header{
     text-align: center;
     background-color: black;
     color: white;
+    overflow: hidden;
 }
 #console{
     text-align: left;
@@ -101,16 +139,14 @@ header{
     border-top-left-radius: 20px;
     text-align: center;
     background-color: white;
+    overflow: hidden;
 }
 .js-viewer{
     text-align: left;
     padding: 20px;
+    padding-left: 40px;
     overflow: auto;
-    resize: none;
-    padding: 20px;
-    outline: none;
-    border-radius: 5px;
-    border: solid black 1px;
+    border-radius: 10px;
     width: calc(100% - 68px);
     height: calc(100% - 85px);
 }
@@ -220,4 +256,11 @@ a{
 }
 .save-cancel-button:hover{
     text-decoration: underline;
+}
+.blocklyToolboxDiv::-webkit-scrollbar {
+  display: none;
+}
+.blocklyToolboxDiv {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

@@ -14,6 +14,8 @@
         <meta name="robots" content="index">
         <meta name="keywords" content="discord,scratch,bot">
         <link rel="stylesheet" href="/css/editor.css">
+        <link rel="stylesheet" href="/css/prism.css"></link>
+        <script src="/js/prism.js"></script>
         <script src="https://kit.fontawesome.com/740353a2ba.js"></script>
         <script src="/js/blockly_compressed_vertical.js"></script>
         <script src="/js/blocks_compressed.js"></script>
@@ -43,6 +45,7 @@
         </header>
         <section class="editor">
             <div id="blockly-div" class="editor-div"></div>
+            <div id="hide-show-arrow"></div>
             <div class="console-div">
                 <h2>Console</h2>
                 <div id="console">
@@ -53,7 +56,7 @@
             </div>
             <div class="js-viewer-div">
                 <h2>JavaScript</h2>
-                <textarea id="javascript-viewer" class="js-viewer" readonly></textarea>
+                <pre class="js-viewer line-numbers language-javascript"><code id="javascript-viewer"></code></pre>
             </div>
         </section>
         <div id="save-div" style="display: none;">
@@ -182,7 +185,8 @@
                 if (connected) {
                     var xml = Blockly.Xml.domToText(Blockly.Xml.workspaceToDom(workspace));
                     var code = start + Blockly.JavaScript.workspaceToCode(workspace) + end;
-                    document.getElementById("javascript-viewer").value = code;
+                    document.getElementById("javascript-viewer").innerHTML = code;
+                    Prism.highlightElement(document.getElementById("javascript-viewer"));
                     socket.emit("updateCode", projectPath, code, projectName, xml);
                 }
             }

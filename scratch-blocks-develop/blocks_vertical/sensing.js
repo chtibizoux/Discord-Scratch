@@ -69,16 +69,45 @@ Blockly.Blocks['sensing_getid'] = {
   }
 };
 
-Blockly.Blocks['sensing_systemchannel'] = {
+Blockly.Blocks['sensing_then'] = {
   init: function() {
     this.jsonInit({
-      "message0": "system channel of %1",
-      "args0": [
+      "message0": "then",
+      "message1": "%1",
+      "message2": "catch",
+      "message3": "%1",
+      "args1": [
         {
-          "type": "input_value",
-          "name": "GUILD"
+          "type": "input_statement",
+          "name": "THEN"
         }
       ],
+      "args3": [
+        {
+          "type": "input_statement",
+          "name": "CATCH"
+        }
+      ],
+      "category": Blockly.Categories.sensing,
+      "extensions": ["colours_sensing", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['sensing_thenobject'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "then object",
+      "category": Blockly.Categories.sensing,
+      "extensions": ["colours_sensing", "output_string"]
+    });
+  }
+};
+
+Blockly.Blocks['sensing_catcherror'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "catch error",
       "category": Blockly.Categories.sensing,
       "extensions": ["colours_sensing", "output_string"]
     });
