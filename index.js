@@ -1,4 +1,4 @@
-const express = require('express'), http = require('http'), fs = require("fs"), discord = require("discord.js"), passwordHash = require('password-hash'), nodemailer = require('nodemailer'), url = require('url'), fetch = require('node-fetch');
+const express = require('express'), http = require('http'), fs = require("fs"), discord = require("discord.js"), passwordHash = require('password-hash'), url = require('url'), fetch = require('node-fetch');
 const { spawn } = require('child_process');
 console.log("Starting ...");
 var app = express();
@@ -127,26 +127,6 @@ var defaultXML = '<xml xmlns="http://www.w3.org/1999/xhtml">' +
         '</statement>' +
     '</block>' +
 '</xml>';
-// Mails
-var transport = nodemailer.createTransport({
-    host: config.smtp,
-    port: 465,
-    secure: true,
-    auth: {
-        user: config.email,
-        pass: config.password
-    },
-    tls: {
-        rejectUnauthorized: false
-    }
-});
-transport.verify(function(error, success) {
-    if (error) {
-        console.log(error);
-    } else {
-        console.log("Mail Server is ready");
-    }
-});
 var commands = {};
 function getUntitledName(projects) {
     var projectName = "Untitled";
