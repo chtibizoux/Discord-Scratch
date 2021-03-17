@@ -134,3 +134,39 @@ document.getElementById("hide-show-arrow").addEventListener("click", function(ev
         Blockly.svgResize(workspace);
     }
 });
+function upload(e) {
+    document.getElementById('file-menu').classList.remove('visible');
+    var file = e.target.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function (e) {
+        var contents = e.target.result;
+        Blockly.Xml.clearWorkspaceAndLoadFromXml(Blockly.Xml.textToDom(contents), workspace);
+    };
+    reader.readAsText(file);
+}
+document.getElementById('file-input').addEventListener('change', upload, false);
+function download() {
+    var file = new Blob([Blockly.Xml.domToText(Blockly.Xml.workspaceToDom(workspace))], { type: "text/xml" });
+    var a = document.createElement("a"), url = URL.createObjectURL(file);
+    a.href = url;
+    a.download = projectName + ".ds";
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function () {
+        document.body.removeChild(a);
+        window.URL.revokeObjectURL(url);
+    }, 0);
+}
+function downloadJS() {
+    var file = new Blob([start + Blockly.JavaScript.workspaceToCode(workspace) + end], { type: "text/xml" });
+    var a = document.createElement("a"), url = URL.createObjectURL(file);
+    a.href = url;
+    a.download = projectName + ".js";
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function () {
+        document.body.removeChild(a);
+        window.URL.revokeObjectURL(url);
+    }, 0);
+}

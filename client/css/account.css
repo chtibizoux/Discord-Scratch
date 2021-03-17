@@ -79,6 +79,7 @@ a{
 }
 #projects{
     text-align: center;
+    flex-wrap: wrap;
 }
 .project-button{
     margin: 20px;

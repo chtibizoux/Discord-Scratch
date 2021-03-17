@@ -59,7 +59,7 @@ header{
     left: 0;
     top: 54px;
     bottom: 0;
-    right: 50%;
+    right: 40%;
     border-right: solid #bbbbbb 2px;
     overflow: hidden;
     background-color: white;
@@ -68,7 +68,7 @@ header{
     cursor: pointer;
     z-index: 10;
     position: absolute;
-    left: 50%;
+    left: 60%;
     top: 50%;
     transform: translate(-10px, 8px) rotate(-90deg);
     text-align: center;
@@ -106,7 +106,7 @@ header{
     right: 0;
     top: 54px;
     bottom: 50%;
-    left: 50%;
+    left: 60%;
     margin-left: 20px;
     padding-top: 10px;
     border-left: solid #bbbbbb 2px;
@@ -130,7 +130,7 @@ header{
     right: 0;
     top: 50%;
     bottom: 0;
-    left: 50%;
+    left: 60%;
     margin-left: 20px;
     margin-top: 20px;
     padding: 10px;
@@ -287,6 +287,23 @@ a{
     border-radius: 0;
 }
 .dropdow-menu button:hover{
+    background-color: #bbbbbb;
+}
+.dropdow-menu input[type="file"] {
+    display: none;
+}
+.dropdow-menu label {
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 13.3333px;
+    text-align: center;
+}
+.dropdow-menu label:hover{
     background-color: #bbbbbb;
 }
 .visible{
