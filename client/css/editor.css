@@ -9,7 +9,7 @@ html, body{
     font-family: Arial;
 }
 header{
-    z-index: 10;
+    z-index: 100;
     width: 100%;
     position: fixed;
     background-color: rgb(77, 151, 255);
@@ -66,7 +66,7 @@ header{
 }
 #hide-show-arrow {
     cursor: pointer;
-    z-index: 30;
+    z-index: 10;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -217,7 +217,7 @@ a{
     top: 0;
     bottom: 0;
     background-color: #8a8a8a99;
-    z-index: 40;
+    z-index: 400;
 }
 .tutorial-close-button{
     color: white;
@@ -240,7 +240,7 @@ a{
     background-color: #6eaaff;
     padding: 40px;
     border-radius: 20px;
-    z-index: 20;
+    z-index: 30;
 }
 #save-div a{
     color: #2f6dc4;
@@ -263,4 +263,32 @@ a{
 .blocklyToolboxDiv {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+.dropdow-menu{
+    display: none;
+    position: absolute;
+    background: white;
+    top: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: #bbbbbb solid 1px;
+    transform: translateX(calc(-50% - 50px));
+    min-width: 100px;
+    z-index: 50;
+}
+.dropdow-menu ul{
+    list-style: none;
+}
+.dropdow-menu button{
+    padding: 10px 20px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+.dropdow-menu button:hover{
+    background-color: #bbbbbb;
+}
+.visible{
+    display: inline-block;
 }

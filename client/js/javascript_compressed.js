@@ -155,5 +155,3 @@ Blockly.JavaScript.variables_get_dynamic=Blockly.JavaScript.variables_get;
 Blockly.JavaScript.variables_set_dynamic=Blockly.JavaScript.variables_set;
 return Blockly.JavaScript;
 }));
-
-//# sourceMappingURL=javascript_compressed.js.map
