@@ -10,10 +10,17 @@ header{
     z-index: 10;
     width: 100%;
     position: fixed;
-    background-color: rgb(77, 151, 255);
-    display: flex;
+    background-color: #4d97ff;
     height: 54px;
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+#header-menu{
+    display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 .logo{
     height: 54px;
@@ -24,13 +31,20 @@ header{
     background: transparent;
     color: white;
     font-size: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     height: 54px;
+    display: inline-flex;
+    align-items: center;
 }
 .logo-button{
     padding-left: 0;
     padding-right: 0;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    height: 54px;
 }
 .header-button:hover{
     background-color: rgb(15, 189, 140);
@@ -167,9 +181,65 @@ a{
 .context-button:hover{
     background-color: rgb(77, 151, 255);
 }
-footer{
-    color: white;
-    text-align: center;
-    padding: 30px;
-    background-color: #17181b;
+.burger-button{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 30.14px;
+    height: 12px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+.burger-button-line{
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.5,0,0,1);
+}
+.bottom{
+    transform: translateY(10px);
+}
+.demontrations-img{
+    width: calc(50% - 40px);
+    vertical-align: middle;
+}
+@media screen and (max-width: 750px){
+    header nav{
+        justify-content: space-between;
+    }
+    .burger-button{
+        display: flex;
+    }
+    #header-menu{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        background-color: #4d97ff;
+        z-index: 50;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transition: .5s ease-in-out;
+        opacity: 0;
+        pointer-events: none;
+        padding: 54px 0;
+    }
+    .header-button{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: center;
+    }
+    .new-div{
+        text-align: center;
+    }
+    #projects{
+        justify-content: center;
+    }
 }

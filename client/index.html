@@ -18,19 +18,42 @@
     </head>
     <body>
         <header>
-            <div>
-                <button class="header-button logo-button" onclick="document.location.href = '#'"><img class="logo" src="/assets/images/logo.png" alt="Logo"></button>
-                <button class="header-button" onclick="document.location.href = '/simple_editor'">Simple Editor</button>
-                <button class="header-button" onclick="document.location.href = '/advanced_editor'">Advanced Editor</button>
-                <button class="header-button" onclick="document.location.href = '/wiki'">Wiki</button>
-                <button class="header-button" onclick="document.location.href = 'https://clementsongis.wordpress.com/'">Author WebSite</button>
-                <button class="header-button" onclick="document.location.href = 'https://discord.gg/jwVzMKuNym'">Discord Server</button>
-                <!-- <button class="header-button" onclick="document.location.href = '/extentions'">Extentions</button> -->
-            </div>
-            <div>
-                <button class="header-button" id="logout-button" style="display: none;" onclick="logout()">Logout</button>
-                <button class="header-button login-button" id="header-login-button">Login</button>
-            </div>
+            <nav>
+                <button class="logo-button" onclick="document.location.href = '#'"><img class="logo" src="/assets/images/logo.png" alt="Logo"></button>
+                <div id="header-menu">
+                    <div>
+                        <a class="header-button" href="/simple_editor">Simple Editor</a>
+                        <a class="header-button" href="/advanced_editor">Advanced Editor</a>
+                        <a class="header-button" href="/wiki">Wiki</a>
+                        <a class="header-button" href="https://discord.gg/jwVzMKuNym">Discord Server</a>
+                        <!-- <a class="header-button" href="/extentions">Extentions</a> -->
+                    </div>
+                    <div>
+                        <button class="header-button" id="logout-button" style="display: none;" onclick="logout()">Logout</button>
+                        <button class="header-button login-button" id="header-login-button">Login</button>
+                    </div>
+                </div>
+                <div class="burger-button" onclick="menu()">
+                    <span class="burger-button-line top"></span>
+                    <span class="burger-button-line bottom"></span>
+                </div>
+            </nav>
+            <script>
+                function menu() {
+                    if (!document.getElementsByClassName("top")[0].style.transform) {
+                        document.getElementsByClassName("top")[0].style.transform = "translateY(6px) rotate(45deg)";
+                        document.getElementsByClassName("bottom")[0].style.transform = "translateY(5px) rotate(-45deg) translateY(-2px)";
+                        document.getElementById("header-menu").style.opacity = "1";
+                        document.getElementById("header-menu").style.pointerEvents = "all";
+                    } else {
+                        document.getElementsByClassName("burger-button")[0].style.paddingBottom = "";
+                        document.getElementsByClassName("top")[0].style.transform = "";
+                        document.getElementsByClassName("bottom")[0].style.transform = "";
+                        document.getElementById("header-menu").style.opacity = "";
+                        document.getElementById("header-menu").style.pointerEvents = "";
+                    }
+                }
+            </script>
         </header>
         <section class="presentation">
             <div class="title-div">
@@ -48,27 +71,10 @@
             <p>Do you have any quetions ?</p>
             <p>Are you blocked by the interface not allowing you to do what you want ?</p>
             <p>Please contact me <a href="https://clementsongis.wordpress.com/contact/">here</a> or on my <a href="https://discord.gg/jwVzMKuNym">discord server</a></p>
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="2">Demontrations</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="/assets/images/demonstration1.jpg" alt="ping">
-                        </td>
-                        <td>
-                            <img src="/assets/images/demonstration2.jpg" alt="ping">
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <h2>Demontrations</h2>
+            <img class="demontrations-img" src="/assets/images/demonstration1.jpg" alt="ping">
+            <img class="demontrations-img" src="/assets/images/demonstration2.jpg" alt="ping">
         </section>
-        <footer>
-            Copyright 2020 Clément Songis <a href="https://clementsongis.wordpress.com/contact/">Contact</a>
-        </footer>
         <script>
             var socket = io();
             var href = "";
