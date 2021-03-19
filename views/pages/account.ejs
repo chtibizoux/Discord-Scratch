@@ -13,48 +13,12 @@
         <meta name="robots" content="index">
         <meta name="keywords" content="discord,scratch,bot">
         <link rel="stylesheet" href="/css/account.css">
+        <link rel="stylesheet" href="/css/main.css">
         <script src="https://kit.fontawesome.com/740353a2ba.js"></script>
         <script src="/socket.io/socket.io.js"></script>
     </head>
     <body>
-        <header>
-            <nav>
-                <button class="logo-button" onclick="document.location.href = '#'"><img class="logo" src="/assets/images/logo.png" alt="Logo"></button>
-                <div id="header-menu">
-                    <div>
-                        <a class="header-button" href="/simple_editor">Simple Editor</a>
-                        <a class="header-button" href="/advanced_editor">Advanced Editor</a>
-                        <a class="header-button" href="/wiki">Wiki</a>
-                        <a class="header-button" href="https://discord.gg/jwVzMKuNym">Discord Server</a>
-                        <!-- <a class="header-button" href="/extentions">Extentions</a> -->
-                    </div>
-                    <div>
-                        <button class="header-button" id="logout-button" style="display: none;" onclick="logout()">Logout</button>
-                        <button class="header-button login-button" id="header-login-button">Login</button>
-                    </div>
-                </div>
-                <div class="burger-button" onclick="openmenu()">
-                    <span class="burger-button-line top"></span>
-                    <span class="burger-button-line bottom"></span>
-                </div>
-            </nav>
-            <script>
-                function openmenu() {
-                    if (!document.getElementsByClassName("top")[0].style.transform) {
-                        document.getElementsByClassName("top")[0].style.transform = "translateY(6px) rotate(45deg)";
-                        document.getElementsByClassName("bottom")[0].style.transform = "translateY(5px) rotate(-45deg) translateY(-2px)";
-                        document.getElementById("header-menu").style.opacity = "1";
-                        document.getElementById("header-menu").style.pointerEvents = "all";
-                    } else {
-                        document.getElementsByClassName("burger-button")[0].style.paddingBottom = "";
-                        document.getElementsByClassName("top")[0].style.transform = "";
-                        document.getElementsByClassName("bottom")[0].style.transform = "";
-                        document.getElementById("header-menu").style.opacity = "";
-                        document.getElementById("header-menu").style.pointerEvents = "";
-                    }
-                }
-            </script>
-        </header>
+        <%- include('../templates/header', {isEditor: false}) %>
         <div class="new-div">
             <button class="new-button" onclick="document.getElementById('create-div').style.display = 'block';">New Project</button>
         </div>
@@ -65,9 +29,18 @@
             <button class="new-button" onclick="document.location.href = '/simple_editor/?name=' + document.getElementsByName('create-project-name')[0].value;">Create</button>
             <button class="create-cancel-button" onclick="document.getElementById('create-div').style.display = 'none';">Cancel</button>
         </div>
-        <section id="projects">
-            <h2>Create a new project to start making cool discord bot !</h2>
-            <img src="/assets/images/bot.svg" alt="Bot" style="padding-top: 50px;">
+        <section id="projects" <% if (projects.length === 0) { %>style="display: block;"<% }else{ %>style="display: flex;"<% } %>>
+            <% for(var projectName in projects) { %>
+                <div class="project-button" projectName="<%= projectName %>" onclick="document.location.href = '/simple_editor/?name=<%= projectName %>'">
+                    <div class="project-img"><img src="/assets/images/project.png" alt=""></div>
+                    <div class="project-button-name"><%= projectName %></div>
+                    <button class="project-delete-button" onclick="event.stopPropagation();socket.emit('deleteProject', '<%= projectName %>');"><img src="/assets/images/trash.svg" alt=""></button>
+                </div>
+            <% } %>
+            <% if (projects.length === 0) { %>
+                <h2>Create a new project to start making cool discord bot !</h2>
+                <img src="/assets/images/bot.svg" alt="Bot" style="padding-top: 50px;">
+            <% } %>
         </section>
         <div id="context-menu" style="display: none;">
             <button class="context-button" id="duplicate">Dupliquer</button>
@@ -75,38 +48,6 @@
         </div>
         <script>
             var socket = io();
-            var href = "";
-            socket.on("href", function(redirect_uri, client_id) {
-                href = "https://discord.com/api/oauth2/authorize?client_id=" + client_id + "&redirect_uri=" + redirect_uri + "&response_type=code&scope=identify%20email"
-                var buttons = document.getElementsByClassName("login-button");
-                for (var i = 0; i < buttons.length; i++) {
-                    buttons[i].setAttribute('onclick',"document.location.href = '" + href + "'");
-                }
-            });
-            for(var i = 0; i < decodeURIComponent(document.cookie).split(';').length; i++) {
-                var c = decodeURIComponent(document.cookie).split(';')[i];
-                while (c.charAt(0) == ' ') {
-                    c = c.substring(1);
-                }
-                if (c.indexOf("id=") == 0) {
-                    socket.emit("cookie", c.substring(name.length, c.length).slice(3));
-                }
-            }
-            socket.on('cookieSucces', function(username, tutorial, socketID){
-                if (socketID === socket.id) {
-                    document.getElementById("logout-button").style.display = "inline-block";
-                    var buttons = document.getElementsByClassName("login-button");
-                    for (var i = 0; i < buttons.length; i++) {
-                        buttons[i].innerHTML = username;
-                        buttons[i].setAttribute('onclick',"document.location.href = '#'");
-                    }
-                }
-            });
-            function logout() {
-                document.cookie = "id=;path=/";
-                document.location.href = "/";
-            }
-            socket.emit("projects");
             socket.on('projects', function(projects, socketID){
                 if (socketID === socket.id) {
                     var html = "";
@@ -141,6 +82,25 @@
                     }
                 }
             });
+            for (i = 0; i < document.getElementsByClassName("project-button").length; i++) {
+                const button = document.getElementsByClassName("project-button")[i];
+                button.addEventListener('contextmenu', e => {
+                    e.preventDefault();
+                    contextProjectName = button.getAttribute("projectName");
+                    menu.style.display = "block";
+                    if ((window.innerWidth - e.pageX) < (menu.offsetWidth + 4)) {
+                        menu.style.left = window.innerWidth - (menu.offsetWidth + 4) + "px";
+                    } else {
+                        menu.style.left = e.pageX + "px";
+                    }
+                    if ((window.innerHeight - e.pageY) < (menu.offsetHeight + 4)) {
+                        menu.style.top = window.innerHeight - (menu.offsetHeight + 4) + "px";
+                    } else {
+                        menu.style.top = e.pageY + "px";
+                    }
+                    return false;
+                });
+            }
             var contextProjectName = "";
             var menu = document.getElementById('context-menu');
             window.addEventListener("click", e => {

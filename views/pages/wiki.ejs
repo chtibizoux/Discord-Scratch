@@ -18,19 +18,42 @@
     </head>
     <body>
         <header>
-            <div>
-                <button class="header-button logo-button" onclick="document.location.href = '/'"><img class="logo" src="/assets/images/logo.png" alt="Logo"></button>
-                <button class="header-button" onclick="document.location.href = '/simple_editor'">Simple Editor</button>
-                <button class="header-button" onclick="document.location.href = '/advanced_editor'">Advanced Editor</button>
-                <button class="header-button" onclick="document.location.href = '#'">Wiki</button>
-                <button class="header-button" onclick="document.location.href = 'https://clementsongis.wordpress.com/'">Author WebSite</button>
-                <button class="header-button" onclick="document.location.href = 'https://discord.gg/jwVzMKuNym'">Discord Server</button>
-                <!-- <button class="header-button" onclick="document.location.href = '/extentions'">Extentions</button> -->
-            </div>
-            <div>
-                <button class="header-button" id="logout-button" style="display: none;" onclick="logout()">Logout</button>
-                <button class="header-button login-button" id="header-login-button">Login</button>
-            </div>
+            <nav>
+                <button class="logo-button" onclick="document.location.href = '#'"><img class="logo" src="/assets/images/logo.png" alt="Logo"></button>
+                <div id="header-menu">
+                    <div>
+                        <a class="header-button" href="/simple_editor">Simple Editor</a>
+                        <a class="header-button" href="/advanced_editor">Advanced Editor</a>
+                        <a class="header-button" href="/wiki">Wiki</a>
+                        <a class="header-button" href="https://discord.gg/jwVzMKuNym">Discord Server</a>
+                        <!-- <a class="header-button" href="/extentions">Extentions</a> -->
+                    </div>
+                    <div>
+                        <button class="header-button" id="logout-button" style="display: none;" onclick="logout()">Logout</button>
+                        <a class="header-button login-button" href="/login">Login</a>
+                    </div>
+                </div>
+                <div class="burger-button" onclick="menu()">
+                    <span class="burger-button-line top"></span>
+                    <span class="burger-button-line bottom"></span>
+                </div>
+            </nav>
+            <script>
+                function menu() {
+                    if (!document.getElementsByClassName("top")[0].style.transform) {
+                        document.getElementsByClassName("top")[0].style.transform = "translateY(6px) rotate(45deg)";
+                        document.getElementsByClassName("bottom")[0].style.transform = "translateY(5px) rotate(-45deg) translateY(-2px)";
+                        document.getElementById("header-menu").style.opacity = "1";
+                        document.getElementById("header-menu").style.pointerEvents = "all";
+                    } else {
+                        document.getElementsByClassName("burger-button")[0].style.paddingBottom = "";
+                        document.getElementsByClassName("top")[0].style.transform = "";
+                        document.getElementsByClassName("bottom")[0].style.transform = "";
+                        document.getElementById("header-menu").style.opacity = "";
+                        document.getElementById("header-menu").style.pointerEvents = "";
+                    }
+                }
+            </script>
         </header>
         <section class="wiki">
             <ul id="navigation-menu">
@@ -167,9 +190,6 @@
                 <div><h1>Comming Soon</h1></div>
             </div>
         </section>
-        <footer>
-            Copyright 2020 Clément Songis <a href="https://clementsongis.wordpress.com/contact/">Contact</a>
-        </footer>
         <script>
             var toggler = document.getElementsByClassName("caret");
             for (var i = 0; i < toggler.length; i++) {
@@ -195,14 +215,6 @@
             };
             window.onhashchange();
             var socket = io();
-            var href = "";
-            socket.on("href", function(redirect_uri, client_id) {
-                href = "https://discord.com/api/oauth2/authorize?client_id=" + client_id + "&redirect_uri=" + redirect_uri + "&response_type=code&scope=identify%20email"
-                var buttons = document.getElementsByClassName("login-button");
-                for (var i = 0; i < buttons.length; i++) {
-                    buttons[i].setAttribute('onclick',"document.location.href = '" + href + "'");
-                }
-            });
             for(var i = 0; i < decodeURIComponent(document.cookie).split(';').length; i++) {
                 var c = decodeURIComponent(document.cookie).split(';')[i];
                 while (c.charAt(0) == ' ') {

@@ -1,0 +1,96 @@
+<% if (isEditor === false) { %>
+    <header>
+        <nav>
+            <a class="logo-button" href="/"><img class="logo" src="/assets/images/logo.png" alt="Logo"></a>
+            <div id="header-menu">
+                <div>
+                    <a class="header-button" href="/simple_editor">Simple Editor</a>
+                    <a class="header-button" href="/advanced_editor">Advanced Editor</a>
+                    <a class="header-button" href="/wiki">Wiki</a>
+                    <a class="header-button" href="https://discord.gg/jwVzMKuNym">Discord Server</a>
+                    <!-- <a class="header-button" href="/extentions">Extentions</a> -->
+                </div>
+                <div>
+                    <% if (connected) { %>
+                        <a class="header-button" id="logout-button" href="/logout">Logout</a>
+                        <a class="header-button" id="logout-button" href="/account"><%= username %></a>
+                    <% }else{ %> 
+                        <a class="header-button login-button" href="/login">Login</a>
+                    <% } %> 
+                </div>
+            </div>
+            <div class="burger-button" onclick="openmenu()">
+                <span class="burger-button-line top"></span>
+                <span class="burger-button-line bottom"></span>
+            </div>
+        </nav>
+        <script>
+            function openmenu() {
+                if (!document.getElementsByClassName("top")[0].style.transform) {
+                    document.getElementsByClassName("top")[0].style.transform = "translateY(6px) rotate(45deg)";
+                    document.getElementsByClassName("bottom")[0].style.transform = "translateY(5px) rotate(-45deg) translateY(-2px)";
+                    document.getElementById("header-menu").style.opacity = "1";
+                    document.getElementById("header-menu").style.pointerEvents = "all";
+                } else {
+                    document.getElementsByClassName("burger-button")[0].style.paddingBottom = "";
+                    document.getElementsByClassName("top")[0].style.transform = "";
+                    document.getElementsByClassName("bottom")[0].style.transform = "";
+                    document.getElementById("header-menu").style.opacity = "";
+                    document.getElementById("header-menu").style.pointerEvents = "";
+                }
+            }
+        </script>
+    </header>
+<% }else{ %>
+    
+    <header>
+        <nav>
+            <a class="logo-button" href="/"><img class="logo" src="/assets/images/logo.png" alt="Logo"></a>
+            <div id="header-menu">
+                <div>
+                    <a class="header-button" href='/wiki'>Wiki</a>
+                    <button class="header-button" onclick="document.getElementById('file-menu').classList.toggle('visible');document.getElementById('edit-menu').classList.remove('visible');">File</button>
+                    <div class="dropdow-menu" id="file-menu">
+                        <ul>
+                            <li><button type="button" onclick="document.getElementById('file-menu').classList.remove('visible');document.location.href = '/advanced_editor';">Advanced Editor</button></li>
+                            <li><label class="custom-file-upload">
+                                <input type="file" id="file-input" accept=".ds">
+                                Open
+                            </label></li>
+                            <li><button type="button" onclick="document.getElementById('file-menu').classList.remove('visible');download();">Save</button></li>
+                            <li><button type="button" onclick="document.getElementById('file-menu').classList.remove('visible');downloadJS();">Export as JS</button></li>
+                        </ul>
+                    </div>
+                    <button class="header-button" onclick="document.getElementById('edit-menu').classList.toggle('visible');document.getElementById('file-menu').classList.remove('visible');">Edit</button>
+                    <div class="dropdow-menu" id="edit-menu">
+                        <ul>
+                            <li><button type="button" onclick="document.getElementById('edit-menu').classList.remove('visible');workspace.undo(false);">Undo</button></li>
+                            <li><button type="button" onclick="document.getElementById('edit-menu').classList.remove('visible');workspace.undo(true);">Redo</button></li>
+                            <li><button type="button" onclick="document.getElementById('edit-menu').classList.remove('visible');workspace.cleanUp();">Clean</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="game-buttons">
+                    <% if (connected) { %>
+                        <input type="text" id="name-input" name="name" value="Untitled" onchange="updateName()">
+                    <% }else{ %> 
+                        <input type="text" style="display: none;" id="name-input" name="name" value="Untitled" onchange="updateName()">
+                    <% } %> 
+                    <button class="game-button" id="play" onclick="play()"><img src="/assets/images/play.svg" alt="Play"></button>
+                </div>
+                <div>
+                    <% if (connected) { %>
+                        <a class="header-button" id="logout-button" href="/logout">Logout</a>
+                        <a class="header-button" id="logout-button" href="/account"><%= username %></a>
+                    <% }else{ %> 
+                        <a class="header-button login-button" href="/login">Login</a>
+                    <% } %> 
+                </div>
+            </div>
+            <div class="burger-button" onclick="openmenu()">
+                <span class="burger-button-line top"></span>
+                <span class="burger-button-line bottom"></span>
+            </div>
+        </nav>
+    </header>
+<% } %>

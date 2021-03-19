@@ -1,133 +1,250 @@
-const express = require('express'), http = require('http'), fs = require("fs"), discord = require("discord.js"), passwordHash = require('password-hash'), url = require('url'), fetch = require('node-fetch');
+const express = require('express');
+const session = require('express-session');
+const passport = require('passport');
+const DiscordStrategy = require("passport-discord.js").Strategy;
+const chalk = require("chalk");
+const fs = require("fs");
 const { spawn } = require('child_process');
-console.log("Starting ...");
-var app = express();
-var port = process.env.PORT || 8080;
-var server = app.listen(port, () => {
-  console.log("Server listening at http://localhost:" + port)
-});
-var io = require('socket.io')(server);
-// Web
-app.use(express.static(__dirname + '/client'));
-app.get('/redirect', function(req, res){
-    const urlObj = url.parse(req.url, true);
-    if (urlObj.query.code) {
-    	const accessCode = urlObj.query.code;
-        const data = {
-        	client_id: config.client_id,
-        	client_secret: config.client_secret,
-        	grant_type: 'authorization_code',
-        	redirect_uri: config.redirect_uri,
-        	code: accessCode,
-        	scope: 'identify%20email',
-        };
-        fetch('https://discord.com/api/oauth2/token', {
-        	method: 'POST',
-        	body: new URLSearchParams(data),
-        	headers: {
-        		'Content-Type': 'application/x-www-form-urlencoded',
-        	},
-        }).then(res => res.json()).then(info => fetch('https://discord.com/api/users/@me', {
-                headers: {
-                    authorization: `${info.token_type} ${info.access_token}`,
-                },
-            }).then(res => res.json()).then(info => {
-                if (info.message){
-                    console.error(info.message);
-                    res.end("<script>document.location.href='/';</script>");
-                } else {
-                    if (!(info.id in users)) {
-                        users[info.id] = {
-                            username: info.username,
-                            email: info.email,
-                            tutorial: true,
-                            projects: {},
-                        };
-                        fs.writeFileSync('./users.json', JSON.stringify(users));
-                    }else {
-                        users[info.id].username = info.username;
-                    }
-                    res.end("<script>document.cookie='id=" + passwordHash.generate(info.id) + ";path=/';document.location.href='/';</script>");
-                }
-            }));
-    }else {
-        res.end("<script>document.location.href='/';</script>");
-    }
-});
-console.log("Read JSON files ...");
 
+// ######## JSON ########
 if (!fs.existsSync("users.json")) {
     fs.writeFileSync("users.json", "{}");
 }
 if (!fs.existsSync("config.json")) {
-    console.error("Please create config.json file config.json.exemple is an exemple");
+    throw "Please create config.json file config.json.exemple is an exemple";
 }
 if (!fs.existsSync("./userfiles")) {
     fs.mkdirSync("./userfiles");
 }
 var users = JSON.parse(fs.readFileSync("users.json"));
 var config = JSON.parse(fs.readFileSync("config.json"));
-var socketIDs = {};
-var defaultXML = '<xml xmlns="http://www.w3.org/1999/xhtml">' +
-    '<block type="discord_token" id="f^}(kcWM:P]0Ki-7PH,4" deletable="false" movable="false" x="0" y="0">' +
-        '<field name="TEXT">token</field>' +
-    '</block>' +
-    '<block type="event_on" id="h0$AV2pq84-nP;=z49~P" x="0" y="96">' +
-        '<field name="ACTION">ready</field>' +
-        '<statement name="DO">' +
-            '<block type="sensing_log" id="^Hbrdm97i9]$/SJ@K:F8">' +
-                '<value name="TEXT">' +
-                    '<shadow type="text" id="^jxJW~)+]xnB#+UtlQy*">' +
-                        '<field name="TEXT">Bot is online !</field>' +
-                    '</shadow>' +
-                '</value>' +
-            '</block>' +
-        '</statement>' +
-    '</block>' +
-    '<block type="event_on" id=":Rd+teh^G@KsewvDIxwD" x="0" y="272">' +
-        '<field name="ACTION">message</field>' +
-        '<statement name="DO">' +
-            '<block type="control_if" id=")XmGcc6]At{uGvs%7`=s">' +
-                '<value name="CONDITION">' +
-                    '<block type="operator_startswith" id="VoaA9kyY=yq4mqyBkoIr">' +
-                        '<value name="STRING1">' +
-                            '<shadow xmlns="" type="text" id="3aK~d81kQ8f}0U/PZXPL">' +
-                                '<field name="TEXT">hello world !</field>' +
-                            '</shadow>' +
-                            '<block type="message_content" id="ExL;Bf!|#wZ4J|QK;X0Q">' +
-                                '<value name="MESSAGE">' +
-                                    '<block type="event_variables" id="q]{Tkhs;k?~pfEna%cUT">' +
-                                        '<field name="VARIABLE">message</field>' +
-                                    '</block>' +
-                                '</value>' +
-                            '</block>' +
-                        '</value>' +
-                        '<value name="STRING2">' +
-                            '<shadow type="text" id="~HVIZDaP}7iuJ-J;pqoh">' +
-                                '<field name="TEXT">!ping</field>' +
-                            '</shadow>' +
-                        '</value>' +
-                    '</block>' +
-                '</value>' +
-                '<statement name="SUBSTACK">' +
-                    '<block type="message_reply" id="1t=K?nqBO{iQ#C3tz/e[">' +
-                        '<value name="TEXT">' +
-                            '<shadow type="text" id="2UOm-;]*c~@oa[hXn_mW">' +
-                                '<field name="TEXT">pong !</field>' +
-                            '</shadow>' +
-                        '</value>' +
-                        '<value name="MESSAGE">' +
-                            '<block type="event_variables" id="etv#Xb68BMy*uHMb/aMd">' +
-                                '<field name="VARIABLE">message</field>' +
-                            '</block>' +
-                        '</value>' +
-                    '</block>' +
-                '</statement>' +
-            '</block>' +
-        '</statement>' +
-    '</block>' +
-'</xml>';
+var defaultXML = `<xml xmlns="http://www.w3.org/1999/xhtml">
+    <block type="discord_token" id="f^}(kcWM:P]0Ki-7PH,4" deletable="false" movable="false" x="0" y="0">
+        <field name="TEXT">token</field>
+    </block>
+    <block type="event_on" id="h0$AV2pq84-nP;=z49~P" x="0" y="96">
+        <field name="ACTION">ready</field>
+        <statement name="DO">
+            <block type="sensing_log" id="^Hbrdm97i9]$/SJ@K:F8">
+                <value name="TEXT">
+                    <shadow type="text" id="^jxJW~)+]xnB#+UtlQy*">
+                        <field name="TEXT">Bot is online !</field>
+                    </shadow>
+                </value>
+            </block>
+        </statement>
+    </block>
+    <block type="event_on" id=":Rd+teh^G@KsewvDIxwD" x="0" y="272">
+        <field name="ACTION">message</field>
+        <statement name="DO">
+            <block type="control_if" id=")XmGcc6]At{uGvs%7=s">
+                <value name="CONDITION">
+                    <block type="operator_startswith" id="VoaA9kyY=yq4mqyBkoIr">
+                        <value name="STRING1">
+                            <shadow xmlns="" type="text" id="3aK~d81kQ8f}0U/PZXPL">
+                                <field name="TEXT">hello world !</field>
+                            </shadow>
+                            <block type="message_content" id="ExL;Bf!|#wZ4J|QK;X0Q">
+                                <value name="MESSAGE">
+                                    <block type="event_variables" id="q]{Tkhs;k?~pfEna%cUT">
+                                        <field name="VARIABLE">message</field>
+                                    </block>
+                                </value>
+                            </block>
+                        </value>
+                        <value name="STRING2">
+                            <shadow type="text" id="~HVIZDaP}7iuJ-J;pqoh">
+                                <field name="TEXT">!ping</field>
+                            </shadow>
+                        </value>
+                    </block>
+                </value>
+                <statement name="SUBSTACK">
+                    <block type="message_reply" id="1t=K?nqBO{iQ#C3tz/e[">
+                        <value name="TEXT">
+                            <shadow type="text" id="2UOm-;]*c~@oa[hXn_mW">
+                                <field name="TEXT">pong !</field>
+                            </shadow>
+                        </value>
+                        <value name="MESSAGE">
+                            <block type="event_variables" id="etv#Xb68BMy*uHMb/aMd">
+                                <field name="VARIABLE">message</field>
+                            </block>
+                        </value>
+                    </block>
+                </statement>
+            </block>
+        </statement>
+    </block>
+</xml>`;
 var commands = {};
+
+var app = express();
+var port = process.env.PORT || 8080;
+var server = app.listen(port, () => {
+    console.log(`${chalk.blue("[INFO]")} Server listening at http://localhost:${port}`);
+});
+var io = require('socket.io')(server);
+var sessionMiddleware = session({
+    secret: 'discordscratch',
+    resave: true,
+    saveUninitialized: true,
+    cookie: {
+        path: '/',
+        secure: false
+    },
+});
+io.use(function (socket, next) {
+    sessionMiddleware(socket.request, socket.request.res || {}, next);
+});
+app.use(sessionMiddleware);
+app.set('view engine', 'ejs');
+app.use(passport.initialize());
+app.use(passport.session());
+passport.serializeUser(function (u, d) {
+    d(null, u);
+});
+passport.deserializeUser(function (u, d) {
+    d(null, u);
+});
+// ######## Discord OAuth2 #######
+passport.use(new DiscordStrategy({
+    clientID: config.client_id,
+    clientSecret: config.client_secret,
+    callbackURL: config.redirect_uri,
+    scope: ["identify", "email"]
+}, function (accessToken, refreshToken, profile, done) {
+    return done(null, profile);
+}));
+// ######## Web ########
+app.use(express.static(__dirname + '/public'));
+app.get('/', function (req, res) {
+    if (req.session.user) {
+        res.render('pages/main', { connected: true, username: req.session.user.username, email: req.session.user.email, discord_token: req.session.user.accessToken });
+    } else {
+        res.render('pages/main', { connected: false });
+    }
+});
+app.get("/redirect", passport.authenticate("discord.js", { failureRedirect: "/login" }), function (req, res) {
+    var user = req.session.passport.user;
+    if (!(user.id in users)) {
+        users[user.id] = {
+            tutorial: true,
+            projects: {},
+            username: user.username,
+            email: user.email,
+            discriminator: user.discriminator,
+            avatar: `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`,
+        };
+    } else {
+        users[user.id].email = user.email;
+        users[user.id].username = user.username;
+        users[user.id].discriminator = user.discriminator;
+        users[user.id].avatar = `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`;
+    }
+    fs.writeFileSync('./users.json', JSON.stringify(users));
+    req.session.user = {
+        id: user.id,
+        username: user.username,
+    };
+    console.log(`${chalk.blue("[INFO]")} L'utilisateur ${req.session.passport.user.username}#${req.session.passport.user.discriminator} vient de se connecter sur le site !`);
+    res.redirect('/');
+});
+app.get("/login", passport.authenticate("discord.js"));
+app.get("/logout", (req, res) => {
+    req.session.user = req.session.destroy();
+    res.redirect('/');
+});
+app.get('/account', function (req, res) {
+    if (req.session.user) {
+        res.render('pages/account', { connected: true, username: req.session.user.username, projects: users[req.session.user.id].projects });
+    } else {
+        res.redirect("/login");
+    }
+});
+app.get('/simple_editor', function (req, res) {
+    if (req.session.user) {
+        var projectName = "";
+        if (req.query.name) {
+            projectName = req.query.name;
+        } else {
+            projectName = getUntitledName(users[req.session.user.id].projects);
+        }
+        if (!(projectName in users[req.session.user.id].projects)) {
+            var path = req.session.user.id + projectName.toLowerCase().split(" ").join("_").split(".").join("").split("/").join("");
+            users[req.session.user.id].projects[projectName] = {
+                xml: defaultXML,
+                path: path
+            };
+            fs.writeFileSync('./users.json', JSON.stringify(users));
+        }
+        users[req.session.user.id].projects[projectName].xml = users[req.session.user.id].projects[projectName].xml.split("`").join("");
+        res.render('pages/simple_editor', {
+            connected: true,
+            username: req.session.user.username,
+            tutorial: users[req.session.user.id].tutorial,
+            project: users[req.session.user.id].projects[projectName],
+            projectName: projectName,
+            exist: commands[users[req.session.user.id].projects[projectName].path] || false,
+        });
+    } else {
+        res.render('pages/simple_editor', {
+            connected: false,
+            tutorial: true,
+            project: {
+                xml: defaultXML,
+                path: ""
+            },
+            projectName: "Untitled",
+            exist: false,
+        });
+    }
+});
+app.get('/advanced_editor', function (req, res) {
+    if (req.session.user) {
+        var projectName = "";
+        if (req.query.name) {
+            projectName = req.query.name;
+        }else{
+            projectName = getUntitledName(users[req.session.user.id].projects);
+        }
+        if (!(projectName in users[req.session.user.id].projects)) {
+            var path = req.session.user.id + projectName.toLowerCase().split(" ").join("_").split(".").join("").split("/").join("");
+            users[req.session.user.id].projects[projectName] = {
+                xml: defaultXML,
+                path: path
+            };
+            fs.writeFileSync('./users.json', JSON.stringify(users));
+        }
+        users[req.session.user.id].projects[projectName].xml = users[req.session.user.id].projects[projectName].xml.split("`").join("");
+        res.render('pages/advanced_editor', {
+            connected: true,
+            username: req.session.user.username,
+            tutorial: users[req.session.user.id].tutorial,
+            project: users[req.session.user.id].projects[projectName],
+            projectName: projectName,
+            exist: commands[users[req.session.user.id].projects[projectName].path],
+        });
+    } else {
+        res.render('pages/advanced_editor', {
+            connected: false,
+            tutorial: true,
+            project: {
+                xml: defaultXML,
+                path: ""
+            },
+            projectName: "Untitled",
+            exist: false,
+        });
+    }
+});
+app.get('/wiki', function (req, res) {
+    if (req.session.user) {
+        res.render('pages/wiki', { connected: true, username: req.session.user.username });
+    } else {
+        res.render('pages/wiki', { connected: false });
+    }
+});
 function getUntitledName(projects) {
     var projectName = "Untitled";
     var tempName = 0;
@@ -148,11 +265,10 @@ function getUntitledName(projects) {
 }
 // Socket.io
 io.on('connection', function (socket) {
-    console.log("Un client c'est connecté !");
-    socket.emit("href", config.redirect_uri, config.client_id);
+    console.log(`${chalk.blue("[INFO]")} Un client c'est connecté !`);
     socket.on('play', function(filename) {
         if (!commands[filename]) {
-            console.log("Une commande à été démmarer !");
+            console.log(`${chalk.blue("[INFO]")} Une commande à été démmarer !`);
             commands[filename] = spawn('node', ["userfiles/" + filename + ".js"]);
             commands[filename].stdout.on('data', (data) => {
                 socket.emit("stdout", data.toString(), socket.id);
@@ -166,7 +282,7 @@ io.on('connection', function (socket) {
             commands[filename].on('close', (code) => {
                 commands[filename] = null;
                 socket.emit("stop", code, socket.id);
-                console.log("Une commande à été arreter !");
+                console.log(`${chalk.blue("[INFO]")} Une commande à été arreter !`);
             });
             socket.emit("start", socket.id);
         }else {
@@ -174,94 +290,50 @@ io.on('connection', function (socket) {
             commands[filename].kill();
         }
     });
-    socket.on('updateCode', function(filename, code, projectName, xml) {
-        if (socket.id in socketIDs) {
-            if (projectName in users[socketIDs[socket.id]].projects) {
+    socket.on('updateCode', function (filename, code, projectName, xml) {
+        if (socket.request.session.user) {
+            if (projectName in users[socket.request.session.user.id].projects) {
                 if (!commands[filename]) {
                     fs.writeFileSync("userfiles/" + filename + ".js", code);
                 }
-                users[socketIDs[socket.id]].projects[projectName].xml = xml;
+                users[socket.request.session.user.id].projects[projectName].xml = xml;
                 fs.writeFileSync('./users.json', JSON.stringify(users));
             }
-        }
-    });
-    socket.on('cookie', function(hashedID) {
-        for (var userID in users) {
-            if (passwordHash.verify(userID, hashedID)) {
-                socketIDs[socket.id] = userID;
-                socket.emit("cookieSucces", users[userID].username, users[userID].tutorial, socket.id);
-            }
-        }
-    });
-    socket.on('projects', function() {
-        if (socket.id in socketIDs) {
-            socket.emit("projects", users[socketIDs[socket.id]].projects, socket.id);
         }
     });
     socket.on('deleteProject', function (projectName) {
-        if (socket.id in socketIDs) {
-            if (fs.existsSync("userfiles/" + users[socketIDs[socket.id]].projects[projectName].path + ".js")) {
-                fs.unlinkSync("userfiles/" + users[socketIDs[socket.id]].projects[projectName].path + ".js");
+        if (socket.request.session.user) {
+            if (fs.existsSync("userfiles/" + users[socket.request.session.user.id].projects[projectName].path + ".js")) {
+                fs.unlinkSync("userfiles/" + users[socket.request.session.user.id].projects[projectName].path + ".js");
             }
-            delete users[socketIDs[socket.id]].projects[projectName];
+            delete users[socket.request.session.user.id].projects[projectName];
             fs.writeFileSync('./users.json', JSON.stringify(users));
-            socket.emit("projects", users[socketIDs[socket.id]].projects, socket.id);
+            socket.emit("projects", users[socket.request.session.user.id].projects, socket.id);
         }
     });
     socket.on('duplicateProject', function (projectName) {
-        if (socket.id in socketIDs) {
-            users[socketIDs[socket.id]].projects[projectName + " Copy"] = users[socketIDs[socket.id]].projects[projectName];
+        if (socket.request.session.user) {
+            users[socket.request.session.user.id].projects[projectName + " Copy"] = users[socket.request.session.user.id].projects[projectName];
             fs.writeFileSync('./users.json', JSON.stringify(users));
-            socket.emit("projects", users[socketIDs[socket.id]].projects, socket.id);
+            socket.emit("projects", users[socket.request.session.user.id].projects, socket.id);
         }
     });
     socket.on('disableTutorial', function () {
-        if (socket.id in socketIDs) {
-            users[socketIDs[socket.id]].tutorial = false;
+        if (socket.request.session.user) {
+            users[socket.request.session.user.id].tutorial = false;
             fs.writeFileSync('./users.json', JSON.stringify(users));
         }
     });
-    socket.on('getProject', function (projectName) {
-        if (socket.id in socketIDs) {
-            if (projectName in users[socketIDs[socket.id]].projects) {
-                socket.emit("project", projectName, users[socketIDs[socket.id]].projects[projectName], commands[users[socketIDs[socket.id]].projects[projectName].path] ? true : false, socket.id);
-            }else {
-                var path = socketIDs[socket.id] + projectName.toLowerCase().split(" ").join("_").split(".").join("").split("/").join("");
-                users[socketIDs[socket.id]].projects[projectName] = {
-                    xml: defaultXML,
-                    path: path
-                };
-                socket.emit("project", projectName, users[socketIDs[socket.id]].projects[projectName], false, socket.id);
-                fs.writeFileSync('./users.json', JSON.stringify(users));
-            }
-        }
-    });
-    socket.on('untitledProject', function () {
-        if (socket.id in socketIDs) {
-            var projectName = getUntitledName(users[socketIDs[socket.id]].projects);
-            if (projectName in users[socketIDs[socket.id]].projects) {
-                socket.emit("project", projectName, users[socketIDs[socket.id]].projects[projectName], socket.id);
-            }else {
-                var path = socketIDs[socket.id] + projectName.toLowerCase().split(" ").join("_").split(".").join("").split("/").join("");
-                users[socketIDs[socket.id]].projects[projectName] = {
-                    xml: defaultXML,
-                    path: path
-                };
-                socket.emit("project", projectName, users[socketIDs[socket.id]].projects[projectName], false, socket.id);
-                fs.writeFileSync('./users.json', JSON.stringify(users));
-            }
-        }
-    });
     socket.on('updateName', function (oldName, newName) {
-        if (socket.id in socketIDs) {
-            if (oldName in users[socketIDs[socket.id]].projects) {
-                users[socketIDs[socket.id]].projects[newName] = users[socketIDs[socket.id]].projects[oldName];
-                delete users[socketIDs[socket.id]].projects[oldName];
+        if (socket.request.session.user) {
+            if (oldName in users[socket.request.session.user.id].projects) {
+                users[socket.request.session.user.id].projects[newName] = users[socket.request.session.user.id].projects[oldName];
+                delete socket.request.session.user.projects[oldName];
                 fs.writeFileSync('./users.json', JSON.stringify(users));
             }
         }
     });
     socket.on('disconnect', function() {
-        console.log("Un client c'est déconnecté !");
+        console.log(`${chalk.blue("[INFO]")} Un client c'est déconnecté !`);
     });
 });

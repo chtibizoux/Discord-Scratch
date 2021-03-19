@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Discord Scratch</title>
+        <link rel="shortcut icon" href="/assets/images/favicon.ico">
+        <meta name="description" content="A web site to make discord bots with scratch.">
+        <meta name="author" content="Clément Songis">
+        <meta name="application-name" content="Discord Scratch">
+        <meta name="theme-color" content="#cce1fc">
+        <meta name="color-scheme" content="only light">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="index">
+        <meta name="keywords" content="discord,scratch,bot">
+        <link rel="stylesheet" href="/css/index.css">
+        <script src="https://kit.fontawesome.com/740353a2ba.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+    </head>
+    <body>
+        <%- include('../templates/header', {isEditor: false}) %>
+        <section class="presentation">
+            <div class="title-div">
+                <h1>Discord Scratch</h1>
+                <h2>Easily create discord bots</h2>
+                <h3>Based on <a href="https://scratch.mit.edu/">Scratch</a> the simplest language</h3>
+                <div class="title-buttons-div">
+                    <button class="title-button" onclick="document.location.href = '/simple_editor'">Start Create</button>
+                    <button class="title-button login-button">Login</button>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <p>The project is <a href="https://github.com/chtibizoux/Discord-Scratch">opensource</a> and in beta.</p>
+            <p>Do you have any quetions ?</p>
+            <p>Are you blocked by the interface not allowing you to do what you want ?</p>
+            <p>Please contact me <a href="https://clementsongis.wordpress.com/contact/">here</a> or on my <a href="https://discord.gg/jwVzMKuNym">discord server</a></p>
+            <h2>Demontrations</h2>
+            <img class="demontrations-img" src="/assets/images/demonstration1.jpg" alt="ping">
+            <img class="demontrations-img" src="/assets/images/demonstration2.jpg" alt="ping">
+        </section>
+    </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Discord Scratch</title>
+        <link rel="shortcut icon" href="/assets/images/favicon.ico">
+        <meta name="description" content="A web site to make discord bots with scratch.">
+        <meta name="author" content="Clément Songis">
+        <meta name="application-name" content="Discord Scratch">
+        <meta name="theme-color" content="#cce1fc">
+        <meta name="color-scheme" content="only light">
+        <meta name="robots" content="index">
+        <meta name="keywords" content="discord,scratch,bot">
+        <link rel="stylesheet" href="/css/editor.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/prism.css">
+        <script src="/js/prism.js"></script>
+        <script src="https://kit.fontawesome.com/740353a2ba.js"></script>
+        <script src="/js/simple_blockly_compressed_vertical.js"></script>
+        <script src="/js/simple_blocks_compressed.js"></script>
+        <script src="/js/simple_blocks_compressed_vertical.js"></script>
+        <script src="/js/simple_scratch_msgs.js"></script>
+        <script src="/js/javascript_compressed.js"></script>
+        <script src="/js/simple_blocks_javascript.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+    </head>
+    <body>
+        <%- include('../templates/header', {isEditor: true}) %>
+        <section class="editor">
+            <div id="blockly-div" class="editor-div"></div>
+            <div id="hide-show-arrow"></div>
+            <div class="console-div">
+                <h2>Console</h2>
+                <div id="console">
+                    <div id="console-content">
+                        /test>
+                    </div>
+                </div>
+            </div>
+            <div class="js-viewer-div">
+                <h2>JavaScript</h2>
+                <pre class="js-viewer line-numbers language-javascript"><code id="javascript-viewer"></code></pre>
+            </div>
+        </section>
+        <div id="save-div" style="display: none;">
+            <h3>To save and use your project please <a id="save-link" href="#">Login</a></h3>
+            <button class="save-cancel-button" onclick="document.getElementById('save-div').style.display = 'none'">Cancel</button>
+        </div>
+        <div class="tutorial-background" id="tutorial1">
+            <div class="tutorial-div">
+                <h1>Create Discord Application</h1>
+                <p>So that your application can connect to discord you must create an application on the <a href="https://discord.com/developers/applications">Discord developers pannel</a>.</p>
+                <ol>
+                    <li><a href="https://discord.com/developers/applications">Open Discord developers pannel</a> and click on "New Application"<br><img src="/assets/images/tutorial1.jpg" alt="New Application"></li>
+                    <li>Choose a name and click on "Create"<br><img src="/assets/images/tutorial2.jpg" alt="Create"></li>
+                    <li>Go to "Bot"<br><img src="/assets/images/tutorial3.jpg" alt="Bot"></li>
+                    <li>Click on "Add Bot"<br><img src="/assets/images/tutorial4.jpg" alt="Add Bot"></li>
+                    <li>Click on "Copy"<br><img src="/assets/images/tutorial5.jpg" alt="Copy"></li>
+                    <li>And paste token in<br><img src="/assets/images/tutorial6.jpg" alt="Paste"></li>
+                </ol>
+                <button class="tutorial-close-button" onclick="document.getElementById('tutorial1').style.display = 'none';socket.emit('disableTutorial')">Close</button>
+            </div>
+        </div>
+        <div class="tutorial-background" style="display: none;" id="tutorial2">
+            <div class="tutorial-div">
+                <h1>Invite Discord Bot</h1>
+                <ol>
+                    <li><a href="https://discord.com/developers/applications">Open Discord developers pannel</a> and click on your application</li>
+                    <li>Go to "OAuth2"<br><img src="/assets/images/tutorial3.jpg" alt="Bot"></li>
+                    <li>Select "bot"<br><img src="/assets/images/tutorial7.jpg" alt="scopes"></li>
+                    <li>Select your bot permissions<br><img src="/assets/images/tutorial8.jpg" alt="permissions"></li>
+                    <li>And click on "copy" after the url<br><img src="/assets/images/tutorial9.jpg" alt="Copy"></li>
+                    <li>And past URL in a new tab</li>
+                    <li>Now you can select your server and click on "Authorize"</li>
+                </ol>
+                <button class="tutorial-close-button" onclick="document.getElementById('tutorial2').style.display = 'none';socket.emit('disableTutorial')">Close</button>
+            </div>
+        </div>
+        <script>
+            var socket = io();
+            Blockly.ScratchMsgs.setLocale("en");
+            var workspace = Blockly.inject('blockly-div', {
+              comments: true,
+              disable: false,
+              collapse: false,
+              media: '/assets/images/scratch/',
+              readOnly: false,
+              rtl: false,
+              scrollbars: true,
+              toolbox: null,
+              sounds: false,
+              zoom: {
+                controls: true,
+                wheel: true,
+                startScale: 0.675,
+                maxScale: 4,
+                minScale: 0.25,
+                scaleSpeed: 1.1
+              },
+              colours: {
+                fieldShadow: 'rgba(255, 255, 255, 0.3)',
+                dragShadowOpacity: 0.6
+              }
+            });
+            var projectPath = "<%= project.path %>";
+            var projectName = "<%= projectName %>";
+            var connected = <%= connected %>;
+            var tutorial = <%= tutorial %>;
+            document.getElementById("name-input").value = projectName;
+            if (<%= exist %>) {
+                document.getElementById("play").innerHTML = '<img src="/assets/images/stop.svg" alt="Stop">';
+                document.getElementById("console-content").innerHTML = "";
+            } else {
+                document.getElementById("play").innerHTML = '<img src="/assets/images/play.svg" alt="Play">';
+            }
+            Blockly.Xml.domToWorkspace(Blockly.Xml.textToDom(`<%- project.xml %>`), workspace);
+            workspace.addChangeListener(Blockly.Events.disableOrphans);
+            function codeUpdate(event) {
+                if (connected) {
+                    var xml = Blockly.Xml.domToText(Blockly.Xml.workspaceToDom(workspace));
+                    var code = start + Blockly.JavaScript.workspaceToCode(workspace) + end;
+                    document.getElementById("javascript-viewer").innerHTML = code;
+                    Prism.highlightElement(document.getElementById("javascript-viewer"));
+                    socket.emit("updateCode", projectPath, code, projectName, xml);
+                }
+            }
+            workspace.addChangeListener(codeUpdate);
+        </script>
+        <script src="/js/ui.js"></script>
+    </body>
+</html>
