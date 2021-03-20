@@ -13,57 +13,21 @@
         <meta name="robots" content="index">
         <meta name="keywords" content="discord,scratch,bot">
         <link rel="stylesheet" href="/css/wiki.css">
+        <link rel="stylesheet" href="/css/main.css">
         <script src="https://kit.fontawesome.com/740353a2ba.js"></script>
         <script src="/socket.io/socket.io.js"></script>
     </head>
     <body>
-        <header>
-            <nav>
-                <button class="logo-button" onclick="document.location.href = '#'"><img class="logo" src="/assets/images/logo.png" alt="Logo"></button>
-                <div id="header-menu">
-                    <div>
-                        <a class="header-button" href="/simple_editor">Simple Editor</a>
-                        <a class="header-button" href="/advanced_editor">Advanced Editor</a>
-                        <a class="header-button" href="/wiki">Wiki</a>
-                        <a class="header-button" href="https://discord.gg/jwVzMKuNym">Discord Server</a>
-                        <!-- <a class="header-button" href="/extentions">Extentions</a> -->
-                    </div>
-                    <div>
-                        <button class="header-button" id="logout-button" style="display: none;" onclick="logout()">Logout</button>
-                        <a class="header-button login-button" href="/login">Login</a>
-                    </div>
-                </div>
-                <div class="burger-button" onclick="menu()">
-                    <span class="burger-button-line top"></span>
-                    <span class="burger-button-line bottom"></span>
-                </div>
-            </nav>
-            <script>
-                function menu() {
-                    if (!document.getElementsByClassName("top")[0].style.transform) {
-                        document.getElementsByClassName("top")[0].style.transform = "translateY(6px) rotate(45deg)";
-                        document.getElementsByClassName("bottom")[0].style.transform = "translateY(5px) rotate(-45deg) translateY(-2px)";
-                        document.getElementById("header-menu").style.opacity = "1";
-                        document.getElementById("header-menu").style.pointerEvents = "all";
-                    } else {
-                        document.getElementsByClassName("burger-button")[0].style.paddingBottom = "";
-                        document.getElementsByClassName("top")[0].style.transform = "";
-                        document.getElementsByClassName("bottom")[0].style.transform = "";
-                        document.getElementById("header-menu").style.opacity = "";
-                        document.getElementById("header-menu").style.pointerEvents = "";
-                    }
-                }
-            </script>
-        </header>
+        <%- include('../templates/header', {isEditor: false}) %>
         <section class="wiki">
             <ul id="navigation-menu">
-                <li><a class="caret caret-down" href="#Getting-Started">Getting Started</a>
+                <li><a class="caret caret-down responsive" href="#Getting-Started">Getting Started</a>
                 <ul class="nested active">
                     <li><a href="#Getting-Started-Create-Discord-Application">Create Discord Application</a></li>
                     <li><a href="#Getting-Started-Invite-Discord-Bot">Invite Discord Bot</a></li>
                 </ul>
                 </li>
-                <li><a class="caret" href="#Blocks">Blocks</a>
+                <li><a class="caret responsive" href="#Blocks">Blocks</a>
                 <ul class="nested">
                     <li><a class="caret" href="#Blocks-Discord">Discord</a>
                     <ul class="nested">
@@ -151,7 +115,7 @@
                     </li>
                 </ul>
                 </li>
-                <li><a class="caret" href="#Extentions">Extentions</a>
+                <li><a class="caret responsive" href="#Extentions">Extentions</a>
                 <ul class="nested">
                     <li><a href="#Extentions-Comming-Soon">Comming Soon</a></li>
                 </ul>
@@ -214,29 +178,10 @@
                 }
             };
             window.onhashchange();
-            var socket = io();
-            for(var i = 0; i < decodeURIComponent(document.cookie).split(';').length; i++) {
-                var c = decodeURIComponent(document.cookie).split(';')[i];
-                while (c.charAt(0) == ' ') {
-                    c = c.substring(1);
-                }
-                if (c.indexOf("id=") == 0) {
-                    socket.emit("cookie", c.substring(name.length, c.length).slice(3));
-                }
-            }
-            socket.on('cookieSucces', function(username, tutorial, socketID){
-                if (socketID === socket.id) {
-                    document.getElementById("logout-button").style.display = "inline-block";
-                    var buttons = document.getElementsByClassName("login-button");
-                    for (var i = 0; i < buttons.length; i++) {
-                        buttons[i].innerHTML = username;
-                        buttons[i].setAttribute('onclick',"document.location.href = '/account'");
-                    }
-                }
-            });
-            function logout() {
-                document.cookie = "id=;path=/";
-                document.location.href = "/";
+            if (window.matchMedia("(max-width: 750px)").matches) {
+                Array.from(document.getElementsByClassName("responsive")).forEach(element => {
+                    element.setAttribute("href", "#");
+                });
             }
         </script>
     </body>

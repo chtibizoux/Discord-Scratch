@@ -81,7 +81,7 @@ a{
     border: none;
 }
 #create-div{
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -132,5 +132,25 @@ a{
     }
     #projects{
         justify-content: center;
+    }
+    #create-div{
+        left: 0;
+        right: 0;
+        top: 0;
+        transform: none;
+        bottom: 0;
+        background-color: #6eaaff;
+        padding: 20px;
+        padding-top: 120px;
+        border-radius: 0;
+        text-align: center;
+    }
+    label{
+        display: inline-block;
+        margin-top: 20px;
+    }
+    input{
+        width: calc(100% - 20px);
+        margin: 20px 0;
     }
 }
