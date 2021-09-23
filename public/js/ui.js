@@ -53,9 +53,9 @@ socket.on('project', function(name, project, exist, socketID){
     if (socketID === socket.id) {
         projectPath = project.path;
         projectName = name;
-        document.getElementById("name-input").value = name;
-        document.title = "Discord Scratch - " + name;
-        history.pushState('Change project name', document.title, '?name=' + name);
+        document.getElementById("name-input").value = projectName;
+        document.title = "Discord Scratch - " + projectName;
+        history.pushState('Change project name', document.title, '?name=' + projectName);
         Blockly.Xml.clearWorkspaceAndLoadFromXml(Blockly.Xml.textToDom(project.xml), workspace);
         if (exist) {
             document.getElementById("play").innerHTML = '<img src="/assets/images/stop.svg" alt="Stop">';
