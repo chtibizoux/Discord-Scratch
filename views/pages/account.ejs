@@ -31,7 +31,7 @@
         </div>
         <section id="projects" <% if (projects.length === 0) { %>style="display: block;"<% }else{ %>style="display: flex;"<% } %>>
             <% for(var projectName in projects) { %>
-                <div class="project-button" projectName="<%= projectName %>" onclick="document.location.href = '/simple_editor/?name=<%= projectName %>'">
+                <div class="project-button" projectName="<%= projectName %>" onclick="document.location.href = '/advanced_editor/?name=<%= projectName %>'/* simple_editor */">
                     <div class="project-img"><img src="/assets/images/project.png" alt=""></div>
                     <div class="project-button-name"><%= projectName %></div>
                     <button class="project-delete-button" onclick="event.stopPropagation();socket.emit('deleteProject', '<%= projectName %>');"><img src="/assets/images/trash.svg" alt=""></button>
