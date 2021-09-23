@@ -328,7 +328,7 @@ io.on('connection', function (socket) {
         if (socket.request.session.user) {
             if (oldName in users[socket.request.session.user.id].projects) {
                 users[socket.request.session.user.id].projects[newName] = users[socket.request.session.user.id].projects[oldName];
-                delete socket.request.session.user.projects[oldName];
+                delete users[socket.request.session.user.id].projects[oldName];
                 fs.writeFileSync('./users.json', JSON.stringify(users));
             }
         }
