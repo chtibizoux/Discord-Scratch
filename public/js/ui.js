@@ -78,9 +78,9 @@ document.getElementById("hide-show-arrow").addEventListener("click", function(ev
     } else {
         document.getElementsByClassName("console-div")[0].style.display = "none";
         document.getElementsByClassName("js-viewer-div")[0].style.display = "none";
-        document.getElementsByClassName("editor-div")[0].style.right = "20px";
+        document.getElementsByClassName("editor-div")[0].style.right = "0";
         document.getElementById("hide-show-arrow").style.left = "100%";
-        document.getElementById("hide-show-arrow").style.transform = "translate(-35px, -8px) rotate(90deg)";
+        document.getElementById("hide-show-arrow").style.transform = "translate(-100%, -50%) rotate(180deg)";
         Blockly.svgResize(workspace);
     }
 });

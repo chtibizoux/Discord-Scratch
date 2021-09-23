@@ -36,36 +36,39 @@ html, body{
     position: absolute;
     left: 60%;
     top: 50%;
-    transform: translate(-10px, 8px) rotate(-90deg);
+    transform: translateY(-50%);
     text-align: center;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #bbbbbb;
     padding: 0px;
-    margin-bottom: 6px;
-    height: 8px;
-    width: 50px;
+    height: 70px;
+    width: 20px;
+    z-index: 100;
 }
 #hide-show-arrow:before {
-    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 51%;
-    background: #bbbbbb;
-    transform: skew(0deg, 15deg);
+    top: 10px;
+    right: 8px;
+    height: 26px;
+    width: 6px;
+    background: white;
+    transform: rotate(-12deg);
 }
 #hide-show-arrow:after {
-    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     content: '';
     position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 50%;
-    background: #bbbbbb;
-    transform: skew(0deg, -15deg);
+    bottom: 10px;
+    right: 8px;
+    height: 26px;
+    width: 6px;
+    background: white;
+    transform: rotate(12deg);
 }
 .console-div{
     position: absolute;

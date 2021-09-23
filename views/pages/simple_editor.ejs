@@ -116,11 +116,11 @@
             Blockly.Xml.domToWorkspace(Blockly.Xml.textToDom(`<%- project.xml %>`), workspace);
             workspace.addChangeListener(Blockly.Events.disableOrphans);
             function codeUpdate(event) {
-                if (connected) {
                     var xml = Blockly.Xml.domToText(Blockly.Xml.workspaceToDom(workspace));
                     var code = start + Blockly.JavaScript.workspaceToCode(workspace) + end;
                     document.getElementById("javascript-viewer").innerHTML = code;
                     Prism.highlightElement(document.getElementById("javascript-viewer"));
+                if (connected) {
                     socket.emit("updateCode", projectPath, code, projectName, xml);
                 }
             }
