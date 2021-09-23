@@ -25,7 +25,9 @@
                 <h3>Based on <a href="https://scratch.mit.edu/">Scratch</a> the simplest language</h3>
                 <div class="title-buttons-div">
                     <button class="title-button" onclick="document.location.href = '/advanced_editor'/* simple_editor */">Start Create</button>
+                    <% if (!connected) { %>
                     <button class="title-button login-button" onclick="document.location.href = '/login'">Login</button>
+                    <% } %> 
                 </div>
             </div>
         </section>
