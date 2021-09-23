@@ -44,7 +44,7 @@ html, body{
     padding: 0px;
     height: 70px;
     width: 20px;
-    z-index: 100;
+    z-index: 29;
 }
 #hide-show-arrow:before {
     border-top-right-radius: 5px;
