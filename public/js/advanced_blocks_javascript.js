@@ -365,7 +365,7 @@ Blockly.JavaScript['event_on'] = function(block) {
             variables = "member";
             break;
         case "guildMembersChunk":
-            variables = "members, guild, chunk, index, count, nonce";
+            variables = "members, guild, chunk";
             break;
         case "guildMemberSpeaking":
             variables = "member, speaking";
@@ -400,7 +400,7 @@ Blockly.JavaScript['event_on'] = function(block) {
             variables = "oldPresence, newPresence";
             break;
         case "rateLimit":
-            variables = "rateLimitInfo, timeout, limit, method, path, route";
+            variables = "rateLimitData";
             break;
         case "roleCreate":
         case "roleDelete":

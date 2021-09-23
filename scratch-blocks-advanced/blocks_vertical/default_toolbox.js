@@ -30,113 +30,27 @@ goog.require('Blockly.Blocks');
 
 Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: none">' +
   '<category name="%{BKY_CATEGORY_MESSAGE}" id="message" colour="#4C97FF" secondaryColour="#3373CC">' +
-    '<block type="message_content" id="message_content">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="message_cleancontent" id="message_cleancontent">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="message_attachements" id="message_attachements">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="message_url" id="message_url">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="message_type" id="message_type">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="message_webhookID" id="message_webhookID">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="message_edits" id="message_edits">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="message_embeds" id="message_embeds">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="message_reactions" id="message_reactions">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="message_removereactions" id="message_removereactions">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="message_reactionsresolve" id="message_reactionsresolve">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="message_reactionsresolveid" id="message_reactionsresolveid">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="message_mentionseveryone" id="message_mentionseveryone">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="message_mentionscollection" id="message_mentionscollection">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="message_mentionshas" id="message_mentionshas">' +
-      '<value name="OBJECT">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="message_getboolean" id="message_getobject">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="message_getobject" id="message_getobject">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="message_timestamps" id="message_timestamps">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="message_reference" id="message_reference">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="message_flagsbitfield" id="message_flagsbitfield">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
+    '<block type="message_content" id="message_content"></block>' +
+    '<block type="message_cleancontent" id="message_cleancontent"></block>' +
+    '<block type="message_attachements" id="message_attachements"></block>' +
+    '<block type="message_url" id="message_url"></block>' +
+    '<block type="message_type" id="message_type"></block>' +
+    '<block type="message_webhookID" id="message_webhookID"></block>' +
+    '<block type="message_edits" id="message_edits"></block>' +
+    '<block type="message_embeds" id="message_embeds"></block>' +
+    '<block type="message_reactions" id="message_reactions"></block>' +
+    '<block type="message_removereactions" id="message_removereactions"></block>' +
+    '<block type="message_reactionsresolve" id="message_reactionsresolve"></block>' +
+    '<block type="message_reactionsresolveid" id="message_reactionsresolveid"></block>' +
+    '<block type="message_mentionseveryone" id="message_mentionseveryone"></block>' +
+    '<block type="message_mentionscollection" id="message_mentionscollection"></block>' +
+    '<block type="message_mentionshas" id="message_mentionshas"></block>' +
+    '<block type="message_getboolean" id="message_getobject"></block>' +
+    '<block type="message_getobject" id="message_getobject"></block>' +
+    '<block type="message_timestamps" id="message_timestamps"></block>' +
+    '<block type="message_reference" id="message_reference"></block>' +
+    '<block type="message_flagsbitfield" id="message_flagsbitfield"></block>' +
     '<block type="message_flagsadd" id="message_flagsadd">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
       '<value name="BITS">' +
         '<shadow type="text">' +
           '<field name="TEXT">CROSSPOSTED</field>' +
@@ -144,34 +58,20 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
       '</value>' +
     '</block>' +
     '<block type="message_flagsany" id="message_flagsany">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
       '<value name="BIT">' +
         '<shadow type="text">' +
           '<field name="TEXT">CROSSPOSTED</field>' +
         '</shadow>' +
       '</value>' +
     '</block>' +
-    '<block type="message_flagsfreeze" id="message_flagsfreeze">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
+    '<block type="message_flagsfreeze" id="message_flagsfreeze"></block>' +
     '<block type="message_flagshas" id="message_flagshas">' +
       '<value name="OBJECT">' +
         '<shadow type="text">' +
           '<field name="TEXT">CROSSPOSTED</field>' +
         '</shadow>' +
-      '</value>' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
+      '</value></block>' +
     '<block type="message_flagsmissing" id="message_flagsmissing">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
       '<value name="BITS">' +
         '<shadow type="text">' +
           '<field name="TEXT">CROSSPOSTED</field>' +
@@ -179,59 +79,29 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
       '</value>' +
     '</block>' +
     '<block type="message_flagsremove" id="message_flagsremove">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
       '<value name="BITS">' +
         '<shadow type="text">' +
           '<field name="TEXT">CROSSPOSTED</field>' +
         '</shadow>' +
       '</value>' +
     '</block>' +
-    '<block type="message_flagsserialize" id="message_flagsserialize">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="message_flagstoarray" id="message_flagstoarray">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="message_activitypartyID" id="message_activitypartyID">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="message_activitytype" id="message_activitytype">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
+    '<block type="message_flagsserialize" id="message_flagsserialize"></block>' +
+    '<block type="message_flagstoarray" id="message_flagstoarray"></block>' +
+    '<block type="message_activitypartyID" id="message_activitypartyID"></block>' +
+    '<block type="message_activitytype" id="message_activitytype"></block>' +
     '<block type="message_reply" id="message_reply">' +
       '<value name="TEXT">' +
         '<shadow type="text">' +
           '<field name="TEXT">Hello word !</field>' +
         '</shadow>' +
-      '</value>' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
+      '</value></block>' +
     '<block type="message_edit" id="message_edit">' +
       '<value name="TEXT">' +
         '<shadow type="text">' +
           '<field name="TEXT">Hello word !</field>' +
         '</shadow>' +
-      '</value>' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
+      '</value></block>' +
     '<block type="message_delete" id="message_delete">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
       '<value name="TIMEOUT">' +
         '<shadow type="math_number">' +
           '<field name="NUM"></field>' +
@@ -245,16 +115,12 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
     '</block>' +
     '<block type="message_react" id="message_react">' +
       '<value name="REACTION">' +
-        '<shadow type="message_reaction"></shadow>' +
-      '</value>' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
+        '<shadow type="message_reaction">' +
+          '<field name="REACTION">😀</field>' +
+        '</shadow>' +
       '</value>' +
     '</block>' +
     '<block type="message_pin" id="message_pin">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
       '<value name="REASON">' +
         '<shadow type="text">' +
           '<field name="TEXT">Important</field>' +
@@ -262,25 +128,14 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
       '</value>' +
     '</block>' +
     '<block type="message_unpin" id="message_unpin">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
       '<value name="REASON">' +
         '<shadow type="text">' +
           '<field name="TEXT">No longer relevant</field>' +
         '</shadow>' +
       '</value>' +
     '</block>' +
-    '<block type="message_crosspost" id="message_crosspost">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
-    '<block type="message_suppressembeds" id="message_suppressembeds">' +
-      '<value name="MESSAGE">' +
-        '<block type="event_variables"></block>' +
-      '</value>' +
-    '</block>' +
+    '<block type="message_crosspost" id="message_crosspost"></block>' +
+    '<block type="message_suppressembeds" id="message_suppressembeds"></block>' +
   '</category>' +
   '<category name="%{BKY_CATEGORY_CLIENT}" id="client" colour="#4C97FF" secondaryColour="#3373CC">' +
   '</category>' +
@@ -407,10 +262,12 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
   '</category>' +
   '<category name="%{BKY_CATEGORY_EVENTS}" id="events" colour="#FFD500" secondaryColour="#CC9900">' +
     '<block type="event_on" id="event_on"></block>' +
-    '<block type="event_variables" id="event_variables"></block>' +
     '<block type="event_whenflagclicked" id="event_whenflagclicked"></block>' +
-    '<block type="event_trycatch" id="event_trycatch"></block>' +
-    '<block type="event_catcherror" id="event_catcherror"></block>' +
+    '<block type="event_trycatch" id="event_trycatch">' +
+      '<value name="ERROR">' +
+        '<block type="event_catcherror" id="event_catcherror"></block>' +
+      '</value>' +
+    '</block>' +
     '<block type="event_exit" id="event_exit"></block>' +
   '</category>' +
   '<category name="%{BKY_CATEGORY_CONTROL}" id="control" colour="#FFAB19" secondaryColour="#CF8B17">' +
@@ -443,10 +300,18 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
       '</value>' +
     '</block>' +
     '<block type="sensing_bot" id="sensing_bot"></block>' +
-    '<block type="sensing_then" id="sensing_then"></block>' +
-    '<block type="sensing_thenobject" id="sensing_thenobject"></block>' +
-    '<block type="sensing_catcherror" id="sensing_catcherror"></block>' +
+    '<block type="sensing_then" id="sensing_then">' +
+      '<value name="OBJECT">' +
+        '<block type="sensing_thenobject"></block>' +
+      '</value>' +
+      '<value name="ERROR">' +
+        '<block type="sensing_catcherror"></block>' +
+      '</value>' +
+    '</block>' +
     '<block type="sensing_getwithid" id="sensing_getwithid">' +
+      '<value name="GETOBJECT">' +
+        '<block type="sensing_getwithidobject"></block>' +
+      '</value>' +
       '<value name="ID">' +
         '<shadow type="text">' +
           '<field name="TEXT"></field>' +
@@ -456,7 +321,6 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
         '<block type="sensing_bot"></block>' +
       '</value>' +
     '</block>' +
-    '<block type="sensing_getwithidobject" id="sensing_getwithidobject"></block>' +
     '<block type="sensing_getid" id="sensing_getid">' +
       '<value name="OBJECT">' +
         '<block type="sensing_bot"></block>' +

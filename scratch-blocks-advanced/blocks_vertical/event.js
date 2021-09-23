@@ -32,212 +32,221 @@ Blockly.Blocks['event_on'] = {
    * Block for when a sprite is touching an object.
    * @this Blockly.Block
    */
-    init: function() {
-        this.appendDummyInput()
-          .appendField('on')
-          .appendField(new Blockly.FieldDropdown([
-            ["ready", "ready"],
-            ["warn", "warn"],
-            ["debug", "debug"],
-            ["error", "error"],
-            ["message", "message"],
-            ["messageDelete", "messageDelete"],
-            ["messageDeleteBulk", "messageDeleteBulk"],
-            ["messageReactionAdd", "messageReactionAdd"],
-            ["messageReactionRemove", "messageReactionRemove"],
-            ["messageReactionRemoveAll", "messageReactionRemoveAll"],
-            ["messageReactionRemoveEmoji", "messageReactionRemoveEmoji"],
-            ["messageUpdate", "messageUpdate"],
-            ["presenceUpdate", "presenceUpdate"],
-            ["channelCreate", "channelCreate"],
-            ["channelDelete", "channelDelete"],
-            ["channelPinsUpdate", "channelPinsUpdate"],
-            ["channelUpdate", "channelUpdate"],
-            ["emojiCreate", "emojiCreate"],
-            ["emojiDelete", "emojiDelete"],
-            ["emojiUpdate", "emojiUpdate"],
-            ["userUpdate", "userUpdate"],
-            ["guildBanAdd", "guildBanAdd"],
-            ["guildBanRemove", "guildBanRemove"],
-            ["guildCreate", "guildCreate"],
-            ["guildDelete", "guildDelete"],
-            ["guildIntegrationsUpdate", "guildIntegrationsUpdate"],
-            ["guildMemberAdd", "guildMemberAdd"],
-            ["guildMemberAvailable", "guildMemberAvailable"],
-            ["guildMemberRemove", "guildMemberRemove"],
-            ["guildMembersChunk", "guildMembersChunk"],
-            ["guildMemberSpeaking", "guildMemberSpeaking"],
-            ["guildMemberUpdate", "guildMemberUpdate"],
-            ["guildUnavailable", "guildUnavailable"],
-            ["guildUpdate", "guildUpdate"],
-            ["invalidated", "invalidated"],
-            ["inviteCreate", "inviteCreate"],
-            ["inviteDelete", "inviteDelete"],
-            ["rateLimit", "rateLimit"],
-            ["roleCreate", "roleCreate"],
-            ["roleDelete", "roleDelete"],
-            ["roleUpdate", "roleUpdate"],
-            ["shardDisconnect", "shardDisconnect"],
-            ["shardError", "shardError"],
-            ["shardReady", "shardReady"],
-            ["shardReconnecting", "shardReconnecting"],
-            ["shardResume", "shardResume"],
-            ["typingStart", "typingStart"],
-            ["voiceStateUpdate", "voiceStateUpdate"],
-            ["webhookUpdate", "webhookUpdate"]
-          ]), "ACTION");
-        this.appendStatementInput('DO');
-        this.setColour(Blockly.Colours.event.primary);
+  init: function() {
+    this.appendDummyInput()
+        .appendField('on')
+        .appendField(new Blockly.FieldDropdown([
+          ["ready", "ready"],
+          ["warn", "warn"],
+          ["debug", "debug"],
+          ["error", "error"],
+          ["message", "message"],
+          ["messageDelete", "messageDelete"],
+          ["messageDeleteBulk", "messageDeleteBulk"],
+          ["messageReactionAdd", "messageReactionAdd"],
+          ["messageReactionRemove", "messageReactionRemove"],
+          ["messageReactionRemoveAll", "messageReactionRemoveAll"],
+          ["messageReactionRemoveEmoji", "messageReactionRemoveEmoji"],
+          ["messageUpdate", "messageUpdate"],
+          ["presenceUpdate", "presenceUpdate"],
+          ["channelCreate", "channelCreate"],
+          ["channelDelete", "channelDelete"],
+          ["channelPinsUpdate", "channelPinsUpdate"],
+          ["channelUpdate", "channelUpdate"],
+          ["emojiCreate", "emojiCreate"],
+          ["emojiDelete", "emojiDelete"],
+          ["emojiUpdate", "emojiUpdate"],
+          ["userUpdate", "userUpdate"],
+          ["guildBanAdd", "guildBanAdd"],
+          ["guildBanRemove", "guildBanRemove"],
+          ["guildCreate", "guildCreate"],
+          ["guildDelete", "guildDelete"],
+          ["guildIntegrationsUpdate", "guildIntegrationsUpdate"],
+          ["guildMemberAdd", "guildMemberAdd"],
+          ["guildMemberAvailable", "guildMemberAvailable"],
+          ["guildMemberRemove", "guildMemberRemove"],
+          ["guildMembersChunk", "guildMembersChunk"],
+          ["guildMemberSpeaking", "guildMemberSpeaking"],
+          ["guildMemberUpdate", "guildMemberUpdate"],
+          ["guildUnavailable", "guildUnavailable"],
+          ["guildUpdate", "guildUpdate"],
+          ["invalidated", "invalidated"],
+          ["inviteCreate", "inviteCreate"],
+          ["inviteDelete", "inviteDelete"],
+          ["rateLimit", "rateLimit"],
+          ["roleCreate", "roleCreate"],
+          ["roleDelete", "roleDelete"],
+          ["roleUpdate", "roleUpdate"],
+          ["shardDisconnect", "shardDisconnect"],
+          ["shardError", "shardError"],
+          ["shardReady", "shardReady"],
+          ["shardReconnecting", "shardReconnecting"],
+          ["shardResume", "shardResume"],
+          ["typingStart", "typingStart"],
+          ["voiceStateUpdate", "voiceStateUpdate"],
+          ["webhookUpdate", "webhookUpdate"]
+        ]), "ACTION");
+    this.appendStatementInput('DO');
+    this.setColour(Blockly.Colours.event.primary);
+  },
+  addOutputs: function(variables) {
+    for (var i = 0; i < variables.length; i++) {
+      var input = this.appendValueInput("VARIABLE" + (i + 1));
+      this.moveInputBefore("VARIABLE" + (i + 1), i === 0 ? "DO" : "VARIABLE" + i);
+      var block = new Blockly.BlockSvg(this.workspace, "event_variables");
+      block.initSvg();
+      block.render(true);
+      block.contextMenu = false;
+      block.setFieldValue(variables[i], "VARIABLE");
+      input.connection.connect(block.outputConnection);
     }
+  },
+  onchange: function(e) {
+    if (e.blockId === this.id) {
+      var i = 1;
+      while (this.getInput('VARIABLE' + i)) {
+        if (this.getInputTargetBlock("VARIABLE" + i)) {
+          this.getInputTargetBlock("VARIABLE" + i).dispose();
+        }
+        this.removeInput('VARIABLE' + i);
+        i++;
+      }
+
+      var action = this.getFieldValue("ACTION");
+      switch (action) {
+        case "channelCreate":
+        case "channelDelete":
+        case "webhookUpdate":
+          this.addOutputs(["channel"]);
+          break;
+        case "channelPinsUpdate":
+          this.addOutputs(["channel", "time"]);
+          break;
+        case "channelUpdate":
+          this.addOutputs(["oldChannel", "newChannel"]);
+          break;
+        case "warn":
+        case "debug":
+          this.addOutputs(["info"]);
+          break;
+        case "emojiCreate":
+        case "emojiDelete":
+          this.addOutputs(["emoji"]);
+          break;
+        case "emojiUpdate":
+          this.addOutputs(["oldEmoji", "newEmoji"]);
+          break;
+        case "error":
+          this.addOutputs(["error"]);
+          break;
+        case "guildBanAdd":
+        case "guildBanRemove":
+          this.addOutputs(["guild", "user"]);
+          break;
+        case "guildCreate":
+        case "guildDelete":
+        case "guildUnavailable":
+        case "guildIntegrationsUpdate":
+          this.addOutputs(["guild"]);
+          break;
+        case "guildMemberAdd":
+        case "guildMemberAvailable":
+        case "guildMemberRemove":
+          this.addOutputs(["member"]);
+          break;
+        case "guildMembersChunk":
+          this.addOutputs(["members", "guild", "chunk"]);
+          break;
+        case "guildMemberSpeaking":
+          this.addOutputs(["member", "speaking"]);
+          break;
+        case "guildMemberUpdate":
+          this.addOutputs(["oldMember", "newMember"]);
+          break;
+        case "guildUpdate":
+          this.addOutputs(["oldGuild", "newGuild", "invalidated"]);
+          break;
+        case "inviteCreate":
+        case "inviteDelete":
+          this.addOutputs(["invite"]);
+          break;
+        case "message":
+        case "messageDelete":
+        case "messageReactionRemoveAll":
+          this.addOutputs(["message"]);
+          break;
+        case "messageDeleteBulk":
+          this.addOutputs(["messages"]);
+          break;
+        case "messageReactionAdd":
+        case "messageReactionRemove":
+          this.addOutputs(["messageReaction"]);
+          break;
+        case "messageReactionRemoveEmoji":
+          this.addOutputs(["reaction"]);
+          break;
+        case "messageUpdate":
+          this.addOutputs(["oldMessage", "newMessage"]);
+          break;
+        case "presenceUpdate":
+          this.addOutputs(["oldPresence", "newPresence"]);
+          break;
+        case "rateLimit":
+          this.addOutputs(["rateLimitData"]);
+          break;
+        case "roleCreate":
+        case "roleDelete":
+          this.addOutputs(["role"]);
+          break;
+        case "roleUpdate":
+          this.addOutputs(["oldRole", "newRole"]);
+          break;
+        case "shardDisconnect":
+          this.addOutputs(["event", "id"]);
+          break;
+        case "shardError":
+          this.addOutputs(["error", "shardID"]);
+          break;
+        case "shardReady":
+          this.addOutputs(["id", "unavailableGuilds"]);
+          break;
+        case "shardReconnecting":
+          this.addOutputs(["id"]);
+          break;
+        case "shardResume":
+          this.addOutputs(["id", "replayedEvents"]);
+          break;
+        case "typingStart":
+          this.addOutputs(["channel", "user"]);
+          break;
+        case "userUpdate":
+          this.addOutputs(["oldUser", "newUser"]);
+          break;
+        case "voiceStateUpdate":
+          this.addOutputs(["oldState", "newState"]);
+          break;
+      }
+      this.render(true);
+    }
+  }
 };
 
 Blockly.Blocks['event_variables'] = {
-  variables: [["null", "null"]],
   init: function() {
     this.jsonInit({
-      "message0": "on output variable %1",
+      "message0": "%1",
       "args0": [
         {
-          "type": "field_dropdown",
+          "type": "field_label_serializable",
           "name": "VARIABLE",
-          "options": this.generateOptions
+          "text": "null"
         }
       ],
       "category": Blockly.Categories.event,
-      "extensions": ["colours_event", "output_string", "event_on_variables_options"]
+      "extensions": ["colours_data", "output_string"]
     });
-  },
-  generateOptions: function() {
-    if (this.sourceBlock_) {
-      return this.sourceBlock_.variables;
-    }else{
-      return [["null", "null"]];
-    }
   }
 };
-Blockly.Blocks.event.EVENT_ON_VARIABLES_OPTIONS = {
-  onchange: function(e) {
-    var surroundOn = getSurroundOn(this);
-    var variables = [["null", "null"]];
-    if (surroundOn !== null) {
-        var action = surroundOn.getFieldValue('ACTION');
-        switch (action) {
-            case "channelCreate":
-            case "channelDelete":
-            case "webhookUpdate":
-                variables = [["channel", "channel"]];
-                break;
-            case "channelPinsUpdate":
-                variables = [["channel", "channel"], ["time", "time"]];
-                break;
-            case "channelUpdate":
-                variables = [["oldChannel", "oldChannel"], ["newChannel", "newChannel"]];
-                break;
-            case "warn":
-            case "debug":
-                variables = [["info", "info"]];
-                break;
-            case "emojiCreate":
-            case "emojiDelete":
-                variables = [["emoji", "emoji"]];
-                break;
-            case "emojiUpdate":
-                variables = [["oldEmoji", "oldEmoji"], ["newEmoji", "newEmoji"]];
-                break;
-            case "error":
-                variables = [["error", "error"]];
-                break;
-            case "guildBanAdd":
-            case "guildBanRemove":
-                variables = [["guild", "guild"], ["user", "user"]];
-                break;
-            case "guildCreate":
-            case "guildDelete":
-            case "guildUnavailable":
-            case "guildIntegrationsUpdate":
-                variables = [["guild", "guild"]];
-                break;
-            case "guildMemberAdd":
-            case "guildMemberAvailable":
-            case "guildMemberRemove":
-                variables = [["member", "member"]];
-                break;
-            case "guildMembersChunk":
-                variables = [["members", "members"], ["guild", "guild"], ["chunk", "chunk"], ["index", "index"], ["count", "count"], ["nonce", "nonce"]];
-                break;
-            case "guildMemberSpeaking":
-                variables = [["member", "member"], ["speaking", "speaking"]];
-                break;
-            case "guildMemberUpdate":
-                variables = [["oldMember", "oldMember"], ["newMember", "newMember"]];
-                break;
-            case "guildUpdate":
-                variables = [["oldGuild", "oldGuild"], ["newGuild", "newGuild"], ["invalidated", "invalidated"]];
-                break;
-            case "inviteCreate":
-            case "inviteDelete":
-                variables = [["invite", "invite"]];
-                break;
-            case "message":
-            case "messageDelete":
-            case "messageReactionRemoveAll":
-                variables = [["message", "message"]];
-                break;
-            case "messageDeleteBulk":
-                variables = [["messages", "messages"]];
-                break;
-            case "messageReactionAdd":
-            case "messageReactionRemove":
-                variables = [["messageReaction", "messageReaction"]];
-                break;
-            case "messageReactionRemoveEmoji":
-                variabless = [["reaction", "reaction"]];
-                break;
-            case "messageUpdate":
-            case "presenceUpdate":
-                variables = [["oldPresence", "oldPresence"], ["newPresence", "newPresence"]];
-                break;
-            case "rateLimit":
-                variables = [["rateLimitInfo", "rateLimitInfo"], ["timeout", "timeout"], ["limit", "limit"], ["method", "method"], ["path", "path"], ["route", "route"]];
-                break;
-            case "roleCreate":
-            case "roleDelete":
-                variables = [["role", "role"]];
-                break;
-            case "roleUpdate":
-                variables = [["oldRole", "oldRole"], ["newRole", "newRole"]];
-                break;
-            case "shardDisconnect":
-                variables = [["event", "event"], ["id", "id"]];
-                break;
-            case "shardError":
-                variables = [["error", "error"], ["shardID", "shardID"]];
-                break;
-            case "shardReady":
-                variables = [["id", "id"], ["unavailableGuilds", "unavailableGuilds"]];
-                break;
-            case "shardReconnecting":
-                variables = [["id", "id"]];
-                break;
-            case "shardResume":
-                variables = [["id", "id"], ["replayedEvents", "replayedEvents"]];
-                break;
-            case "typingStart":
-                variables = [["channel", "channel"], ["user", "user"]];
-                break;
-            case "userUpdate":
-                variables = [["oldUser", "oldUser"], ["newUser", "newUser"]];
-                break;
-            case "voiceStateUpdate":
-                variables = [["oldState", "oldState"], ["newState", "newState"]];
-                break;
-        }
-    }
-    this.inputList[0].fieldRow[1].setValue(variables[0][0]);
-    this.variables = variables;
-  }
-};
-Blockly.Extensions.registerMixin('event_on_variables_options', Blockly.Blocks.event.EVENT_ON_VARIABLES_OPTIONS);
 
 Blockly.Blocks['event_whenflagclicked'] = {
   /**
@@ -268,12 +277,18 @@ Blockly.Blocks['event_trycatch'] = {
       "type": "event_trycatch",
       "message0": "try",
       "message1": "%1",
-      "message2": "catch",
+      "message2": "catch %1",
       "message3": "%1",
       "args1": [
         {
           "type": "input_statement",
           "name": "SUBSTACK"
+        }
+      ],
+      "args2": [
+        {
+          "type": "input_value",
+          "name": "ERROR"
         }
       ],
       "args3": [
@@ -290,9 +305,9 @@ Blockly.Blocks['event_trycatch'] = {
 Blockly.Blocks['event_catcherror'] = {
   init: function() {
     this.jsonInit({
-      "message0": "catch error",
+      "message0": "error",
       "category": Blockly.Categories.event,
-      "extensions": ["colours_event", "output_string"]
+      "extensions": ["colours_data", "output_string"]
     });
   }
 };

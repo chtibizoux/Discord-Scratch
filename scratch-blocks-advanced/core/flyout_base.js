@@ -902,6 +902,10 @@ Blockly.Flyout.prototype.placeNewBlock_ = function(oldBlock) {
   var finalOffsetPixels = goog.math.Coordinate.difference(oldBlockOffsetPixels,
       mainOffsetPixels);
 
+  if (oldBlock.duplicate) {
+    finalOffsetPixels = oldBlockPosPixels;
+  }
+
   // The position of the old block in main workspace coordinates.
   var finalOffsetMainWs = finalOffsetPixels.scale(1 / targetWorkspace.scale);
 

@@ -29,17 +29,17 @@ goog.require('Blockly.ScratchBlocks.VerticalExtensions');
 
 Blockly.Blocks['discord_token'] = {
   init: function() {
-      this.jsonInit({
-          "message0": "token: %1",
-          "args0": [
-              {
-                  "type": "field_input",
-                  "name": "TEXT"
-              }
-          ],
-          "category": Blockly.Categories.message,
-          "extensions": ["colours_message"]
-      });
+    this.jsonInit({
+      "message0": "token: %1",
+      "args0": [
+        {
+          "type": "field_input",
+          "name": "TEXT"
+        }
+      ],
+      "category": Blockly.Categories.message,
+      "extensions": ["colours_message"]
+    });
   }
 };
 
@@ -797,7 +797,7 @@ Blockly.Blocks['message_suppressembeds'] = {
 };
 
 Blockly.Blocks['message_fetchwebhook'] = {
-  init: function () {
+  init: function() {
     this.jsonInit({
       "message0": "fetch webhook of %1",
       "args0": [

@@ -390,6 +390,33 @@ Blockly.Gesture.prototype.updateIsDraggingBlock_ = function() {
     this.isDraggingBlock_ = true;
   }
 
+  // Check block to duplicate
+  this.targetBlock_.duplicate = false;
+  if (this.targetBlock_.parentBlock_ !== null) {
+    if (this.targetBlock_.parentBlock_.type == "sensing_then" &&
+      (this.targetBlock_.type == "sensing_thenobject" || this.targetBlock_.type == "sensing_catcherror")) {
+      this.targetBlock_.duplicate = true;
+    }
+    if (this.targetBlock_.parentBlock_.type == "sensing_getwithid" &&
+      this.targetBlock_.type == "sensing_getwithidobject") {
+      this.targetBlock_.duplicate = true;
+    }
+    if (this.targetBlock_.parentBlock_.type == "event_on" &&
+      this.targetBlock_.type == "event_variables") {
+      this.targetBlock_.duplicate = true;
+    }
+    if (this.targetBlock_.parentBlock_.type == "event_trycatch" &&
+      this.targetBlock_.type == "event_catcherror") {
+      this.targetBlock_.duplicate = true;
+    }
+  }
+
+  if (this.targetBlock_.duplicate) {
+    this.startBlock_ = null;
+    this.targetBlock_ = this.creatorWorkspace_.getFlyout().createBlock(this.targetBlock_);
+    this.targetBlock_.select();
+  }
+
   if (this.isDraggingBlock_) {
     this.startDraggingBlock_();
     return true;

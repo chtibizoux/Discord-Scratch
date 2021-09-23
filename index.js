@@ -223,7 +223,7 @@ app.get('/advanced_editor', function (req, res) {
             tutorial: users[req.session.user.id].tutorial,
             project: users[req.session.user.id].projects[projectName],
             projectName: projectName,
-            exist: commands[users[req.session.user.id].projects[projectName].path],
+            exist: commands[users[req.session.user.id].projects[projectName].path] || false,
         });
     } else {
         res.render('pages/advanced_editor', {

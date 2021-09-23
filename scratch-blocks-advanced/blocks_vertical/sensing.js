@@ -72,14 +72,26 @@ Blockly.Blocks['sensing_getid'] = {
 Blockly.Blocks['sensing_then'] = {
   init: function() {
     this.jsonInit({
-      "message0": "then",
+      "message0": "then %1",
       "message1": "%1",
-      "message2": "catch",
+      "message2": "catch %1",
       "message3": "%1",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "OBJECT"
+        }
+      ],
       "args1": [
         {
           "type": "input_statement",
           "name": "THEN"
+        }
+      ],
+      "args2": [
+        {
+          "type": "input_value",
+          "name": "ERROR"
         }
       ],
       "args3": [
@@ -97,9 +109,9 @@ Blockly.Blocks['sensing_then'] = {
 Blockly.Blocks['sensing_thenobject'] = {
   init: function() {
     this.jsonInit({
-      "message0": "then object",
+      "message0": "object",
       "category": Blockly.Categories.sensing,
-      "extensions": ["colours_sensing", "output_string"]
+      "extensions": ["colours_data", "output_string"]
     });
   }
 };
@@ -107,9 +119,9 @@ Blockly.Blocks['sensing_thenobject'] = {
 Blockly.Blocks['sensing_catcherror'] = {
   init: function() {
     this.jsonInit({
-      "message0": "catch error",
+      "message0": "error",
       "category": Blockly.Categories.sensing,
-      "extensions": ["colours_sensing", "output_string"]
+      "extensions": ["colours_data", "output_string"]
     });
   }
 };
@@ -119,6 +131,7 @@ Blockly.Blocks['sensing_getwithid'] = {
     this.jsonInit({
       "message0": "fetch %1 with id %2 in %3",
       "message1": "%1",
+      "message2": "%1",
       "args0": [
         {
           "type": "field_dropdown",
@@ -141,6 +154,12 @@ Blockly.Blocks['sensing_getwithid'] = {
       ],
       "args1": [
         {
+          "type": "input_value",
+          "name": "GETOBJECT"
+        }
+      ],
+      "args2": [
+        {
           "type": "input_statement",
           "name": "DO"
         }
@@ -154,9 +173,9 @@ Blockly.Blocks['sensing_getwithid'] = {
 Blockly.Blocks['sensing_getwithidobject'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetched object",
+      "message0": "object",
       "category": Blockly.Categories.sensing,
-      "extensions": ["colours_sensing", "output_string"]
+      "extensions": ["colours_data", "output_string"]
     });
   }
 };
