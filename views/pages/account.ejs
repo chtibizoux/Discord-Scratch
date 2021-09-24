@@ -26,7 +26,7 @@
             <h2>Create a project</h2>
             <label for="create-project-name">Name</label><br>
             <input type="text" name="create-project-name" placeholder="Untitled" autofocus><br>
-            <button class="new-button" onclick="document.location.href = '/simple_editor/?name=' + document.getElementsByName('create-project-name')[0].value;">Create</button>
+            <button class="new-button" onclick="document.location.href = '/advanced_editor/?name=' + document.getElementsByName('create-project-name')[0].value;/* simple_editor */">Create</button>
             <button class="create-cancel-button" onclick="document.getElementById('create-div').style.display = 'none';">Cancel</button>
         </div>
         <section id="projects" <% if (Object.keys(projects).length === 0) { %>style="display: block;"<% }else{ %>style="display: flex;"<% } %>>
@@ -52,7 +52,7 @@
                 if (socketID === socket.id) {
                     var html = "";
                     for (var projectName in projects) {
-                        html += '<div class="project-button" projectName="' + projectName + '" onclick="document.location.href = \'/simple_editor/?name=' + projectName + '\'"><div class="project-img"><img src="/assets/images/project.png" alt=""></div><div class="project-button-name">' + projectName + '</div><button class="project-delete-button" onclick="event.stopPropagation();socket.emit(\'deleteProject\', \'' + projectName + '\');"><img src="/assets/images/trash.svg" alt=""></button></div>';
+                        html += '<div class="project-button" projectName="' + projectName + '" onclick="document.location.href = \'/advanced_editor/?name=' + projectName + '\'/* simple_editor */"><div class="project-img"><img src="/assets/images/project.png" alt=""></div><div class="project-button-name">' + projectName + '</div><button class="project-delete-button" onclick="event.stopPropagation();socket.emit(\'deleteProject\', \'' + projectName + '\');"><img src="/assets/images/trash.svg" alt=""></button></div>';
                     }
                     if (html !== "") {
                         document.getElementById("projects").style.display = "flex";
