@@ -25,7 +25,7 @@ html, body{
     left: 0;
     top: 54px;
     bottom: 0;
-    right: 40%;
+    right: 35%;
     border-right: solid #bbbbbb 2px;
     overflow: hidden;
     background-color: white;
@@ -34,7 +34,7 @@ html, body{
     cursor: pointer;
     z-index: 10;
     position: absolute;
-    left: 60%;
+    left: 65%;
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
@@ -75,12 +75,9 @@ html, body{
     right: 0;
     top: 54px;
     bottom: 50%;
-    left: 60%;
-    margin-left: 20px;
+    left: 65%;
     padding-top: 10px;
-    border-left: solid #bbbbbb 2px;
     border-bottom: solid #bbbbbb 2px;
-    border-bottom-left-radius: 20px;
     text-align: center;
     background-color: black;
     color: white;
@@ -99,25 +96,16 @@ html, body{
     right: 0;
     top: 50%;
     bottom: 0;
-    left: 60%;
-    margin-left: 20px;
-    margin-top: 20px;
-    padding: 10px;
-    border-left: solid #bbbbbb 2px;
-    border-top: solid #bbbbbb 2px;
-    border-top-left-radius: 20px;
+    left: 65%;
     text-align: center;
-    background-color: white;
-    overflow: hidden;
+    background-color: #2d2d2d;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
 }
-.js-viewer{
-    text-align: left;
-    padding: 20px;
-    padding-left: 40px;
-    overflow: auto;
-    border-radius: 10px;
-    width: calc(100% - 68px);
-    height: calc(100% - 85px);
+.js-viewer-div h2{
+    margin-top: 10px;
+    color: white;
 }
 input{
     outline: none;

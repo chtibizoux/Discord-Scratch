@@ -1,29 +1,29 @@
 function play() {
-    if (tutorial) {
+    if (tutorial2) {
         document.getElementById("tutorial2").style.display = 'block';
-        tutorial = false;
+        tutorial2 = false;
     }
     if (connected) {
-        socket.emit("play", projectPath);
+        socket.emit("play", projectId);
     } else {
         document.getElementById("save-div").style.display = 'block';
     }
 }
 socket.on("stdout", function(data, socketID){
     if (socketID === socket.id) {
-        document.getElementById("console-content").innerHTML += data.replace("\n", "<br>") + "<br>";
+        document.getElementById("console-content").innerHTML += data.replace("\n", "<br>");
         scroll();
     }
 });
 socket.on("stderr", function(data, socketID){
     if (socketID === socket.id) {
-        document.getElementById("console-content").innerHTML += data.replace("\n", "<br>") + "<br>";
+        document.getElementById("console-content").innerHTML += data.replace("\n", "<br>");
         scroll();
     }
 });
 socket.on("stdin", function(data, socketID){
     if (socketID === socket.id) {
-        document.getElementById("console-content").innerHTML += data.replace("\n", "<br>") + "<br>";
+        document.getElementById("console-content").innerHTML += data.replace("\n", "<br>");
         scroll();
     }
 });
@@ -37,10 +37,19 @@ socket.on("start", function(socketID){
 socket.on("stop", function(data, socketID){
     if (socketID === socket.id) {
         document.getElementById("play").innerHTML = '<img src="/assets/images/play.svg" alt="Stop">';
-        document.getElementById("console-content").innerHTML += "End of program with exit code: " + data + "<br>/test> ";
+        document.getElementById("console-content").innerHTML += "<br>/" + projectName + "> ";
         scroll();
     }
 });
+setInterval(() => {
+    if (document.getElementsByClassName("console-cursor").length === 0) {
+        document.getElementById("console-content").innerHTML += "<span class='console-cursor'>█</span>";
+    } else {
+        Array.from(document.getElementsByClassName("console-cursor")).forEach(cursor => {
+            cursor.remove();
+        });
+    }
+}, 600);
 function scroll() {
     document.getElementById("console").scrollTo(0, document.getElementById("console-content").scrollWidth);
 }
@@ -49,24 +58,24 @@ setTimeout(function () {
         document.getElementById("save-div").style.display = 'block';
     }
 }, 60000);
-socket.on('project', function(name, project, exist, socketID){
-    if (socketID === socket.id) {
-        projectPath = project.path;
-        projectName = name;
-        document.getElementById("name-input").value = projectName;
-        document.title = "Discord Scratch - " + projectName;
-        history.pushState('Change project name', document.title, '?name=' + projectName);
-        Blockly.Xml.clearWorkspaceAndLoadFromXml(Blockly.Xml.textToDom(project.xml), workspace);
-        if (exist) {
-            document.getElementById("play").innerHTML = '<img src="/assets/images/stop.svg" alt="Stop">';
-            document.getElementById("console-content").innerHTML = "";
-        }else {
-            document.getElementById("play").innerHTML = '<img src="/assets/images/play.svg" alt="Play">';
-        }
-    }
-});
+// socket.on('project', function(name, project, exist, socketID){
+//     if (socketID === socket.id) {
+//         projectPath = project.path;
+//         projectName = name;
+//         document.getElementById("name-input").value = projectName;
+//         document.title = "Discord Scratch - " + projectName;
+//         history.pushState('Change project name', document.title, '?name=' + projectName);
+//         Blockly.Xml.clearWorkspaceAndLoadFromXml(Blockly.Xml.textToDom(project.xml), workspace);
+//         if (exist) {
+//             document.getElementById("play").innerHTML = '<img src="/assets/images/stop.svg" alt="Stop">';
+//             document.getElementById("console-content").innerHTML = "";
+//         }else {
+//             document.getElementById("play").innerHTML = '<img src="/assets/images/play.svg" alt="Play">';
+//         }
+//     }
+// });
 function updateName() {
-    socket.emit("updateName", projectName, document.getElementById("name-input").value);
+    socket.emit("updateName", projectId, document.getElementById("name-input").value);
     projectName = document.getElementById("name-input").value;
     document.title = "Discord Scratch - " + projectName;
     history.pushState('Change project name', document.title, '?name=' + projectName);

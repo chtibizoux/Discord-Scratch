@@ -112,7 +112,7 @@ passport.use(new DiscordStrategy({
     clientID: config.client_id,
     clientSecret: config.client_secret,
     callbackURL: config.redirect_uri,
-    scope: ["identify", "email"]
+    scope: [ "identify", "email" ]
 }, function (accessToken, refreshToken, profile, done) {
     return done(null, profile);
 }));
@@ -120,16 +120,25 @@ passport.use(new DiscordStrategy({
 app.use(express.static(__dirname + '/public'));
 app.get('/', function (req, res) {
     if (req.session.user) {
-        res.render('pages/main', { connected: true, username: req.session.user.username, email: req.session.user.email, discord_token: req.session.user.accessToken });
+        res.render('pages/main', { connected: true, username: req.session.user.username });
     } else {
         res.render('pages/main', { connected: false });
     }
 });
+// app.get('/test', function (req, res) {
+//     if (req.session.user) {
+//         // "Content-Type: application/json", "Authorization: <token>" {"name": "<name>", "team_id": <id || null>} POST "https://discord.com/api/v9/applications"
+//         // "Authorization: <token>" POST "https://discord.com/api/v9/applications/<id>/bot"
+//         // token: mfa.COh4Pw6SDDHdYAnDe2LFwFX1hIAHQiah4YFsxT_iAGZ2wnjwd0slCL3JTBgrJhA0Uft1WIoLNELQIDhvk336
+//         res.send(users[req.session.user.id].accessToken);
+//     } else {
+//         res.redirect("/login");
+//     }
+// });
 app.get("/redirect", passport.authenticate("discord.js", { failureRedirect: "/login" }), function (req, res) {
     var user = req.session.passport.user;
     if (!(user.id in users)) {
         users[user.id] = {
-            tutorial: true,
             projects: {},
             username: user.username,
             email: user.email,
@@ -164,76 +173,71 @@ app.get('/account', function (req, res) {
 });
 app.get('/simple_editor', function (req, res) {
     if (req.session.user) {
-        var projectName = "";
-        if (req.query.name) {
-            projectName = req.query.name;
-        } else {
-            projectName = getUntitledName(users[req.session.user.id].projects);
-        }
-        if (!(projectName in users[req.session.user.id].projects)) {
-            var path = req.session.user.id + projectName.toLowerCase().split(" ").join("_").split(".").join("").split("/").join("");
-            users[req.session.user.id].projects[projectName] = {
+        var projectId = req.query.id || Math.round(Math.random() * 100000000).toString();
+        var projectName = req.query.name || getUntitledName(users[req.session.user.id].projects);
+        if (!(projectId in users[req.session.user.id].projects)) {
+            var path = req.session.user.id + projectId.toLowerCase().split(" ").join("_").split(".").join("").split("/").join("");
+            users[req.session.user.id].projects[projectId] = {
+                name: projectName,
                 xml: defaultXML,
-                path: path
+                tutorial1: true,
+                tutorial2: true
             };
             fs.writeFileSync('./users.json', JSON.stringify(users));
         }
-        users[req.session.user.id].projects[projectName].xml = users[req.session.user.id].projects[projectName].xml.split("`").join("");
+        users[req.session.user.id].projects[projectId].xml = users[req.session.user.id].projects[projectId].xml.split("`").join("");
         res.render('pages/simple_editor', {
             connected: true,
             username: req.session.user.username,
-            tutorial: users[req.session.user.id].tutorial,
-            project: users[req.session.user.id].projects[projectName],
-            projectName: projectName,
-            exist: commands[users[req.session.user.id].projects[projectName].path] || false,
+            project: users[req.session.user.id].projects[projectId],
+            projectId: projectId,
+            exist: commands[users[req.session.user.id].projects[projectId].path] || false,
         });
     } else {
         res.render('pages/simple_editor', {
             connected: false,
-            tutorial: true,
             project: {
+                name: "Untitled",
                 xml: defaultXML,
-                path: ""
+                tutorial1: false,
+                tutorial2: false
             },
-            projectName: "Untitled",
+            projectId: "Untitled",
             exist: false,
         });
     }
 });
 app.get('/advanced_editor', function (req, res) {
     if (req.session.user) {
-        var projectName = "";
-        if (req.query.name) {
-            projectName = req.query.name;
-        }else{
-            projectName = getUntitledName(users[req.session.user.id].projects);
-        }
-        if (!(projectName in users[req.session.user.id].projects)) {
-            var path = req.session.user.id + projectName.toLowerCase().split(" ").join("_").split(".").join("").split("/").join("");
-            users[req.session.user.id].projects[projectName] = {
+        var projectId = req.query.id || Math.round(Math.random() * 1000000).toString();
+        var projectName = req.query.name || getUntitledName(users[req.session.user.id].projects);
+        if (!(projectId in users[req.session.user.id].projects)) {
+            users[req.session.user.id].projects[projectId] = {
+                name: projectName,
                 xml: defaultXML,
-                path: path
+                tutorial1: true,
+                tutorial2: true
             };
             fs.writeFileSync('./users.json', JSON.stringify(users));
         }
-        users[req.session.user.id].projects[projectName].xml = users[req.session.user.id].projects[projectName].xml.split("`").join("");
+        users[req.session.user.id].projects[projectId].xml = users[req.session.user.id].projects[projectId].xml.split("`").join("");
         res.render('pages/advanced_editor', {
             connected: true,
             username: req.session.user.username,
-            tutorial: users[req.session.user.id].tutorial,
-            project: users[req.session.user.id].projects[projectName],
-            projectName: projectName,
-            exist: commands[users[req.session.user.id].projects[projectName].path] || false,
+            project: users[req.session.user.id].projects[projectId],
+            projectId: projectId,
+            exist: commands[projectId] || false,
         });
     } else {
         res.render('pages/advanced_editor', {
             connected: false,
-            tutorial: true,
             project: {
                 xml: defaultXML,
-                path: ""
+                name: "Untitled",
+                tutorial1: false,
+                tutorial2: false
             },
-            projectName: "Untitled",
+            projectId: "Untitled",
             exist: false,
         });
     }
@@ -266,69 +270,75 @@ function getUntitledName(projects) {
 // Socket.io
 io.on('connection', function (socket) {
     console.log(`${chalk.blue("[INFO]")} Un client c'est connecté !`);
-    socket.on('play', function(filename) {
-        if (!commands[filename]) {
+    socket.on('play', function (projectId) {
+        if (!commands[projectId]) {
             console.log(`${chalk.blue("[INFO]")} Une commande à été démmarer !`);
-            commands[filename] = spawn('node', ["userfiles/" + filename + ".js"]);
-            commands[filename].stdout.on('data', (data) => {
+            commands[projectId] = spawn('node', ["userfiles/" + projectId + ".js"]);
+            commands[projectId].stdout.on('data', (data) => {
                 socket.emit("stdout", data.toString(), socket.id);
             });
-            commands[filename].stderr.on('data', function(data){
+            commands[projectId].stderr.on('data', function (data) {
                 socket.emit("stderr", data.toString(), socket.id);
             });
-            commands[filename].stdin.on('data', function(data){
+            commands[projectId].stdin.on('data', function (data) {
                 socket.emit("stdin", data.toString(), socket.id);
             });
-            commands[filename].on('close', (code) => {
-                commands[filename] = null;
+            commands[projectId].on('close', (code) => {
+                commands[projectId] = null;
                 socket.emit("stop", code, socket.id);
                 console.log(`${chalk.blue("[INFO]")} Une commande à été arreter !`);
             });
             socket.emit("start", socket.id);
         }else {
-            commands[filename].stdin.pause();
-            commands[filename].kill();
+            commands[projectId].stdin.pause();
+            commands[projectId].kill();
         }
     });
-    socket.on('updateCode', function (filename, code, projectName, xml) {
+    socket.on('updateCode', function (code, xml, projectId) {
         if (socket.request.session.user) {
-            if (projectName in users[socket.request.session.user.id].projects) {
-                if (!commands[filename]) {
-                    fs.writeFileSync("userfiles/" + filename + ".js", code);
+            if (projectId in users[socket.request.session.user.id].projects) {
+                if (!commands[projectId]) {
+                    fs.writeFileSync("userfiles/" + projectId + ".js", code);
                 }
-                users[socket.request.session.user.id].projects[projectName].xml = xml;
+                users[socket.request.session.user.id].projects[projectId].xml = xml;
                 fs.writeFileSync('./users.json', JSON.stringify(users));
             }
         }
     });
-    socket.on('deleteProject', function (projectName) {
+    socket.on('deleteProject', function (projectId) {
         if (socket.request.session.user) {
-            if (fs.existsSync("userfiles/" + users[socket.request.session.user.id].projects[projectName].path + ".js")) {
-                fs.unlinkSync("userfiles/" + users[socket.request.session.user.id].projects[projectName].path + ".js");
+            if (fs.existsSync("userfiles/" + projectId + ".js")) {
+                fs.unlinkSync("userfiles/" + projectId + ".js");
             }
-            delete users[socket.request.session.user.id].projects[projectName];
+            delete users[socket.request.session.user.id].projects[projectId];
             fs.writeFileSync('./users.json', JSON.stringify(users));
             socket.emit("projects", users[socket.request.session.user.id].projects, socket.id);
         }
     });
-    socket.on('duplicateProject', function (projectName) {
+    socket.on('duplicateProject', function (projectId) {
         if (socket.request.session.user) {
-            users[socket.request.session.user.id].projects[projectName + " Copy"] = users[socket.request.session.user.id].projects[projectName];
+            users[socket.request.session.user.id].projects[socket.id] = users[socket.request.session.user.id].projects[projectId];
+            users[socket.request.session.user.id].projects[socket.id].name = users[socket.request.session.user.id].projects[projectId].name + " Copy";
             fs.writeFileSync('./users.json', JSON.stringify(users));
             socket.emit("projects", users[socket.request.session.user.id].projects, socket.id);
         }
     });
-    socket.on('disableTutorial', function () {
+    socket.on('disableTutorial1', function (projectId) {
         if (socket.request.session.user) {
-            users[socket.request.session.user.id].tutorial = false;
+            users[socket.request.session.user.id].projects[projectId].tutorial1 = false;
             fs.writeFileSync('./users.json', JSON.stringify(users));
         }
     });
-    socket.on('updateName', function (oldName, newName) {
+    socket.on('disableTutorial2', function (projectId) {
+        if (socket.request.session.user) {
+            users[socket.request.session.user.id].projects[projectId].tutorial2 = false;
+            fs.writeFileSync('./users.json', JSON.stringify(users));
+        }
+    });
+    socket.on('updateName', function (projectId, projectName) {
         if (socket.request.session.user) {
             if (oldName in users[socket.request.session.user.id].projects) {
-                users[socket.request.session.user.id].projects[newName] = users[socket.request.session.user.id].projects[oldName];
-                delete users[socket.request.session.user.id].projects[oldName];
+                users[socket.request.session.user.id].projects[projectId].name = projectName;
                 fs.writeFileSync('./users.json', JSON.stringify(users));
             }
         }

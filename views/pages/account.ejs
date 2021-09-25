@@ -30,11 +30,11 @@
             <button class="create-cancel-button" onclick="document.getElementById('create-div').style.display = 'none';">Cancel</button>
         </div>
         <section id="projects" <% if (Object.keys(projects).length === 0) { %>style="display: block;"<% }else{ %>style="display: flex;"<% } %>>
-            <% for(var projectName in projects) { %>
-                <div class="project-button" projectName="<%= projectName %>" onclick="document.location.href = '/advanced_editor/?name=<%= projectName %>'/* simple_editor */">
+            <% for(var projectId in projects) { %>
+                <div class="project-button" projectId="<%= projectId %>" onclick="document.location.href = '/advanced_editor/?id=<%= projectId %>'/* simple_editor */">
                     <div class="project-img"><img src="/assets/images/project.png" alt=""></div>
-                    <div class="project-button-name"><%= projectName %></div>
-                    <button class="project-delete-button" onclick="event.stopPropagation();socket.emit('deleteProject', '<%= projectName %>');"><img src="/assets/images/trash.svg" alt=""></button>
+                    <div class="project-button-name"><%= projects[projectId].name %></div>
+                    <button class="project-delete-button" onclick="event.stopPropagation();socket.emit('deleteProject', '<%= projectId %>');"><img src="/assets/images/trash.svg" alt=""></button>
                 </div>
             <% } %>
             <% if (Object.keys(projects).length === 0) { %>
@@ -51,8 +51,8 @@
             socket.on('projects', function(projects, socketID){
                 if (socketID === socket.id) {
                     var html = "";
-                    for (var projectName in projects) {
-                        html += '<div class="project-button" projectName="' + projectName + '" onclick="document.location.href = \'/advanced_editor/?name=' + projectName + '\'/* simple_editor */"><div class="project-img"><img src="/assets/images/project.png" alt=""></div><div class="project-button-name">' + projectName + '</div><button class="project-delete-button" onclick="event.stopPropagation();socket.emit(\'deleteProject\', \'' + projectName + '\');"><img src="/assets/images/trash.svg" alt=""></button></div>';
+                    for (var projectId in projects) {
+                        html += '<div class="project-button" projectId="' + projectId + '" onclick="document.location.href = \'/advanced_editor/?id=' + projectId + '\'/* simple_editor */"><div class="project-img"><img src="/assets/images/project.png" alt=""></div><div class="project-button-name">' + projects[projectId].name + '</div><button class="project-delete-button" onclick="event.stopPropagation();socket.emit(\'deleteProject\', \'' + projectId + '\');"><img src="/assets/images/trash.svg" alt=""></button></div>';
                     }
                     if (html !== "") {
                         document.getElementById("projects").style.display = "flex";
@@ -65,7 +65,7 @@
                         const button = document.getElementsByClassName("project-button")[i];
                         button.addEventListener('contextmenu', e => {
                             e.preventDefault();
-                            contextProjectName = button.getAttribute("projectName");
+                            contextProjectId = button.getAttribute("projectId");
                             menu.style.display = "block";
                             if ((window.innerWidth - e.pageX) < (menu.offsetWidth + 4)) {
                                 menu.style.left = window.innerWidth - (menu.offsetWidth + 4) + "px";
@@ -86,7 +86,7 @@
                 const button = document.getElementsByClassName("project-button")[i];
                 button.addEventListener('contextmenu', e => {
                     e.preventDefault();
-                    contextProjectName = button.getAttribute("projectName");
+                    contextProjectId = button.getAttribute("projectId");
                     menu.style.display = "block";
                     if ((window.innerWidth - e.pageX) < (menu.offsetWidth + 4)) {
                         menu.style.left = window.innerWidth - (menu.offsetWidth + 4) + "px";
@@ -101,16 +101,16 @@
                     return false;
                 });
             }
-            var contextProjectName = "";
+            var contextProjectId = "";
             var menu = document.getElementById('context-menu');
             window.addEventListener("click", e => {
                 if (menu.style.display === "block") menu.style.display = "none";
             });
             document.getElementById("duplicate").addEventListener("click", function () {
-                socket.emit("duplicateProject", contextProjectName);
+                socket.emit("duplicateProject", contextProjectId);
             });
             document.getElementById("delete").addEventListener("click", function () {
-                socket.emit("deleteProject", contextProjectName);
+                socket.emit("deleteProject", contextProjectId);
             });
         </script>
     </body>
