@@ -337,10 +337,8 @@ io.on('connection', function (socket) {
     });
     socket.on('updateName', function (projectId, projectName) {
         if (socket.request.session.user) {
-            if (oldName in users[socket.request.session.user.id].projects) {
-                users[socket.request.session.user.id].projects[projectId].name = projectName;
-                fs.writeFileSync('./users.json', JSON.stringify(users));
-            }
+            users[socket.request.session.user.id].projects[projectId].name = projectName;
+            fs.writeFileSync('./users.json', JSON.stringify(users));
         }
     });
     socket.on('disconnect', function() {
