@@ -78,7 +78,6 @@ function updateName() {
     socket.emit("updateName", projectId, document.getElementById("name-input").value);
     projectName = document.getElementById("name-input").value;
     document.title = "Discord Scratch - " + projectName;
-    history.pushState('Change project name', document.title, '?name=' + projectName);
 }
 document.getElementById("hide-show-arrow").addEventListener("click", function(event) {
     if (document.getElementsByClassName("console-div")[0].style.display === "none") {
