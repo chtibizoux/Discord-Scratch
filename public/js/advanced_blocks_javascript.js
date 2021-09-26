@@ -171,7 +171,7 @@ Blockly.JavaScript['message_delete'] = function(block) {
     return object + ".delete()" + finalstring;
 };
 Blockly.JavaScript['message_reaction'] = function(block) {
-    return [block.getFieldValue('REACTION'), Blockly.JavaScript.ORDER_NONE];
+    return ["'" + block.getFieldValue('REACTION') + "'", Blockly.JavaScript.ORDER_NONE];
 };
 Blockly.JavaScript['message_react'] = function(block) {
     var finalstring = ";\n";
