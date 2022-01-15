@@ -43,11 +43,22 @@
             </div>
         </section>
         <div id="save-div" style="display: none;">
-            <h3>To save and use your project please <a id="save-link" href="#">Login</a></h3>
-            <button class="save-cancel-button" onclick="document.getElementById('save-div').style.display = 'none'">Cancel</button>
+            <div class="save-content">
+                <h3>To save and use your project please <a href="/login">login</a></h3>
+                <button class="save-cancel-button" onclick="document.getElementById('save-div').style.display = 'none'">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                        <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
+                    </svg>
+                </button>
+            </div>
         </div>
         <div class="tutorial-background" style="display: <%= project.tutorial1 ? "block" : "none" %>;" id="tutorial1">
             <div class="tutorial-div">
+                <button class="tutorial-times-button" onclick="document.getElementById('tutorial1').style.display = 'none';socket.emit('disableTutorial1', projectId)">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                        <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
+                    </svg>
+                </button>
                 <h1>Create Discord Application</h1>
                 <p>So that your application can connect to discord you must create an application on the <a href="https://discord.com/developers/applications">Discord developers pannel</a>.</p>
                 <ol>
@@ -63,6 +74,11 @@
         </div>
         <div class="tutorial-background" style="display: none;" id="tutorial2">
             <div class="tutorial-div">
+                <button class="tutorial-times-button" onclick="document.getElementById('tutorial2').style.display = 'none';socket.emit('disableTutorial2', projectId)">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                        <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
+                    </svg>
+                </button>
                 <h1>Invite Discord Bot</h1>
                 <ol>
                     <li><a href="https://discord.com/developers/applications">Open Discord developers pannel</a> and click on your application</li>
@@ -107,7 +123,9 @@
             var connected = <%= connected %>;
             var tutorial1 = <%= project.tutorial1 %>;
             var tutorial2 = <%= project.tutorial2 %>;
-            document.getElementById("name-input").value = projectName;
+            if (document.getElementById("name-input")) {
+                document.getElementById("name-input").value = projectName;
+            }
             document.title = "Discord Scratch - " + projectName;
             history.pushState('Change project name', document.title, '?id=' + projectId);
             if (<%= exist %>) {

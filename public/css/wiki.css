@@ -28,8 +28,8 @@ a{
     text-decoration: none;
 }
 .wiki{
-    padding-top: 54px;
-    min-height: calc(100% - 54px);
+    padding-top: 48px;
+    min-height: calc(100% - 48px);
     display: flex;
 }
 ul, #navigation-menu {
@@ -39,7 +39,7 @@ ul, #navigation-menu {
     position: fixed;
     display: block;
     text-align: left;
-    top: 54px;
+    top: 48px;
     bottom: 78px;
     left: 0;
     width: 350px;

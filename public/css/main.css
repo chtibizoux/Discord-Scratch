@@ -13,7 +13,7 @@ header{
     width: 100%;
     position: fixed;
     background-color: #4d97ff;
-    height: 54px;
+    height: 48px;
 }
 header nav{
     display: flex;
@@ -24,20 +24,31 @@ header nav{
     justify-content: space-between;
     width: 100%;
 }
-.logo{
-    height: 54px;
+.logo {
+    height: 48px;
     vertical-align: middle;
 }
 .header-button{
     border: none;
     background: transparent;
     color: white;
-    font-size: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 54px;
+    font-size: 16px;
+    padding: 0 30px;
+    height: 48px;
     display: inline-flex;
     align-items: center;
+}
+#account-button svg{
+    width: 17px;
+    padding-right: 10px;
+}
+#logout-button {
+    width: 20px;
+    padding: 0 17px;
+}
+.header-section {
+    align-items: center;
+    display: flex;
 }
 .logo-button{
     padding-left: 0;
@@ -45,11 +56,10 @@ header nav{
     border: none;
     background: transparent;
     color: white;
-    font-size: 20px;
-    height: 54px;
+    height: 48px;
 }
-.header-button:hover{
-    background-color: rgb(15, 189, 140);
+.header-button:hover {
+    background-color: hsla(0, 0%, 0%, 0.15);
 }
 button{
     outline: none;

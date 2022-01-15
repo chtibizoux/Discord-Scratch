@@ -2,7 +2,7 @@
 <html lang="fr" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Discord Scratch</title>
+        <title>Discord Scratch - My Account</title>
         <link rel="shortcut icon" href="/assets/images/favicon.ico">
         <meta name="description" content="A web site to make discord bots with scratch.">
         <meta name="author" content="Clément Songis">
@@ -20,6 +20,7 @@
     <body>
         <%- include('../templates/header', {isEditor: false}) %>
         <div class="new-div">
+            <h1>My projects</h1>
             <button class="new-button" onclick="document.getElementById('create-div').style.display = 'block';">New Project</button>
         </div>
         <div id="create-div" style="display: none;">
@@ -32,7 +33,7 @@
         <section id="projects" <% if (Object.keys(projects).length === 0) { %>style="display: block;"<% }else{ %>style="display: flex;"<% } %>>
             <% for(var projectId in projects) { %>
                 <div class="project-button" projectId="<%= projectId %>" onclick="document.location.href = '/advanced_editor/?id=<%= projectId %>'/* simple_editor */">
-                    <div class="project-img"><img src="/assets/images/project.png" alt=""></div>
+                    <div class="project-img"><img src="/assets/images/project.png" alt="icon"></div>
                     <div class="project-button-name"><%= projects[projectId].name %></div>
                     <button class="project-delete-button" onclick="event.stopPropagation();socket.emit('deleteProject', '<%= projectId %>');"><img src="/assets/images/trash.svg" alt=""></button>
                 </div>

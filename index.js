@@ -202,14 +202,14 @@ app.get('/simple_editor', function (req, res) {
                 tutorial1: false,
                 tutorial2: false
             },
-            projectId: "Untitled",
+            projectId: "0000000000",
             exist: false,
         });
     }
 });
 app.get('/advanced_editor', function (req, res) {
     if (req.session.user) {
-        var projectId = req.query.id || Math.round(Math.random() * 1000000).toString();
+        var projectId = req.query.id || Math.round(Math.random() * 10000000000).toString();
         var projectName = req.query.name || getUntitledName(users[req.session.user.id].projects);
         if (!(projectId in users[req.session.user.id].projects)) {
             users[req.session.user.id].projects[projectId] = {
@@ -251,19 +251,21 @@ app.get('/wiki', function (req, res) {
 });
 function getUntitledName(projects) {
     var projectName = "Untitled";
-    var tempName = 0;
+    var i = 1;
     while (projectName === "Untitled") {
+        var tempName = i === 1 ? "Untitled" : "Untitled-" + i;
         var exist = false;
-        for (key in projects) {
-            if (key === "Untitled" + tempName) {
-                tempName ++;
+        for (const i in projects) {
+            if (projects[i].name === tempName) {
                 exist = true;
+                break;
             }
         }
-        if (exist === false) {
-            projectName = "Untitled" + tempName;
+        if (!exist) {
+            projectName = tempName;
             break;
         }
+        i++;
     }
     return projectName;
 }

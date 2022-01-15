@@ -4,8 +4,29 @@ html, body{
     height: 100%;
 }
 .game-buttons{
-    text-align: center;
-    margin: 10px;
+    /* text-align: center; */
+    height: 48px;
+}
+.game-buttons input {
+    outline: none;
+    border: 1px dashed rgba(0, 0, 0, 0.086);
+    height: 20px;
+    color: white;
+    font-size: 16px;
+    transition-duration: 0.3s;
+    background-color: hsla(0, 100%, 100%, 0.25);
+    border-radius: 4px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.game-buttons input:focus,
+.game-buttons input:hover {
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 calc(0.5rem * .5) hsla(0, 100%, 100%, 0.25);
+    background-color: white;
+    color: black;
+    border-color: #7eaffc;
 }
 .game-button{
     vertical-align: middle;
@@ -13,8 +34,9 @@ html, body{
     padding: 0;
     border: none;
     background: transparent;
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
+    margin: 14px;
 }
 .editor{
     width: 100%;
@@ -23,7 +45,7 @@ html, body{
 .editor-div{
     position: absolute;
     left: 0;
-    top: 54px;
+    top: 48px;
     bottom: 0;
     right: 35%;
     border-right: solid #bbbbbb 2px;
@@ -73,7 +95,7 @@ html, body{
 .console-div{
     position: absolute;
     right: 0;
-    top: 54px;
+    top: 48px;
     bottom: 50%;
     left: 65%;
     padding-top: 10px;
@@ -131,13 +153,16 @@ a{
 .tutorial-div img{
     max-width: 100%;
 }
-.tutorial-div{
+.tutorial-div {
+    text-align: right;
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    margin: 50px;
+    margin: 50px auto;
+    max-width: 800px;
+    width: calc(100% - 240px);
     padding: 50px;
     padding-left: 70px;
     border: solid #bbbbbb 1px;
@@ -147,6 +172,9 @@ a{
     overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+.tutorial-div ol{
+    text-align: left;
 }
 .tutorial-div::-webkit-scrollbar {
     display: none;
@@ -163,7 +191,6 @@ a{
     margin: 20px;
 }
 .tutorial-background{
-    content: "";
     position: absolute;
     left: 0;
     right: 0;
@@ -171,6 +198,14 @@ a{
     bottom: 0;
     background-color: #8a8a8a99;
     z-index: 400;
+}
+.tutorial-times-button {
+    position: fixed;
+    transform: translate(10px, -25px);
+    border: none;
+    background-color: transparent;
+    font-size: 17px;
+    width: 15px;
 }
 .tutorial-close-button{
     color: white;
@@ -184,28 +219,37 @@ a{
     border-radius: 10px;
     border: none;
 }
-#save-div{
+#save-div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #8a8a8a99;
+    z-index: 400;
+}
+.save-content {
     text-align: center;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: #6eaaff;
-    padding: 40px;
+    background-color: white;
+    padding: 60px;
     border-radius: 20px;
     z-index: 30;
 }
 #save-div a{
-    color: #2f6dc4;
+    color: #5c90ff;
 }
-.save-cancel-button{
+.save-cancel-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
     border: none;
     background-color: transparent;
-    color: white;
     font-size: 17px;
-    padding-left: 30px;
-    padding-right: 30px;
-    height: 54px;
+    width: 15px;
 }
 .save-cancel-button:hover{
     text-decoration: underline;
@@ -220,45 +264,53 @@ a{
 .dropdow-menu{
     display: none;
     position: absolute;
-    background: white;
+    background: #4d97ff;
     top: 100%;
-    padding: 10px 0;
-    border-radius: 10px;
-    border: #bbbbbb solid 1px;
-    transform: translateX(calc(-50% - 50px));
-    min-width: 100px;
+    left: 0;
+    min-width: 186px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 8px 8px 0 #00000026;
+    border: 1px solid #00000026;
+    border-top: none;
     z-index: 50;
+    overflow: hidden;
+    list-style: disc;
+    left: 0;
 }
-.dropdow-menu ul{
-    list-style: none;
-}
-.dropdow-menu button{
-    padding: 10px 20px;
-    width: 100%;
-    background-color: transparent;
+.dropdow-menu li {
     border: none;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    line-height: 34px;
+    cursor: pointer;
+    display: inline-flex;
+    margin: 0;
+    white-space: nowrap;
+    display: block;
     border-radius: 0;
 }
-.dropdow-menu button:hover{
-    background-color: #bbbbbb;
+.dropdow-menu li:not(.label) {
+    padding: 0 20px;
+}
+.custom-file-upload {
+    padding: 0 20px;
+    cursor: pointer;
+    display: block;
+}
+.dropdow-menu li:hover {
+    background-color: hsla(0, 0%, 0%, 0.15);
 }
 .dropdow-menu input[type="file"] {
     display: none;
 }
-.dropdow-menu label {
+.visible .header-button {
+    background-color: hsla(0, 0%, 0%, 0.15);
+}
+.visible .dropdow-menu {
     display: block;
-    padding: 10px 0;
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    cursor: pointer;
-    font-size: 13.3333px;
-    text-align: center;
 }
-.dropdow-menu label:hover{
-    background-color: #bbbbbb;
-}
-.visible{
+.header-dropdown {
     display: inline-block;
+    position: relative;
 }

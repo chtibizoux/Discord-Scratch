@@ -58,22 +58,6 @@ setTimeout(function () {
         document.getElementById("save-div").style.display = 'block';
     }
 }, 60000);
-// socket.on('project', function(name, project, exist, socketID){
-//     if (socketID === socket.id) {
-//         projectPath = project.path;
-//         projectName = name;
-//         document.getElementById("name-input").value = projectName;
-//         document.title = "Discord Scratch - " + projectName;
-//         history.pushState('Change project name', document.title, '?name=' + projectName);
-//         Blockly.Xml.clearWorkspaceAndLoadFromXml(Blockly.Xml.textToDom(project.xml), workspace);
-//         if (exist) {
-//             document.getElementById("play").innerHTML = '<img src="/assets/images/stop.svg" alt="Stop">';
-//             document.getElementById("console-content").innerHTML = "";
-//         }else {
-//             document.getElementById("play").innerHTML = '<img src="/assets/images/play.svg" alt="Play">';
-//         }
-//     }
-// });
 function updateName() {
     socket.emit("updateName", projectId, document.getElementById("name-input").value);
     projectName = document.getElementById("name-input").value;

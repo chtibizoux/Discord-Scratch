@@ -22,37 +22,50 @@ a{
     text-decoration: none;
 }
 .new-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 50px;
     text-align: right;
-    padding-top: 104px;
+    padding-bottom: 30px;
+    padding-top: 78px;
+}
+.new-div h1{
+    font-size: 25px;
 }
 .new-button{
     border: none;
-    background-color: rgb(15, 189, 140);
-    border-radius: 20px;
+    background-color: #4d97ff;
+    border-radius: 10px;
     color: white;
     font-size: 20px;
     padding-left: 30px;
     padding-right: 30px;
-    height: 54px;
+    height: 48px;
 }
 #projects{
+    max-width: 1000px;
+    width: calc(100% - 100px);
+    margin: auto;
+    margin-bottom: 50px;
     text-align: center;
     flex-wrap: wrap;
 }
 .project-button{
+    position: relative;
     margin: 20px;
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: white;
     border: solid #bbbbbb 1px;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     cursor: pointer;
 }
-.project-button-name{
+.project-button-name {
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
     padding: 5px;
     font-size: 17px;
     background-color: rgb(77, 151, 255);
@@ -62,8 +75,12 @@ a{
     align-items: center;
     color: white;
 }
-.project-img{
+.project-img {
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    overflow: hidden;
     width: 100%;
+    display: flex;
     height: calc(100% - 27px);
 }
 .project-img img{
@@ -73,9 +90,13 @@ a{
 .project-delete-button{
     padding: 0;
     width: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 28px;
+    top: -7px;
+    right: -7px;
     position: absolute;
-    transform: translate(186px, -14px);
     background-color: rgb(77, 151, 255);
     border-radius: 50%;
     border: none;
