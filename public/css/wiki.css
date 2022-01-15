@@ -32,7 +32,7 @@ a{
     min-height: calc(100% - 48px);
     display: flex;
 }
-ul, #navigation-menu {
+ul {
     list-style-type: none;
 }
 #navigation-menu {
@@ -40,39 +40,43 @@ ul, #navigation-menu {
     display: block;
     text-align: left;
     top: 48px;
-    bottom: 78px;
+    bottom: 0;
     left: 0;
     width: 350px;
     margin: 0;
     padding: 20px;
     overflow: auto;
 }
-#navigation-menu a{
+#navigation-menu a {
+    display: block;
     color: black;
+    font-size: 17px;
+    padding: 5px 0;
 }
 .caret {
     cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px 0;
 }
-.caret::before {
-    content: "\25B6";
-    color: black;
-    display: inline-block;
-    margin-right: 6px;
+.caret span {
+    padding-left: 10px;
 }
-.caret-down::before {
-    -ms-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
+.caret svg {
+    transition-duration: 0.3s;
+}
+.caret-down svg {
     transform: rotate(90deg);  
 }
 .nested {
-    display: none;
+    height: 0;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    padding-left: 15px;
 }
 .active {
-    display: block;
+    height: auto;
 }
 .content{
     background-color: white;
@@ -83,6 +87,9 @@ ul, #navigation-menu {
 }
 .content div{
     padding: 50px;
+}
+.content div:not(:last-child){
+    padding-bottom: 0;
 }
 .content h1{
     text-align: center;

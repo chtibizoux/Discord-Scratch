@@ -21,104 +21,184 @@
         <%- include('../templates/header', {isEditor: false}) %>
         <section class="wiki">
             <ul id="navigation-menu">
-                <li><a class="caret caret-down responsive" href="#Getting-Started">Getting Started</a>
-                <ul class="nested active">
-                    <li><a href="#Getting-Started-Create-Discord-Application">Create Discord Application</a></li>
-                    <li><a href="#Getting-Started-Invite-Discord-Bot">Invite Discord Bot</a></li>
-                </ul>
+                <li>
+                    <div class="caret caret-down">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" aria-hidden="true">
+                            <g fill="none">
+                                <path d="M9 5l7 7l-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                        </svg>
+                        <span><a href="#Getting-Started" style="font-size: 20px;">Getting Started</a></span>
+                    </div>
+                    <ul class="nested active">
+                        <li><a href="#Getting-Started-Create-Discord-Application">Create Discord Application</a></li>
+                        <li><a href="#Getting-Started-Invite-Discord-Bot">Invite Discord Bot</a></li>
+                    </ul>
                 </li>
-                <li><a class="caret responsive" href="#Blocks">Blocks</a>
-                <ul class="nested">
-                    <li><a class="caret" href="#Blocks-Discord">Discord</a>
+                <li>
+                    <div class="caret">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" aria-hidden="true">
+                            <g fill="none">
+                                <path d="M9 5l7 7l-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                        </svg>
+                        <span><a href="#Blocks" style="font-size: 20px;">Blocks</a></span>
+                    </div>
                     <ul class="nested">
-                        <li><a href="#Blocks-Discord-Reply">Reply</a></li>
-                        <li><a href="#Blocks-Discord-Send">Send</a></li>
-                        <li><a href="#Blocks-Discord-Edit">Edit</a></li>
-                        <li><a href="#Blocks-Discord-Delete">Delete</a></li>
-                        <li><a href="#Blocks-Discord-React">React</a></li>
+                        <li>
+                            <div class="caret">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" aria-hidden="true">
+                                    <g fill="none">
+                                        <path d="M9 5l7 7l-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                                <span><a href="#Blocks-Discord">Discord</a></span>
+                            </div>
+                            <ul class="nested">
+                                <li><a href="#Blocks-Discord-Reply">Reply</a></li>
+                                <li><a href="#Blocks-Discord-Send">Send</a></li>
+                                <li><a href="#Blocks-Discord-Edit">Edit</a></li>
+                                <li><a href="#Blocks-Discord-Delete">Delete</a></li>
+                                <li><a href="#Blocks-Discord-React">React</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="caret">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" aria-hidden="true">
+                                    <g fill="none">
+                                        <path d="M9 5l7 7l-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                                <span><a href="#Blocks-Events">Events</a></span>
+                            </div>
+                            <ul class="nested">
+                                <li><a href="#Blocks-Events-On">On</a></li>
+                                <li><a href="#Blocks-Events-On-Output-Variables">On Variables</a></li>
+                                <li><a href="#Blocks-Events-Flag">Flag</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="caret">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" aria-hidden="true">
+                                    <g fill="none">
+                                        <path d="M9 5l7 7l-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                                <span><a href="#Blocks-Control">Control</a></span>
+                            </div>
+                            <ul class="nested">
+                                <li><a href="#Blocks-Control-Wait">Wait</a></li>
+                                <li><a href="#Blocks-Control-Repeat">Repeat</a></li>
+                                <li><a href="#Blocks-Control-If">If</a></li>
+                                <li><a href="#Blocks-Control-If-Else">If Else</a></li>
+                                <li><a href="#Blocks-Control-Wait-Until">Wait Until</a></li>
+                                <li><a href="#Blocks-Control-Repeat-Until">Repeat Until</a></li>
+                                <li><a href="#Blocks-Control-While">While</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="caret">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" aria-hidden="true">
+                                    <g fill="none">
+                                        <path d="M9 5l7 7l-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                                <span><a href="#Blocks-Sensing">Sensing</a></span>
+                            </div>
+                            <ul class="nested">
+                                <li><a href="#Blocks-Sensing-Log">Log</a></li>
+                                <li><a href="#Blocks-Sensing-Bot">Bot</a></li>
+                                <li><a href="#Blocks-Sensing-System-Channel">System Channel</a></li>
+                                <li><a href="#Blocks-Sensing-Message-Content">Message Content</a></li>
+                                <li><a href="#Blocks-Sensing-Object-Of">Object Of</a></li>
+                                <li><a href="#Blocks-Sensing-Fetch">Fetch</a></li>
+                                <li><a href="#Blocks-Sensing-Fetch-Object">Fetch Object</a></li>
+                                <li><a href="#Blocks-Sensing-Get-ID">Get ID</a></li>
+                                <li><a href="#Blocks-Sensing-Reset-Date">Reset Date</a></li>
+                                <li><a href="#Blocks-Sensing-Set-Date">Set Date</a></li>
+                                <li><a href="#Blocks-Sensing-Get-Date">Get Date</a></li>
+                                <li><a href="#Blocks-Sensing-Get-Current">Get Current</a></li>
+                                <li><a href="#Blocks-Sensing-UserName">UserName</a></li>
+                                <li><a href="#Blocks-Sensing-User-ID">User ID</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="caret">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" aria-hidden="true">
+                                    <g fill="none">
+                                        <path d="M9 5l7 7l-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                                <span><a href="#Blocks-Operators">Operators</a></span>
+                            </div>
+                            <ul class="nested">
+                                <li><a href="#Blocks-Operators-Arithmetic">Arithmetic operators</a></li>
+                                <li><a href="#Blocks-Operators-Comparison">Comparison operators</a></li>
+                                <li><a href="#Blocks-Operators-Binary">Binary operators</a></li>
+                                <li><a href="#Blocks-Operators-Random">Random</a></li>
+                                <li><a href="#Blocks-Operators-Join">Join</a></li>
+                                <li><a href="#Blocks-Operators-Letter-Of">Letter Of</a></li>
+                                <li><a href="#Blocks-Operators-Length">Length</a></li>
+                                <li><a href="#Blocks-Operators-Contains">Contains</a></li>
+                                <li><a href="#Blocks-Operators-Starts-With">Starts With</a></li>
+                                <li><a href="#Blocks-Operators-Modulo">Modulo</a></li>
+                                <li><a href="#Blocks-Operators-Trigonometry">Trigonometry</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="caret">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" aria-hidden="true">
+                                    <g fill="none">
+                                        <path d="M9 5l7 7l-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                                <span><a href="#Blocks-Variables">Variables</a></span>
+                            </div>
+                            <ul class="nested">
+                                <li><a href="#Blocks-Variables-Variable">Variable</a></li>
+                                <li><a href="#Blocks-Variables-Set">Set</a></li>
+                                <li><a href="#Blocks-Variables-Change">Change</a></li>
+                                <li><a href="#Blocks-Variables-Variable">List</a></li>
+                                <li><a href="#Blocks-Variables-Add">Add</a></li>
+                                <li><a href="#Blocks-Variables-Split">Split</a></li>
+                                <li><a href="#Blocks-Variables-Delete">Delete</a></li>
+                                <li><a href="#Blocks-Variables-Delete-All">Delete All</a></li>
+                                <li><a href="#Blocks-Variables-Insert">Insert</a></li>
+                                <li><a href="#Blocks-Variables-Replace">Replace</a></li>
+                                <li><a href="#Blocks-Variables-Join">Join</a></li>
+                                <li><a href="#Blocks-Variables-Item">Item</a></li>
+                                <li><a href="#Blocks-Variables-Index-Of">Index Of</a></li>
+                                <li><a href="#Blocks-Variables-Length">Length</a></li>
+                                <li><a href="#Blocks-Variables-Contains">Contains</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="caret">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" aria-hidden="true">
+                                    <g fill="none">
+                                        <path d="M9 5l7 7l-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                                <span><a href="#Blocks-My-Blocks">My Blocks</a></span>
+                            </div>
+                            <ul class="nested">
+                                <li><a href="#Blocks-My-Blocks-Reply">Comming Soon</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                    </li>
-                    <li><a class="caret" href="#Blocks-Events">Events</a>
-                    <ul class="nested">
-                        <li><a href="#Blocks-Events-On">On</a></li>
-                        <li><a href="#Blocks-Events-On-Output-Variables">On Variables</a></li>
-                        <li><a href="#Blocks-Events-Flag">Flag</a></li>
-                    </ul>
-                    </li>
-                    <li><a class="caret" href="#Blocks-Control">Control</a>
-                    <ul class="nested">
-                        <li><a href="#Blocks-Control-Wait">Wait</a></li>
-                        <li><a href="#Blocks-Control-Repeat">Repeat</a></li>
-                        <li><a href="#Blocks-Control-If">If</a></li>
-                        <li><a href="#Blocks-Control-If-Else">If Else</a></li>
-                        <li><a href="#Blocks-Control-Wait-Until">Wait Until</a></li>
-                        <li><a href="#Blocks-Control-Repeat-Until">Repeat Until</a></li>
-                        <li><a href="#Blocks-Control-While">While</a></li>
-                    </ul>
-                    </li>
-                    <li><a class="caret" href="#Blocks-Sensing">Sensing</a>
-                    <ul class="nested">
-                        <li><a href="#Blocks-Sensing-Log">Log</a></li>
-                        <li><a href="#Blocks-Sensing-Bot">Bot</a></li>
-                        <li><a href="#Blocks-Sensing-System-Channel">System Channel</a></li>
-                        <li><a href="#Blocks-Sensing-Message-Content">Message Content</a></li>
-                        <li><a href="#Blocks-Sensing-Object-Of">Object Of</a></li>
-                        <li><a href="#Blocks-Sensing-Fetch">Fetch</a></li>
-                        <li><a href="#Blocks-Sensing-Fetch-Object">Fetch Object</a></li>
-                        <li><a href="#Blocks-Sensing-Get-ID">Get ID</a></li>
-                        <li><a href="#Blocks-Sensing-Reset-Date">Reset Date</a></li>
-                        <li><a href="#Blocks-Sensing-Set-Date">Set Date</a></li>
-                        <li><a href="#Blocks-Sensing-Get-Date">Get Date</a></li>
-                        <li><a href="#Blocks-Sensing-Get-Current">Get Current</a></li>
-                        <li><a href="#Blocks-Sensing-UserName">UserName</a></li>
-                        <li><a href="#Blocks-Sensing-User-ID">User ID</a></li>
-                    </ul>
-                    </li>
-                    <li><a class="caret" href="#Blocks-Operators">Operators</a>
-                    <ul class="nested">
-                        <li><a href="#Blocks-Operators-Arithmetic">Arithmetic operators</a></li>
-                        <li><a href="#Blocks-Operators-Comparison">Comparison operators</a></li>
-                        <li><a href="#Blocks-Operators-Binary">Binary operators</a></li>
-                        <li><a href="#Blocks-Operators-Random">Random</a></li>
-                        <li><a href="#Blocks-Operators-Join">Join</a></li>
-                        <li><a href="#Blocks-Operators-Letter-Of">Letter Of</a></li>
-                        <li><a href="#Blocks-Operators-Length">Length</a></li>
-                        <li><a href="#Blocks-Operators-Contains">Contains</a></li>
-                        <li><a href="#Blocks-Operators-Starts-With">Starts With</a></li>
-                        <li><a href="#Blocks-Operators-Modulo">Modulo</a></li>
-                        <li><a href="#Blocks-Operators-Trigonometry">Trigonometry</a></li>
-                    </ul>
-                    </li>
-                    <li><a class="caret" href="#Blocks-Variables">Variables</a>
-                    <ul class="nested">
-                        <li><a href="#Blocks-Variables-Variable">Variable</a></li>
-                        <li><a href="#Blocks-Variables-Set">Set</a></li>
-                        <li><a href="#Blocks-Variables-Change">Change</a></li>
-                        <li><a href="#Blocks-Variables-Variable">List</a></li>
-                        <li><a href="#Blocks-Variables-Add">Add</a></li>
-                        <li><a href="#Blocks-Variables-Split">Split</a></li>
-                        <li><a href="#Blocks-Variables-Delete">Delete</a></li>
-                        <li><a href="#Blocks-Variables-Delete-All">Delete All</a></li>
-                        <li><a href="#Blocks-Variables-Insert">Insert</a></li>
-                        <li><a href="#Blocks-Variables-Replace">Replace</a></li>
-                        <li><a href="#Blocks-Variables-Join">Join</a></li>
-                        <li><a href="#Blocks-Variables-Item">Item</a></li>
-                        <li><a href="#Blocks-Variables-Index-Of">Index Of</a></li>
-                        <li><a href="#Blocks-Variables-Length">Length</a></li>
-                        <li><a href="#Blocks-Variables-Contains">Contains</a></li>
-                    </ul>
-                    </li>
-                    <li><a class="caret" href="#Blocks-My-Blocks">My Blocks</a>
-                    <ul class="nested">
-                        <li><a href="#Blocks-My-Blocks-Reply">Comming Soon</a></li>
-                    </ul>
-                    </li>
-                </ul>
                 </li>
-                <li><a class="caret responsive" href="#Extentions">Extentions</a>
-                <ul class="nested">
-                    <li><a href="#Extentions-Comming-Soon">Comming Soon</a></li>
-                </ul>
+                <li>
+                    <div class="caret">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" aria-hidden="true">
+                            <g fill="none">
+                                <path d="M9 5l7 7l-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                        </svg>
+                        <span><a href="#Extentions" style="font-size: 20px;">Extentions</a></span>
+                    </div>
+                    <ul class="nested">
+                        <li><a href="#Extentions-Comming-Soon">Comming Soon</a></li>
+                    </ul>
                 </li>
             </ul>
             <div class="content" id="Getting-Started">
@@ -178,11 +258,6 @@
                 }
             };
             window.onhashchange();
-            if (window.matchMedia("(max-width: 750px)").matches) {
-                Array.from(document.getElementsByClassName("responsive")).forEach(element => {
-                    element.setAttribute("href", "#");
-                });
-            }
         </script>
     </body>
 </html>
