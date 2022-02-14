@@ -1,152 +1,271 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Discord Scratch</title>
-        <link rel="shortcut icon" href="/assets/images/favicon.ico">
-        <meta name="description" content="A web site to make discord bots with scratch.">
-        <meta name="author" content="Clément Songis">
-        <meta name="application-name" content="Discord Scratch">
-        <meta name="theme-color" content="#cce1fc">
-        <meta name="color-scheme" content="only light">
-        <meta name="robots" content="index">
-        <meta name="keywords" content="discord,scratch,bot">
-        <link rel="stylesheet" href="/css/editor.css">
-        <link rel="stylesheet" href="/css/main.css">
-        <link rel="stylesheet" href="/css/prism.css"></link>
-        <script src="/js/prism.js"></script>
-        <script src="https://kit.fontawesome.com/740353a2ba.js"></script>
-        <script src="/js/advanced_blockly_compressed_vertical.js"></script>
-        <script src="/js/advanced_blocks_compressed.js"></script>
-        <script src="/js/advanced_blocks_compressed_vertical.js"></script>
-        <script src="/js/advanced_scratch_msgs.js"></script>
-        <script src="/js/javascript_compressed.js"></script>
-        <script src="/js/advanced_blocks_javascript.js"></script>
-        <script src="/socket.io/socket.io.js"></script>
-    </head>
-    <body>
-        <%- include('../templates/header', {isEditor: true}) %>
-        <section class="editor">
-            <div id="blockly-div" class="editor-div"></div>
-            <div id="hide-show-arrow"></div>
-            <div class="console-div">
-                <h2>Console</h2>
-                <div id="console">
-                    <div id="console-content">
-                        /<%= project.name %>>
+
+<head>
+    <meta charset="utf-8">
+    <title>Discord Scratch</title>
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
+    <meta name="description" content="A web site to make discord bots with scratch.">
+    <meta name="author" content="Clément Songis">
+    <meta name="application-name" content="Discord Scratch">
+    <meta name="theme-color" content="#cce1fc">
+    <meta name="color-scheme" content="only light">
+    <meta name="robots" content="index">
+    <meta name="keywords" content="discord,scratch,bot">
+    <link rel="stylesheet" href="/css/editor.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/prism.css">
+    </link>
+    <script src="/js/prism.js"></script>
+    <script src="https://kit.fontawesome.com/740353a2ba.js"></script>
+    <script src="/js/advanced_blockly_compressed_vertical.js"></script>
+    <script src="/js/advanced_blocks_compressed.js"></script>
+    <script src="/js/advanced_blocks_compressed_vertical.js"></script>
+    <script src="/js/advanced_scratch_msgs.js"></script>
+    <script src="/js/javascript_compressed.js"></script>
+    <script src="/js/advanced_blocks_javascript.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+    <%- include('../templates/header', {isEditor: true}) %>
+    <section class="editor">
+        <div id="blockly-div" class="editor-div"></div>
+        <div id="hide-show-arrow"></div>
+        <div class="console-div">
+            <h2>Console</h2>
+            <div id="console">
+                <div id="console-content">
+                    /<%= project.name %>>
+                </div>
+            </div>
+        </div>
+        <div class="js-viewer-div">
+            <h2>JavaScript</h2>
+            <pre class="js-viewer line-numbers language-javascript"><code id="javascript-viewer"></code></pre>
+        </div>
+    </section>
+    <div id="save-div" style="display: none;">
+        <div class="save-content">
+            <h3>To save and use your project please <a href="/login">login</a></h3>
+            <button class="save-cancel-button" onclick="document.getElementById('save-div').style.display = 'none'">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                    <path fill="currentColor"
+                        d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="tutorial-background" style="display: <%= project.tutorial1 ? "block" : "none" %>;" id="tutorial1">
+        <div class="tutorial-div">
+            <button class="tutorial-times-button"
+                onclick="document.getElementById('tutorial1').style.display = 'none';">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                    <path fill="currentColor"
+                        d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                    </path>
+                </svg>
+            </button>
+            <h1>Create Discord Application</h1>
+            <p>So that your application can connect to discord you must create an application on the <a
+                    href="https://discord.com/developers/applications">Discord developers pannel</a>.</p>
+            <ol>
+                <li><a href="https://discord.com/developers/applications">Open Discord developers pannel</a> and click
+                    on "New Application"<br><img src="/assets/images/tutorial1.jpg" alt="New Application"></li>
+                <li>Choose a name and click on "Create"<br><img src="/assets/images/tutorial2.jpg" alt="Create"></li>
+                <li>Go to "Bot"<br><img src="/assets/images/tutorial3.jpg" alt="Bot"></li>
+                <li>Click on "Add Bot"<br><img src="/assets/images/tutorial4.jpg" alt="Add Bot"></li>
+                <li>Click on "Copy"<br><img src="/assets/images/tutorial5.jpg" alt="Copy"></li>
+                <li>And paste token in<br><img src="/assets/images/tutorial6.jpg" alt="Paste"></li>
+            </ol>
+            <button class="tutorial-close-button"
+                onclick="document.getElementById('tutorial1').style.display = 'none';socket.emit('disableTutorial1', projectId)">Close</button>
+        </div>
+    </div>
+    <div class="tutorial-background" style="display: none;" id="tutorial2">
+        <div class="tutorial-div">
+            <button class="tutorial-times-button"
+                onclick="document.getElementById('tutorial2').style.display = 'none';">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                    <path fill="currentColor"
+                        d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                    </path>
+                </svg>
+            </button>
+            <h1>Invite Discord Bot</h1>
+            <ol>
+                <li><a href="https://discord.com/developers/applications">Open Discord developers pannel</a> and click
+                    on your application</li>
+                <li>Go to "OAuth2"<br><img src="/assets/images/tutorial3.jpg" alt="Bot"></li>
+                <li>Select "bot"<br><img src="/assets/images/tutorial7.jpg" alt="scopes"></li>
+                <li>Select your bot permissions<br><img src="/assets/images/tutorial8.jpg" alt="permissions"></li>
+                <li>And click on "copy" after the url<br><img src="/assets/images/tutorial9.jpg" alt="Copy"></li>
+                <li>And past URL in a new tab</li>
+                <li>Now you can select your server and click on "Authorize"</li>
+            </ol>
+            <button class="tutorial-close-button"
+                onclick="document.getElementById('tutorial2').style.display = 'none';socket.emit('disableTutorial2', projectId)">Close</button>
+        </div>
+    </div>
+    <div id="custom-procedures" class="modal_modal-overlay_1Lcbx" style="visibility: hidden;">
+        <div class="custom-procedures_modal-content_Zjko5 modal_modal-content_1h3ll" tabindex="-1" role="dialog"
+            aria-label="Créer un bloc">
+            <div class="box_box_2jjDp" dir="ltr" style="flex-direction: column; flex-grow: 1;">
+                <div class="modal_header_1h7ps">
+                    <div class="modal_header-item_2zQTd modal_header-item-title_tLOU5">Add a bloc</div>
+                    <div class="modal_header-item_2zQTd modal_header-item-close_2XDeL">
+                        <div aria-label="Close" class="close-button_close-button_lOp2G close-button_large_2oadS"
+                            role="button" onclick="cancel()" tabindex="0">
+                            <img class="close-button_close-icon_HBCuO" src="/assets/images/close-button.svg">
+                        </div>
+                    </div>
+                </div>
+                <div id="custom-procedures-workspace" class="custom-procedures_workspace_1d2uW box_box_2jjDp"></div>
+                <div class="custom-procedures_body_SQBv6 box_box_2jjDp">
+                    <div class="custom-procedures_options-row_1PqLE">
+                        <div class="custom-procedures_option-card_BtHt3" role="button" onclick="addTextNumber()"
+                            tabindex="0">
+                            <img class="custom-procedures_option-icon_2y7hh" src="/assets/images/input.svg">
+                            <div class="custom-procedures_option-title_3v6va"><span>Add an input</span></div>
+                            <div><span>number or text</span></div>
+                        </div>
+                        <div class="custom-procedures_option-card_BtHt3" role="button" onclick="addBoolean()"
+                            tabindex="0">
+                            <img class="custom-procedures_option-icon_2y7hh" src="/assets/images/boolean-input.svg">
+                            <div class="custom-procedures_option-title_3v6va"><span>Add an input</span></div>
+                            <div><span>boolean</span></div>
+                        </div>
+                        <div class="custom-procedures_option-card_BtHt3" role="button" onclick="addLabel()"
+                            tabindex="0">
+                            <img class="custom-procedures_option-icon_2y7hh" src="/assets/images/label.svg">
+                            <div class="custom-procedures_option-title_3v6va"><span>Add a label</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-procedures_button-row_2jBu3 box_box_2jjDp">
+                        <button onclick="cancel()"><span>Cancel</span></button>
+                        <button class="custom-procedures_ok-button_2X0Vj"
+                            onclick="applyMutation()"><span>OK</span></button>
                     </div>
                 </div>
             </div>
-            <div class="js-viewer-div">
-                <h2>JavaScript</h2>
-                <pre class="js-viewer line-numbers language-javascript"><code id="javascript-viewer"></code></pre>
-            </div>
-        </section>
-        <div id="save-div" style="display: none;">
-            <div class="save-content">
-                <h3>To save and use your project please <a href="/login">login</a></h3>
-                <button class="save-cancel-button" onclick="document.getElementById('save-div').style.display = 'none'">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
-                        <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
-                    </svg>
-                </button>
-            </div>
         </div>
-        <div class="tutorial-background" style="display: <%= project.tutorial1 ? "block" : "none" %>;" id="tutorial1">
-            <div class="tutorial-div">
-                <button class="tutorial-times-button" onclick="document.getElementById('tutorial1').style.display = 'none';">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
-                        <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
-                    </svg>
-                </button>
-                <h1>Create Discord Application</h1>
-                <p>So that your application can connect to discord you must create an application on the <a href="https://discord.com/developers/applications">Discord developers pannel</a>.</p>
-                <ol>
-                    <li><a href="https://discord.com/developers/applications">Open Discord developers pannel</a> and click on "New Application"<br><img src="/assets/images/tutorial1.jpg" alt="New Application"></li>
-                    <li>Choose a name and click on "Create"<br><img src="/assets/images/tutorial2.jpg" alt="Create"></li>
-                    <li>Go to "Bot"<br><img src="/assets/images/tutorial3.jpg" alt="Bot"></li>
-                    <li>Click on "Add Bot"<br><img src="/assets/images/tutorial4.jpg" alt="Add Bot"></li>
-                    <li>Click on "Copy"<br><img src="/assets/images/tutorial5.jpg" alt="Copy"></li>
-                    <li>And paste token in<br><img src="/assets/images/tutorial6.jpg" alt="Paste"></li>
-                </ol>
-                <button class="tutorial-close-button" onclick="document.getElementById('tutorial1').style.display = 'none';socket.emit('disableTutorial1', projectId)">Close</button>
-            </div>
-        </div>
-        <div class="tutorial-background" style="display: none;" id="tutorial2">
-            <div class="tutorial-div">
-                <button class="tutorial-times-button" onclick="document.getElementById('tutorial2').style.display = 'none';">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
-                        <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
-                    </svg>
-                </button>
-                <h1>Invite Discord Bot</h1>
-                <ol>
-                    <li><a href="https://discord.com/developers/applications">Open Discord developers pannel</a> and click on your application</li>
-                    <li>Go to "OAuth2"<br><img src="/assets/images/tutorial3.jpg" alt="Bot"></li>
-                    <li>Select "bot"<br><img src="/assets/images/tutorial7.jpg" alt="scopes"></li>
-                    <li>Select your bot permissions<br><img src="/assets/images/tutorial8.jpg" alt="permissions"></li>
-                    <li>And click on "copy" after the url<br><img src="/assets/images/tutorial9.jpg" alt="Copy"></li>
-                    <li>And past URL in a new tab</li>
-                    <li>Now you can select your server and click on "Authorize"</li>
-                </ol>
-                <button class="tutorial-close-button" onclick="document.getElementById('tutorial2').style.display = 'none';socket.emit('disableTutorial2', projectId)">Close</button>
-            </div>
-        </div>
-        <script>
-            var socket = io();
-            Blockly.ScratchMsgs.setLocale("en");
-            var workspace = Blockly.inject('blockly-div', {
-              comments: true,
-              disable: false,
-              collapse: false,
-              media: '/assets/images/scratch/',
-              readOnly: false,
-              rtl: false,
-              scrollbars: true,
-              toolbox: null,
-              sounds: false,
-              zoom: {
+    </div>
+    <script>
+        var socket = io();
+        Blockly.ScratchMsgs.setLocale("en");
+        var workspace = Blockly.inject('blockly-div', {
+            comments: true,
+            // disable: false,
+            // collapse: false,
+            // readOnly: false,
+            // rtl: false,
+            // scrollbars: true,
+            // toolbox: null,
+            // sounds: false,
+            media: '/assets/images/scratch/',
+            zoom: {
                 controls: true,
                 wheel: true,
                 startScale: 0.675,
                 maxScale: 4,
                 minScale: 0.25,
                 scaleSpeed: 1.1
-              },
-              colours: {
+            },
+            colours: {
                 fieldShadow: 'rgba(255, 255, 255, 0.3)',
                 dragShadowOpacity: 0.6
-              }
-            });
-            var projectName = "<%= project.name %>";
-            var projectId = "<%= projectId %>";
-            var connected = <%= connected %>;
-            var tutorial1 = <%= project.tutorial1 %>;
-            var tutorial2 = <%= project.tutorial2 %>;
-            if (document.getElementById("name-input")) {
-                document.getElementById("name-input").value = projectName;
             }
-            document.title = "Discord Scratch - " + projectName;
-            history.pushState('Change project name', document.title, '?id=' + projectId);
-            if (<%= exist %>) {
-                document.getElementById("play").innerHTML = '<img src="/assets/images/stop.svg" alt="Stop">';
-                document.getElementById("console-content").innerHTML = "";
-            } else {
-                document.getElementById("play").innerHTML = '<img src="/assets/images/play.svg" alt="Play">';
+        });
+        var projectName = "<%= project.name %>";
+        var projectId = "<%= projectId %>";
+        var connected = <%= connected %>;
+        var tutorial1 = <%= project.tutorial1 %>;
+        var tutorial2 = <%= project.tutorial2 %>;
+        if (document.getElementById("name-input")) {
+            document.getElementById("name-input").value = projectName;
+        }
+        document.title = "Discord Scratch - " + projectName;
+        history.pushState('Change project name', document.title, '?id=' + projectId);
+        if (<%= exist %>) {
+            document.getElementById("play").innerHTML = '<img src="/assets/images/stop.svg" alt="Stop">';
+            document.getElementById("console-content").innerHTML = "";
+        } else {
+            document.getElementById("play").innerHTML = '<img src="/assets/images/play.svg" alt="Play">';
+        }
+        Blockly.Xml.domToWorkspace(Blockly.Xml.textToDom(`<%- project.xml %>`), workspace);
+        workspace.addChangeListener(Blockly.Events.disableOrphans);
+
+        function codeUpdate(event) {
+            var xml = Blockly.Xml.domToText(Blockly.Xml.workspaceToDom(workspace));
+            var code = start + Blockly.JavaScript.workspaceToCode(workspace) + end;
+            document.getElementById("javascript-viewer").innerHTML = code;
+            Prism.highlightElement(document.getElementById("javascript-viewer"));
+            if (connected) {
+                socket.emit("updateCode", code, xml, projectId);
             }
-            Blockly.Xml.domToWorkspace(Blockly.Xml.textToDom(`<%- project.xml %>`), workspace);
-            workspace.addChangeListener(Blockly.Events.disableOrphans);
-            function codeUpdate(event) {
-                var xml = Blockly.Xml.domToText(Blockly.Xml.workspaceToDom(workspace));
-                var code = start + Blockly.JavaScript.workspaceToCode(workspace) + end;
-                document.getElementById("javascript-viewer").innerHTML = code;
-                Prism.highlightElement(document.getElementById("javascript-viewer"));
-                if (connected) {
-                    socket.emit("updateCode", code, xml, projectId);
-                }
+        }
+        workspace.scrollCenter();
+        workspace.addChangeListener(codeUpdate);
+
+        var div = document.getElementById('custom-procedures');
+        var callback = null;
+        var mutationRoot = null;
+
+        var declarationWorkspace = Blockly.inject('custom-procedures-workspace', {
+            media: '/assets/images/scratch/',
+            scrollbars: true,
+            zoom: {
+                maxScale: 1,
+                minScale: 1
+            },
+            toolbox: {},
+        });
+        declarationWorkspace.addChangeListener(function () {
+            if (mutationRoot) {
+                mutationRoot.onChangeFn();
             }
-            workspace.addChangeListener(codeUpdate);
-        </script>
-        <script src="/js/ui.js"></script>
-    </body>
+        });
+        Blockly.Procedures.externalProcedureDefCallback = function (mutation, cb) {
+            div.style.visibility = 'visible';
+            callback = cb;
+            declarationWorkspace.clear();
+            mutationRoot = declarationWorkspace.newBlock('procedures_declaration');
+            mutationRoot.domToMutation(mutation);
+            mutationRoot.initSvg();
+            mutationRoot.render(false);
+            declarationWorkspace.scrollCenter();
+        }
+
+        function applyMutation() {
+            var mutation = mutationRoot.mutationToDom(true);
+            console.log(mutation);
+            callback(mutation);
+            callback = null;
+            mutationRoot = null;
+            declarationWorkspace.clear();
+            workspace.refreshToolboxSelection_()
+            div.style.visibility = 'hidden';
+        }
+        function addLabel() {
+            mutationRoot.addLabelExternal();
+        }
+        function addBoolean() {
+            mutationRoot.addBooleanExternal();
+        }
+        function addTextNumber() {
+            mutationRoot.addStringNumberExternal();
+        }
+        function cancel() {
+            callback = null;
+            mutationRoot = null;
+            declarationWorkspace.clear();
+            workspace.refreshToolboxSelection_()
+            div.style.visibility = 'hidden';
+        }
+    </script>
+    <script src="/js/ui.js"></script>
+</body>
+
 </html>

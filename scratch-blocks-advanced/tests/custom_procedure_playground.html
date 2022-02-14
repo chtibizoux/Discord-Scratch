@@ -1,167 +1,434 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Custom Procedure Playground</title>
-    <script src="../blockly_compressed_vertical.js"></script>
-    <script src="../blocks_compressed_vertical.js"></script>
-    <script src="../blocks_compressed.js"></script>
-    <script src="../msg/messages.js"></script>
-    <script src="../msg/scratch_msgs.js"></script>
-  <style>
-    body {
-      background-color: #fff;
-      font-family: sans-serif;
-    }
-    h1 {
-      font-weight: normal;
-      font-size: 140%;
-    }
-  </style>
-</head>
-<body>
-  <table width="100%">
-    <tr>
-      <td>
-        <div id="secondaryDiv" style="height: 480px; width: 600px;"></div>
-      </td>
-      <td>
-        <div id="primaryDiv" style="height: 480px; width: 600px;"></div>
-      </td>
-    </tr>
-    <tr>
-      <td></td>
-      <td id="editor-actions">
-        <button id="text_number" onclick="addTextNumber()">Add text/number input</button>
-        <button id="boolean" onclick="addBoolean()">Add boolean input</button>
-        <button id="label" onclick="addLabel()">Add label</button>
-        <button id="cancelButton" onclick="cancel()">cancel</button>
-        <button id="okButton" onclick="applyMutation()">ok</button>
-        <button id="rndButton" onclick="removeRandomInput()">remove random input</button>
-        <button id="addRndButton" onclick="addRandomInput()">add random input</button>
-      </td>
-    </tr>
-  </table>
+ <!DOCTYPE html>
+ <html>
 
-  <xml id="mutator_blocks" style="display:none">
-    <block type="procedures_declaration" x="25" y="25" deletable="false">
-    <mutation proccode="say %s %n times if %b" argumentnames="[&quot;something&quot;,&quot;this many&quot;,&quot;this is true&quot;]" argumentdefaults="[&quot;&quot;,1,false]" warp="false" argumentids="[&quot;a42&quot;, &quot;b23&quot;, &quot;c99&quot;]"/>
-    </block>
-  </xml>
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+   <title>Custom Procedure Playground</title>
+   <script src="../blockly_compressed_vertical.js"></script>
+   <script src="../blocks_compressed_vertical.js"></script>
+   <script src="../blocks_compressed.js"></script>
+   <script src="../msg/messages.js"></script>
+   <script src="../msg/scratch_msgs.js"></script>
+   <style>
+     body {
+       background-color: #fff;
+       font-family: sans-serif;
+     }
 
-  <xml id="main_ws_blocks" style="display:none">
-    <block id="]){{Y!7N9ezN+j@Vr`8p" type="procedures_definition" x="25" y="25">
-      <statement name="custom_block">
-          <shadow type="procedures_prototype" id="caller_internal">
-              <mutation proccode="say %s %n times if %b" argumentnames="[&quot;something&quot;,&quot;this many&quot;,&quot;this is true&quot;]" argumentdefaults="[&quot;&quot;,1,false]" warp="false" argumentids="[&quot;a42&quot;, &quot;b23&quot;, &quot;c99&quot;]"/>
-          </shadow>
-      </statement>
-      <next>
-          <block id="caller_external" type="procedures_call">
-              <mutation proccode="say %s %n times if %b" argumentnames="[&quot;something&quot;,&quot;this many&quot;,&quot;this is true&quot;]" argumentdefaults="[&quot;&quot;,1,false]" warp="false" argumentids="[&quot;a42&quot;, &quot;b23&quot;, &quot;c99&quot;]"/>
-              <value name="input0">
-                  <shadow id="V0~M:TxRk0Ua%osjGzh," type="text">
-                      <field name="TEXT"/></field>
-                  </shadow>
-              </value>
-              <value name="input1">
-                  <shadow id="uPx3si(KkbL1)-XpbXoQ" type="math_number">
-                      <field name="NUM">1</field>
-                  </shadow>
-              </value>
-          </block>
-      </next>
-  </block>
-  </xml>
+     h1 {
+       font-weight: normal;
+       font-size: 140%;
+     }
 
-  <xml id="main_ws_blocks_simpler" style="display:none">
-    <block id="]){{Y!7N9ezN+j@Vr`8p" type="procedures_definition" x="25" y="25">
-      <statement name="custom_block">
-          <shadow type="procedures_prototype" id="caller_internal">
-              <mutation proccode="say %s %n times if %b" argumentnames="[&quot;something&quot;,&quot;this many&quot;,&quot;this is true&quot;]" argumentdefaults="[&quot;&quot;,1,false]" warp="false" argumentids="[&quot;a42&quot;, &quot;b23&quot;, &quot;c99&quot;]"/>
-          </shadow>
-      </statement>
-      <next>
-          <block id="caller_external" type="procedures_call">
-          </block>
-      </next>
-  </block>
-  </xml>
+     .modal_modal-overlay_1Lcbx {
+       position: fixed;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       z-index: 510;
+       background-color: hsla(215, 100%, 65%, 0.9);
+     }
 
-  <xml id="main_ws_blocks_simplest" style="display:none">
-    <block id="]){{Y!7N9ezN+j@Vr`8p" type="procedures_definition" x="25" y="25">
-      <statement name="custom_block">
-          <shadow type="procedures_prototype" id="caller_internal">
-              <mutation proccode="my first function" argumentnames="[]" argumentdefaults="[]" warp="false" argumentids="[]"/>
-          </shadow>
-      </statement>
-      <next>
-          <block id="caller_external" type="procedures_call">
-            <mutation proccode="my first function" argumentnames="[]" argumentdefaults="[]" warp="false" argumentids="[]"/>
-          </block>
-      </next>
-  </block>
-  </xml>
+     .modal_modal-content_1h3ll * {
+       -webkit-box-sizing: border-box;
+       box-sizing: border-box;
+     }
 
-  <xml id="mutator_blocks_simplest" style="display:none">
-    <block type="procedures_declaration" x="25" y="25" deletable="false">
-    <mutation proccode="my first function" argumentnames="[]" argumentdefaults="[]" warp="false" argumentids="[]"/>
-    </block>
-  </xml>
+     .modal_modal-content_1h3ll {
+       margin: 100px auto;
+       outline: none;
+       border: 4px solid hsla(0, 100%, 100%, 0.25);
+       padding: 0;
+       border-radius: 0.5rem;
+       -webkit-user-select: none;
+       -moz-user-select: none;
+       -ms-user-select: none;
+       user-select: none;
 
-  <xml id="toolbox" style="display:none">
-    <category name="More" colour="#FF6680" secondaryColour="#FF4D6A" custom="PROCEDURE">
-    </category>
-    <category name="Values">
-      <block type="operator_round">
-        <value name="NUM">
-          <shadow type="math_number">
-            <field name="NUM"></field>
-          </shadow>
-        </value>
-      </block>
-    </category>
-    <category name="Statements">
-      <block type="control_forever"></block>
-      <block type="sound_stopallsounds"></block>
-      <block type="control_start_as_clone"></block>
-      <block type="control_stop">
-        <mutation hasnext="false"></mutation>
-        <field name="STOP_OPTION">all</field>
-      </block>
-    </category>
-  </xml>
+       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+       color: hsla(225, 15%, 40%, 1);
+       overflow: hidden;
+     }
 
+     .modal_modal-content_1h3ll.modal_full-screen_FA4cr {
+       position: absolute;
+
+       display: flex;
+       height: 100%;
+       width: 100%;
+
+       overflow-y: auto;
+       -webkit-overflow-scrolling: 'touch';
+       -webkit-user-select: none;
+       -moz-user-select: none;
+       -ms-user-select: none;
+       user-select: none;
+
+       background-color: hsla(215, 75%, 95%, 1);
+
+       margin: 0;
+       border: none;
+       border-radius: 0;
+     }
+
+     .modal_header_1h7ps {
+       display: -webkit-box;
+       display: -webkit-flex;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-box-orient: horizontal;
+       -webkit-box-direction: normal;
+       -webkit-flex-direction: row;
+       -ms-flex-direction: row;
+       flex-direction: row;
+       -webkit-flex-wrap: nowrap;
+       -ms-flex-wrap: nowrap;
+       flex-wrap: nowrap;
+       -webkit-box-pack: start;
+       -webkit-justify-content: flex-start;
+       -ms-flex-pack: start;
+       justify-content: flex-start;
+       height: 3.125rem;
+
+       -webkit-box-sizing: border-box;
+
+       box-sizing: border-box;
+       width: 100%;
+       background-color: hsla(215, 100%, 65%, 1);
+
+       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+       font-size: 1rem;
+       font-weight: normal;
+     }
+
+     .modal_header-item_2zQTd {
+       display: -webkit-box;
+       display: -webkit-flex;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-box-align: center;
+       -webkit-align-items: center;
+       -ms-flex-align: center;
+       align-items: center;
+       padding: 1rem;
+       text-decoration: none;
+       color: hsla(0, 100%, 100%, 1);
+       -webkit-user-select: none;
+       -moz-user-select: none;
+       -ms-user-select: none;
+       user-select: none;
+     }
+
+     [dir="ltr"] .modal_header-image_2KMDd {
+       margin-right: 0.5rem;
+     }
+
+     [dir="rtl"] .modal_header-image_2KMDd {
+       margin-left: 0.5rem;
+     }
+
+     button {
+       cursor: pointer;
+     }
+
+     .modal_header-item-filter_3W-ah {
+       display: -webkit-box;
+       display: -webkit-flex;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-flex-basis: 20rem;
+       -ms-flex-preferred-size: 20rem;
+       flex-basis: 20rem;
+       -webkit-box-pack: start;
+       -webkit-justify-content: flex-start;
+       -ms-flex-pack: start;
+       justify-content: flex-start;
+     }
+
+     .modal_header-item-title_tLOU5 {
+       -webkit-box-flex: 1;
+       -webkit-flex-grow: 1;
+       -ms-flex-positive: 1;
+       flex-grow: 1;
+       -webkit-flex-shrink: 0;
+       -ms-flex-negative: 0;
+       flex-shrink: 0;
+       -webkit-box-pack: center;
+       -webkit-justify-content: center;
+       -ms-flex-pack: center;
+       justify-content: center;
+       -webkit-user-select: none;
+       -moz-user-select: none;
+       -ms-user-select: none;
+       user-select: none;
+       letter-spacing: 0.4px;
+       cursor: default;
+     }
+
+     [dir="ltr"] .modal_header-item-title_tLOU5 {
+       margin: 0 -20rem 0 0;
+     }
+
+     [dir="rtl"] .modal_header-item-title_tLOU5 {
+       margin: 0 0 0 -20rem;
+     }
+
+     .modal_full-screen_FA4cr [dir="ltr"] .modal_header-item-title_tLOU5 {
+       margin: 0 0 0 -20rem;
+     }
+
+     .modal_full-screen_FA4cr [dir="rtl"] .modal_header-item-title_tLOU5 {
+       margin: 0 -20rem 0 0;
+     }
+
+     .modal_header-item-close_2XDeL {
+       -webkit-flex-basis: 20rem;
+       -ms-flex-preferred-size: 20rem;
+       flex-basis: 20rem;
+       -webkit-box-pack: end;
+       -webkit-justify-content: flex-end;
+       -ms-flex-pack: end;
+       justify-content: flex-end;
+       z-index: 1;
+     }
+
+     .modal_full-screen_FA4cr .modal_header-item-close_2XDeL {
+       -webkit-box-ordinal-group: 0;
+       -webkit-order: -1;
+       -ms-flex-order: -1;
+       order: -1;
+       -webkit-box-pack: start;
+       -webkit-justify-content: flex-start;
+       -ms-flex-pack: start;
+       justify-content: flex-start;
+     }
+
+     .modal_back-button_2ej6v {
+       font-weight: normal;
+       padding-right: 0;
+       padding-left: 0;
+     }
+
+     [dir="rtl"] .modal_back-button_2ej6v img {
+       -webkit-transform: scaleX(-1);
+       -ms-transform: scaleX(-1);
+       transform: scaleX(-1);
+     }
+
+     .modal_help-button_dLhZu {
+       font-weight: normal;
+       font-size: 0.75rem;
+     }
+
+     .custom-procedures_modal-content_Zjko5 {
+       width: 700px;
+       margin: 50px auto;
+     }
+
+     .custom-procedures_body_SQBv6 {
+       background: hsla(0, 100%, 100%, 1);
+       padding: 1.5rem 2.25rem;
+     }
+
+     .custom-procedures_body_SQBv6 input[type="checkbox"],
+     .custom-procedures_body_SQBv6 input[type="radio"] {
+       margin: 3px;
+     }
+
+     .custom-procedures_workspace_1d2uW {
+       min-height: 200px;
+       position: relative;
+     }
+
+     .custom-procedures_workspace_1d2uW .injectionDiv {
+       position: absolute;
+       top: 0;
+       right: 0;
+       bottom: 0;
+       left: 0;
+     }
+
+     .custom-procedures_workspace_1d2uW .blocklySvg {
+       background-color: hsla(215, 100%, 95%, 1);
+     }
+
+     .custom-procedures_options-row_1PqLE {
+       display: -webkit-box;
+       display: -webkit-flex;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-box-pack: justify;
+       -webkit-justify-content: space-between;
+       -ms-flex-pack: justify;
+       justify-content: space-between;
+     }
+
+     .custom-procedures_option-card_BtHt3 {
+       background: white;
+       border: 2px solid hsla(0, 0%, 0%, 0.15);
+       border-radius: 0.5rem;
+       padding: calc(0.5rem * 2);
+       text-align: center;
+       -webkit-box-flex: 1;
+       -webkit-flex-grow: 1;
+       -ms-flex-positive: 1;
+       flex-grow: 1;
+       cursor: pointer;
+       -webkit-transition: all 0.2s;
+       -o-transition: all 0.2s;
+       transition: all 0.2s;
+       -webkit-flex-basis: 100px;
+       -ms-flex-preferred-size: 100px;
+       flex-basis: 100px;
+     }
+
+     .custom-procedures_option-card_BtHt3:hover {
+       border: 2px solid hsla(215, 100%, 65%, 1);
+       -webkit-box-shadow: 0px 0px 0px 4px hsla(215, 100%, 65%, 0.35);
+       box-shadow: 0px 0px 0px 4px hsla(215, 100%, 65%, 0.35);
+     }
+
+     .custom-procedures_option-card_BtHt3+.custom-procedures_option-card_BtHt3 {
+       margin-left: 1rem;
+     }
+
+     .custom-procedures_option-icon_2y7hh {
+       max-height: 48px;
+       margin-bottom: 0.5rem;
+     }
+
+     .custom-procedures_option-title_3v6va {
+       font-weight: bold;
+     }
+
+     .custom-procedures_checkbox-row_rPP8j {
+       margin-top: 1rem;
+     }
+
+     .custom-procedures_button-row_2jBu3 {
+       margin-top: 1rem;
+       font-weight: bolder;
+       text-align: right;
+     }
+
+     .custom-procedures_button-row_2jBu3 button {
+       border: 1px solid hsla(0, 0%, 0%, 0.15);
+       border-radius: 0.25rem;
+       padding: 0.75rem 1rem;
+       background: white;
+       font-weight: bold;
+       font-size: 0.85rem;
+     }
+
+     .custom-procedures_button-row_2jBu3 button.custom-procedures_ok-button_2X0Vj {
+       background: hsla(215, 100%, 65%, 1);
+       border: hsla(215, 100%, 65%, 1);
+       color: white;
+     }
+
+     [dir="ltr"] .custom-procedures_button-row_2jBu3 button+button {
+       margin-left: 0.5rem;
+     }
+
+     [dir="rtl"] .custom-procedures_button-row_2jBu3 button+button {
+       margin-right: 0.5rem;
+     }
+
+   </style>
+ </head>
+
+ <body>
+   <table width="100%">
+     <tr>
+       <td>
+         <div id="secondaryDiv" style="height: 480px; width: 600px;"></div>
+       </td>
+       <td>
+         <!-- <div id="custom-procedures-workspace" style="height: 480px; width: 600px;"></div> -->
+       </td>
+     </tr>
+     <tr>
+       <td></td>
+       <td id="editor-actions">
+         <button id="text_number" onclick="addTextNumber()">Add text/number input</button>
+         <button id="boolean" onclick="addBoolean()">Add boolean input</button>
+         <button id="label" onclick="addLabel()">Add label</button>
+         <button id="cancelButton" onclick="cancel()">cancel</button>
+         <button id="okButton" onclick="applyMutation()">ok</button>
+         <button id="rndButton" onclick="removeRandomInput()">remove random input</button>
+         <button id="addRndButton" onclick="addRandomInput()">add random input</button>
+       </td>
+     </tr>
+   </table>
+   <div id="custom-procedures" class="modal_modal-overlay_1Lcbx" style="visibility: hidden;">
+     <div class="custom-procedures_modal-content_Zjko5 modal_modal-content_1h3ll" tabindex="-1" role="dialog"
+       aria-label="Créer un bloc">
+       <div class="box_box_2jjDp" dir="ltr" style="flex-direction: column; flex-grow: 1;">
+         <div class="modal_header_1h7ps">
+           <div class="modal_header-item_2zQTd modal_header-item-title_tLOU5">Créer un bloc</div>
+           <div class="modal_header-item_2zQTd modal_header-item-close_2XDeL">
+             <div aria-label="Close" class="close-button_close-button_lOp2G close-button_large_2oadS" role="button" onclick="cancel()" tabindex="0">
+               <img class="close-button_close-icon_HBCuO" src="/assets/images/close-button.svg">
+              </div>
+           </div>
+         </div>
+         <div id="custom-procedures-workspace" class="custom-procedures_workspace_1d2uW box_box_2jjDp"></div>
+         <div class="custom-procedures_body_SQBv6 box_box_2jjDp">
+           <div class="custom-procedures_options-row_1PqLE">
+             <div class="custom-procedures_option-card_BtHt3" role="button" onclick="addTextNumber()" tabindex="0">
+               <img class="custom-procedures_option-icon_2y7hh"
+                 src="/assets/images/input.svg">
+               <div class="custom-procedures_option-title_3v6va"><span>Ajouter une entrée</span></div>
+               <div><span>nombre ou texte</span></div>
+             </div>
+             <div class="custom-procedures_option-card_BtHt3" role="button" onclick="addBoolean()" tabindex="0">
+               <img class="custom-procedures_option-icon_2y7hh"
+                 src="/assets/images/boolean-input.svg">
+               <div class="custom-procedures_option-title_3v6va"><span>Ajouter une entrée</span></div>
+               <div><span>booléenne</span></div>
+             </div>
+             <div class="custom-procedures_option-card_BtHt3" role="button" onclick="addLabel()" tabindex="0">
+               <img class="custom-procedures_option-icon_2y7hh"
+                 src="/assets/images/label.svg">
+               <div class="custom-procedures_option-title_3v6va"><span>Ajouter une étiquette</span></div>
+             </div>
+           </div>
+           <div class="custom-procedures_checkbox-row_rPP8j">
+             <label><input type="checkbox"><span>Exécuter sans rafraîchissement d'écran</span></label>
+           </div>
+           <div class="custom-procedures_button-row_2jBu3 box_box_2jjDp">
+             <button onclick="cancel()"><span>Annuler</span></button>
+             <button class="custom-procedures_ok-button_2X0Vj" onclick="applyMutation()"><span>OK</span></button>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
   <script>
-    var editorActions = document.getElementById('editor-actions');
-    editorActions.style.visibility = 'hidden';
+    var definitionWorkspace = Blockly.inject('secondaryDiv', {
+      media: '../media/',
+      zoom: {
+        startScale: 0.75
+      }
+    });
 
+    var div = document.getElementById('custom-procedures');
     var callback = null;
     var mutationRoot = null;
 
-    var declarationWorkspace = Blockly.inject('primaryDiv',
-        {media: '../media/'});
+    var declarationWorkspace = Blockly.inject('custom-procedures-workspace', {
+      media: '../media/',
+    });
 
     declarationWorkspace.addChangeListener(function() {
       if (mutationRoot) {
         mutationRoot.onChangeFn();
       }
     });
-
-    var definitionWorkspace = Blockly.inject('secondaryDiv', {
-      media: '../media/',
-      toolbox: document.getElementById('toolbox'),
-      zoom: {
-        startScale: 0.75
-      }
-    });
-
-    Blockly.Xml.clearWorkspaceAndLoadFromXml(document.getElementById('main_ws_blocks_simplest'),
-        definitionWorkspace);
-
     Blockly.Procedures.externalProcedureDefCallback = function (mutation, cb) {
-      editorActions.style.visibility = 'visible';
+      div.style.visibility = 'visible';
       callback = cb;
       declarationWorkspace.clear();
       mutationRoot = declarationWorkspace.newBlock('procedures_declaration');
@@ -178,7 +445,7 @@
       mutationRoot = null;
       declarationWorkspace.clear();
       definitionWorkspace.refreshToolboxSelection_()
-      editorActions.style.visibility = 'hidden';
+      div.style.visibility = 'hidden';
     }
 
     function addLabel() {
@@ -193,34 +460,12 @@
       mutationRoot.addStringNumberExternal();
     }
 
-    function removeRandomInput() {
-      var rnd = Math.floor(Math.random() * mutationRoot.inputList.length);
-      mutationRoot.removeInput(mutationRoot.inputList[rnd].name);
-      mutationRoot.onChangeFn();
-      mutationRoot.updateDisplay_();
-    }
-
-    function addRandomInput() {
-      var rnd = Math.floor(Math.random() * 3);
-      switch (rnd) {
-        case 0:
-          addTextNumber();
-          break;
-        case 1:
-          addLabel();
-          break;
-        case 2:
-          addBoolean();
-          break;
-      }
-    }
-
     function cancel() {
       callback = null;
       mutationRoot = null;
       declarationWorkspace.clear();
       definitionWorkspace.refreshToolboxSelection_()
-      editorActions.style.visibility = 'hidden';
+      div.style.visibility = 'hidden';
     }
 </script>
 

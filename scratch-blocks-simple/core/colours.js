@@ -23,49 +23,717 @@
 goog.provide('Blockly.Colours');
 
 Blockly.Colours = {
-  // SVG colours: these must be specificed in #RRGGBB style
-  // To add an opacity, this must be specified as a separate property (for SVG fill-opacity)
-  'role': {
+  baseclient: {
     "primary": "#4C97FF",
     "secondary": "#4280D7",
     "tertiary": "#3373CC"
   },
-  'channel': {
+  client: {
     "primary": "#4C97FF",
     "secondary": "#4280D7",
     "tertiary": "#3373CC"
   },
-  'message': {
+  clientvoicemanager: {
     "primary": "#4C97FF",
     "secondary": "#4280D7",
     "tertiary": "#3373CC"
   },
-  'guild': {
+  webhookclient: {
     "primary": "#4C97FF",
     "secondary": "#4280D7",
     "tertiary": "#3373CC"
   },
-  'client': {
+  websocketmanager: {
     "primary": "#4C97FF",
     "secondary": "#4280D7",
     "tertiary": "#3373CC"
   },
-  'user': {
+  websocketshard: {
     "primary": "#4C97FF",
     "secondary": "#4280D7",
     "tertiary": "#3373CC"
   },
-  'member': {
+  applicationcommandmanager: {
     "primary": "#4C97FF",
     "secondary": "#4280D7",
     "tertiary": "#3373CC"
   },
-  'reaction': {
+  applicationcommandpermissionsmanager: {
     "primary": "#4C97FF",
     "secondary": "#4280D7",
     "tertiary": "#3373CC"
   },
-  'collection': {
+  baseguildemojimanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  basemanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  cachedmanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  channelmanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  datamanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  guildapplicationcommandmanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  guildbanmanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  guildchannelmanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  guildemojimanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  guildemojirolemanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  guildinvitemanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  guildmanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  guildmembermanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  guildmemberrolemanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  guildscheduledeventmanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  guildstickermanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  messagemanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  permissionoverwritemanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  presencemanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  reactionmanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  reactionusermanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  rolemanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  stageinstancemanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  threadmanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  threadmembermanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  usermanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  voicestatemanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  discordapierror: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  httperror: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  ratelimiterror: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  shard: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  shardclientutil: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  shardingmanager: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  anonymousguild: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  applicationcommand: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  autocompleteinteraction: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  base: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  basecommandinteraction: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  baseguild: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  baseguildemoji: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  baseguildtextchannel: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  baseguildvoicechannel: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  basemessagecomponent: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  buttoninteraction: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  categorychannel: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  channel: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  clientapplication: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  clientpresence: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  clientuser: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  commandinteraction: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  commandinteractionoptionresolver: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  contextmenuinteraction: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  dmchannel: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  emoji: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  guild: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  guildauditlogs: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  guildauditlogsentry: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  guildban: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  guildchannel: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  guildemoji: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  guildmember: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  guildpreview: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  guildpreviewemoji: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  guildscheduledevent: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  guildtemplate: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  integration: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  integrationapplication: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  interaction: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  interactioncollector: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  interactionwebhook: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  application: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  collector: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  invite: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  inviteguild: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  invitestageinstance: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  message: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  messageactionrow: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  messageattachment: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  messagebutton: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  messagecollector: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  messagecomponentinteraction: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  messagecontextmenuinteraction: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  messageembed: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  messagementions: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  messagepayload: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  messagereaction: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  messageselectmenu: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  newschannel: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  oauth2guild: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  partialgroupdmchannel: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  permissionoverwrites: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  presence: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  activity: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  richpresenceassets: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  reactioncollector: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  reactionemoji: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  role: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  selectmenuinteraction: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  stagechannel: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  stageinstance: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  sticker: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  stickerpack: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  storechannel: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  team: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  teammember: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  textchannel: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  threadchannel: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  threadmember: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  typing: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  user: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  usercontextmenuinteraction: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  voicechannel: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  voiceregion: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  voicestate: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  webhook: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  welcomechannel: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  welcomescreen: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  widget: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  widgetmember: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  activityflags: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  applicationflags: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  bitfield: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  dataresolver: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  formatters: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  intents: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  limitedcollection: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  messageflags: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  options: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  permissions: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  snowflakeutil: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  sweepers: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  systemchannelflags: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  threadmemberflags: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  userflags: {
+    "primary": "#4C97FF",
+    "secondary": "#4280D7",
+    "tertiary": "#3373CC"
+  },
+  util: {
     "primary": "#4C97FF",
     "secondary": "#4280D7",
     "tertiary": "#3373CC"
@@ -100,8 +768,6 @@ Blockly.Colours = {
     "secondary": "#FF8000",
     "tertiary": "#DB6E00"
   },
-  // This is not a new category, but rather for differentiation
-  // between lists and scalar variables.
   "data_lists": {
     "primary": "#FF661A",
     "secondary": "#FF5500",
