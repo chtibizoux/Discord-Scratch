@@ -21,6 +21,7 @@ Blockly.Blocks['widget_id'] = {
     });
   }
 };
+
 Blockly.Blocks['widget_name'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['widget_name'] = {
     });
   }
 };
+
 Blockly.Blocks['widget_instantInvite'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['widget_instantInvite'] = {
     });
   }
 };
+
 Blockly.Blocks['widget_channels'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['widget_channels'] = {
     });
   }
 };
+
 Blockly.Blocks['widget_members'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['widget_members'] = {
     });
   }
 };
+
 Blockly.Blocks['widget_presenceCount'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['widget_presenceCount'] = {
     });
   }
 };
+
 Blockly.Blocks['widget_fetch'] = {
   init: function() {
     this.jsonInit({

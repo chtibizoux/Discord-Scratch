@@ -21,6 +21,7 @@ Blockly.Blocks['presence_userId'] = {
     });
   }
 };
+
 Blockly.Blocks['presence_guild'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['presence_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['presence_user'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['presence_user'] = {
     });
   }
 };
+
 Blockly.Blocks['presence_member'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['presence_member'] = {
     });
   }
 };
+
 Blockly.Blocks['presence_status'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['presence_status'] = {
     });
   }
 };
+
 Blockly.Blocks['presence_activities'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['presence_activities'] = {
     });
   }
 };
+
 Blockly.Blocks['presence_clientStatus'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['presence_clientStatus'] = {
     });
   }
 };
+
 Blockly.Blocks['presence_client'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['presence_client'] = {
     });
   }
 };
+
 Blockly.Blocks['presence_equals'] = {
   init: function() {
     this.jsonInit({

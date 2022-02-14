@@ -21,6 +21,7 @@ Blockly.Blocks['ratelimiterror_name'] = {
     });
   }
 };
+
 Blockly.Blocks['ratelimiterror_timeout'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['ratelimiterror_timeout'] = {
     });
   }
 };
+
 Blockly.Blocks['ratelimiterror_method'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['ratelimiterror_method'] = {
     });
   }
 };
+
 Blockly.Blocks['ratelimiterror_path'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['ratelimiterror_path'] = {
     });
   }
 };
+
 Blockly.Blocks['ratelimiterror_route'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['ratelimiterror_route'] = {
     });
   }
 };
+
 Blockly.Blocks['ratelimiterror_global'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['ratelimiterror_global'] = {
     });
   }
 };
+
 Blockly.Blocks['ratelimiterror_limit'] = {
   init: function() {
     this.jsonInit({

@@ -21,6 +21,7 @@ Blockly.Blocks['guildapplicationcommandmanager_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['guildapplicationcommandmanager_permissions'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['guildapplicationcommandmanager_permissions'] = {
     });
   }
 };
+
 Blockly.Blocks['guildapplicationcommandmanager_cache'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['guildapplicationcommandmanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['guildapplicationcommandmanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['guildapplicationcommandmanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['guildapplicationcommandmanager_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -89,6 +93,7 @@ Blockly.Blocks['guildapplicationcommandmanager_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['guildapplicationcommandmanager_create'] = {
   init: function() {
     this.jsonInit({
@@ -112,6 +117,7 @@ Blockly.Blocks['guildapplicationcommandmanager_create'] = {
     });
   }
 };
+
 Blockly.Blocks['guildapplicationcommandmanager_set'] = {
   init: function() {
     this.jsonInit({
@@ -135,6 +141,7 @@ Blockly.Blocks['guildapplicationcommandmanager_set'] = {
     });
   }
 };
+
 Blockly.Blocks['guildapplicationcommandmanager_edit'] = {
   init: function() {
     this.jsonInit({
@@ -162,6 +169,7 @@ Blockly.Blocks['guildapplicationcommandmanager_edit'] = {
     });
   }
 };
+
 Blockly.Blocks['guildapplicationcommandmanager_delete'] = {
   init: function() {
     this.jsonInit({
@@ -185,6 +193,7 @@ Blockly.Blocks['guildapplicationcommandmanager_delete'] = {
     });
   }
 };
+
 Blockly.Blocks['guildapplicationcommandmanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -204,6 +213,7 @@ Blockly.Blocks['guildapplicationcommandmanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['guildapplicationcommandmanager_resolveId'] = {
   init: function() {
     this.jsonInit({

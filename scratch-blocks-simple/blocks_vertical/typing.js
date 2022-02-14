@@ -21,6 +21,7 @@ Blockly.Blocks['typing_channel'] = {
     });
   }
 };
+
 Blockly.Blocks['typing_user'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['typing_user'] = {
     });
   }
 };
+
 Blockly.Blocks['typing_startedTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['typing_startedTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['typing_startedAt'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['typing_startedAt'] = {
     });
   }
 };
+
 Blockly.Blocks['typing_guild'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['typing_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['typing_member'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['typing_member'] = {
     });
   }
 };
+
 Blockly.Blocks['typing_client'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['typing_client'] = {
     });
   }
 };
+
 Blockly.Blocks['typing_inGuild'] = {
   init: function() {
     this.jsonInit({

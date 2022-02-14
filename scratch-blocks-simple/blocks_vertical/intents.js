@@ -21,6 +21,7 @@ Blockly.Blocks['intents_bitfield'] = {
     });
   }
 };
+
 Blockly.Blocks['intents_FLAGS'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['intents_FLAGS'] = {
     });
   }
 };
+
 Blockly.Blocks['intents_any'] = {
   init: function() {
     this.jsonInit({
@@ -55,6 +57,7 @@ Blockly.Blocks['intents_any'] = {
     });
   }
 };
+
 Blockly.Blocks['intents_equals'] = {
   init: function() {
     this.jsonInit({
@@ -74,6 +77,7 @@ Blockly.Blocks['intents_equals'] = {
     });
   }
 };
+
 Blockly.Blocks['intents_has'] = {
   init: function() {
     this.jsonInit({
@@ -93,6 +97,7 @@ Blockly.Blocks['intents_has'] = {
     });
   }
 };
+
 Blockly.Blocks['intents_missing'] = {
   init: function() {
     this.jsonInit({
@@ -116,6 +121,7 @@ Blockly.Blocks['intents_missing'] = {
     });
   }
 };
+
 Blockly.Blocks['intents_freeze'] = {
   init: function() {
     this.jsonInit({
@@ -131,6 +137,7 @@ Blockly.Blocks['intents_freeze'] = {
     });
   }
 };
+
 Blockly.Blocks['intents_add'] = {
   init: function() {
     this.jsonInit({
@@ -150,6 +157,7 @@ Blockly.Blocks['intents_add'] = {
     });
   }
 };
+
 Blockly.Blocks['intents_remove'] = {
   init: function() {
     this.jsonInit({
@@ -169,6 +177,7 @@ Blockly.Blocks['intents_remove'] = {
     });
   }
 };
+
 Blockly.Blocks['intents_serialize'] = {
   init: function() {
     this.jsonInit({
@@ -188,6 +197,7 @@ Blockly.Blocks['intents_serialize'] = {
     });
   }
 };
+
 Blockly.Blocks['intents_toArray'] = {
   init: function() {
     this.jsonInit({

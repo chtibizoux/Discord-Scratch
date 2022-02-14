@@ -20,7 +20,7 @@ Blockly.JavaScript['discord_token'] = function(block) {
     return ["const token = '" + block.getFieldValue('TEXT') + "';\\n", Blockly.JavaScript.ORDER_NONE];
 };`;
   for (const value of json.classes) {
-    if (categorys.includes(value.name.toLocaleLowerCase())) {
+    // if (categorys.includes(value.name.toLocaleLowerCase())) {
       toolbox += `
   '<category name="${value.name}" id="${value.name.toLowerCase()}" colour="#4C97FF" secondaryColour="#3373CC">' +`;
       var data = `'use strict';
@@ -104,7 +104,8 @@ Blockly.Blocks['${value.name.toLowerCase()}_on'] = {
       this.render(true);
     }
   }
-};`;
+};
+`;
       }
       if (value.props) {
         for (const prop of value.props) {
@@ -125,7 +126,8 @@ Blockly.Blocks['${value.name.toLowerCase()}_${prop.name}'] = {
       "extensions": ["colours_${value.name.toLowerCase()}", "output_string"]
     });
   }
-};`;
+};
+`;
             toolbox += `
     '<block type="${value.name.toLowerCase()}_${prop.name}" id="${value.name.toLowerCase()}_${prop.name}"></block>' +`;
             javascript += `
@@ -212,7 +214,8 @@ Blockly.Blocks['${value.name.toLowerCase()}_${method.name}'] = {
       "extensions": ["colours_${value.name.toLowerCase()}", "shape_statement"]
     });
   }
-};`;
+};
+`;
             if (method.async) {
               javascript += `
 Blockly.JavaScript['${value.name.toLowerCase()}_${method.name}'] = function(block) {
@@ -238,7 +241,7 @@ Blockly.JavaScript['${value.name.toLowerCase()}_${method.name}'] = function(bloc
       fs.writeFileSync("./scratch-blocks-simple/blocks_vertical/" + value.name.toLowerCase() + ".js", data);
       toolbox += `
   '</category>' +`;
-    }
+    // }
   }
   toolbox += `
   '</xml>';`;

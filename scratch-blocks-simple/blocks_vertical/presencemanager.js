@@ -21,6 +21,7 @@ Blockly.Blocks['presencemanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['presencemanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['presencemanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['presencemanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -55,6 +57,7 @@ Blockly.Blocks['presencemanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['presencemanager_resolveId'] = {
   init: function() {
     this.jsonInit({

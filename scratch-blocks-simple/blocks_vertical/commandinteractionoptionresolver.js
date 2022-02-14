@@ -21,6 +21,7 @@ Blockly.Blocks['commandinteractionoptionresolver_client'] = {
     });
   }
 };
+
 Blockly.Blocks['commandinteractionoptionresolver_data'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['commandinteractionoptionresolver_data'] = {
     });
   }
 };
+
 Blockly.Blocks['commandinteractionoptionresolver_resolved'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['commandinteractionoptionresolver_resolved'] = {
     });
   }
 };
+
 Blockly.Blocks['commandinteractionoptionresolver_get'] = {
   init: function() {
     this.jsonInit({
@@ -74,6 +77,7 @@ Blockly.Blocks['commandinteractionoptionresolver_get'] = {
     });
   }
 };
+
 Blockly.Blocks['commandinteractionoptionresolver_getSubcommand'] = {
   init: function() {
     this.jsonInit({
@@ -93,6 +97,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getSubcommand'] = {
     });
   }
 };
+
 Blockly.Blocks['commandinteractionoptionresolver_getSubcommandGroup'] = {
   init: function() {
     this.jsonInit({
@@ -112,6 +117,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getSubcommandGroup'] = {
     });
   }
 };
+
 Blockly.Blocks['commandinteractionoptionresolver_getBoolean'] = {
   init: function() {
     this.jsonInit({
@@ -135,6 +141,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getBoolean'] = {
     });
   }
 };
+
 Blockly.Blocks['commandinteractionoptionresolver_getChannel'] = {
   init: function() {
     this.jsonInit({
@@ -158,6 +165,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getChannel'] = {
     });
   }
 };
+
 Blockly.Blocks['commandinteractionoptionresolver_getString'] = {
   init: function() {
     this.jsonInit({
@@ -181,6 +189,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getString'] = {
     });
   }
 };
+
 Blockly.Blocks['commandinteractionoptionresolver_getInteger'] = {
   init: function() {
     this.jsonInit({
@@ -204,6 +213,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getInteger'] = {
     });
   }
 };
+
 Blockly.Blocks['commandinteractionoptionresolver_getNumber'] = {
   init: function() {
     this.jsonInit({
@@ -227,6 +237,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getNumber'] = {
     });
   }
 };
+
 Blockly.Blocks['commandinteractionoptionresolver_getUser'] = {
   init: function() {
     this.jsonInit({
@@ -250,6 +261,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getUser'] = {
     });
   }
 };
+
 Blockly.Blocks['commandinteractionoptionresolver_getMember'] = {
   init: function() {
     this.jsonInit({
@@ -273,6 +285,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getMember'] = {
     });
   }
 };
+
 Blockly.Blocks['commandinteractionoptionresolver_getRole'] = {
   init: function() {
     this.jsonInit({
@@ -296,6 +309,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getRole'] = {
     });
   }
 };
+
 Blockly.Blocks['commandinteractionoptionresolver_getMentionable'] = {
   init: function() {
     this.jsonInit({
@@ -319,6 +333,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getMentionable'] = {
     });
   }
 };
+
 Blockly.Blocks['commandinteractionoptionresolver_getMessage'] = {
   init: function() {
     this.jsonInit({
@@ -342,6 +357,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getMessage'] = {
     });
   }
 };
+
 Blockly.Blocks['commandinteractionoptionresolver_getFocused'] = {
   init: function() {
     this.jsonInit({

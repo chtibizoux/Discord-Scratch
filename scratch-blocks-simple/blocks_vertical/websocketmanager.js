@@ -21,6 +21,7 @@ Blockly.Blocks['websocketmanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['websocketmanager_gateway'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['websocketmanager_gateway'] = {
     });
   }
 };
+
 Blockly.Blocks['websocketmanager_shards'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['websocketmanager_shards'] = {
     });
   }
 };
+
 Blockly.Blocks['websocketmanager_status'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['websocketmanager_status'] = {
     });
   }
 };
+
 Blockly.Blocks['websocketmanager_ping'] = {
   init: function() {
     this.jsonInit({

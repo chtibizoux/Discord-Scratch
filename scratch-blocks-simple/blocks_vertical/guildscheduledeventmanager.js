@@ -21,6 +21,7 @@ Blockly.Blocks['guildscheduledeventmanager_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledeventmanager_cache'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['guildscheduledeventmanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledeventmanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['guildscheduledeventmanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledeventmanager_create'] = {
   init: function() {
     this.jsonInit({
@@ -70,6 +73,7 @@ Blockly.Blocks['guildscheduledeventmanager_create'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledeventmanager_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -89,6 +93,7 @@ Blockly.Blocks['guildscheduledeventmanager_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledeventmanager_edit'] = {
   init: function() {
     this.jsonInit({
@@ -112,6 +117,7 @@ Blockly.Blocks['guildscheduledeventmanager_edit'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledeventmanager_delete'] = {
   init: function() {
     this.jsonInit({
@@ -131,6 +137,7 @@ Blockly.Blocks['guildscheduledeventmanager_delete'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledeventmanager_fetchSubscribers'] = {
   init: function() {
     this.jsonInit({
@@ -154,6 +161,7 @@ Blockly.Blocks['guildscheduledeventmanager_fetchSubscribers'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledeventmanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -173,6 +181,7 @@ Blockly.Blocks['guildscheduledeventmanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledeventmanager_resolveId'] = {
   init: function() {
     this.jsonInit({

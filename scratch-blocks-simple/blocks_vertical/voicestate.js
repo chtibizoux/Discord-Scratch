@@ -21,6 +21,7 @@ Blockly.Blocks['voicestate_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestate_id'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['voicestate_id'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestate_serverDeaf'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['voicestate_serverDeaf'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestate_serverMute'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['voicestate_serverMute'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestate_selfDeaf'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['voicestate_selfDeaf'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestate_selfMute'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['voicestate_selfMute'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestate_selfVideo'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['voicestate_selfVideo'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestate_sessionId'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['voicestate_sessionId'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestate_streaming'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['voicestate_streaming'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestate_channelId'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['voicestate_channelId'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestate_suppress'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['voicestate_suppress'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestate_requestToSpeakTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['voicestate_requestToSpeakTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestate_member'] = {
   init: function() {
     this.jsonInit({
@@ -201,6 +213,7 @@ Blockly.Blocks['voicestate_member'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestate_channel'] = {
   init: function() {
     this.jsonInit({
@@ -216,6 +229,7 @@ Blockly.Blocks['voicestate_channel'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestate_deaf'] = {
   init: function() {
     this.jsonInit({
@@ -231,6 +245,7 @@ Blockly.Blocks['voicestate_deaf'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestate_mute'] = {
   init: function() {
     this.jsonInit({
@@ -246,6 +261,7 @@ Blockly.Blocks['voicestate_mute'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestate_setMute'] = {
   init: function() {
     this.jsonInit({
@@ -269,6 +285,7 @@ Blockly.Blocks['voicestate_setMute'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestate_setDeaf'] = {
   init: function() {
     this.jsonInit({
@@ -292,6 +309,7 @@ Blockly.Blocks['voicestate_setDeaf'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestate_disconnect'] = {
   init: function() {
     this.jsonInit({
@@ -311,6 +329,7 @@ Blockly.Blocks['voicestate_disconnect'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestate_setChannel'] = {
   init: function() {
     this.jsonInit({
@@ -334,6 +353,7 @@ Blockly.Blocks['voicestate_setChannel'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestate_setRequestToSpeak'] = {
   init: function() {
     this.jsonInit({
@@ -353,6 +373,7 @@ Blockly.Blocks['voicestate_setRequestToSpeak'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestate_setSuppressed'] = {
   init: function() {
     this.jsonInit({

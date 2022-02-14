@@ -21,6 +21,7 @@ Blockly.Blocks['stageinstance_id'] = {
     });
   }
 };
+
 Blockly.Blocks['stageinstance_guildId'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['stageinstance_guildId'] = {
     });
   }
 };
+
 Blockly.Blocks['stageinstance_channelId'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['stageinstance_channelId'] = {
     });
   }
 };
+
 Blockly.Blocks['stageinstance_topic'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['stageinstance_topic'] = {
     });
   }
 };
+
 Blockly.Blocks['stageinstance_privacyLevel'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['stageinstance_privacyLevel'] = {
     });
   }
 };
+
 Blockly.Blocks['stageinstance_discoverableDisabled'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['stageinstance_discoverableDisabled'] = {
     });
   }
 };
+
 Blockly.Blocks['stageinstance_channel'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['stageinstance_channel'] = {
     });
   }
 };
+
 Blockly.Blocks['stageinstance_guild'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['stageinstance_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['stageinstance_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['stageinstance_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['stageinstance_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['stageinstance_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['stageinstance_client'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['stageinstance_client'] = {
     });
   }
 };
+
 Blockly.Blocks['stageinstance_edit'] = {
   init: function() {
     this.jsonInit({
@@ -190,6 +201,7 @@ Blockly.Blocks['stageinstance_edit'] = {
     });
   }
 };
+
 Blockly.Blocks['stageinstance_delete'] = {
   init: function() {
     this.jsonInit({
@@ -205,6 +217,7 @@ Blockly.Blocks['stageinstance_delete'] = {
     });
   }
 };
+
 Blockly.Blocks['stageinstance_setTopic'] = {
   init: function() {
     this.jsonInit({

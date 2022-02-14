@@ -21,6 +21,7 @@ Blockly.Blocks['guildstickermanager_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['guildstickermanager_cache'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['guildstickermanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['guildstickermanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['guildstickermanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['guildstickermanager_create'] = {
   init: function() {
     this.jsonInit({
@@ -82,6 +85,7 @@ Blockly.Blocks['guildstickermanager_create'] = {
     });
   }
 };
+
 Blockly.Blocks['guildstickermanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -101,6 +105,7 @@ Blockly.Blocks['guildstickermanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['guildstickermanager_resolveId'] = {
   init: function() {
     this.jsonInit({
@@ -120,6 +125,7 @@ Blockly.Blocks['guildstickermanager_resolveId'] = {
     });
   }
 };
+
 Blockly.Blocks['guildstickermanager_edit'] = {
   init: function() {
     this.jsonInit({
@@ -147,6 +153,7 @@ Blockly.Blocks['guildstickermanager_edit'] = {
     });
   }
 };
+
 Blockly.Blocks['guildstickermanager_delete'] = {
   init: function() {
     this.jsonInit({
@@ -170,6 +177,7 @@ Blockly.Blocks['guildstickermanager_delete'] = {
     });
   }
 };
+
 Blockly.Blocks['guildstickermanager_fetch'] = {
   init: function() {
     this.jsonInit({

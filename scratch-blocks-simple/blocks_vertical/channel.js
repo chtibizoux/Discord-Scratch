@@ -21,6 +21,7 @@ Blockly.Blocks['channel_type'] = {
     });
   }
 };
+
 Blockly.Blocks['channel_id'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['channel_id'] = {
     });
   }
 };
+
 Blockly.Blocks['channel_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['channel_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['channel_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['channel_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['channel_partial'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['channel_partial'] = {
     });
   }
 };
+
 Blockly.Blocks['channel_client'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['channel_client'] = {
     });
   }
 };
+
 Blockly.Blocks['channel_toString'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['channel_toString'] = {
     });
   }
 };
+
 Blockly.Blocks['channel_delete'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['channel_delete'] = {
     });
   }
 };
+
 Blockly.Blocks['channel_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -145,6 +153,7 @@ Blockly.Blocks['channel_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['channel_isText'] = {
   init: function() {
     this.jsonInit({
@@ -160,6 +169,7 @@ Blockly.Blocks['channel_isText'] = {
     });
   }
 };
+
 Blockly.Blocks['channel_isVoice'] = {
   init: function() {
     this.jsonInit({
@@ -175,6 +185,7 @@ Blockly.Blocks['channel_isVoice'] = {
     });
   }
 };
+
 Blockly.Blocks['channel_isThread'] = {
   init: function() {
     this.jsonInit({

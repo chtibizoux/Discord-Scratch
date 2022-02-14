@@ -21,6 +21,7 @@ Blockly.Blocks['messagementions_everyone'] = {
     });
   }
 };
+
 Blockly.Blocks['messagementions_users'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['messagementions_users'] = {
     });
   }
 };
+
 Blockly.Blocks['messagementions_roles'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['messagementions_roles'] = {
     });
   }
 };
+
 Blockly.Blocks['messagementions_crosspostedChannels'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['messagementions_crosspostedChannels'] = {
     });
   }
 };
+
 Blockly.Blocks['messagementions_repliedUser'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['messagementions_repliedUser'] = {
     });
   }
 };
+
 Blockly.Blocks['messagementions_members'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['messagementions_members'] = {
     });
   }
 };
+
 Blockly.Blocks['messagementions_channels'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['messagementions_channels'] = {
     });
   }
 };
+
 Blockly.Blocks['messagementions_EVERYONE_PATTERN'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['messagementions_EVERYONE_PATTERN'] = {
     });
   }
 };
+
 Blockly.Blocks['messagementions_USERS_PATTERN'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['messagementions_USERS_PATTERN'] = {
     });
   }
 };
+
 Blockly.Blocks['messagementions_ROLES_PATTERN'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['messagementions_ROLES_PATTERN'] = {
     });
   }
 };
+
 Blockly.Blocks['messagementions_CHANNELS_PATTERN'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['messagementions_CHANNELS_PATTERN'] = {
     });
   }
 };
+
 Blockly.Blocks['messagementions_has'] = {
   init: function() {
     this.jsonInit({

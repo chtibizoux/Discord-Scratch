@@ -21,6 +21,7 @@ Blockly.Blocks['guildemojirolemanager_emoji'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemojirolemanager_guild'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['guildemojirolemanager_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemojirolemanager_cache'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['guildemojirolemanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemojirolemanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['guildemojirolemanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemojirolemanager_add'] = {
   init: function() {
     this.jsonInit({
@@ -85,6 +89,7 @@ Blockly.Blocks['guildemojirolemanager_add'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemojirolemanager_remove'] = {
   init: function() {
     this.jsonInit({
@@ -104,6 +109,7 @@ Blockly.Blocks['guildemojirolemanager_remove'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemojirolemanager_set'] = {
   init: function() {
     this.jsonInit({
@@ -123,6 +129,7 @@ Blockly.Blocks['guildemojirolemanager_set'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemojirolemanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -142,6 +149,7 @@ Blockly.Blocks['guildemojirolemanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemojirolemanager_resolveId'] = {
   init: function() {
     this.jsonInit({

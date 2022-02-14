@@ -21,6 +21,7 @@ Blockly.Blocks['sticker_id'] = {
     });
   }
 };
+
 Blockly.Blocks['sticker_description'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['sticker_description'] = {
     });
   }
 };
+
 Blockly.Blocks['sticker_type'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['sticker_type'] = {
     });
   }
 };
+
 Blockly.Blocks['sticker_format'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['sticker_format'] = {
     });
   }
 };
+
 Blockly.Blocks['sticker_name'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['sticker_name'] = {
     });
   }
 };
+
 Blockly.Blocks['sticker_packId'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['sticker_packId'] = {
     });
   }
 };
+
 Blockly.Blocks['sticker_tags'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['sticker_tags'] = {
     });
   }
 };
+
 Blockly.Blocks['sticker_available'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['sticker_available'] = {
     });
   }
 };
+
 Blockly.Blocks['sticker_guildId'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['sticker_guildId'] = {
     });
   }
 };
+
 Blockly.Blocks['sticker_user'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['sticker_user'] = {
     });
   }
 };
+
 Blockly.Blocks['sticker_sortValue'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['sticker_sortValue'] = {
     });
   }
 };
+
 Blockly.Blocks['sticker_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['sticker_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['sticker_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -201,6 +213,7 @@ Blockly.Blocks['sticker_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['sticker_partial'] = {
   init: function() {
     this.jsonInit({
@@ -216,6 +229,7 @@ Blockly.Blocks['sticker_partial'] = {
     });
   }
 };
+
 Blockly.Blocks['sticker_guild'] = {
   init: function() {
     this.jsonInit({
@@ -231,6 +245,7 @@ Blockly.Blocks['sticker_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['sticker_url'] = {
   init: function() {
     this.jsonInit({
@@ -246,6 +261,7 @@ Blockly.Blocks['sticker_url'] = {
     });
   }
 };
+
 Blockly.Blocks['sticker_client'] = {
   init: function() {
     this.jsonInit({
@@ -261,6 +277,7 @@ Blockly.Blocks['sticker_client'] = {
     });
   }
 };
+
 Blockly.Blocks['sticker_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -276,6 +293,7 @@ Blockly.Blocks['sticker_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['sticker_fetchPack'] = {
   init: function() {
     this.jsonInit({
@@ -291,6 +309,7 @@ Blockly.Blocks['sticker_fetchPack'] = {
     });
   }
 };
+
 Blockly.Blocks['sticker_fetchUser'] = {
   init: function() {
     this.jsonInit({
@@ -306,6 +325,7 @@ Blockly.Blocks['sticker_fetchUser'] = {
     });
   }
 };
+
 Blockly.Blocks['sticker_edit'] = {
   init: function() {
     this.jsonInit({
@@ -329,6 +349,7 @@ Blockly.Blocks['sticker_edit'] = {
     });
   }
 };
+
 Blockly.Blocks['sticker_delete'] = {
   init: function() {
     this.jsonInit({
@@ -348,6 +369,7 @@ Blockly.Blocks['sticker_delete'] = {
     });
   }
 };
+
 Blockly.Blocks['sticker_equals'] = {
   init: function() {
     this.jsonInit({

@@ -21,6 +21,7 @@ Blockly.Blocks['usermanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['usermanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['usermanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['usermanager_createDM'] = {
   init: function() {
     this.jsonInit({
@@ -59,6 +61,7 @@ Blockly.Blocks['usermanager_createDM'] = {
     });
   }
 };
+
 Blockly.Blocks['usermanager_deleteDM'] = {
   init: function() {
     this.jsonInit({
@@ -78,6 +81,7 @@ Blockly.Blocks['usermanager_deleteDM'] = {
     });
   }
 };
+
 Blockly.Blocks['usermanager_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -101,6 +105,7 @@ Blockly.Blocks['usermanager_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['usermanager_fetchFlags'] = {
   init: function() {
     this.jsonInit({
@@ -124,6 +129,7 @@ Blockly.Blocks['usermanager_fetchFlags'] = {
     });
   }
 };
+
 Blockly.Blocks['usermanager_send'] = {
   init: function() {
     this.jsonInit({
@@ -147,6 +153,7 @@ Blockly.Blocks['usermanager_send'] = {
     });
   }
 };
+
 Blockly.Blocks['usermanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -166,6 +173,7 @@ Blockly.Blocks['usermanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['usermanager_resolveId'] = {
   init: function() {
     this.jsonInit({

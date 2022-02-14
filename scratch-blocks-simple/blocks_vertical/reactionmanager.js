@@ -21,6 +21,7 @@ Blockly.Blocks['reactionmanager_message'] = {
     });
   }
 };
+
 Blockly.Blocks['reactionmanager_cache'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['reactionmanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['reactionmanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['reactionmanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['reactionmanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -70,6 +73,7 @@ Blockly.Blocks['reactionmanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['reactionmanager_resolveId'] = {
   init: function() {
     this.jsonInit({
@@ -89,6 +93,7 @@ Blockly.Blocks['reactionmanager_resolveId'] = {
     });
   }
 };
+
 Blockly.Blocks['reactionmanager_removeAll'] = {
   init: function() {
     this.jsonInit({

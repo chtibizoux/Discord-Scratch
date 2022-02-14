@@ -21,6 +21,7 @@ Blockly.Blocks['guildmembermanager_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmembermanager_cache'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['guildmembermanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmembermanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['guildmembermanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmembermanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -70,6 +73,7 @@ Blockly.Blocks['guildmembermanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmembermanager_resolveId'] = {
   init: function() {
     this.jsonInit({
@@ -89,6 +93,7 @@ Blockly.Blocks['guildmembermanager_resolveId'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmembermanager_add'] = {
   init: function() {
     this.jsonInit({
@@ -112,6 +117,7 @@ Blockly.Blocks['guildmembermanager_add'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmembermanager_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -131,6 +137,7 @@ Blockly.Blocks['guildmembermanager_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmembermanager_search'] = {
   init: function() {
     this.jsonInit({
@@ -150,6 +157,7 @@ Blockly.Blocks['guildmembermanager_search'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmembermanager_list'] = {
   init: function() {
     this.jsonInit({
@@ -169,6 +177,7 @@ Blockly.Blocks['guildmembermanager_list'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmembermanager_edit'] = {
   init: function() {
     this.jsonInit({
@@ -196,6 +205,7 @@ Blockly.Blocks['guildmembermanager_edit'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmembermanager_prune'] = {
   init: function() {
     this.jsonInit({
@@ -215,6 +225,7 @@ Blockly.Blocks['guildmembermanager_prune'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmembermanager_kick'] = {
   init: function() {
     this.jsonInit({
@@ -238,6 +249,7 @@ Blockly.Blocks['guildmembermanager_kick'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmembermanager_ban'] = {
   init: function() {
     this.jsonInit({
@@ -261,6 +273,7 @@ Blockly.Blocks['guildmembermanager_ban'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmembermanager_unban'] = {
   init: function() {
     this.jsonInit({

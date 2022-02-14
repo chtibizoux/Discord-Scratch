@@ -21,6 +21,7 @@ Blockly.Blocks['channelmanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['channelmanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['channelmanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['channelmanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -55,6 +57,7 @@ Blockly.Blocks['channelmanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['channelmanager_resolveId'] = {
   init: function() {
     this.jsonInit({
@@ -74,6 +77,7 @@ Blockly.Blocks['channelmanager_resolveId'] = {
     });
   }
 };
+
 Blockly.Blocks['channelmanager_fetch'] = {
   init: function() {
     this.jsonInit({

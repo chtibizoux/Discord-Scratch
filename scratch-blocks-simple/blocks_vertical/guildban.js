@@ -21,6 +21,7 @@ Blockly.Blocks['guildban_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['guildban_user'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['guildban_user'] = {
     });
   }
 };
+
 Blockly.Blocks['guildban_reason'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['guildban_reason'] = {
     });
   }
 };
+
 Blockly.Blocks['guildban_partial'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['guildban_partial'] = {
     });
   }
 };
+
 Blockly.Blocks['guildban_client'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['guildban_client'] = {
     });
   }
 };
+
 Blockly.Blocks['guildban_fetch'] = {
   init: function() {
     this.jsonInit({

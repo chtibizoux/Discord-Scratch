@@ -60,6 +60,7 @@ Blockly.Blocks['reactioncollector_on'] = {
     }
   }
 };
+
 Blockly.Blocks['reactioncollector_message'] = {
   init: function() {
     this.jsonInit({
@@ -75,6 +76,7 @@ Blockly.Blocks['reactioncollector_message'] = {
     });
   }
 };
+
 Blockly.Blocks['reactioncollector_users'] = {
   init: function() {
     this.jsonInit({
@@ -90,6 +92,7 @@ Blockly.Blocks['reactioncollector_users'] = {
     });
   }
 };
+
 Blockly.Blocks['reactioncollector_total'] = {
   init: function() {
     this.jsonInit({
@@ -105,6 +108,7 @@ Blockly.Blocks['reactioncollector_total'] = {
     });
   }
 };
+
 Blockly.Blocks['reactioncollector_endReason'] = {
   init: function() {
     this.jsonInit({
@@ -120,6 +124,7 @@ Blockly.Blocks['reactioncollector_endReason'] = {
     });
   }
 };
+
 Blockly.Blocks['reactioncollector_client'] = {
   init: function() {
     this.jsonInit({
@@ -135,6 +140,7 @@ Blockly.Blocks['reactioncollector_client'] = {
     });
   }
 };
+
 Blockly.Blocks['reactioncollector_filter'] = {
   init: function() {
     this.jsonInit({
@@ -150,6 +156,7 @@ Blockly.Blocks['reactioncollector_filter'] = {
     });
   }
 };
+
 Blockly.Blocks['reactioncollector_options'] = {
   init: function() {
     this.jsonInit({
@@ -165,6 +172,7 @@ Blockly.Blocks['reactioncollector_options'] = {
     });
   }
 };
+
 Blockly.Blocks['reactioncollector_collected'] = {
   init: function() {
     this.jsonInit({
@@ -180,6 +188,7 @@ Blockly.Blocks['reactioncollector_collected'] = {
     });
   }
 };
+
 Blockly.Blocks['reactioncollector_ended'] = {
   init: function() {
     this.jsonInit({
@@ -195,6 +204,7 @@ Blockly.Blocks['reactioncollector_ended'] = {
     });
   }
 };
+
 Blockly.Blocks['reactioncollector_next'] = {
   init: function() {
     this.jsonInit({
@@ -210,6 +220,7 @@ Blockly.Blocks['reactioncollector_next'] = {
     });
   }
 };
+
 Blockly.Blocks['reactioncollector_dispose'] = {
   init: function() {
     this.jsonInit({
@@ -233,6 +244,7 @@ Blockly.Blocks['reactioncollector_dispose'] = {
     });
   }
 };
+
 Blockly.Blocks['reactioncollector_empty'] = {
   init: function() {
     this.jsonInit({
@@ -248,6 +260,7 @@ Blockly.Blocks['reactioncollector_empty'] = {
     });
   }
 };
+
 Blockly.Blocks['reactioncollector_handleCollect'] = {
   init: function() {
     this.jsonInit({
@@ -267,6 +280,7 @@ Blockly.Blocks['reactioncollector_handleCollect'] = {
     });
   }
 };
+
 Blockly.Blocks['reactioncollector_handleDispose'] = {
   init: function() {
     this.jsonInit({
@@ -286,6 +300,7 @@ Blockly.Blocks['reactioncollector_handleDispose'] = {
     });
   }
 };
+
 Blockly.Blocks['reactioncollector_stop'] = {
   init: function() {
     this.jsonInit({
@@ -305,6 +320,7 @@ Blockly.Blocks['reactioncollector_stop'] = {
     });
   }
 };
+
 Blockly.Blocks['reactioncollector_resetTimer'] = {
   init: function() {
     this.jsonInit({
@@ -324,6 +340,7 @@ Blockly.Blocks['reactioncollector_resetTimer'] = {
     });
   }
 };
+
 Blockly.Blocks['reactioncollector_checkEnd'] = {
   init: function() {
     this.jsonInit({
@@ -339,6 +356,7 @@ Blockly.Blocks['reactioncollector_checkEnd'] = {
     });
   }
 };
+
 Blockly.Blocks['reactioncollector_key'] = {
   init: function() {
     this.jsonInit({

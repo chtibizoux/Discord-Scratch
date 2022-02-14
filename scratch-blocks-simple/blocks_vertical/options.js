@@ -21,6 +21,7 @@ Blockly.Blocks['options_defaultMakeCacheSettings'] = {
     });
   }
 };
+
 Blockly.Blocks['options_defaultSweeperSettings'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['options_defaultSweeperSettings'] = {
     });
   }
 };
+
 Blockly.Blocks['options_createDefault'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['options_createDefault'] = {
     });
   }
 };
+
 Blockly.Blocks['options_cacheWithLimits'] = {
   init: function() {
     this.jsonInit({
@@ -70,6 +73,7 @@ Blockly.Blocks['options_cacheWithLimits'] = {
     });
   }
 };
+
 Blockly.Blocks['options_cacheEverything'] = {
   init: function() {
     this.jsonInit({

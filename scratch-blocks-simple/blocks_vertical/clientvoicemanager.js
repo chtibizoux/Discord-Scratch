@@ -21,6 +21,7 @@ Blockly.Blocks['clientvoicemanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['clientvoicemanager_adapters'] = {
   init: function() {
     this.jsonInit({

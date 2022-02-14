@@ -21,6 +21,7 @@ Blockly.Blocks['messageflags_bitfield'] = {
     });
   }
 };
+
 Blockly.Blocks['messageflags_FLAGS'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['messageflags_FLAGS'] = {
     });
   }
 };
+
 Blockly.Blocks['messageflags_any'] = {
   init: function() {
     this.jsonInit({
@@ -55,6 +57,7 @@ Blockly.Blocks['messageflags_any'] = {
     });
   }
 };
+
 Blockly.Blocks['messageflags_equals'] = {
   init: function() {
     this.jsonInit({
@@ -74,6 +77,7 @@ Blockly.Blocks['messageflags_equals'] = {
     });
   }
 };
+
 Blockly.Blocks['messageflags_has'] = {
   init: function() {
     this.jsonInit({
@@ -93,6 +97,7 @@ Blockly.Blocks['messageflags_has'] = {
     });
   }
 };
+
 Blockly.Blocks['messageflags_missing'] = {
   init: function() {
     this.jsonInit({
@@ -116,6 +121,7 @@ Blockly.Blocks['messageflags_missing'] = {
     });
   }
 };
+
 Blockly.Blocks['messageflags_freeze'] = {
   init: function() {
     this.jsonInit({
@@ -131,6 +137,7 @@ Blockly.Blocks['messageflags_freeze'] = {
     });
   }
 };
+
 Blockly.Blocks['messageflags_add'] = {
   init: function() {
     this.jsonInit({
@@ -150,6 +157,7 @@ Blockly.Blocks['messageflags_add'] = {
     });
   }
 };
+
 Blockly.Blocks['messageflags_remove'] = {
   init: function() {
     this.jsonInit({
@@ -169,6 +177,7 @@ Blockly.Blocks['messageflags_remove'] = {
     });
   }
 };
+
 Blockly.Blocks['messageflags_serialize'] = {
   init: function() {
     this.jsonInit({
@@ -188,6 +197,7 @@ Blockly.Blocks['messageflags_serialize'] = {
     });
   }
 };
+
 Blockly.Blocks['messageflags_toArray'] = {
   init: function() {
     this.jsonInit({

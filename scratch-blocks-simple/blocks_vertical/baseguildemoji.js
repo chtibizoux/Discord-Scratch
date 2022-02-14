@@ -21,6 +21,7 @@ Blockly.Blocks['baseguildemoji_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildemoji_requiresColons'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['baseguildemoji_requiresColons'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildemoji_managed'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['baseguildemoji_managed'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildemoji_available'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['baseguildemoji_available'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildemoji_animated'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['baseguildemoji_animated'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildemoji_name'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['baseguildemoji_name'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildemoji_id'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['baseguildemoji_id'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildemoji_identifier'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['baseguildemoji_identifier'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildemoji_url'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['baseguildemoji_url'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildemoji_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['baseguildemoji_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildemoji_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['baseguildemoji_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildemoji_client'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['baseguildemoji_client'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildemoji_toString'] = {
   init: function() {
     this.jsonInit({

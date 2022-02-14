@@ -21,6 +21,7 @@ Blockly.Blocks['dmchannel_messages'] = {
     });
   }
 };
+
 Blockly.Blocks['dmchannel_recipient'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['dmchannel_recipient'] = {
     });
   }
 };
+
 Blockly.Blocks['dmchannel_lastMessageId'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['dmchannel_lastMessageId'] = {
     });
   }
 };
+
 Blockly.Blocks['dmchannel_lastPinTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['dmchannel_lastPinTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['dmchannel_partial'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['dmchannel_partial'] = {
     });
   }
 };
+
 Blockly.Blocks['dmchannel_lastMessage'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['dmchannel_lastMessage'] = {
     });
   }
 };
+
 Blockly.Blocks['dmchannel_lastPinAt'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['dmchannel_lastPinAt'] = {
     });
   }
 };
+
 Blockly.Blocks['dmchannel_type'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['dmchannel_type'] = {
     });
   }
 };
+
 Blockly.Blocks['dmchannel_id'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['dmchannel_id'] = {
     });
   }
 };
+
 Blockly.Blocks['dmchannel_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['dmchannel_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['dmchannel_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['dmchannel_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['dmchannel_client'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['dmchannel_client'] = {
     });
   }
 };
+
 Blockly.Blocks['dmchannel_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -205,6 +217,7 @@ Blockly.Blocks['dmchannel_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['dmchannel_toString'] = {
   init: function() {
     this.jsonInit({
@@ -220,6 +233,7 @@ Blockly.Blocks['dmchannel_toString'] = {
     });
   }
 };
+
 Blockly.Blocks['dmchannel_send'] = {
   init: function() {
     this.jsonInit({
@@ -239,6 +253,7 @@ Blockly.Blocks['dmchannel_send'] = {
     });
   }
 };
+
 Blockly.Blocks['dmchannel_sendTyping'] = {
   init: function() {
     this.jsonInit({
@@ -254,6 +269,7 @@ Blockly.Blocks['dmchannel_sendTyping'] = {
     });
   }
 };
+
 Blockly.Blocks['dmchannel_createMessageCollector'] = {
   init: function() {
     this.jsonInit({
@@ -273,6 +289,7 @@ Blockly.Blocks['dmchannel_createMessageCollector'] = {
     });
   }
 };
+
 Blockly.Blocks['dmchannel_awaitMessages'] = {
   init: function() {
     this.jsonInit({
@@ -292,6 +309,7 @@ Blockly.Blocks['dmchannel_awaitMessages'] = {
     });
   }
 };
+
 Blockly.Blocks['dmchannel_createMessageComponentCollector'] = {
   init: function() {
     this.jsonInit({
@@ -311,6 +329,7 @@ Blockly.Blocks['dmchannel_createMessageComponentCollector'] = {
     });
   }
 };
+
 Blockly.Blocks['dmchannel_awaitMessageComponent'] = {
   init: function() {
     this.jsonInit({
@@ -330,6 +349,7 @@ Blockly.Blocks['dmchannel_awaitMessageComponent'] = {
     });
   }
 };
+
 Blockly.Blocks['dmchannel_delete'] = {
   init: function() {
     this.jsonInit({
@@ -345,6 +365,7 @@ Blockly.Blocks['dmchannel_delete'] = {
     });
   }
 };
+
 Blockly.Blocks['dmchannel_isText'] = {
   init: function() {
     this.jsonInit({
@@ -360,6 +381,7 @@ Blockly.Blocks['dmchannel_isText'] = {
     });
   }
 };
+
 Blockly.Blocks['dmchannel_isVoice'] = {
   init: function() {
     this.jsonInit({
@@ -375,6 +397,7 @@ Blockly.Blocks['dmchannel_isVoice'] = {
     });
   }
 };
+
 Blockly.Blocks['dmchannel_isThread'] = {
   init: function() {
     this.jsonInit({

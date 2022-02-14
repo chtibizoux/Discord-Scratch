@@ -21,6 +21,7 @@ Blockly.Blocks['messageattachment_name'] = {
     });
   }
 };
+
 Blockly.Blocks['messageattachment_id'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['messageattachment_id'] = {
     });
   }
 };
+
 Blockly.Blocks['messageattachment_size'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['messageattachment_size'] = {
     });
   }
 };
+
 Blockly.Blocks['messageattachment_url'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['messageattachment_url'] = {
     });
   }
 };
+
 Blockly.Blocks['messageattachment_proxyURL'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['messageattachment_proxyURL'] = {
     });
   }
 };
+
 Blockly.Blocks['messageattachment_height'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['messageattachment_height'] = {
     });
   }
 };
+
 Blockly.Blocks['messageattachment_width'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['messageattachment_width'] = {
     });
   }
 };
+
 Blockly.Blocks['messageattachment_contentType'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['messageattachment_contentType'] = {
     });
   }
 };
+
 Blockly.Blocks['messageattachment_description'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['messageattachment_description'] = {
     });
   }
 };
+
 Blockly.Blocks['messageattachment_ephemeral'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['messageattachment_ephemeral'] = {
     });
   }
 };
+
 Blockly.Blocks['messageattachment_spoiler'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['messageattachment_spoiler'] = {
     });
   }
 };
+
 Blockly.Blocks['messageattachment_setDescription'] = {
   init: function() {
     this.jsonInit({
@@ -190,6 +201,7 @@ Blockly.Blocks['messageattachment_setDescription'] = {
     });
   }
 };
+
 Blockly.Blocks['messageattachment_setFile'] = {
   init: function() {
     this.jsonInit({
@@ -213,6 +225,7 @@ Blockly.Blocks['messageattachment_setFile'] = {
     });
   }
 };
+
 Blockly.Blocks['messageattachment_setName'] = {
   init: function() {
     this.jsonInit({
@@ -232,6 +245,7 @@ Blockly.Blocks['messageattachment_setName'] = {
     });
   }
 };
+
 Blockly.Blocks['messageattachment_setSpoiler'] = {
   init: function() {
     this.jsonInit({

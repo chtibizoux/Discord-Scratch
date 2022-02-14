@@ -21,6 +21,7 @@ Blockly.Blocks['baseguild_id'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguild_name'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['baseguild_name'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguild_icon'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['baseguild_icon'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguild_features'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['baseguild_features'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguild_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['baseguild_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguild_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['baseguild_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguild_nameAcronym'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['baseguild_nameAcronym'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguild_partnered'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['baseguild_partnered'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguild_verified'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['baseguild_verified'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguild_client'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['baseguild_client'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguild_iconURL'] = {
   init: function() {
     this.jsonInit({
@@ -175,6 +185,7 @@ Blockly.Blocks['baseguild_iconURL'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguild_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -190,6 +201,7 @@ Blockly.Blocks['baseguild_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguild_toString'] = {
   init: function() {
     this.jsonInit({

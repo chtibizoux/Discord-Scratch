@@ -21,6 +21,7 @@ Blockly.Blocks['permissions_bitfield'] = {
     });
   }
 };
+
 Blockly.Blocks['permissions_FLAGS'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['permissions_FLAGS'] = {
     });
   }
 };
+
 Blockly.Blocks['permissions_ALL'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['permissions_ALL'] = {
     });
   }
 };
+
 Blockly.Blocks['permissions_DEFAULT'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['permissions_DEFAULT'] = {
     });
   }
 };
+
 Blockly.Blocks['permissions_STAGE_MODERATOR'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['permissions_STAGE_MODERATOR'] = {
     });
   }
 };
+
 Blockly.Blocks['permissions_missing'] = {
   init: function() {
     this.jsonInit({
@@ -104,6 +109,7 @@ Blockly.Blocks['permissions_missing'] = {
     });
   }
 };
+
 Blockly.Blocks['permissions_any'] = {
   init: function() {
     this.jsonInit({
@@ -127,6 +133,7 @@ Blockly.Blocks['permissions_any'] = {
     });
   }
 };
+
 Blockly.Blocks['permissions_has'] = {
   init: function() {
     this.jsonInit({
@@ -150,6 +157,7 @@ Blockly.Blocks['permissions_has'] = {
     });
   }
 };
+
 Blockly.Blocks['permissions_toArray'] = {
   init: function() {
     this.jsonInit({
@@ -165,6 +173,7 @@ Blockly.Blocks['permissions_toArray'] = {
     });
   }
 };
+
 Blockly.Blocks['permissions_equals'] = {
   init: function() {
     this.jsonInit({
@@ -184,6 +193,7 @@ Blockly.Blocks['permissions_equals'] = {
     });
   }
 };
+
 Blockly.Blocks['permissions_freeze'] = {
   init: function() {
     this.jsonInit({
@@ -199,6 +209,7 @@ Blockly.Blocks['permissions_freeze'] = {
     });
   }
 };
+
 Blockly.Blocks['permissions_add'] = {
   init: function() {
     this.jsonInit({
@@ -218,6 +229,7 @@ Blockly.Blocks['permissions_add'] = {
     });
   }
 };
+
 Blockly.Blocks['permissions_remove'] = {
   init: function() {
     this.jsonInit({
@@ -237,6 +249,7 @@ Blockly.Blocks['permissions_remove'] = {
     });
   }
 };
+
 Blockly.Blocks['permissions_serialize'] = {
   init: function() {
     this.jsonInit({

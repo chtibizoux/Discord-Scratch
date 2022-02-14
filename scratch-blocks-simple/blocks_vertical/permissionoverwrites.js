@@ -21,6 +21,7 @@ Blockly.Blocks['permissionoverwrites_channel'] = {
     });
   }
 };
+
 Blockly.Blocks['permissionoverwrites_id'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['permissionoverwrites_id'] = {
     });
   }
 };
+
 Blockly.Blocks['permissionoverwrites_type'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['permissionoverwrites_type'] = {
     });
   }
 };
+
 Blockly.Blocks['permissionoverwrites_deny'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['permissionoverwrites_deny'] = {
     });
   }
 };
+
 Blockly.Blocks['permissionoverwrites_allow'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['permissionoverwrites_allow'] = {
     });
   }
 };
+
 Blockly.Blocks['permissionoverwrites_client'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['permissionoverwrites_client'] = {
     });
   }
 };
+
 Blockly.Blocks['permissionoverwrites_edit'] = {
   init: function() {
     this.jsonInit({
@@ -119,6 +125,7 @@ Blockly.Blocks['permissionoverwrites_edit'] = {
     });
   }
 };
+
 Blockly.Blocks['permissionoverwrites_delete'] = {
   init: function() {
     this.jsonInit({
@@ -138,6 +145,7 @@ Blockly.Blocks['permissionoverwrites_delete'] = {
     });
   }
 };
+
 Blockly.Blocks['permissionoverwrites_resolveOverwriteOptions'] = {
   init: function() {
     this.jsonInit({
@@ -161,6 +169,7 @@ Blockly.Blocks['permissionoverwrites_resolveOverwriteOptions'] = {
     });
   }
 };
+
 Blockly.Blocks['permissionoverwrites_resolve'] = {
   init: function() {
     this.jsonInit({

@@ -21,6 +21,7 @@ Blockly.Blocks['guildmanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['guildmanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -55,6 +57,7 @@ Blockly.Blocks['guildmanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmanager_resolveId'] = {
   init: function() {
     this.jsonInit({
@@ -74,6 +77,7 @@ Blockly.Blocks['guildmanager_resolveId'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmanager_create'] = {
   init: function() {
     this.jsonInit({
@@ -97,6 +101,7 @@ Blockly.Blocks['guildmanager_create'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmanager_fetch'] = {
   init: function() {
     this.jsonInit({

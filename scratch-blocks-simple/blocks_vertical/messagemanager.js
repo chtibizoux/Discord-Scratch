@@ -21,6 +21,7 @@ Blockly.Blocks['messagemanager_channel'] = {
     });
   }
 };
+
 Blockly.Blocks['messagemanager_cache'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['messagemanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['messagemanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['messagemanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['messagemanager_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -74,6 +77,7 @@ Blockly.Blocks['messagemanager_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['messagemanager_fetchPinned'] = {
   init: function() {
     this.jsonInit({
@@ -93,6 +97,7 @@ Blockly.Blocks['messagemanager_fetchPinned'] = {
     });
   }
 };
+
 Blockly.Blocks['messagemanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -112,6 +117,7 @@ Blockly.Blocks['messagemanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['messagemanager_resolveId'] = {
   init: function() {
     this.jsonInit({
@@ -131,6 +137,7 @@ Blockly.Blocks['messagemanager_resolveId'] = {
     });
   }
 };
+
 Blockly.Blocks['messagemanager_edit'] = {
   init: function() {
     this.jsonInit({
@@ -154,6 +161,7 @@ Blockly.Blocks['messagemanager_edit'] = {
     });
   }
 };
+
 Blockly.Blocks['messagemanager_crosspost'] = {
   init: function() {
     this.jsonInit({
@@ -173,6 +181,7 @@ Blockly.Blocks['messagemanager_crosspost'] = {
     });
   }
 };
+
 Blockly.Blocks['messagemanager_pin'] = {
   init: function() {
     this.jsonInit({
@@ -192,6 +201,7 @@ Blockly.Blocks['messagemanager_pin'] = {
     });
   }
 };
+
 Blockly.Blocks['messagemanager_unpin'] = {
   init: function() {
     this.jsonInit({
@@ -211,6 +221,7 @@ Blockly.Blocks['messagemanager_unpin'] = {
     });
   }
 };
+
 Blockly.Blocks['messagemanager_react'] = {
   init: function() {
     this.jsonInit({
@@ -234,6 +245,7 @@ Blockly.Blocks['messagemanager_react'] = {
     });
   }
 };
+
 Blockly.Blocks['messagemanager_delete'] = {
   init: function() {
     this.jsonInit({

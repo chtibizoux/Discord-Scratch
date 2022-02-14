@@ -21,6 +21,7 @@ Blockly.Blocks['threadmember_thread'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmember_joinedTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['threadmember_joinedTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmember_id'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['threadmember_id'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmember_flags'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['threadmember_flags'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmember_guildMember'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['threadmember_guildMember'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmember_joinedAt'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['threadmember_joinedAt'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmember_user'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['threadmember_user'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmember_manageable'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['threadmember_manageable'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmember_client'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['threadmember_client'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmember_remove'] = {
   init: function() {
     this.jsonInit({

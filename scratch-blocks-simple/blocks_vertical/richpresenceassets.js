@@ -21,6 +21,7 @@ Blockly.Blocks['richpresenceassets_largeText'] = {
     });
   }
 };
+
 Blockly.Blocks['richpresenceassets_smallText'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['richpresenceassets_smallText'] = {
     });
   }
 };
+
 Blockly.Blocks['richpresenceassets_largeImage'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['richpresenceassets_largeImage'] = {
     });
   }
 };
+
 Blockly.Blocks['richpresenceassets_smallImage'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['richpresenceassets_smallImage'] = {
     });
   }
 };
+
 Blockly.Blocks['richpresenceassets_smallImageURL'] = {
   init: function() {
     this.jsonInit({
@@ -85,6 +89,7 @@ Blockly.Blocks['richpresenceassets_smallImageURL'] = {
     });
   }
 };
+
 Blockly.Blocks['richpresenceassets_largeImageURL'] = {
   init: function() {
     this.jsonInit({

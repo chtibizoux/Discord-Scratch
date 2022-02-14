@@ -21,6 +21,7 @@ Blockly.Blocks['role_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['role_icon'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['role_icon'] = {
     });
   }
 };
+
 Blockly.Blocks['role_unicodeEmoji'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['role_unicodeEmoji'] = {
     });
   }
 };
+
 Blockly.Blocks['role_id'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['role_id'] = {
     });
   }
 };
+
 Blockly.Blocks['role_name'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['role_name'] = {
     });
   }
 };
+
 Blockly.Blocks['role_color'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['role_color'] = {
     });
   }
 };
+
 Blockly.Blocks['role_hoist'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['role_hoist'] = {
     });
   }
 };
+
 Blockly.Blocks['role_rawPosition'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['role_rawPosition'] = {
     });
   }
 };
+
 Blockly.Blocks['role_permissions'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['role_permissions'] = {
     });
   }
 };
+
 Blockly.Blocks['role_managed'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['role_managed'] = {
     });
   }
 };
+
 Blockly.Blocks['role_mentionable'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['role_mentionable'] = {
     });
   }
 };
+
 Blockly.Blocks['role_tags'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['role_tags'] = {
     });
   }
 };
+
 Blockly.Blocks['role_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -201,6 +213,7 @@ Blockly.Blocks['role_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['role_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -216,6 +229,7 @@ Blockly.Blocks['role_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['role_hexColor'] = {
   init: function() {
     this.jsonInit({
@@ -231,6 +245,7 @@ Blockly.Blocks['role_hexColor'] = {
     });
   }
 };
+
 Blockly.Blocks['role_members'] = {
   init: function() {
     this.jsonInit({
@@ -246,6 +261,7 @@ Blockly.Blocks['role_members'] = {
     });
   }
 };
+
 Blockly.Blocks['role_editable'] = {
   init: function() {
     this.jsonInit({
@@ -261,6 +277,7 @@ Blockly.Blocks['role_editable'] = {
     });
   }
 };
+
 Blockly.Blocks['role_position'] = {
   init: function() {
     this.jsonInit({
@@ -276,6 +293,7 @@ Blockly.Blocks['role_position'] = {
     });
   }
 };
+
 Blockly.Blocks['role_client'] = {
   init: function() {
     this.jsonInit({
@@ -291,6 +309,7 @@ Blockly.Blocks['role_client'] = {
     });
   }
 };
+
 Blockly.Blocks['role_comparePositionTo'] = {
   init: function() {
     this.jsonInit({
@@ -310,6 +329,7 @@ Blockly.Blocks['role_comparePositionTo'] = {
     });
   }
 };
+
 Blockly.Blocks['role_edit'] = {
   init: function() {
     this.jsonInit({
@@ -333,6 +353,7 @@ Blockly.Blocks['role_edit'] = {
     });
   }
 };
+
 Blockly.Blocks['role_permissionsIn'] = {
   init: function() {
     this.jsonInit({
@@ -356,6 +377,7 @@ Blockly.Blocks['role_permissionsIn'] = {
     });
   }
 };
+
 Blockly.Blocks['role_setName'] = {
   init: function() {
     this.jsonInit({
@@ -379,6 +401,7 @@ Blockly.Blocks['role_setName'] = {
     });
   }
 };
+
 Blockly.Blocks['role_setColor'] = {
   init: function() {
     this.jsonInit({
@@ -402,6 +425,7 @@ Blockly.Blocks['role_setColor'] = {
     });
   }
 };
+
 Blockly.Blocks['role_setHoist'] = {
   init: function() {
     this.jsonInit({
@@ -425,6 +449,7 @@ Blockly.Blocks['role_setHoist'] = {
     });
   }
 };
+
 Blockly.Blocks['role_setPermissions'] = {
   init: function() {
     this.jsonInit({
@@ -448,6 +473,7 @@ Blockly.Blocks['role_setPermissions'] = {
     });
   }
 };
+
 Blockly.Blocks['role_setMentionable'] = {
   init: function() {
     this.jsonInit({
@@ -471,6 +497,7 @@ Blockly.Blocks['role_setMentionable'] = {
     });
   }
 };
+
 Blockly.Blocks['role_setIcon'] = {
   init: function() {
     this.jsonInit({
@@ -494,6 +521,7 @@ Blockly.Blocks['role_setIcon'] = {
     });
   }
 };
+
 Blockly.Blocks['role_setUnicodeEmoji'] = {
   init: function() {
     this.jsonInit({
@@ -517,6 +545,7 @@ Blockly.Blocks['role_setUnicodeEmoji'] = {
     });
   }
 };
+
 Blockly.Blocks['role_setPosition'] = {
   init: function() {
     this.jsonInit({
@@ -540,6 +569,7 @@ Blockly.Blocks['role_setPosition'] = {
     });
   }
 };
+
 Blockly.Blocks['role_delete'] = {
   init: function() {
     this.jsonInit({
@@ -559,6 +589,7 @@ Blockly.Blocks['role_delete'] = {
     });
   }
 };
+
 Blockly.Blocks['role_iconURL'] = {
   init: function() {
     this.jsonInit({
@@ -578,6 +609,7 @@ Blockly.Blocks['role_iconURL'] = {
     });
   }
 };
+
 Blockly.Blocks['role_equals'] = {
   init: function() {
     this.jsonInit({
@@ -597,6 +629,7 @@ Blockly.Blocks['role_equals'] = {
     });
   }
 };
+
 Blockly.Blocks['role_toString'] = {
   init: function() {
     this.jsonInit({

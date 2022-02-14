@@ -21,6 +21,7 @@ Blockly.Blocks['messageembed_title'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_description'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['messageembed_description'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_url'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['messageembed_url'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_color'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['messageembed_color'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_timestamp'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['messageembed_timestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_fields'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['messageembed_fields'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_thumbnail'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['messageembed_thumbnail'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_image'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['messageembed_image'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_video'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['messageembed_video'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_author'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['messageembed_author'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_provider'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['messageembed_provider'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_footer'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['messageembed_footer'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -201,6 +213,7 @@ Blockly.Blocks['messageembed_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_hexColor'] = {
   init: function() {
     this.jsonInit({
@@ -216,6 +229,7 @@ Blockly.Blocks['messageembed_hexColor'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_length'] = {
   init: function() {
     this.jsonInit({
@@ -231,6 +245,7 @@ Blockly.Blocks['messageembed_length'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_equals'] = {
   init: function() {
     this.jsonInit({
@@ -250,6 +265,7 @@ Blockly.Blocks['messageembed_equals'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_addField'] = {
   init: function() {
     this.jsonInit({
@@ -277,6 +293,7 @@ Blockly.Blocks['messageembed_addField'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_addFields'] = {
   init: function() {
     this.jsonInit({
@@ -296,6 +313,7 @@ Blockly.Blocks['messageembed_addFields'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_spliceFields'] = {
   init: function() {
     this.jsonInit({
@@ -323,6 +341,7 @@ Blockly.Blocks['messageembed_spliceFields'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_setFields'] = {
   init: function() {
     this.jsonInit({
@@ -342,6 +361,7 @@ Blockly.Blocks['messageembed_setFields'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_setAuthor'] = {
   init: function() {
     this.jsonInit({
@@ -369,6 +389,7 @@ Blockly.Blocks['messageembed_setAuthor'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_setColor'] = {
   init: function() {
     this.jsonInit({
@@ -388,6 +409,7 @@ Blockly.Blocks['messageembed_setColor'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_setDescription'] = {
   init: function() {
     this.jsonInit({
@@ -407,6 +429,7 @@ Blockly.Blocks['messageembed_setDescription'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_setFooter'] = {
   init: function() {
     this.jsonInit({
@@ -430,6 +453,7 @@ Blockly.Blocks['messageembed_setFooter'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_setImage'] = {
   init: function() {
     this.jsonInit({
@@ -449,6 +473,7 @@ Blockly.Blocks['messageembed_setImage'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_setThumbnail'] = {
   init: function() {
     this.jsonInit({
@@ -468,6 +493,7 @@ Blockly.Blocks['messageembed_setThumbnail'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_setTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -487,6 +513,7 @@ Blockly.Blocks['messageembed_setTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_setTitle'] = {
   init: function() {
     this.jsonInit({
@@ -506,6 +533,7 @@ Blockly.Blocks['messageembed_setTitle'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_setURL'] = {
   init: function() {
     this.jsonInit({
@@ -525,6 +553,7 @@ Blockly.Blocks['messageembed_setURL'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_toJSON'] = {
   init: function() {
     this.jsonInit({
@@ -540,6 +569,7 @@ Blockly.Blocks['messageembed_toJSON'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_normalizeField'] = {
   init: function() {
     this.jsonInit({
@@ -567,6 +597,7 @@ Blockly.Blocks['messageembed_normalizeField'] = {
     });
   }
 };
+
 Blockly.Blocks['messageembed_normalizeFields'] = {
   init: function() {
     this.jsonInit({

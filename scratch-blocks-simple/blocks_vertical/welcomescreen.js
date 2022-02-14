@@ -21,6 +21,7 @@ Blockly.Blocks['welcomescreen_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['welcomescreen_description'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['welcomescreen_description'] = {
     });
   }
 };
+
 Blockly.Blocks['welcomescreen_welcomeChannels'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['welcomescreen_welcomeChannels'] = {
     });
   }
 };
+
 Blockly.Blocks['welcomescreen_enabled'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['welcomescreen_enabled'] = {
     });
   }
 };
+
 Blockly.Blocks['welcomescreen_client'] = {
   init: function() {
     this.jsonInit({

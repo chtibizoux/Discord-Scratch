@@ -21,6 +21,7 @@ Blockly.Blocks['stickerpack_id'] = {
     });
   }
 };
+
 Blockly.Blocks['stickerpack_stickers'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['stickerpack_stickers'] = {
     });
   }
 };
+
 Blockly.Blocks['stickerpack_name'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['stickerpack_name'] = {
     });
   }
 };
+
 Blockly.Blocks['stickerpack_skuId'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['stickerpack_skuId'] = {
     });
   }
 };
+
 Blockly.Blocks['stickerpack_coverStickerId'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['stickerpack_coverStickerId'] = {
     });
   }
 };
+
 Blockly.Blocks['stickerpack_description'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['stickerpack_description'] = {
     });
   }
 };
+
 Blockly.Blocks['stickerpack_bannerId'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['stickerpack_bannerId'] = {
     });
   }
 };
+
 Blockly.Blocks['stickerpack_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['stickerpack_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['stickerpack_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['stickerpack_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['stickerpack_coverSticker'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['stickerpack_coverSticker'] = {
     });
   }
 };
+
 Blockly.Blocks['stickerpack_client'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['stickerpack_client'] = {
     });
   }
 };
+
 Blockly.Blocks['stickerpack_bannerURL'] = {
   init: function() {
     this.jsonInit({

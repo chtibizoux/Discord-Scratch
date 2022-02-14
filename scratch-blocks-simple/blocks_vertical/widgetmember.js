@@ -21,6 +21,7 @@ Blockly.Blocks['widgetmember_id'] = {
     });
   }
 };
+
 Blockly.Blocks['widgetmember_username'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['widgetmember_username'] = {
     });
   }
 };
+
 Blockly.Blocks['widgetmember_discriminator'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['widgetmember_discriminator'] = {
     });
   }
 };
+
 Blockly.Blocks['widgetmember_avatar'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['widgetmember_avatar'] = {
     });
   }
 };
+
 Blockly.Blocks['widgetmember_status'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['widgetmember_status'] = {
     });
   }
 };
+
 Blockly.Blocks['widgetmember_deaf'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['widgetmember_deaf'] = {
     });
   }
 };
+
 Blockly.Blocks['widgetmember_mute'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['widgetmember_mute'] = {
     });
   }
 };
+
 Blockly.Blocks['widgetmember_selfDeaf'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['widgetmember_selfDeaf'] = {
     });
   }
 };
+
 Blockly.Blocks['widgetmember_selfMute'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['widgetmember_selfMute'] = {
     });
   }
 };
+
 Blockly.Blocks['widgetmember_suppress'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['widgetmember_suppress'] = {
     });
   }
 };
+
 Blockly.Blocks['widgetmember_channelId'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['widgetmember_channelId'] = {
     });
   }
 };
+
 Blockly.Blocks['widgetmember_avatarURL'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['widgetmember_avatarURL'] = {
     });
   }
 };
+
 Blockly.Blocks['widgetmember_activity'] = {
   init: function() {
     this.jsonInit({

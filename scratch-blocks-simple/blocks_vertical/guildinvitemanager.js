@@ -21,6 +21,7 @@ Blockly.Blocks['guildinvitemanager_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['guildinvitemanager_cache'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['guildinvitemanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['guildinvitemanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['guildinvitemanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['guildinvitemanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -70,6 +73,7 @@ Blockly.Blocks['guildinvitemanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['guildinvitemanager_resolveId'] = {
   init: function() {
     this.jsonInit({
@@ -89,6 +93,7 @@ Blockly.Blocks['guildinvitemanager_resolveId'] = {
     });
   }
 };
+
 Blockly.Blocks['guildinvitemanager_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -108,6 +113,7 @@ Blockly.Blocks['guildinvitemanager_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['guildinvitemanager_create'] = {
   init: function() {
     this.jsonInit({
@@ -131,6 +137,7 @@ Blockly.Blocks['guildinvitemanager_create'] = {
     });
   }
 };
+
 Blockly.Blocks['guildinvitemanager_delete'] = {
   init: function() {
     this.jsonInit({

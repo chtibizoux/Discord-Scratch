@@ -21,6 +21,7 @@ Blockly.Blocks['categorychannel_children'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_guild'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['categorychannel_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_guildId'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['categorychannel_guildId'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_permissionOverwrites'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['categorychannel_permissionOverwrites'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_name'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['categorychannel_name'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_rawPosition'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['categorychannel_rawPosition'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_parentId'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['categorychannel_parentId'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_parent'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['categorychannel_parent'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_permissionsLocked'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['categorychannel_permissionsLocked'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_position'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['categorychannel_position'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_members'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['categorychannel_members'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_deletable'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['categorychannel_deletable'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_manageable'] = {
   init: function() {
     this.jsonInit({
@@ -201,6 +213,7 @@ Blockly.Blocks['categorychannel_manageable'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_viewable'] = {
   init: function() {
     this.jsonInit({
@@ -216,6 +229,7 @@ Blockly.Blocks['categorychannel_viewable'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_type'] = {
   init: function() {
     this.jsonInit({
@@ -231,6 +245,7 @@ Blockly.Blocks['categorychannel_type'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_id'] = {
   init: function() {
     this.jsonInit({
@@ -246,6 +261,7 @@ Blockly.Blocks['categorychannel_id'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -261,6 +277,7 @@ Blockly.Blocks['categorychannel_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -276,6 +293,7 @@ Blockly.Blocks['categorychannel_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_partial'] = {
   init: function() {
     this.jsonInit({
@@ -291,6 +309,7 @@ Blockly.Blocks['categorychannel_partial'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_client'] = {
   init: function() {
     this.jsonInit({
@@ -306,6 +325,7 @@ Blockly.Blocks['categorychannel_client'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_setParent'] = {
   init: function() {
     this.jsonInit({
@@ -329,6 +349,7 @@ Blockly.Blocks['categorychannel_setParent'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_createChannel'] = {
   init: function() {
     this.jsonInit({
@@ -352,6 +373,7 @@ Blockly.Blocks['categorychannel_createChannel'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_permissionsFor'] = {
   init: function() {
     this.jsonInit({
@@ -375,6 +397,7 @@ Blockly.Blocks['categorychannel_permissionsFor'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_lockPermissions'] = {
   init: function() {
     this.jsonInit({
@@ -390,6 +413,7 @@ Blockly.Blocks['categorychannel_lockPermissions'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_edit'] = {
   init: function() {
     this.jsonInit({
@@ -413,6 +437,7 @@ Blockly.Blocks['categorychannel_edit'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_setName'] = {
   init: function() {
     this.jsonInit({
@@ -436,6 +461,7 @@ Blockly.Blocks['categorychannel_setName'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_setPosition'] = {
   init: function() {
     this.jsonInit({
@@ -459,6 +485,7 @@ Blockly.Blocks['categorychannel_setPosition'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_clone'] = {
   init: function() {
     this.jsonInit({
@@ -478,6 +505,7 @@ Blockly.Blocks['categorychannel_clone'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_equals'] = {
   init: function() {
     this.jsonInit({
@@ -497,6 +525,7 @@ Blockly.Blocks['categorychannel_equals'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_delete'] = {
   init: function() {
     this.jsonInit({
@@ -516,6 +545,7 @@ Blockly.Blocks['categorychannel_delete'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_toString'] = {
   init: function() {
     this.jsonInit({
@@ -531,6 +561,7 @@ Blockly.Blocks['categorychannel_toString'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -550,6 +581,7 @@ Blockly.Blocks['categorychannel_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_isText'] = {
   init: function() {
     this.jsonInit({
@@ -565,6 +597,7 @@ Blockly.Blocks['categorychannel_isText'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_isVoice'] = {
   init: function() {
     this.jsonInit({
@@ -580,6 +613,7 @@ Blockly.Blocks['categorychannel_isVoice'] = {
     });
   }
 };
+
 Blockly.Blocks['categorychannel_isThread'] = {
   init: function() {
     this.jsonInit({

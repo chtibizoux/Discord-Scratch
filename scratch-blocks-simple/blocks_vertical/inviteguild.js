@@ -21,6 +21,7 @@ Blockly.Blocks['inviteguild_welcomeScreen'] = {
     });
   }
 };
+
 Blockly.Blocks['inviteguild_splash'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['inviteguild_splash'] = {
     });
   }
 };
+
 Blockly.Blocks['inviteguild_banner'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['inviteguild_banner'] = {
     });
   }
 };
+
 Blockly.Blocks['inviteguild_description'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['inviteguild_description'] = {
     });
   }
 };
+
 Blockly.Blocks['inviteguild_verificationLevel'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['inviteguild_verificationLevel'] = {
     });
   }
 };
+
 Blockly.Blocks['inviteguild_vanityURLCode'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['inviteguild_vanityURLCode'] = {
     });
   }
 };
+
 Blockly.Blocks['inviteguild_nsfwLevel'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['inviteguild_nsfwLevel'] = {
     });
   }
 };
+
 Blockly.Blocks['inviteguild_id'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['inviteguild_id'] = {
     });
   }
 };
+
 Blockly.Blocks['inviteguild_name'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['inviteguild_name'] = {
     });
   }
 };
+
 Blockly.Blocks['inviteguild_icon'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['inviteguild_icon'] = {
     });
   }
 };
+
 Blockly.Blocks['inviteguild_features'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['inviteguild_features'] = {
     });
   }
 };
+
 Blockly.Blocks['inviteguild_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['inviteguild_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['inviteguild_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -201,6 +213,7 @@ Blockly.Blocks['inviteguild_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['inviteguild_nameAcronym'] = {
   init: function() {
     this.jsonInit({
@@ -216,6 +229,7 @@ Blockly.Blocks['inviteguild_nameAcronym'] = {
     });
   }
 };
+
 Blockly.Blocks['inviteguild_partnered'] = {
   init: function() {
     this.jsonInit({
@@ -231,6 +245,7 @@ Blockly.Blocks['inviteguild_partnered'] = {
     });
   }
 };
+
 Blockly.Blocks['inviteguild_verified'] = {
   init: function() {
     this.jsonInit({
@@ -246,6 +261,7 @@ Blockly.Blocks['inviteguild_verified'] = {
     });
   }
 };
+
 Blockly.Blocks['inviteguild_client'] = {
   init: function() {
     this.jsonInit({
@@ -261,6 +277,7 @@ Blockly.Blocks['inviteguild_client'] = {
     });
   }
 };
+
 Blockly.Blocks['inviteguild_bannerURL'] = {
   init: function() {
     this.jsonInit({
@@ -280,6 +297,7 @@ Blockly.Blocks['inviteguild_bannerURL'] = {
     });
   }
 };
+
 Blockly.Blocks['inviteguild_splashURL'] = {
   init: function() {
     this.jsonInit({
@@ -299,6 +317,7 @@ Blockly.Blocks['inviteguild_splashURL'] = {
     });
   }
 };
+
 Blockly.Blocks['inviteguild_iconURL'] = {
   init: function() {
     this.jsonInit({
@@ -318,6 +337,7 @@ Blockly.Blocks['inviteguild_iconURL'] = {
     });
   }
 };
+
 Blockly.Blocks['inviteguild_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -333,6 +353,7 @@ Blockly.Blocks['inviteguild_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['inviteguild_toString'] = {
   init: function() {
     this.jsonInit({

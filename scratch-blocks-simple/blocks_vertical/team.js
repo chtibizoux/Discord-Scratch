@@ -21,6 +21,7 @@ Blockly.Blocks['team_id'] = {
     });
   }
 };
+
 Blockly.Blocks['team_name'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['team_name'] = {
     });
   }
 };
+
 Blockly.Blocks['team_icon'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['team_icon'] = {
     });
   }
 };
+
 Blockly.Blocks['team_ownerId'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['team_ownerId'] = {
     });
   }
 };
+
 Blockly.Blocks['team_members'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['team_members'] = {
     });
   }
 };
+
 Blockly.Blocks['team_owner'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['team_owner'] = {
     });
   }
 };
+
 Blockly.Blocks['team_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['team_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['team_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['team_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['team_client'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['team_client'] = {
     });
   }
 };
+
 Blockly.Blocks['team_iconURL'] = {
   init: function() {
     this.jsonInit({
@@ -160,6 +169,7 @@ Blockly.Blocks['team_iconURL'] = {
     });
   }
 };
+
 Blockly.Blocks['team_toString'] = {
   init: function() {
     this.jsonInit({

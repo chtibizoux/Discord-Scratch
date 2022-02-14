@@ -21,6 +21,7 @@ Blockly.Blocks['threadmanager_channel'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmanager_cache'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['threadmanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['threadmanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -70,6 +73,7 @@ Blockly.Blocks['threadmanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmanager_resolveId'] = {
   init: function() {
     this.jsonInit({
@@ -89,6 +93,7 @@ Blockly.Blocks['threadmanager_resolveId'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmanager_create'] = {
   init: function() {
     this.jsonInit({
@@ -108,6 +113,7 @@ Blockly.Blocks['threadmanager_create'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmanager_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -131,6 +137,7 @@ Blockly.Blocks['threadmanager_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmanager_fetchArchived'] = {
   init: function() {
     this.jsonInit({
@@ -154,6 +161,7 @@ Blockly.Blocks['threadmanager_fetchArchived'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmanager_fetchActive'] = {
   init: function() {
     this.jsonInit({

@@ -54,6 +54,7 @@ Blockly.Blocks['messagecollector_on'] = {
     }
   }
 };
+
 Blockly.Blocks['messagecollector_channel'] = {
   init: function() {
     this.jsonInit({
@@ -69,6 +70,7 @@ Blockly.Blocks['messagecollector_channel'] = {
     });
   }
 };
+
 Blockly.Blocks['messagecollector_received'] = {
   init: function() {
     this.jsonInit({
@@ -84,6 +86,7 @@ Blockly.Blocks['messagecollector_received'] = {
     });
   }
 };
+
 Blockly.Blocks['messagecollector_endReason'] = {
   init: function() {
     this.jsonInit({
@@ -99,6 +102,7 @@ Blockly.Blocks['messagecollector_endReason'] = {
     });
   }
 };
+
 Blockly.Blocks['messagecollector_client'] = {
   init: function() {
     this.jsonInit({
@@ -114,6 +118,7 @@ Blockly.Blocks['messagecollector_client'] = {
     });
   }
 };
+
 Blockly.Blocks['messagecollector_filter'] = {
   init: function() {
     this.jsonInit({
@@ -129,6 +134,7 @@ Blockly.Blocks['messagecollector_filter'] = {
     });
   }
 };
+
 Blockly.Blocks['messagecollector_options'] = {
   init: function() {
     this.jsonInit({
@@ -144,6 +150,7 @@ Blockly.Blocks['messagecollector_options'] = {
     });
   }
 };
+
 Blockly.Blocks['messagecollector_collected'] = {
   init: function() {
     this.jsonInit({
@@ -159,6 +166,7 @@ Blockly.Blocks['messagecollector_collected'] = {
     });
   }
 };
+
 Blockly.Blocks['messagecollector_ended'] = {
   init: function() {
     this.jsonInit({
@@ -174,6 +182,7 @@ Blockly.Blocks['messagecollector_ended'] = {
     });
   }
 };
+
 Blockly.Blocks['messagecollector_next'] = {
   init: function() {
     this.jsonInit({
@@ -189,6 +198,7 @@ Blockly.Blocks['messagecollector_next'] = {
     });
   }
 };
+
 Blockly.Blocks['messagecollector_dispose'] = {
   init: function() {
     this.jsonInit({
@@ -208,6 +218,7 @@ Blockly.Blocks['messagecollector_dispose'] = {
     });
   }
 };
+
 Blockly.Blocks['messagecollector_handleCollect'] = {
   init: function() {
     this.jsonInit({
@@ -227,6 +238,7 @@ Blockly.Blocks['messagecollector_handleCollect'] = {
     });
   }
 };
+
 Blockly.Blocks['messagecollector_handleDispose'] = {
   init: function() {
     this.jsonInit({
@@ -246,6 +258,7 @@ Blockly.Blocks['messagecollector_handleDispose'] = {
     });
   }
 };
+
 Blockly.Blocks['messagecollector_stop'] = {
   init: function() {
     this.jsonInit({
@@ -265,6 +278,7 @@ Blockly.Blocks['messagecollector_stop'] = {
     });
   }
 };
+
 Blockly.Blocks['messagecollector_resetTimer'] = {
   init: function() {
     this.jsonInit({
@@ -284,6 +298,7 @@ Blockly.Blocks['messagecollector_resetTimer'] = {
     });
   }
 };
+
 Blockly.Blocks['messagecollector_checkEnd'] = {
   init: function() {
     this.jsonInit({

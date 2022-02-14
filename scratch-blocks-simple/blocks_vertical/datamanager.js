@@ -21,6 +21,7 @@ Blockly.Blocks['datamanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['datamanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['datamanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['datamanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -55,6 +57,7 @@ Blockly.Blocks['datamanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['datamanager_resolveId'] = {
   init: function() {
     this.jsonInit({

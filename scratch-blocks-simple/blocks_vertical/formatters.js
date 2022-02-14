@@ -21,6 +21,7 @@ Blockly.Blocks['formatters_TimestampStyles'] = {
     });
   }
 };
+
 Blockly.Blocks['formatters_blockQuote'] = {
   init: function() {
     this.jsonInit({
@@ -40,6 +41,7 @@ Blockly.Blocks['formatters_blockQuote'] = {
     });
   }
 };
+
 Blockly.Blocks['formatters_bold'] = {
   init: function() {
     this.jsonInit({
@@ -59,6 +61,7 @@ Blockly.Blocks['formatters_bold'] = {
     });
   }
 };
+
 Blockly.Blocks['formatters_channelMention'] = {
   init: function() {
     this.jsonInit({
@@ -78,6 +81,7 @@ Blockly.Blocks['formatters_channelMention'] = {
     });
   }
 };
+
 Blockly.Blocks['formatters_codeBlock'] = {
   init: function() {
     this.jsonInit({
@@ -101,6 +105,7 @@ Blockly.Blocks['formatters_codeBlock'] = {
     });
   }
 };
+
 Blockly.Blocks['formatters_formatEmoji'] = {
   init: function() {
     this.jsonInit({
@@ -124,6 +129,7 @@ Blockly.Blocks['formatters_formatEmoji'] = {
     });
   }
 };
+
 Blockly.Blocks['formatters_hideLinkEmbed'] = {
   init: function() {
     this.jsonInit({
@@ -143,6 +149,7 @@ Blockly.Blocks['formatters_hideLinkEmbed'] = {
     });
   }
 };
+
 Blockly.Blocks['formatters_hyperlink'] = {
   init: function() {
     this.jsonInit({
@@ -170,6 +177,7 @@ Blockly.Blocks['formatters_hyperlink'] = {
     });
   }
 };
+
 Blockly.Blocks['formatters_inlineCode'] = {
   init: function() {
     this.jsonInit({
@@ -189,6 +197,7 @@ Blockly.Blocks['formatters_inlineCode'] = {
     });
   }
 };
+
 Blockly.Blocks['formatters_italic'] = {
   init: function() {
     this.jsonInit({
@@ -208,6 +217,7 @@ Blockly.Blocks['formatters_italic'] = {
     });
   }
 };
+
 Blockly.Blocks['formatters_memberNicknameMention'] = {
   init: function() {
     this.jsonInit({
@@ -227,6 +237,7 @@ Blockly.Blocks['formatters_memberNicknameMention'] = {
     });
   }
 };
+
 Blockly.Blocks['formatters_quote'] = {
   init: function() {
     this.jsonInit({
@@ -246,6 +257,7 @@ Blockly.Blocks['formatters_quote'] = {
     });
   }
 };
+
 Blockly.Blocks['formatters_roleMention'] = {
   init: function() {
     this.jsonInit({
@@ -265,6 +277,7 @@ Blockly.Blocks['formatters_roleMention'] = {
     });
   }
 };
+
 Blockly.Blocks['formatters_spoiler'] = {
   init: function() {
     this.jsonInit({
@@ -284,6 +297,7 @@ Blockly.Blocks['formatters_spoiler'] = {
     });
   }
 };
+
 Blockly.Blocks['formatters_strikethrough'] = {
   init: function() {
     this.jsonInit({
@@ -303,6 +317,7 @@ Blockly.Blocks['formatters_strikethrough'] = {
     });
   }
 };
+
 Blockly.Blocks['formatters_time'] = {
   init: function() {
     this.jsonInit({
@@ -326,6 +341,7 @@ Blockly.Blocks['formatters_time'] = {
     });
   }
 };
+
 Blockly.Blocks['formatters_underscore'] = {
   init: function() {
     this.jsonInit({
@@ -345,6 +361,7 @@ Blockly.Blocks['formatters_underscore'] = {
     });
   }
 };
+
 Blockly.Blocks['formatters_userMention'] = {
   init: function() {
     this.jsonInit({

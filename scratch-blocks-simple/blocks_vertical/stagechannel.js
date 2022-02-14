@@ -21,6 +21,7 @@ Blockly.Blocks['stagechannel_topic'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_stageInstance'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['stagechannel_stageInstance'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_rtcRegion'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['stagechannel_rtcRegion'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_bitrate'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['stagechannel_bitrate'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_userLimit'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['stagechannel_userLimit'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_members'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['stagechannel_members'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_full'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['stagechannel_full'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_joinable'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['stagechannel_joinable'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_guild'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['stagechannel_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_guildId'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['stagechannel_guildId'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_permissionOverwrites'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['stagechannel_permissionOverwrites'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_name'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['stagechannel_name'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_rawPosition'] = {
   init: function() {
     this.jsonInit({
@@ -201,6 +213,7 @@ Blockly.Blocks['stagechannel_rawPosition'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_parentId'] = {
   init: function() {
     this.jsonInit({
@@ -216,6 +229,7 @@ Blockly.Blocks['stagechannel_parentId'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_parent'] = {
   init: function() {
     this.jsonInit({
@@ -231,6 +245,7 @@ Blockly.Blocks['stagechannel_parent'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_permissionsLocked'] = {
   init: function() {
     this.jsonInit({
@@ -246,6 +261,7 @@ Blockly.Blocks['stagechannel_permissionsLocked'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_position'] = {
   init: function() {
     this.jsonInit({
@@ -261,6 +277,7 @@ Blockly.Blocks['stagechannel_position'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_deletable'] = {
   init: function() {
     this.jsonInit({
@@ -276,6 +293,7 @@ Blockly.Blocks['stagechannel_deletable'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_manageable'] = {
   init: function() {
     this.jsonInit({
@@ -291,6 +309,7 @@ Blockly.Blocks['stagechannel_manageable'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_viewable'] = {
   init: function() {
     this.jsonInit({
@@ -306,6 +325,7 @@ Blockly.Blocks['stagechannel_viewable'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_type'] = {
   init: function() {
     this.jsonInit({
@@ -321,6 +341,7 @@ Blockly.Blocks['stagechannel_type'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_id'] = {
   init: function() {
     this.jsonInit({
@@ -336,6 +357,7 @@ Blockly.Blocks['stagechannel_id'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -351,6 +373,7 @@ Blockly.Blocks['stagechannel_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -366,6 +389,7 @@ Blockly.Blocks['stagechannel_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_partial'] = {
   init: function() {
     this.jsonInit({
@@ -381,6 +405,7 @@ Blockly.Blocks['stagechannel_partial'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_client'] = {
   init: function() {
     this.jsonInit({
@@ -396,6 +421,7 @@ Blockly.Blocks['stagechannel_client'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_createStageInstance'] = {
   init: function() {
     this.jsonInit({
@@ -415,6 +441,7 @@ Blockly.Blocks['stagechannel_createStageInstance'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_setTopic'] = {
   init: function() {
     this.jsonInit({
@@ -438,6 +465,7 @@ Blockly.Blocks['stagechannel_setTopic'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_setRTCRegion'] = {
   init: function() {
     this.jsonInit({
@@ -457,6 +485,7 @@ Blockly.Blocks['stagechannel_setRTCRegion'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_createInvite'] = {
   init: function() {
     this.jsonInit({
@@ -476,6 +505,7 @@ Blockly.Blocks['stagechannel_createInvite'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_fetchInvites'] = {
   init: function() {
     this.jsonInit({
@@ -495,6 +525,7 @@ Blockly.Blocks['stagechannel_fetchInvites'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_permissionsFor'] = {
   init: function() {
     this.jsonInit({
@@ -518,6 +549,7 @@ Blockly.Blocks['stagechannel_permissionsFor'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_lockPermissions'] = {
   init: function() {
     this.jsonInit({
@@ -533,6 +565,7 @@ Blockly.Blocks['stagechannel_lockPermissions'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_edit'] = {
   init: function() {
     this.jsonInit({
@@ -556,6 +589,7 @@ Blockly.Blocks['stagechannel_edit'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_setName'] = {
   init: function() {
     this.jsonInit({
@@ -579,6 +613,7 @@ Blockly.Blocks['stagechannel_setName'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_setParent'] = {
   init: function() {
     this.jsonInit({
@@ -602,6 +637,7 @@ Blockly.Blocks['stagechannel_setParent'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_setPosition'] = {
   init: function() {
     this.jsonInit({
@@ -625,6 +661,7 @@ Blockly.Blocks['stagechannel_setPosition'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_clone'] = {
   init: function() {
     this.jsonInit({
@@ -644,6 +681,7 @@ Blockly.Blocks['stagechannel_clone'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_equals'] = {
   init: function() {
     this.jsonInit({
@@ -663,6 +701,7 @@ Blockly.Blocks['stagechannel_equals'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_delete'] = {
   init: function() {
     this.jsonInit({
@@ -682,6 +721,7 @@ Blockly.Blocks['stagechannel_delete'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_toString'] = {
   init: function() {
     this.jsonInit({
@@ -697,6 +737,7 @@ Blockly.Blocks['stagechannel_toString'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -716,6 +757,7 @@ Blockly.Blocks['stagechannel_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_isText'] = {
   init: function() {
     this.jsonInit({
@@ -731,6 +773,7 @@ Blockly.Blocks['stagechannel_isText'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_isVoice'] = {
   init: function() {
     this.jsonInit({
@@ -746,6 +789,7 @@ Blockly.Blocks['stagechannel_isVoice'] = {
     });
   }
 };
+
 Blockly.Blocks['stagechannel_isThread'] = {
   init: function() {
     this.jsonInit({

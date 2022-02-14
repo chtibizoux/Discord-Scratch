@@ -21,6 +21,7 @@ Blockly.Blocks['invite_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_code'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['invite_code'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_presenceCount'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['invite_presenceCount'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_memberCount'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['invite_memberCount'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_temporary'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['invite_temporary'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_maxAge'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['invite_maxAge'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_uses'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['invite_uses'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_maxUses'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['invite_maxUses'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_inviterId'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['invite_inviterId'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_inviter'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['invite_inviter'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_targetUser'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['invite_targetUser'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_targetApplication'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['invite_targetApplication'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_targetType'] = {
   init: function() {
     this.jsonInit({
@@ -201,6 +213,7 @@ Blockly.Blocks['invite_targetType'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_channelId'] = {
   init: function() {
     this.jsonInit({
@@ -216,6 +229,7 @@ Blockly.Blocks['invite_channelId'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_channel'] = {
   init: function() {
     this.jsonInit({
@@ -231,6 +245,7 @@ Blockly.Blocks['invite_channel'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -246,6 +261,7 @@ Blockly.Blocks['invite_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_stageInstance'] = {
   init: function() {
     this.jsonInit({
@@ -261,6 +277,7 @@ Blockly.Blocks['invite_stageInstance'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_guildScheduledEvent'] = {
   init: function() {
     this.jsonInit({
@@ -276,6 +293,7 @@ Blockly.Blocks['invite_guildScheduledEvent'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -291,6 +309,7 @@ Blockly.Blocks['invite_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_deletable'] = {
   init: function() {
     this.jsonInit({
@@ -306,6 +325,7 @@ Blockly.Blocks['invite_deletable'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_expiresTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -321,6 +341,7 @@ Blockly.Blocks['invite_expiresTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_expiresAt'] = {
   init: function() {
     this.jsonInit({
@@ -336,6 +357,7 @@ Blockly.Blocks['invite_expiresAt'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_url'] = {
   init: function() {
     this.jsonInit({
@@ -351,6 +373,7 @@ Blockly.Blocks['invite_url'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_client'] = {
   init: function() {
     this.jsonInit({
@@ -366,6 +389,7 @@ Blockly.Blocks['invite_client'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_INVITES_PATTERN'] = {
   init: function() {
     this.jsonInit({
@@ -381,6 +405,7 @@ Blockly.Blocks['invite_INVITES_PATTERN'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_delete'] = {
   init: function() {
     this.jsonInit({
@@ -400,6 +425,7 @@ Blockly.Blocks['invite_delete'] = {
     });
   }
 };
+
 Blockly.Blocks['invite_toString'] = {
   init: function() {
     this.jsonInit({

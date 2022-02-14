@@ -21,6 +21,7 @@ Blockly.Blocks['userflags_bitfield'] = {
     });
   }
 };
+
 Blockly.Blocks['userflags_FLAGS'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['userflags_FLAGS'] = {
     });
   }
 };
+
 Blockly.Blocks['userflags_any'] = {
   init: function() {
     this.jsonInit({
@@ -55,6 +57,7 @@ Blockly.Blocks['userflags_any'] = {
     });
   }
 };
+
 Blockly.Blocks['userflags_equals'] = {
   init: function() {
     this.jsonInit({
@@ -74,6 +77,7 @@ Blockly.Blocks['userflags_equals'] = {
     });
   }
 };
+
 Blockly.Blocks['userflags_has'] = {
   init: function() {
     this.jsonInit({
@@ -93,6 +97,7 @@ Blockly.Blocks['userflags_has'] = {
     });
   }
 };
+
 Blockly.Blocks['userflags_missing'] = {
   init: function() {
     this.jsonInit({
@@ -116,6 +121,7 @@ Blockly.Blocks['userflags_missing'] = {
     });
   }
 };
+
 Blockly.Blocks['userflags_freeze'] = {
   init: function() {
     this.jsonInit({
@@ -131,6 +137,7 @@ Blockly.Blocks['userflags_freeze'] = {
     });
   }
 };
+
 Blockly.Blocks['userflags_add'] = {
   init: function() {
     this.jsonInit({
@@ -150,6 +157,7 @@ Blockly.Blocks['userflags_add'] = {
     });
   }
 };
+
 Blockly.Blocks['userflags_remove'] = {
   init: function() {
     this.jsonInit({
@@ -169,6 +177,7 @@ Blockly.Blocks['userflags_remove'] = {
     });
   }
 };
+
 Blockly.Blocks['userflags_serialize'] = {
   init: function() {
     this.jsonInit({
@@ -188,6 +197,7 @@ Blockly.Blocks['userflags_serialize'] = {
     });
   }
 };
+
 Blockly.Blocks['userflags_toArray'] = {
   init: function() {
     this.jsonInit({

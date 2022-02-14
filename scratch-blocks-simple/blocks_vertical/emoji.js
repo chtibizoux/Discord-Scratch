@@ -21,6 +21,7 @@ Blockly.Blocks['emoji_animated'] = {
     });
   }
 };
+
 Blockly.Blocks['emoji_name'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['emoji_name'] = {
     });
   }
 };
+
 Blockly.Blocks['emoji_id'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['emoji_id'] = {
     });
   }
 };
+
 Blockly.Blocks['emoji_identifier'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['emoji_identifier'] = {
     });
   }
 };
+
 Blockly.Blocks['emoji_url'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['emoji_url'] = {
     });
   }
 };
+
 Blockly.Blocks['emoji_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['emoji_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['emoji_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['emoji_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['emoji_client'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['emoji_client'] = {
     });
   }
 };
+
 Blockly.Blocks['emoji_toString'] = {
   init: function() {
     this.jsonInit({

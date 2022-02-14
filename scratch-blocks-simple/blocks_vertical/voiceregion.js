@@ -21,6 +21,7 @@ Blockly.Blocks['voiceregion_id'] = {
     });
   }
 };
+
 Blockly.Blocks['voiceregion_name'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['voiceregion_name'] = {
     });
   }
 };
+
 Blockly.Blocks['voiceregion_vip'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['voiceregion_vip'] = {
     });
   }
 };
+
 Blockly.Blocks['voiceregion_deprecated'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['voiceregion_deprecated'] = {
     });
   }
 };
+
 Blockly.Blocks['voiceregion_optimal'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['voiceregion_optimal'] = {
     });
   }
 };
+
 Blockly.Blocks['voiceregion_custom'] = {
   init: function() {
     this.jsonInit({

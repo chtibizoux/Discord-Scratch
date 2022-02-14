@@ -21,6 +21,7 @@ Blockly.Blocks['systemchannelflags_bitfield'] = {
     });
   }
 };
+
 Blockly.Blocks['systemchannelflags_FLAGS'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['systemchannelflags_FLAGS'] = {
     });
   }
 };
+
 Blockly.Blocks['systemchannelflags_any'] = {
   init: function() {
     this.jsonInit({
@@ -55,6 +57,7 @@ Blockly.Blocks['systemchannelflags_any'] = {
     });
   }
 };
+
 Blockly.Blocks['systemchannelflags_equals'] = {
   init: function() {
     this.jsonInit({
@@ -74,6 +77,7 @@ Blockly.Blocks['systemchannelflags_equals'] = {
     });
   }
 };
+
 Blockly.Blocks['systemchannelflags_has'] = {
   init: function() {
     this.jsonInit({
@@ -93,6 +97,7 @@ Blockly.Blocks['systemchannelflags_has'] = {
     });
   }
 };
+
 Blockly.Blocks['systemchannelflags_missing'] = {
   init: function() {
     this.jsonInit({
@@ -116,6 +121,7 @@ Blockly.Blocks['systemchannelflags_missing'] = {
     });
   }
 };
+
 Blockly.Blocks['systemchannelflags_freeze'] = {
   init: function() {
     this.jsonInit({
@@ -131,6 +137,7 @@ Blockly.Blocks['systemchannelflags_freeze'] = {
     });
   }
 };
+
 Blockly.Blocks['systemchannelflags_add'] = {
   init: function() {
     this.jsonInit({
@@ -150,6 +157,7 @@ Blockly.Blocks['systemchannelflags_add'] = {
     });
   }
 };
+
 Blockly.Blocks['systemchannelflags_remove'] = {
   init: function() {
     this.jsonInit({
@@ -169,6 +177,7 @@ Blockly.Blocks['systemchannelflags_remove'] = {
     });
   }
 };
+
 Blockly.Blocks['systemchannelflags_serialize'] = {
   init: function() {
     this.jsonInit({
@@ -188,6 +197,7 @@ Blockly.Blocks['systemchannelflags_serialize'] = {
     });
   }
 };
+
 Blockly.Blocks['systemchannelflags_toArray'] = {
   init: function() {
     this.jsonInit({

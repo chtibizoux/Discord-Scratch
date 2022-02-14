@@ -51,6 +51,7 @@ Blockly.Blocks['websocketshard_on'] = {
     }
   }
 };
+
 Blockly.Blocks['websocketshard_manager'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +67,7 @@ Blockly.Blocks['websocketshard_manager'] = {
     });
   }
 };
+
 Blockly.Blocks['websocketshard_id'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +83,7 @@ Blockly.Blocks['websocketshard_id'] = {
     });
   }
 };
+
 Blockly.Blocks['websocketshard_status'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +99,7 @@ Blockly.Blocks['websocketshard_status'] = {
     });
   }
 };
+
 Blockly.Blocks['websocketshard_ping'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +115,7 @@ Blockly.Blocks['websocketshard_ping'] = {
     });
   }
 };
+
 Blockly.Blocks['websocketshard_send'] = {
   init: function() {
     this.jsonInit({

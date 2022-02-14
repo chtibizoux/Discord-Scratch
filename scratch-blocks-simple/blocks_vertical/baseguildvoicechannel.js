@@ -21,6 +21,7 @@ Blockly.Blocks['baseguildvoicechannel_rtcRegion'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_bitrate'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['baseguildvoicechannel_bitrate'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_userLimit'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['baseguildvoicechannel_userLimit'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_members'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['baseguildvoicechannel_members'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_full'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['baseguildvoicechannel_full'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_joinable'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['baseguildvoicechannel_joinable'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_guild'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['baseguildvoicechannel_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_guildId'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['baseguildvoicechannel_guildId'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_permissionOverwrites'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['baseguildvoicechannel_permissionOverwrites'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_name'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['baseguildvoicechannel_name'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_rawPosition'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['baseguildvoicechannel_rawPosition'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_parentId'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['baseguildvoicechannel_parentId'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_parent'] = {
   init: function() {
     this.jsonInit({
@@ -201,6 +213,7 @@ Blockly.Blocks['baseguildvoicechannel_parent'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_permissionsLocked'] = {
   init: function() {
     this.jsonInit({
@@ -216,6 +229,7 @@ Blockly.Blocks['baseguildvoicechannel_permissionsLocked'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_position'] = {
   init: function() {
     this.jsonInit({
@@ -231,6 +245,7 @@ Blockly.Blocks['baseguildvoicechannel_position'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_deletable'] = {
   init: function() {
     this.jsonInit({
@@ -246,6 +261,7 @@ Blockly.Blocks['baseguildvoicechannel_deletable'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_manageable'] = {
   init: function() {
     this.jsonInit({
@@ -261,6 +277,7 @@ Blockly.Blocks['baseguildvoicechannel_manageable'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_viewable'] = {
   init: function() {
     this.jsonInit({
@@ -276,6 +293,7 @@ Blockly.Blocks['baseguildvoicechannel_viewable'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_type'] = {
   init: function() {
     this.jsonInit({
@@ -291,6 +309,7 @@ Blockly.Blocks['baseguildvoicechannel_type'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_id'] = {
   init: function() {
     this.jsonInit({
@@ -306,6 +325,7 @@ Blockly.Blocks['baseguildvoicechannel_id'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -321,6 +341,7 @@ Blockly.Blocks['baseguildvoicechannel_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -336,6 +357,7 @@ Blockly.Blocks['baseguildvoicechannel_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_partial'] = {
   init: function() {
     this.jsonInit({
@@ -351,6 +373,7 @@ Blockly.Blocks['baseguildvoicechannel_partial'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_client'] = {
   init: function() {
     this.jsonInit({
@@ -366,6 +389,7 @@ Blockly.Blocks['baseguildvoicechannel_client'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_setRTCRegion'] = {
   init: function() {
     this.jsonInit({
@@ -385,6 +409,7 @@ Blockly.Blocks['baseguildvoicechannel_setRTCRegion'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_createInvite'] = {
   init: function() {
     this.jsonInit({
@@ -404,6 +429,7 @@ Blockly.Blocks['baseguildvoicechannel_createInvite'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_fetchInvites'] = {
   init: function() {
     this.jsonInit({
@@ -423,6 +449,7 @@ Blockly.Blocks['baseguildvoicechannel_fetchInvites'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_permissionsFor'] = {
   init: function() {
     this.jsonInit({
@@ -446,6 +473,7 @@ Blockly.Blocks['baseguildvoicechannel_permissionsFor'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_lockPermissions'] = {
   init: function() {
     this.jsonInit({
@@ -461,6 +489,7 @@ Blockly.Blocks['baseguildvoicechannel_lockPermissions'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_edit'] = {
   init: function() {
     this.jsonInit({
@@ -484,6 +513,7 @@ Blockly.Blocks['baseguildvoicechannel_edit'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_setName'] = {
   init: function() {
     this.jsonInit({
@@ -507,6 +537,7 @@ Blockly.Blocks['baseguildvoicechannel_setName'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_setParent'] = {
   init: function() {
     this.jsonInit({
@@ -530,6 +561,7 @@ Blockly.Blocks['baseguildvoicechannel_setParent'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_setPosition'] = {
   init: function() {
     this.jsonInit({
@@ -553,6 +585,7 @@ Blockly.Blocks['baseguildvoicechannel_setPosition'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_clone'] = {
   init: function() {
     this.jsonInit({
@@ -572,6 +605,7 @@ Blockly.Blocks['baseguildvoicechannel_clone'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_equals'] = {
   init: function() {
     this.jsonInit({
@@ -591,6 +625,7 @@ Blockly.Blocks['baseguildvoicechannel_equals'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_delete'] = {
   init: function() {
     this.jsonInit({
@@ -610,6 +645,7 @@ Blockly.Blocks['baseguildvoicechannel_delete'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_toString'] = {
   init: function() {
     this.jsonInit({
@@ -625,6 +661,7 @@ Blockly.Blocks['baseguildvoicechannel_toString'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -644,6 +681,7 @@ Blockly.Blocks['baseguildvoicechannel_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_isText'] = {
   init: function() {
     this.jsonInit({
@@ -659,6 +697,7 @@ Blockly.Blocks['baseguildvoicechannel_isText'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_isVoice'] = {
   init: function() {
     this.jsonInit({
@@ -674,6 +713,7 @@ Blockly.Blocks['baseguildvoicechannel_isVoice'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildvoicechannel_isThread'] = {
   init: function() {
     this.jsonInit({

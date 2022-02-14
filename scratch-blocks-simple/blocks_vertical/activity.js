@@ -21,6 +21,7 @@ Blockly.Blocks['activity_id'] = {
     });
   }
 };
+
 Blockly.Blocks['activity_name'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['activity_name'] = {
     });
   }
 };
+
 Blockly.Blocks['activity_type'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['activity_type'] = {
     });
   }
 };
+
 Blockly.Blocks['activity_url'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['activity_url'] = {
     });
   }
 };
+
 Blockly.Blocks['activity_details'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['activity_details'] = {
     });
   }
 };
+
 Blockly.Blocks['activity_state'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['activity_state'] = {
     });
   }
 };
+
 Blockly.Blocks['activity_applicationId'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['activity_applicationId'] = {
     });
   }
 };
+
 Blockly.Blocks['activity_timestamps'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['activity_timestamps'] = {
     });
   }
 };
+
 Blockly.Blocks['activity_syncId'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['activity_syncId'] = {
     });
   }
 };
+
 Blockly.Blocks['activity_platform'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['activity_platform'] = {
     });
   }
 };
+
 Blockly.Blocks['activity_party'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['activity_party'] = {
     });
   }
 };
+
 Blockly.Blocks['activity_assets'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['activity_assets'] = {
     });
   }
 };
+
 Blockly.Blocks['activity_flags'] = {
   init: function() {
     this.jsonInit({
@@ -201,6 +213,7 @@ Blockly.Blocks['activity_flags'] = {
     });
   }
 };
+
 Blockly.Blocks['activity_emoji'] = {
   init: function() {
     this.jsonInit({
@@ -216,6 +229,7 @@ Blockly.Blocks['activity_emoji'] = {
     });
   }
 };
+
 Blockly.Blocks['activity_sessionId'] = {
   init: function() {
     this.jsonInit({
@@ -231,6 +245,7 @@ Blockly.Blocks['activity_sessionId'] = {
     });
   }
 };
+
 Blockly.Blocks['activity_buttons'] = {
   init: function() {
     this.jsonInit({
@@ -246,6 +261,7 @@ Blockly.Blocks['activity_buttons'] = {
     });
   }
 };
+
 Blockly.Blocks['activity_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -261,6 +277,7 @@ Blockly.Blocks['activity_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['activity_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -276,6 +293,7 @@ Blockly.Blocks['activity_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['activity_equals'] = {
   init: function() {
     this.jsonInit({
@@ -295,6 +313,7 @@ Blockly.Blocks['activity_equals'] = {
     });
   }
 };
+
 Blockly.Blocks['activity_toString'] = {
   init: function() {
     this.jsonInit({

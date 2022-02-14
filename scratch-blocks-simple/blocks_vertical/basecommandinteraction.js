@@ -21,6 +21,7 @@ Blockly.Blocks['basecommandinteraction_channelId'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_commandId'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['basecommandinteraction_commandId'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_commandName'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['basecommandinteraction_commandName'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_deferred'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['basecommandinteraction_deferred'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_replied'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['basecommandinteraction_replied'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_ephemeral'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['basecommandinteraction_ephemeral'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_webhook'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['basecommandinteraction_webhook'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_command'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['basecommandinteraction_command'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_type'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['basecommandinteraction_type'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_id'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['basecommandinteraction_id'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_token'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['basecommandinteraction_token'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_applicationId'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['basecommandinteraction_applicationId'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_guildId'] = {
   init: function() {
     this.jsonInit({
@@ -201,6 +213,7 @@ Blockly.Blocks['basecommandinteraction_guildId'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_user'] = {
   init: function() {
     this.jsonInit({
@@ -216,6 +229,7 @@ Blockly.Blocks['basecommandinteraction_user'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_member'] = {
   init: function() {
     this.jsonInit({
@@ -231,6 +245,7 @@ Blockly.Blocks['basecommandinteraction_member'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_version'] = {
   init: function() {
     this.jsonInit({
@@ -246,6 +261,7 @@ Blockly.Blocks['basecommandinteraction_version'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_memberPermissions'] = {
   init: function() {
     this.jsonInit({
@@ -261,6 +277,7 @@ Blockly.Blocks['basecommandinteraction_memberPermissions'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_locale'] = {
   init: function() {
     this.jsonInit({
@@ -276,6 +293,7 @@ Blockly.Blocks['basecommandinteraction_locale'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_guildLocale'] = {
   init: function() {
     this.jsonInit({
@@ -291,6 +309,7 @@ Blockly.Blocks['basecommandinteraction_guildLocale'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -306,6 +325,7 @@ Blockly.Blocks['basecommandinteraction_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -321,6 +341,7 @@ Blockly.Blocks['basecommandinteraction_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_channel'] = {
   init: function() {
     this.jsonInit({
@@ -336,6 +357,7 @@ Blockly.Blocks['basecommandinteraction_channel'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_guild'] = {
   init: function() {
     this.jsonInit({
@@ -351,6 +373,7 @@ Blockly.Blocks['basecommandinteraction_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_client'] = {
   init: function() {
     this.jsonInit({
@@ -366,6 +389,7 @@ Blockly.Blocks['basecommandinteraction_client'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_deferReply'] = {
   init: function() {
     this.jsonInit({
@@ -385,6 +409,7 @@ Blockly.Blocks['basecommandinteraction_deferReply'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_reply'] = {
   init: function() {
     this.jsonInit({
@@ -404,6 +429,7 @@ Blockly.Blocks['basecommandinteraction_reply'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_fetchReply'] = {
   init: function() {
     this.jsonInit({
@@ -419,6 +445,7 @@ Blockly.Blocks['basecommandinteraction_fetchReply'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_editReply'] = {
   init: function() {
     this.jsonInit({
@@ -438,6 +465,7 @@ Blockly.Blocks['basecommandinteraction_editReply'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_deleteReply'] = {
   init: function() {
     this.jsonInit({
@@ -453,6 +481,7 @@ Blockly.Blocks['basecommandinteraction_deleteReply'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_followUp'] = {
   init: function() {
     this.jsonInit({
@@ -472,6 +501,7 @@ Blockly.Blocks['basecommandinteraction_followUp'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_inGuild'] = {
   init: function() {
     this.jsonInit({
@@ -487,6 +517,7 @@ Blockly.Blocks['basecommandinteraction_inGuild'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_inCachedGuild'] = {
   init: function() {
     this.jsonInit({
@@ -502,6 +533,7 @@ Blockly.Blocks['basecommandinteraction_inCachedGuild'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_inRawGuild'] = {
   init: function() {
     this.jsonInit({
@@ -517,6 +549,7 @@ Blockly.Blocks['basecommandinteraction_inRawGuild'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_isApplicationCommand'] = {
   init: function() {
     this.jsonInit({
@@ -532,6 +565,7 @@ Blockly.Blocks['basecommandinteraction_isApplicationCommand'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_isCommand'] = {
   init: function() {
     this.jsonInit({
@@ -547,6 +581,7 @@ Blockly.Blocks['basecommandinteraction_isCommand'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_isContextMenu'] = {
   init: function() {
     this.jsonInit({
@@ -562,6 +597,7 @@ Blockly.Blocks['basecommandinteraction_isContextMenu'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_isUserContextMenu'] = {
   init: function() {
     this.jsonInit({
@@ -577,6 +613,7 @@ Blockly.Blocks['basecommandinteraction_isUserContextMenu'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_isMessageContextMenu'] = {
   init: function() {
     this.jsonInit({
@@ -592,6 +629,7 @@ Blockly.Blocks['basecommandinteraction_isMessageContextMenu'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_isAutocomplete'] = {
   init: function() {
     this.jsonInit({
@@ -607,6 +645,7 @@ Blockly.Blocks['basecommandinteraction_isAutocomplete'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_isMessageComponent'] = {
   init: function() {
     this.jsonInit({
@@ -622,6 +661,7 @@ Blockly.Blocks['basecommandinteraction_isMessageComponent'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_isButton'] = {
   init: function() {
     this.jsonInit({
@@ -637,6 +677,7 @@ Blockly.Blocks['basecommandinteraction_isButton'] = {
     });
   }
 };
+
 Blockly.Blocks['basecommandinteraction_isSelectMenu'] = {
   init: function() {
     this.jsonInit({

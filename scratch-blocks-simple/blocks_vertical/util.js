@@ -29,6 +29,7 @@ Blockly.Blocks['util_flatten'] = {
     });
   }
 };
+
 Blockly.Blocks['util_splitMessage'] = {
   init: function() {
     this.jsonInit({
@@ -52,6 +53,7 @@ Blockly.Blocks['util_splitMessage'] = {
     });
   }
 };
+
 Blockly.Blocks['util_escapeMarkdown'] = {
   init: function() {
     this.jsonInit({
@@ -75,6 +77,7 @@ Blockly.Blocks['util_escapeMarkdown'] = {
     });
   }
 };
+
 Blockly.Blocks['util_escapeCodeBlock'] = {
   init: function() {
     this.jsonInit({
@@ -94,6 +97,7 @@ Blockly.Blocks['util_escapeCodeBlock'] = {
     });
   }
 };
+
 Blockly.Blocks['util_escapeInlineCode'] = {
   init: function() {
     this.jsonInit({
@@ -113,6 +117,7 @@ Blockly.Blocks['util_escapeInlineCode'] = {
     });
   }
 };
+
 Blockly.Blocks['util_escapeItalic'] = {
   init: function() {
     this.jsonInit({
@@ -132,6 +137,7 @@ Blockly.Blocks['util_escapeItalic'] = {
     });
   }
 };
+
 Blockly.Blocks['util_escapeBold'] = {
   init: function() {
     this.jsonInit({
@@ -151,6 +157,7 @@ Blockly.Blocks['util_escapeBold'] = {
     });
   }
 };
+
 Blockly.Blocks['util_escapeUnderline'] = {
   init: function() {
     this.jsonInit({
@@ -170,6 +177,7 @@ Blockly.Blocks['util_escapeUnderline'] = {
     });
   }
 };
+
 Blockly.Blocks['util_escapeStrikethrough'] = {
   init: function() {
     this.jsonInit({
@@ -189,6 +197,7 @@ Blockly.Blocks['util_escapeStrikethrough'] = {
     });
   }
 };
+
 Blockly.Blocks['util_escapeSpoiler'] = {
   init: function() {
     this.jsonInit({
@@ -208,6 +217,7 @@ Blockly.Blocks['util_escapeSpoiler'] = {
     });
   }
 };
+
 Blockly.Blocks['util_fetchRecommendedShards'] = {
   init: function() {
     this.jsonInit({
@@ -231,6 +241,7 @@ Blockly.Blocks['util_fetchRecommendedShards'] = {
     });
   }
 };
+
 Blockly.Blocks['util_verifyString'] = {
   init: function() {
     this.jsonInit({
@@ -262,6 +273,7 @@ Blockly.Blocks['util_verifyString'] = {
     });
   }
 };
+
 Blockly.Blocks['util_resolveColor'] = {
   init: function() {
     this.jsonInit({
@@ -281,6 +293,7 @@ Blockly.Blocks['util_resolveColor'] = {
     });
   }
 };
+
 Blockly.Blocks['util_discordSort'] = {
   init: function() {
     this.jsonInit({
@@ -300,6 +313,7 @@ Blockly.Blocks['util_discordSort'] = {
     });
   }
 };
+
 Blockly.Blocks['util_cleanContent'] = {
   init: function() {
     this.jsonInit({
@@ -323,6 +337,7 @@ Blockly.Blocks['util_cleanContent'] = {
     });
   }
 };
+
 Blockly.Blocks['util_cleanCodeBlockContent'] = {
   init: function() {
     this.jsonInit({

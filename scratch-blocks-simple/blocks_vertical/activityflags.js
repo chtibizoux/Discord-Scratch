@@ -21,6 +21,7 @@ Blockly.Blocks['activityflags_bitfield'] = {
     });
   }
 };
+
 Blockly.Blocks['activityflags_FLAGS'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['activityflags_FLAGS'] = {
     });
   }
 };
+
 Blockly.Blocks['activityflags_any'] = {
   init: function() {
     this.jsonInit({
@@ -55,6 +57,7 @@ Blockly.Blocks['activityflags_any'] = {
     });
   }
 };
+
 Blockly.Blocks['activityflags_equals'] = {
   init: function() {
     this.jsonInit({
@@ -74,6 +77,7 @@ Blockly.Blocks['activityflags_equals'] = {
     });
   }
 };
+
 Blockly.Blocks['activityflags_has'] = {
   init: function() {
     this.jsonInit({
@@ -93,6 +97,7 @@ Blockly.Blocks['activityflags_has'] = {
     });
   }
 };
+
 Blockly.Blocks['activityflags_missing'] = {
   init: function() {
     this.jsonInit({
@@ -116,6 +121,7 @@ Blockly.Blocks['activityflags_missing'] = {
     });
   }
 };
+
 Blockly.Blocks['activityflags_freeze'] = {
   init: function() {
     this.jsonInit({
@@ -131,6 +137,7 @@ Blockly.Blocks['activityflags_freeze'] = {
     });
   }
 };
+
 Blockly.Blocks['activityflags_add'] = {
   init: function() {
     this.jsonInit({
@@ -150,6 +157,7 @@ Blockly.Blocks['activityflags_add'] = {
     });
   }
 };
+
 Blockly.Blocks['activityflags_remove'] = {
   init: function() {
     this.jsonInit({
@@ -169,6 +177,7 @@ Blockly.Blocks['activityflags_remove'] = {
     });
   }
 };
+
 Blockly.Blocks['activityflags_serialize'] = {
   init: function() {
     this.jsonInit({
@@ -188,6 +197,7 @@ Blockly.Blocks['activityflags_serialize'] = {
     });
   }
 };
+
 Blockly.Blocks['activityflags_toArray'] = {
   init: function() {
     this.jsonInit({

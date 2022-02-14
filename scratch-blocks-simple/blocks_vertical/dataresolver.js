@@ -29,6 +29,7 @@ Blockly.Blocks['dataresolver_resolveCode'] = {
     });
   }
 };
+
 Blockly.Blocks['dataresolver_resolveInviteCode'] = {
   init: function() {
     this.jsonInit({
@@ -48,6 +49,7 @@ Blockly.Blocks['dataresolver_resolveInviteCode'] = {
     });
   }
 };
+
 Blockly.Blocks['dataresolver_resolveGuildTemplateCode'] = {
   init: function() {
     this.jsonInit({
@@ -67,6 +69,7 @@ Blockly.Blocks['dataresolver_resolveGuildTemplateCode'] = {
     });
   }
 };
+
 Blockly.Blocks['dataresolver_resolveImage'] = {
   init: function() {
     this.jsonInit({
@@ -86,6 +89,7 @@ Blockly.Blocks['dataresolver_resolveImage'] = {
     });
   }
 };
+
 Blockly.Blocks['dataresolver_resolveBase64'] = {
   init: function() {
     this.jsonInit({
@@ -105,6 +109,7 @@ Blockly.Blocks['dataresolver_resolveBase64'] = {
     });
   }
 };
+
 Blockly.Blocks['dataresolver_resolveFile'] = {
   init: function() {
     this.jsonInit({
@@ -124,6 +129,7 @@ Blockly.Blocks['dataresolver_resolveFile'] = {
     });
   }
 };
+
 Blockly.Blocks['dataresolver_resolveFileAsBuffer'] = {
   init: function() {
     this.jsonInit({

@@ -21,6 +21,7 @@ Blockly.Blocks['messageactionrow_components'] = {
     });
   }
 };
+
 Blockly.Blocks['messageactionrow_type'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['messageactionrow_type'] = {
     });
   }
 };
+
 Blockly.Blocks['messageactionrow_addComponents'] = {
   init: function() {
     this.jsonInit({
@@ -55,6 +57,7 @@ Blockly.Blocks['messageactionrow_addComponents'] = {
     });
   }
 };
+
 Blockly.Blocks['messageactionrow_setComponents'] = {
   init: function() {
     this.jsonInit({
@@ -74,6 +77,7 @@ Blockly.Blocks['messageactionrow_setComponents'] = {
     });
   }
 };
+
 Blockly.Blocks['messageactionrow_spliceComponents'] = {
   init: function() {
     this.jsonInit({
@@ -101,6 +105,7 @@ Blockly.Blocks['messageactionrow_spliceComponents'] = {
     });
   }
 };
+
 Blockly.Blocks['messageactionrow_toJSON'] = {
   init: function() {
     this.jsonInit({

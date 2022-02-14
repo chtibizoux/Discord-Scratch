@@ -21,6 +21,7 @@ Blockly.Blocks['messagepayload_target'] = {
     });
   }
 };
+
 Blockly.Blocks['messagepayload_options'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['messagepayload_options'] = {
     });
   }
 };
+
 Blockly.Blocks['messagepayload_data'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['messagepayload_data'] = {
     });
   }
 };
+
 Blockly.Blocks['messagepayload_files'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['messagepayload_files'] = {
     });
   }
 };
+
 Blockly.Blocks['messagepayload_isWebhook'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['messagepayload_isWebhook'] = {
     });
   }
 };
+
 Blockly.Blocks['messagepayload_isUser'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['messagepayload_isUser'] = {
     });
   }
 };
+
 Blockly.Blocks['messagepayload_isMessage'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['messagepayload_isMessage'] = {
     });
   }
 };
+
 Blockly.Blocks['messagepayload_isMessageManager'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['messagepayload_isMessageManager'] = {
     });
   }
 };
+
 Blockly.Blocks['messagepayload_isInteraction'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['messagepayload_isInteraction'] = {
     });
   }
 };
+
 Blockly.Blocks['messagepayload_makeContent'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['messagepayload_makeContent'] = {
     });
   }
 };
+
 Blockly.Blocks['messagepayload_resolveData'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['messagepayload_resolveData'] = {
     });
   }
 };
+
 Blockly.Blocks['messagepayload_resolveFiles'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['messagepayload_resolveFiles'] = {
     });
   }
 };
+
 Blockly.Blocks['messagepayload_resolveFile'] = {
   init: function() {
     this.jsonInit({
@@ -205,6 +217,7 @@ Blockly.Blocks['messagepayload_resolveFile'] = {
     });
   }
 };
+
 Blockly.Blocks['messagepayload_create'] = {
   init: function() {
     this.jsonInit({

@@ -21,6 +21,7 @@ Blockly.Blocks['messagereaction_client'] = {
     });
   }
 };
+
 Blockly.Blocks['messagereaction_message'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['messagereaction_message'] = {
     });
   }
 };
+
 Blockly.Blocks['messagereaction_me'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['messagereaction_me'] = {
     });
   }
 };
+
 Blockly.Blocks['messagereaction_users'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['messagereaction_users'] = {
     });
   }
 };
+
 Blockly.Blocks['messagereaction_count'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['messagereaction_count'] = {
     });
   }
 };
+
 Blockly.Blocks['messagereaction_emoji'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['messagereaction_emoji'] = {
     });
   }
 };
+
 Blockly.Blocks['messagereaction_partial'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['messagereaction_partial'] = {
     });
   }
 };
+
 Blockly.Blocks['messagereaction_remove'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['messagereaction_remove'] = {
     });
   }
 };
+
 Blockly.Blocks['messagereaction_fetch'] = {
   init: function() {
     this.jsonInit({

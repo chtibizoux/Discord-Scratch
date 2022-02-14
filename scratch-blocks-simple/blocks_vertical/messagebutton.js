@@ -21,6 +21,7 @@ Blockly.Blocks['messagebutton_label'] = {
     });
   }
 };
+
 Blockly.Blocks['messagebutton_customId'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['messagebutton_customId'] = {
     });
   }
 };
+
 Blockly.Blocks['messagebutton_style'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['messagebutton_style'] = {
     });
   }
 };
+
 Blockly.Blocks['messagebutton_emoji'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['messagebutton_emoji'] = {
     });
   }
 };
+
 Blockly.Blocks['messagebutton_url'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['messagebutton_url'] = {
     });
   }
 };
+
 Blockly.Blocks['messagebutton_disabled'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['messagebutton_disabled'] = {
     });
   }
 };
+
 Blockly.Blocks['messagebutton_type'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['messagebutton_type'] = {
     });
   }
 };
+
 Blockly.Blocks['messagebutton_setCustomId'] = {
   init: function() {
     this.jsonInit({
@@ -130,6 +137,7 @@ Blockly.Blocks['messagebutton_setCustomId'] = {
     });
   }
 };
+
 Blockly.Blocks['messagebutton_setDisabled'] = {
   init: function() {
     this.jsonInit({
@@ -149,6 +157,7 @@ Blockly.Blocks['messagebutton_setDisabled'] = {
     });
   }
 };
+
 Blockly.Blocks['messagebutton_setEmoji'] = {
   init: function() {
     this.jsonInit({
@@ -168,6 +177,7 @@ Blockly.Blocks['messagebutton_setEmoji'] = {
     });
   }
 };
+
 Blockly.Blocks['messagebutton_setLabel'] = {
   init: function() {
     this.jsonInit({
@@ -187,6 +197,7 @@ Blockly.Blocks['messagebutton_setLabel'] = {
     });
   }
 };
+
 Blockly.Blocks['messagebutton_setStyle'] = {
   init: function() {
     this.jsonInit({
@@ -206,6 +217,7 @@ Blockly.Blocks['messagebutton_setStyle'] = {
     });
   }
 };
+
 Blockly.Blocks['messagebutton_setURL'] = {
   init: function() {
     this.jsonInit({
@@ -225,6 +237,7 @@ Blockly.Blocks['messagebutton_setURL'] = {
     });
   }
 };
+
 Blockly.Blocks['messagebutton_toJSON'] = {
   init: function() {
     this.jsonInit({

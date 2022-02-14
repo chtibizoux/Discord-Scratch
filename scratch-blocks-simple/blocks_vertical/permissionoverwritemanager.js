@@ -21,6 +21,7 @@ Blockly.Blocks['permissionoverwritemanager_channel'] = {
     });
   }
 };
+
 Blockly.Blocks['permissionoverwritemanager_cache'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['permissionoverwritemanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['permissionoverwritemanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['permissionoverwritemanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['permissionoverwritemanager_set'] = {
   init: function() {
     this.jsonInit({
@@ -74,6 +77,7 @@ Blockly.Blocks['permissionoverwritemanager_set'] = {
     });
   }
 };
+
 Blockly.Blocks['permissionoverwritemanager_create'] = {
   init: function() {
     this.jsonInit({
@@ -101,6 +105,7 @@ Blockly.Blocks['permissionoverwritemanager_create'] = {
     });
   }
 };
+
 Blockly.Blocks['permissionoverwritemanager_edit'] = {
   init: function() {
     this.jsonInit({
@@ -128,6 +133,7 @@ Blockly.Blocks['permissionoverwritemanager_edit'] = {
     });
   }
 };
+
 Blockly.Blocks['permissionoverwritemanager_delete'] = {
   init: function() {
     this.jsonInit({
@@ -151,6 +157,7 @@ Blockly.Blocks['permissionoverwritemanager_delete'] = {
     });
   }
 };
+
 Blockly.Blocks['permissionoverwritemanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -170,6 +177,7 @@ Blockly.Blocks['permissionoverwritemanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['permissionoverwritemanager_resolveId'] = {
   init: function() {
     this.jsonInit({

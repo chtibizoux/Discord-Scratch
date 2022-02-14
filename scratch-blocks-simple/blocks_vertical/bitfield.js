@@ -21,6 +21,7 @@ Blockly.Blocks['bitfield_bitfield'] = {
     });
   }
 };
+
 Blockly.Blocks['bitfield_FLAGS'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['bitfield_FLAGS'] = {
     });
   }
 };
+
 Blockly.Blocks['bitfield_any'] = {
   init: function() {
     this.jsonInit({
@@ -55,6 +57,7 @@ Blockly.Blocks['bitfield_any'] = {
     });
   }
 };
+
 Blockly.Blocks['bitfield_equals'] = {
   init: function() {
     this.jsonInit({
@@ -74,6 +77,7 @@ Blockly.Blocks['bitfield_equals'] = {
     });
   }
 };
+
 Blockly.Blocks['bitfield_has'] = {
   init: function() {
     this.jsonInit({
@@ -93,6 +97,7 @@ Blockly.Blocks['bitfield_has'] = {
     });
   }
 };
+
 Blockly.Blocks['bitfield_missing'] = {
   init: function() {
     this.jsonInit({
@@ -116,6 +121,7 @@ Blockly.Blocks['bitfield_missing'] = {
     });
   }
 };
+
 Blockly.Blocks['bitfield_freeze'] = {
   init: function() {
     this.jsonInit({
@@ -131,6 +137,7 @@ Blockly.Blocks['bitfield_freeze'] = {
     });
   }
 };
+
 Blockly.Blocks['bitfield_add'] = {
   init: function() {
     this.jsonInit({
@@ -150,6 +157,7 @@ Blockly.Blocks['bitfield_add'] = {
     });
   }
 };
+
 Blockly.Blocks['bitfield_remove'] = {
   init: function() {
     this.jsonInit({
@@ -169,6 +177,7 @@ Blockly.Blocks['bitfield_remove'] = {
     });
   }
 };
+
 Blockly.Blocks['bitfield_serialize'] = {
   init: function() {
     this.jsonInit({
@@ -188,6 +197,7 @@ Blockly.Blocks['bitfield_serialize'] = {
     });
   }
 };
+
 Blockly.Blocks['bitfield_toArray'] = {
   init: function() {
     this.jsonInit({
@@ -207,6 +217,7 @@ Blockly.Blocks['bitfield_toArray'] = {
     });
   }
 };
+
 Blockly.Blocks['bitfield_resolve'] = {
   init: function() {
     this.jsonInit({

@@ -21,6 +21,7 @@ Blockly.Blocks['voicestatemanager_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestatemanager_cache'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['voicestatemanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestatemanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['voicestatemanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestatemanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -70,6 +73,7 @@ Blockly.Blocks['voicestatemanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['voicestatemanager_resolveId'] = {
   init: function() {
     this.jsonInit({

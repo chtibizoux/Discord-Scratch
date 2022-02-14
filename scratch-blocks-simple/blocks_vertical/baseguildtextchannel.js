@@ -21,6 +21,7 @@ Blockly.Blocks['baseguildtextchannel_messages'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_threads'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['baseguildtextchannel_threads'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_nsfw'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['baseguildtextchannel_nsfw'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_topic'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['baseguildtextchannel_topic'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_lastMessageId'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['baseguildtextchannel_lastMessageId'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_lastPinTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['baseguildtextchannel_lastPinTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_defaultAutoArchiveDuration'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['baseguildtextchannel_defaultAutoArchiveDuration'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_lastMessage'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['baseguildtextchannel_lastMessage'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_lastPinAt'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['baseguildtextchannel_lastPinAt'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_guild'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['baseguildtextchannel_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_guildId'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['baseguildtextchannel_guildId'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_permissionOverwrites'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['baseguildtextchannel_permissionOverwrites'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_name'] = {
   init: function() {
     this.jsonInit({
@@ -201,6 +213,7 @@ Blockly.Blocks['baseguildtextchannel_name'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_rawPosition'] = {
   init: function() {
     this.jsonInit({
@@ -216,6 +229,7 @@ Blockly.Blocks['baseguildtextchannel_rawPosition'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_parentId'] = {
   init: function() {
     this.jsonInit({
@@ -231,6 +245,7 @@ Blockly.Blocks['baseguildtextchannel_parentId'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_parent'] = {
   init: function() {
     this.jsonInit({
@@ -246,6 +261,7 @@ Blockly.Blocks['baseguildtextchannel_parent'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_permissionsLocked'] = {
   init: function() {
     this.jsonInit({
@@ -261,6 +277,7 @@ Blockly.Blocks['baseguildtextchannel_permissionsLocked'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_position'] = {
   init: function() {
     this.jsonInit({
@@ -276,6 +293,7 @@ Blockly.Blocks['baseguildtextchannel_position'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_members'] = {
   init: function() {
     this.jsonInit({
@@ -291,6 +309,7 @@ Blockly.Blocks['baseguildtextchannel_members'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_deletable'] = {
   init: function() {
     this.jsonInit({
@@ -306,6 +325,7 @@ Blockly.Blocks['baseguildtextchannel_deletable'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_manageable'] = {
   init: function() {
     this.jsonInit({
@@ -321,6 +341,7 @@ Blockly.Blocks['baseguildtextchannel_manageable'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_viewable'] = {
   init: function() {
     this.jsonInit({
@@ -336,6 +357,7 @@ Blockly.Blocks['baseguildtextchannel_viewable'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_type'] = {
   init: function() {
     this.jsonInit({
@@ -351,6 +373,7 @@ Blockly.Blocks['baseguildtextchannel_type'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_id'] = {
   init: function() {
     this.jsonInit({
@@ -366,6 +389,7 @@ Blockly.Blocks['baseguildtextchannel_id'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -381,6 +405,7 @@ Blockly.Blocks['baseguildtextchannel_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -396,6 +421,7 @@ Blockly.Blocks['baseguildtextchannel_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_partial'] = {
   init: function() {
     this.jsonInit({
@@ -411,6 +437,7 @@ Blockly.Blocks['baseguildtextchannel_partial'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_client'] = {
   init: function() {
     this.jsonInit({
@@ -426,6 +453,7 @@ Blockly.Blocks['baseguildtextchannel_client'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_setDefaultAutoArchiveDuration'] = {
   init: function() {
     this.jsonInit({
@@ -449,6 +477,7 @@ Blockly.Blocks['baseguildtextchannel_setDefaultAutoArchiveDuration'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_setNSFW'] = {
   init: function() {
     this.jsonInit({
@@ -472,6 +501,7 @@ Blockly.Blocks['baseguildtextchannel_setNSFW'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_setType'] = {
   init: function() {
     this.jsonInit({
@@ -495,6 +525,7 @@ Blockly.Blocks['baseguildtextchannel_setType'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_fetchWebhooks'] = {
   init: function() {
     this.jsonInit({
@@ -510,6 +541,7 @@ Blockly.Blocks['baseguildtextchannel_fetchWebhooks'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_createWebhook'] = {
   init: function() {
     this.jsonInit({
@@ -533,6 +565,7 @@ Blockly.Blocks['baseguildtextchannel_createWebhook'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_setTopic'] = {
   init: function() {
     this.jsonInit({
@@ -556,6 +589,7 @@ Blockly.Blocks['baseguildtextchannel_setTopic'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_createInvite'] = {
   init: function() {
     this.jsonInit({
@@ -575,6 +609,7 @@ Blockly.Blocks['baseguildtextchannel_createInvite'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_fetchInvites'] = {
   init: function() {
     this.jsonInit({
@@ -594,6 +629,7 @@ Blockly.Blocks['baseguildtextchannel_fetchInvites'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_send'] = {
   init: function() {
     this.jsonInit({
@@ -613,6 +649,7 @@ Blockly.Blocks['baseguildtextchannel_send'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_sendTyping'] = {
   init: function() {
     this.jsonInit({
@@ -628,6 +665,7 @@ Blockly.Blocks['baseguildtextchannel_sendTyping'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_createMessageCollector'] = {
   init: function() {
     this.jsonInit({
@@ -647,6 +685,7 @@ Blockly.Blocks['baseguildtextchannel_createMessageCollector'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_awaitMessages'] = {
   init: function() {
     this.jsonInit({
@@ -666,6 +705,7 @@ Blockly.Blocks['baseguildtextchannel_awaitMessages'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_createMessageComponentCollector'] = {
   init: function() {
     this.jsonInit({
@@ -685,6 +725,7 @@ Blockly.Blocks['baseguildtextchannel_createMessageComponentCollector'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_awaitMessageComponent'] = {
   init: function() {
     this.jsonInit({
@@ -704,6 +745,7 @@ Blockly.Blocks['baseguildtextchannel_awaitMessageComponent'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_bulkDelete'] = {
   init: function() {
     this.jsonInit({
@@ -727,6 +769,7 @@ Blockly.Blocks['baseguildtextchannel_bulkDelete'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_permissionsFor'] = {
   init: function() {
     this.jsonInit({
@@ -750,6 +793,7 @@ Blockly.Blocks['baseguildtextchannel_permissionsFor'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_lockPermissions'] = {
   init: function() {
     this.jsonInit({
@@ -765,6 +809,7 @@ Blockly.Blocks['baseguildtextchannel_lockPermissions'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_edit'] = {
   init: function() {
     this.jsonInit({
@@ -788,6 +833,7 @@ Blockly.Blocks['baseguildtextchannel_edit'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_setName'] = {
   init: function() {
     this.jsonInit({
@@ -811,6 +857,7 @@ Blockly.Blocks['baseguildtextchannel_setName'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_setParent'] = {
   init: function() {
     this.jsonInit({
@@ -834,6 +881,7 @@ Blockly.Blocks['baseguildtextchannel_setParent'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_setPosition'] = {
   init: function() {
     this.jsonInit({
@@ -857,6 +905,7 @@ Blockly.Blocks['baseguildtextchannel_setPosition'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_clone'] = {
   init: function() {
     this.jsonInit({
@@ -876,6 +925,7 @@ Blockly.Blocks['baseguildtextchannel_clone'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_equals'] = {
   init: function() {
     this.jsonInit({
@@ -895,6 +945,7 @@ Blockly.Blocks['baseguildtextchannel_equals'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_delete'] = {
   init: function() {
     this.jsonInit({
@@ -914,6 +965,7 @@ Blockly.Blocks['baseguildtextchannel_delete'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_toString'] = {
   init: function() {
     this.jsonInit({
@@ -929,6 +981,7 @@ Blockly.Blocks['baseguildtextchannel_toString'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -948,6 +1001,7 @@ Blockly.Blocks['baseguildtextchannel_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_isText'] = {
   init: function() {
     this.jsonInit({
@@ -963,6 +1017,7 @@ Blockly.Blocks['baseguildtextchannel_isText'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_isVoice'] = {
   init: function() {
     this.jsonInit({
@@ -978,6 +1033,7 @@ Blockly.Blocks['baseguildtextchannel_isVoice'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildtextchannel_isThread'] = {
   init: function() {
     this.jsonInit({

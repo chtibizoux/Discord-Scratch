@@ -21,6 +21,7 @@ Blockly.Blocks['guildemoji_author'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemoji_guild'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['guildemoji_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemoji_deletable'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['guildemoji_deletable'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemoji_roles'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['guildemoji_roles'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemoji_requiresColons'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['guildemoji_requiresColons'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemoji_managed'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['guildemoji_managed'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemoji_available'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['guildemoji_available'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemoji_animated'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['guildemoji_animated'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemoji_name'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['guildemoji_name'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemoji_id'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['guildemoji_id'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemoji_identifier'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['guildemoji_identifier'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemoji_url'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['guildemoji_url'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemoji_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -201,6 +213,7 @@ Blockly.Blocks['guildemoji_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemoji_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -216,6 +229,7 @@ Blockly.Blocks['guildemoji_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemoji_client'] = {
   init: function() {
     this.jsonInit({
@@ -231,6 +245,7 @@ Blockly.Blocks['guildemoji_client'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemoji_fetchAuthor'] = {
   init: function() {
     this.jsonInit({
@@ -246,6 +261,7 @@ Blockly.Blocks['guildemoji_fetchAuthor'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemoji_edit'] = {
   init: function() {
     this.jsonInit({
@@ -269,6 +285,7 @@ Blockly.Blocks['guildemoji_edit'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemoji_setName'] = {
   init: function() {
     this.jsonInit({
@@ -292,6 +309,7 @@ Blockly.Blocks['guildemoji_setName'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemoji_delete'] = {
   init: function() {
     this.jsonInit({
@@ -311,6 +329,7 @@ Blockly.Blocks['guildemoji_delete'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemoji_equals'] = {
   init: function() {
     this.jsonInit({
@@ -330,6 +349,7 @@ Blockly.Blocks['guildemoji_equals'] = {
     });
   }
 };
+
 Blockly.Blocks['guildemoji_toString'] = {
   init: function() {
     this.jsonInit({

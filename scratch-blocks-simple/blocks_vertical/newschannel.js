@@ -21,6 +21,7 @@ Blockly.Blocks['newschannel_messages'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_threads'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['newschannel_threads'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_nsfw'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['newschannel_nsfw'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_topic'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['newschannel_topic'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_lastMessageId'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['newschannel_lastMessageId'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_lastPinTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['newschannel_lastPinTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_defaultAutoArchiveDuration'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['newschannel_defaultAutoArchiveDuration'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_lastMessage'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['newschannel_lastMessage'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_lastPinAt'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['newschannel_lastPinAt'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_guild'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['newschannel_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_guildId'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['newschannel_guildId'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_permissionOverwrites'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['newschannel_permissionOverwrites'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_name'] = {
   init: function() {
     this.jsonInit({
@@ -201,6 +213,7 @@ Blockly.Blocks['newschannel_name'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_rawPosition'] = {
   init: function() {
     this.jsonInit({
@@ -216,6 +229,7 @@ Blockly.Blocks['newschannel_rawPosition'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_parentId'] = {
   init: function() {
     this.jsonInit({
@@ -231,6 +245,7 @@ Blockly.Blocks['newschannel_parentId'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_parent'] = {
   init: function() {
     this.jsonInit({
@@ -246,6 +261,7 @@ Blockly.Blocks['newschannel_parent'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_permissionsLocked'] = {
   init: function() {
     this.jsonInit({
@@ -261,6 +277,7 @@ Blockly.Blocks['newschannel_permissionsLocked'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_position'] = {
   init: function() {
     this.jsonInit({
@@ -276,6 +293,7 @@ Blockly.Blocks['newschannel_position'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_members'] = {
   init: function() {
     this.jsonInit({
@@ -291,6 +309,7 @@ Blockly.Blocks['newschannel_members'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_deletable'] = {
   init: function() {
     this.jsonInit({
@@ -306,6 +325,7 @@ Blockly.Blocks['newschannel_deletable'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_manageable'] = {
   init: function() {
     this.jsonInit({
@@ -321,6 +341,7 @@ Blockly.Blocks['newschannel_manageable'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_viewable'] = {
   init: function() {
     this.jsonInit({
@@ -336,6 +357,7 @@ Blockly.Blocks['newschannel_viewable'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_type'] = {
   init: function() {
     this.jsonInit({
@@ -351,6 +373,7 @@ Blockly.Blocks['newschannel_type'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_id'] = {
   init: function() {
     this.jsonInit({
@@ -366,6 +389,7 @@ Blockly.Blocks['newschannel_id'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -381,6 +405,7 @@ Blockly.Blocks['newschannel_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -396,6 +421,7 @@ Blockly.Blocks['newschannel_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_partial'] = {
   init: function() {
     this.jsonInit({
@@ -411,6 +437,7 @@ Blockly.Blocks['newschannel_partial'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_client'] = {
   init: function() {
     this.jsonInit({
@@ -426,6 +453,7 @@ Blockly.Blocks['newschannel_client'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_addFollower'] = {
   init: function() {
     this.jsonInit({
@@ -449,6 +477,7 @@ Blockly.Blocks['newschannel_addFollower'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_setDefaultAutoArchiveDuration'] = {
   init: function() {
     this.jsonInit({
@@ -472,6 +501,7 @@ Blockly.Blocks['newschannel_setDefaultAutoArchiveDuration'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_setNSFW'] = {
   init: function() {
     this.jsonInit({
@@ -495,6 +525,7 @@ Blockly.Blocks['newschannel_setNSFW'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_setType'] = {
   init: function() {
     this.jsonInit({
@@ -518,6 +549,7 @@ Blockly.Blocks['newschannel_setType'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_fetchWebhooks'] = {
   init: function() {
     this.jsonInit({
@@ -533,6 +565,7 @@ Blockly.Blocks['newschannel_fetchWebhooks'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_createWebhook'] = {
   init: function() {
     this.jsonInit({
@@ -556,6 +589,7 @@ Blockly.Blocks['newschannel_createWebhook'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_setTopic'] = {
   init: function() {
     this.jsonInit({
@@ -579,6 +613,7 @@ Blockly.Blocks['newschannel_setTopic'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_createInvite'] = {
   init: function() {
     this.jsonInit({
@@ -598,6 +633,7 @@ Blockly.Blocks['newschannel_createInvite'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_fetchInvites'] = {
   init: function() {
     this.jsonInit({
@@ -617,6 +653,7 @@ Blockly.Blocks['newschannel_fetchInvites'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_send'] = {
   init: function() {
     this.jsonInit({
@@ -636,6 +673,7 @@ Blockly.Blocks['newschannel_send'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_sendTyping'] = {
   init: function() {
     this.jsonInit({
@@ -651,6 +689,7 @@ Blockly.Blocks['newschannel_sendTyping'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_createMessageCollector'] = {
   init: function() {
     this.jsonInit({
@@ -670,6 +709,7 @@ Blockly.Blocks['newschannel_createMessageCollector'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_awaitMessages'] = {
   init: function() {
     this.jsonInit({
@@ -689,6 +729,7 @@ Blockly.Blocks['newschannel_awaitMessages'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_createMessageComponentCollector'] = {
   init: function() {
     this.jsonInit({
@@ -708,6 +749,7 @@ Blockly.Blocks['newschannel_createMessageComponentCollector'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_awaitMessageComponent'] = {
   init: function() {
     this.jsonInit({
@@ -727,6 +769,7 @@ Blockly.Blocks['newschannel_awaitMessageComponent'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_bulkDelete'] = {
   init: function() {
     this.jsonInit({
@@ -750,6 +793,7 @@ Blockly.Blocks['newschannel_bulkDelete'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_permissionsFor'] = {
   init: function() {
     this.jsonInit({
@@ -773,6 +817,7 @@ Blockly.Blocks['newschannel_permissionsFor'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_lockPermissions'] = {
   init: function() {
     this.jsonInit({
@@ -788,6 +833,7 @@ Blockly.Blocks['newschannel_lockPermissions'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_edit'] = {
   init: function() {
     this.jsonInit({
@@ -811,6 +857,7 @@ Blockly.Blocks['newschannel_edit'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_setName'] = {
   init: function() {
     this.jsonInit({
@@ -834,6 +881,7 @@ Blockly.Blocks['newschannel_setName'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_setParent'] = {
   init: function() {
     this.jsonInit({
@@ -857,6 +905,7 @@ Blockly.Blocks['newschannel_setParent'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_setPosition'] = {
   init: function() {
     this.jsonInit({
@@ -880,6 +929,7 @@ Blockly.Blocks['newschannel_setPosition'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_clone'] = {
   init: function() {
     this.jsonInit({
@@ -899,6 +949,7 @@ Blockly.Blocks['newschannel_clone'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_equals'] = {
   init: function() {
     this.jsonInit({
@@ -918,6 +969,7 @@ Blockly.Blocks['newschannel_equals'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_delete'] = {
   init: function() {
     this.jsonInit({
@@ -937,6 +989,7 @@ Blockly.Blocks['newschannel_delete'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_toString'] = {
   init: function() {
     this.jsonInit({
@@ -952,6 +1005,7 @@ Blockly.Blocks['newschannel_toString'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -971,6 +1025,7 @@ Blockly.Blocks['newschannel_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_isText'] = {
   init: function() {
     this.jsonInit({
@@ -986,6 +1041,7 @@ Blockly.Blocks['newschannel_isText'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_isVoice'] = {
   init: function() {
     this.jsonInit({
@@ -1001,6 +1057,7 @@ Blockly.Blocks['newschannel_isVoice'] = {
     });
   }
 };
+
 Blockly.Blocks['newschannel_isThread'] = {
   init: function() {
     this.jsonInit({

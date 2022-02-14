@@ -48,6 +48,7 @@ Blockly.Blocks['shardingmanager_on'] = {
     }
   }
 };
+
 Blockly.Blocks['shardingmanager_file'] = {
   init: function() {
     this.jsonInit({
@@ -63,6 +64,7 @@ Blockly.Blocks['shardingmanager_file'] = {
     });
   }
 };
+
 Blockly.Blocks['shardingmanager_shardList'] = {
   init: function() {
     this.jsonInit({
@@ -78,6 +80,7 @@ Blockly.Blocks['shardingmanager_shardList'] = {
     });
   }
 };
+
 Blockly.Blocks['shardingmanager_totalShards'] = {
   init: function() {
     this.jsonInit({
@@ -93,6 +96,7 @@ Blockly.Blocks['shardingmanager_totalShards'] = {
     });
   }
 };
+
 Blockly.Blocks['shardingmanager_mode'] = {
   init: function() {
     this.jsonInit({
@@ -108,6 +112,7 @@ Blockly.Blocks['shardingmanager_mode'] = {
     });
   }
 };
+
 Blockly.Blocks['shardingmanager_respawn'] = {
   init: function() {
     this.jsonInit({
@@ -123,6 +128,7 @@ Blockly.Blocks['shardingmanager_respawn'] = {
     });
   }
 };
+
 Blockly.Blocks['shardingmanager_shardArgs'] = {
   init: function() {
     this.jsonInit({
@@ -138,6 +144,7 @@ Blockly.Blocks['shardingmanager_shardArgs'] = {
     });
   }
 };
+
 Blockly.Blocks['shardingmanager_execArgv'] = {
   init: function() {
     this.jsonInit({
@@ -153,6 +160,7 @@ Blockly.Blocks['shardingmanager_execArgv'] = {
     });
   }
 };
+
 Blockly.Blocks['shardingmanager_token'] = {
   init: function() {
     this.jsonInit({
@@ -168,6 +176,7 @@ Blockly.Blocks['shardingmanager_token'] = {
     });
   }
 };
+
 Blockly.Blocks['shardingmanager_shards'] = {
   init: function() {
     this.jsonInit({
@@ -183,6 +192,7 @@ Blockly.Blocks['shardingmanager_shards'] = {
     });
   }
 };
+
 Blockly.Blocks['shardingmanager_createShard'] = {
   init: function() {
     this.jsonInit({
@@ -202,6 +212,7 @@ Blockly.Blocks['shardingmanager_createShard'] = {
     });
   }
 };
+
 Blockly.Blocks['shardingmanager_spawn'] = {
   init: function() {
     this.jsonInit({
@@ -221,6 +232,7 @@ Blockly.Blocks['shardingmanager_spawn'] = {
     });
   }
 };
+
 Blockly.Blocks['shardingmanager_broadcast'] = {
   init: function() {
     this.jsonInit({
@@ -240,6 +252,7 @@ Blockly.Blocks['shardingmanager_broadcast'] = {
     });
   }
 };
+
 Blockly.Blocks['shardingmanager_broadcastEval'] = {
   init: function() {
     this.jsonInit({
@@ -263,6 +276,7 @@ Blockly.Blocks['shardingmanager_broadcastEval'] = {
     });
   }
 };
+
 Blockly.Blocks['shardingmanager_fetchClientValues'] = {
   init: function() {
     this.jsonInit({
@@ -286,6 +300,7 @@ Blockly.Blocks['shardingmanager_fetchClientValues'] = {
     });
   }
 };
+
 Blockly.Blocks['shardingmanager_respawnAll'] = {
   init: function() {
     this.jsonInit({

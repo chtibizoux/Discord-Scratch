@@ -21,6 +21,7 @@ Blockly.Blocks['sweepers_options'] = {
     });
   }
 };
+
 Blockly.Blocks['sweepers_intervals'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['sweepers_intervals'] = {
     });
   }
 };
+
 Blockly.Blocks['sweepers_sweepApplicationCommands'] = {
   init: function() {
     this.jsonInit({
@@ -55,6 +57,7 @@ Blockly.Blocks['sweepers_sweepApplicationCommands'] = {
     });
   }
 };
+
 Blockly.Blocks['sweepers_sweepBans'] = {
   init: function() {
     this.jsonInit({
@@ -74,6 +77,7 @@ Blockly.Blocks['sweepers_sweepBans'] = {
     });
   }
 };
+
 Blockly.Blocks['sweepers_sweepEmojis'] = {
   init: function() {
     this.jsonInit({
@@ -93,6 +97,7 @@ Blockly.Blocks['sweepers_sweepEmojis'] = {
     });
   }
 };
+
 Blockly.Blocks['sweepers_sweepInvites'] = {
   init: function() {
     this.jsonInit({
@@ -112,6 +117,7 @@ Blockly.Blocks['sweepers_sweepInvites'] = {
     });
   }
 };
+
 Blockly.Blocks['sweepers_sweepGuildMembers'] = {
   init: function() {
     this.jsonInit({
@@ -131,6 +137,7 @@ Blockly.Blocks['sweepers_sweepGuildMembers'] = {
     });
   }
 };
+
 Blockly.Blocks['sweepers_sweepMessages'] = {
   init: function() {
     this.jsonInit({
@@ -150,6 +157,7 @@ Blockly.Blocks['sweepers_sweepMessages'] = {
     });
   }
 };
+
 Blockly.Blocks['sweepers_sweepPresences'] = {
   init: function() {
     this.jsonInit({
@@ -169,6 +177,7 @@ Blockly.Blocks['sweepers_sweepPresences'] = {
     });
   }
 };
+
 Blockly.Blocks['sweepers_sweepReactions'] = {
   init: function() {
     this.jsonInit({
@@ -188,6 +197,7 @@ Blockly.Blocks['sweepers_sweepReactions'] = {
     });
   }
 };
+
 Blockly.Blocks['sweepers_sweepStageInstances'] = {
   init: function() {
     this.jsonInit({
@@ -207,6 +217,7 @@ Blockly.Blocks['sweepers_sweepStageInstances'] = {
     });
   }
 };
+
 Blockly.Blocks['sweepers_sweepThreadMembers'] = {
   init: function() {
     this.jsonInit({
@@ -226,6 +237,7 @@ Blockly.Blocks['sweepers_sweepThreadMembers'] = {
     });
   }
 };
+
 Blockly.Blocks['sweepers_sweepThreads'] = {
   init: function() {
     this.jsonInit({
@@ -245,6 +257,7 @@ Blockly.Blocks['sweepers_sweepThreads'] = {
     });
   }
 };
+
 Blockly.Blocks['sweepers_sweepUsers'] = {
   init: function() {
     this.jsonInit({
@@ -264,6 +277,7 @@ Blockly.Blocks['sweepers_sweepUsers'] = {
     });
   }
 };
+
 Blockly.Blocks['sweepers_sweepVoiceStates'] = {
   init: function() {
     this.jsonInit({
@@ -283,6 +297,7 @@ Blockly.Blocks['sweepers_sweepVoiceStates'] = {
     });
   }
 };
+
 Blockly.Blocks['sweepers_destroy'] = {
   init: function() {
     this.jsonInit({
@@ -298,6 +313,7 @@ Blockly.Blocks['sweepers_destroy'] = {
     });
   }
 };
+
 Blockly.Blocks['sweepers_filterByLifetime'] = {
   init: function() {
     this.jsonInit({
@@ -317,6 +333,7 @@ Blockly.Blocks['sweepers_filterByLifetime'] = {
     });
   }
 };
+
 Blockly.Blocks['sweepers_archivedThreadSweepFilter'] = {
   init: function() {
     this.jsonInit({
@@ -336,6 +353,7 @@ Blockly.Blocks['sweepers_archivedThreadSweepFilter'] = {
     });
   }
 };
+
 Blockly.Blocks['sweepers_expiredInviteSweepFilter'] = {
   init: function() {
     this.jsonInit({
@@ -355,6 +373,7 @@ Blockly.Blocks['sweepers_expiredInviteSweepFilter'] = {
     });
   }
 };
+
 Blockly.Blocks['sweepers_outdatedMessageSweepFilter'] = {
   init: function() {
     this.jsonInit({

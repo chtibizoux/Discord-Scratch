@@ -249,6 +249,7 @@ Blockly.Blocks['client_on'] = {
     }
   }
 };
+
 Blockly.Blocks['client_ws'] = {
   init: function() {
     this.jsonInit({
@@ -264,6 +265,7 @@ Blockly.Blocks['client_ws'] = {
     });
   }
 };
+
 Blockly.Blocks['client_voice'] = {
   init: function() {
     this.jsonInit({
@@ -279,6 +281,7 @@ Blockly.Blocks['client_voice'] = {
     });
   }
 };
+
 Blockly.Blocks['client_shard'] = {
   init: function() {
     this.jsonInit({
@@ -294,6 +297,7 @@ Blockly.Blocks['client_shard'] = {
     });
   }
 };
+
 Blockly.Blocks['client_users'] = {
   init: function() {
     this.jsonInit({
@@ -309,6 +313,7 @@ Blockly.Blocks['client_users'] = {
     });
   }
 };
+
 Blockly.Blocks['client_guilds'] = {
   init: function() {
     this.jsonInit({
@@ -324,6 +329,7 @@ Blockly.Blocks['client_guilds'] = {
     });
   }
 };
+
 Blockly.Blocks['client_channels'] = {
   init: function() {
     this.jsonInit({
@@ -339,6 +345,7 @@ Blockly.Blocks['client_channels'] = {
     });
   }
 };
+
 Blockly.Blocks['client_sweepers'] = {
   init: function() {
     this.jsonInit({
@@ -354,6 +361,7 @@ Blockly.Blocks['client_sweepers'] = {
     });
   }
 };
+
 Blockly.Blocks['client_token'] = {
   init: function() {
     this.jsonInit({
@@ -369,6 +377,7 @@ Blockly.Blocks['client_token'] = {
     });
   }
 };
+
 Blockly.Blocks['client_user'] = {
   init: function() {
     this.jsonInit({
@@ -384,6 +393,7 @@ Blockly.Blocks['client_user'] = {
     });
   }
 };
+
 Blockly.Blocks['client_application'] = {
   init: function() {
     this.jsonInit({
@@ -399,6 +409,7 @@ Blockly.Blocks['client_application'] = {
     });
   }
 };
+
 Blockly.Blocks['client_readyAt'] = {
   init: function() {
     this.jsonInit({
@@ -414,6 +425,7 @@ Blockly.Blocks['client_readyAt'] = {
     });
   }
 };
+
 Blockly.Blocks['client_emojis'] = {
   init: function() {
     this.jsonInit({
@@ -429,6 +441,7 @@ Blockly.Blocks['client_emojis'] = {
     });
   }
 };
+
 Blockly.Blocks['client_readyTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -444,6 +457,7 @@ Blockly.Blocks['client_readyTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['client_uptime'] = {
   init: function() {
     this.jsonInit({
@@ -459,6 +473,7 @@ Blockly.Blocks['client_uptime'] = {
     });
   }
 };
+
 Blockly.Blocks['client_options'] = {
   init: function() {
     this.jsonInit({
@@ -474,6 +489,7 @@ Blockly.Blocks['client_options'] = {
     });
   }
 };
+
 Blockly.Blocks['client_login'] = {
   init: function() {
     this.jsonInit({
@@ -493,6 +509,7 @@ Blockly.Blocks['client_login'] = {
     });
   }
 };
+
 Blockly.Blocks['client_isReady'] = {
   init: function() {
     this.jsonInit({
@@ -508,6 +525,7 @@ Blockly.Blocks['client_isReady'] = {
     });
   }
 };
+
 Blockly.Blocks['client_destroy'] = {
   init: function() {
     this.jsonInit({
@@ -523,6 +541,7 @@ Blockly.Blocks['client_destroy'] = {
     });
   }
 };
+
 Blockly.Blocks['client_fetchInvite'] = {
   init: function() {
     this.jsonInit({
@@ -546,6 +565,7 @@ Blockly.Blocks['client_fetchInvite'] = {
     });
   }
 };
+
 Blockly.Blocks['client_fetchGuildTemplate'] = {
   init: function() {
     this.jsonInit({
@@ -565,6 +585,7 @@ Blockly.Blocks['client_fetchGuildTemplate'] = {
     });
   }
 };
+
 Blockly.Blocks['client_fetchWebhook'] = {
   init: function() {
     this.jsonInit({
@@ -588,6 +609,7 @@ Blockly.Blocks['client_fetchWebhook'] = {
     });
   }
 };
+
 Blockly.Blocks['client_fetchVoiceRegions'] = {
   init: function() {
     this.jsonInit({
@@ -603,6 +625,7 @@ Blockly.Blocks['client_fetchVoiceRegions'] = {
     });
   }
 };
+
 Blockly.Blocks['client_fetchSticker'] = {
   init: function() {
     this.jsonInit({
@@ -622,6 +645,7 @@ Blockly.Blocks['client_fetchSticker'] = {
     });
   }
 };
+
 Blockly.Blocks['client_fetchPremiumStickerPacks'] = {
   init: function() {
     this.jsonInit({
@@ -637,6 +661,7 @@ Blockly.Blocks['client_fetchPremiumStickerPacks'] = {
     });
   }
 };
+
 Blockly.Blocks['client_sweepMessages'] = {
   init: function() {
     this.jsonInit({
@@ -656,6 +681,7 @@ Blockly.Blocks['client_sweepMessages'] = {
     });
   }
 };
+
 Blockly.Blocks['client_fetchGuildPreview'] = {
   init: function() {
     this.jsonInit({
@@ -675,6 +701,7 @@ Blockly.Blocks['client_fetchGuildPreview'] = {
     });
   }
 };
+
 Blockly.Blocks['client_fetchGuildWidget'] = {
   init: function() {
     this.jsonInit({
@@ -694,6 +721,7 @@ Blockly.Blocks['client_fetchGuildWidget'] = {
     });
   }
 };
+
 Blockly.Blocks['client_generateInvite'] = {
   init: function() {
     this.jsonInit({

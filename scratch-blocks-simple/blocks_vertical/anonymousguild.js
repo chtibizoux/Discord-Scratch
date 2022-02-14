@@ -21,6 +21,7 @@ Blockly.Blocks['anonymousguild_splash'] = {
     });
   }
 };
+
 Blockly.Blocks['anonymousguild_banner'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['anonymousguild_banner'] = {
     });
   }
 };
+
 Blockly.Blocks['anonymousguild_description'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['anonymousguild_description'] = {
     });
   }
 };
+
 Blockly.Blocks['anonymousguild_verificationLevel'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['anonymousguild_verificationLevel'] = {
     });
   }
 };
+
 Blockly.Blocks['anonymousguild_vanityURLCode'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['anonymousguild_vanityURLCode'] = {
     });
   }
 };
+
 Blockly.Blocks['anonymousguild_nsfwLevel'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['anonymousguild_nsfwLevel'] = {
     });
   }
 };
+
 Blockly.Blocks['anonymousguild_id'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['anonymousguild_id'] = {
     });
   }
 };
+
 Blockly.Blocks['anonymousguild_name'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['anonymousguild_name'] = {
     });
   }
 };
+
 Blockly.Blocks['anonymousguild_icon'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['anonymousguild_icon'] = {
     });
   }
 };
+
 Blockly.Blocks['anonymousguild_features'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['anonymousguild_features'] = {
     });
   }
 };
+
 Blockly.Blocks['anonymousguild_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['anonymousguild_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['anonymousguild_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['anonymousguild_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['anonymousguild_nameAcronym'] = {
   init: function() {
     this.jsonInit({
@@ -201,6 +213,7 @@ Blockly.Blocks['anonymousguild_nameAcronym'] = {
     });
   }
 };
+
 Blockly.Blocks['anonymousguild_partnered'] = {
   init: function() {
     this.jsonInit({
@@ -216,6 +229,7 @@ Blockly.Blocks['anonymousguild_partnered'] = {
     });
   }
 };
+
 Blockly.Blocks['anonymousguild_verified'] = {
   init: function() {
     this.jsonInit({
@@ -231,6 +245,7 @@ Blockly.Blocks['anonymousguild_verified'] = {
     });
   }
 };
+
 Blockly.Blocks['anonymousguild_client'] = {
   init: function() {
     this.jsonInit({
@@ -246,6 +261,7 @@ Blockly.Blocks['anonymousguild_client'] = {
     });
   }
 };
+
 Blockly.Blocks['anonymousguild_bannerURL'] = {
   init: function() {
     this.jsonInit({
@@ -265,6 +281,7 @@ Blockly.Blocks['anonymousguild_bannerURL'] = {
     });
   }
 };
+
 Blockly.Blocks['anonymousguild_splashURL'] = {
   init: function() {
     this.jsonInit({
@@ -284,6 +301,7 @@ Blockly.Blocks['anonymousguild_splashURL'] = {
     });
   }
 };
+
 Blockly.Blocks['anonymousguild_iconURL'] = {
   init: function() {
     this.jsonInit({
@@ -303,6 +321,7 @@ Blockly.Blocks['anonymousguild_iconURL'] = {
     });
   }
 };
+
 Blockly.Blocks['anonymousguild_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -318,6 +337,7 @@ Blockly.Blocks['anonymousguild_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['anonymousguild_toString'] = {
   init: function() {
     this.jsonInit({

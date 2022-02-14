@@ -21,6 +21,7 @@ Blockly.Blocks['interactionwebhook_client'] = {
     });
   }
 };
+
 Blockly.Blocks['interactionwebhook_id'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['interactionwebhook_id'] = {
     });
   }
 };
+
 Blockly.Blocks['interactionwebhook_url'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['interactionwebhook_url'] = {
     });
   }
 };
+
 Blockly.Blocks['interactionwebhook_send'] = {
   init: function() {
     this.jsonInit({
@@ -70,6 +73,7 @@ Blockly.Blocks['interactionwebhook_send'] = {
     });
   }
 };
+
 Blockly.Blocks['interactionwebhook_fetchMessage'] = {
   init: function() {
     this.jsonInit({
@@ -93,6 +97,7 @@ Blockly.Blocks['interactionwebhook_fetchMessage'] = {
     });
   }
 };
+
 Blockly.Blocks['interactionwebhook_editMessage'] = {
   init: function() {
     this.jsonInit({
@@ -116,6 +121,7 @@ Blockly.Blocks['interactionwebhook_editMessage'] = {
     });
   }
 };
+
 Blockly.Blocks['interactionwebhook_deleteMessage'] = {
   init: function() {
     this.jsonInit({

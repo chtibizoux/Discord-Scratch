@@ -21,6 +21,7 @@ Blockly.Blocks['discordapierror_method'] = {
     });
   }
 };
+
 Blockly.Blocks['discordapierror_path'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['discordapierror_path'] = {
     });
   }
 };
+
 Blockly.Blocks['discordapierror_code'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['discordapierror_code'] = {
     });
   }
 };
+
 Blockly.Blocks['discordapierror_httpStatus'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['discordapierror_httpStatus'] = {
     });
   }
 };
+
 Blockly.Blocks['discordapierror_requestData'] = {
   init: function() {
     this.jsonInit({

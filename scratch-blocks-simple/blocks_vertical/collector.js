@@ -54,6 +54,7 @@ Blockly.Blocks['collector_on'] = {
     }
   }
 };
+
 Blockly.Blocks['collector_client'] = {
   init: function() {
     this.jsonInit({
@@ -69,6 +70,7 @@ Blockly.Blocks['collector_client'] = {
     });
   }
 };
+
 Blockly.Blocks['collector_filter'] = {
   init: function() {
     this.jsonInit({
@@ -84,6 +86,7 @@ Blockly.Blocks['collector_filter'] = {
     });
   }
 };
+
 Blockly.Blocks['collector_options'] = {
   init: function() {
     this.jsonInit({
@@ -99,6 +102,7 @@ Blockly.Blocks['collector_options'] = {
     });
   }
 };
+
 Blockly.Blocks['collector_collected'] = {
   init: function() {
     this.jsonInit({
@@ -114,6 +118,7 @@ Blockly.Blocks['collector_collected'] = {
     });
   }
 };
+
 Blockly.Blocks['collector_ended'] = {
   init: function() {
     this.jsonInit({
@@ -129,6 +134,7 @@ Blockly.Blocks['collector_ended'] = {
     });
   }
 };
+
 Blockly.Blocks['collector_next'] = {
   init: function() {
     this.jsonInit({
@@ -144,6 +150,7 @@ Blockly.Blocks['collector_next'] = {
     });
   }
 };
+
 Blockly.Blocks['collector_endReason'] = {
   init: function() {
     this.jsonInit({
@@ -159,6 +166,7 @@ Blockly.Blocks['collector_endReason'] = {
     });
   }
 };
+
 Blockly.Blocks['collector_handleCollect'] = {
   init: function() {
     this.jsonInit({
@@ -178,6 +186,7 @@ Blockly.Blocks['collector_handleCollect'] = {
     });
   }
 };
+
 Blockly.Blocks['collector_handleDispose'] = {
   init: function() {
     this.jsonInit({
@@ -197,6 +206,7 @@ Blockly.Blocks['collector_handleDispose'] = {
     });
   }
 };
+
 Blockly.Blocks['collector_stop'] = {
   init: function() {
     this.jsonInit({
@@ -216,6 +226,7 @@ Blockly.Blocks['collector_stop'] = {
     });
   }
 };
+
 Blockly.Blocks['collector_resetTimer'] = {
   init: function() {
     this.jsonInit({
@@ -235,6 +246,7 @@ Blockly.Blocks['collector_resetTimer'] = {
     });
   }
 };
+
 Blockly.Blocks['collector_checkEnd'] = {
   init: function() {
     this.jsonInit({
@@ -250,6 +262,7 @@ Blockly.Blocks['collector_checkEnd'] = {
     });
   }
 };
+
 Blockly.Blocks['collector_collect'] = {
   init: function() {
     this.jsonInit({
@@ -269,6 +282,7 @@ Blockly.Blocks['collector_collect'] = {
     });
   }
 };
+
 Blockly.Blocks['collector_dispose'] = {
   init: function() {
     this.jsonInit({

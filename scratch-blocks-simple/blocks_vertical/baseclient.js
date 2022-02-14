@@ -60,6 +60,7 @@ Blockly.Blocks['baseclient_on'] = {
     }
   }
 };
+
 Blockly.Blocks['baseclient_options'] = {
   init: function() {
     this.jsonInit({
@@ -75,6 +76,7 @@ Blockly.Blocks['baseclient_options'] = {
     });
   }
 };
+
 Blockly.Blocks['baseclient_destroy'] = {
   init: function() {
     this.jsonInit({

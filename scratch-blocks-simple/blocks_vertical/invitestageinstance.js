@@ -21,6 +21,7 @@ Blockly.Blocks['invitestageinstance_channelId'] = {
     });
   }
 };
+
 Blockly.Blocks['invitestageinstance_guildId'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['invitestageinstance_guildId'] = {
     });
   }
 };
+
 Blockly.Blocks['invitestageinstance_members'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['invitestageinstance_members'] = {
     });
   }
 };
+
 Blockly.Blocks['invitestageinstance_topic'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['invitestageinstance_topic'] = {
     });
   }
 };
+
 Blockly.Blocks['invitestageinstance_participantCount'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['invitestageinstance_participantCount'] = {
     });
   }
 };
+
 Blockly.Blocks['invitestageinstance_speakerCount'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['invitestageinstance_speakerCount'] = {
     });
   }
 };
+
 Blockly.Blocks['invitestageinstance_channel'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['invitestageinstance_channel'] = {
     });
   }
 };
+
 Blockly.Blocks['invitestageinstance_guild'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['invitestageinstance_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['invitestageinstance_client'] = {
   init: function() {
     this.jsonInit({

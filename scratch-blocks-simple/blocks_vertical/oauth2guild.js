@@ -21,6 +21,7 @@ Blockly.Blocks['oauth2guild_owner'] = {
     });
   }
 };
+
 Blockly.Blocks['oauth2guild_permissions'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['oauth2guild_permissions'] = {
     });
   }
 };
+
 Blockly.Blocks['oauth2guild_id'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['oauth2guild_id'] = {
     });
   }
 };
+
 Blockly.Blocks['oauth2guild_name'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['oauth2guild_name'] = {
     });
   }
 };
+
 Blockly.Blocks['oauth2guild_icon'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['oauth2guild_icon'] = {
     });
   }
 };
+
 Blockly.Blocks['oauth2guild_features'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['oauth2guild_features'] = {
     });
   }
 };
+
 Blockly.Blocks['oauth2guild_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['oauth2guild_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['oauth2guild_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['oauth2guild_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['oauth2guild_nameAcronym'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['oauth2guild_nameAcronym'] = {
     });
   }
 };
+
 Blockly.Blocks['oauth2guild_partnered'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['oauth2guild_partnered'] = {
     });
   }
 };
+
 Blockly.Blocks['oauth2guild_verified'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['oauth2guild_verified'] = {
     });
   }
 };
+
 Blockly.Blocks['oauth2guild_client'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['oauth2guild_client'] = {
     });
   }
 };
+
 Blockly.Blocks['oauth2guild_iconURL'] = {
   init: function() {
     this.jsonInit({
@@ -205,6 +217,7 @@ Blockly.Blocks['oauth2guild_iconURL'] = {
     });
   }
 };
+
 Blockly.Blocks['oauth2guild_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -220,6 +233,7 @@ Blockly.Blocks['oauth2guild_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['oauth2guild_toString'] = {
   init: function() {
     this.jsonInit({

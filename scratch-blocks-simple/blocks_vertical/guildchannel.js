@@ -21,6 +21,7 @@ Blockly.Blocks['guildchannel_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_guildId'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['guildchannel_guildId'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_permissionOverwrites'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['guildchannel_permissionOverwrites'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_name'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['guildchannel_name'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_rawPosition'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['guildchannel_rawPosition'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_parentId'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['guildchannel_parentId'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_parent'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['guildchannel_parent'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_permissionsLocked'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['guildchannel_permissionsLocked'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_position'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['guildchannel_position'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_members'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['guildchannel_members'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_deletable'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['guildchannel_deletable'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_manageable'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['guildchannel_manageable'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_viewable'] = {
   init: function() {
     this.jsonInit({
@@ -201,6 +213,7 @@ Blockly.Blocks['guildchannel_viewable'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_type'] = {
   init: function() {
     this.jsonInit({
@@ -216,6 +229,7 @@ Blockly.Blocks['guildchannel_type'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_id'] = {
   init: function() {
     this.jsonInit({
@@ -231,6 +245,7 @@ Blockly.Blocks['guildchannel_id'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -246,6 +261,7 @@ Blockly.Blocks['guildchannel_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -261,6 +277,7 @@ Blockly.Blocks['guildchannel_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_partial'] = {
   init: function() {
     this.jsonInit({
@@ -276,6 +293,7 @@ Blockly.Blocks['guildchannel_partial'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_client'] = {
   init: function() {
     this.jsonInit({
@@ -291,6 +309,7 @@ Blockly.Blocks['guildchannel_client'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_permissionsFor'] = {
   init: function() {
     this.jsonInit({
@@ -314,6 +333,7 @@ Blockly.Blocks['guildchannel_permissionsFor'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_lockPermissions'] = {
   init: function() {
     this.jsonInit({
@@ -329,6 +349,7 @@ Blockly.Blocks['guildchannel_lockPermissions'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_edit'] = {
   init: function() {
     this.jsonInit({
@@ -352,6 +373,7 @@ Blockly.Blocks['guildchannel_edit'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_setName'] = {
   init: function() {
     this.jsonInit({
@@ -375,6 +397,7 @@ Blockly.Blocks['guildchannel_setName'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_setParent'] = {
   init: function() {
     this.jsonInit({
@@ -398,6 +421,7 @@ Blockly.Blocks['guildchannel_setParent'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_setPosition'] = {
   init: function() {
     this.jsonInit({
@@ -421,6 +445,7 @@ Blockly.Blocks['guildchannel_setPosition'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_clone'] = {
   init: function() {
     this.jsonInit({
@@ -440,6 +465,7 @@ Blockly.Blocks['guildchannel_clone'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_equals'] = {
   init: function() {
     this.jsonInit({
@@ -459,6 +485,7 @@ Blockly.Blocks['guildchannel_equals'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_delete'] = {
   init: function() {
     this.jsonInit({
@@ -478,6 +505,7 @@ Blockly.Blocks['guildchannel_delete'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_toString'] = {
   init: function() {
     this.jsonInit({
@@ -493,6 +521,7 @@ Blockly.Blocks['guildchannel_toString'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -512,6 +541,7 @@ Blockly.Blocks['guildchannel_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_isText'] = {
   init: function() {
     this.jsonInit({
@@ -527,6 +557,7 @@ Blockly.Blocks['guildchannel_isText'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_isVoice'] = {
   init: function() {
     this.jsonInit({
@@ -542,6 +573,7 @@ Blockly.Blocks['guildchannel_isVoice'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannel_isThread'] = {
   init: function() {
     this.jsonInit({

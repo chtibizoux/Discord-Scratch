@@ -21,6 +21,7 @@ Blockly.Blocks['rolemanager_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['rolemanager_cache'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['rolemanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['rolemanager_everyone'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['rolemanager_everyone'] = {
     });
   }
 };
+
 Blockly.Blocks['rolemanager_premiumSubscriberRole'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['rolemanager_premiumSubscriberRole'] = {
     });
   }
 };
+
 Blockly.Blocks['rolemanager_highest'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['rolemanager_highest'] = {
     });
   }
 };
+
 Blockly.Blocks['rolemanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['rolemanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['rolemanager_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -119,6 +125,7 @@ Blockly.Blocks['rolemanager_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['rolemanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -138,6 +145,7 @@ Blockly.Blocks['rolemanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['rolemanager_resolveId'] = {
   init: function() {
     this.jsonInit({
@@ -157,6 +165,7 @@ Blockly.Blocks['rolemanager_resolveId'] = {
     });
   }
 };
+
 Blockly.Blocks['rolemanager_create'] = {
   init: function() {
     this.jsonInit({
@@ -176,6 +185,7 @@ Blockly.Blocks['rolemanager_create'] = {
     });
   }
 };
+
 Blockly.Blocks['rolemanager_edit'] = {
   init: function() {
     this.jsonInit({
@@ -203,6 +213,7 @@ Blockly.Blocks['rolemanager_edit'] = {
     });
   }
 };
+
 Blockly.Blocks['rolemanager_delete'] = {
   init: function() {
     this.jsonInit({
@@ -226,6 +237,7 @@ Blockly.Blocks['rolemanager_delete'] = {
     });
   }
 };
+
 Blockly.Blocks['rolemanager_setPositions'] = {
   init: function() {
     this.jsonInit({
@@ -245,6 +257,7 @@ Blockly.Blocks['rolemanager_setPositions'] = {
     });
   }
 };
+
 Blockly.Blocks['rolemanager_comparePositions'] = {
   init: function() {
     this.jsonInit({
@@ -268,6 +281,7 @@ Blockly.Blocks['rolemanager_comparePositions'] = {
     });
   }
 };
+
 Blockly.Blocks['rolemanager_botRoleFor'] = {
   init: function() {
     this.jsonInit({

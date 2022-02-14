@@ -21,6 +21,7 @@ Blockly.Blocks['snowflakeutil_EPOCH'] = {
     });
   }
 };
+
 Blockly.Blocks['snowflakeutil_generate'] = {
   init: function() {
     this.jsonInit({
@@ -40,6 +41,7 @@ Blockly.Blocks['snowflakeutil_generate'] = {
     });
   }
 };
+
 Blockly.Blocks['snowflakeutil_deconstruct'] = {
   init: function() {
     this.jsonInit({
@@ -59,6 +61,7 @@ Blockly.Blocks['snowflakeutil_deconstruct'] = {
     });
   }
 };
+
 Blockly.Blocks['snowflakeutil_timestampFrom'] = {
   init: function() {
     this.jsonInit({

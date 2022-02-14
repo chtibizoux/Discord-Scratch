@@ -21,6 +21,7 @@ Blockly.Blocks['guildmemberrolemanager_member'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmemberrolemanager_guild'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['guildmemberrolemanager_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmemberrolemanager_cache'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['guildmemberrolemanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmemberrolemanager_hoist'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['guildmemberrolemanager_hoist'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmemberrolemanager_icon'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['guildmemberrolemanager_icon'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmemberrolemanager_color'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['guildmemberrolemanager_color'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmemberrolemanager_highest'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['guildmemberrolemanager_highest'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmemberrolemanager_premiumSubscriberRole'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['guildmemberrolemanager_premiumSubscriberRole'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmemberrolemanager_botRole'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['guildmemberrolemanager_botRole'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmemberrolemanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['guildmemberrolemanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmemberrolemanager_add'] = {
   init: function() {
     this.jsonInit({
@@ -179,6 +189,7 @@ Blockly.Blocks['guildmemberrolemanager_add'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmemberrolemanager_remove'] = {
   init: function() {
     this.jsonInit({
@@ -202,6 +213,7 @@ Blockly.Blocks['guildmemberrolemanager_remove'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmemberrolemanager_set'] = {
   init: function() {
     this.jsonInit({
@@ -225,6 +237,7 @@ Blockly.Blocks['guildmemberrolemanager_set'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmemberrolemanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -244,6 +257,7 @@ Blockly.Blocks['guildmemberrolemanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['guildmemberrolemanager_resolveId'] = {
   init: function() {
     this.jsonInit({

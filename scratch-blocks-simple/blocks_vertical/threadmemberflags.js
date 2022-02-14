@@ -21,6 +21,7 @@ Blockly.Blocks['threadmemberflags_bitfield'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmemberflags_FLAGS'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['threadmemberflags_FLAGS'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmemberflags_any'] = {
   init: function() {
     this.jsonInit({
@@ -55,6 +57,7 @@ Blockly.Blocks['threadmemberflags_any'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmemberflags_equals'] = {
   init: function() {
     this.jsonInit({
@@ -74,6 +77,7 @@ Blockly.Blocks['threadmemberflags_equals'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmemberflags_has'] = {
   init: function() {
     this.jsonInit({
@@ -93,6 +97,7 @@ Blockly.Blocks['threadmemberflags_has'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmemberflags_missing'] = {
   init: function() {
     this.jsonInit({
@@ -116,6 +121,7 @@ Blockly.Blocks['threadmemberflags_missing'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmemberflags_freeze'] = {
   init: function() {
     this.jsonInit({
@@ -131,6 +137,7 @@ Blockly.Blocks['threadmemberflags_freeze'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmemberflags_add'] = {
   init: function() {
     this.jsonInit({
@@ -150,6 +157,7 @@ Blockly.Blocks['threadmemberflags_add'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmemberflags_remove'] = {
   init: function() {
     this.jsonInit({
@@ -169,6 +177,7 @@ Blockly.Blocks['threadmemberflags_remove'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmemberflags_serialize'] = {
   init: function() {
     this.jsonInit({
@@ -188,6 +197,7 @@ Blockly.Blocks['threadmemberflags_serialize'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmemberflags_toArray'] = {
   init: function() {
     this.jsonInit({

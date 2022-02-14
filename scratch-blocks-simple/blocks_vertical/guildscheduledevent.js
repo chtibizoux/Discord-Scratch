@@ -21,6 +21,7 @@ Blockly.Blocks['guildscheduledevent_id'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_guildId'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['guildscheduledevent_guildId'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_channelId'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['guildscheduledevent_channelId'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_creatorId'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['guildscheduledevent_creatorId'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_name'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['guildscheduledevent_name'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_description'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['guildscheduledevent_description'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_scheduledStartTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['guildscheduledevent_scheduledStartTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_scheduledEndTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['guildscheduledevent_scheduledEndTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_privacyLevel'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['guildscheduledevent_privacyLevel'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_status'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['guildscheduledevent_status'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_entityType'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['guildscheduledevent_entityType'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_entityId'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['guildscheduledevent_entityId'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_userCount'] = {
   init: function() {
     this.jsonInit({
@@ -201,6 +213,7 @@ Blockly.Blocks['guildscheduledevent_userCount'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_creator'] = {
   init: function() {
     this.jsonInit({
@@ -216,6 +229,7 @@ Blockly.Blocks['guildscheduledevent_creator'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_entityMetadata'] = {
   init: function() {
     this.jsonInit({
@@ -231,6 +245,7 @@ Blockly.Blocks['guildscheduledevent_entityMetadata'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -246,6 +261,7 @@ Blockly.Blocks['guildscheduledevent_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -261,6 +277,7 @@ Blockly.Blocks['guildscheduledevent_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_scheduledStartAt'] = {
   init: function() {
     this.jsonInit({
@@ -276,6 +293,7 @@ Blockly.Blocks['guildscheduledevent_scheduledStartAt'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_scheduledEndAt'] = {
   init: function() {
     this.jsonInit({
@@ -291,6 +309,7 @@ Blockly.Blocks['guildscheduledevent_scheduledEndAt'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_channel'] = {
   init: function() {
     this.jsonInit({
@@ -306,6 +325,7 @@ Blockly.Blocks['guildscheduledevent_channel'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_guild'] = {
   init: function() {
     this.jsonInit({
@@ -321,6 +341,7 @@ Blockly.Blocks['guildscheduledevent_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_url'] = {
   init: function() {
     this.jsonInit({
@@ -336,6 +357,7 @@ Blockly.Blocks['guildscheduledevent_url'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_client'] = {
   init: function() {
     this.jsonInit({
@@ -351,6 +373,7 @@ Blockly.Blocks['guildscheduledevent_client'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_createInviteURL'] = {
   init: function() {
     this.jsonInit({
@@ -370,6 +393,7 @@ Blockly.Blocks['guildscheduledevent_createInviteURL'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_edit'] = {
   init: function() {
     this.jsonInit({
@@ -389,6 +413,7 @@ Blockly.Blocks['guildscheduledevent_edit'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_delete'] = {
   init: function() {
     this.jsonInit({
@@ -404,6 +429,7 @@ Blockly.Blocks['guildscheduledevent_delete'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_setName'] = {
   init: function() {
     this.jsonInit({
@@ -427,6 +453,7 @@ Blockly.Blocks['guildscheduledevent_setName'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_setScheduledStartTime'] = {
   init: function() {
     this.jsonInit({
@@ -450,6 +477,7 @@ Blockly.Blocks['guildscheduledevent_setScheduledStartTime'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_setScheduledEndTime'] = {
   init: function() {
     this.jsonInit({
@@ -473,6 +501,7 @@ Blockly.Blocks['guildscheduledevent_setScheduledEndTime'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_setDescription'] = {
   init: function() {
     this.jsonInit({
@@ -496,6 +525,7 @@ Blockly.Blocks['guildscheduledevent_setDescription'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_setStatus'] = {
   init: function() {
     this.jsonInit({
@@ -519,6 +549,7 @@ Blockly.Blocks['guildscheduledevent_setStatus'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_setLocation'] = {
   init: function() {
     this.jsonInit({
@@ -542,6 +573,7 @@ Blockly.Blocks['guildscheduledevent_setLocation'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_fetchSubscribers'] = {
   init: function() {
     this.jsonInit({
@@ -561,6 +593,7 @@ Blockly.Blocks['guildscheduledevent_fetchSubscribers'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_toString'] = {
   init: function() {
     this.jsonInit({
@@ -576,6 +609,7 @@ Blockly.Blocks['guildscheduledevent_toString'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_isActive'] = {
   init: function() {
     this.jsonInit({
@@ -591,6 +625,7 @@ Blockly.Blocks['guildscheduledevent_isActive'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_isCanceled'] = {
   init: function() {
     this.jsonInit({
@@ -606,6 +641,7 @@ Blockly.Blocks['guildscheduledevent_isCanceled'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_isCompleted'] = {
   init: function() {
     this.jsonInit({
@@ -621,6 +657,7 @@ Blockly.Blocks['guildscheduledevent_isCompleted'] = {
     });
   }
 };
+
 Blockly.Blocks['guildscheduledevent_isScheduled'] = {
   init: function() {
     this.jsonInit({

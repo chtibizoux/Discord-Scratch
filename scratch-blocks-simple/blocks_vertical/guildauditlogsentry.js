@@ -21,6 +21,7 @@ Blockly.Blocks['guildauditlogsentry_targetType'] = {
     });
   }
 };
+
 Blockly.Blocks['guildauditlogsentry_actionType'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['guildauditlogsentry_actionType'] = {
     });
   }
 };
+
 Blockly.Blocks['guildauditlogsentry_action'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['guildauditlogsentry_action'] = {
     });
   }
 };
+
 Blockly.Blocks['guildauditlogsentry_reason'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['guildauditlogsentry_reason'] = {
     });
   }
 };
+
 Blockly.Blocks['guildauditlogsentry_executor'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['guildauditlogsentry_executor'] = {
     });
   }
 };
+
 Blockly.Blocks['guildauditlogsentry_changes'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['guildauditlogsentry_changes'] = {
     });
   }
 };
+
 Blockly.Blocks['guildauditlogsentry_id'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['guildauditlogsentry_id'] = {
     });
   }
 };
+
 Blockly.Blocks['guildauditlogsentry_extra'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['guildauditlogsentry_extra'] = {
     });
   }
 };
+
 Blockly.Blocks['guildauditlogsentry_target'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['guildauditlogsentry_target'] = {
     });
   }
 };
+
 Blockly.Blocks['guildauditlogsentry_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['guildauditlogsentry_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['guildauditlogsentry_createdAt'] = {
   init: function() {
     this.jsonInit({

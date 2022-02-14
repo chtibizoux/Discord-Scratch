@@ -21,6 +21,7 @@ Blockly.Blocks['baseguildemojimanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildemojimanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['baseguildemojimanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildemojimanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -55,6 +57,7 @@ Blockly.Blocks['baseguildemojimanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildemojimanager_resolveId'] = {
   init: function() {
     this.jsonInit({
@@ -74,6 +77,7 @@ Blockly.Blocks['baseguildemojimanager_resolveId'] = {
     });
   }
 };
+
 Blockly.Blocks['baseguildemojimanager_resolveIdentifier'] = {
   init: function() {
     this.jsonInit({

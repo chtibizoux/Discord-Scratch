@@ -21,6 +21,7 @@ Blockly.Blocks['limitedcollection_maxSize'] = {
     });
   }
 };
+
 Blockly.Blocks['limitedcollection_keepOverLimit'] = {
   init: function() {
     this.jsonInit({

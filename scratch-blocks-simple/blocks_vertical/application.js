@@ -21,6 +21,7 @@ Blockly.Blocks['application_id'] = {
     });
   }
 };
+
 Blockly.Blocks['application_name'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['application_name'] = {
     });
   }
 };
+
 Blockly.Blocks['application_description'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['application_description'] = {
     });
   }
 };
+
 Blockly.Blocks['application_icon'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['application_icon'] = {
     });
   }
 };
+
 Blockly.Blocks['application_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['application_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['application_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['application_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['application_iconURL'] = {
   init: function() {
     this.jsonInit({
@@ -115,6 +121,7 @@ Blockly.Blocks['application_iconURL'] = {
     });
   }
 };
+
 Blockly.Blocks['application_coverURL'] = {
   init: function() {
     this.jsonInit({
@@ -134,6 +141,7 @@ Blockly.Blocks['application_coverURL'] = {
     });
   }
 };
+
 Blockly.Blocks['application_fetchAssets'] = {
   init: function() {
     this.jsonInit({
@@ -149,6 +157,7 @@ Blockly.Blocks['application_fetchAssets'] = {
     });
   }
 };
+
 Blockly.Blocks['application_toString'] = {
   init: function() {
     this.jsonInit({

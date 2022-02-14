@@ -21,6 +21,7 @@ Blockly.Blocks['user_id'] = {
     });
   }
 };
+
 Blockly.Blocks['user_username'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['user_username'] = {
     });
   }
 };
+
 Blockly.Blocks['user_bot'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['user_bot'] = {
     });
   }
 };
+
 Blockly.Blocks['user_discriminator'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['user_discriminator'] = {
     });
   }
 };
+
 Blockly.Blocks['user_avatar'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['user_avatar'] = {
     });
   }
 };
+
 Blockly.Blocks['user_banner'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['user_banner'] = {
     });
   }
 };
+
 Blockly.Blocks['user_accentColor'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['user_accentColor'] = {
     });
   }
 };
+
 Blockly.Blocks['user_system'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['user_system'] = {
     });
   }
 };
+
 Blockly.Blocks['user_flags'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['user_flags'] = {
     });
   }
 };
+
 Blockly.Blocks['user_partial'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['user_partial'] = {
     });
   }
 };
+
 Blockly.Blocks['user_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['user_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['user_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['user_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['user_defaultAvatarURL'] = {
   init: function() {
     this.jsonInit({
@@ -201,6 +213,7 @@ Blockly.Blocks['user_defaultAvatarURL'] = {
     });
   }
 };
+
 Blockly.Blocks['user_hexAccentColor'] = {
   init: function() {
     this.jsonInit({
@@ -216,6 +229,7 @@ Blockly.Blocks['user_hexAccentColor'] = {
     });
   }
 };
+
 Blockly.Blocks['user_tag'] = {
   init: function() {
     this.jsonInit({
@@ -231,6 +245,7 @@ Blockly.Blocks['user_tag'] = {
     });
   }
 };
+
 Blockly.Blocks['user_dmChannel'] = {
   init: function() {
     this.jsonInit({
@@ -246,6 +261,7 @@ Blockly.Blocks['user_dmChannel'] = {
     });
   }
 };
+
 Blockly.Blocks['user_client'] = {
   init: function() {
     this.jsonInit({
@@ -261,6 +277,7 @@ Blockly.Blocks['user_client'] = {
     });
   }
 };
+
 Blockly.Blocks['user_avatarURL'] = {
   init: function() {
     this.jsonInit({
@@ -280,6 +297,7 @@ Blockly.Blocks['user_avatarURL'] = {
     });
   }
 };
+
 Blockly.Blocks['user_displayAvatarURL'] = {
   init: function() {
     this.jsonInit({
@@ -299,6 +317,7 @@ Blockly.Blocks['user_displayAvatarURL'] = {
     });
   }
 };
+
 Blockly.Blocks['user_bannerURL'] = {
   init: function() {
     this.jsonInit({
@@ -318,6 +337,7 @@ Blockly.Blocks['user_bannerURL'] = {
     });
   }
 };
+
 Blockly.Blocks['user_createDM'] = {
   init: function() {
     this.jsonInit({
@@ -337,6 +357,7 @@ Blockly.Blocks['user_createDM'] = {
     });
   }
 };
+
 Blockly.Blocks['user_deleteDM'] = {
   init: function() {
     this.jsonInit({
@@ -352,6 +373,7 @@ Blockly.Blocks['user_deleteDM'] = {
     });
   }
 };
+
 Blockly.Blocks['user_equals'] = {
   init: function() {
     this.jsonInit({
@@ -371,6 +393,7 @@ Blockly.Blocks['user_equals'] = {
     });
   }
 };
+
 Blockly.Blocks['user_fetchFlags'] = {
   init: function() {
     this.jsonInit({
@@ -390,6 +413,7 @@ Blockly.Blocks['user_fetchFlags'] = {
     });
   }
 };
+
 Blockly.Blocks['user_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -409,6 +433,7 @@ Blockly.Blocks['user_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['user_toString'] = {
   init: function() {
     this.jsonInit({
@@ -424,6 +449,7 @@ Blockly.Blocks['user_toString'] = {
     });
   }
 };
+
 Blockly.Blocks['user_send'] = {
   init: function() {
     this.jsonInit({

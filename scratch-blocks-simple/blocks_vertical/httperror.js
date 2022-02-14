@@ -21,6 +21,7 @@ Blockly.Blocks['httperror_name'] = {
     });
   }
 };
+
 Blockly.Blocks['httperror_code'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['httperror_code'] = {
     });
   }
 };
+
 Blockly.Blocks['httperror_method'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['httperror_method'] = {
     });
   }
 };
+
 Blockly.Blocks['httperror_path'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['httperror_path'] = {
     });
   }
 };
+
 Blockly.Blocks['httperror_requestData'] = {
   init: function() {
     this.jsonInit({

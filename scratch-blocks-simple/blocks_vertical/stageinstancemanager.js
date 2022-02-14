@@ -21,6 +21,7 @@ Blockly.Blocks['stageinstancemanager_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['stageinstancemanager_cache'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['stageinstancemanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['stageinstancemanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['stageinstancemanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['stageinstancemanager_create'] = {
   init: function() {
     this.jsonInit({
@@ -74,6 +77,7 @@ Blockly.Blocks['stageinstancemanager_create'] = {
     });
   }
 };
+
 Blockly.Blocks['stageinstancemanager_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -97,6 +101,7 @@ Blockly.Blocks['stageinstancemanager_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['stageinstancemanager_edit'] = {
   init: function() {
     this.jsonInit({
@@ -120,6 +125,7 @@ Blockly.Blocks['stageinstancemanager_edit'] = {
     });
   }
 };
+
 Blockly.Blocks['stageinstancemanager_delete'] = {
   init: function() {
     this.jsonInit({
@@ -139,6 +145,7 @@ Blockly.Blocks['stageinstancemanager_delete'] = {
     });
   }
 };
+
 Blockly.Blocks['stageinstancemanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -158,6 +165,7 @@ Blockly.Blocks['stageinstancemanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['stageinstancemanager_resolveId'] = {
   init: function() {
     this.jsonInit({

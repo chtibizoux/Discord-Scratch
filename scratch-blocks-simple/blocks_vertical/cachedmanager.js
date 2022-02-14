@@ -21,6 +21,7 @@ Blockly.Blocks['cachedmanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['cachedmanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['cachedmanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['cachedmanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -55,6 +57,7 @@ Blockly.Blocks['cachedmanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['cachedmanager_resolveId'] = {
   init: function() {
     this.jsonInit({

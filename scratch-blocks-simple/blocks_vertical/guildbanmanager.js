@@ -21,6 +21,7 @@ Blockly.Blocks['guildbanmanager_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['guildbanmanager_cache'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['guildbanmanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['guildbanmanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['guildbanmanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['guildbanmanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -70,6 +73,7 @@ Blockly.Blocks['guildbanmanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['guildbanmanager_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -89,6 +93,7 @@ Blockly.Blocks['guildbanmanager_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['guildbanmanager_create'] = {
   init: function() {
     this.jsonInit({
@@ -112,6 +117,7 @@ Blockly.Blocks['guildbanmanager_create'] = {
     });
   }
 };
+
 Blockly.Blocks['guildbanmanager_remove'] = {
   init: function() {
     this.jsonInit({
@@ -135,6 +141,7 @@ Blockly.Blocks['guildbanmanager_remove'] = {
     });
   }
 };
+
 Blockly.Blocks['guildbanmanager_resolveId'] = {
   init: function() {
     this.jsonInit({

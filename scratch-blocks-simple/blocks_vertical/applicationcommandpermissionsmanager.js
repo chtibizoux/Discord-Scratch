@@ -21,6 +21,7 @@ Blockly.Blocks['applicationcommandpermissionsmanager_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['applicationcommandpermissionsmanager_guildId'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['applicationcommandpermissionsmanager_guildId'] = {
     });
   }
 };
+
 Blockly.Blocks['applicationcommandpermissionsmanager_commandId'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['applicationcommandpermissionsmanager_commandId'] = {
     });
   }
 };
+
 Blockly.Blocks['applicationcommandpermissionsmanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['applicationcommandpermissionsmanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['applicationcommandpermissionsmanager_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -85,6 +89,7 @@ Blockly.Blocks['applicationcommandpermissionsmanager_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['applicationcommandpermissionsmanager_set'] = {
   init: function() {
     this.jsonInit({
@@ -104,6 +109,7 @@ Blockly.Blocks['applicationcommandpermissionsmanager_set'] = {
     });
   }
 };
+
 Blockly.Blocks['applicationcommandpermissionsmanager_add'] = {
   init: function() {
     this.jsonInit({
@@ -123,6 +129,7 @@ Blockly.Blocks['applicationcommandpermissionsmanager_add'] = {
     });
   }
 };
+
 Blockly.Blocks['applicationcommandpermissionsmanager_remove'] = {
   init: function() {
     this.jsonInit({
@@ -142,6 +149,7 @@ Blockly.Blocks['applicationcommandpermissionsmanager_remove'] = {
     });
   }
 };
+
 Blockly.Blocks['applicationcommandpermissionsmanager_has'] = {
   init: function() {
     this.jsonInit({

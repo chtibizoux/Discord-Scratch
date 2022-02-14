@@ -21,6 +21,7 @@ Blockly.Blocks['guildchannelmanager_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannelmanager_channelCountWithoutThreads'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['guildchannelmanager_channelCountWithoutThreads'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannelmanager_cache'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['guildchannelmanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannelmanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['guildchannelmanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannelmanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -85,6 +89,7 @@ Blockly.Blocks['guildchannelmanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannelmanager_resolveId'] = {
   init: function() {
     this.jsonInit({
@@ -104,6 +109,7 @@ Blockly.Blocks['guildchannelmanager_resolveId'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannelmanager_create'] = {
   init: function() {
     this.jsonInit({
@@ -127,6 +133,7 @@ Blockly.Blocks['guildchannelmanager_create'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannelmanager_fetch'] = {
   init: function() {
     this.jsonInit({
@@ -150,6 +157,7 @@ Blockly.Blocks['guildchannelmanager_fetch'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannelmanager_setPositions'] = {
   init: function() {
     this.jsonInit({
@@ -169,6 +177,7 @@ Blockly.Blocks['guildchannelmanager_setPositions'] = {
     });
   }
 };
+
 Blockly.Blocks['guildchannelmanager_fetchActiveThreads'] = {
   init: function() {
     this.jsonInit({

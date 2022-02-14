@@ -21,6 +21,7 @@ Blockly.Blocks['threadmembermanager_thread'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmembermanager_cache'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['threadmembermanager_cache'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmembermanager_client'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['threadmembermanager_client'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmembermanager_resolve'] = {
   init: function() {
     this.jsonInit({
@@ -70,6 +73,7 @@ Blockly.Blocks['threadmembermanager_resolve'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmembermanager_resolveId'] = {
   init: function() {
     this.jsonInit({
@@ -89,6 +93,7 @@ Blockly.Blocks['threadmembermanager_resolveId'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmembermanager_add'] = {
   init: function() {
     this.jsonInit({
@@ -112,6 +117,7 @@ Blockly.Blocks['threadmembermanager_add'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmembermanager_remove'] = {
   init: function() {
     this.jsonInit({
@@ -135,6 +141,7 @@ Blockly.Blocks['threadmembermanager_remove'] = {
     });
   }
 };
+
 Blockly.Blocks['threadmembermanager_fetch'] = {
   init: function() {
     this.jsonInit({

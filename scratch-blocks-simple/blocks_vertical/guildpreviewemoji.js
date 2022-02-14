@@ -21,6 +21,7 @@ Blockly.Blocks['guildpreviewemoji_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['guildpreviewemoji_roles'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['guildpreviewemoji_roles'] = {
     });
   }
 };
+
 Blockly.Blocks['guildpreviewemoji_requiresColons'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['guildpreviewemoji_requiresColons'] = {
     });
   }
 };
+
 Blockly.Blocks['guildpreviewemoji_managed'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['guildpreviewemoji_managed'] = {
     });
   }
 };
+
 Blockly.Blocks['guildpreviewemoji_available'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['guildpreviewemoji_available'] = {
     });
   }
 };
+
 Blockly.Blocks['guildpreviewemoji_animated'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['guildpreviewemoji_animated'] = {
     });
   }
 };
+
 Blockly.Blocks['guildpreviewemoji_name'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['guildpreviewemoji_name'] = {
     });
   }
 };
+
 Blockly.Blocks['guildpreviewemoji_id'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['guildpreviewemoji_id'] = {
     });
   }
 };
+
 Blockly.Blocks['guildpreviewemoji_identifier'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['guildpreviewemoji_identifier'] = {
     });
   }
 };
+
 Blockly.Blocks['guildpreviewemoji_url'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['guildpreviewemoji_url'] = {
     });
   }
 };
+
 Blockly.Blocks['guildpreviewemoji_createdTimestamp'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['guildpreviewemoji_createdTimestamp'] = {
     });
   }
 };
+
 Blockly.Blocks['guildpreviewemoji_createdAt'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['guildpreviewemoji_createdAt'] = {
     });
   }
 };
+
 Blockly.Blocks['guildpreviewemoji_client'] = {
   init: function() {
     this.jsonInit({
@@ -201,6 +213,7 @@ Blockly.Blocks['guildpreviewemoji_client'] = {
     });
   }
 };
+
 Blockly.Blocks['guildpreviewemoji_toString'] = {
   init: function() {
     this.jsonInit({

@@ -21,6 +21,7 @@ Blockly.Blocks['integration_guild'] = {
     });
   }
 };
+
 Blockly.Blocks['integration_id'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['integration_id'] = {
     });
   }
 };
+
 Blockly.Blocks['integration_name'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['integration_name'] = {
     });
   }
 };
+
 Blockly.Blocks['integration_type'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['integration_type'] = {
     });
   }
 };
+
 Blockly.Blocks['integration_enabled'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['integration_enabled'] = {
     });
   }
 };
+
 Blockly.Blocks['integration_syncing'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['integration_syncing'] = {
     });
   }
 };
+
 Blockly.Blocks['integration_role'] = {
   init: function() {
     this.jsonInit({
@@ -111,6 +117,7 @@ Blockly.Blocks['integration_role'] = {
     });
   }
 };
+
 Blockly.Blocks['integration_enableEmoticons'] = {
   init: function() {
     this.jsonInit({
@@ -126,6 +133,7 @@ Blockly.Blocks['integration_enableEmoticons'] = {
     });
   }
 };
+
 Blockly.Blocks['integration_user'] = {
   init: function() {
     this.jsonInit({
@@ -141,6 +149,7 @@ Blockly.Blocks['integration_user'] = {
     });
   }
 };
+
 Blockly.Blocks['integration_account'] = {
   init: function() {
     this.jsonInit({
@@ -156,6 +165,7 @@ Blockly.Blocks['integration_account'] = {
     });
   }
 };
+
 Blockly.Blocks['integration_syncedAt'] = {
   init: function() {
     this.jsonInit({
@@ -171,6 +181,7 @@ Blockly.Blocks['integration_syncedAt'] = {
     });
   }
 };
+
 Blockly.Blocks['integration_subscriberCount'] = {
   init: function() {
     this.jsonInit({
@@ -186,6 +197,7 @@ Blockly.Blocks['integration_subscriberCount'] = {
     });
   }
 };
+
 Blockly.Blocks['integration_revoked'] = {
   init: function() {
     this.jsonInit({
@@ -201,6 +213,7 @@ Blockly.Blocks['integration_revoked'] = {
     });
   }
 };
+
 Blockly.Blocks['integration_roles'] = {
   init: function() {
     this.jsonInit({
@@ -216,6 +229,7 @@ Blockly.Blocks['integration_roles'] = {
     });
   }
 };
+
 Blockly.Blocks['integration_expireBehavior'] = {
   init: function() {
     this.jsonInit({
@@ -231,6 +245,7 @@ Blockly.Blocks['integration_expireBehavior'] = {
     });
   }
 };
+
 Blockly.Blocks['integration_expireGracePeriod'] = {
   init: function() {
     this.jsonInit({
@@ -246,6 +261,7 @@ Blockly.Blocks['integration_expireGracePeriod'] = {
     });
   }
 };
+
 Blockly.Blocks['integration_application'] = {
   init: function() {
     this.jsonInit({
@@ -261,6 +277,7 @@ Blockly.Blocks['integration_application'] = {
     });
   }
 };
+
 Blockly.Blocks['integration_delete'] = {
   init: function() {
     this.jsonInit({

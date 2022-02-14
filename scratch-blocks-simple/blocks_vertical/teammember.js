@@ -21,6 +21,7 @@ Blockly.Blocks['teammember_team'] = {
     });
   }
 };
+
 Blockly.Blocks['teammember_permissions'] = {
   init: function() {
     this.jsonInit({
@@ -36,6 +37,7 @@ Blockly.Blocks['teammember_permissions'] = {
     });
   }
 };
+
 Blockly.Blocks['teammember_membershipState'] = {
   init: function() {
     this.jsonInit({
@@ -51,6 +53,7 @@ Blockly.Blocks['teammember_membershipState'] = {
     });
   }
 };
+
 Blockly.Blocks['teammember_user'] = {
   init: function() {
     this.jsonInit({
@@ -66,6 +69,7 @@ Blockly.Blocks['teammember_user'] = {
     });
   }
 };
+
 Blockly.Blocks['teammember_id'] = {
   init: function() {
     this.jsonInit({
@@ -81,6 +85,7 @@ Blockly.Blocks['teammember_id'] = {
     });
   }
 };
+
 Blockly.Blocks['teammember_client'] = {
   init: function() {
     this.jsonInit({
@@ -96,6 +101,7 @@ Blockly.Blocks['teammember_client'] = {
     });
   }
 };
+
 Blockly.Blocks['teammember_toString'] = {
   init: function() {
     this.jsonInit({
