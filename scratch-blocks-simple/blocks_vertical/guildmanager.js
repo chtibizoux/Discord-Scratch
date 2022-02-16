@@ -61,7 +61,7 @@ Blockly.Blocks['guildmanager_resolve'] = {
 Blockly.Blocks['guildmanager_resolveId'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveId of %1 guild: %2",
+      "message0": "resolve id of %1 guild: %2",
       "args0": [
         {
           "type": "input_value",

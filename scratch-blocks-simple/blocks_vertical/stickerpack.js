@@ -54,10 +54,10 @@ Blockly.Blocks['stickerpack_name'] = {
   }
 };
 
-Blockly.Blocks['stickerpack_skuId'] = {
+Blockly.Blocks['stickerpack_skuid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "skuId of %1",
+      "message0": "sku id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -70,10 +70,10 @@ Blockly.Blocks['stickerpack_skuId'] = {
   }
 };
 
-Blockly.Blocks['stickerpack_coverStickerId'] = {
+Blockly.Blocks['stickerpack_coverstickerid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "coverStickerId of %1",
+      "message0": "cover stickerid of %1",
       "args0": [
         {
           "type": "input_value",
@@ -102,10 +102,10 @@ Blockly.Blocks['stickerpack_description'] = {
   }
 };
 
-Blockly.Blocks['stickerpack_bannerId'] = {
+Blockly.Blocks['stickerpack_bannerid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "bannerId of %1",
+      "message0": "banner id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -118,10 +118,10 @@ Blockly.Blocks['stickerpack_bannerId'] = {
   }
 };
 
-Blockly.Blocks['stickerpack_createdTimestamp'] = {
+Blockly.Blocks['stickerpack_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -134,10 +134,10 @@ Blockly.Blocks['stickerpack_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['stickerpack_createdAt'] = {
+Blockly.Blocks['stickerpack_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -150,10 +150,10 @@ Blockly.Blocks['stickerpack_createdAt'] = {
   }
 };
 
-Blockly.Blocks['stickerpack_coverSticker'] = {
+Blockly.Blocks['stickerpack_coversticker'] = {
   init: function() {
     this.jsonInit({
-      "message0": "coverSticker of %1",
+      "message0": "cover sticker of %1",
       "args0": [
         {
           "type": "input_value",
@@ -185,7 +185,7 @@ Blockly.Blocks['stickerpack_client'] = {
 Blockly.Blocks['stickerpack_bannerURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "bannerURL of %1 options: %2",
+      "message0": "banner url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",

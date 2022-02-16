@@ -38,10 +38,10 @@ Blockly.Blocks['voicestate_id'] = {
   }
 };
 
-Blockly.Blocks['voicestate_serverDeaf'] = {
+Blockly.Blocks['voicestate_serverdeaf'] = {
   init: function() {
     this.jsonInit({
-      "message0": "serverDeaf of %1",
+      "message0": "server deaf of %1",
       "args0": [
         {
           "type": "input_value",
@@ -54,10 +54,10 @@ Blockly.Blocks['voicestate_serverDeaf'] = {
   }
 };
 
-Blockly.Blocks['voicestate_serverMute'] = {
+Blockly.Blocks['voicestate_servermute'] = {
   init: function() {
     this.jsonInit({
-      "message0": "serverMute of %1",
+      "message0": "server mute of %1",
       "args0": [
         {
           "type": "input_value",
@@ -70,10 +70,10 @@ Blockly.Blocks['voicestate_serverMute'] = {
   }
 };
 
-Blockly.Blocks['voicestate_selfDeaf'] = {
+Blockly.Blocks['voicestate_selfdeaf'] = {
   init: function() {
     this.jsonInit({
-      "message0": "selfDeaf of %1",
+      "message0": "self deaf of %1",
       "args0": [
         {
           "type": "input_value",
@@ -86,10 +86,10 @@ Blockly.Blocks['voicestate_selfDeaf'] = {
   }
 };
 
-Blockly.Blocks['voicestate_selfMute'] = {
+Blockly.Blocks['voicestate_selfmute'] = {
   init: function() {
     this.jsonInit({
-      "message0": "selfMute of %1",
+      "message0": "self mute of %1",
       "args0": [
         {
           "type": "input_value",
@@ -102,10 +102,10 @@ Blockly.Blocks['voicestate_selfMute'] = {
   }
 };
 
-Blockly.Blocks['voicestate_selfVideo'] = {
+Blockly.Blocks['voicestate_selfvideo'] = {
   init: function() {
     this.jsonInit({
-      "message0": "selfVideo of %1",
+      "message0": "self video of %1",
       "args0": [
         {
           "type": "input_value",
@@ -118,10 +118,10 @@ Blockly.Blocks['voicestate_selfVideo'] = {
   }
 };
 
-Blockly.Blocks['voicestate_sessionId'] = {
+Blockly.Blocks['voicestate_sessionid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sessionId of %1",
+      "message0": "session id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -150,10 +150,10 @@ Blockly.Blocks['voicestate_streaming'] = {
   }
 };
 
-Blockly.Blocks['voicestate_channelId'] = {
+Blockly.Blocks['voicestate_channelid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "channelId of %1",
+      "message0": "channel id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -182,10 +182,10 @@ Blockly.Blocks['voicestate_suppress'] = {
   }
 };
 
-Blockly.Blocks['voicestate_requestToSpeakTimestamp'] = {
+Blockly.Blocks['voicestate_requesttospeaktimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "requestToSpeakTimestamp of %1",
+      "message0": "request tospeaktimestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -265,7 +265,7 @@ Blockly.Blocks['voicestate_mute'] = {
 Blockly.Blocks['voicestate_setMute'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setMute of %1 mute: %2 reason: %3",
+      "message0": "set mute of %1 mute: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -289,7 +289,7 @@ Blockly.Blocks['voicestate_setMute'] = {
 Blockly.Blocks['voicestate_setDeaf'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setDeaf of %1 deaf: %2 reason: %3",
+      "message0": "set deaf of %1 deaf: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -333,7 +333,7 @@ Blockly.Blocks['voicestate_disconnect'] = {
 Blockly.Blocks['voicestate_setChannel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setChannel of %1 channel: %2 reason: %3",
+      "message0": "set channel of %1 channel: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -357,7 +357,7 @@ Blockly.Blocks['voicestate_setChannel'] = {
 Blockly.Blocks['voicestate_setRequestToSpeak'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setRequestToSpeak of %1 request: %2",
+      "message0": "set requesttospeak of %1 request: %2",
       "args0": [
         {
           "type": "input_value",
@@ -377,7 +377,7 @@ Blockly.Blocks['voicestate_setRequestToSpeak'] = {
 Blockly.Blocks['voicestate_setSuppressed'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setSuppressed of %1 suppressed: %2",
+      "message0": "set suppressed of %1 suppressed: %2",
       "args0": [
         {
           "type": "input_value",

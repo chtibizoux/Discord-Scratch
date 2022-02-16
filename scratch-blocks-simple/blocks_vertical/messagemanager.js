@@ -81,7 +81,7 @@ Blockly.Blocks['messagemanager_fetch'] = {
 Blockly.Blocks['messagemanager_fetchPinned'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchPinned of %1 cache: %2",
+      "message0": "fetch pinned of %1 cache: %2",
       "args0": [
         {
           "type": "input_value",
@@ -121,7 +121,7 @@ Blockly.Blocks['messagemanager_resolve'] = {
 Blockly.Blocks['messagemanager_resolveId'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveId of %1 message: %2",
+      "message0": "resolve id of %1 message: %2",
       "args0": [
         {
           "type": "input_value",

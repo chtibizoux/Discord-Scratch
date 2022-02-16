@@ -102,10 +102,10 @@ Blockly.Blocks['webhook_type'] = {
   }
 };
 
-Blockly.Blocks['webhook_guildId'] = {
+Blockly.Blocks['webhook_guildid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "guildId of %1",
+      "message0": "guild id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -118,10 +118,10 @@ Blockly.Blocks['webhook_guildId'] = {
   }
 };
 
-Blockly.Blocks['webhook_channelId'] = {
+Blockly.Blocks['webhook_channelid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "channelId of %1",
+      "message0": "channel id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -150,10 +150,10 @@ Blockly.Blocks['webhook_owner'] = {
   }
 };
 
-Blockly.Blocks['webhook_sourceGuild'] = {
+Blockly.Blocks['webhook_sourceguild'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sourceGuild of %1",
+      "message0": "source guild of %1",
       "args0": [
         {
           "type": "input_value",
@@ -166,10 +166,10 @@ Blockly.Blocks['webhook_sourceGuild'] = {
   }
 };
 
-Blockly.Blocks['webhook_sourceChannel'] = {
+Blockly.Blocks['webhook_sourcechannel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sourceChannel of %1",
+      "message0": "source channel of %1",
       "args0": [
         {
           "type": "input_value",
@@ -182,10 +182,10 @@ Blockly.Blocks['webhook_sourceChannel'] = {
   }
 };
 
-Blockly.Blocks['webhook_createdTimestamp'] = {
+Blockly.Blocks['webhook_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -198,10 +198,10 @@ Blockly.Blocks['webhook_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['webhook_createdAt'] = {
+Blockly.Blocks['webhook_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -253,7 +253,7 @@ Blockly.Blocks['webhook_send'] = {
 Blockly.Blocks['webhook_sendSlackMessage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sendSlackMessage of %1 body: %2",
+      "message0": "send slackmessage of %1 body: %2",
       "args0": [
         {
           "type": "input_value",
@@ -297,7 +297,7 @@ Blockly.Blocks['webhook_edit'] = {
 Blockly.Blocks['webhook_fetchMessage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchMessage of %1 message: %2 cacheOrOptions: %3",
+      "message0": "fetch message of %1 message: %2 cacheOrOptions: %3",
       "args0": [
         {
           "type": "input_value",
@@ -321,7 +321,7 @@ Blockly.Blocks['webhook_fetchMessage'] = {
 Blockly.Blocks['webhook_editMessage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "editMessage of %1 message: %2 options: %3",
+      "message0": "edit message of %1 message: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -365,7 +365,7 @@ Blockly.Blocks['webhook_delete'] = {
 Blockly.Blocks['webhook_deleteMessage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "deleteMessage of %1 message: %2 threadId: %3",
+      "message0": "delete message of %1 message: %2 threadId: %3",
       "args0": [
         {
           "type": "input_value",
@@ -389,7 +389,7 @@ Blockly.Blocks['webhook_deleteMessage'] = {
 Blockly.Blocks['webhook_avatarURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "avatarURL of %1 options: %2",
+      "message0": "avatar url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -409,7 +409,7 @@ Blockly.Blocks['webhook_avatarURL'] = {
 Blockly.Blocks['webhook_isChannelFollower'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isChannelFollower of %1",
+      "message0": "is channelfollower of %1",
       "args0": [
         {
           "type": "input_value",
@@ -425,7 +425,7 @@ Blockly.Blocks['webhook_isChannelFollower'] = {
 Blockly.Blocks['webhook_isIncoming'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isIncoming of %1",
+      "message0": "is incoming of %1",
       "args0": [
         {
           "type": "input_value",

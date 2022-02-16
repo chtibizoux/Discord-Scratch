@@ -6,10 +6,10 @@ goog.require('Blockly.Blocks');
 goog.require('Blockly.Colours');
 goog.require('Blockly.constants');
 goog.require('Blockly.ScratchBlocks.VerticalExtensions');
-Blockly.Blocks['invitestageinstance_channelId'] = {
+Blockly.Blocks['invitestageinstance_channelid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "channelId of %1",
+      "message0": "channel id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -22,10 +22,10 @@ Blockly.Blocks['invitestageinstance_channelId'] = {
   }
 };
 
-Blockly.Blocks['invitestageinstance_guildId'] = {
+Blockly.Blocks['invitestageinstance_guildid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "guildId of %1",
+      "message0": "guild id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -70,10 +70,10 @@ Blockly.Blocks['invitestageinstance_topic'] = {
   }
 };
 
-Blockly.Blocks['invitestageinstance_participantCount'] = {
+Blockly.Blocks['invitestageinstance_participantcount'] = {
   init: function() {
     this.jsonInit({
-      "message0": "participantCount of %1",
+      "message0": "participant count of %1",
       "args0": [
         {
           "type": "input_value",
@@ -86,10 +86,10 @@ Blockly.Blocks['invitestageinstance_participantCount'] = {
   }
 };
 
-Blockly.Blocks['invitestageinstance_speakerCount'] = {
+Blockly.Blocks['invitestageinstance_speakercount'] = {
   init: function() {
     this.jsonInit({
-      "message0": "speakerCount of %1",
+      "message0": "speaker count of %1",
       "args0": [
         {
           "type": "input_value",

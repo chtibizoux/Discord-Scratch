@@ -6,10 +6,10 @@ goog.require('Blockly.Blocks');
 goog.require('Blockly.Colours');
 goog.require('Blockly.constants');
 goog.require('Blockly.ScratchBlocks.VerticalExtensions');
-Blockly.Blocks['message_channelId'] = {
+Blockly.Blocks['message_channelid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "channelId of %1",
+      "message0": "channel id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -22,10 +22,10 @@ Blockly.Blocks['message_channelId'] = {
   }
 };
 
-Blockly.Blocks['message_guildId'] = {
+Blockly.Blocks['message_guildid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "guildId of %1",
+      "message0": "guild id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -54,10 +54,10 @@ Blockly.Blocks['message_id'] = {
   }
 };
 
-Blockly.Blocks['message_createdTimestamp'] = {
+Blockly.Blocks['message_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -246,10 +246,10 @@ Blockly.Blocks['message_stickers'] = {
   }
 };
 
-Blockly.Blocks['message_editedTimestamp'] = {
+Blockly.Blocks['message_editedtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "editedTimestamp of %1",
+      "message0": "edited timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -294,10 +294,10 @@ Blockly.Blocks['message_mentions'] = {
   }
 };
 
-Blockly.Blocks['message_webhookId'] = {
+Blockly.Blocks['message_webhookid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "webhookId of %1",
+      "message0": "webhook id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -310,10 +310,10 @@ Blockly.Blocks['message_webhookId'] = {
   }
 };
 
-Blockly.Blocks['message_groupActivityApplication'] = {
+Blockly.Blocks['message_groupactivityapplication'] = {
   init: function() {
     this.jsonInit({
-      "message0": "groupActivityApplication of %1",
+      "message0": "group activityapplication of %1",
       "args0": [
         {
           "type": "input_value",
@@ -326,10 +326,10 @@ Blockly.Blocks['message_groupActivityApplication'] = {
   }
 };
 
-Blockly.Blocks['message_applicationId'] = {
+Blockly.Blocks['message_applicationid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "applicationId of %1",
+      "message0": "application id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -454,10 +454,10 @@ Blockly.Blocks['message_member'] = {
   }
 };
 
-Blockly.Blocks['message_createdAt'] = {
+Blockly.Blocks['message_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -470,10 +470,10 @@ Blockly.Blocks['message_createdAt'] = {
   }
 };
 
-Blockly.Blocks['message_editedAt'] = {
+Blockly.Blocks['message_editedat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "editedAt of %1",
+      "message0": "edited at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -502,10 +502,10 @@ Blockly.Blocks['message_guild'] = {
   }
 };
 
-Blockly.Blocks['message_hasThread'] = {
+Blockly.Blocks['message_hasthread'] = {
   init: function() {
     this.jsonInit({
-      "message0": "hasThread of %1",
+      "message0": "has thread of %1",
       "args0": [
         {
           "type": "input_value",
@@ -550,10 +550,10 @@ Blockly.Blocks['message_url'] = {
   }
 };
 
-Blockly.Blocks['message_cleanContent'] = {
+Blockly.Blocks['message_cleancontent'] = {
   init: function() {
     this.jsonInit({
-      "message0": "cleanContent of %1",
+      "message0": "clean content of %1",
       "args0": [
         {
           "type": "input_value",
@@ -649,7 +649,7 @@ Blockly.Blocks['message_client'] = {
 Blockly.Blocks['message_createReactionCollector'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createReactionCollector of %1 options: %2",
+      "message0": "create reactioncollector of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -669,7 +669,7 @@ Blockly.Blocks['message_createReactionCollector'] = {
 Blockly.Blocks['message_awaitReactions'] = {
   init: function() {
     this.jsonInit({
-      "message0": "awaitReactions of %1 options: %2",
+      "message0": "await reactions of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -689,7 +689,7 @@ Blockly.Blocks['message_awaitReactions'] = {
 Blockly.Blocks['message_createMessageComponentCollector'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createMessageComponentCollector of %1 options: %2",
+      "message0": "create messagecomponentcollector of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -709,7 +709,7 @@ Blockly.Blocks['message_createMessageComponentCollector'] = {
 Blockly.Blocks['message_awaitMessageComponent'] = {
   init: function() {
     this.jsonInit({
-      "message0": "awaitMessageComponent of %1 options: %2",
+      "message0": "await messagecomponent of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -729,7 +729,7 @@ Blockly.Blocks['message_awaitMessageComponent'] = {
 Blockly.Blocks['message_fetchReference'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchReference of %1",
+      "message0": "fetch reference of %1",
       "args0": [
         {
           "type": "input_value",
@@ -869,7 +869,7 @@ Blockly.Blocks['message_reply'] = {
 Blockly.Blocks['message_startThread'] = {
   init: function() {
     this.jsonInit({
-      "message0": "startThread of %1 options: %2",
+      "message0": "start thread of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -909,7 +909,7 @@ Blockly.Blocks['message_fetch'] = {
 Blockly.Blocks['message_fetchWebhook'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchWebhook of %1",
+      "message0": "fetch webhook of %1",
       "args0": [
         {
           "type": "input_value",
@@ -925,7 +925,7 @@ Blockly.Blocks['message_fetchWebhook'] = {
 Blockly.Blocks['message_suppressEmbeds'] = {
   init: function() {
     this.jsonInit({
-      "message0": "suppressEmbeds of %1 suppress: %2",
+      "message0": "suppress embeds of %1 suppress: %2",
       "args0": [
         {
           "type": "input_value",
@@ -945,7 +945,7 @@ Blockly.Blocks['message_suppressEmbeds'] = {
 Blockly.Blocks['message_removeAttachments'] = {
   init: function() {
     this.jsonInit({
-      "message0": "removeAttachments of %1",
+      "message0": "remove attachments of %1",
       "args0": [
         {
           "type": "input_value",
@@ -961,7 +961,7 @@ Blockly.Blocks['message_removeAttachments'] = {
 Blockly.Blocks['message_resolveComponent'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveComponent of %1 customId: %2",
+      "message0": "resolve component of %1 customId: %2",
       "args0": [
         {
           "type": "input_value",
@@ -1005,7 +1005,7 @@ Blockly.Blocks['message_equals'] = {
 Blockly.Blocks['message_inGuild'] = {
   init: function() {
     this.jsonInit({
-      "message0": "inGuild of %1",
+      "message0": "in guild of %1",
       "args0": [
         {
           "type": "input_value",
@@ -1021,7 +1021,7 @@ Blockly.Blocks['message_inGuild'] = {
 Blockly.Blocks['message_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",

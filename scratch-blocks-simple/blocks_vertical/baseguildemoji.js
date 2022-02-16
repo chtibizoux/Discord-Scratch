@@ -22,10 +22,10 @@ Blockly.Blocks['baseguildemoji_guild'] = {
   }
 };
 
-Blockly.Blocks['baseguildemoji_requiresColons'] = {
+Blockly.Blocks['baseguildemoji_requirescolons'] = {
   init: function() {
     this.jsonInit({
-      "message0": "requiresColons of %1",
+      "message0": "requires colons of %1",
       "args0": [
         {
           "type": "input_value",
@@ -150,10 +150,10 @@ Blockly.Blocks['baseguildemoji_url'] = {
   }
 };
 
-Blockly.Blocks['baseguildemoji_createdTimestamp'] = {
+Blockly.Blocks['baseguildemoji_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -166,10 +166,10 @@ Blockly.Blocks['baseguildemoji_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['baseguildemoji_createdAt'] = {
+Blockly.Blocks['baseguildemoji_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -201,7 +201,7 @@ Blockly.Blocks['baseguildemoji_client'] = {
 Blockly.Blocks['baseguildemoji_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",

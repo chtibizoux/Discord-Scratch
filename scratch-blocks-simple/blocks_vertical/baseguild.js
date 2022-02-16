@@ -70,10 +70,10 @@ Blockly.Blocks['baseguild_features'] = {
   }
 };
 
-Blockly.Blocks['baseguild_createdTimestamp'] = {
+Blockly.Blocks['baseguild_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -86,10 +86,10 @@ Blockly.Blocks['baseguild_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['baseguild_createdAt'] = {
+Blockly.Blocks['baseguild_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -102,10 +102,10 @@ Blockly.Blocks['baseguild_createdAt'] = {
   }
 };
 
-Blockly.Blocks['baseguild_nameAcronym'] = {
+Blockly.Blocks['baseguild_nameacronym'] = {
   init: function() {
     this.jsonInit({
-      "message0": "nameAcronym of %1",
+      "message0": "name acronym of %1",
       "args0": [
         {
           "type": "input_value",
@@ -169,7 +169,7 @@ Blockly.Blocks['baseguild_client'] = {
 Blockly.Blocks['baseguild_iconURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "iconURL of %1 options: %2",
+      "message0": "icon url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -205,7 +205,7 @@ Blockly.Blocks['baseguild_fetch'] = {
 Blockly.Blocks['baseguild_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",

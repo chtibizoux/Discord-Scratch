@@ -6,10 +6,10 @@ goog.require('Blockly.Blocks');
 goog.require('Blockly.Colours');
 goog.require('Blockly.constants');
 goog.require('Blockly.ScratchBlocks.VerticalExtensions');
-Blockly.Blocks['formatters_TimestampStyles'] = {
+Blockly.Blocks['formatters_timestampstyles'] = {
   init: function() {
     this.jsonInit({
-      "message0": "TimestampStyles of %1",
+      "message0": " timestampstyles of %1",
       "args0": [
         {
           "type": "input_value",
@@ -25,7 +25,7 @@ Blockly.Blocks['formatters_TimestampStyles'] = {
 Blockly.Blocks['formatters_blockQuote'] = {
   init: function() {
     this.jsonInit({
-      "message0": "blockQuote of %1 content: %2",
+      "message0": "block quote of %1 content: %2",
       "args0": [
         {
           "type": "input_value",
@@ -65,7 +65,7 @@ Blockly.Blocks['formatters_bold'] = {
 Blockly.Blocks['formatters_channelMention'] = {
   init: function() {
     this.jsonInit({
-      "message0": "channelMention of %1 channelId: %2",
+      "message0": "channel mention of %1 channelId: %2",
       "args0": [
         {
           "type": "input_value",
@@ -85,7 +85,7 @@ Blockly.Blocks['formatters_channelMention'] = {
 Blockly.Blocks['formatters_codeBlock'] = {
   init: function() {
     this.jsonInit({
-      "message0": "codeBlock of %1 contentOrLanguage: %2 content: %3",
+      "message0": "code block of %1 contentOrLanguage: %2 content: %3",
       "args0": [
         {
           "type": "input_value",
@@ -109,7 +109,7 @@ Blockly.Blocks['formatters_codeBlock'] = {
 Blockly.Blocks['formatters_formatEmoji'] = {
   init: function() {
     this.jsonInit({
-      "message0": "formatEmoji of %1 emojiId: %2 animated: %3",
+      "message0": "format emoji of %1 emojiId: %2 animated: %3",
       "args0": [
         {
           "type": "input_value",
@@ -133,7 +133,7 @@ Blockly.Blocks['formatters_formatEmoji'] = {
 Blockly.Blocks['formatters_hideLinkEmbed'] = {
   init: function() {
     this.jsonInit({
-      "message0": "hideLinkEmbed of %1 content: %2",
+      "message0": "hide linkembed of %1 content: %2",
       "args0": [
         {
           "type": "input_value",
@@ -181,7 +181,7 @@ Blockly.Blocks['formatters_hyperlink'] = {
 Blockly.Blocks['formatters_inlineCode'] = {
   init: function() {
     this.jsonInit({
-      "message0": "inlineCode of %1 content: %2",
+      "message0": "inline code of %1 content: %2",
       "args0": [
         {
           "type": "input_value",
@@ -221,7 +221,7 @@ Blockly.Blocks['formatters_italic'] = {
 Blockly.Blocks['formatters_memberNicknameMention'] = {
   init: function() {
     this.jsonInit({
-      "message0": "memberNicknameMention of %1 memberId: %2",
+      "message0": "member nicknamemention of %1 memberId: %2",
       "args0": [
         {
           "type": "input_value",
@@ -261,7 +261,7 @@ Blockly.Blocks['formatters_quote'] = {
 Blockly.Blocks['formatters_roleMention'] = {
   init: function() {
     this.jsonInit({
-      "message0": "roleMention of %1 roleId: %2",
+      "message0": "role mention of %1 roleId: %2",
       "args0": [
         {
           "type": "input_value",
@@ -365,7 +365,7 @@ Blockly.Blocks['formatters_underscore'] = {
 Blockly.Blocks['formatters_userMention'] = {
   init: function() {
     this.jsonInit({
-      "message0": "userMention of %1 userId: %2",
+      "message0": "user mention of %1 userId: %2",
       "args0": [
         {
           "type": "input_value",

@@ -54,10 +54,10 @@ Blockly.Blocks['team_icon'] = {
   }
 };
 
-Blockly.Blocks['team_ownerId'] = {
+Blockly.Blocks['team_ownerid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "ownerId of %1",
+      "message0": "owner id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -102,10 +102,10 @@ Blockly.Blocks['team_owner'] = {
   }
 };
 
-Blockly.Blocks['team_createdTimestamp'] = {
+Blockly.Blocks['team_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -118,10 +118,10 @@ Blockly.Blocks['team_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['team_createdAt'] = {
+Blockly.Blocks['team_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -153,7 +153,7 @@ Blockly.Blocks['team_client'] = {
 Blockly.Blocks['team_iconURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "iconURL of %1 options: %2",
+      "message0": "icon url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -173,7 +173,7 @@ Blockly.Blocks['team_iconURL'] = {
 Blockly.Blocks['team_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",

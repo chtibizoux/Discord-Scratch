@@ -38,10 +38,10 @@ Blockly.Blocks['role_icon'] = {
   }
 };
 
-Blockly.Blocks['role_unicodeEmoji'] = {
+Blockly.Blocks['role_unicodeemoji'] = {
   init: function() {
     this.jsonInit({
-      "message0": "unicodeEmoji of %1",
+      "message0": "unicode emoji of %1",
       "args0": [
         {
           "type": "input_value",
@@ -118,10 +118,10 @@ Blockly.Blocks['role_hoist'] = {
   }
 };
 
-Blockly.Blocks['role_rawPosition'] = {
+Blockly.Blocks['role_rawposition'] = {
   init: function() {
     this.jsonInit({
-      "message0": "rawPosition of %1",
+      "message0": "raw position of %1",
       "args0": [
         {
           "type": "input_value",
@@ -198,10 +198,10 @@ Blockly.Blocks['role_tags'] = {
   }
 };
 
-Blockly.Blocks['role_createdTimestamp'] = {
+Blockly.Blocks['role_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -214,10 +214,10 @@ Blockly.Blocks['role_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['role_createdAt'] = {
+Blockly.Blocks['role_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -230,10 +230,10 @@ Blockly.Blocks['role_createdAt'] = {
   }
 };
 
-Blockly.Blocks['role_hexColor'] = {
+Blockly.Blocks['role_hexcolor'] = {
   init: function() {
     this.jsonInit({
-      "message0": "hexColor of %1",
+      "message0": "hex color of %1",
       "args0": [
         {
           "type": "input_value",
@@ -313,7 +313,7 @@ Blockly.Blocks['role_client'] = {
 Blockly.Blocks['role_comparePositionTo'] = {
   init: function() {
     this.jsonInit({
-      "message0": "comparePositionTo of %1 role: %2",
+      "message0": "compare positionto of %1 role: %2",
       "args0": [
         {
           "type": "input_value",
@@ -357,7 +357,7 @@ Blockly.Blocks['role_edit'] = {
 Blockly.Blocks['role_permissionsIn'] = {
   init: function() {
     this.jsonInit({
-      "message0": "permissionsIn of %1 channel: %2 checkAdmin: %3",
+      "message0": "permissions in of %1 channel: %2 checkAdmin: %3",
       "args0": [
         {
           "type": "input_value",
@@ -381,7 +381,7 @@ Blockly.Blocks['role_permissionsIn'] = {
 Blockly.Blocks['role_setName'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setName of %1 name: %2 reason: %3",
+      "message0": "set name of %1 name: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -405,7 +405,7 @@ Blockly.Blocks['role_setName'] = {
 Blockly.Blocks['role_setColor'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setColor of %1 color: %2 reason: %3",
+      "message0": "set color of %1 color: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -429,7 +429,7 @@ Blockly.Blocks['role_setColor'] = {
 Blockly.Blocks['role_setHoist'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setHoist of %1 hoist: %2 reason: %3",
+      "message0": "set hoist of %1 hoist: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -453,7 +453,7 @@ Blockly.Blocks['role_setHoist'] = {
 Blockly.Blocks['role_setPermissions'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setPermissions of %1 permissions: %2 reason: %3",
+      "message0": "set permissions of %1 permissions: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -477,7 +477,7 @@ Blockly.Blocks['role_setPermissions'] = {
 Blockly.Blocks['role_setMentionable'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setMentionable of %1 mentionable: %2 reason: %3",
+      "message0": "set mentionable of %1 mentionable: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -501,7 +501,7 @@ Blockly.Blocks['role_setMentionable'] = {
 Blockly.Blocks['role_setIcon'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setIcon of %1 icon: %2 reason: %3",
+      "message0": "set icon of %1 icon: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -525,7 +525,7 @@ Blockly.Blocks['role_setIcon'] = {
 Blockly.Blocks['role_setUnicodeEmoji'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setUnicodeEmoji of %1 unicodeEmoji: %2 reason: %3",
+      "message0": "set unicodeemoji of %1 unicodeEmoji: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -549,7 +549,7 @@ Blockly.Blocks['role_setUnicodeEmoji'] = {
 Blockly.Blocks['role_setPosition'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setPosition of %1 position: %2 options: %3",
+      "message0": "set position of %1 position: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -593,7 +593,7 @@ Blockly.Blocks['role_delete'] = {
 Blockly.Blocks['role_iconURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "iconURL of %1 options: %2",
+      "message0": "icon url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -633,7 +633,7 @@ Blockly.Blocks['role_equals'] = {
 Blockly.Blocks['role_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",

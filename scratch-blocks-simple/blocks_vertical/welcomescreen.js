@@ -38,10 +38,10 @@ Blockly.Blocks['welcomescreen_description'] = {
   }
 };
 
-Blockly.Blocks['welcomescreen_welcomeChannels'] = {
+Blockly.Blocks['welcomescreen_welcomechannels'] = {
   init: function() {
     this.jsonInit({
-      "message0": "welcomeChannels of %1",
+      "message0": "welcome channels of %1",
       "args0": [
         {
           "type": "input_value",

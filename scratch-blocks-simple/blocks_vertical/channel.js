@@ -38,10 +38,10 @@ Blockly.Blocks['channel_id'] = {
   }
 };
 
-Blockly.Blocks['channel_createdTimestamp'] = {
+Blockly.Blocks['channel_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -54,10 +54,10 @@ Blockly.Blocks['channel_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['channel_createdAt'] = {
+Blockly.Blocks['channel_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -105,7 +105,7 @@ Blockly.Blocks['channel_client'] = {
 Blockly.Blocks['channel_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",
@@ -157,7 +157,7 @@ Blockly.Blocks['channel_fetch'] = {
 Blockly.Blocks['channel_isText'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isText of %1",
+      "message0": "is text of %1",
       "args0": [
         {
           "type": "input_value",
@@ -173,7 +173,7 @@ Blockly.Blocks['channel_isText'] = {
 Blockly.Blocks['channel_isVoice'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isVoice of %1",
+      "message0": "is voice of %1",
       "args0": [
         {
           "type": "input_value",
@@ -189,7 +189,7 @@ Blockly.Blocks['channel_isVoice'] = {
 Blockly.Blocks['channel_isThread'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isThread of %1",
+      "message0": "is thread of %1",
       "args0": [
         {
           "type": "input_value",

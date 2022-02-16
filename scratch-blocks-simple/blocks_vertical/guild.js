@@ -102,10 +102,10 @@ Blockly.Blocks['guild_presences'] = {
   }
 };
 
-Blockly.Blocks['guild_voiceStates'] = {
+Blockly.Blocks['guild_voicestates'] = {
   init: function() {
     this.jsonInit({
-      "message0": "voiceStates of %1",
+      "message0": "voice states of %1",
       "args0": [
         {
           "type": "input_value",
@@ -118,10 +118,10 @@ Blockly.Blocks['guild_voiceStates'] = {
   }
 };
 
-Blockly.Blocks['guild_stageInstances'] = {
+Blockly.Blocks['guild_stageinstances'] = {
   init: function() {
     this.jsonInit({
-      "message0": "stageInstances of %1",
+      "message0": "stage instances of %1",
       "args0": [
         {
           "type": "input_value",
@@ -150,10 +150,10 @@ Blockly.Blocks['guild_invites'] = {
   }
 };
 
-Blockly.Blocks['guild_scheduledEvents'] = {
+Blockly.Blocks['guild_scheduledevents'] = {
   init: function() {
     this.jsonInit({
-      "message0": "scheduledEvents of %1",
+      "message0": "scheduled events of %1",
       "args0": [
         {
           "type": "input_value",
@@ -182,10 +182,10 @@ Blockly.Blocks['guild_available'] = {
   }
 };
 
-Blockly.Blocks['guild_shardId'] = {
+Blockly.Blocks['guild_shardid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "shardId of %1",
+      "message0": "shard id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -214,10 +214,10 @@ Blockly.Blocks['guild_shard'] = {
   }
 };
 
-Blockly.Blocks['guild_discoverySplash'] = {
+Blockly.Blocks['guild_discoverysplash'] = {
   init: function() {
     this.jsonInit({
-      "message0": "discoverySplash of %1",
+      "message0": "discovery splash of %1",
       "args0": [
         {
           "type": "input_value",
@@ -230,10 +230,10 @@ Blockly.Blocks['guild_discoverySplash'] = {
   }
 };
 
-Blockly.Blocks['guild_memberCount'] = {
+Blockly.Blocks['guild_membercount'] = {
   init: function() {
     this.jsonInit({
-      "message0": "memberCount of %1",
+      "message0": "member count of %1",
       "args0": [
         {
           "type": "input_value",
@@ -262,10 +262,10 @@ Blockly.Blocks['guild_large'] = {
   }
 };
 
-Blockly.Blocks['guild_premiumProgressBarEnabled'] = {
+Blockly.Blocks['guild_premiumprogressbarenabled'] = {
   init: function() {
     this.jsonInit({
-      "message0": "premiumProgressBarEnabled of %1",
+      "message0": "premium progressbarenabled of %1",
       "args0": [
         {
           "type": "input_value",
@@ -278,10 +278,10 @@ Blockly.Blocks['guild_premiumProgressBarEnabled'] = {
   }
 };
 
-Blockly.Blocks['guild_applicationId'] = {
+Blockly.Blocks['guild_applicationid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "applicationId of %1",
+      "message0": "application id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -294,10 +294,10 @@ Blockly.Blocks['guild_applicationId'] = {
   }
 };
 
-Blockly.Blocks['guild_afkTimeout'] = {
+Blockly.Blocks['guild_afktimeout'] = {
   init: function() {
     this.jsonInit({
-      "message0": "afkTimeout of %1",
+      "message0": "afk timeout of %1",
       "args0": [
         {
           "type": "input_value",
@@ -310,10 +310,10 @@ Blockly.Blocks['guild_afkTimeout'] = {
   }
 };
 
-Blockly.Blocks['guild_afkChannelId'] = {
+Blockly.Blocks['guild_afkchannelid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "afkChannelId of %1",
+      "message0": "afk channelid of %1",
       "args0": [
         {
           "type": "input_value",
@@ -326,10 +326,10 @@ Blockly.Blocks['guild_afkChannelId'] = {
   }
 };
 
-Blockly.Blocks['guild_systemChannelId'] = {
+Blockly.Blocks['guild_systemchannelid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "systemChannelId of %1",
+      "message0": "system channelid of %1",
       "args0": [
         {
           "type": "input_value",
@@ -342,10 +342,10 @@ Blockly.Blocks['guild_systemChannelId'] = {
   }
 };
 
-Blockly.Blocks['guild_premiumTier'] = {
+Blockly.Blocks['guild_premiumtier'] = {
   init: function() {
     this.jsonInit({
-      "message0": "premiumTier of %1",
+      "message0": "premium tier of %1",
       "args0": [
         {
           "type": "input_value",
@@ -358,10 +358,10 @@ Blockly.Blocks['guild_premiumTier'] = {
   }
 };
 
-Blockly.Blocks['guild_premiumSubscriptionCount'] = {
+Blockly.Blocks['guild_premiumsubscriptioncount'] = {
   init: function() {
     this.jsonInit({
-      "message0": "premiumSubscriptionCount of %1",
+      "message0": "premium subscriptioncount of %1",
       "args0": [
         {
           "type": "input_value",
@@ -374,10 +374,10 @@ Blockly.Blocks['guild_premiumSubscriptionCount'] = {
   }
 };
 
-Blockly.Blocks['guild_widgetEnabled'] = {
+Blockly.Blocks['guild_widgetenabled'] = {
   init: function() {
     this.jsonInit({
-      "message0": "widgetEnabled of %1",
+      "message0": "widget enabled of %1",
       "args0": [
         {
           "type": "input_value",
@@ -390,10 +390,10 @@ Blockly.Blocks['guild_widgetEnabled'] = {
   }
 };
 
-Blockly.Blocks['guild_widgetChannelId'] = {
+Blockly.Blocks['guild_widgetchannelid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "widgetChannelId of %1",
+      "message0": "widget channelid of %1",
       "args0": [
         {
           "type": "input_value",
@@ -406,10 +406,10 @@ Blockly.Blocks['guild_widgetChannelId'] = {
   }
 };
 
-Blockly.Blocks['guild_explicitContentFilter'] = {
+Blockly.Blocks['guild_explicitcontentfilter'] = {
   init: function() {
     this.jsonInit({
-      "message0": "explicitContentFilter of %1",
+      "message0": "explicit contentfilter of %1",
       "args0": [
         {
           "type": "input_value",
@@ -422,10 +422,10 @@ Blockly.Blocks['guild_explicitContentFilter'] = {
   }
 };
 
-Blockly.Blocks['guild_mfaLevel'] = {
+Blockly.Blocks['guild_mfalevel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "mfaLevel of %1",
+      "message0": "mfa level of %1",
       "args0": [
         {
           "type": "input_value",
@@ -438,10 +438,10 @@ Blockly.Blocks['guild_mfaLevel'] = {
   }
 };
 
-Blockly.Blocks['guild_joinedTimestamp'] = {
+Blockly.Blocks['guild_joinedtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "joinedTimestamp of %1",
+      "message0": "joined timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -454,10 +454,10 @@ Blockly.Blocks['guild_joinedTimestamp'] = {
   }
 };
 
-Blockly.Blocks['guild_defaultMessageNotifications'] = {
+Blockly.Blocks['guild_defaultmessagenotifications'] = {
   init: function() {
     this.jsonInit({
-      "message0": "defaultMessageNotifications of %1",
+      "message0": "default messagenotifications of %1",
       "args0": [
         {
           "type": "input_value",
@@ -470,10 +470,10 @@ Blockly.Blocks['guild_defaultMessageNotifications'] = {
   }
 };
 
-Blockly.Blocks['guild_systemChannelFlags'] = {
+Blockly.Blocks['guild_systemchannelflags'] = {
   init: function() {
     this.jsonInit({
-      "message0": "systemChannelFlags of %1",
+      "message0": "system channelflags of %1",
       "args0": [
         {
           "type": "input_value",
@@ -486,10 +486,10 @@ Blockly.Blocks['guild_systemChannelFlags'] = {
   }
 };
 
-Blockly.Blocks['guild_maximumMembers'] = {
+Blockly.Blocks['guild_maximummembers'] = {
   init: function() {
     this.jsonInit({
-      "message0": "maximumMembers of %1",
+      "message0": "maximum members of %1",
       "args0": [
         {
           "type": "input_value",
@@ -502,10 +502,10 @@ Blockly.Blocks['guild_maximumMembers'] = {
   }
 };
 
-Blockly.Blocks['guild_maximumPresences'] = {
+Blockly.Blocks['guild_maximumpresences'] = {
   init: function() {
     this.jsonInit({
-      "message0": "maximumPresences of %1",
+      "message0": "maximum presences of %1",
       "args0": [
         {
           "type": "input_value",
@@ -518,10 +518,10 @@ Blockly.Blocks['guild_maximumPresences'] = {
   }
 };
 
-Blockly.Blocks['guild_approximateMemberCount'] = {
+Blockly.Blocks['guild_approximatemembercount'] = {
   init: function() {
     this.jsonInit({
-      "message0": "approximateMemberCount of %1",
+      "message0": "approximate membercount of %1",
       "args0": [
         {
           "type": "input_value",
@@ -534,10 +534,10 @@ Blockly.Blocks['guild_approximateMemberCount'] = {
   }
 };
 
-Blockly.Blocks['guild_approximatePresenceCount'] = {
+Blockly.Blocks['guild_approximatepresencecount'] = {
   init: function() {
     this.jsonInit({
-      "message0": "approximatePresenceCount of %1",
+      "message0": "approximate presencecount of %1",
       "args0": [
         {
           "type": "input_value",
@@ -550,10 +550,10 @@ Blockly.Blocks['guild_approximatePresenceCount'] = {
   }
 };
 
-Blockly.Blocks['guild_vanityURLUses'] = {
+Blockly.Blocks['guild_vanityurluses'] = {
   init: function() {
     this.jsonInit({
-      "message0": "vanityURLUses of %1",
+      "message0": "vanity urluses of %1",
       "args0": [
         {
           "type": "input_value",
@@ -566,10 +566,10 @@ Blockly.Blocks['guild_vanityURLUses'] = {
   }
 };
 
-Blockly.Blocks['guild_rulesChannelId'] = {
+Blockly.Blocks['guild_ruleschannelid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "rulesChannelId of %1",
+      "message0": "rules channelid of %1",
       "args0": [
         {
           "type": "input_value",
@@ -582,10 +582,10 @@ Blockly.Blocks['guild_rulesChannelId'] = {
   }
 };
 
-Blockly.Blocks['guild_publicUpdatesChannelId'] = {
+Blockly.Blocks['guild_publicupdateschannelid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "publicUpdatesChannelId of %1",
+      "message0": "public updateschannelid of %1",
       "args0": [
         {
           "type": "input_value",
@@ -598,10 +598,10 @@ Blockly.Blocks['guild_publicUpdatesChannelId'] = {
   }
 };
 
-Blockly.Blocks['guild_preferredLocale'] = {
+Blockly.Blocks['guild_preferredlocale'] = {
   init: function() {
     this.jsonInit({
-      "message0": "preferredLocale of %1",
+      "message0": "preferred locale of %1",
       "args0": [
         {
           "type": "input_value",
@@ -614,10 +614,10 @@ Blockly.Blocks['guild_preferredLocale'] = {
   }
 };
 
-Blockly.Blocks['guild_ownerId'] = {
+Blockly.Blocks['guild_ownerid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "ownerId of %1",
+      "message0": "owner id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -662,10 +662,10 @@ Blockly.Blocks['guild_stickers'] = {
   }
 };
 
-Blockly.Blocks['guild_joinedAt'] = {
+Blockly.Blocks['guild_joinedat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "joinedAt of %1",
+      "message0": "joined at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -678,10 +678,10 @@ Blockly.Blocks['guild_joinedAt'] = {
   }
 };
 
-Blockly.Blocks['guild_afkChannel'] = {
+Blockly.Blocks['guild_afkchannel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "afkChannel of %1",
+      "message0": "afk channel of %1",
       "args0": [
         {
           "type": "input_value",
@@ -694,10 +694,10 @@ Blockly.Blocks['guild_afkChannel'] = {
   }
 };
 
-Blockly.Blocks['guild_systemChannel'] = {
+Blockly.Blocks['guild_systemchannel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "systemChannel of %1",
+      "message0": "system channel of %1",
       "args0": [
         {
           "type": "input_value",
@@ -710,10 +710,10 @@ Blockly.Blocks['guild_systemChannel'] = {
   }
 };
 
-Blockly.Blocks['guild_widgetChannel'] = {
+Blockly.Blocks['guild_widgetchannel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "widgetChannel of %1",
+      "message0": "widget channel of %1",
       "args0": [
         {
           "type": "input_value",
@@ -726,10 +726,10 @@ Blockly.Blocks['guild_widgetChannel'] = {
   }
 };
 
-Blockly.Blocks['guild_rulesChannel'] = {
+Blockly.Blocks['guild_ruleschannel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "rulesChannel of %1",
+      "message0": "rules channel of %1",
       "args0": [
         {
           "type": "input_value",
@@ -742,10 +742,10 @@ Blockly.Blocks['guild_rulesChannel'] = {
   }
 };
 
-Blockly.Blocks['guild_publicUpdatesChannel'] = {
+Blockly.Blocks['guild_publicupdateschannel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "publicUpdatesChannel of %1",
+      "message0": "public updateschannel of %1",
       "args0": [
         {
           "type": "input_value",
@@ -774,10 +774,10 @@ Blockly.Blocks['guild_me'] = {
   }
 };
 
-Blockly.Blocks['guild_maximumBitrate'] = {
+Blockly.Blocks['guild_maximumbitrate'] = {
   init: function() {
     this.jsonInit({
-      "message0": "maximumBitrate of %1",
+      "message0": "maximum bitrate of %1",
       "args0": [
         {
           "type": "input_value",
@@ -790,10 +790,10 @@ Blockly.Blocks['guild_maximumBitrate'] = {
   }
 };
 
-Blockly.Blocks['guild_voiceAdapterCreator'] = {
+Blockly.Blocks['guild_voiceadaptercreator'] = {
   init: function() {
     this.jsonInit({
-      "message0": "voiceAdapterCreator of %1",
+      "message0": "voice adaptercreator of %1",
       "args0": [
         {
           "type": "input_value",
@@ -854,10 +854,10 @@ Blockly.Blocks['guild_description'] = {
   }
 };
 
-Blockly.Blocks['guild_verificationLevel'] = {
+Blockly.Blocks['guild_verificationlevel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "verificationLevel of %1",
+      "message0": "verification level of %1",
       "args0": [
         {
           "type": "input_value",
@@ -870,10 +870,10 @@ Blockly.Blocks['guild_verificationLevel'] = {
   }
 };
 
-Blockly.Blocks['guild_vanityURLCode'] = {
+Blockly.Blocks['guild_vanityurlcode'] = {
   init: function() {
     this.jsonInit({
-      "message0": "vanityURLCode of %1",
+      "message0": "vanity urlcode of %1",
       "args0": [
         {
           "type": "input_value",
@@ -886,10 +886,10 @@ Blockly.Blocks['guild_vanityURLCode'] = {
   }
 };
 
-Blockly.Blocks['guild_nsfwLevel'] = {
+Blockly.Blocks['guild_nsfwlevel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "nsfwLevel of %1",
+      "message0": "nsfw level of %1",
       "args0": [
         {
           "type": "input_value",
@@ -966,10 +966,10 @@ Blockly.Blocks['guild_features'] = {
   }
 };
 
-Blockly.Blocks['guild_createdTimestamp'] = {
+Blockly.Blocks['guild_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -982,10 +982,10 @@ Blockly.Blocks['guild_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['guild_createdAt'] = {
+Blockly.Blocks['guild_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -998,10 +998,10 @@ Blockly.Blocks['guild_createdAt'] = {
   }
 };
 
-Blockly.Blocks['guild_nameAcronym'] = {
+Blockly.Blocks['guild_nameacronym'] = {
   init: function() {
     this.jsonInit({
-      "message0": "nameAcronym of %1",
+      "message0": "name acronym of %1",
       "args0": [
         {
           "type": "input_value",
@@ -1065,7 +1065,7 @@ Blockly.Blocks['guild_client'] = {
 Blockly.Blocks['guild_discoverySplashURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "discoverySplashURL of %1 options: %2",
+      "message0": "discovery splashurl of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -1085,7 +1085,7 @@ Blockly.Blocks['guild_discoverySplashURL'] = {
 Blockly.Blocks['guild_fetchOwner'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchOwner of %1 options: %2",
+      "message0": "fetch owner of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -1105,7 +1105,7 @@ Blockly.Blocks['guild_fetchOwner'] = {
 Blockly.Blocks['guild_fetchIntegrations'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchIntegrations of %1",
+      "message0": "fetch integrations of %1",
       "args0": [
         {
           "type": "input_value",
@@ -1121,7 +1121,7 @@ Blockly.Blocks['guild_fetchIntegrations'] = {
 Blockly.Blocks['guild_fetchTemplates'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchTemplates of %1",
+      "message0": "fetch templates of %1",
       "args0": [
         {
           "type": "input_value",
@@ -1137,7 +1137,7 @@ Blockly.Blocks['guild_fetchTemplates'] = {
 Blockly.Blocks['guild_fetchWelcomeScreen'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchWelcomeScreen of %1",
+      "message0": "fetch welcomescreen of %1",
       "args0": [
         {
           "type": "input_value",
@@ -1153,7 +1153,7 @@ Blockly.Blocks['guild_fetchWelcomeScreen'] = {
 Blockly.Blocks['guild_createTemplate'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createTemplate of %1 name: %2 description: %3",
+      "message0": "create template of %1 name: %2 description: %3",
       "args0": [
         {
           "type": "input_value",
@@ -1177,7 +1177,7 @@ Blockly.Blocks['guild_createTemplate'] = {
 Blockly.Blocks['guild_fetchPreview'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchPreview of %1",
+      "message0": "fetch preview of %1",
       "args0": [
         {
           "type": "input_value",
@@ -1193,7 +1193,7 @@ Blockly.Blocks['guild_fetchPreview'] = {
 Blockly.Blocks['guild_fetchVanityData'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchVanityData of %1",
+      "message0": "fetch vanitydata of %1",
       "args0": [
         {
           "type": "input_value",
@@ -1209,7 +1209,7 @@ Blockly.Blocks['guild_fetchVanityData'] = {
 Blockly.Blocks['guild_fetchWebhooks'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchWebhooks of %1",
+      "message0": "fetch webhooks of %1",
       "args0": [
         {
           "type": "input_value",
@@ -1225,7 +1225,7 @@ Blockly.Blocks['guild_fetchWebhooks'] = {
 Blockly.Blocks['guild_fetchWidget'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchWidget of %1",
+      "message0": "fetch widget of %1",
       "args0": [
         {
           "type": "input_value",
@@ -1241,7 +1241,7 @@ Blockly.Blocks['guild_fetchWidget'] = {
 Blockly.Blocks['guild_fetchWidgetSettings'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchWidgetSettings of %1",
+      "message0": "fetch widgetsettings of %1",
       "args0": [
         {
           "type": "input_value",
@@ -1257,7 +1257,7 @@ Blockly.Blocks['guild_fetchWidgetSettings'] = {
 Blockly.Blocks['guild_fetchAuditLogs'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchAuditLogs of %1 options: %2",
+      "message0": "fetch auditlogs of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -1301,7 +1301,7 @@ Blockly.Blocks['guild_edit'] = {
 Blockly.Blocks['guild_editWelcomeScreen'] = {
   init: function() {
     this.jsonInit({
-      "message0": "editWelcomeScreen of %1 data: %2",
+      "message0": "edit welcomescreen of %1 data: %2",
       "args0": [
         {
           "type": "input_value",
@@ -1321,7 +1321,7 @@ Blockly.Blocks['guild_editWelcomeScreen'] = {
 Blockly.Blocks['guild_setExplicitContentFilter'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setExplicitContentFilter of %1 explicitContentFilter: %2 reason: %3",
+      "message0": "set explicitcontentfilter of %1 explicitContentFilter: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -1345,7 +1345,7 @@ Blockly.Blocks['guild_setExplicitContentFilter'] = {
 Blockly.Blocks['guild_setDefaultMessageNotifications'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setDefaultMessageNotifications of %1 defaultMessageNotifications: %2 reason: %3",
+      "message0": "set defaultmessagenotifications of %1 defaultMessageNotifications: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -1369,7 +1369,7 @@ Blockly.Blocks['guild_setDefaultMessageNotifications'] = {
 Blockly.Blocks['guild_setSystemChannelFlags'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setSystemChannelFlags of %1 systemChannelFlags: %2 reason: %3",
+      "message0": "set systemchannelflags of %1 systemChannelFlags: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -1393,7 +1393,7 @@ Blockly.Blocks['guild_setSystemChannelFlags'] = {
 Blockly.Blocks['guild_setName'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setName of %1 name: %2 reason: %3",
+      "message0": "set name of %1 name: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -1417,7 +1417,7 @@ Blockly.Blocks['guild_setName'] = {
 Blockly.Blocks['guild_setVerificationLevel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setVerificationLevel of %1 verificationLevel: %2 reason: %3",
+      "message0": "set verificationlevel of %1 verificationLevel: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -1441,7 +1441,7 @@ Blockly.Blocks['guild_setVerificationLevel'] = {
 Blockly.Blocks['guild_setAFKChannel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setAFKChannel of %1 afkChannel: %2 reason: %3",
+      "message0": "set afkchannel of %1 afkChannel: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -1465,7 +1465,7 @@ Blockly.Blocks['guild_setAFKChannel'] = {
 Blockly.Blocks['guild_setSystemChannel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setSystemChannel of %1 systemChannel: %2 reason: %3",
+      "message0": "set systemchannel of %1 systemChannel: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -1489,7 +1489,7 @@ Blockly.Blocks['guild_setSystemChannel'] = {
 Blockly.Blocks['guild_setAFKTimeout'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setAFKTimeout of %1 afkTimeout: %2 reason: %3",
+      "message0": "set afktimeout of %1 afkTimeout: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -1513,7 +1513,7 @@ Blockly.Blocks['guild_setAFKTimeout'] = {
 Blockly.Blocks['guild_setIcon'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setIcon of %1 icon: %2 reason: %3",
+      "message0": "set icon of %1 icon: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -1537,7 +1537,7 @@ Blockly.Blocks['guild_setIcon'] = {
 Blockly.Blocks['guild_setOwner'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setOwner of %1 owner: %2 reason: %3",
+      "message0": "set owner of %1 owner: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -1561,7 +1561,7 @@ Blockly.Blocks['guild_setOwner'] = {
 Blockly.Blocks['guild_setSplash'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setSplash of %1 splash: %2 reason: %3",
+      "message0": "set splash of %1 splash: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -1585,7 +1585,7 @@ Blockly.Blocks['guild_setSplash'] = {
 Blockly.Blocks['guild_setDiscoverySplash'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setDiscoverySplash of %1 discoverySplash: %2 reason: %3",
+      "message0": "set discoverysplash of %1 discoverySplash: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -1609,7 +1609,7 @@ Blockly.Blocks['guild_setDiscoverySplash'] = {
 Blockly.Blocks['guild_setBanner'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setBanner of %1 banner: %2 reason: %3",
+      "message0": "set banner of %1 banner: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -1633,7 +1633,7 @@ Blockly.Blocks['guild_setBanner'] = {
 Blockly.Blocks['guild_setRulesChannel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setRulesChannel of %1 rulesChannel: %2 reason: %3",
+      "message0": "set ruleschannel of %1 rulesChannel: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -1657,7 +1657,7 @@ Blockly.Blocks['guild_setRulesChannel'] = {
 Blockly.Blocks['guild_setPublicUpdatesChannel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setPublicUpdatesChannel of %1 publicUpdatesChannel: %2 reason: %3",
+      "message0": "set publicupdateschannel of %1 publicUpdatesChannel: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -1681,7 +1681,7 @@ Blockly.Blocks['guild_setPublicUpdatesChannel'] = {
 Blockly.Blocks['guild_setPreferredLocale'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setPreferredLocale of %1 preferredLocale: %2 reason: %3",
+      "message0": "set preferredlocale of %1 preferredLocale: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -1705,7 +1705,7 @@ Blockly.Blocks['guild_setPreferredLocale'] = {
 Blockly.Blocks['guild_setPremiumProgressBarEnabled'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setPremiumProgressBarEnabled of %1 enabled: %2 reason: %3",
+      "message0": "set premiumprogressbarenabled of %1 enabled: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -1729,7 +1729,7 @@ Blockly.Blocks['guild_setPremiumProgressBarEnabled'] = {
 Blockly.Blocks['guild_setWidgetSettings'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setWidgetSettings of %1 settings: %2 reason: %3",
+      "message0": "set widgetsettings of %1 settings: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -1805,7 +1805,7 @@ Blockly.Blocks['guild_equals'] = {
 Blockly.Blocks['guild_bannerURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "bannerURL of %1 options: %2",
+      "message0": "banner url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -1825,7 +1825,7 @@ Blockly.Blocks['guild_bannerURL'] = {
 Blockly.Blocks['guild_splashURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "splashURL of %1 options: %2",
+      "message0": "splash url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -1845,7 +1845,7 @@ Blockly.Blocks['guild_splashURL'] = {
 Blockly.Blocks['guild_iconURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "iconURL of %1 options: %2",
+      "message0": "icon url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -1881,7 +1881,7 @@ Blockly.Blocks['guild_fetch'] = {
 Blockly.Blocks['guild_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",

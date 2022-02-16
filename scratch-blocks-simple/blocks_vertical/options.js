@@ -6,10 +6,10 @@ goog.require('Blockly.Blocks');
 goog.require('Blockly.Colours');
 goog.require('Blockly.constants');
 goog.require('Blockly.ScratchBlocks.VerticalExtensions');
-Blockly.Blocks['options_defaultMakeCacheSettings'] = {
+Blockly.Blocks['options_defaultmakecachesettings'] = {
   init: function() {
     this.jsonInit({
-      "message0": "defaultMakeCacheSettings of %1",
+      "message0": "default makecachesettings of %1",
       "args0": [
         {
           "type": "input_value",
@@ -22,10 +22,10 @@ Blockly.Blocks['options_defaultMakeCacheSettings'] = {
   }
 };
 
-Blockly.Blocks['options_defaultSweeperSettings'] = {
+Blockly.Blocks['options_defaultsweepersettings'] = {
   init: function() {
     this.jsonInit({
-      "message0": "defaultSweeperSettings of %1",
+      "message0": "default sweepersettings of %1",
       "args0": [
         {
           "type": "input_value",
@@ -41,7 +41,7 @@ Blockly.Blocks['options_defaultSweeperSettings'] = {
 Blockly.Blocks['options_createDefault'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createDefault of %1",
+      "message0": "create default of %1",
       "args0": [
         {
           "type": "input_value",
@@ -57,7 +57,7 @@ Blockly.Blocks['options_createDefault'] = {
 Blockly.Blocks['options_cacheWithLimits'] = {
   init: function() {
     this.jsonInit({
-      "message0": "cacheWithLimits of %1 settings: %2",
+      "message0": "cache withlimits of %1 settings: %2",
       "args0": [
         {
           "type": "input_value",
@@ -77,7 +77,7 @@ Blockly.Blocks['options_cacheWithLimits'] = {
 Blockly.Blocks['options_cacheEverything'] = {
   init: function() {
     this.jsonInit({
-      "message0": "cacheEverything of %1",
+      "message0": "cache everything of %1",
       "args0": [
         {
           "type": "input_value",

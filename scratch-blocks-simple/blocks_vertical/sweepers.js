@@ -41,7 +41,7 @@ Blockly.Blocks['sweepers_intervals'] = {
 Blockly.Blocks['sweepers_sweepApplicationCommands'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sweepApplicationCommands of %1 filter: %2",
+      "message0": "sweep applicationcommands of %1 filter: %2",
       "args0": [
         {
           "type": "input_value",
@@ -61,7 +61,7 @@ Blockly.Blocks['sweepers_sweepApplicationCommands'] = {
 Blockly.Blocks['sweepers_sweepBans'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sweepBans of %1 filter: %2",
+      "message0": "sweep bans of %1 filter: %2",
       "args0": [
         {
           "type": "input_value",
@@ -81,7 +81,7 @@ Blockly.Blocks['sweepers_sweepBans'] = {
 Blockly.Blocks['sweepers_sweepEmojis'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sweepEmojis of %1 filter: %2",
+      "message0": "sweep emojis of %1 filter: %2",
       "args0": [
         {
           "type": "input_value",
@@ -101,7 +101,7 @@ Blockly.Blocks['sweepers_sweepEmojis'] = {
 Blockly.Blocks['sweepers_sweepInvites'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sweepInvites of %1 filter: %2",
+      "message0": "sweep invites of %1 filter: %2",
       "args0": [
         {
           "type": "input_value",
@@ -121,7 +121,7 @@ Blockly.Blocks['sweepers_sweepInvites'] = {
 Blockly.Blocks['sweepers_sweepGuildMembers'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sweepGuildMembers of %1 filter: %2",
+      "message0": "sweep guildmembers of %1 filter: %2",
       "args0": [
         {
           "type": "input_value",
@@ -141,7 +141,7 @@ Blockly.Blocks['sweepers_sweepGuildMembers'] = {
 Blockly.Blocks['sweepers_sweepMessages'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sweepMessages of %1 filter: %2",
+      "message0": "sweep messages of %1 filter: %2",
       "args0": [
         {
           "type": "input_value",
@@ -161,7 +161,7 @@ Blockly.Blocks['sweepers_sweepMessages'] = {
 Blockly.Blocks['sweepers_sweepPresences'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sweepPresences of %1 filter: %2",
+      "message0": "sweep presences of %1 filter: %2",
       "args0": [
         {
           "type": "input_value",
@@ -181,7 +181,7 @@ Blockly.Blocks['sweepers_sweepPresences'] = {
 Blockly.Blocks['sweepers_sweepReactions'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sweepReactions of %1 filter: %2",
+      "message0": "sweep reactions of %1 filter: %2",
       "args0": [
         {
           "type": "input_value",
@@ -201,7 +201,7 @@ Blockly.Blocks['sweepers_sweepReactions'] = {
 Blockly.Blocks['sweepers_sweepStageInstances'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sweepStageInstances of %1 filter: %2",
+      "message0": "sweep stageinstances of %1 filter: %2",
       "args0": [
         {
           "type": "input_value",
@@ -221,7 +221,7 @@ Blockly.Blocks['sweepers_sweepStageInstances'] = {
 Blockly.Blocks['sweepers_sweepThreadMembers'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sweepThreadMembers of %1 filter: %2",
+      "message0": "sweep threadmembers of %1 filter: %2",
       "args0": [
         {
           "type": "input_value",
@@ -241,7 +241,7 @@ Blockly.Blocks['sweepers_sweepThreadMembers'] = {
 Blockly.Blocks['sweepers_sweepThreads'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sweepThreads of %1 filter: %2",
+      "message0": "sweep threads of %1 filter: %2",
       "args0": [
         {
           "type": "input_value",
@@ -261,7 +261,7 @@ Blockly.Blocks['sweepers_sweepThreads'] = {
 Blockly.Blocks['sweepers_sweepUsers'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sweepUsers of %1 filter: %2",
+      "message0": "sweep users of %1 filter: %2",
       "args0": [
         {
           "type": "input_value",
@@ -281,7 +281,7 @@ Blockly.Blocks['sweepers_sweepUsers'] = {
 Blockly.Blocks['sweepers_sweepVoiceStates'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sweepVoiceStates of %1 filter: %2",
+      "message0": "sweep voicestates of %1 filter: %2",
       "args0": [
         {
           "type": "input_value",
@@ -317,7 +317,7 @@ Blockly.Blocks['sweepers_destroy'] = {
 Blockly.Blocks['sweepers_filterByLifetime'] = {
   init: function() {
     this.jsonInit({
-      "message0": "filterByLifetime of %1 options: %2",
+      "message0": "filter bylifetime of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -337,7 +337,7 @@ Blockly.Blocks['sweepers_filterByLifetime'] = {
 Blockly.Blocks['sweepers_archivedThreadSweepFilter'] = {
   init: function() {
     this.jsonInit({
-      "message0": "archivedThreadSweepFilter of %1 lifetime: %2",
+      "message0": "archived threadsweepfilter of %1 lifetime: %2",
       "args0": [
         {
           "type": "input_value",
@@ -357,7 +357,7 @@ Blockly.Blocks['sweepers_archivedThreadSweepFilter'] = {
 Blockly.Blocks['sweepers_expiredInviteSweepFilter'] = {
   init: function() {
     this.jsonInit({
-      "message0": "expiredInviteSweepFilter of %1 lifetime: %2",
+      "message0": "expired invitesweepfilter of %1 lifetime: %2",
       "args0": [
         {
           "type": "input_value",
@@ -377,7 +377,7 @@ Blockly.Blocks['sweepers_expiredInviteSweepFilter'] = {
 Blockly.Blocks['sweepers_outdatedMessageSweepFilter'] = {
   init: function() {
     this.jsonInit({
-      "message0": "outdatedMessageSweepFilter of %1 lifetime: %2",
+      "message0": "outdated messagesweepfilter of %1 lifetime: %2",
       "args0": [
         {
           "type": "input_value",

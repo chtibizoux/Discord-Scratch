@@ -38,10 +38,10 @@ Blockly.Blocks['shardclientutil_mode'] = {
   }
 };
 
-Blockly.Blocks['shardclientutil_parentPort'] = {
+Blockly.Blocks['shardclientutil_parentport'] = {
   init: function() {
     this.jsonInit({
-      "message0": "parentPort of %1",
+      "message0": "parent port of %1",
       "args0": [
         {
           "type": "input_value",
@@ -109,7 +109,7 @@ Blockly.Blocks['shardclientutil_send'] = {
 Blockly.Blocks['shardclientutil_fetchClientValues'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchClientValues of %1 prop: %2 shard: %3",
+      "message0": "fetch clientvalues of %1 prop: %2 shard: %3",
       "args0": [
         {
           "type": "input_value",
@@ -133,7 +133,7 @@ Blockly.Blocks['shardclientutil_fetchClientValues'] = {
 Blockly.Blocks['shardclientutil_broadcastEval'] = {
   init: function() {
     this.jsonInit({
-      "message0": "broadcastEval of %1 script: %2 options: %3",
+      "message0": "broadcast eval of %1 script: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -157,7 +157,7 @@ Blockly.Blocks['shardclientutil_broadcastEval'] = {
 Blockly.Blocks['shardclientutil_respawnAll'] = {
   init: function() {
     this.jsonInit({
-      "message0": "respawnAll of %1 options: %2",
+      "message0": "respawn all of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -201,7 +201,7 @@ Blockly.Blocks['shardclientutil_singleton'] = {
 Blockly.Blocks['shardclientutil_shardIdForGuildId'] = {
   init: function() {
     this.jsonInit({
-      "message0": "shardIdForGuildId of %1 guildId: %2 shardCount: %3",
+      "message0": "shard idforguildid of %1 guildId: %2 shardCount: %3",
       "args0": [
         {
           "type": "input_value",

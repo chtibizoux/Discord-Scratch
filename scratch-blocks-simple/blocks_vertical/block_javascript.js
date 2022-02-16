@@ -291,7 +291,7 @@ Blockly.JavaScript['client_application'] = function(block) {
     var client = Blockly.JavaScript.valueToCode(block, 'CLIENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [client + ".application", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['client_readyAt'] = function(block) {
+Blockly.JavaScript['client_readyat'] = function(block) {
     var client = Blockly.JavaScript.valueToCode(block, 'CLIENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [client + ".readyAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -299,7 +299,7 @@ Blockly.JavaScript['client_emojis'] = function(block) {
     var client = Blockly.JavaScript.valueToCode(block, 'CLIENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [client + ".emojis", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['client_readyTimestamp'] = function(block) {
+Blockly.JavaScript['client_readytimestamp'] = function(block) {
     var client = Blockly.JavaScript.valueToCode(block, 'CLIENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [client + ".readyTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
@@ -465,11 +465,11 @@ Blockly.JavaScript['webhookclient_id'] = function(block) {
     var webhookclient = Blockly.JavaScript.valueToCode(block, 'WEBHOOKCLIENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [webhookclient + ".id", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['webhookclient_createdTimestamp'] = function(block) {
+Blockly.JavaScript['webhookclient_createdtimestamp'] = function(block) {
     var webhookclient = Blockly.JavaScript.valueToCode(block, 'WEBHOOKCLIENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [webhookclient + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['webhookclient_createdAt'] = function(block) {
+Blockly.JavaScript['webhookclient_createdat'] = function(block) {
     var webhookclient = Blockly.JavaScript.valueToCode(block, 'WEBHOOKCLIENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [webhookclient + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -711,11 +711,11 @@ Blockly.JavaScript['applicationcommandpermissionsmanager_guild'] = function(bloc
     var applicationcommandpermissionsmanager = Blockly.JavaScript.valueToCode(block, 'APPLICATIONCOMMANDPERMISSIONSMANAGER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [applicationcommandpermissionsmanager + ".guild", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['applicationcommandpermissionsmanager_guildId'] = function(block) {
+Blockly.JavaScript['applicationcommandpermissionsmanager_guildid'] = function(block) {
     var applicationcommandpermissionsmanager = Blockly.JavaScript.valueToCode(block, 'APPLICATIONCOMMANDPERMISSIONSMANAGER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [applicationcommandpermissionsmanager + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['applicationcommandpermissionsmanager_commandId'] = function(block) {
+Blockly.JavaScript['applicationcommandpermissionsmanager_commandid'] = function(block) {
     var applicationcommandpermissionsmanager = Blockly.JavaScript.valueToCode(block, 'APPLICATIONCOMMANDPERMISSIONSMANAGER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [applicationcommandpermissionsmanager + ".commandId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -1013,7 +1013,7 @@ Blockly.JavaScript['guildchannelmanager_guild'] = function(block) {
     var guildchannelmanager = Blockly.JavaScript.valueToCode(block, 'GUILDCHANNELMANAGER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildchannelmanager + ".guild", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildchannelmanager_channelCountWithoutThreads'] = function(block) {
+Blockly.JavaScript['guildchannelmanager_channelcountwithoutthreads'] = function(block) {
     var guildchannelmanager = Blockly.JavaScript.valueToCode(block, 'GUILDCHANNELMANAGER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildchannelmanager + ".channelCountWithoutThreads", Blockly.JavaScript.ORDER_NONE];
 };
@@ -1403,11 +1403,11 @@ Blockly.JavaScript['guildmemberrolemanager_highest'] = function(block) {
     var guildmemberrolemanager = Blockly.JavaScript.valueToCode(block, 'GUILDMEMBERROLEMANAGER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildmemberrolemanager + ".highest", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildmemberrolemanager_premiumSubscriberRole'] = function(block) {
+Blockly.JavaScript['guildmemberrolemanager_premiumsubscriberrole'] = function(block) {
     var guildmemberrolemanager = Blockly.JavaScript.valueToCode(block, 'GUILDMEMBERROLEMANAGER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildmemberrolemanager + ".premiumSubscriberRole", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildmemberrolemanager_botRole'] = function(block) {
+Blockly.JavaScript['guildmemberrolemanager_botrole'] = function(block) {
     var guildmemberrolemanager = Blockly.JavaScript.valueToCode(block, 'GUILDMEMBERROLEMANAGER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildmemberrolemanager + ".botRole", Blockly.JavaScript.ORDER_NONE];
 };
@@ -1874,7 +1874,7 @@ Blockly.JavaScript['rolemanager_everyone'] = function(block) {
     var rolemanager = Blockly.JavaScript.valueToCode(block, 'ROLEMANAGER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [rolemanager + ".everyone", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['rolemanager_premiumSubscriberRole'] = function(block) {
+Blockly.JavaScript['rolemanager_premiumsubscriberrole'] = function(block) {
     var rolemanager = Blockly.JavaScript.valueToCode(block, 'ROLEMANAGER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [rolemanager + ".premiumSubscriberRole", Blockly.JavaScript.ORDER_NONE];
 };
@@ -2260,11 +2260,11 @@ Blockly.JavaScript['discordapierror_code'] = function(block) {
     var discordapierror = Blockly.JavaScript.valueToCode(block, 'DISCORDAPIERROR', Blockly.JavaScript.ORDER_NONE) || "null";
     return [discordapierror + ".code", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['discordapierror_httpStatus'] = function(block) {
+Blockly.JavaScript['discordapierror_httpstatus'] = function(block) {
     var discordapierror = Blockly.JavaScript.valueToCode(block, 'DISCORDAPIERROR', Blockly.JavaScript.ORDER_NONE) || "null";
     return [discordapierror + ".httpStatus", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['discordapierror_requestData'] = function(block) {
+Blockly.JavaScript['discordapierror_requestdata'] = function(block) {
     var discordapierror = Blockly.JavaScript.valueToCode(block, 'DISCORDAPIERROR', Blockly.JavaScript.ORDER_NONE) || "null";
     return [discordapierror + ".requestData", Blockly.JavaScript.ORDER_NONE];
 };
@@ -2284,7 +2284,7 @@ Blockly.JavaScript['httperror_path'] = function(block) {
     var httperror = Blockly.JavaScript.valueToCode(block, 'HTTPERROR', Blockly.JavaScript.ORDER_NONE) || "null";
     return [httperror + ".path", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['httperror_requestData'] = function(block) {
+Blockly.JavaScript['httperror_requestdata'] = function(block) {
     var httperror = Blockly.JavaScript.valueToCode(block, 'HTTPERROR', Blockly.JavaScript.ORDER_NONE) || "null";
     return [httperror + ".requestData", Blockly.JavaScript.ORDER_NONE];
 };
@@ -2347,7 +2347,7 @@ Blockly.JavaScript['shard_args'] = function(block) {
     var shard = Blockly.JavaScript.valueToCode(block, 'SHARD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [shard + ".args", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['shard_execArgv'] = function(block) {
+Blockly.JavaScript['shard_execargv'] = function(block) {
     var shard = Blockly.JavaScript.valueToCode(block, 'SHARD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [shard + ".execArgv", Blockly.JavaScript.ORDER_NONE];
 };
@@ -2411,7 +2411,7 @@ Blockly.JavaScript['shardclientutil_mode'] = function(block) {
     var shardclientutil = Blockly.JavaScript.valueToCode(block, 'SHARDCLIENTUTIL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [shardclientutil + ".mode", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['shardclientutil_parentPort'] = function(block) {
+Blockly.JavaScript['shardclientutil_parentport'] = function(block) {
     var shardclientutil = Blockly.JavaScript.valueToCode(block, 'SHARDCLIENTUTIL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [shardclientutil + ".parentPort", Blockly.JavaScript.ORDER_NONE];
 };
@@ -2474,11 +2474,11 @@ Blockly.JavaScript['shardingmanager_file'] = function(block) {
     var shardingmanager = Blockly.JavaScript.valueToCode(block, 'SHARDINGMANAGER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [shardingmanager + ".file", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['shardingmanager_shardList'] = function(block) {
+Blockly.JavaScript['shardingmanager_shardlist'] = function(block) {
     var shardingmanager = Blockly.JavaScript.valueToCode(block, 'SHARDINGMANAGER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [shardingmanager + ".shardList", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['shardingmanager_totalShards'] = function(block) {
+Blockly.JavaScript['shardingmanager_totalshards'] = function(block) {
     var shardingmanager = Blockly.JavaScript.valueToCode(block, 'SHARDINGMANAGER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [shardingmanager + ".totalShards", Blockly.JavaScript.ORDER_NONE];
 };
@@ -2490,11 +2490,11 @@ Blockly.JavaScript['shardingmanager_respawn'] = function(block) {
     var shardingmanager = Blockly.JavaScript.valueToCode(block, 'SHARDINGMANAGER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [shardingmanager + ".respawn", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['shardingmanager_shardArgs'] = function(block) {
+Blockly.JavaScript['shardingmanager_shardargs'] = function(block) {
     var shardingmanager = Blockly.JavaScript.valueToCode(block, 'SHARDINGMANAGER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [shardingmanager + ".shardArgs", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['shardingmanager_execArgv'] = function(block) {
+Blockly.JavaScript['shardingmanager_execargv'] = function(block) {
     var shardingmanager = Blockly.JavaScript.valueToCode(block, 'SHARDINGMANAGER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [shardingmanager + ".execArgv", Blockly.JavaScript.ORDER_NONE];
 };
@@ -2562,15 +2562,15 @@ Blockly.JavaScript['anonymousguild_description'] = function(block) {
     var anonymousguild = Blockly.JavaScript.valueToCode(block, 'ANONYMOUSGUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [anonymousguild + ".description", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['anonymousguild_verificationLevel'] = function(block) {
+Blockly.JavaScript['anonymousguild_verificationlevel'] = function(block) {
     var anonymousguild = Blockly.JavaScript.valueToCode(block, 'ANONYMOUSGUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [anonymousguild + ".verificationLevel", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['anonymousguild_vanityURLCode'] = function(block) {
+Blockly.JavaScript['anonymousguild_vanityurlcode'] = function(block) {
     var anonymousguild = Blockly.JavaScript.valueToCode(block, 'ANONYMOUSGUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [anonymousguild + ".vanityURLCode", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['anonymousguild_nsfwLevel'] = function(block) {
+Blockly.JavaScript['anonymousguild_nsfwlevel'] = function(block) {
     var anonymousguild = Blockly.JavaScript.valueToCode(block, 'ANONYMOUSGUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [anonymousguild + ".nsfwLevel", Blockly.JavaScript.ORDER_NONE];
 };
@@ -2590,15 +2590,15 @@ Blockly.JavaScript['anonymousguild_features'] = function(block) {
     var anonymousguild = Blockly.JavaScript.valueToCode(block, 'ANONYMOUSGUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [anonymousguild + ".features", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['anonymousguild_createdTimestamp'] = function(block) {
+Blockly.JavaScript['anonymousguild_createdtimestamp'] = function(block) {
     var anonymousguild = Blockly.JavaScript.valueToCode(block, 'ANONYMOUSGUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [anonymousguild + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['anonymousguild_createdAt'] = function(block) {
+Blockly.JavaScript['anonymousguild_createdat'] = function(block) {
     var anonymousguild = Blockly.JavaScript.valueToCode(block, 'ANONYMOUSGUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [anonymousguild + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['anonymousguild_nameAcronym'] = function(block) {
+Blockly.JavaScript['anonymousguild_nameacronym'] = function(block) {
     var anonymousguild = Blockly.JavaScript.valueToCode(block, 'ANONYMOUSGUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [anonymousguild + ".nameAcronym", Blockly.JavaScript.ORDER_NONE];
 };
@@ -2647,7 +2647,7 @@ Blockly.JavaScript['applicationcommand_id'] = function(block) {
     var applicationcommand = Blockly.JavaScript.valueToCode(block, 'APPLICATIONCOMMAND', Blockly.JavaScript.ORDER_NONE) || "null";
     return [applicationcommand + ".id", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['applicationcommand_applicationId'] = function(block) {
+Blockly.JavaScript['applicationcommand_applicationid'] = function(block) {
     var applicationcommand = Blockly.JavaScript.valueToCode(block, 'APPLICATIONCOMMAND', Blockly.JavaScript.ORDER_NONE) || "null";
     return [applicationcommand + ".applicationId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -2655,7 +2655,7 @@ Blockly.JavaScript['applicationcommand_guild'] = function(block) {
     var applicationcommand = Blockly.JavaScript.valueToCode(block, 'APPLICATIONCOMMAND', Blockly.JavaScript.ORDER_NONE) || "null";
     return [applicationcommand + ".guild", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['applicationcommand_guildId'] = function(block) {
+Blockly.JavaScript['applicationcommand_guildid'] = function(block) {
     var applicationcommand = Blockly.JavaScript.valueToCode(block, 'APPLICATIONCOMMAND', Blockly.JavaScript.ORDER_NONE) || "null";
     return [applicationcommand + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -2679,7 +2679,7 @@ Blockly.JavaScript['applicationcommand_options'] = function(block) {
     var applicationcommand = Blockly.JavaScript.valueToCode(block, 'APPLICATIONCOMMAND', Blockly.JavaScript.ORDER_NONE) || "null";
     return [applicationcommand + ".options", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['applicationcommand_defaultPermission'] = function(block) {
+Blockly.JavaScript['applicationcommand_defaultpermission'] = function(block) {
     var applicationcommand = Blockly.JavaScript.valueToCode(block, 'APPLICATIONCOMMAND', Blockly.JavaScript.ORDER_NONE) || "null";
     return [applicationcommand + ".defaultPermission", Blockly.JavaScript.ORDER_NONE];
 };
@@ -2687,11 +2687,11 @@ Blockly.JavaScript['applicationcommand_version'] = function(block) {
     var applicationcommand = Blockly.JavaScript.valueToCode(block, 'APPLICATIONCOMMAND', Blockly.JavaScript.ORDER_NONE) || "null";
     return [applicationcommand + ".version", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['applicationcommand_createdTimestamp'] = function(block) {
+Blockly.JavaScript['applicationcommand_createdtimestamp'] = function(block) {
     var applicationcommand = Blockly.JavaScript.valueToCode(block, 'APPLICATIONCOMMAND', Blockly.JavaScript.ORDER_NONE) || "null";
     return [applicationcommand + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['applicationcommand_createdAt'] = function(block) {
+Blockly.JavaScript['applicationcommand_createdat'] = function(block) {
     var applicationcommand = Blockly.JavaScript.valueToCode(block, 'APPLICATIONCOMMAND', Blockly.JavaScript.ORDER_NONE) || "null";
     return [applicationcommand + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -2745,15 +2745,15 @@ Blockly.JavaScript['applicationcommand_optionsEqual'] = function(block) {
     var enforceOptionOrder = Blockly.JavaScript.valueToCode(block, 'ENFORCEOPTIONORDER', Blockly.JavaScript.ORDER_NONE) || "";
     return applicationcommand + ".optionsEqual(" + existing + ", " + options + ", " + enforceOptionOrder + ");\n";
 };
-Blockly.JavaScript['autocompleteinteraction_channelId'] = function(block) {
+Blockly.JavaScript['autocompleteinteraction_channelid'] = function(block) {
     var autocompleteinteraction = Blockly.JavaScript.valueToCode(block, 'AUTOCOMPLETEINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [autocompleteinteraction + ".channelId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['autocompleteinteraction_commandId'] = function(block) {
+Blockly.JavaScript['autocompleteinteraction_commandid'] = function(block) {
     var autocompleteinteraction = Blockly.JavaScript.valueToCode(block, 'AUTOCOMPLETEINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [autocompleteinteraction + ".commandId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['autocompleteinteraction_commandName'] = function(block) {
+Blockly.JavaScript['autocompleteinteraction_commandname'] = function(block) {
     var autocompleteinteraction = Blockly.JavaScript.valueToCode(block, 'AUTOCOMPLETEINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [autocompleteinteraction + ".commandName", Blockly.JavaScript.ORDER_NONE];
 };
@@ -2781,11 +2781,11 @@ Blockly.JavaScript['autocompleteinteraction_token'] = function(block) {
     var autocompleteinteraction = Blockly.JavaScript.valueToCode(block, 'AUTOCOMPLETEINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [autocompleteinteraction + ".token", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['autocompleteinteraction_applicationId'] = function(block) {
+Blockly.JavaScript['autocompleteinteraction_applicationid'] = function(block) {
     var autocompleteinteraction = Blockly.JavaScript.valueToCode(block, 'AUTOCOMPLETEINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [autocompleteinteraction + ".applicationId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['autocompleteinteraction_guildId'] = function(block) {
+Blockly.JavaScript['autocompleteinteraction_guildid'] = function(block) {
     var autocompleteinteraction = Blockly.JavaScript.valueToCode(block, 'AUTOCOMPLETEINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [autocompleteinteraction + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -2801,7 +2801,7 @@ Blockly.JavaScript['autocompleteinteraction_version'] = function(block) {
     var autocompleteinteraction = Blockly.JavaScript.valueToCode(block, 'AUTOCOMPLETEINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [autocompleteinteraction + ".version", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['autocompleteinteraction_memberPermissions'] = function(block) {
+Blockly.JavaScript['autocompleteinteraction_memberpermissions'] = function(block) {
     var autocompleteinteraction = Blockly.JavaScript.valueToCode(block, 'AUTOCOMPLETEINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [autocompleteinteraction + ".memberPermissions", Blockly.JavaScript.ORDER_NONE];
 };
@@ -2809,15 +2809,15 @@ Blockly.JavaScript['autocompleteinteraction_locale'] = function(block) {
     var autocompleteinteraction = Blockly.JavaScript.valueToCode(block, 'AUTOCOMPLETEINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [autocompleteinteraction + ".locale", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['autocompleteinteraction_guildLocale'] = function(block) {
+Blockly.JavaScript['autocompleteinteraction_guildlocale'] = function(block) {
     var autocompleteinteraction = Blockly.JavaScript.valueToCode(block, 'AUTOCOMPLETEINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [autocompleteinteraction + ".guildLocale", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['autocompleteinteraction_createdTimestamp'] = function(block) {
+Blockly.JavaScript['autocompleteinteraction_createdtimestamp'] = function(block) {
     var autocompleteinteraction = Blockly.JavaScript.valueToCode(block, 'AUTOCOMPLETEINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [autocompleteinteraction + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['autocompleteinteraction_createdAt'] = function(block) {
+Blockly.JavaScript['autocompleteinteraction_createdat'] = function(block) {
     var autocompleteinteraction = Blockly.JavaScript.valueToCode(block, 'AUTOCOMPLETEINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [autocompleteinteraction + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -2896,15 +2896,15 @@ Blockly.JavaScript['base_client'] = function(block) {
     var base = Blockly.JavaScript.valueToCode(block, 'BASE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [base + ".client", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['basecommandinteraction_channelId'] = function(block) {
+Blockly.JavaScript['basecommandinteraction_channelid'] = function(block) {
     var basecommandinteraction = Blockly.JavaScript.valueToCode(block, 'BASECOMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [basecommandinteraction + ".channelId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['basecommandinteraction_commandId'] = function(block) {
+Blockly.JavaScript['basecommandinteraction_commandid'] = function(block) {
     var basecommandinteraction = Blockly.JavaScript.valueToCode(block, 'BASECOMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [basecommandinteraction + ".commandId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['basecommandinteraction_commandName'] = function(block) {
+Blockly.JavaScript['basecommandinteraction_commandname'] = function(block) {
     var basecommandinteraction = Blockly.JavaScript.valueToCode(block, 'BASECOMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [basecommandinteraction + ".commandName", Blockly.JavaScript.ORDER_NONE];
 };
@@ -2940,11 +2940,11 @@ Blockly.JavaScript['basecommandinteraction_token'] = function(block) {
     var basecommandinteraction = Blockly.JavaScript.valueToCode(block, 'BASECOMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [basecommandinteraction + ".token", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['basecommandinteraction_applicationId'] = function(block) {
+Blockly.JavaScript['basecommandinteraction_applicationid'] = function(block) {
     var basecommandinteraction = Blockly.JavaScript.valueToCode(block, 'BASECOMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [basecommandinteraction + ".applicationId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['basecommandinteraction_guildId'] = function(block) {
+Blockly.JavaScript['basecommandinteraction_guildid'] = function(block) {
     var basecommandinteraction = Blockly.JavaScript.valueToCode(block, 'BASECOMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [basecommandinteraction + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -2960,7 +2960,7 @@ Blockly.JavaScript['basecommandinteraction_version'] = function(block) {
     var basecommandinteraction = Blockly.JavaScript.valueToCode(block, 'BASECOMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [basecommandinteraction + ".version", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['basecommandinteraction_memberPermissions'] = function(block) {
+Blockly.JavaScript['basecommandinteraction_memberpermissions'] = function(block) {
     var basecommandinteraction = Blockly.JavaScript.valueToCode(block, 'BASECOMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [basecommandinteraction + ".memberPermissions", Blockly.JavaScript.ORDER_NONE];
 };
@@ -2968,15 +2968,15 @@ Blockly.JavaScript['basecommandinteraction_locale'] = function(block) {
     var basecommandinteraction = Blockly.JavaScript.valueToCode(block, 'BASECOMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [basecommandinteraction + ".locale", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['basecommandinteraction_guildLocale'] = function(block) {
+Blockly.JavaScript['basecommandinteraction_guildlocale'] = function(block) {
     var basecommandinteraction = Blockly.JavaScript.valueToCode(block, 'BASECOMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [basecommandinteraction + ".guildLocale", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['basecommandinteraction_createdTimestamp'] = function(block) {
+Blockly.JavaScript['basecommandinteraction_createdtimestamp'] = function(block) {
     var basecommandinteraction = Blockly.JavaScript.valueToCode(block, 'BASECOMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [basecommandinteraction + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['basecommandinteraction_createdAt'] = function(block) {
+Blockly.JavaScript['basecommandinteraction_createdat'] = function(block) {
     var basecommandinteraction = Blockly.JavaScript.valueToCode(block, 'BASECOMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [basecommandinteraction + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -3108,15 +3108,15 @@ Blockly.JavaScript['baseguild_features'] = function(block) {
     var baseguild = Blockly.JavaScript.valueToCode(block, 'BASEGUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguild + ".features", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguild_createdTimestamp'] = function(block) {
+Blockly.JavaScript['baseguild_createdtimestamp'] = function(block) {
     var baseguild = Blockly.JavaScript.valueToCode(block, 'BASEGUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguild + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguild_createdAt'] = function(block) {
+Blockly.JavaScript['baseguild_createdat'] = function(block) {
     var baseguild = Blockly.JavaScript.valueToCode(block, 'BASEGUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguild + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguild_nameAcronym'] = function(block) {
+Blockly.JavaScript['baseguild_nameacronym'] = function(block) {
     var baseguild = Blockly.JavaScript.valueToCode(block, 'BASEGUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguild + ".nameAcronym", Blockly.JavaScript.ORDER_NONE];
 };
@@ -3155,7 +3155,7 @@ Blockly.JavaScript['baseguildemoji_guild'] = function(block) {
     var baseguildemoji = Blockly.JavaScript.valueToCode(block, 'BASEGUILDEMOJI', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildemoji + ".guild", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguildemoji_requiresColons'] = function(block) {
+Blockly.JavaScript['baseguildemoji_requirescolons'] = function(block) {
     var baseguildemoji = Blockly.JavaScript.valueToCode(block, 'BASEGUILDEMOJI', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildemoji + ".requiresColons", Blockly.JavaScript.ORDER_NONE];
 };
@@ -3187,11 +3187,11 @@ Blockly.JavaScript['baseguildemoji_url'] = function(block) {
     var baseguildemoji = Blockly.JavaScript.valueToCode(block, 'BASEGUILDEMOJI', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildemoji + ".url", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguildemoji_createdTimestamp'] = function(block) {
+Blockly.JavaScript['baseguildemoji_createdtimestamp'] = function(block) {
     var baseguildemoji = Blockly.JavaScript.valueToCode(block, 'BASEGUILDEMOJI', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildemoji + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguildemoji_createdAt'] = function(block) {
+Blockly.JavaScript['baseguildemoji_createdat'] = function(block) {
     var baseguildemoji = Blockly.JavaScript.valueToCode(block, 'BASEGUILDEMOJI', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildemoji + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -3219,23 +3219,23 @@ Blockly.JavaScript['baseguildtextchannel_topic'] = function(block) {
     var baseguildtextchannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDTEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildtextchannel + ".topic", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguildtextchannel_lastMessageId'] = function(block) {
+Blockly.JavaScript['baseguildtextchannel_lastmessageid'] = function(block) {
     var baseguildtextchannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDTEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildtextchannel + ".lastMessageId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguildtextchannel_lastPinTimestamp'] = function(block) {
+Blockly.JavaScript['baseguildtextchannel_lastpintimestamp'] = function(block) {
     var baseguildtextchannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDTEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildtextchannel + ".lastPinTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguildtextchannel_defaultAutoArchiveDuration'] = function(block) {
+Blockly.JavaScript['baseguildtextchannel_defaultautoarchiveduration'] = function(block) {
     var baseguildtextchannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDTEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildtextchannel + ".defaultAutoArchiveDuration", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguildtextchannel_lastMessage'] = function(block) {
+Blockly.JavaScript['baseguildtextchannel_lastmessage'] = function(block) {
     var baseguildtextchannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDTEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildtextchannel + ".lastMessage", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguildtextchannel_lastPinAt'] = function(block) {
+Blockly.JavaScript['baseguildtextchannel_lastpinat'] = function(block) {
     var baseguildtextchannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDTEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildtextchannel + ".lastPinAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -3243,11 +3243,11 @@ Blockly.JavaScript['baseguildtextchannel_guild'] = function(block) {
     var baseguildtextchannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDTEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildtextchannel + ".guild", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguildtextchannel_guildId'] = function(block) {
+Blockly.JavaScript['baseguildtextchannel_guildid'] = function(block) {
     var baseguildtextchannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDTEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildtextchannel + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguildtextchannel_permissionOverwrites'] = function(block) {
+Blockly.JavaScript['baseguildtextchannel_permissionoverwrites'] = function(block) {
     var baseguildtextchannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDTEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildtextchannel + ".permissionOverwrites", Blockly.JavaScript.ORDER_NONE];
 };
@@ -3255,11 +3255,11 @@ Blockly.JavaScript['baseguildtextchannel_name'] = function(block) {
     var baseguildtextchannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDTEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildtextchannel + ".name", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguildtextchannel_rawPosition'] = function(block) {
+Blockly.JavaScript['baseguildtextchannel_rawposition'] = function(block) {
     var baseguildtextchannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDTEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildtextchannel + ".rawPosition", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguildtextchannel_parentId'] = function(block) {
+Blockly.JavaScript['baseguildtextchannel_parentid'] = function(block) {
     var baseguildtextchannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDTEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildtextchannel + ".parentId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -3267,7 +3267,7 @@ Blockly.JavaScript['baseguildtextchannel_parent'] = function(block) {
     var baseguildtextchannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDTEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildtextchannel + ".parent", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguildtextchannel_permissionsLocked'] = function(block) {
+Blockly.JavaScript['baseguildtextchannel_permissionslocked'] = function(block) {
     var baseguildtextchannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDTEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildtextchannel + ".permissionsLocked", Blockly.JavaScript.ORDER_NONE];
 };
@@ -3299,11 +3299,11 @@ Blockly.JavaScript['baseguildtextchannel_id'] = function(block) {
     var baseguildtextchannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDTEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildtextchannel + ".id", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguildtextchannel_createdTimestamp'] = function(block) {
+Blockly.JavaScript['baseguildtextchannel_createdtimestamp'] = function(block) {
     var baseguildtextchannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDTEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildtextchannel + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguildtextchannel_createdAt'] = function(block) {
+Blockly.JavaScript['baseguildtextchannel_createdat'] = function(block) {
     var baseguildtextchannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDTEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildtextchannel + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -3512,7 +3512,7 @@ Blockly.JavaScript['baseguildtextchannel_isThread'] = function(block) {
     var baseguildtextchannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDTEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return baseguildtextchannel + ".isThread();\n";
 };
-Blockly.JavaScript['baseguildvoicechannel_rtcRegion'] = function(block) {
+Blockly.JavaScript['baseguildvoicechannel_rtcregion'] = function(block) {
     var baseguildvoicechannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDVOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildvoicechannel + ".rtcRegion", Blockly.JavaScript.ORDER_NONE];
 };
@@ -3520,7 +3520,7 @@ Blockly.JavaScript['baseguildvoicechannel_bitrate'] = function(block) {
     var baseguildvoicechannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDVOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildvoicechannel + ".bitrate", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguildvoicechannel_userLimit'] = function(block) {
+Blockly.JavaScript['baseguildvoicechannel_userlimit'] = function(block) {
     var baseguildvoicechannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDVOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildvoicechannel + ".userLimit", Blockly.JavaScript.ORDER_NONE];
 };
@@ -3540,11 +3540,11 @@ Blockly.JavaScript['baseguildvoicechannel_guild'] = function(block) {
     var baseguildvoicechannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDVOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildvoicechannel + ".guild", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguildvoicechannel_guildId'] = function(block) {
+Blockly.JavaScript['baseguildvoicechannel_guildid'] = function(block) {
     var baseguildvoicechannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDVOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildvoicechannel + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguildvoicechannel_permissionOverwrites'] = function(block) {
+Blockly.JavaScript['baseguildvoicechannel_permissionoverwrites'] = function(block) {
     var baseguildvoicechannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDVOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildvoicechannel + ".permissionOverwrites", Blockly.JavaScript.ORDER_NONE];
 };
@@ -3552,11 +3552,11 @@ Blockly.JavaScript['baseguildvoicechannel_name'] = function(block) {
     var baseguildvoicechannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDVOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildvoicechannel + ".name", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguildvoicechannel_rawPosition'] = function(block) {
+Blockly.JavaScript['baseguildvoicechannel_rawposition'] = function(block) {
     var baseguildvoicechannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDVOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildvoicechannel + ".rawPosition", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguildvoicechannel_parentId'] = function(block) {
+Blockly.JavaScript['baseguildvoicechannel_parentid'] = function(block) {
     var baseguildvoicechannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDVOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildvoicechannel + ".parentId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -3564,7 +3564,7 @@ Blockly.JavaScript['baseguildvoicechannel_parent'] = function(block) {
     var baseguildvoicechannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDVOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildvoicechannel + ".parent", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguildvoicechannel_permissionsLocked'] = function(block) {
+Blockly.JavaScript['baseguildvoicechannel_permissionslocked'] = function(block) {
     var baseguildvoicechannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDVOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildvoicechannel + ".permissionsLocked", Blockly.JavaScript.ORDER_NONE];
 };
@@ -3592,11 +3592,11 @@ Blockly.JavaScript['baseguildvoicechannel_id'] = function(block) {
     var baseguildvoicechannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDVOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildvoicechannel + ".id", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguildvoicechannel_createdTimestamp'] = function(block) {
+Blockly.JavaScript['baseguildvoicechannel_createdtimestamp'] = function(block) {
     var baseguildvoicechannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDVOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildvoicechannel + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['baseguildvoicechannel_createdAt'] = function(block) {
+Blockly.JavaScript['baseguildvoicechannel_createdat'] = function(block) {
     var baseguildvoicechannel = Blockly.JavaScript.valueToCode(block, 'BASEGUILDVOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [baseguildvoicechannel + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -3715,7 +3715,7 @@ Blockly.JavaScript['basemessagecomponent_type'] = function(block) {
     var basemessagecomponent = Blockly.JavaScript.valueToCode(block, 'BASEMESSAGECOMPONENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [basemessagecomponent + ".type", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['buttoninteraction_channelId'] = function(block) {
+Blockly.JavaScript['buttoninteraction_channelid'] = function(block) {
     var buttoninteraction = Blockly.JavaScript.valueToCode(block, 'BUTTONINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [buttoninteraction + ".channelId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -3723,11 +3723,11 @@ Blockly.JavaScript['buttoninteraction_message'] = function(block) {
     var buttoninteraction = Blockly.JavaScript.valueToCode(block, 'BUTTONINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [buttoninteraction + ".message", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['buttoninteraction_customId'] = function(block) {
+Blockly.JavaScript['buttoninteraction_customid'] = function(block) {
     var buttoninteraction = Blockly.JavaScript.valueToCode(block, 'BUTTONINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [buttoninteraction + ".customId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['buttoninteraction_componentType'] = function(block) {
+Blockly.JavaScript['buttoninteraction_componenttype'] = function(block) {
     var buttoninteraction = Blockly.JavaScript.valueToCode(block, 'BUTTONINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [buttoninteraction + ".componentType", Blockly.JavaScript.ORDER_NONE];
 };
@@ -3763,11 +3763,11 @@ Blockly.JavaScript['buttoninteraction_token'] = function(block) {
     var buttoninteraction = Blockly.JavaScript.valueToCode(block, 'BUTTONINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [buttoninteraction + ".token", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['buttoninteraction_applicationId'] = function(block) {
+Blockly.JavaScript['buttoninteraction_applicationid'] = function(block) {
     var buttoninteraction = Blockly.JavaScript.valueToCode(block, 'BUTTONINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [buttoninteraction + ".applicationId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['buttoninteraction_guildId'] = function(block) {
+Blockly.JavaScript['buttoninteraction_guildid'] = function(block) {
     var buttoninteraction = Blockly.JavaScript.valueToCode(block, 'BUTTONINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [buttoninteraction + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -3783,7 +3783,7 @@ Blockly.JavaScript['buttoninteraction_version'] = function(block) {
     var buttoninteraction = Blockly.JavaScript.valueToCode(block, 'BUTTONINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [buttoninteraction + ".version", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['buttoninteraction_memberPermissions'] = function(block) {
+Blockly.JavaScript['buttoninteraction_memberpermissions'] = function(block) {
     var buttoninteraction = Blockly.JavaScript.valueToCode(block, 'BUTTONINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [buttoninteraction + ".memberPermissions", Blockly.JavaScript.ORDER_NONE];
 };
@@ -3791,15 +3791,15 @@ Blockly.JavaScript['buttoninteraction_locale'] = function(block) {
     var buttoninteraction = Blockly.JavaScript.valueToCode(block, 'BUTTONINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [buttoninteraction + ".locale", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['buttoninteraction_guildLocale'] = function(block) {
+Blockly.JavaScript['buttoninteraction_guildlocale'] = function(block) {
     var buttoninteraction = Blockly.JavaScript.valueToCode(block, 'BUTTONINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [buttoninteraction + ".guildLocale", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['buttoninteraction_createdTimestamp'] = function(block) {
+Blockly.JavaScript['buttoninteraction_createdtimestamp'] = function(block) {
     var buttoninteraction = Blockly.JavaScript.valueToCode(block, 'BUTTONINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [buttoninteraction + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['buttoninteraction_createdAt'] = function(block) {
+Blockly.JavaScript['buttoninteraction_createdat'] = function(block) {
     var buttoninteraction = Blockly.JavaScript.valueToCode(block, 'BUTTONINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [buttoninteraction + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -3945,11 +3945,11 @@ Blockly.JavaScript['categorychannel_guild'] = function(block) {
     var categorychannel = Blockly.JavaScript.valueToCode(block, 'CATEGORYCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [categorychannel + ".guild", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['categorychannel_guildId'] = function(block) {
+Blockly.JavaScript['categorychannel_guildid'] = function(block) {
     var categorychannel = Blockly.JavaScript.valueToCode(block, 'CATEGORYCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [categorychannel + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['categorychannel_permissionOverwrites'] = function(block) {
+Blockly.JavaScript['categorychannel_permissionoverwrites'] = function(block) {
     var categorychannel = Blockly.JavaScript.valueToCode(block, 'CATEGORYCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [categorychannel + ".permissionOverwrites", Blockly.JavaScript.ORDER_NONE];
 };
@@ -3957,11 +3957,11 @@ Blockly.JavaScript['categorychannel_name'] = function(block) {
     var categorychannel = Blockly.JavaScript.valueToCode(block, 'CATEGORYCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [categorychannel + ".name", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['categorychannel_rawPosition'] = function(block) {
+Blockly.JavaScript['categorychannel_rawposition'] = function(block) {
     var categorychannel = Blockly.JavaScript.valueToCode(block, 'CATEGORYCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [categorychannel + ".rawPosition", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['categorychannel_parentId'] = function(block) {
+Blockly.JavaScript['categorychannel_parentid'] = function(block) {
     var categorychannel = Blockly.JavaScript.valueToCode(block, 'CATEGORYCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [categorychannel + ".parentId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -3969,7 +3969,7 @@ Blockly.JavaScript['categorychannel_parent'] = function(block) {
     var categorychannel = Blockly.JavaScript.valueToCode(block, 'CATEGORYCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [categorychannel + ".parent", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['categorychannel_permissionsLocked'] = function(block) {
+Blockly.JavaScript['categorychannel_permissionslocked'] = function(block) {
     var categorychannel = Blockly.JavaScript.valueToCode(block, 'CATEGORYCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [categorychannel + ".permissionsLocked", Blockly.JavaScript.ORDER_NONE];
 };
@@ -4001,11 +4001,11 @@ Blockly.JavaScript['categorychannel_id'] = function(block) {
     var categorychannel = Blockly.JavaScript.valueToCode(block, 'CATEGORYCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [categorychannel + ".id", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['categorychannel_createdTimestamp'] = function(block) {
+Blockly.JavaScript['categorychannel_createdtimestamp'] = function(block) {
     var categorychannel = Blockly.JavaScript.valueToCode(block, 'CATEGORYCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [categorychannel + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['categorychannel_createdAt'] = function(block) {
+Blockly.JavaScript['categorychannel_createdat'] = function(block) {
     var categorychannel = Blockly.JavaScript.valueToCode(block, 'CATEGORYCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [categorychannel + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -4119,11 +4119,11 @@ Blockly.JavaScript['channel_id'] = function(block) {
     var channel = Blockly.JavaScript.valueToCode(block, 'CHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [channel + ".id", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['channel_createdTimestamp'] = function(block) {
+Blockly.JavaScript['channel_createdtimestamp'] = function(block) {
     var channel = Blockly.JavaScript.valueToCode(block, 'CHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [channel + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['channel_createdAt'] = function(block) {
+Blockly.JavaScript['channel_createdat'] = function(block) {
     var channel = Blockly.JavaScript.valueToCode(block, 'CHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [channel + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -4178,15 +4178,15 @@ Blockly.JavaScript['clientapplication_cover'] = function(block) {
     var clientapplication = Blockly.JavaScript.valueToCode(block, 'CLIENTAPPLICATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [clientapplication + ".cover", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['clientapplication_rpcOrigins'] = function(block) {
+Blockly.JavaScript['clientapplication_rpcorigins'] = function(block) {
     var clientapplication = Blockly.JavaScript.valueToCode(block, 'CLIENTAPPLICATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [clientapplication + ".rpcOrigins", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['clientapplication_botRequireCodeGrant'] = function(block) {
+Blockly.JavaScript['clientapplication_botrequirecodegrant'] = function(block) {
     var clientapplication = Blockly.JavaScript.valueToCode(block, 'CLIENTAPPLICATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [clientapplication + ".botRequireCodeGrant", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['clientapplication_botPublic'] = function(block) {
+Blockly.JavaScript['clientapplication_botpublic'] = function(block) {
     var clientapplication = Blockly.JavaScript.valueToCode(block, 'CLIENTAPPLICATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [clientapplication + ".botPublic", Blockly.JavaScript.ORDER_NONE];
 };
@@ -4214,11 +4214,11 @@ Blockly.JavaScript['clientapplication_icon'] = function(block) {
     var clientapplication = Blockly.JavaScript.valueToCode(block, 'CLIENTAPPLICATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [clientapplication + ".icon", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['clientapplication_createdTimestamp'] = function(block) {
+Blockly.JavaScript['clientapplication_createdtimestamp'] = function(block) {
     var clientapplication = Blockly.JavaScript.valueToCode(block, 'CLIENTAPPLICATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [clientapplication + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['clientapplication_createdAt'] = function(block) {
+Blockly.JavaScript['clientapplication_createdat'] = function(block) {
     var clientapplication = Blockly.JavaScript.valueToCode(block, 'CLIENTAPPLICATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [clientapplication + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -4256,7 +4256,7 @@ Blockly.JavaScript['clientapplication_toString'] = function(block) {
     var clientapplication = Blockly.JavaScript.valueToCode(block, 'CLIENTAPPLICATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return clientapplication + ".toString();\n";
 };
-Blockly.JavaScript['clientpresence_userId'] = function(block) {
+Blockly.JavaScript['clientpresence_userid'] = function(block) {
     var clientpresence = Blockly.JavaScript.valueToCode(block, 'CLIENTPRESENCE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [clientpresence + ".userId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -4280,7 +4280,7 @@ Blockly.JavaScript['clientpresence_activities'] = function(block) {
     var clientpresence = Blockly.JavaScript.valueToCode(block, 'CLIENTPRESENCE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [clientpresence + ".activities", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['clientpresence_clientStatus'] = function(block) {
+Blockly.JavaScript['clientpresence_clientstatus'] = function(block) {
     var clientpresence = Blockly.JavaScript.valueToCode(block, 'CLIENTPRESENCE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [clientpresence + ".clientStatus", Blockly.JavaScript.ORDER_NONE];
 };
@@ -4302,7 +4302,7 @@ Blockly.JavaScript['clientuser_verified'] = function(block) {
     var clientuser = Blockly.JavaScript.valueToCode(block, 'CLIENTUSER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [clientuser + ".verified", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['clientuser_mfaEnabled'] = function(block) {
+Blockly.JavaScript['clientuser_mfaenabled'] = function(block) {
     var clientuser = Blockly.JavaScript.valueToCode(block, 'CLIENTUSER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [clientuser + ".mfaEnabled", Blockly.JavaScript.ORDER_NONE];
 };
@@ -4334,7 +4334,7 @@ Blockly.JavaScript['clientuser_banner'] = function(block) {
     var clientuser = Blockly.JavaScript.valueToCode(block, 'CLIENTUSER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [clientuser + ".banner", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['clientuser_accentColor'] = function(block) {
+Blockly.JavaScript['clientuser_accentcolor'] = function(block) {
     var clientuser = Blockly.JavaScript.valueToCode(block, 'CLIENTUSER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [clientuser + ".accentColor", Blockly.JavaScript.ORDER_NONE];
 };
@@ -4350,19 +4350,19 @@ Blockly.JavaScript['clientuser_partial'] = function(block) {
     var clientuser = Blockly.JavaScript.valueToCode(block, 'CLIENTUSER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [clientuser + ".partial", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['clientuser_createdTimestamp'] = function(block) {
+Blockly.JavaScript['clientuser_createdtimestamp'] = function(block) {
     var clientuser = Blockly.JavaScript.valueToCode(block, 'CLIENTUSER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [clientuser + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['clientuser_createdAt'] = function(block) {
+Blockly.JavaScript['clientuser_createdat'] = function(block) {
     var clientuser = Blockly.JavaScript.valueToCode(block, 'CLIENTUSER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [clientuser + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['clientuser_defaultAvatarURL'] = function(block) {
+Blockly.JavaScript['clientuser_defaultavatarurl'] = function(block) {
     var clientuser = Blockly.JavaScript.valueToCode(block, 'CLIENTUSER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [clientuser + ".defaultAvatarURL", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['clientuser_hexAccentColor'] = function(block) {
+Blockly.JavaScript['clientuser_hexaccentcolor'] = function(block) {
     var clientuser = Blockly.JavaScript.valueToCode(block, 'CLIENTUSER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [clientuser + ".hexAccentColor", Blockly.JavaScript.ORDER_NONE];
 };
@@ -4370,7 +4370,7 @@ Blockly.JavaScript['clientuser_tag'] = function(block) {
     var clientuser = Blockly.JavaScript.valueToCode(block, 'CLIENTUSER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [clientuser + ".tag", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['clientuser_dmChannel'] = function(block) {
+Blockly.JavaScript['clientuser_dmchannel'] = function(block) {
     var clientuser = Blockly.JavaScript.valueToCode(block, 'CLIENTUSER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [clientuser + ".dmChannel", Blockly.JavaScript.ORDER_NONE];
 };
@@ -4480,15 +4480,15 @@ Blockly.JavaScript['commandinteraction_options'] = function(block) {
     var commandinteraction = Blockly.JavaScript.valueToCode(block, 'COMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [commandinteraction + ".options", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['commandinteraction_channelId'] = function(block) {
+Blockly.JavaScript['commandinteraction_channelid'] = function(block) {
     var commandinteraction = Blockly.JavaScript.valueToCode(block, 'COMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [commandinteraction + ".channelId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['commandinteraction_commandId'] = function(block) {
+Blockly.JavaScript['commandinteraction_commandid'] = function(block) {
     var commandinteraction = Blockly.JavaScript.valueToCode(block, 'COMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [commandinteraction + ".commandId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['commandinteraction_commandName'] = function(block) {
+Blockly.JavaScript['commandinteraction_commandname'] = function(block) {
     var commandinteraction = Blockly.JavaScript.valueToCode(block, 'COMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [commandinteraction + ".commandName", Blockly.JavaScript.ORDER_NONE];
 };
@@ -4524,11 +4524,11 @@ Blockly.JavaScript['commandinteraction_token'] = function(block) {
     var commandinteraction = Blockly.JavaScript.valueToCode(block, 'COMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [commandinteraction + ".token", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['commandinteraction_applicationId'] = function(block) {
+Blockly.JavaScript['commandinteraction_applicationid'] = function(block) {
     var commandinteraction = Blockly.JavaScript.valueToCode(block, 'COMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [commandinteraction + ".applicationId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['commandinteraction_guildId'] = function(block) {
+Blockly.JavaScript['commandinteraction_guildid'] = function(block) {
     var commandinteraction = Blockly.JavaScript.valueToCode(block, 'COMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [commandinteraction + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -4544,7 +4544,7 @@ Blockly.JavaScript['commandinteraction_version'] = function(block) {
     var commandinteraction = Blockly.JavaScript.valueToCode(block, 'COMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [commandinteraction + ".version", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['commandinteraction_memberPermissions'] = function(block) {
+Blockly.JavaScript['commandinteraction_memberpermissions'] = function(block) {
     var commandinteraction = Blockly.JavaScript.valueToCode(block, 'COMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [commandinteraction + ".memberPermissions", Blockly.JavaScript.ORDER_NONE];
 };
@@ -4552,15 +4552,15 @@ Blockly.JavaScript['commandinteraction_locale'] = function(block) {
     var commandinteraction = Blockly.JavaScript.valueToCode(block, 'COMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [commandinteraction + ".locale", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['commandinteraction_guildLocale'] = function(block) {
+Blockly.JavaScript['commandinteraction_guildlocale'] = function(block) {
     var commandinteraction = Blockly.JavaScript.valueToCode(block, 'COMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [commandinteraction + ".guildLocale", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['commandinteraction_createdTimestamp'] = function(block) {
+Blockly.JavaScript['commandinteraction_createdtimestamp'] = function(block) {
     var commandinteraction = Blockly.JavaScript.valueToCode(block, 'COMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [commandinteraction + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['commandinteraction_createdAt'] = function(block) {
+Blockly.JavaScript['commandinteraction_createdat'] = function(block) {
     var commandinteraction = Blockly.JavaScript.valueToCode(block, 'COMMANDINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [commandinteraction + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -4777,23 +4777,23 @@ Blockly.JavaScript['contextmenuinteraction_options'] = function(block) {
     var contextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'CONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [contextmenuinteraction + ".options", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['contextmenuinteraction_targetId'] = function(block) {
+Blockly.JavaScript['contextmenuinteraction_targetid'] = function(block) {
     var contextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'CONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [contextmenuinteraction + ".targetId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['contextmenuinteraction_targetType'] = function(block) {
+Blockly.JavaScript['contextmenuinteraction_targettype'] = function(block) {
     var contextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'CONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [contextmenuinteraction + ".targetType", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['contextmenuinteraction_channelId'] = function(block) {
+Blockly.JavaScript['contextmenuinteraction_channelid'] = function(block) {
     var contextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'CONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [contextmenuinteraction + ".channelId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['contextmenuinteraction_commandId'] = function(block) {
+Blockly.JavaScript['contextmenuinteraction_commandid'] = function(block) {
     var contextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'CONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [contextmenuinteraction + ".commandId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['contextmenuinteraction_commandName'] = function(block) {
+Blockly.JavaScript['contextmenuinteraction_commandname'] = function(block) {
     var contextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'CONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [contextmenuinteraction + ".commandName", Blockly.JavaScript.ORDER_NONE];
 };
@@ -4829,11 +4829,11 @@ Blockly.JavaScript['contextmenuinteraction_token'] = function(block) {
     var contextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'CONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [contextmenuinteraction + ".token", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['contextmenuinteraction_applicationId'] = function(block) {
+Blockly.JavaScript['contextmenuinteraction_applicationid'] = function(block) {
     var contextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'CONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [contextmenuinteraction + ".applicationId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['contextmenuinteraction_guildId'] = function(block) {
+Blockly.JavaScript['contextmenuinteraction_guildid'] = function(block) {
     var contextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'CONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [contextmenuinteraction + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -4849,7 +4849,7 @@ Blockly.JavaScript['contextmenuinteraction_version'] = function(block) {
     var contextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'CONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [contextmenuinteraction + ".version", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['contextmenuinteraction_memberPermissions'] = function(block) {
+Blockly.JavaScript['contextmenuinteraction_memberpermissions'] = function(block) {
     var contextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'CONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [contextmenuinteraction + ".memberPermissions", Blockly.JavaScript.ORDER_NONE];
 };
@@ -4857,15 +4857,15 @@ Blockly.JavaScript['contextmenuinteraction_locale'] = function(block) {
     var contextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'CONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [contextmenuinteraction + ".locale", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['contextmenuinteraction_guildLocale'] = function(block) {
+Blockly.JavaScript['contextmenuinteraction_guildlocale'] = function(block) {
     var contextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'CONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [contextmenuinteraction + ".guildLocale", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['contextmenuinteraction_createdTimestamp'] = function(block) {
+Blockly.JavaScript['contextmenuinteraction_createdtimestamp'] = function(block) {
     var contextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'CONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [contextmenuinteraction + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['contextmenuinteraction_createdAt'] = function(block) {
+Blockly.JavaScript['contextmenuinteraction_createdat'] = function(block) {
     var contextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'CONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [contextmenuinteraction + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -4989,11 +4989,11 @@ Blockly.JavaScript['dmchannel_recipient'] = function(block) {
     var dmchannel = Blockly.JavaScript.valueToCode(block, 'DMCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [dmchannel + ".recipient", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['dmchannel_lastMessageId'] = function(block) {
+Blockly.JavaScript['dmchannel_lastmessageid'] = function(block) {
     var dmchannel = Blockly.JavaScript.valueToCode(block, 'DMCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [dmchannel + ".lastMessageId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['dmchannel_lastPinTimestamp'] = function(block) {
+Blockly.JavaScript['dmchannel_lastpintimestamp'] = function(block) {
     var dmchannel = Blockly.JavaScript.valueToCode(block, 'DMCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [dmchannel + ".lastPinTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
@@ -5001,11 +5001,11 @@ Blockly.JavaScript['dmchannel_partial'] = function(block) {
     var dmchannel = Blockly.JavaScript.valueToCode(block, 'DMCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [dmchannel + ".partial", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['dmchannel_lastMessage'] = function(block) {
+Blockly.JavaScript['dmchannel_lastmessage'] = function(block) {
     var dmchannel = Blockly.JavaScript.valueToCode(block, 'DMCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [dmchannel + ".lastMessage", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['dmchannel_lastPinAt'] = function(block) {
+Blockly.JavaScript['dmchannel_lastpinat'] = function(block) {
     var dmchannel = Blockly.JavaScript.valueToCode(block, 'DMCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [dmchannel + ".lastPinAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -5017,11 +5017,11 @@ Blockly.JavaScript['dmchannel_id'] = function(block) {
     var dmchannel = Blockly.JavaScript.valueToCode(block, 'DMCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [dmchannel + ".id", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['dmchannel_createdTimestamp'] = function(block) {
+Blockly.JavaScript['dmchannel_createdtimestamp'] = function(block) {
     var dmchannel = Blockly.JavaScript.valueToCode(block, 'DMCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [dmchannel + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['dmchannel_createdAt'] = function(block) {
+Blockly.JavaScript['dmchannel_createdat'] = function(block) {
     var dmchannel = Blockly.JavaScript.valueToCode(block, 'DMCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [dmchannel + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -5121,11 +5121,11 @@ Blockly.JavaScript['emoji_url'] = function(block) {
     var emoji = Blockly.JavaScript.valueToCode(block, 'EMOJI', Blockly.JavaScript.ORDER_NONE) || "null";
     return [emoji + ".url", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['emoji_createdTimestamp'] = function(block) {
+Blockly.JavaScript['emoji_createdtimestamp'] = function(block) {
     var emoji = Blockly.JavaScript.valueToCode(block, 'EMOJI', Blockly.JavaScript.ORDER_NONE) || "null";
     return [emoji + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['emoji_createdAt'] = function(block) {
+Blockly.JavaScript['emoji_createdat'] = function(block) {
     var emoji = Blockly.JavaScript.valueToCode(block, 'EMOJI', Blockly.JavaScript.ORDER_NONE) || "null";
     return [emoji + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -5161,11 +5161,11 @@ Blockly.JavaScript['guild_presences'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".presences", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_voiceStates'] = function(block) {
+Blockly.JavaScript['guild_voicestates'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".voiceStates", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_stageInstances'] = function(block) {
+Blockly.JavaScript['guild_stageinstances'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".stageInstances", Blockly.JavaScript.ORDER_NONE];
 };
@@ -5173,7 +5173,7 @@ Blockly.JavaScript['guild_invites'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".invites", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_scheduledEvents'] = function(block) {
+Blockly.JavaScript['guild_scheduledevents'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".scheduledEvents", Blockly.JavaScript.ORDER_NONE];
 };
@@ -5181,7 +5181,7 @@ Blockly.JavaScript['guild_available'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".available", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_shardId'] = function(block) {
+Blockly.JavaScript['guild_shardid'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".shardId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -5189,11 +5189,11 @@ Blockly.JavaScript['guild_shard'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".shard", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_discoverySplash'] = function(block) {
+Blockly.JavaScript['guild_discoverysplash'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".discoverySplash", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_memberCount'] = function(block) {
+Blockly.JavaScript['guild_membercount'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".memberCount", Blockly.JavaScript.ORDER_NONE];
 };
@@ -5201,95 +5201,95 @@ Blockly.JavaScript['guild_large'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".large", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_premiumProgressBarEnabled'] = function(block) {
+Blockly.JavaScript['guild_premiumprogressbarenabled'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".premiumProgressBarEnabled", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_applicationId'] = function(block) {
+Blockly.JavaScript['guild_applicationid'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".applicationId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_afkTimeout'] = function(block) {
+Blockly.JavaScript['guild_afktimeout'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".afkTimeout", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_afkChannelId'] = function(block) {
+Blockly.JavaScript['guild_afkchannelid'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".afkChannelId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_systemChannelId'] = function(block) {
+Blockly.JavaScript['guild_systemchannelid'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".systemChannelId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_premiumTier'] = function(block) {
+Blockly.JavaScript['guild_premiumtier'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".premiumTier", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_premiumSubscriptionCount'] = function(block) {
+Blockly.JavaScript['guild_premiumsubscriptioncount'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".premiumSubscriptionCount", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_widgetEnabled'] = function(block) {
+Blockly.JavaScript['guild_widgetenabled'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".widgetEnabled", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_widgetChannelId'] = function(block) {
+Blockly.JavaScript['guild_widgetchannelid'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".widgetChannelId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_explicitContentFilter'] = function(block) {
+Blockly.JavaScript['guild_explicitcontentfilter'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".explicitContentFilter", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_mfaLevel'] = function(block) {
+Blockly.JavaScript['guild_mfalevel'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".mfaLevel", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_joinedTimestamp'] = function(block) {
+Blockly.JavaScript['guild_joinedtimestamp'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".joinedTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_defaultMessageNotifications'] = function(block) {
+Blockly.JavaScript['guild_defaultmessagenotifications'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".defaultMessageNotifications", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_systemChannelFlags'] = function(block) {
+Blockly.JavaScript['guild_systemchannelflags'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".systemChannelFlags", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_maximumMembers'] = function(block) {
+Blockly.JavaScript['guild_maximummembers'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".maximumMembers", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_maximumPresences'] = function(block) {
+Blockly.JavaScript['guild_maximumpresences'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".maximumPresences", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_approximateMemberCount'] = function(block) {
+Blockly.JavaScript['guild_approximatemembercount'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".approximateMemberCount", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_approximatePresenceCount'] = function(block) {
+Blockly.JavaScript['guild_approximatepresencecount'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".approximatePresenceCount", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_vanityURLUses'] = function(block) {
+Blockly.JavaScript['guild_vanityurluses'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".vanityURLUses", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_rulesChannelId'] = function(block) {
+Blockly.JavaScript['guild_ruleschannelid'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".rulesChannelId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_publicUpdatesChannelId'] = function(block) {
+Blockly.JavaScript['guild_publicupdateschannelid'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".publicUpdatesChannelId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_preferredLocale'] = function(block) {
+Blockly.JavaScript['guild_preferredlocale'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".preferredLocale", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_ownerId'] = function(block) {
+Blockly.JavaScript['guild_ownerid'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".ownerId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -5301,27 +5301,27 @@ Blockly.JavaScript['guild_stickers'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".stickers", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_joinedAt'] = function(block) {
+Blockly.JavaScript['guild_joinedat'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".joinedAt", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_afkChannel'] = function(block) {
+Blockly.JavaScript['guild_afkchannel'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".afkChannel", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_systemChannel'] = function(block) {
+Blockly.JavaScript['guild_systemchannel'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".systemChannel", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_widgetChannel'] = function(block) {
+Blockly.JavaScript['guild_widgetchannel'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".widgetChannel", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_rulesChannel'] = function(block) {
+Blockly.JavaScript['guild_ruleschannel'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".rulesChannel", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_publicUpdatesChannel'] = function(block) {
+Blockly.JavaScript['guild_publicupdateschannel'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".publicUpdatesChannel", Blockly.JavaScript.ORDER_NONE];
 };
@@ -5329,11 +5329,11 @@ Blockly.JavaScript['guild_me'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".me", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_maximumBitrate'] = function(block) {
+Blockly.JavaScript['guild_maximumbitrate'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".maximumBitrate", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_voiceAdapterCreator'] = function(block) {
+Blockly.JavaScript['guild_voiceadaptercreator'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".voiceAdapterCreator", Blockly.JavaScript.ORDER_NONE];
 };
@@ -5349,15 +5349,15 @@ Blockly.JavaScript['guild_description'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".description", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_verificationLevel'] = function(block) {
+Blockly.JavaScript['guild_verificationlevel'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".verificationLevel", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_vanityURLCode'] = function(block) {
+Blockly.JavaScript['guild_vanityurlcode'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".vanityURLCode", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_nsfwLevel'] = function(block) {
+Blockly.JavaScript['guild_nsfwlevel'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".nsfwLevel", Blockly.JavaScript.ORDER_NONE];
 };
@@ -5377,15 +5377,15 @@ Blockly.JavaScript['guild_features'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".features", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_createdTimestamp'] = function(block) {
+Blockly.JavaScript['guild_createdtimestamp'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_createdAt'] = function(block) {
+Blockly.JavaScript['guild_createdat'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guild_nameAcronym'] = function(block) {
+Blockly.JavaScript['guild_nameacronym'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guild + ".nameAcronym", Blockly.JavaScript.ORDER_NONE];
 };
@@ -5703,11 +5703,11 @@ Blockly.JavaScript['guildauditlogs_entries'] = function(block) {
     var guildauditlogs = Blockly.JavaScript.valueToCode(block, 'GUILDAUDITLOGS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildauditlogs + ".entries", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildauditlogs_Targets'] = function(block) {
+Blockly.JavaScript['guildauditlogs_targets'] = function(block) {
     var guildauditlogs = Blockly.JavaScript.valueToCode(block, 'GUILDAUDITLOGS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildauditlogs + ".Targets", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildauditlogs_Actions'] = function(block) {
+Blockly.JavaScript['guildauditlogs_actions'] = function(block) {
     var guildauditlogs = Blockly.JavaScript.valueToCode(block, 'GUILDAUDITLOGS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildauditlogs + ".Actions", Blockly.JavaScript.ORDER_NONE];
 };
@@ -5731,11 +5731,11 @@ Blockly.JavaScript['guildauditlogs_actionType'] = function(block) {
     var action = Blockly.JavaScript.valueToCode(block, 'ACTION', Blockly.JavaScript.ORDER_NONE) || "";
     return guildauditlogs + ".actionType(" + action + ");\n";
 };
-Blockly.JavaScript['guildauditlogsentry_targetType'] = function(block) {
+Blockly.JavaScript['guildauditlogsentry_targettype'] = function(block) {
     var guildauditlogsentry = Blockly.JavaScript.valueToCode(block, 'GUILDAUDITLOGSENTRY', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildauditlogsentry + ".targetType", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildauditlogsentry_actionType'] = function(block) {
+Blockly.JavaScript['guildauditlogsentry_actiontype'] = function(block) {
     var guildauditlogsentry = Blockly.JavaScript.valueToCode(block, 'GUILDAUDITLOGSENTRY', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildauditlogsentry + ".actionType", Blockly.JavaScript.ORDER_NONE];
 };
@@ -5767,11 +5767,11 @@ Blockly.JavaScript['guildauditlogsentry_target'] = function(block) {
     var guildauditlogsentry = Blockly.JavaScript.valueToCode(block, 'GUILDAUDITLOGSENTRY', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildauditlogsentry + ".target", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildauditlogsentry_createdTimestamp'] = function(block) {
+Blockly.JavaScript['guildauditlogsentry_createdtimestamp'] = function(block) {
     var guildauditlogsentry = Blockly.JavaScript.valueToCode(block, 'GUILDAUDITLOGSENTRY', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildauditlogsentry + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildauditlogsentry_createdAt'] = function(block) {
+Blockly.JavaScript['guildauditlogsentry_createdat'] = function(block) {
     var guildauditlogsentry = Blockly.JavaScript.valueToCode(block, 'GUILDAUDITLOGSENTRY', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildauditlogsentry + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -5804,11 +5804,11 @@ Blockly.JavaScript['guildchannel_guild'] = function(block) {
     var guildchannel = Blockly.JavaScript.valueToCode(block, 'GUILDCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildchannel + ".guild", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildchannel_guildId'] = function(block) {
+Blockly.JavaScript['guildchannel_guildid'] = function(block) {
     var guildchannel = Blockly.JavaScript.valueToCode(block, 'GUILDCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildchannel + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildchannel_permissionOverwrites'] = function(block) {
+Blockly.JavaScript['guildchannel_permissionoverwrites'] = function(block) {
     var guildchannel = Blockly.JavaScript.valueToCode(block, 'GUILDCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildchannel + ".permissionOverwrites", Blockly.JavaScript.ORDER_NONE];
 };
@@ -5816,11 +5816,11 @@ Blockly.JavaScript['guildchannel_name'] = function(block) {
     var guildchannel = Blockly.JavaScript.valueToCode(block, 'GUILDCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildchannel + ".name", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildchannel_rawPosition'] = function(block) {
+Blockly.JavaScript['guildchannel_rawposition'] = function(block) {
     var guildchannel = Blockly.JavaScript.valueToCode(block, 'GUILDCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildchannel + ".rawPosition", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildchannel_parentId'] = function(block) {
+Blockly.JavaScript['guildchannel_parentid'] = function(block) {
     var guildchannel = Blockly.JavaScript.valueToCode(block, 'GUILDCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildchannel + ".parentId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -5828,7 +5828,7 @@ Blockly.JavaScript['guildchannel_parent'] = function(block) {
     var guildchannel = Blockly.JavaScript.valueToCode(block, 'GUILDCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildchannel + ".parent", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildchannel_permissionsLocked'] = function(block) {
+Blockly.JavaScript['guildchannel_permissionslocked'] = function(block) {
     var guildchannel = Blockly.JavaScript.valueToCode(block, 'GUILDCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildchannel + ".permissionsLocked", Blockly.JavaScript.ORDER_NONE];
 };
@@ -5860,11 +5860,11 @@ Blockly.JavaScript['guildchannel_id'] = function(block) {
     var guildchannel = Blockly.JavaScript.valueToCode(block, 'GUILDCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildchannel + ".id", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildchannel_createdTimestamp'] = function(block) {
+Blockly.JavaScript['guildchannel_createdtimestamp'] = function(block) {
     var guildchannel = Blockly.JavaScript.valueToCode(block, 'GUILDCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildchannel + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildchannel_createdAt'] = function(block) {
+Blockly.JavaScript['guildchannel_createdat'] = function(block) {
     var guildchannel = Blockly.JavaScript.valueToCode(block, 'GUILDCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildchannel + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -5980,7 +5980,7 @@ Blockly.JavaScript['guildemoji_roles'] = function(block) {
     var guildemoji = Blockly.JavaScript.valueToCode(block, 'GUILDEMOJI', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildemoji + ".roles", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildemoji_requiresColons'] = function(block) {
+Blockly.JavaScript['guildemoji_requirescolons'] = function(block) {
     var guildemoji = Blockly.JavaScript.valueToCode(block, 'GUILDEMOJI', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildemoji + ".requiresColons", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6012,11 +6012,11 @@ Blockly.JavaScript['guildemoji_url'] = function(block) {
     var guildemoji = Blockly.JavaScript.valueToCode(block, 'GUILDEMOJI', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildemoji + ".url", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildemoji_createdTimestamp'] = function(block) {
+Blockly.JavaScript['guildemoji_createdtimestamp'] = function(block) {
     var guildemoji = Blockly.JavaScript.valueToCode(block, 'GUILDEMOJI', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildemoji + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildemoji_createdAt'] = function(block) {
+Blockly.JavaScript['guildemoji_createdat'] = function(block) {
     var guildemoji = Blockly.JavaScript.valueToCode(block, 'GUILDEMOJI', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildemoji + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6076,11 +6076,11 @@ Blockly.JavaScript['guildmember_guild'] = function(block) {
     var guildmember = Blockly.JavaScript.valueToCode(block, 'GUILDMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildmember + ".guild", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildmember_joinedTimestamp'] = function(block) {
+Blockly.JavaScript['guildmember_joinedtimestamp'] = function(block) {
     var guildmember = Blockly.JavaScript.valueToCode(block, 'GUILDMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildmember + ".joinedTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildmember_premiumSinceTimestamp'] = function(block) {
+Blockly.JavaScript['guildmember_premiumsincetimestamp'] = function(block) {
     var guildmember = Blockly.JavaScript.valueToCode(block, 'GUILDMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildmember + ".premiumSinceTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6092,7 +6092,7 @@ Blockly.JavaScript['guildmember_pending'] = function(block) {
     var guildmember = Blockly.JavaScript.valueToCode(block, 'GUILDMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildmember + ".pending", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildmember_communicationDisabledUntilTimestamp'] = function(block) {
+Blockly.JavaScript['guildmember_communicationdisableduntiltimestamp'] = function(block) {
     var guildmember = Blockly.JavaScript.valueToCode(block, 'GUILDMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildmember + ".communicationDisabledUntilTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6116,15 +6116,15 @@ Blockly.JavaScript['guildmember_voice'] = function(block) {
     var guildmember = Blockly.JavaScript.valueToCode(block, 'GUILDMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildmember + ".voice", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildmember_joinedAt'] = function(block) {
+Blockly.JavaScript['guildmember_joinedat'] = function(block) {
     var guildmember = Blockly.JavaScript.valueToCode(block, 'GUILDMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildmember + ".joinedAt", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildmember_communicationDisabledUntil'] = function(block) {
+Blockly.JavaScript['guildmember_communicationdisableduntil'] = function(block) {
     var guildmember = Blockly.JavaScript.valueToCode(block, 'GUILDMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildmember + ".communicationDisabledUntil", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildmember_premiumSince'] = function(block) {
+Blockly.JavaScript['guildmember_premiumsince'] = function(block) {
     var guildmember = Blockly.JavaScript.valueToCode(block, 'GUILDMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildmember + ".premiumSince", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6132,11 +6132,11 @@ Blockly.JavaScript['guildmember_presence'] = function(block) {
     var guildmember = Blockly.JavaScript.valueToCode(block, 'GUILDMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildmember + ".presence", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildmember_displayColor'] = function(block) {
+Blockly.JavaScript['guildmember_displaycolor'] = function(block) {
     var guildmember = Blockly.JavaScript.valueToCode(block, 'GUILDMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildmember + ".displayColor", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildmember_displayHexColor'] = function(block) {
+Blockly.JavaScript['guildmember_displayhexcolor'] = function(block) {
     var guildmember = Blockly.JavaScript.valueToCode(block, 'GUILDMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildmember + ".displayHexColor", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6144,7 +6144,7 @@ Blockly.JavaScript['guildmember_id'] = function(block) {
     var guildmember = Blockly.JavaScript.valueToCode(block, 'GUILDMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildmember + ".id", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildmember_displayName'] = function(block) {
+Blockly.JavaScript['guildmember_displayname'] = function(block) {
     var guildmember = Blockly.JavaScript.valueToCode(block, 'GUILDMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildmember + ".displayName", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6275,7 +6275,7 @@ Blockly.JavaScript['guildpreview_splash'] = function(block) {
     var guildpreview = Blockly.JavaScript.valueToCode(block, 'GUILDPREVIEW', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildpreview + ".splash", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildpreview_discoverySplash'] = function(block) {
+Blockly.JavaScript['guildpreview_discoverysplash'] = function(block) {
     var guildpreview = Blockly.JavaScript.valueToCode(block, 'GUILDPREVIEW', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildpreview + ".discoverySplash", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6283,11 +6283,11 @@ Blockly.JavaScript['guildpreview_features'] = function(block) {
     var guildpreview = Blockly.JavaScript.valueToCode(block, 'GUILDPREVIEW', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildpreview + ".features", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildpreview_approximateMemberCount'] = function(block) {
+Blockly.JavaScript['guildpreview_approximatemembercount'] = function(block) {
     var guildpreview = Blockly.JavaScript.valueToCode(block, 'GUILDPREVIEW', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildpreview + ".approximateMemberCount", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildpreview_approximatePresenceCount'] = function(block) {
+Blockly.JavaScript['guildpreview_approximatepresencecount'] = function(block) {
     var guildpreview = Blockly.JavaScript.valueToCode(block, 'GUILDPREVIEW', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildpreview + ".approximatePresenceCount", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6299,11 +6299,11 @@ Blockly.JavaScript['guildpreview_emojis'] = function(block) {
     var guildpreview = Blockly.JavaScript.valueToCode(block, 'GUILDPREVIEW', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildpreview + ".emojis", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildpreview_createdTimestamp'] = function(block) {
+Blockly.JavaScript['guildpreview_createdtimestamp'] = function(block) {
     var guildpreview = Blockly.JavaScript.valueToCode(block, 'GUILDPREVIEW', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildpreview + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildpreview_createdAt'] = function(block) {
+Blockly.JavaScript['guildpreview_createdat'] = function(block) {
     var guildpreview = Blockly.JavaScript.valueToCode(block, 'GUILDPREVIEW', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildpreview + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6348,7 +6348,7 @@ Blockly.JavaScript['guildpreviewemoji_roles'] = function(block) {
     var guildpreviewemoji = Blockly.JavaScript.valueToCode(block, 'GUILDPREVIEWEMOJI', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildpreviewemoji + ".roles", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildpreviewemoji_requiresColons'] = function(block) {
+Blockly.JavaScript['guildpreviewemoji_requirescolons'] = function(block) {
     var guildpreviewemoji = Blockly.JavaScript.valueToCode(block, 'GUILDPREVIEWEMOJI', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildpreviewemoji + ".requiresColons", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6380,11 +6380,11 @@ Blockly.JavaScript['guildpreviewemoji_url'] = function(block) {
     var guildpreviewemoji = Blockly.JavaScript.valueToCode(block, 'GUILDPREVIEWEMOJI', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildpreviewemoji + ".url", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildpreviewemoji_createdTimestamp'] = function(block) {
+Blockly.JavaScript['guildpreviewemoji_createdtimestamp'] = function(block) {
     var guildpreviewemoji = Blockly.JavaScript.valueToCode(block, 'GUILDPREVIEWEMOJI', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildpreviewemoji + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildpreviewemoji_createdAt'] = function(block) {
+Blockly.JavaScript['guildpreviewemoji_createdat'] = function(block) {
     var guildpreviewemoji = Blockly.JavaScript.valueToCode(block, 'GUILDPREVIEWEMOJI', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildpreviewemoji + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6400,15 +6400,15 @@ Blockly.JavaScript['guildscheduledevent_id'] = function(block) {
     var guildscheduledevent = Blockly.JavaScript.valueToCode(block, 'GUILDSCHEDULEDEVENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildscheduledevent + ".id", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildscheduledevent_guildId'] = function(block) {
+Blockly.JavaScript['guildscheduledevent_guildid'] = function(block) {
     var guildscheduledevent = Blockly.JavaScript.valueToCode(block, 'GUILDSCHEDULEDEVENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildscheduledevent + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildscheduledevent_channelId'] = function(block) {
+Blockly.JavaScript['guildscheduledevent_channelid'] = function(block) {
     var guildscheduledevent = Blockly.JavaScript.valueToCode(block, 'GUILDSCHEDULEDEVENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildscheduledevent + ".channelId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildscheduledevent_creatorId'] = function(block) {
+Blockly.JavaScript['guildscheduledevent_creatorid'] = function(block) {
     var guildscheduledevent = Blockly.JavaScript.valueToCode(block, 'GUILDSCHEDULEDEVENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildscheduledevent + ".creatorId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6420,15 +6420,15 @@ Blockly.JavaScript['guildscheduledevent_description'] = function(block) {
     var guildscheduledevent = Blockly.JavaScript.valueToCode(block, 'GUILDSCHEDULEDEVENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildscheduledevent + ".description", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildscheduledevent_scheduledStartTimestamp'] = function(block) {
+Blockly.JavaScript['guildscheduledevent_scheduledstarttimestamp'] = function(block) {
     var guildscheduledevent = Blockly.JavaScript.valueToCode(block, 'GUILDSCHEDULEDEVENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildscheduledevent + ".scheduledStartTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildscheduledevent_scheduledEndTimestamp'] = function(block) {
+Blockly.JavaScript['guildscheduledevent_scheduledendtimestamp'] = function(block) {
     var guildscheduledevent = Blockly.JavaScript.valueToCode(block, 'GUILDSCHEDULEDEVENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildscheduledevent + ".scheduledEndTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildscheduledevent_privacyLevel'] = function(block) {
+Blockly.JavaScript['guildscheduledevent_privacylevel'] = function(block) {
     var guildscheduledevent = Blockly.JavaScript.valueToCode(block, 'GUILDSCHEDULEDEVENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildscheduledevent + ".privacyLevel", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6436,15 +6436,15 @@ Blockly.JavaScript['guildscheduledevent_status'] = function(block) {
     var guildscheduledevent = Blockly.JavaScript.valueToCode(block, 'GUILDSCHEDULEDEVENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildscheduledevent + ".status", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildscheduledevent_entityType'] = function(block) {
+Blockly.JavaScript['guildscheduledevent_entitytype'] = function(block) {
     var guildscheduledevent = Blockly.JavaScript.valueToCode(block, 'GUILDSCHEDULEDEVENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildscheduledevent + ".entityType", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildscheduledevent_entityId'] = function(block) {
+Blockly.JavaScript['guildscheduledevent_entityid'] = function(block) {
     var guildscheduledevent = Blockly.JavaScript.valueToCode(block, 'GUILDSCHEDULEDEVENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildscheduledevent + ".entityId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildscheduledevent_userCount'] = function(block) {
+Blockly.JavaScript['guildscheduledevent_usercount'] = function(block) {
     var guildscheduledevent = Blockly.JavaScript.valueToCode(block, 'GUILDSCHEDULEDEVENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildscheduledevent + ".userCount", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6452,23 +6452,23 @@ Blockly.JavaScript['guildscheduledevent_creator'] = function(block) {
     var guildscheduledevent = Blockly.JavaScript.valueToCode(block, 'GUILDSCHEDULEDEVENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildscheduledevent + ".creator", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildscheduledevent_entityMetadata'] = function(block) {
+Blockly.JavaScript['guildscheduledevent_entitymetadata'] = function(block) {
     var guildscheduledevent = Blockly.JavaScript.valueToCode(block, 'GUILDSCHEDULEDEVENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildscheduledevent + ".entityMetadata", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildscheduledevent_createdTimestamp'] = function(block) {
+Blockly.JavaScript['guildscheduledevent_createdtimestamp'] = function(block) {
     var guildscheduledevent = Blockly.JavaScript.valueToCode(block, 'GUILDSCHEDULEDEVENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildscheduledevent + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildscheduledevent_createdAt'] = function(block) {
+Blockly.JavaScript['guildscheduledevent_createdat'] = function(block) {
     var guildscheduledevent = Blockly.JavaScript.valueToCode(block, 'GUILDSCHEDULEDEVENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildscheduledevent + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildscheduledevent_scheduledStartAt'] = function(block) {
+Blockly.JavaScript['guildscheduledevent_scheduledstartat'] = function(block) {
     var guildscheduledevent = Blockly.JavaScript.valueToCode(block, 'GUILDSCHEDULEDEVENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildscheduledevent + ".scheduledStartAt", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildscheduledevent_scheduledEndAt'] = function(block) {
+Blockly.JavaScript['guildscheduledevent_scheduledendat'] = function(block) {
     var guildscheduledevent = Blockly.JavaScript.valueToCode(block, 'GUILDSCHEDULEDEVENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildscheduledevent + ".scheduledEndAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6587,11 +6587,11 @@ Blockly.JavaScript['guildtemplate_description'] = function(block) {
     var guildtemplate = Blockly.JavaScript.valueToCode(block, 'GUILDTEMPLATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildtemplate + ".description", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildtemplate_usageCount'] = function(block) {
+Blockly.JavaScript['guildtemplate_usagecount'] = function(block) {
     var guildtemplate = Blockly.JavaScript.valueToCode(block, 'GUILDTEMPLATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildtemplate + ".usageCount", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildtemplate_creatorId'] = function(block) {
+Blockly.JavaScript['guildtemplate_creatorid'] = function(block) {
     var guildtemplate = Blockly.JavaScript.valueToCode(block, 'GUILDTEMPLATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildtemplate + ".creatorId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6599,31 +6599,31 @@ Blockly.JavaScript['guildtemplate_creator'] = function(block) {
     var guildtemplate = Blockly.JavaScript.valueToCode(block, 'GUILDTEMPLATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildtemplate + ".creator", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildtemplate_createdAt'] = function(block) {
+Blockly.JavaScript['guildtemplate_createdat'] = function(block) {
     var guildtemplate = Blockly.JavaScript.valueToCode(block, 'GUILDTEMPLATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildtemplate + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildtemplate_updatedAt'] = function(block) {
+Blockly.JavaScript['guildtemplate_updatedat'] = function(block) {
     var guildtemplate = Blockly.JavaScript.valueToCode(block, 'GUILDTEMPLATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildtemplate + ".updatedAt", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildtemplate_guildId'] = function(block) {
+Blockly.JavaScript['guildtemplate_guildid'] = function(block) {
     var guildtemplate = Blockly.JavaScript.valueToCode(block, 'GUILDTEMPLATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildtemplate + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildtemplate_serializedGuild'] = function(block) {
+Blockly.JavaScript['guildtemplate_serializedguild'] = function(block) {
     var guildtemplate = Blockly.JavaScript.valueToCode(block, 'GUILDTEMPLATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildtemplate + ".serializedGuild", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildtemplate_unSynced'] = function(block) {
+Blockly.JavaScript['guildtemplate_unsynced'] = function(block) {
     var guildtemplate = Blockly.JavaScript.valueToCode(block, 'GUILDTEMPLATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildtemplate + ".unSynced", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildtemplate_createdTimestamp'] = function(block) {
+Blockly.JavaScript['guildtemplate_createdtimestamp'] = function(block) {
     var guildtemplate = Blockly.JavaScript.valueToCode(block, 'GUILDTEMPLATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildtemplate + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildtemplate_updatedTimestamp'] = function(block) {
+Blockly.JavaScript['guildtemplate_updatedtimestamp'] = function(block) {
     var guildtemplate = Blockly.JavaScript.valueToCode(block, 'GUILDTEMPLATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildtemplate + ".updatedTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6639,7 +6639,7 @@ Blockly.JavaScript['guildtemplate_client'] = function(block) {
     var guildtemplate = Blockly.JavaScript.valueToCode(block, 'GUILDTEMPLATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildtemplate + ".client", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['guildtemplate_GUILD_TEMPLATES_PATTERN'] = function(block) {
+Blockly.JavaScript['guildtemplate_guild_templates_pattern'] = function(block) {
     var guildtemplate = Blockly.JavaScript.valueToCode(block, 'GUILDTEMPLATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [guildtemplate + ".GUILD_TEMPLATES_PATTERN", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6718,7 +6718,7 @@ Blockly.JavaScript['integration_role'] = function(block) {
     var integration = Blockly.JavaScript.valueToCode(block, 'INTEGRATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [integration + ".role", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['integration_enableEmoticons'] = function(block) {
+Blockly.JavaScript['integration_enableemoticons'] = function(block) {
     var integration = Blockly.JavaScript.valueToCode(block, 'INTEGRATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [integration + ".enableEmoticons", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6730,11 +6730,11 @@ Blockly.JavaScript['integration_account'] = function(block) {
     var integration = Blockly.JavaScript.valueToCode(block, 'INTEGRATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [integration + ".account", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['integration_syncedAt'] = function(block) {
+Blockly.JavaScript['integration_syncedat'] = function(block) {
     var integration = Blockly.JavaScript.valueToCode(block, 'INTEGRATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [integration + ".syncedAt", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['integration_subscriberCount'] = function(block) {
+Blockly.JavaScript['integration_subscribercount'] = function(block) {
     var integration = Blockly.JavaScript.valueToCode(block, 'INTEGRATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [integration + ".subscriberCount", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6746,11 +6746,11 @@ Blockly.JavaScript['integration_roles'] = function(block) {
     var integration = Blockly.JavaScript.valueToCode(block, 'INTEGRATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [integration + ".roles", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['integration_expireBehavior'] = function(block) {
+Blockly.JavaScript['integration_expirebehavior'] = function(block) {
     var integration = Blockly.JavaScript.valueToCode(block, 'INTEGRATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [integration + ".expireBehavior", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['integration_expireGracePeriod'] = function(block) {
+Blockly.JavaScript['integration_expiregraceperiod'] = function(block) {
     var integration = Blockly.JavaScript.valueToCode(block, 'INTEGRATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [integration + ".expireGracePeriod", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6773,15 +6773,15 @@ Blockly.JavaScript['integrationapplication_bot'] = function(block) {
     var integrationapplication = Blockly.JavaScript.valueToCode(block, 'INTEGRATIONAPPLICATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [integrationapplication + ".bot", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['integrationapplication_termsOfServiceURL'] = function(block) {
+Blockly.JavaScript['integrationapplication_termsofserviceurl'] = function(block) {
     var integrationapplication = Blockly.JavaScript.valueToCode(block, 'INTEGRATIONAPPLICATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [integrationapplication + ".termsOfServiceURL", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['integrationapplication_privacyPolicyURL'] = function(block) {
+Blockly.JavaScript['integrationapplication_privacypolicyurl'] = function(block) {
     var integrationapplication = Blockly.JavaScript.valueToCode(block, 'INTEGRATIONAPPLICATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [integrationapplication + ".privacyPolicyURL", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['integrationapplication_rpcOrigins'] = function(block) {
+Blockly.JavaScript['integrationapplication_rpcorigins'] = function(block) {
     var integrationapplication = Blockly.JavaScript.valueToCode(block, 'INTEGRATIONAPPLICATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [integrationapplication + ".rpcOrigins", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6797,7 +6797,7 @@ Blockly.JavaScript['integrationapplication_cover'] = function(block) {
     var integrationapplication = Blockly.JavaScript.valueToCode(block, 'INTEGRATIONAPPLICATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [integrationapplication + ".cover", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['integrationapplication_verifyKey'] = function(block) {
+Blockly.JavaScript['integrationapplication_verifykey'] = function(block) {
     var integrationapplication = Blockly.JavaScript.valueToCode(block, 'INTEGRATIONAPPLICATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [integrationapplication + ".verifyKey", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6817,11 +6817,11 @@ Blockly.JavaScript['integrationapplication_icon'] = function(block) {
     var integrationapplication = Blockly.JavaScript.valueToCode(block, 'INTEGRATIONAPPLICATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [integrationapplication + ".icon", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['integrationapplication_createdTimestamp'] = function(block) {
+Blockly.JavaScript['integrationapplication_createdtimestamp'] = function(block) {
     var integrationapplication = Blockly.JavaScript.valueToCode(block, 'INTEGRATIONAPPLICATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [integrationapplication + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['integrationapplication_createdAt'] = function(block) {
+Blockly.JavaScript['integrationapplication_createdat'] = function(block) {
     var integrationapplication = Blockly.JavaScript.valueToCode(block, 'INTEGRATIONAPPLICATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [integrationapplication + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6861,15 +6861,15 @@ Blockly.JavaScript['interaction_token'] = function(block) {
     var interaction = Blockly.JavaScript.valueToCode(block, 'INTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [interaction + ".token", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['interaction_applicationId'] = function(block) {
+Blockly.JavaScript['interaction_applicationid'] = function(block) {
     var interaction = Blockly.JavaScript.valueToCode(block, 'INTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [interaction + ".applicationId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['interaction_channelId'] = function(block) {
+Blockly.JavaScript['interaction_channelid'] = function(block) {
     var interaction = Blockly.JavaScript.valueToCode(block, 'INTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [interaction + ".channelId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['interaction_guildId'] = function(block) {
+Blockly.JavaScript['interaction_guildid'] = function(block) {
     var interaction = Blockly.JavaScript.valueToCode(block, 'INTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [interaction + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6885,7 +6885,7 @@ Blockly.JavaScript['interaction_version'] = function(block) {
     var interaction = Blockly.JavaScript.valueToCode(block, 'INTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [interaction + ".version", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['interaction_memberPermissions'] = function(block) {
+Blockly.JavaScript['interaction_memberpermissions'] = function(block) {
     var interaction = Blockly.JavaScript.valueToCode(block, 'INTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [interaction + ".memberPermissions", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6893,15 +6893,15 @@ Blockly.JavaScript['interaction_locale'] = function(block) {
     var interaction = Blockly.JavaScript.valueToCode(block, 'INTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [interaction + ".locale", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['interaction_guildLocale'] = function(block) {
+Blockly.JavaScript['interaction_guildlocale'] = function(block) {
     var interaction = Blockly.JavaScript.valueToCode(block, 'INTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [interaction + ".guildLocale", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['interaction_createdTimestamp'] = function(block) {
+Blockly.JavaScript['interaction_createdtimestamp'] = function(block) {
     var interaction = Blockly.JavaScript.valueToCode(block, 'INTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [interaction + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['interaction_createdAt'] = function(block) {
+Blockly.JavaScript['interaction_createdat'] = function(block) {
     var interaction = Blockly.JavaScript.valueToCode(block, 'INTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [interaction + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -6984,23 +6984,23 @@ Blockly.JavaScript['interactioncollector_on'] = function(block) {
     block.variables = variables;
     return [interactioncollector + ".on('" + action + "', (" + variables + ") => {\n" + d + "});\n", Blockly.JavaScript.ORDER_FUNCTION_CALL];
 };
-Blockly.JavaScript['interactioncollector_messageId'] = function(block) {
+Blockly.JavaScript['interactioncollector_messageid'] = function(block) {
     var interactioncollector = Blockly.JavaScript.valueToCode(block, 'INTERACTIONCOLLECTOR', Blockly.JavaScript.ORDER_NONE) || "null";
     return [interactioncollector + ".messageId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['interactioncollector_channelId'] = function(block) {
+Blockly.JavaScript['interactioncollector_channelid'] = function(block) {
     var interactioncollector = Blockly.JavaScript.valueToCode(block, 'INTERACTIONCOLLECTOR', Blockly.JavaScript.ORDER_NONE) || "null";
     return [interactioncollector + ".channelId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['interactioncollector_guildId'] = function(block) {
+Blockly.JavaScript['interactioncollector_guildid'] = function(block) {
     var interactioncollector = Blockly.JavaScript.valueToCode(block, 'INTERACTIONCOLLECTOR', Blockly.JavaScript.ORDER_NONE) || "null";
     return [interactioncollector + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['interactioncollector_interactionType'] = function(block) {
+Blockly.JavaScript['interactioncollector_interactiontype'] = function(block) {
     var interactioncollector = Blockly.JavaScript.valueToCode(block, 'INTERACTIONCOLLECTOR', Blockly.JavaScript.ORDER_NONE) || "null";
     return [interactioncollector + ".interactionType", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['interactioncollector_componentType'] = function(block) {
+Blockly.JavaScript['interactioncollector_componenttype'] = function(block) {
     var interactioncollector = Blockly.JavaScript.valueToCode(block, 'INTERACTIONCOLLECTOR', Blockly.JavaScript.ORDER_NONE) || "null";
     return [interactioncollector + ".componentType", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7012,7 +7012,7 @@ Blockly.JavaScript['interactioncollector_total'] = function(block) {
     var interactioncollector = Blockly.JavaScript.valueToCode(block, 'INTERACTIONCOLLECTOR', Blockly.JavaScript.ORDER_NONE) || "null";
     return [interactioncollector + ".total", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['interactioncollector_endReason'] = function(block) {
+Blockly.JavaScript['interactioncollector_endreason'] = function(block) {
     var interactioncollector = Blockly.JavaScript.valueToCode(block, 'INTERACTIONCOLLECTOR', Blockly.JavaScript.ORDER_NONE) || "null";
     return [interactioncollector + ".endReason", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7154,11 +7154,11 @@ Blockly.JavaScript['application_icon'] = function(block) {
     var application = Blockly.JavaScript.valueToCode(block, 'APPLICATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [application + ".icon", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['application_createdTimestamp'] = function(block) {
+Blockly.JavaScript['application_createdtimestamp'] = function(block) {
     var application = Blockly.JavaScript.valueToCode(block, 'APPLICATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [application + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['application_createdAt'] = function(block) {
+Blockly.JavaScript['application_createdat'] = function(block) {
     var application = Blockly.JavaScript.valueToCode(block, 'APPLICATION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [application + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7229,7 +7229,7 @@ Blockly.JavaScript['collector_next'] = function(block) {
     var collector = Blockly.JavaScript.valueToCode(block, 'COLLECTOR', Blockly.JavaScript.ORDER_NONE) || "null";
     return [collector + ".next", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['collector_endReason'] = function(block) {
+Blockly.JavaScript['collector_endreason'] = function(block) {
     var collector = Blockly.JavaScript.valueToCode(block, 'COLLECTOR', Blockly.JavaScript.ORDER_NONE) || "null";
     return [collector + ".endReason", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7287,11 +7287,11 @@ Blockly.JavaScript['invite_code'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invite + ".code", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['invite_presenceCount'] = function(block) {
+Blockly.JavaScript['invite_presencecount'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invite + ".presenceCount", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['invite_memberCount'] = function(block) {
+Blockly.JavaScript['invite_membercount'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invite + ".memberCount", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7299,7 +7299,7 @@ Blockly.JavaScript['invite_temporary'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invite + ".temporary", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['invite_maxAge'] = function(block) {
+Blockly.JavaScript['invite_maxage'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invite + ".maxAge", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7307,11 +7307,11 @@ Blockly.JavaScript['invite_uses'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invite + ".uses", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['invite_maxUses'] = function(block) {
+Blockly.JavaScript['invite_maxuses'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invite + ".maxUses", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['invite_inviterId'] = function(block) {
+Blockly.JavaScript['invite_inviterid'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invite + ".inviterId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7319,19 +7319,19 @@ Blockly.JavaScript['invite_inviter'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invite + ".inviter", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['invite_targetUser'] = function(block) {
+Blockly.JavaScript['invite_targetuser'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invite + ".targetUser", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['invite_targetApplication'] = function(block) {
+Blockly.JavaScript['invite_targetapplication'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invite + ".targetApplication", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['invite_targetType'] = function(block) {
+Blockly.JavaScript['invite_targettype'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invite + ".targetType", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['invite_channelId'] = function(block) {
+Blockly.JavaScript['invite_channelid'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invite + ".channelId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7339,19 +7339,19 @@ Blockly.JavaScript['invite_channel'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invite + ".channel", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['invite_createdTimestamp'] = function(block) {
+Blockly.JavaScript['invite_createdtimestamp'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invite + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['invite_stageInstance'] = function(block) {
+Blockly.JavaScript['invite_stageinstance'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invite + ".stageInstance", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['invite_guildScheduledEvent'] = function(block) {
+Blockly.JavaScript['invite_guildscheduledevent'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invite + ".guildScheduledEvent", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['invite_createdAt'] = function(block) {
+Blockly.JavaScript['invite_createdat'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invite + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7359,11 +7359,11 @@ Blockly.JavaScript['invite_deletable'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invite + ".deletable", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['invite_expiresTimestamp'] = function(block) {
+Blockly.JavaScript['invite_expirestimestamp'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invite + ".expiresTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['invite_expiresAt'] = function(block) {
+Blockly.JavaScript['invite_expiresat'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invite + ".expiresAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7375,7 +7375,7 @@ Blockly.JavaScript['invite_client'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invite + ".client", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['invite_INVITES_PATTERN'] = function(block) {
+Blockly.JavaScript['invite_invites_pattern'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invite + ".INVITES_PATTERN", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7394,7 +7394,7 @@ Blockly.JavaScript['invite_toString'] = function(block) {
     var invite = Blockly.JavaScript.valueToCode(block, 'INVITE', Blockly.JavaScript.ORDER_NONE) || "null";
     return invite + ".toString();\n";
 };
-Blockly.JavaScript['inviteguild_welcomeScreen'] = function(block) {
+Blockly.JavaScript['inviteguild_welcomescreen'] = function(block) {
     var inviteguild = Blockly.JavaScript.valueToCode(block, 'INVITEGUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [inviteguild + ".welcomeScreen", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7410,15 +7410,15 @@ Blockly.JavaScript['inviteguild_description'] = function(block) {
     var inviteguild = Blockly.JavaScript.valueToCode(block, 'INVITEGUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [inviteguild + ".description", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['inviteguild_verificationLevel'] = function(block) {
+Blockly.JavaScript['inviteguild_verificationlevel'] = function(block) {
     var inviteguild = Blockly.JavaScript.valueToCode(block, 'INVITEGUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [inviteguild + ".verificationLevel", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['inviteguild_vanityURLCode'] = function(block) {
+Blockly.JavaScript['inviteguild_vanityurlcode'] = function(block) {
     var inviteguild = Blockly.JavaScript.valueToCode(block, 'INVITEGUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [inviteguild + ".vanityURLCode", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['inviteguild_nsfwLevel'] = function(block) {
+Blockly.JavaScript['inviteguild_nsfwlevel'] = function(block) {
     var inviteguild = Blockly.JavaScript.valueToCode(block, 'INVITEGUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [inviteguild + ".nsfwLevel", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7438,15 +7438,15 @@ Blockly.JavaScript['inviteguild_features'] = function(block) {
     var inviteguild = Blockly.JavaScript.valueToCode(block, 'INVITEGUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [inviteguild + ".features", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['inviteguild_createdTimestamp'] = function(block) {
+Blockly.JavaScript['inviteguild_createdtimestamp'] = function(block) {
     var inviteguild = Blockly.JavaScript.valueToCode(block, 'INVITEGUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [inviteguild + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['inviteguild_createdAt'] = function(block) {
+Blockly.JavaScript['inviteguild_createdat'] = function(block) {
     var inviteguild = Blockly.JavaScript.valueToCode(block, 'INVITEGUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [inviteguild + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['inviteguild_nameAcronym'] = function(block) {
+Blockly.JavaScript['inviteguild_nameacronym'] = function(block) {
     var inviteguild = Blockly.JavaScript.valueToCode(block, 'INVITEGUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [inviteguild + ".nameAcronym", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7491,11 +7491,11 @@ Blockly.JavaScript['inviteguild_toString'] = function(block) {
     var inviteguild = Blockly.JavaScript.valueToCode(block, 'INVITEGUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return inviteguild + ".toString();\n";
 };
-Blockly.JavaScript['invitestageinstance_channelId'] = function(block) {
+Blockly.JavaScript['invitestageinstance_channelid'] = function(block) {
     var invitestageinstance = Blockly.JavaScript.valueToCode(block, 'INVITESTAGEINSTANCE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invitestageinstance + ".channelId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['invitestageinstance_guildId'] = function(block) {
+Blockly.JavaScript['invitestageinstance_guildid'] = function(block) {
     var invitestageinstance = Blockly.JavaScript.valueToCode(block, 'INVITESTAGEINSTANCE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invitestageinstance + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7507,11 +7507,11 @@ Blockly.JavaScript['invitestageinstance_topic'] = function(block) {
     var invitestageinstance = Blockly.JavaScript.valueToCode(block, 'INVITESTAGEINSTANCE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invitestageinstance + ".topic", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['invitestageinstance_participantCount'] = function(block) {
+Blockly.JavaScript['invitestageinstance_participantcount'] = function(block) {
     var invitestageinstance = Blockly.JavaScript.valueToCode(block, 'INVITESTAGEINSTANCE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invitestageinstance + ".participantCount", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['invitestageinstance_speakerCount'] = function(block) {
+Blockly.JavaScript['invitestageinstance_speakercount'] = function(block) {
     var invitestageinstance = Blockly.JavaScript.valueToCode(block, 'INVITESTAGEINSTANCE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invitestageinstance + ".speakerCount", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7527,11 +7527,11 @@ Blockly.JavaScript['invitestageinstance_client'] = function(block) {
     var invitestageinstance = Blockly.JavaScript.valueToCode(block, 'INVITESTAGEINSTANCE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [invitestageinstance + ".client", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['message_channelId'] = function(block) {
+Blockly.JavaScript['message_channelid'] = function(block) {
     var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [message + ".channelId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['message_guildId'] = function(block) {
+Blockly.JavaScript['message_guildid'] = function(block) {
     var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [message + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7539,7 +7539,7 @@ Blockly.JavaScript['message_id'] = function(block) {
     var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [message + ".id", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['message_createdTimestamp'] = function(block) {
+Blockly.JavaScript['message_createdtimestamp'] = function(block) {
     var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [message + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7587,7 +7587,7 @@ Blockly.JavaScript['message_stickers'] = function(block) {
     var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [message + ".stickers", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['message_editedTimestamp'] = function(block) {
+Blockly.JavaScript['message_editedtimestamp'] = function(block) {
     var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [message + ".editedTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7599,15 +7599,15 @@ Blockly.JavaScript['message_mentions'] = function(block) {
     var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [message + ".mentions", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['message_webhookId'] = function(block) {
+Blockly.JavaScript['message_webhookid'] = function(block) {
     var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [message + ".webhookId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['message_groupActivityApplication'] = function(block) {
+Blockly.JavaScript['message_groupactivityapplication'] = function(block) {
     var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [message + ".groupActivityApplication", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['message_applicationId'] = function(block) {
+Blockly.JavaScript['message_applicationid'] = function(block) {
     var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [message + ".applicationId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7639,11 +7639,11 @@ Blockly.JavaScript['message_member'] = function(block) {
     var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [message + ".member", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['message_createdAt'] = function(block) {
+Blockly.JavaScript['message_createdat'] = function(block) {
     var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [message + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['message_editedAt'] = function(block) {
+Blockly.JavaScript['message_editedat'] = function(block) {
     var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [message + ".editedAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7651,7 +7651,7 @@ Blockly.JavaScript['message_guild'] = function(block) {
     var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [message + ".guild", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['message_hasThread'] = function(block) {
+Blockly.JavaScript['message_hasthread'] = function(block) {
     var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [message + ".hasThread", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7663,7 +7663,7 @@ Blockly.JavaScript['message_url'] = function(block) {
     var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [message + ".url", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['message_cleanContent'] = function(block) {
+Blockly.JavaScript['message_cleancontent'] = function(block) {
     var message = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [message + ".cleanContent", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7859,7 +7859,7 @@ Blockly.JavaScript['messageattachment_url'] = function(block) {
     var messageattachment = Blockly.JavaScript.valueToCode(block, 'MESSAGEATTACHMENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messageattachment + ".url", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messageattachment_proxyURL'] = function(block) {
+Blockly.JavaScript['messageattachment_proxyurl'] = function(block) {
     var messageattachment = Blockly.JavaScript.valueToCode(block, 'MESSAGEATTACHMENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messageattachment + ".proxyURL", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7871,7 +7871,7 @@ Blockly.JavaScript['messageattachment_width'] = function(block) {
     var messageattachment = Blockly.JavaScript.valueToCode(block, 'MESSAGEATTACHMENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messageattachment + ".width", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messageattachment_contentType'] = function(block) {
+Blockly.JavaScript['messageattachment_contenttype'] = function(block) {
     var messageattachment = Blockly.JavaScript.valueToCode(block, 'MESSAGEATTACHMENT', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messageattachment + ".contentType", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7912,7 +7912,7 @@ Blockly.JavaScript['messagebutton_label'] = function(block) {
     var messagebutton = Blockly.JavaScript.valueToCode(block, 'MESSAGEBUTTON', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagebutton + ".label", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagebutton_customId'] = function(block) {
+Blockly.JavaScript['messagebutton_customid'] = function(block) {
     var messagebutton = Blockly.JavaScript.valueToCode(block, 'MESSAGEBUTTON', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagebutton + ".customId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -7997,7 +7997,7 @@ Blockly.JavaScript['messagecollector_received'] = function(block) {
     var messagecollector = Blockly.JavaScript.valueToCode(block, 'MESSAGECOLLECTOR', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecollector + ".received", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagecollector_endReason'] = function(block) {
+Blockly.JavaScript['messagecollector_endreason'] = function(block) {
     var messagecollector = Blockly.JavaScript.valueToCode(block, 'MESSAGECOLLECTOR', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecollector + ".endReason", Blockly.JavaScript.ORDER_NONE];
 };
@@ -8066,7 +8066,7 @@ Blockly.JavaScript['messagecollector_checkEnd'] = function(block) {
     var messagecollector = Blockly.JavaScript.valueToCode(block, 'MESSAGECOLLECTOR', Blockly.JavaScript.ORDER_NONE) || "null";
     return messagecollector + ".checkEnd();\n";
 };
-Blockly.JavaScript['messagecomponentinteraction_channelId'] = function(block) {
+Blockly.JavaScript['messagecomponentinteraction_channelid'] = function(block) {
     var messagecomponentinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECOMPONENTINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecomponentinteraction + ".channelId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -8074,11 +8074,11 @@ Blockly.JavaScript['messagecomponentinteraction_message'] = function(block) {
     var messagecomponentinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECOMPONENTINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecomponentinteraction + ".message", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagecomponentinteraction_customId'] = function(block) {
+Blockly.JavaScript['messagecomponentinteraction_customid'] = function(block) {
     var messagecomponentinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECOMPONENTINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecomponentinteraction + ".customId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagecomponentinteraction_componentType'] = function(block) {
+Blockly.JavaScript['messagecomponentinteraction_componenttype'] = function(block) {
     var messagecomponentinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECOMPONENTINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecomponentinteraction + ".componentType", Blockly.JavaScript.ORDER_NONE];
 };
@@ -8114,11 +8114,11 @@ Blockly.JavaScript['messagecomponentinteraction_token'] = function(block) {
     var messagecomponentinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECOMPONENTINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecomponentinteraction + ".token", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagecomponentinteraction_applicationId'] = function(block) {
+Blockly.JavaScript['messagecomponentinteraction_applicationid'] = function(block) {
     var messagecomponentinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECOMPONENTINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecomponentinteraction + ".applicationId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagecomponentinteraction_guildId'] = function(block) {
+Blockly.JavaScript['messagecomponentinteraction_guildid'] = function(block) {
     var messagecomponentinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECOMPONENTINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecomponentinteraction + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -8134,7 +8134,7 @@ Blockly.JavaScript['messagecomponentinteraction_version'] = function(block) {
     var messagecomponentinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECOMPONENTINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecomponentinteraction + ".version", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagecomponentinteraction_memberPermissions'] = function(block) {
+Blockly.JavaScript['messagecomponentinteraction_memberpermissions'] = function(block) {
     var messagecomponentinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECOMPONENTINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecomponentinteraction + ".memberPermissions", Blockly.JavaScript.ORDER_NONE];
 };
@@ -8142,15 +8142,15 @@ Blockly.JavaScript['messagecomponentinteraction_locale'] = function(block) {
     var messagecomponentinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECOMPONENTINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecomponentinteraction + ".locale", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagecomponentinteraction_guildLocale'] = function(block) {
+Blockly.JavaScript['messagecomponentinteraction_guildlocale'] = function(block) {
     var messagecomponentinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECOMPONENTINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecomponentinteraction + ".guildLocale", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagecomponentinteraction_createdTimestamp'] = function(block) {
+Blockly.JavaScript['messagecomponentinteraction_createdtimestamp'] = function(block) {
     var messagecomponentinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECOMPONENTINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecomponentinteraction + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagecomponentinteraction_createdAt'] = function(block) {
+Blockly.JavaScript['messagecomponentinteraction_createdat'] = function(block) {
     var messagecomponentinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECOMPONENTINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecomponentinteraction + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -8288,7 +8288,7 @@ Blockly.JavaScript['messagecomponentinteraction_isSelectMenu'] = function(block)
     var messagecomponentinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECOMPONENTINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return messagecomponentinteraction + ".isSelectMenu();\n";
 };
-Blockly.JavaScript['messagecontextmenuinteraction_targetMessage'] = function(block) {
+Blockly.JavaScript['messagecontextmenuinteraction_targetmessage'] = function(block) {
     var messagecontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecontextmenuinteraction + ".targetMessage", Blockly.JavaScript.ORDER_NONE];
 };
@@ -8296,23 +8296,23 @@ Blockly.JavaScript['messagecontextmenuinteraction_options'] = function(block) {
     var messagecontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecontextmenuinteraction + ".options", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagecontextmenuinteraction_targetId'] = function(block) {
+Blockly.JavaScript['messagecontextmenuinteraction_targetid'] = function(block) {
     var messagecontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecontextmenuinteraction + ".targetId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagecontextmenuinteraction_targetType'] = function(block) {
+Blockly.JavaScript['messagecontextmenuinteraction_targettype'] = function(block) {
     var messagecontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecontextmenuinteraction + ".targetType", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagecontextmenuinteraction_channelId'] = function(block) {
+Blockly.JavaScript['messagecontextmenuinteraction_channelid'] = function(block) {
     var messagecontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecontextmenuinteraction + ".channelId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagecontextmenuinteraction_commandId'] = function(block) {
+Blockly.JavaScript['messagecontextmenuinteraction_commandid'] = function(block) {
     var messagecontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecontextmenuinteraction + ".commandId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagecontextmenuinteraction_commandName'] = function(block) {
+Blockly.JavaScript['messagecontextmenuinteraction_commandname'] = function(block) {
     var messagecontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecontextmenuinteraction + ".commandName", Blockly.JavaScript.ORDER_NONE];
 };
@@ -8348,11 +8348,11 @@ Blockly.JavaScript['messagecontextmenuinteraction_token'] = function(block) {
     var messagecontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecontextmenuinteraction + ".token", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagecontextmenuinteraction_applicationId'] = function(block) {
+Blockly.JavaScript['messagecontextmenuinteraction_applicationid'] = function(block) {
     var messagecontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecontextmenuinteraction + ".applicationId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagecontextmenuinteraction_guildId'] = function(block) {
+Blockly.JavaScript['messagecontextmenuinteraction_guildid'] = function(block) {
     var messagecontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecontextmenuinteraction + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -8368,7 +8368,7 @@ Blockly.JavaScript['messagecontextmenuinteraction_version'] = function(block) {
     var messagecontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecontextmenuinteraction + ".version", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagecontextmenuinteraction_memberPermissions'] = function(block) {
+Blockly.JavaScript['messagecontextmenuinteraction_memberpermissions'] = function(block) {
     var messagecontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecontextmenuinteraction + ".memberPermissions", Blockly.JavaScript.ORDER_NONE];
 };
@@ -8376,15 +8376,15 @@ Blockly.JavaScript['messagecontextmenuinteraction_locale'] = function(block) {
     var messagecontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecontextmenuinteraction + ".locale", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagecontextmenuinteraction_guildLocale'] = function(block) {
+Blockly.JavaScript['messagecontextmenuinteraction_guildlocale'] = function(block) {
     var messagecontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecontextmenuinteraction + ".guildLocale", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagecontextmenuinteraction_createdTimestamp'] = function(block) {
+Blockly.JavaScript['messagecontextmenuinteraction_createdtimestamp'] = function(block) {
     var messagecontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecontextmenuinteraction + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagecontextmenuinteraction_createdAt'] = function(block) {
+Blockly.JavaScript['messagecontextmenuinteraction_createdat'] = function(block) {
     var messagecontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'MESSAGECONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagecontextmenuinteraction + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -8548,11 +8548,11 @@ Blockly.JavaScript['messageembed_footer'] = function(block) {
     var messageembed = Blockly.JavaScript.valueToCode(block, 'MESSAGEEMBED', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messageembed + ".footer", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messageembed_createdAt'] = function(block) {
+Blockly.JavaScript['messageembed_createdat'] = function(block) {
     var messageembed = Blockly.JavaScript.valueToCode(block, 'MESSAGEEMBED', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messageembed + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messageembed_hexColor'] = function(block) {
+Blockly.JavaScript['messageembed_hexcolor'] = function(block) {
     var messageembed = Blockly.JavaScript.valueToCode(block, 'MESSAGEEMBED', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messageembed + ".hexColor", Blockly.JavaScript.ORDER_NONE];
 };
@@ -8665,11 +8665,11 @@ Blockly.JavaScript['messagementions_roles'] = function(block) {
     var messagementions = Blockly.JavaScript.valueToCode(block, 'MESSAGEMENTIONS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagementions + ".roles", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagementions_crosspostedChannels'] = function(block) {
+Blockly.JavaScript['messagementions_crosspostedchannels'] = function(block) {
     var messagementions = Blockly.JavaScript.valueToCode(block, 'MESSAGEMENTIONS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagementions + ".crosspostedChannels", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagementions_repliedUser'] = function(block) {
+Blockly.JavaScript['messagementions_replieduser'] = function(block) {
     var messagementions = Blockly.JavaScript.valueToCode(block, 'MESSAGEMENTIONS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagementions + ".repliedUser", Blockly.JavaScript.ORDER_NONE];
 };
@@ -8681,19 +8681,19 @@ Blockly.JavaScript['messagementions_channels'] = function(block) {
     var messagementions = Blockly.JavaScript.valueToCode(block, 'MESSAGEMENTIONS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagementions + ".channels", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagementions_EVERYONE_PATTERN'] = function(block) {
+Blockly.JavaScript['messagementions_everyone_pattern'] = function(block) {
     var messagementions = Blockly.JavaScript.valueToCode(block, 'MESSAGEMENTIONS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagementions + ".EVERYONE_PATTERN", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagementions_USERS_PATTERN'] = function(block) {
+Blockly.JavaScript['messagementions_users_pattern'] = function(block) {
     var messagementions = Blockly.JavaScript.valueToCode(block, 'MESSAGEMENTIONS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagementions + ".USERS_PATTERN", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagementions_ROLES_PATTERN'] = function(block) {
+Blockly.JavaScript['messagementions_roles_pattern'] = function(block) {
     var messagementions = Blockly.JavaScript.valueToCode(block, 'MESSAGEMENTIONS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagementions + ".ROLES_PATTERN", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagementions_CHANNELS_PATTERN'] = function(block) {
+Blockly.JavaScript['messagementions_channels_pattern'] = function(block) {
     var messagementions = Blockly.JavaScript.valueToCode(block, 'MESSAGEMENTIONS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagementions + ".CHANNELS_PATTERN", Blockly.JavaScript.ORDER_NONE];
 };
@@ -8719,23 +8719,23 @@ Blockly.JavaScript['messagepayload_files'] = function(block) {
     var messagepayload = Blockly.JavaScript.valueToCode(block, 'MESSAGEPAYLOAD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagepayload + ".files", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagepayload_isWebhook'] = function(block) {
+Blockly.JavaScript['messagepayload_iswebhook'] = function(block) {
     var messagepayload = Blockly.JavaScript.valueToCode(block, 'MESSAGEPAYLOAD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagepayload + ".isWebhook", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagepayload_isUser'] = function(block) {
+Blockly.JavaScript['messagepayload_isuser'] = function(block) {
     var messagepayload = Blockly.JavaScript.valueToCode(block, 'MESSAGEPAYLOAD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagepayload + ".isUser", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagepayload_isMessage'] = function(block) {
+Blockly.JavaScript['messagepayload_ismessage'] = function(block) {
     var messagepayload = Blockly.JavaScript.valueToCode(block, 'MESSAGEPAYLOAD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagepayload + ".isMessage", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagepayload_isMessageManager'] = function(block) {
+Blockly.JavaScript['messagepayload_ismessagemanager'] = function(block) {
     var messagepayload = Blockly.JavaScript.valueToCode(block, 'MESSAGEPAYLOAD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagepayload + ".isMessageManager", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messagepayload_isInteraction'] = function(block) {
+Blockly.JavaScript['messagepayload_isinteraction'] = function(block) {
     var messagepayload = Blockly.JavaScript.valueToCode(block, 'MESSAGEPAYLOAD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messagepayload + ".isInteraction", Blockly.JavaScript.ORDER_NONE];
 };
@@ -8823,7 +8823,7 @@ Blockly.JavaScript['messagereaction_fetch'] = function(block) {
     var messagereaction = Blockly.JavaScript.valueToCode(block, 'MESSAGEREACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return messagereaction + ".fetch()" + finalstring;
 };
-Blockly.JavaScript['messageselectmenu_customId'] = function(block) {
+Blockly.JavaScript['messageselectmenu_customid'] = function(block) {
     var messageselectmenu = Blockly.JavaScript.valueToCode(block, 'MESSAGESELECTMENU', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messageselectmenu + ".customId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -8831,11 +8831,11 @@ Blockly.JavaScript['messageselectmenu_placeholder'] = function(block) {
     var messageselectmenu = Blockly.JavaScript.valueToCode(block, 'MESSAGESELECTMENU', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messageselectmenu + ".placeholder", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messageselectmenu_minValues'] = function(block) {
+Blockly.JavaScript['messageselectmenu_minvalues'] = function(block) {
     var messageselectmenu = Blockly.JavaScript.valueToCode(block, 'MESSAGESELECTMENU', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messageselectmenu + ".minValues", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messageselectmenu_maxValues'] = function(block) {
+Blockly.JavaScript['messageselectmenu_maxvalues'] = function(block) {
     var messageselectmenu = Blockly.JavaScript.valueToCode(block, 'MESSAGESELECTMENU', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messageselectmenu + ".maxValues", Blockly.JavaScript.ORDER_NONE];
 };
@@ -8923,23 +8923,23 @@ Blockly.JavaScript['newschannel_topic'] = function(block) {
     var newschannel = Blockly.JavaScript.valueToCode(block, 'NEWSCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [newschannel + ".topic", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['newschannel_lastMessageId'] = function(block) {
+Blockly.JavaScript['newschannel_lastmessageid'] = function(block) {
     var newschannel = Blockly.JavaScript.valueToCode(block, 'NEWSCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [newschannel + ".lastMessageId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['newschannel_lastPinTimestamp'] = function(block) {
+Blockly.JavaScript['newschannel_lastpintimestamp'] = function(block) {
     var newschannel = Blockly.JavaScript.valueToCode(block, 'NEWSCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [newschannel + ".lastPinTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['newschannel_defaultAutoArchiveDuration'] = function(block) {
+Blockly.JavaScript['newschannel_defaultautoarchiveduration'] = function(block) {
     var newschannel = Blockly.JavaScript.valueToCode(block, 'NEWSCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [newschannel + ".defaultAutoArchiveDuration", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['newschannel_lastMessage'] = function(block) {
+Blockly.JavaScript['newschannel_lastmessage'] = function(block) {
     var newschannel = Blockly.JavaScript.valueToCode(block, 'NEWSCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [newschannel + ".lastMessage", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['newschannel_lastPinAt'] = function(block) {
+Blockly.JavaScript['newschannel_lastpinat'] = function(block) {
     var newschannel = Blockly.JavaScript.valueToCode(block, 'NEWSCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [newschannel + ".lastPinAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -8947,11 +8947,11 @@ Blockly.JavaScript['newschannel_guild'] = function(block) {
     var newschannel = Blockly.JavaScript.valueToCode(block, 'NEWSCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [newschannel + ".guild", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['newschannel_guildId'] = function(block) {
+Blockly.JavaScript['newschannel_guildid'] = function(block) {
     var newschannel = Blockly.JavaScript.valueToCode(block, 'NEWSCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [newschannel + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['newschannel_permissionOverwrites'] = function(block) {
+Blockly.JavaScript['newschannel_permissionoverwrites'] = function(block) {
     var newschannel = Blockly.JavaScript.valueToCode(block, 'NEWSCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [newschannel + ".permissionOverwrites", Blockly.JavaScript.ORDER_NONE];
 };
@@ -8959,11 +8959,11 @@ Blockly.JavaScript['newschannel_name'] = function(block) {
     var newschannel = Blockly.JavaScript.valueToCode(block, 'NEWSCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [newschannel + ".name", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['newschannel_rawPosition'] = function(block) {
+Blockly.JavaScript['newschannel_rawposition'] = function(block) {
     var newschannel = Blockly.JavaScript.valueToCode(block, 'NEWSCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [newschannel + ".rawPosition", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['newschannel_parentId'] = function(block) {
+Blockly.JavaScript['newschannel_parentid'] = function(block) {
     var newschannel = Blockly.JavaScript.valueToCode(block, 'NEWSCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [newschannel + ".parentId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -8971,7 +8971,7 @@ Blockly.JavaScript['newschannel_parent'] = function(block) {
     var newschannel = Blockly.JavaScript.valueToCode(block, 'NEWSCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [newschannel + ".parent", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['newschannel_permissionsLocked'] = function(block) {
+Blockly.JavaScript['newschannel_permissionslocked'] = function(block) {
     var newschannel = Blockly.JavaScript.valueToCode(block, 'NEWSCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [newschannel + ".permissionsLocked", Blockly.JavaScript.ORDER_NONE];
 };
@@ -9003,11 +9003,11 @@ Blockly.JavaScript['newschannel_id'] = function(block) {
     var newschannel = Blockly.JavaScript.valueToCode(block, 'NEWSCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [newschannel + ".id", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['newschannel_createdTimestamp'] = function(block) {
+Blockly.JavaScript['newschannel_createdtimestamp'] = function(block) {
     var newschannel = Blockly.JavaScript.valueToCode(block, 'NEWSCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [newschannel + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['newschannel_createdAt'] = function(block) {
+Blockly.JavaScript['newschannel_createdat'] = function(block) {
     var newschannel = Blockly.JavaScript.valueToCode(block, 'NEWSCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [newschannel + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -9252,15 +9252,15 @@ Blockly.JavaScript['oauth2guild_features'] = function(block) {
     var oauth2guild = Blockly.JavaScript.valueToCode(block, 'OAUTH2GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [oauth2guild + ".features", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['oauth2guild_createdTimestamp'] = function(block) {
+Blockly.JavaScript['oauth2guild_createdtimestamp'] = function(block) {
     var oauth2guild = Blockly.JavaScript.valueToCode(block, 'OAUTH2GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [oauth2guild + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['oauth2guild_createdAt'] = function(block) {
+Blockly.JavaScript['oauth2guild_createdat'] = function(block) {
     var oauth2guild = Blockly.JavaScript.valueToCode(block, 'OAUTH2GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [oauth2guild + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['oauth2guild_nameAcronym'] = function(block) {
+Blockly.JavaScript['oauth2guild_nameacronym'] = function(block) {
     var oauth2guild = Blockly.JavaScript.valueToCode(block, 'OAUTH2GUILD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [oauth2guild + ".nameAcronym", Blockly.JavaScript.ORDER_NONE];
 };
@@ -9315,11 +9315,11 @@ Blockly.JavaScript['partialgroupdmchannel_id'] = function(block) {
     var partialgroupdmchannel = Blockly.JavaScript.valueToCode(block, 'PARTIALGROUPDMCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [partialgroupdmchannel + ".id", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['partialgroupdmchannel_createdTimestamp'] = function(block) {
+Blockly.JavaScript['partialgroupdmchannel_createdtimestamp'] = function(block) {
     var partialgroupdmchannel = Blockly.JavaScript.valueToCode(block, 'PARTIALGROUPDMCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [partialgroupdmchannel + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['partialgroupdmchannel_createdAt'] = function(block) {
+Blockly.JavaScript['partialgroupdmchannel_createdat'] = function(block) {
     var partialgroupdmchannel = Blockly.JavaScript.valueToCode(block, 'PARTIALGROUPDMCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [partialgroupdmchannel + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -9426,7 +9426,7 @@ Blockly.JavaScript['permissionoverwrites_resolve'] = function(block) {
     var guild = Blockly.JavaScript.valueToCode(block, 'GUILD', Blockly.JavaScript.ORDER_NONE) || "";
     return permissionoverwrites + ".resolve(" + overwrite + ", " + guild + ");\n";
 };
-Blockly.JavaScript['presence_userId'] = function(block) {
+Blockly.JavaScript['presence_userid'] = function(block) {
     var presence = Blockly.JavaScript.valueToCode(block, 'PRESENCE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [presence + ".userId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -9450,7 +9450,7 @@ Blockly.JavaScript['presence_activities'] = function(block) {
     var presence = Blockly.JavaScript.valueToCode(block, 'PRESENCE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [presence + ".activities", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['presence_clientStatus'] = function(block) {
+Blockly.JavaScript['presence_clientstatus'] = function(block) {
     var presence = Blockly.JavaScript.valueToCode(block, 'PRESENCE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [presence + ".clientStatus", Blockly.JavaScript.ORDER_NONE];
 };
@@ -9487,7 +9487,7 @@ Blockly.JavaScript['activity_state'] = function(block) {
     var activity = Blockly.JavaScript.valueToCode(block, 'ACTIVITY', Blockly.JavaScript.ORDER_NONE) || "null";
     return [activity + ".state", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['activity_applicationId'] = function(block) {
+Blockly.JavaScript['activity_applicationid'] = function(block) {
     var activity = Blockly.JavaScript.valueToCode(block, 'ACTIVITY', Blockly.JavaScript.ORDER_NONE) || "null";
     return [activity + ".applicationId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -9495,7 +9495,7 @@ Blockly.JavaScript['activity_timestamps'] = function(block) {
     var activity = Blockly.JavaScript.valueToCode(block, 'ACTIVITY', Blockly.JavaScript.ORDER_NONE) || "null";
     return [activity + ".timestamps", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['activity_syncId'] = function(block) {
+Blockly.JavaScript['activity_syncid'] = function(block) {
     var activity = Blockly.JavaScript.valueToCode(block, 'ACTIVITY', Blockly.JavaScript.ORDER_NONE) || "null";
     return [activity + ".syncId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -9519,7 +9519,7 @@ Blockly.JavaScript['activity_emoji'] = function(block) {
     var activity = Blockly.JavaScript.valueToCode(block, 'ACTIVITY', Blockly.JavaScript.ORDER_NONE) || "null";
     return [activity + ".emoji", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['activity_sessionId'] = function(block) {
+Blockly.JavaScript['activity_sessionid'] = function(block) {
     var activity = Blockly.JavaScript.valueToCode(block, 'ACTIVITY', Blockly.JavaScript.ORDER_NONE) || "null";
     return [activity + ".sessionId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -9527,11 +9527,11 @@ Blockly.JavaScript['activity_buttons'] = function(block) {
     var activity = Blockly.JavaScript.valueToCode(block, 'ACTIVITY', Blockly.JavaScript.ORDER_NONE) || "null";
     return [activity + ".buttons", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['activity_createdTimestamp'] = function(block) {
+Blockly.JavaScript['activity_createdtimestamp'] = function(block) {
     var activity = Blockly.JavaScript.valueToCode(block, 'ACTIVITY', Blockly.JavaScript.ORDER_NONE) || "null";
     return [activity + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['activity_createdAt'] = function(block) {
+Blockly.JavaScript['activity_createdat'] = function(block) {
     var activity = Blockly.JavaScript.valueToCode(block, 'ACTIVITY', Blockly.JavaScript.ORDER_NONE) || "null";
     return [activity + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -9544,19 +9544,19 @@ Blockly.JavaScript['activity_toString'] = function(block) {
     var activity = Blockly.JavaScript.valueToCode(block, 'ACTIVITY', Blockly.JavaScript.ORDER_NONE) || "null";
     return activity + ".toString();\n";
 };
-Blockly.JavaScript['richpresenceassets_largeText'] = function(block) {
+Blockly.JavaScript['richpresenceassets_largetext'] = function(block) {
     var richpresenceassets = Blockly.JavaScript.valueToCode(block, 'RICHPRESENCEASSETS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [richpresenceassets + ".largeText", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['richpresenceassets_smallText'] = function(block) {
+Blockly.JavaScript['richpresenceassets_smalltext'] = function(block) {
     var richpresenceassets = Blockly.JavaScript.valueToCode(block, 'RICHPRESENCEASSETS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [richpresenceassets + ".smallText", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['richpresenceassets_largeImage'] = function(block) {
+Blockly.JavaScript['richpresenceassets_largeimage'] = function(block) {
     var richpresenceassets = Blockly.JavaScript.valueToCode(block, 'RICHPRESENCEASSETS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [richpresenceassets + ".largeImage", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['richpresenceassets_smallImage'] = function(block) {
+Blockly.JavaScript['richpresenceassets_smallimage'] = function(block) {
     var richpresenceassets = Blockly.JavaScript.valueToCode(block, 'RICHPRESENCEASSETS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [richpresenceassets + ".smallImage", Blockly.JavaScript.ORDER_NONE];
 };
@@ -9607,7 +9607,7 @@ Blockly.JavaScript['reactioncollector_total'] = function(block) {
     var reactioncollector = Blockly.JavaScript.valueToCode(block, 'REACTIONCOLLECTOR', Blockly.JavaScript.ORDER_NONE) || "null";
     return [reactioncollector + ".total", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['reactioncollector_endReason'] = function(block) {
+Blockly.JavaScript['reactioncollector_endreason'] = function(block) {
     var reactioncollector = Blockly.JavaScript.valueToCode(block, 'REACTIONCOLLECTOR', Blockly.JavaScript.ORDER_NONE) || "null";
     return [reactioncollector + ".endReason", Blockly.JavaScript.ORDER_NONE];
 };
@@ -9710,11 +9710,11 @@ Blockly.JavaScript['reactionemoji_url'] = function(block) {
     var reactionemoji = Blockly.JavaScript.valueToCode(block, 'REACTIONEMOJI', Blockly.JavaScript.ORDER_NONE) || "null";
     return [reactionemoji + ".url", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['reactionemoji_createdTimestamp'] = function(block) {
+Blockly.JavaScript['reactionemoji_createdtimestamp'] = function(block) {
     var reactionemoji = Blockly.JavaScript.valueToCode(block, 'REACTIONEMOJI', Blockly.JavaScript.ORDER_NONE) || "null";
     return [reactionemoji + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['reactionemoji_createdAt'] = function(block) {
+Blockly.JavaScript['reactionemoji_createdat'] = function(block) {
     var reactionemoji = Blockly.JavaScript.valueToCode(block, 'REACTIONEMOJI', Blockly.JavaScript.ORDER_NONE) || "null";
     return [reactionemoji + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -9734,7 +9734,7 @@ Blockly.JavaScript['role_icon'] = function(block) {
     var role = Blockly.JavaScript.valueToCode(block, 'ROLE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [role + ".icon", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['role_unicodeEmoji'] = function(block) {
+Blockly.JavaScript['role_unicodeemoji'] = function(block) {
     var role = Blockly.JavaScript.valueToCode(block, 'ROLE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [role + ".unicodeEmoji", Blockly.JavaScript.ORDER_NONE];
 };
@@ -9754,7 +9754,7 @@ Blockly.JavaScript['role_hoist'] = function(block) {
     var role = Blockly.JavaScript.valueToCode(block, 'ROLE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [role + ".hoist", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['role_rawPosition'] = function(block) {
+Blockly.JavaScript['role_rawposition'] = function(block) {
     var role = Blockly.JavaScript.valueToCode(block, 'ROLE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [role + ".rawPosition", Blockly.JavaScript.ORDER_NONE];
 };
@@ -9774,15 +9774,15 @@ Blockly.JavaScript['role_tags'] = function(block) {
     var role = Blockly.JavaScript.valueToCode(block, 'ROLE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [role + ".tags", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['role_createdTimestamp'] = function(block) {
+Blockly.JavaScript['role_createdtimestamp'] = function(block) {
     var role = Blockly.JavaScript.valueToCode(block, 'ROLE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [role + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['role_createdAt'] = function(block) {
+Blockly.JavaScript['role_createdat'] = function(block) {
     var role = Blockly.JavaScript.valueToCode(block, 'ROLE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [role + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['role_hexColor'] = function(block) {
+Blockly.JavaScript['role_hexcolor'] = function(block) {
     var role = Blockly.JavaScript.valueToCode(block, 'ROLE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [role + ".hexColor", Blockly.JavaScript.ORDER_NONE];
 };
@@ -9902,7 +9902,7 @@ Blockly.JavaScript['selectmenuinteraction_values'] = function(block) {
     var selectmenuinteraction = Blockly.JavaScript.valueToCode(block, 'SELECTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [selectmenuinteraction + ".values", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['selectmenuinteraction_channelId'] = function(block) {
+Blockly.JavaScript['selectmenuinteraction_channelid'] = function(block) {
     var selectmenuinteraction = Blockly.JavaScript.valueToCode(block, 'SELECTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [selectmenuinteraction + ".channelId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -9910,11 +9910,11 @@ Blockly.JavaScript['selectmenuinteraction_message'] = function(block) {
     var selectmenuinteraction = Blockly.JavaScript.valueToCode(block, 'SELECTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [selectmenuinteraction + ".message", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['selectmenuinteraction_customId'] = function(block) {
+Blockly.JavaScript['selectmenuinteraction_customid'] = function(block) {
     var selectmenuinteraction = Blockly.JavaScript.valueToCode(block, 'SELECTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [selectmenuinteraction + ".customId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['selectmenuinteraction_componentType'] = function(block) {
+Blockly.JavaScript['selectmenuinteraction_componenttype'] = function(block) {
     var selectmenuinteraction = Blockly.JavaScript.valueToCode(block, 'SELECTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [selectmenuinteraction + ".componentType", Blockly.JavaScript.ORDER_NONE];
 };
@@ -9950,11 +9950,11 @@ Blockly.JavaScript['selectmenuinteraction_token'] = function(block) {
     var selectmenuinteraction = Blockly.JavaScript.valueToCode(block, 'SELECTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [selectmenuinteraction + ".token", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['selectmenuinteraction_applicationId'] = function(block) {
+Blockly.JavaScript['selectmenuinteraction_applicationid'] = function(block) {
     var selectmenuinteraction = Blockly.JavaScript.valueToCode(block, 'SELECTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [selectmenuinteraction + ".applicationId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['selectmenuinteraction_guildId'] = function(block) {
+Blockly.JavaScript['selectmenuinteraction_guildid'] = function(block) {
     var selectmenuinteraction = Blockly.JavaScript.valueToCode(block, 'SELECTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [selectmenuinteraction + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -9970,7 +9970,7 @@ Blockly.JavaScript['selectmenuinteraction_version'] = function(block) {
     var selectmenuinteraction = Blockly.JavaScript.valueToCode(block, 'SELECTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [selectmenuinteraction + ".version", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['selectmenuinteraction_memberPermissions'] = function(block) {
+Blockly.JavaScript['selectmenuinteraction_memberpermissions'] = function(block) {
     var selectmenuinteraction = Blockly.JavaScript.valueToCode(block, 'SELECTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [selectmenuinteraction + ".memberPermissions", Blockly.JavaScript.ORDER_NONE];
 };
@@ -9978,15 +9978,15 @@ Blockly.JavaScript['selectmenuinteraction_locale'] = function(block) {
     var selectmenuinteraction = Blockly.JavaScript.valueToCode(block, 'SELECTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [selectmenuinteraction + ".locale", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['selectmenuinteraction_guildLocale'] = function(block) {
+Blockly.JavaScript['selectmenuinteraction_guildlocale'] = function(block) {
     var selectmenuinteraction = Blockly.JavaScript.valueToCode(block, 'SELECTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [selectmenuinteraction + ".guildLocale", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['selectmenuinteraction_createdTimestamp'] = function(block) {
+Blockly.JavaScript['selectmenuinteraction_createdtimestamp'] = function(block) {
     var selectmenuinteraction = Blockly.JavaScript.valueToCode(block, 'SELECTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [selectmenuinteraction + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['selectmenuinteraction_createdAt'] = function(block) {
+Blockly.JavaScript['selectmenuinteraction_createdat'] = function(block) {
     var selectmenuinteraction = Blockly.JavaScript.valueToCode(block, 'SELECTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [selectmenuinteraction + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10128,11 +10128,11 @@ Blockly.JavaScript['stagechannel_topic'] = function(block) {
     var stagechannel = Blockly.JavaScript.valueToCode(block, 'STAGECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stagechannel + ".topic", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['stagechannel_stageInstance'] = function(block) {
+Blockly.JavaScript['stagechannel_stageinstance'] = function(block) {
     var stagechannel = Blockly.JavaScript.valueToCode(block, 'STAGECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stagechannel + ".stageInstance", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['stagechannel_rtcRegion'] = function(block) {
+Blockly.JavaScript['stagechannel_rtcregion'] = function(block) {
     var stagechannel = Blockly.JavaScript.valueToCode(block, 'STAGECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stagechannel + ".rtcRegion", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10140,7 +10140,7 @@ Blockly.JavaScript['stagechannel_bitrate'] = function(block) {
     var stagechannel = Blockly.JavaScript.valueToCode(block, 'STAGECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stagechannel + ".bitrate", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['stagechannel_userLimit'] = function(block) {
+Blockly.JavaScript['stagechannel_userlimit'] = function(block) {
     var stagechannel = Blockly.JavaScript.valueToCode(block, 'STAGECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stagechannel + ".userLimit", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10160,11 +10160,11 @@ Blockly.JavaScript['stagechannel_guild'] = function(block) {
     var stagechannel = Blockly.JavaScript.valueToCode(block, 'STAGECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stagechannel + ".guild", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['stagechannel_guildId'] = function(block) {
+Blockly.JavaScript['stagechannel_guildid'] = function(block) {
     var stagechannel = Blockly.JavaScript.valueToCode(block, 'STAGECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stagechannel + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['stagechannel_permissionOverwrites'] = function(block) {
+Blockly.JavaScript['stagechannel_permissionoverwrites'] = function(block) {
     var stagechannel = Blockly.JavaScript.valueToCode(block, 'STAGECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stagechannel + ".permissionOverwrites", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10172,11 +10172,11 @@ Blockly.JavaScript['stagechannel_name'] = function(block) {
     var stagechannel = Blockly.JavaScript.valueToCode(block, 'STAGECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stagechannel + ".name", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['stagechannel_rawPosition'] = function(block) {
+Blockly.JavaScript['stagechannel_rawposition'] = function(block) {
     var stagechannel = Blockly.JavaScript.valueToCode(block, 'STAGECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stagechannel + ".rawPosition", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['stagechannel_parentId'] = function(block) {
+Blockly.JavaScript['stagechannel_parentid'] = function(block) {
     var stagechannel = Blockly.JavaScript.valueToCode(block, 'STAGECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stagechannel + ".parentId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10184,7 +10184,7 @@ Blockly.JavaScript['stagechannel_parent'] = function(block) {
     var stagechannel = Blockly.JavaScript.valueToCode(block, 'STAGECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stagechannel + ".parent", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['stagechannel_permissionsLocked'] = function(block) {
+Blockly.JavaScript['stagechannel_permissionslocked'] = function(block) {
     var stagechannel = Blockly.JavaScript.valueToCode(block, 'STAGECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stagechannel + ".permissionsLocked", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10212,11 +10212,11 @@ Blockly.JavaScript['stagechannel_id'] = function(block) {
     var stagechannel = Blockly.JavaScript.valueToCode(block, 'STAGECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stagechannel + ".id", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['stagechannel_createdTimestamp'] = function(block) {
+Blockly.JavaScript['stagechannel_createdtimestamp'] = function(block) {
     var stagechannel = Blockly.JavaScript.valueToCode(block, 'STAGECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stagechannel + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['stagechannel_createdAt'] = function(block) {
+Blockly.JavaScript['stagechannel_createdat'] = function(block) {
     var stagechannel = Blockly.JavaScript.valueToCode(block, 'STAGECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stagechannel + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10346,11 +10346,11 @@ Blockly.JavaScript['stageinstance_id'] = function(block) {
     var stageinstance = Blockly.JavaScript.valueToCode(block, 'STAGEINSTANCE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stageinstance + ".id", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['stageinstance_guildId'] = function(block) {
+Blockly.JavaScript['stageinstance_guildid'] = function(block) {
     var stageinstance = Blockly.JavaScript.valueToCode(block, 'STAGEINSTANCE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stageinstance + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['stageinstance_channelId'] = function(block) {
+Blockly.JavaScript['stageinstance_channelid'] = function(block) {
     var stageinstance = Blockly.JavaScript.valueToCode(block, 'STAGEINSTANCE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stageinstance + ".channelId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10358,11 +10358,11 @@ Blockly.JavaScript['stageinstance_topic'] = function(block) {
     var stageinstance = Blockly.JavaScript.valueToCode(block, 'STAGEINSTANCE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stageinstance + ".topic", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['stageinstance_privacyLevel'] = function(block) {
+Blockly.JavaScript['stageinstance_privacylevel'] = function(block) {
     var stageinstance = Blockly.JavaScript.valueToCode(block, 'STAGEINSTANCE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stageinstance + ".privacyLevel", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['stageinstance_discoverableDisabled'] = function(block) {
+Blockly.JavaScript['stageinstance_discoverabledisabled'] = function(block) {
     var stageinstance = Blockly.JavaScript.valueToCode(block, 'STAGEINSTANCE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stageinstance + ".discoverableDisabled", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10374,11 +10374,11 @@ Blockly.JavaScript['stageinstance_guild'] = function(block) {
     var stageinstance = Blockly.JavaScript.valueToCode(block, 'STAGEINSTANCE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stageinstance + ".guild", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['stageinstance_createdTimestamp'] = function(block) {
+Blockly.JavaScript['stageinstance_createdtimestamp'] = function(block) {
     var stageinstance = Blockly.JavaScript.valueToCode(block, 'STAGEINSTANCE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stageinstance + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['stageinstance_createdAt'] = function(block) {
+Blockly.JavaScript['stageinstance_createdat'] = function(block) {
     var stageinstance = Blockly.JavaScript.valueToCode(block, 'STAGEINSTANCE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stageinstance + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10426,7 +10426,7 @@ Blockly.JavaScript['sticker_name'] = function(block) {
     var sticker = Blockly.JavaScript.valueToCode(block, 'STICKER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [sticker + ".name", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['sticker_packId'] = function(block) {
+Blockly.JavaScript['sticker_packid'] = function(block) {
     var sticker = Blockly.JavaScript.valueToCode(block, 'STICKER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [sticker + ".packId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10438,7 +10438,7 @@ Blockly.JavaScript['sticker_available'] = function(block) {
     var sticker = Blockly.JavaScript.valueToCode(block, 'STICKER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [sticker + ".available", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['sticker_guildId'] = function(block) {
+Blockly.JavaScript['sticker_guildid'] = function(block) {
     var sticker = Blockly.JavaScript.valueToCode(block, 'STICKER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [sticker + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10446,15 +10446,15 @@ Blockly.JavaScript['sticker_user'] = function(block) {
     var sticker = Blockly.JavaScript.valueToCode(block, 'STICKER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [sticker + ".user", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['sticker_sortValue'] = function(block) {
+Blockly.JavaScript['sticker_sortvalue'] = function(block) {
     var sticker = Blockly.JavaScript.valueToCode(block, 'STICKER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [sticker + ".sortValue", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['sticker_createdTimestamp'] = function(block) {
+Blockly.JavaScript['sticker_createdtimestamp'] = function(block) {
     var sticker = Blockly.JavaScript.valueToCode(block, 'STICKER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [sticker + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['sticker_createdAt'] = function(block) {
+Blockly.JavaScript['sticker_createdat'] = function(block) {
     var sticker = Blockly.JavaScript.valueToCode(block, 'STICKER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [sticker + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10538,11 +10538,11 @@ Blockly.JavaScript['stickerpack_name'] = function(block) {
     var stickerpack = Blockly.JavaScript.valueToCode(block, 'STICKERPACK', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stickerpack + ".name", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['stickerpack_skuId'] = function(block) {
+Blockly.JavaScript['stickerpack_skuid'] = function(block) {
     var stickerpack = Blockly.JavaScript.valueToCode(block, 'STICKERPACK', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stickerpack + ".skuId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['stickerpack_coverStickerId'] = function(block) {
+Blockly.JavaScript['stickerpack_coverstickerid'] = function(block) {
     var stickerpack = Blockly.JavaScript.valueToCode(block, 'STICKERPACK', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stickerpack + ".coverStickerId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10550,19 +10550,19 @@ Blockly.JavaScript['stickerpack_description'] = function(block) {
     var stickerpack = Blockly.JavaScript.valueToCode(block, 'STICKERPACK', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stickerpack + ".description", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['stickerpack_bannerId'] = function(block) {
+Blockly.JavaScript['stickerpack_bannerid'] = function(block) {
     var stickerpack = Blockly.JavaScript.valueToCode(block, 'STICKERPACK', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stickerpack + ".bannerId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['stickerpack_createdTimestamp'] = function(block) {
+Blockly.JavaScript['stickerpack_createdtimestamp'] = function(block) {
     var stickerpack = Blockly.JavaScript.valueToCode(block, 'STICKERPACK', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stickerpack + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['stickerpack_createdAt'] = function(block) {
+Blockly.JavaScript['stickerpack_createdat'] = function(block) {
     var stickerpack = Blockly.JavaScript.valueToCode(block, 'STICKERPACK', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stickerpack + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['stickerpack_coverSticker'] = function(block) {
+Blockly.JavaScript['stickerpack_coversticker'] = function(block) {
     var stickerpack = Blockly.JavaScript.valueToCode(block, 'STICKERPACK', Blockly.JavaScript.ORDER_NONE) || "null";
     return [stickerpack + ".coverSticker", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10583,11 +10583,11 @@ Blockly.JavaScript['storechannel_guild'] = function(block) {
     var storechannel = Blockly.JavaScript.valueToCode(block, 'STORECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [storechannel + ".guild", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['storechannel_guildId'] = function(block) {
+Blockly.JavaScript['storechannel_guildid'] = function(block) {
     var storechannel = Blockly.JavaScript.valueToCode(block, 'STORECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [storechannel + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['storechannel_permissionOverwrites'] = function(block) {
+Blockly.JavaScript['storechannel_permissionoverwrites'] = function(block) {
     var storechannel = Blockly.JavaScript.valueToCode(block, 'STORECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [storechannel + ".permissionOverwrites", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10595,11 +10595,11 @@ Blockly.JavaScript['storechannel_name'] = function(block) {
     var storechannel = Blockly.JavaScript.valueToCode(block, 'STORECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [storechannel + ".name", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['storechannel_rawPosition'] = function(block) {
+Blockly.JavaScript['storechannel_rawposition'] = function(block) {
     var storechannel = Blockly.JavaScript.valueToCode(block, 'STORECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [storechannel + ".rawPosition", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['storechannel_parentId'] = function(block) {
+Blockly.JavaScript['storechannel_parentid'] = function(block) {
     var storechannel = Blockly.JavaScript.valueToCode(block, 'STORECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [storechannel + ".parentId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10607,7 +10607,7 @@ Blockly.JavaScript['storechannel_parent'] = function(block) {
     var storechannel = Blockly.JavaScript.valueToCode(block, 'STORECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [storechannel + ".parent", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['storechannel_permissionsLocked'] = function(block) {
+Blockly.JavaScript['storechannel_permissionslocked'] = function(block) {
     var storechannel = Blockly.JavaScript.valueToCode(block, 'STORECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [storechannel + ".permissionsLocked", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10639,11 +10639,11 @@ Blockly.JavaScript['storechannel_id'] = function(block) {
     var storechannel = Blockly.JavaScript.valueToCode(block, 'STORECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [storechannel + ".id", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['storechannel_createdTimestamp'] = function(block) {
+Blockly.JavaScript['storechannel_createdtimestamp'] = function(block) {
     var storechannel = Blockly.JavaScript.valueToCode(block, 'STORECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [storechannel + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['storechannel_createdAt'] = function(block) {
+Blockly.JavaScript['storechannel_createdat'] = function(block) {
     var storechannel = Blockly.JavaScript.valueToCode(block, 'STORECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [storechannel + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10765,7 +10765,7 @@ Blockly.JavaScript['team_icon'] = function(block) {
     var team = Blockly.JavaScript.valueToCode(block, 'TEAM', Blockly.JavaScript.ORDER_NONE) || "null";
     return [team + ".icon", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['team_ownerId'] = function(block) {
+Blockly.JavaScript['team_ownerid'] = function(block) {
     var team = Blockly.JavaScript.valueToCode(block, 'TEAM', Blockly.JavaScript.ORDER_NONE) || "null";
     return [team + ".ownerId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10777,11 +10777,11 @@ Blockly.JavaScript['team_owner'] = function(block) {
     var team = Blockly.JavaScript.valueToCode(block, 'TEAM', Blockly.JavaScript.ORDER_NONE) || "null";
     return [team + ".owner", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['team_createdTimestamp'] = function(block) {
+Blockly.JavaScript['team_createdtimestamp'] = function(block) {
     var team = Blockly.JavaScript.valueToCode(block, 'TEAM', Blockly.JavaScript.ORDER_NONE) || "null";
     return [team + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['team_createdAt'] = function(block) {
+Blockly.JavaScript['team_createdat'] = function(block) {
     var team = Blockly.JavaScript.valueToCode(block, 'TEAM', Blockly.JavaScript.ORDER_NONE) || "null";
     return [team + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10806,7 +10806,7 @@ Blockly.JavaScript['teammember_permissions'] = function(block) {
     var teammember = Blockly.JavaScript.valueToCode(block, 'TEAMMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [teammember + ".permissions", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['teammember_membershipState'] = function(block) {
+Blockly.JavaScript['teammember_membershipstate'] = function(block) {
     var teammember = Blockly.JavaScript.valueToCode(block, 'TEAMMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [teammember + ".membershipState", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10826,7 +10826,7 @@ Blockly.JavaScript['teammember_toString'] = function(block) {
     var teammember = Blockly.JavaScript.valueToCode(block, 'TEAMMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return teammember + ".toString();\n";
 };
-Blockly.JavaScript['textchannel_rateLimitPerUser'] = function(block) {
+Blockly.JavaScript['textchannel_ratelimitperuser'] = function(block) {
     var textchannel = Blockly.JavaScript.valueToCode(block, 'TEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [textchannel + ".rateLimitPerUser", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10846,23 +10846,23 @@ Blockly.JavaScript['textchannel_topic'] = function(block) {
     var textchannel = Blockly.JavaScript.valueToCode(block, 'TEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [textchannel + ".topic", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['textchannel_lastMessageId'] = function(block) {
+Blockly.JavaScript['textchannel_lastmessageid'] = function(block) {
     var textchannel = Blockly.JavaScript.valueToCode(block, 'TEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [textchannel + ".lastMessageId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['textchannel_lastPinTimestamp'] = function(block) {
+Blockly.JavaScript['textchannel_lastpintimestamp'] = function(block) {
     var textchannel = Blockly.JavaScript.valueToCode(block, 'TEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [textchannel + ".lastPinTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['textchannel_defaultAutoArchiveDuration'] = function(block) {
+Blockly.JavaScript['textchannel_defaultautoarchiveduration'] = function(block) {
     var textchannel = Blockly.JavaScript.valueToCode(block, 'TEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [textchannel + ".defaultAutoArchiveDuration", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['textchannel_lastMessage'] = function(block) {
+Blockly.JavaScript['textchannel_lastmessage'] = function(block) {
     var textchannel = Blockly.JavaScript.valueToCode(block, 'TEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [textchannel + ".lastMessage", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['textchannel_lastPinAt'] = function(block) {
+Blockly.JavaScript['textchannel_lastpinat'] = function(block) {
     var textchannel = Blockly.JavaScript.valueToCode(block, 'TEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [textchannel + ".lastPinAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10870,11 +10870,11 @@ Blockly.JavaScript['textchannel_guild'] = function(block) {
     var textchannel = Blockly.JavaScript.valueToCode(block, 'TEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [textchannel + ".guild", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['textchannel_guildId'] = function(block) {
+Blockly.JavaScript['textchannel_guildid'] = function(block) {
     var textchannel = Blockly.JavaScript.valueToCode(block, 'TEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [textchannel + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['textchannel_permissionOverwrites'] = function(block) {
+Blockly.JavaScript['textchannel_permissionoverwrites'] = function(block) {
     var textchannel = Blockly.JavaScript.valueToCode(block, 'TEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [textchannel + ".permissionOverwrites", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10882,11 +10882,11 @@ Blockly.JavaScript['textchannel_name'] = function(block) {
     var textchannel = Blockly.JavaScript.valueToCode(block, 'TEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [textchannel + ".name", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['textchannel_rawPosition'] = function(block) {
+Blockly.JavaScript['textchannel_rawposition'] = function(block) {
     var textchannel = Blockly.JavaScript.valueToCode(block, 'TEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [textchannel + ".rawPosition", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['textchannel_parentId'] = function(block) {
+Blockly.JavaScript['textchannel_parentid'] = function(block) {
     var textchannel = Blockly.JavaScript.valueToCode(block, 'TEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [textchannel + ".parentId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10894,7 +10894,7 @@ Blockly.JavaScript['textchannel_parent'] = function(block) {
     var textchannel = Blockly.JavaScript.valueToCode(block, 'TEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [textchannel + ".parent", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['textchannel_permissionsLocked'] = function(block) {
+Blockly.JavaScript['textchannel_permissionslocked'] = function(block) {
     var textchannel = Blockly.JavaScript.valueToCode(block, 'TEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [textchannel + ".permissionsLocked", Blockly.JavaScript.ORDER_NONE];
 };
@@ -10926,11 +10926,11 @@ Blockly.JavaScript['textchannel_id'] = function(block) {
     var textchannel = Blockly.JavaScript.valueToCode(block, 'TEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [textchannel + ".id", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['textchannel_createdTimestamp'] = function(block) {
+Blockly.JavaScript['textchannel_createdtimestamp'] = function(block) {
     var textchannel = Blockly.JavaScript.valueToCode(block, 'TEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [textchannel + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['textchannel_createdAt'] = function(block) {
+Blockly.JavaScript['textchannel_createdat'] = function(block) {
     var textchannel = Blockly.JavaScript.valueToCode(block, 'TEXTCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [textchannel + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -11149,7 +11149,7 @@ Blockly.JavaScript['threadchannel_guild'] = function(block) {
     var threadchannel = Blockly.JavaScript.valueToCode(block, 'THREADCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadchannel + ".guild", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['threadchannel_guildId'] = function(block) {
+Blockly.JavaScript['threadchannel_guildid'] = function(block) {
     var threadchannel = Blockly.JavaScript.valueToCode(block, 'THREADCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadchannel + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -11165,7 +11165,7 @@ Blockly.JavaScript['threadchannel_name'] = function(block) {
     var threadchannel = Blockly.JavaScript.valueToCode(block, 'THREADCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadchannel + ".name", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['threadchannel_parentId'] = function(block) {
+Blockly.JavaScript['threadchannel_parentid'] = function(block) {
     var threadchannel = Blockly.JavaScript.valueToCode(block, 'THREADCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadchannel + ".parentId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -11181,43 +11181,43 @@ Blockly.JavaScript['threadchannel_archived'] = function(block) {
     var threadchannel = Blockly.JavaScript.valueToCode(block, 'THREADCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadchannel + ".archived", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['threadchannel_autoArchiveDuration'] = function(block) {
+Blockly.JavaScript['threadchannel_autoarchiveduration'] = function(block) {
     var threadchannel = Blockly.JavaScript.valueToCode(block, 'THREADCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadchannel + ".autoArchiveDuration", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['threadchannel_archiveTimestamp'] = function(block) {
+Blockly.JavaScript['threadchannel_archivetimestamp'] = function(block) {
     var threadchannel = Blockly.JavaScript.valueToCode(block, 'THREADCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadchannel + ".archiveTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['threadchannel_ownerId'] = function(block) {
+Blockly.JavaScript['threadchannel_ownerid'] = function(block) {
     var threadchannel = Blockly.JavaScript.valueToCode(block, 'THREADCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadchannel + ".ownerId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['threadchannel_lastMessageId'] = function(block) {
+Blockly.JavaScript['threadchannel_lastmessageid'] = function(block) {
     var threadchannel = Blockly.JavaScript.valueToCode(block, 'THREADCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadchannel + ".lastMessageId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['threadchannel_lastPinTimestamp'] = function(block) {
+Blockly.JavaScript['threadchannel_lastpintimestamp'] = function(block) {
     var threadchannel = Blockly.JavaScript.valueToCode(block, 'THREADCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadchannel + ".lastPinTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['threadchannel_rateLimitPerUser'] = function(block) {
+Blockly.JavaScript['threadchannel_ratelimitperuser'] = function(block) {
     var threadchannel = Blockly.JavaScript.valueToCode(block, 'THREADCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadchannel + ".rateLimitPerUser", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['threadchannel_messageCount'] = function(block) {
+Blockly.JavaScript['threadchannel_messagecount'] = function(block) {
     var threadchannel = Blockly.JavaScript.valueToCode(block, 'THREADCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadchannel + ".messageCount", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['threadchannel_memberCount'] = function(block) {
+Blockly.JavaScript['threadchannel_membercount'] = function(block) {
     var threadchannel = Blockly.JavaScript.valueToCode(block, 'THREADCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadchannel + ".memberCount", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['threadchannel_guildMembers'] = function(block) {
+Blockly.JavaScript['threadchannel_guildmembers'] = function(block) {
     var threadchannel = Blockly.JavaScript.valueToCode(block, 'THREADCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadchannel + ".guildMembers", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['threadchannel_archivedAt'] = function(block) {
+Blockly.JavaScript['threadchannel_archivedat'] = function(block) {
     var threadchannel = Blockly.JavaScript.valueToCode(block, 'THREADCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadchannel + ".archivedAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -11253,11 +11253,11 @@ Blockly.JavaScript['threadchannel_unarchivable'] = function(block) {
     var threadchannel = Blockly.JavaScript.valueToCode(block, 'THREADCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadchannel + ".unarchivable", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['threadchannel_lastMessage'] = function(block) {
+Blockly.JavaScript['threadchannel_lastmessage'] = function(block) {
     var threadchannel = Blockly.JavaScript.valueToCode(block, 'THREADCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadchannel + ".lastMessage", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['threadchannel_lastPinAt'] = function(block) {
+Blockly.JavaScript['threadchannel_lastpinat'] = function(block) {
     var threadchannel = Blockly.JavaScript.valueToCode(block, 'THREADCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadchannel + ".lastPinAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -11269,11 +11269,11 @@ Blockly.JavaScript['threadchannel_id'] = function(block) {
     var threadchannel = Blockly.JavaScript.valueToCode(block, 'THREADCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadchannel + ".id", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['threadchannel_createdTimestamp'] = function(block) {
+Blockly.JavaScript['threadchannel_createdtimestamp'] = function(block) {
     var threadchannel = Blockly.JavaScript.valueToCode(block, 'THREADCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadchannel + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['threadchannel_createdAt'] = function(block) {
+Blockly.JavaScript['threadchannel_createdat'] = function(block) {
     var threadchannel = Blockly.JavaScript.valueToCode(block, 'THREADCHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadchannel + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -11464,7 +11464,7 @@ Blockly.JavaScript['threadmember_thread'] = function(block) {
     var threadmember = Blockly.JavaScript.valueToCode(block, 'THREADMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadmember + ".thread", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['threadmember_joinedTimestamp'] = function(block) {
+Blockly.JavaScript['threadmember_joinedtimestamp'] = function(block) {
     var threadmember = Blockly.JavaScript.valueToCode(block, 'THREADMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadmember + ".joinedTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
@@ -11476,11 +11476,11 @@ Blockly.JavaScript['threadmember_flags'] = function(block) {
     var threadmember = Blockly.JavaScript.valueToCode(block, 'THREADMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadmember + ".flags", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['threadmember_guildMember'] = function(block) {
+Blockly.JavaScript['threadmember_guildmember'] = function(block) {
     var threadmember = Blockly.JavaScript.valueToCode(block, 'THREADMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadmember + ".guildMember", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['threadmember_joinedAt'] = function(block) {
+Blockly.JavaScript['threadmember_joinedat'] = function(block) {
     var threadmember = Blockly.JavaScript.valueToCode(block, 'THREADMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadmember + ".joinedAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -11515,11 +11515,11 @@ Blockly.JavaScript['typing_user'] = function(block) {
     var typing = Blockly.JavaScript.valueToCode(block, 'TYPING', Blockly.JavaScript.ORDER_NONE) || "null";
     return [typing + ".user", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['typing_startedTimestamp'] = function(block) {
+Blockly.JavaScript['typing_startedtimestamp'] = function(block) {
     var typing = Blockly.JavaScript.valueToCode(block, 'TYPING', Blockly.JavaScript.ORDER_NONE) || "null";
     return [typing + ".startedTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['typing_startedAt'] = function(block) {
+Blockly.JavaScript['typing_startedat'] = function(block) {
     var typing = Blockly.JavaScript.valueToCode(block, 'TYPING', Blockly.JavaScript.ORDER_NONE) || "null";
     return [typing + ".startedAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -11563,7 +11563,7 @@ Blockly.JavaScript['user_banner'] = function(block) {
     var user = Blockly.JavaScript.valueToCode(block, 'USER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [user + ".banner", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['user_accentColor'] = function(block) {
+Blockly.JavaScript['user_accentcolor'] = function(block) {
     var user = Blockly.JavaScript.valueToCode(block, 'USER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [user + ".accentColor", Blockly.JavaScript.ORDER_NONE];
 };
@@ -11579,19 +11579,19 @@ Blockly.JavaScript['user_partial'] = function(block) {
     var user = Blockly.JavaScript.valueToCode(block, 'USER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [user + ".partial", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['user_createdTimestamp'] = function(block) {
+Blockly.JavaScript['user_createdtimestamp'] = function(block) {
     var user = Blockly.JavaScript.valueToCode(block, 'USER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [user + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['user_createdAt'] = function(block) {
+Blockly.JavaScript['user_createdat'] = function(block) {
     var user = Blockly.JavaScript.valueToCode(block, 'USER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [user + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['user_defaultAvatarURL'] = function(block) {
+Blockly.JavaScript['user_defaultavatarurl'] = function(block) {
     var user = Blockly.JavaScript.valueToCode(block, 'USER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [user + ".defaultAvatarURL", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['user_hexAccentColor'] = function(block) {
+Blockly.JavaScript['user_hexaccentcolor'] = function(block) {
     var user = Blockly.JavaScript.valueToCode(block, 'USER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [user + ".hexAccentColor", Blockly.JavaScript.ORDER_NONE];
 };
@@ -11599,7 +11599,7 @@ Blockly.JavaScript['user_tag'] = function(block) {
     var user = Blockly.JavaScript.valueToCode(block, 'USER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [user + ".tag", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['user_dmChannel'] = function(block) {
+Blockly.JavaScript['user_dmchannel'] = function(block) {
     var user = Blockly.JavaScript.valueToCode(block, 'USER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [user + ".dmChannel", Blockly.JavaScript.ORDER_NONE];
 };
@@ -11661,11 +11661,11 @@ Blockly.JavaScript['user_send'] = function(block) {
     var options = Blockly.JavaScript.valueToCode(block, 'OPTIONS', Blockly.JavaScript.ORDER_NONE) || "";
     return user + ".send(" + options + ")" + finalstring;
 };
-Blockly.JavaScript['usercontextmenuinteraction_targetUser'] = function(block) {
+Blockly.JavaScript['usercontextmenuinteraction_targetuser'] = function(block) {
     var usercontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'USERCONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [usercontextmenuinteraction + ".targetUser", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['usercontextmenuinteraction_targetMember'] = function(block) {
+Blockly.JavaScript['usercontextmenuinteraction_targetmember'] = function(block) {
     var usercontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'USERCONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [usercontextmenuinteraction + ".targetMember", Blockly.JavaScript.ORDER_NONE];
 };
@@ -11673,23 +11673,23 @@ Blockly.JavaScript['usercontextmenuinteraction_options'] = function(block) {
     var usercontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'USERCONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [usercontextmenuinteraction + ".options", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['usercontextmenuinteraction_targetId'] = function(block) {
+Blockly.JavaScript['usercontextmenuinteraction_targetid'] = function(block) {
     var usercontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'USERCONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [usercontextmenuinteraction + ".targetId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['usercontextmenuinteraction_targetType'] = function(block) {
+Blockly.JavaScript['usercontextmenuinteraction_targettype'] = function(block) {
     var usercontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'USERCONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [usercontextmenuinteraction + ".targetType", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['usercontextmenuinteraction_channelId'] = function(block) {
+Blockly.JavaScript['usercontextmenuinteraction_channelid'] = function(block) {
     var usercontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'USERCONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [usercontextmenuinteraction + ".channelId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['usercontextmenuinteraction_commandId'] = function(block) {
+Blockly.JavaScript['usercontextmenuinteraction_commandid'] = function(block) {
     var usercontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'USERCONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [usercontextmenuinteraction + ".commandId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['usercontextmenuinteraction_commandName'] = function(block) {
+Blockly.JavaScript['usercontextmenuinteraction_commandname'] = function(block) {
     var usercontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'USERCONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [usercontextmenuinteraction + ".commandName", Blockly.JavaScript.ORDER_NONE];
 };
@@ -11725,11 +11725,11 @@ Blockly.JavaScript['usercontextmenuinteraction_token'] = function(block) {
     var usercontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'USERCONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [usercontextmenuinteraction + ".token", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['usercontextmenuinteraction_applicationId'] = function(block) {
+Blockly.JavaScript['usercontextmenuinteraction_applicationid'] = function(block) {
     var usercontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'USERCONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [usercontextmenuinteraction + ".applicationId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['usercontextmenuinteraction_guildId'] = function(block) {
+Blockly.JavaScript['usercontextmenuinteraction_guildid'] = function(block) {
     var usercontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'USERCONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [usercontextmenuinteraction + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -11745,7 +11745,7 @@ Blockly.JavaScript['usercontextmenuinteraction_version'] = function(block) {
     var usercontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'USERCONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [usercontextmenuinteraction + ".version", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['usercontextmenuinteraction_memberPermissions'] = function(block) {
+Blockly.JavaScript['usercontextmenuinteraction_memberpermissions'] = function(block) {
     var usercontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'USERCONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [usercontextmenuinteraction + ".memberPermissions", Blockly.JavaScript.ORDER_NONE];
 };
@@ -11753,15 +11753,15 @@ Blockly.JavaScript['usercontextmenuinteraction_locale'] = function(block) {
     var usercontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'USERCONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [usercontextmenuinteraction + ".locale", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['usercontextmenuinteraction_guildLocale'] = function(block) {
+Blockly.JavaScript['usercontextmenuinteraction_guildlocale'] = function(block) {
     var usercontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'USERCONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [usercontextmenuinteraction + ".guildLocale", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['usercontextmenuinteraction_createdTimestamp'] = function(block) {
+Blockly.JavaScript['usercontextmenuinteraction_createdtimestamp'] = function(block) {
     var usercontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'USERCONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [usercontextmenuinteraction + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['usercontextmenuinteraction_createdAt'] = function(block) {
+Blockly.JavaScript['usercontextmenuinteraction_createdat'] = function(block) {
     var usercontextmenuinteraction = Blockly.JavaScript.valueToCode(block, 'USERCONTEXTMENUINTERACTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [usercontextmenuinteraction + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -11885,7 +11885,7 @@ Blockly.JavaScript['voicechannel_speakable'] = function(block) {
     var voicechannel = Blockly.JavaScript.valueToCode(block, 'VOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicechannel + ".speakable", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['voicechannel_rtcRegion'] = function(block) {
+Blockly.JavaScript['voicechannel_rtcregion'] = function(block) {
     var voicechannel = Blockly.JavaScript.valueToCode(block, 'VOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicechannel + ".rtcRegion", Blockly.JavaScript.ORDER_NONE];
 };
@@ -11893,7 +11893,7 @@ Blockly.JavaScript['voicechannel_bitrate'] = function(block) {
     var voicechannel = Blockly.JavaScript.valueToCode(block, 'VOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicechannel + ".bitrate", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['voicechannel_userLimit'] = function(block) {
+Blockly.JavaScript['voicechannel_userlimit'] = function(block) {
     var voicechannel = Blockly.JavaScript.valueToCode(block, 'VOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicechannel + ".userLimit", Blockly.JavaScript.ORDER_NONE];
 };
@@ -11909,11 +11909,11 @@ Blockly.JavaScript['voicechannel_guild'] = function(block) {
     var voicechannel = Blockly.JavaScript.valueToCode(block, 'VOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicechannel + ".guild", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['voicechannel_guildId'] = function(block) {
+Blockly.JavaScript['voicechannel_guildid'] = function(block) {
     var voicechannel = Blockly.JavaScript.valueToCode(block, 'VOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicechannel + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['voicechannel_permissionOverwrites'] = function(block) {
+Blockly.JavaScript['voicechannel_permissionoverwrites'] = function(block) {
     var voicechannel = Blockly.JavaScript.valueToCode(block, 'VOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicechannel + ".permissionOverwrites", Blockly.JavaScript.ORDER_NONE];
 };
@@ -11921,11 +11921,11 @@ Blockly.JavaScript['voicechannel_name'] = function(block) {
     var voicechannel = Blockly.JavaScript.valueToCode(block, 'VOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicechannel + ".name", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['voicechannel_rawPosition'] = function(block) {
+Blockly.JavaScript['voicechannel_rawposition'] = function(block) {
     var voicechannel = Blockly.JavaScript.valueToCode(block, 'VOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicechannel + ".rawPosition", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['voicechannel_parentId'] = function(block) {
+Blockly.JavaScript['voicechannel_parentid'] = function(block) {
     var voicechannel = Blockly.JavaScript.valueToCode(block, 'VOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicechannel + ".parentId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -11933,7 +11933,7 @@ Blockly.JavaScript['voicechannel_parent'] = function(block) {
     var voicechannel = Blockly.JavaScript.valueToCode(block, 'VOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicechannel + ".parent", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['voicechannel_permissionsLocked'] = function(block) {
+Blockly.JavaScript['voicechannel_permissionslocked'] = function(block) {
     var voicechannel = Blockly.JavaScript.valueToCode(block, 'VOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicechannel + ".permissionsLocked", Blockly.JavaScript.ORDER_NONE];
 };
@@ -11961,11 +11961,11 @@ Blockly.JavaScript['voicechannel_id'] = function(block) {
     var voicechannel = Blockly.JavaScript.valueToCode(block, 'VOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicechannel + ".id", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['voicechannel_createdTimestamp'] = function(block) {
+Blockly.JavaScript['voicechannel_createdtimestamp'] = function(block) {
     var voicechannel = Blockly.JavaScript.valueToCode(block, 'VOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicechannel + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['voicechannel_createdAt'] = function(block) {
+Blockly.JavaScript['voicechannel_createdat'] = function(block) {
     var voicechannel = Blockly.JavaScript.valueToCode(block, 'VOICECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicechannel + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -12124,27 +12124,27 @@ Blockly.JavaScript['voicestate_id'] = function(block) {
     var voicestate = Blockly.JavaScript.valueToCode(block, 'VOICESTATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicestate + ".id", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['voicestate_serverDeaf'] = function(block) {
+Blockly.JavaScript['voicestate_serverdeaf'] = function(block) {
     var voicestate = Blockly.JavaScript.valueToCode(block, 'VOICESTATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicestate + ".serverDeaf", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['voicestate_serverMute'] = function(block) {
+Blockly.JavaScript['voicestate_servermute'] = function(block) {
     var voicestate = Blockly.JavaScript.valueToCode(block, 'VOICESTATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicestate + ".serverMute", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['voicestate_selfDeaf'] = function(block) {
+Blockly.JavaScript['voicestate_selfdeaf'] = function(block) {
     var voicestate = Blockly.JavaScript.valueToCode(block, 'VOICESTATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicestate + ".selfDeaf", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['voicestate_selfMute'] = function(block) {
+Blockly.JavaScript['voicestate_selfmute'] = function(block) {
     var voicestate = Blockly.JavaScript.valueToCode(block, 'VOICESTATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicestate + ".selfMute", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['voicestate_selfVideo'] = function(block) {
+Blockly.JavaScript['voicestate_selfvideo'] = function(block) {
     var voicestate = Blockly.JavaScript.valueToCode(block, 'VOICESTATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicestate + ".selfVideo", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['voicestate_sessionId'] = function(block) {
+Blockly.JavaScript['voicestate_sessionid'] = function(block) {
     var voicestate = Blockly.JavaScript.valueToCode(block, 'VOICESTATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicestate + ".sessionId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -12152,7 +12152,7 @@ Blockly.JavaScript['voicestate_streaming'] = function(block) {
     var voicestate = Blockly.JavaScript.valueToCode(block, 'VOICESTATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicestate + ".streaming", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['voicestate_channelId'] = function(block) {
+Blockly.JavaScript['voicestate_channelid'] = function(block) {
     var voicestate = Blockly.JavaScript.valueToCode(block, 'VOICESTATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicestate + ".channelId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -12160,7 +12160,7 @@ Blockly.JavaScript['voicestate_suppress'] = function(block) {
     var voicestate = Blockly.JavaScript.valueToCode(block, 'VOICESTATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicestate + ".suppress", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['voicestate_requestToSpeakTimestamp'] = function(block) {
+Blockly.JavaScript['voicestate_requesttospeaktimestamp'] = function(block) {
     var voicestate = Blockly.JavaScript.valueToCode(block, 'VOICESTATE', Blockly.JavaScript.ORDER_NONE) || "null";
     return [voicestate + ".requestToSpeakTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
@@ -12249,11 +12249,11 @@ Blockly.JavaScript['webhook_type'] = function(block) {
     var webhook = Blockly.JavaScript.valueToCode(block, 'WEBHOOK', Blockly.JavaScript.ORDER_NONE) || "null";
     return [webhook + ".type", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['webhook_guildId'] = function(block) {
+Blockly.JavaScript['webhook_guildid'] = function(block) {
     var webhook = Blockly.JavaScript.valueToCode(block, 'WEBHOOK', Blockly.JavaScript.ORDER_NONE) || "null";
     return [webhook + ".guildId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['webhook_channelId'] = function(block) {
+Blockly.JavaScript['webhook_channelid'] = function(block) {
     var webhook = Blockly.JavaScript.valueToCode(block, 'WEBHOOK', Blockly.JavaScript.ORDER_NONE) || "null";
     return [webhook + ".channelId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -12261,19 +12261,19 @@ Blockly.JavaScript['webhook_owner'] = function(block) {
     var webhook = Blockly.JavaScript.valueToCode(block, 'WEBHOOK', Blockly.JavaScript.ORDER_NONE) || "null";
     return [webhook + ".owner", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['webhook_sourceGuild'] = function(block) {
+Blockly.JavaScript['webhook_sourceguild'] = function(block) {
     var webhook = Blockly.JavaScript.valueToCode(block, 'WEBHOOK', Blockly.JavaScript.ORDER_NONE) || "null";
     return [webhook + ".sourceGuild", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['webhook_sourceChannel'] = function(block) {
+Blockly.JavaScript['webhook_sourcechannel'] = function(block) {
     var webhook = Blockly.JavaScript.valueToCode(block, 'WEBHOOK', Blockly.JavaScript.ORDER_NONE) || "null";
     return [webhook + ".sourceChannel", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['webhook_createdTimestamp'] = function(block) {
+Blockly.JavaScript['webhook_createdtimestamp'] = function(block) {
     var webhook = Blockly.JavaScript.valueToCode(block, 'WEBHOOK', Blockly.JavaScript.ORDER_NONE) || "null";
     return [webhook + ".createdTimestamp", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['webhook_createdAt'] = function(block) {
+Blockly.JavaScript['webhook_createdat'] = function(block) {
     var webhook = Blockly.JavaScript.valueToCode(block, 'WEBHOOK', Blockly.JavaScript.ORDER_NONE) || "null";
     return [webhook + ".createdAt", Blockly.JavaScript.ORDER_NONE];
 };
@@ -12383,7 +12383,7 @@ Blockly.JavaScript['welcomechannel_description'] = function(block) {
     var welcomechannel = Blockly.JavaScript.valueToCode(block, 'WELCOMECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [welcomechannel + ".description", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['welcomechannel_channelId'] = function(block) {
+Blockly.JavaScript['welcomechannel_channelid'] = function(block) {
     var welcomechannel = Blockly.JavaScript.valueToCode(block, 'WELCOMECHANNEL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [welcomechannel + ".channelId", Blockly.JavaScript.ORDER_NONE];
 };
@@ -12407,7 +12407,7 @@ Blockly.JavaScript['welcomescreen_description'] = function(block) {
     var welcomescreen = Blockly.JavaScript.valueToCode(block, 'WELCOMESCREEN', Blockly.JavaScript.ORDER_NONE) || "null";
     return [welcomescreen + ".description", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['welcomescreen_welcomeChannels'] = function(block) {
+Blockly.JavaScript['welcomescreen_welcomechannels'] = function(block) {
     var welcomescreen = Blockly.JavaScript.valueToCode(block, 'WELCOMESCREEN', Blockly.JavaScript.ORDER_NONE) || "null";
     return [welcomescreen + ".welcomeChannels", Blockly.JavaScript.ORDER_NONE];
 };
@@ -12427,7 +12427,7 @@ Blockly.JavaScript['widget_name'] = function(block) {
     var widget = Blockly.JavaScript.valueToCode(block, 'WIDGET', Blockly.JavaScript.ORDER_NONE) || "null";
     return [widget + ".name", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['widget_instantInvite'] = function(block) {
+Blockly.JavaScript['widget_instantinvite'] = function(block) {
     var widget = Blockly.JavaScript.valueToCode(block, 'WIDGET', Blockly.JavaScript.ORDER_NONE) || "null";
     return [widget + ".instantInvite", Blockly.JavaScript.ORDER_NONE];
 };
@@ -12439,7 +12439,7 @@ Blockly.JavaScript['widget_members'] = function(block) {
     var widget = Blockly.JavaScript.valueToCode(block, 'WIDGET', Blockly.JavaScript.ORDER_NONE) || "null";
     return [widget + ".members", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['widget_presenceCount'] = function(block) {
+Blockly.JavaScript['widget_presencecount'] = function(block) {
     var widget = Blockly.JavaScript.valueToCode(block, 'WIDGET', Blockly.JavaScript.ORDER_NONE) || "null";
     return [widget + ".presenceCount", Blockly.JavaScript.ORDER_NONE];
 };
@@ -12481,11 +12481,11 @@ Blockly.JavaScript['widgetmember_mute'] = function(block) {
     var widgetmember = Blockly.JavaScript.valueToCode(block, 'WIDGETMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [widgetmember + ".mute", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['widgetmember_selfDeaf'] = function(block) {
+Blockly.JavaScript['widgetmember_selfdeaf'] = function(block) {
     var widgetmember = Blockly.JavaScript.valueToCode(block, 'WIDGETMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [widgetmember + ".selfDeaf", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['widgetmember_selfMute'] = function(block) {
+Blockly.JavaScript['widgetmember_selfmute'] = function(block) {
     var widgetmember = Blockly.JavaScript.valueToCode(block, 'WIDGETMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [widgetmember + ".selfMute", Blockly.JavaScript.ORDER_NONE];
 };
@@ -12493,11 +12493,11 @@ Blockly.JavaScript['widgetmember_suppress'] = function(block) {
     var widgetmember = Blockly.JavaScript.valueToCode(block, 'WIDGETMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [widgetmember + ".suppress", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['widgetmember_channelId'] = function(block) {
+Blockly.JavaScript['widgetmember_channelid'] = function(block) {
     var widgetmember = Blockly.JavaScript.valueToCode(block, 'WIDGETMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [widgetmember + ".channelId", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['widgetmember_avatarURL'] = function(block) {
+Blockly.JavaScript['widgetmember_avatarurl'] = function(block) {
     var widgetmember = Blockly.JavaScript.valueToCode(block, 'WIDGETMEMBER', Blockly.JavaScript.ORDER_NONE) || "null";
     return [widgetmember + ".avatarURL", Blockly.JavaScript.ORDER_NONE];
 };
@@ -12509,7 +12509,7 @@ Blockly.JavaScript['activityflags_bitfield'] = function(block) {
     var activityflags = Blockly.JavaScript.valueToCode(block, 'ACTIVITYFLAGS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [activityflags + ".bitfield", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['activityflags_FLAGS'] = function(block) {
+Blockly.JavaScript['activityflags_flags'] = function(block) {
     var activityflags = Blockly.JavaScript.valueToCode(block, 'ACTIVITYFLAGS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [activityflags + ".FLAGS", Blockly.JavaScript.ORDER_NONE];
 };
@@ -12562,7 +12562,7 @@ Blockly.JavaScript['applicationflags_bitfield'] = function(block) {
     var applicationflags = Blockly.JavaScript.valueToCode(block, 'APPLICATIONFLAGS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [applicationflags + ".bitfield", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['applicationflags_FLAGS'] = function(block) {
+Blockly.JavaScript['applicationflags_flags'] = function(block) {
     var applicationflags = Blockly.JavaScript.valueToCode(block, 'APPLICATIONFLAGS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [applicationflags + ".FLAGS", Blockly.JavaScript.ORDER_NONE];
 };
@@ -12615,7 +12615,7 @@ Blockly.JavaScript['bitfield_bitfield'] = function(block) {
     var bitfield = Blockly.JavaScript.valueToCode(block, 'BITFIELD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [bitfield + ".bitfield", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['bitfield_FLAGS'] = function(block) {
+Blockly.JavaScript['bitfield_flags'] = function(block) {
     var bitfield = Blockly.JavaScript.valueToCode(block, 'BITFIELD', Blockly.JavaScript.ORDER_NONE) || "null";
     return [bitfield + ".FLAGS", Blockly.JavaScript.ORDER_NONE];
 };
@@ -12723,7 +12723,7 @@ Blockly.JavaScript['dataresolver_resolveFileAsBuffer'] = function(block) {
     var resource = Blockly.JavaScript.valueToCode(block, 'RESOURCE', Blockly.JavaScript.ORDER_NONE) || "";
     return dataresolver + ".resolveFileAsBuffer(" + resource + ")" + finalstring;
 };
-Blockly.JavaScript['formatters_TimestampStyles'] = function(block) {
+Blockly.JavaScript['formatters_timestampstyles'] = function(block) {
     var formatters = Blockly.JavaScript.valueToCode(block, 'FORMATTERS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [formatters + ".TimestampStyles", Blockly.JavaScript.ORDER_NONE];
 };
@@ -12821,7 +12821,7 @@ Blockly.JavaScript['intents_bitfield'] = function(block) {
     var intents = Blockly.JavaScript.valueToCode(block, 'INTENTS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [intents + ".bitfield", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['intents_FLAGS'] = function(block) {
+Blockly.JavaScript['intents_flags'] = function(block) {
     var intents = Blockly.JavaScript.valueToCode(block, 'INTENTS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [intents + ".FLAGS", Blockly.JavaScript.ORDER_NONE];
 };
@@ -12870,11 +12870,11 @@ Blockly.JavaScript['intents_toArray'] = function(block) {
     var hasParams = Blockly.JavaScript.valueToCode(block, 'HASPARAMS', Blockly.JavaScript.ORDER_NONE) || "";
     return intents + ".toArray(" + hasParams + ");\n";
 };
-Blockly.JavaScript['limitedcollection_maxSize'] = function(block) {
+Blockly.JavaScript['limitedcollection_maxsize'] = function(block) {
     var limitedcollection = Blockly.JavaScript.valueToCode(block, 'LIMITEDCOLLECTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [limitedcollection + ".maxSize", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['limitedcollection_keepOverLimit'] = function(block) {
+Blockly.JavaScript['limitedcollection_keepoverlimit'] = function(block) {
     var limitedcollection = Blockly.JavaScript.valueToCode(block, 'LIMITEDCOLLECTION', Blockly.JavaScript.ORDER_NONE) || "null";
     return [limitedcollection + ".keepOverLimit", Blockly.JavaScript.ORDER_NONE];
 };
@@ -12882,7 +12882,7 @@ Blockly.JavaScript['messageflags_bitfield'] = function(block) {
     var messageflags = Blockly.JavaScript.valueToCode(block, 'MESSAGEFLAGS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messageflags + ".bitfield", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['messageflags_FLAGS'] = function(block) {
+Blockly.JavaScript['messageflags_flags'] = function(block) {
     var messageflags = Blockly.JavaScript.valueToCode(block, 'MESSAGEFLAGS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [messageflags + ".FLAGS", Blockly.JavaScript.ORDER_NONE];
 };
@@ -12931,11 +12931,11 @@ Blockly.JavaScript['messageflags_toArray'] = function(block) {
     var hasParams = Blockly.JavaScript.valueToCode(block, 'HASPARAMS', Blockly.JavaScript.ORDER_NONE) || "";
     return messageflags + ".toArray(" + hasParams + ");\n";
 };
-Blockly.JavaScript['options_defaultMakeCacheSettings'] = function(block) {
+Blockly.JavaScript['options_defaultmakecachesettings'] = function(block) {
     var options = Blockly.JavaScript.valueToCode(block, 'OPTIONS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [options + ".defaultMakeCacheSettings", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['options_defaultSweeperSettings'] = function(block) {
+Blockly.JavaScript['options_defaultsweepersettings'] = function(block) {
     var options = Blockly.JavaScript.valueToCode(block, 'OPTIONS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [options + ".defaultSweeperSettings", Blockly.JavaScript.ORDER_NONE];
 };
@@ -12956,19 +12956,19 @@ Blockly.JavaScript['permissions_bitfield'] = function(block) {
     var permissions = Blockly.JavaScript.valueToCode(block, 'PERMISSIONS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [permissions + ".bitfield", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['permissions_FLAGS'] = function(block) {
+Blockly.JavaScript['permissions_flags'] = function(block) {
     var permissions = Blockly.JavaScript.valueToCode(block, 'PERMISSIONS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [permissions + ".FLAGS", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['permissions_ALL'] = function(block) {
+Blockly.JavaScript['permissions_all'] = function(block) {
     var permissions = Blockly.JavaScript.valueToCode(block, 'PERMISSIONS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [permissions + ".ALL", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['permissions_DEFAULT'] = function(block) {
+Blockly.JavaScript['permissions_default'] = function(block) {
     var permissions = Blockly.JavaScript.valueToCode(block, 'PERMISSIONS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [permissions + ".DEFAULT", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['permissions_STAGE_MODERATOR'] = function(block) {
+Blockly.JavaScript['permissions_stage_moderator'] = function(block) {
     var permissions = Blockly.JavaScript.valueToCode(block, 'PERMISSIONS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [permissions + ".STAGE_MODERATOR", Blockly.JavaScript.ORDER_NONE];
 };
@@ -13018,7 +13018,7 @@ Blockly.JavaScript['permissions_serialize'] = function(block) {
     var hasParams = Blockly.JavaScript.valueToCode(block, 'HASPARAMS', Blockly.JavaScript.ORDER_NONE) || "";
     return permissions + ".serialize(" + hasParams + ");\n";
 };
-Blockly.JavaScript['snowflakeutil_EPOCH'] = function(block) {
+Blockly.JavaScript['snowflakeutil_epoch'] = function(block) {
     var snowflakeutil = Blockly.JavaScript.valueToCode(block, 'SNOWFLAKEUTIL', Blockly.JavaScript.ORDER_NONE) || "null";
     return [snowflakeutil + ".EPOCH", Blockly.JavaScript.ORDER_NONE];
 };
@@ -13138,7 +13138,7 @@ Blockly.JavaScript['systemchannelflags_bitfield'] = function(block) {
     var systemchannelflags = Blockly.JavaScript.valueToCode(block, 'SYSTEMCHANNELFLAGS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [systemchannelflags + ".bitfield", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['systemchannelflags_FLAGS'] = function(block) {
+Blockly.JavaScript['systemchannelflags_flags'] = function(block) {
     var systemchannelflags = Blockly.JavaScript.valueToCode(block, 'SYSTEMCHANNELFLAGS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [systemchannelflags + ".FLAGS", Blockly.JavaScript.ORDER_NONE];
 };
@@ -13191,7 +13191,7 @@ Blockly.JavaScript['threadmemberflags_bitfield'] = function(block) {
     var threadmemberflags = Blockly.JavaScript.valueToCode(block, 'THREADMEMBERFLAGS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadmemberflags + ".bitfield", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['threadmemberflags_FLAGS'] = function(block) {
+Blockly.JavaScript['threadmemberflags_flags'] = function(block) {
     var threadmemberflags = Blockly.JavaScript.valueToCode(block, 'THREADMEMBERFLAGS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [threadmemberflags + ".FLAGS", Blockly.JavaScript.ORDER_NONE];
 };
@@ -13244,7 +13244,7 @@ Blockly.JavaScript['userflags_bitfield'] = function(block) {
     var userflags = Blockly.JavaScript.valueToCode(block, 'USERFLAGS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [userflags + ".bitfield", Blockly.JavaScript.ORDER_NONE];
 };
-Blockly.JavaScript['userflags_FLAGS'] = function(block) {
+Blockly.JavaScript['userflags_flags'] = function(block) {
     var userflags = Blockly.JavaScript.valueToCode(block, 'USERFLAGS', Blockly.JavaScript.ORDER_NONE) || "null";
     return [userflags + ".FLAGS", Blockly.JavaScript.ORDER_NONE];
 };

@@ -70,10 +70,10 @@ Blockly.Blocks['guildpreview_splash'] = {
   }
 };
 
-Blockly.Blocks['guildpreview_discoverySplash'] = {
+Blockly.Blocks['guildpreview_discoverysplash'] = {
   init: function() {
     this.jsonInit({
-      "message0": "discoverySplash of %1",
+      "message0": "discovery splash of %1",
       "args0": [
         {
           "type": "input_value",
@@ -102,10 +102,10 @@ Blockly.Blocks['guildpreview_features'] = {
   }
 };
 
-Blockly.Blocks['guildpreview_approximateMemberCount'] = {
+Blockly.Blocks['guildpreview_approximatemembercount'] = {
   init: function() {
     this.jsonInit({
-      "message0": "approximateMemberCount of %1",
+      "message0": "approximate membercount of %1",
       "args0": [
         {
           "type": "input_value",
@@ -118,10 +118,10 @@ Blockly.Blocks['guildpreview_approximateMemberCount'] = {
   }
 };
 
-Blockly.Blocks['guildpreview_approximatePresenceCount'] = {
+Blockly.Blocks['guildpreview_approximatepresencecount'] = {
   init: function() {
     this.jsonInit({
-      "message0": "approximatePresenceCount of %1",
+      "message0": "approximate presencecount of %1",
       "args0": [
         {
           "type": "input_value",
@@ -166,10 +166,10 @@ Blockly.Blocks['guildpreview_emojis'] = {
   }
 };
 
-Blockly.Blocks['guildpreview_createdTimestamp'] = {
+Blockly.Blocks['guildpreview_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -182,10 +182,10 @@ Blockly.Blocks['guildpreview_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['guildpreview_createdAt'] = {
+Blockly.Blocks['guildpreview_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -217,7 +217,7 @@ Blockly.Blocks['guildpreview_client'] = {
 Blockly.Blocks['guildpreview_splashURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "splashURL of %1 options: %2",
+      "message0": "splash url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -237,7 +237,7 @@ Blockly.Blocks['guildpreview_splashURL'] = {
 Blockly.Blocks['guildpreview_discoverySplashURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "discoverySplashURL of %1 options: %2",
+      "message0": "discovery splashurl of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -257,7 +257,7 @@ Blockly.Blocks['guildpreview_discoverySplashURL'] = {
 Blockly.Blocks['guildpreview_iconURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "iconURL of %1 options: %2",
+      "message0": "icon url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -293,7 +293,7 @@ Blockly.Blocks['guildpreview_fetch'] = {
 Blockly.Blocks['guildpreview_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",

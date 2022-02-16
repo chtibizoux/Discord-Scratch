@@ -83,6 +83,22 @@ Blockly.Blocks['message_activitytype'] = {
   }
 };
 
+// Blockly.Blocks['message_groupActivityApplication'] = {
+//   init: function() {
+//     this.jsonInit({
+//       "message0": "group activity application of %1",
+//       "args0": [
+//         {
+//           "type": "input_value",
+//           "name": "MESSAGE"
+//         }
+//       ],
+//       "category": Blockly.Categories.message,
+//       "extensions": ["colours_message", "output_string"]
+//     });
+//   }
+// };
+
 Blockly.Blocks['message_content'] = {
   init: function() {
     this.jsonInit({
@@ -283,6 +299,54 @@ Blockly.Blocks['message_embeds'] = {
   }
 };
 
+Blockly.Blocks['message_components'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "list of %1 components",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "MESSAGE"
+        }
+      ],
+      "category": Blockly.Categories.message,
+      "extensions": ["colours_message", "output_string"]
+    });
+  }
+};
+
+Blockly.Blocks['message_attachments'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "Collection of %1 attachments",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "MESSAGE"
+        }
+      ],
+      "category": Blockly.Categories.message,
+      "extensions": ["colours_message", "output_string"]
+    });
+  }
+};
+
+Blockly.Blocks['message_stickers'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "Collection of %1 stickers",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "MESSAGE"
+        }
+      ],
+      "category": Blockly.Categories.message,
+      "extensions": ["colours_message", "output_string"]
+    });
+  }
+};
+
 Blockly.Blocks['message_mentionseveryone'] = {
   init: function() {
     this.jsonInit({
@@ -313,7 +377,8 @@ Blockly.Blocks['message_mentionscollection'] = {
             ["members", 'members'],
             ["roles", 'roles'],
             ["guild", 'guild'],
-            ["users", 'users']
+            ["users", 'users'],
+            ["thread", 'thread']
           ]
         },
         {
@@ -387,6 +452,22 @@ Blockly.Blocks['message_reference'] = {
             ["messageID", 'messageID']
           ]
         },
+        {
+          "type": "input_value",
+          "name": "MESSAGE"
+        }
+      ],
+      "category": Blockly.Categories.message,
+      "extensions": ["colours_message", "output_string"]
+    });
+  }
+};
+
+Blockly.Blocks['message_interaction'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "interaction of %1",
+      "args0": [
         {
           "type": "input_value",
           "name": "MESSAGE"
@@ -577,13 +658,14 @@ Blockly.Blocks['message_getboolean'] = {
           "options": [
             ["crosspostable", 'crosspostable'],
             ["deletable", 'deletable'],
-            ["deleted", 'deleted'],
             ["editable", 'editable'],
             ["pinnable", 'pinnable'],
             ["pinned", 'pinned'],
             ["tts", 'tts'],
             ["system", 'system'],
-            ["partial", 'partial']
+            ["partial", 'partial'],
+            ["in thread", 'hasThread'],
+            ["in guild", 'inGuild()'],
           ]
         }
       ],
@@ -604,7 +686,6 @@ Blockly.Blocks['message_getobject'] = {
           "options": [
             ["author", 'author'],
             ["member", 'member'],
-            ["client", 'client'],
             ["channel", 'channel'],
             ["guild", 'guild'],
             ["application", 'application']
@@ -617,6 +698,159 @@ Blockly.Blocks['message_getobject'] = {
       ],
       "category": Blockly.Categories.message,
       "extensions": ["colours_message", "output_string"]
+    });
+  }
+};
+
+Blockly.Blocks['message_createReactionCollector'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "create reaction collector for %1 options: %2",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "MESSAGE"
+        },
+        {
+          "type": "input_value",
+          "name": "OPTIONS"
+        },
+      ],
+      "category": Blockly.Categories.message,
+      "extensions": ["colours_message", "output_string"]
+    });
+  }
+};
+
+Blockly.Blocks['message_removeAttachments'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "remove attachments of %1",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "MESSAGE"
+        },
+      ],
+      "category": Blockly.Categories.message,
+      "extensions": ["colours_message", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['message_resolveComponent'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "resolve component of %1 with %2",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "MESSAGE"
+        },
+        {
+          "type": "input_value",
+          "name": "CUSTOMID"
+        },
+      ],
+      "category": Blockly.Categories.message,
+      "extensions": ["colours_message", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['message_createMessageComponentCollector'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "create message component collector for %1 options: %2",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "MESSAGE"
+        },
+        {
+          "type": "input_value",
+          "name": "OPTIONS"
+        },
+      ],
+      "category": Blockly.Categories.message,
+      "extensions": ["colours_message", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['message_awaitMessageComponent'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "await message component of %1 options: %2",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "MESSAGE"
+        },
+        {
+          "type": "input_value",
+          "name": "OPTIONS"
+        },
+      ],
+      "category": Blockly.Categories.message,
+      "extensions": ["colours_message", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['message_fetchReference'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "fetchReference of %1",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "MESSAGE"
+        },
+      ],
+      "category": Blockly.Categories.message,
+      "extensions": ["colours_message", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['message_fetch'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "fetch %1 force: %2",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "MESSAGE"
+        },
+        {
+          "type": "input_value",
+          "name": "FORCE",
+          "check": "Boolean"
+        },
+      ],
+      "category": Blockly.Categories.message,
+      "extensions": ["colours_message", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['message_awaitReactions'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "await reactions of %1 options: %2",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "MESSAGE"
+        },
+        {
+          "type": "input_value",
+          "name": "OPTIONS"
+        },
+      ],
+      "category": Blockly.Categories.message,
+      "extensions": ["colours_message", "shape_statement"]
     });
   }
 };
@@ -634,6 +868,26 @@ Blockly.Blocks['message_reply'] = {
           "type": "input_value",
           "name": "MESSAGE"
         }
+      ],
+      "category": Blockly.Categories.message,
+      "extensions": ["colours_message", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['message_startThread'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "start thread %2 for %1",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "MESSAGE"
+        },
+        {
+          "type": "input_value",
+          "name": "OPTIONS"
+        },
       ],
       "category": Blockly.Categories.message,
       "extensions": ["colours_message", "shape_statement"]
@@ -664,19 +918,11 @@ Blockly.Blocks['message_edit'] = {
 Blockly.Blocks['message_delete'] = {
   init: function() {
     this.jsonInit({
-      "message0": "delete %1 with timeout %2 and reason %3",
+      "message0": "delete %1",
       "args0": [
         {
           "type": "input_value",
           "name": "MESSAGE"
-        },
-        {
-          "type": "input_value",
-          "name": "TIMEOUT"
-        },
-        {
-          "type": "input_value",
-          "name": "REASON"
         }
       ],
       "category": Blockly.Categories.message,

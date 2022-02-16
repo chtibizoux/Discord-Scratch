@@ -65,10 +65,10 @@ Blockly.Blocks['shardingmanager_file'] = {
   }
 };
 
-Blockly.Blocks['shardingmanager_shardList'] = {
+Blockly.Blocks['shardingmanager_shardlist'] = {
   init: function() {
     this.jsonInit({
-      "message0": "shardList of %1",
+      "message0": "shard list of %1",
       "args0": [
         {
           "type": "input_value",
@@ -81,10 +81,10 @@ Blockly.Blocks['shardingmanager_shardList'] = {
   }
 };
 
-Blockly.Blocks['shardingmanager_totalShards'] = {
+Blockly.Blocks['shardingmanager_totalshards'] = {
   init: function() {
     this.jsonInit({
-      "message0": "totalShards of %1",
+      "message0": "total shards of %1",
       "args0": [
         {
           "type": "input_value",
@@ -129,10 +129,10 @@ Blockly.Blocks['shardingmanager_respawn'] = {
   }
 };
 
-Blockly.Blocks['shardingmanager_shardArgs'] = {
+Blockly.Blocks['shardingmanager_shardargs'] = {
   init: function() {
     this.jsonInit({
-      "message0": "shardArgs of %1",
+      "message0": "shard args of %1",
       "args0": [
         {
           "type": "input_value",
@@ -145,10 +145,10 @@ Blockly.Blocks['shardingmanager_shardArgs'] = {
   }
 };
 
-Blockly.Blocks['shardingmanager_execArgv'] = {
+Blockly.Blocks['shardingmanager_execargv'] = {
   init: function() {
     this.jsonInit({
-      "message0": "execArgv of %1",
+      "message0": "exec argv of %1",
       "args0": [
         {
           "type": "input_value",
@@ -196,7 +196,7 @@ Blockly.Blocks['shardingmanager_shards'] = {
 Blockly.Blocks['shardingmanager_createShard'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createShard of %1 id: %2",
+      "message0": "create shard of %1 id: %2",
       "args0": [
         {
           "type": "input_value",
@@ -256,7 +256,7 @@ Blockly.Blocks['shardingmanager_broadcast'] = {
 Blockly.Blocks['shardingmanager_broadcastEval'] = {
   init: function() {
     this.jsonInit({
-      "message0": "broadcastEval of %1 script: %2 options: %3",
+      "message0": "broadcast eval of %1 script: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -280,7 +280,7 @@ Blockly.Blocks['shardingmanager_broadcastEval'] = {
 Blockly.Blocks['shardingmanager_fetchClientValues'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchClientValues of %1 prop: %2 shard: %3",
+      "message0": "fetch clientvalues of %1 prop: %2 shard: %3",
       "args0": [
         {
           "type": "input_value",
@@ -304,7 +304,7 @@ Blockly.Blocks['shardingmanager_fetchClientValues'] = {
 Blockly.Blocks['shardingmanager_respawnAll'] = {
   init: function() {
     this.jsonInit({
-      "message0": "respawnAll of %1 options: %2",
+      "message0": "respawn all of %1 options: %2",
       "args0": [
         {
           "type": "input_value",

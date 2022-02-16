@@ -38,10 +38,10 @@ Blockly.Blocks['categorychannel_guild'] = {
   }
 };
 
-Blockly.Blocks['categorychannel_guildId'] = {
+Blockly.Blocks['categorychannel_guildid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "guildId of %1",
+      "message0": "guild id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -54,10 +54,10 @@ Blockly.Blocks['categorychannel_guildId'] = {
   }
 };
 
-Blockly.Blocks['categorychannel_permissionOverwrites'] = {
+Blockly.Blocks['categorychannel_permissionoverwrites'] = {
   init: function() {
     this.jsonInit({
-      "message0": "permissionOverwrites of %1",
+      "message0": "permission overwrites of %1",
       "args0": [
         {
           "type": "input_value",
@@ -86,10 +86,10 @@ Blockly.Blocks['categorychannel_name'] = {
   }
 };
 
-Blockly.Blocks['categorychannel_rawPosition'] = {
+Blockly.Blocks['categorychannel_rawposition'] = {
   init: function() {
     this.jsonInit({
-      "message0": "rawPosition of %1",
+      "message0": "raw position of %1",
       "args0": [
         {
           "type": "input_value",
@@ -102,10 +102,10 @@ Blockly.Blocks['categorychannel_rawPosition'] = {
   }
 };
 
-Blockly.Blocks['categorychannel_parentId'] = {
+Blockly.Blocks['categorychannel_parentid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "parentId of %1",
+      "message0": "parent id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -134,10 +134,10 @@ Blockly.Blocks['categorychannel_parent'] = {
   }
 };
 
-Blockly.Blocks['categorychannel_permissionsLocked'] = {
+Blockly.Blocks['categorychannel_permissionslocked'] = {
   init: function() {
     this.jsonInit({
-      "message0": "permissionsLocked of %1",
+      "message0": "permissions locked of %1",
       "args0": [
         {
           "type": "input_value",
@@ -262,10 +262,10 @@ Blockly.Blocks['categorychannel_id'] = {
   }
 };
 
-Blockly.Blocks['categorychannel_createdTimestamp'] = {
+Blockly.Blocks['categorychannel_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -278,10 +278,10 @@ Blockly.Blocks['categorychannel_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['categorychannel_createdAt'] = {
+Blockly.Blocks['categorychannel_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -329,7 +329,7 @@ Blockly.Blocks['categorychannel_client'] = {
 Blockly.Blocks['categorychannel_setParent'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setParent of %1 channel: %2 options: %3",
+      "message0": "set parent of %1 channel: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -353,7 +353,7 @@ Blockly.Blocks['categorychannel_setParent'] = {
 Blockly.Blocks['categorychannel_createChannel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createChannel of %1 name: %2 options: %3",
+      "message0": "create channel of %1 name: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -377,7 +377,7 @@ Blockly.Blocks['categorychannel_createChannel'] = {
 Blockly.Blocks['categorychannel_permissionsFor'] = {
   init: function() {
     this.jsonInit({
-      "message0": "permissionsFor of %1 memberOrRole: %2 checkAdmin: %3",
+      "message0": "permissions for of %1 memberOrRole: %2 checkAdmin: %3",
       "args0": [
         {
           "type": "input_value",
@@ -401,7 +401,7 @@ Blockly.Blocks['categorychannel_permissionsFor'] = {
 Blockly.Blocks['categorychannel_lockPermissions'] = {
   init: function() {
     this.jsonInit({
-      "message0": "lockPermissions of %1",
+      "message0": "lock permissions of %1",
       "args0": [
         {
           "type": "input_value",
@@ -441,7 +441,7 @@ Blockly.Blocks['categorychannel_edit'] = {
 Blockly.Blocks['categorychannel_setName'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setName of %1 name: %2 reason: %3",
+      "message0": "set name of %1 name: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -465,7 +465,7 @@ Blockly.Blocks['categorychannel_setName'] = {
 Blockly.Blocks['categorychannel_setPosition'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setPosition of %1 position: %2 options: %3",
+      "message0": "set position of %1 position: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -549,7 +549,7 @@ Blockly.Blocks['categorychannel_delete'] = {
 Blockly.Blocks['categorychannel_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",
@@ -585,7 +585,7 @@ Blockly.Blocks['categorychannel_fetch'] = {
 Blockly.Blocks['categorychannel_isText'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isText of %1",
+      "message0": "is text of %1",
       "args0": [
         {
           "type": "input_value",
@@ -601,7 +601,7 @@ Blockly.Blocks['categorychannel_isText'] = {
 Blockly.Blocks['categorychannel_isVoice'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isVoice of %1",
+      "message0": "is voice of %1",
       "args0": [
         {
           "type": "input_value",
@@ -617,7 +617,7 @@ Blockly.Blocks['categorychannel_isVoice'] = {
 Blockly.Blocks['categorychannel_isThread'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isThread of %1",
+      "message0": "is thread of %1",
       "args0": [
         {
           "type": "input_value",

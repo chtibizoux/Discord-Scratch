@@ -141,7 +141,7 @@ Blockly.Blocks['guildscheduledeventmanager_delete'] = {
 Blockly.Blocks['guildscheduledeventmanager_fetchSubscribers'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchSubscribers of %1 guildScheduledEvent: %2 options: %3",
+      "message0": "fetch subscribers of %1 guildScheduledEvent: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -185,7 +185,7 @@ Blockly.Blocks['guildscheduledeventmanager_resolve'] = {
 Blockly.Blocks['guildscheduledeventmanager_resolveId'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveId of %1 idOrInstance: %2",
+      "message0": "resolve id of %1 idOrInstance: %2",
       "args0": [
         {
           "type": "input_value",

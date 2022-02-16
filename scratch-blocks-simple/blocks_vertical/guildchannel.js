@@ -22,10 +22,10 @@ Blockly.Blocks['guildchannel_guild'] = {
   }
 };
 
-Blockly.Blocks['guildchannel_guildId'] = {
+Blockly.Blocks['guildchannel_guildid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "guildId of %1",
+      "message0": "guild id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -38,10 +38,10 @@ Blockly.Blocks['guildchannel_guildId'] = {
   }
 };
 
-Blockly.Blocks['guildchannel_permissionOverwrites'] = {
+Blockly.Blocks['guildchannel_permissionoverwrites'] = {
   init: function() {
     this.jsonInit({
-      "message0": "permissionOverwrites of %1",
+      "message0": "permission overwrites of %1",
       "args0": [
         {
           "type": "input_value",
@@ -70,10 +70,10 @@ Blockly.Blocks['guildchannel_name'] = {
   }
 };
 
-Blockly.Blocks['guildchannel_rawPosition'] = {
+Blockly.Blocks['guildchannel_rawposition'] = {
   init: function() {
     this.jsonInit({
-      "message0": "rawPosition of %1",
+      "message0": "raw position of %1",
       "args0": [
         {
           "type": "input_value",
@@ -86,10 +86,10 @@ Blockly.Blocks['guildchannel_rawPosition'] = {
   }
 };
 
-Blockly.Blocks['guildchannel_parentId'] = {
+Blockly.Blocks['guildchannel_parentid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "parentId of %1",
+      "message0": "parent id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -118,10 +118,10 @@ Blockly.Blocks['guildchannel_parent'] = {
   }
 };
 
-Blockly.Blocks['guildchannel_permissionsLocked'] = {
+Blockly.Blocks['guildchannel_permissionslocked'] = {
   init: function() {
     this.jsonInit({
-      "message0": "permissionsLocked of %1",
+      "message0": "permissions locked of %1",
       "args0": [
         {
           "type": "input_value",
@@ -246,10 +246,10 @@ Blockly.Blocks['guildchannel_id'] = {
   }
 };
 
-Blockly.Blocks['guildchannel_createdTimestamp'] = {
+Blockly.Blocks['guildchannel_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -262,10 +262,10 @@ Blockly.Blocks['guildchannel_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['guildchannel_createdAt'] = {
+Blockly.Blocks['guildchannel_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -313,7 +313,7 @@ Blockly.Blocks['guildchannel_client'] = {
 Blockly.Blocks['guildchannel_permissionsFor'] = {
   init: function() {
     this.jsonInit({
-      "message0": "permissionsFor of %1 memberOrRole: %2 checkAdmin: %3",
+      "message0": "permissions for of %1 memberOrRole: %2 checkAdmin: %3",
       "args0": [
         {
           "type": "input_value",
@@ -337,7 +337,7 @@ Blockly.Blocks['guildchannel_permissionsFor'] = {
 Blockly.Blocks['guildchannel_lockPermissions'] = {
   init: function() {
     this.jsonInit({
-      "message0": "lockPermissions of %1",
+      "message0": "lock permissions of %1",
       "args0": [
         {
           "type": "input_value",
@@ -377,7 +377,7 @@ Blockly.Blocks['guildchannel_edit'] = {
 Blockly.Blocks['guildchannel_setName'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setName of %1 name: %2 reason: %3",
+      "message0": "set name of %1 name: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -401,7 +401,7 @@ Blockly.Blocks['guildchannel_setName'] = {
 Blockly.Blocks['guildchannel_setParent'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setParent of %1 channel: %2 options: %3",
+      "message0": "set parent of %1 channel: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -425,7 +425,7 @@ Blockly.Blocks['guildchannel_setParent'] = {
 Blockly.Blocks['guildchannel_setPosition'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setPosition of %1 position: %2 options: %3",
+      "message0": "set position of %1 position: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -509,7 +509,7 @@ Blockly.Blocks['guildchannel_delete'] = {
 Blockly.Blocks['guildchannel_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",
@@ -545,7 +545,7 @@ Blockly.Blocks['guildchannel_fetch'] = {
 Blockly.Blocks['guildchannel_isText'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isText of %1",
+      "message0": "is text of %1",
       "args0": [
         {
           "type": "input_value",
@@ -561,7 +561,7 @@ Blockly.Blocks['guildchannel_isText'] = {
 Blockly.Blocks['guildchannel_isVoice'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isVoice of %1",
+      "message0": "is voice of %1",
       "args0": [
         {
           "type": "input_value",
@@ -577,7 +577,7 @@ Blockly.Blocks['guildchannel_isVoice'] = {
 Blockly.Blocks['guildchannel_isThread'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isThread of %1",
+      "message0": "is thread of %1",
       "args0": [
         {
           "type": "input_value",

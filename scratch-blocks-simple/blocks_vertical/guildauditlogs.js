@@ -22,10 +22,10 @@ Blockly.Blocks['guildauditlogs_entries'] = {
   }
 };
 
-Blockly.Blocks['guildauditlogs_Targets'] = {
+Blockly.Blocks['guildauditlogs_targets'] = {
   init: function() {
     this.jsonInit({
-      "message0": "Targets of %1",
+      "message0": " targets of %1",
       "args0": [
         {
           "type": "input_value",
@@ -38,10 +38,10 @@ Blockly.Blocks['guildauditlogs_Targets'] = {
   }
 };
 
-Blockly.Blocks['guildauditlogs_Actions'] = {
+Blockly.Blocks['guildauditlogs_actions'] = {
   init: function() {
     this.jsonInit({
-      "message0": "Actions of %1",
+      "message0": " actions of %1",
       "args0": [
         {
           "type": "input_value",
@@ -73,7 +73,7 @@ Blockly.Blocks['guildauditlogs_build'] = {
 Blockly.Blocks['guildauditlogs_targetType'] = {
   init: function() {
     this.jsonInit({
-      "message0": "targetType of %1 target: %2",
+      "message0": "target type of %1 target: %2",
       "args0": [
         {
           "type": "input_value",
@@ -93,7 +93,7 @@ Blockly.Blocks['guildauditlogs_targetType'] = {
 Blockly.Blocks['guildauditlogs_actionType'] = {
   init: function() {
     this.jsonInit({
-      "message0": "actionType of %1 action: %2",
+      "message0": "action type of %1 action: %2",
       "args0": [
         {
           "type": "input_value",

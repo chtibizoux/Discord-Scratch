@@ -6,10 +6,10 @@ goog.require('Blockly.Blocks');
 goog.require('Blockly.Colours');
 goog.require('Blockly.constants');
 goog.require('Blockly.ScratchBlocks.VerticalExtensions');
-Blockly.Blocks['baseguildvoicechannel_rtcRegion'] = {
+Blockly.Blocks['baseguildvoicechannel_rtcregion'] = {
   init: function() {
     this.jsonInit({
-      "message0": "rtcRegion of %1",
+      "message0": "rtc region of %1",
       "args0": [
         {
           "type": "input_value",
@@ -38,10 +38,10 @@ Blockly.Blocks['baseguildvoicechannel_bitrate'] = {
   }
 };
 
-Blockly.Blocks['baseguildvoicechannel_userLimit'] = {
+Blockly.Blocks['baseguildvoicechannel_userlimit'] = {
   init: function() {
     this.jsonInit({
-      "message0": "userLimit of %1",
+      "message0": "user limit of %1",
       "args0": [
         {
           "type": "input_value",
@@ -118,10 +118,10 @@ Blockly.Blocks['baseguildvoicechannel_guild'] = {
   }
 };
 
-Blockly.Blocks['baseguildvoicechannel_guildId'] = {
+Blockly.Blocks['baseguildvoicechannel_guildid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "guildId of %1",
+      "message0": "guild id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -134,10 +134,10 @@ Blockly.Blocks['baseguildvoicechannel_guildId'] = {
   }
 };
 
-Blockly.Blocks['baseguildvoicechannel_permissionOverwrites'] = {
+Blockly.Blocks['baseguildvoicechannel_permissionoverwrites'] = {
   init: function() {
     this.jsonInit({
-      "message0": "permissionOverwrites of %1",
+      "message0": "permission overwrites of %1",
       "args0": [
         {
           "type": "input_value",
@@ -166,10 +166,10 @@ Blockly.Blocks['baseguildvoicechannel_name'] = {
   }
 };
 
-Blockly.Blocks['baseguildvoicechannel_rawPosition'] = {
+Blockly.Blocks['baseguildvoicechannel_rawposition'] = {
   init: function() {
     this.jsonInit({
-      "message0": "rawPosition of %1",
+      "message0": "raw position of %1",
       "args0": [
         {
           "type": "input_value",
@@ -182,10 +182,10 @@ Blockly.Blocks['baseguildvoicechannel_rawPosition'] = {
   }
 };
 
-Blockly.Blocks['baseguildvoicechannel_parentId'] = {
+Blockly.Blocks['baseguildvoicechannel_parentid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "parentId of %1",
+      "message0": "parent id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -214,10 +214,10 @@ Blockly.Blocks['baseguildvoicechannel_parent'] = {
   }
 };
 
-Blockly.Blocks['baseguildvoicechannel_permissionsLocked'] = {
+Blockly.Blocks['baseguildvoicechannel_permissionslocked'] = {
   init: function() {
     this.jsonInit({
-      "message0": "permissionsLocked of %1",
+      "message0": "permissions locked of %1",
       "args0": [
         {
           "type": "input_value",
@@ -326,10 +326,10 @@ Blockly.Blocks['baseguildvoicechannel_id'] = {
   }
 };
 
-Blockly.Blocks['baseguildvoicechannel_createdTimestamp'] = {
+Blockly.Blocks['baseguildvoicechannel_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -342,10 +342,10 @@ Blockly.Blocks['baseguildvoicechannel_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['baseguildvoicechannel_createdAt'] = {
+Blockly.Blocks['baseguildvoicechannel_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -393,7 +393,7 @@ Blockly.Blocks['baseguildvoicechannel_client'] = {
 Blockly.Blocks['baseguildvoicechannel_setRTCRegion'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setRTCRegion of %1 region: %2",
+      "message0": "set rtcregion of %1 region: %2",
       "args0": [
         {
           "type": "input_value",
@@ -413,7 +413,7 @@ Blockly.Blocks['baseguildvoicechannel_setRTCRegion'] = {
 Blockly.Blocks['baseguildvoicechannel_createInvite'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createInvite of %1 options: %2",
+      "message0": "create invite of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -433,7 +433,7 @@ Blockly.Blocks['baseguildvoicechannel_createInvite'] = {
 Blockly.Blocks['baseguildvoicechannel_fetchInvites'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchInvites of %1 cache: %2",
+      "message0": "fetch invites of %1 cache: %2",
       "args0": [
         {
           "type": "input_value",
@@ -453,7 +453,7 @@ Blockly.Blocks['baseguildvoicechannel_fetchInvites'] = {
 Blockly.Blocks['baseguildvoicechannel_permissionsFor'] = {
   init: function() {
     this.jsonInit({
-      "message0": "permissionsFor of %1 memberOrRole: %2 checkAdmin: %3",
+      "message0": "permissions for of %1 memberOrRole: %2 checkAdmin: %3",
       "args0": [
         {
           "type": "input_value",
@@ -477,7 +477,7 @@ Blockly.Blocks['baseguildvoicechannel_permissionsFor'] = {
 Blockly.Blocks['baseguildvoicechannel_lockPermissions'] = {
   init: function() {
     this.jsonInit({
-      "message0": "lockPermissions of %1",
+      "message0": "lock permissions of %1",
       "args0": [
         {
           "type": "input_value",
@@ -517,7 +517,7 @@ Blockly.Blocks['baseguildvoicechannel_edit'] = {
 Blockly.Blocks['baseguildvoicechannel_setName'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setName of %1 name: %2 reason: %3",
+      "message0": "set name of %1 name: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -541,7 +541,7 @@ Blockly.Blocks['baseguildvoicechannel_setName'] = {
 Blockly.Blocks['baseguildvoicechannel_setParent'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setParent of %1 channel: %2 options: %3",
+      "message0": "set parent of %1 channel: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -565,7 +565,7 @@ Blockly.Blocks['baseguildvoicechannel_setParent'] = {
 Blockly.Blocks['baseguildvoicechannel_setPosition'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setPosition of %1 position: %2 options: %3",
+      "message0": "set position of %1 position: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -649,7 +649,7 @@ Blockly.Blocks['baseguildvoicechannel_delete'] = {
 Blockly.Blocks['baseguildvoicechannel_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",
@@ -685,7 +685,7 @@ Blockly.Blocks['baseguildvoicechannel_fetch'] = {
 Blockly.Blocks['baseguildvoicechannel_isText'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isText of %1",
+      "message0": "is text of %1",
       "args0": [
         {
           "type": "input_value",
@@ -701,7 +701,7 @@ Blockly.Blocks['baseguildvoicechannel_isText'] = {
 Blockly.Blocks['baseguildvoicechannel_isVoice'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isVoice of %1",
+      "message0": "is voice of %1",
       "args0": [
         {
           "type": "input_value",
@@ -717,7 +717,7 @@ Blockly.Blocks['baseguildvoicechannel_isVoice'] = {
 Blockly.Blocks['baseguildvoicechannel_isThread'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isThread of %1",
+      "message0": "is thread of %1",
       "args0": [
         {
           "type": "input_value",

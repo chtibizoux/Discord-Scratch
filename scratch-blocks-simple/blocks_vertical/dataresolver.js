@@ -9,7 +9,7 @@ goog.require('Blockly.ScratchBlocks.VerticalExtensions');
 Blockly.Blocks['dataresolver_resolveCode'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveCode of %1 data: %2 regex: %3",
+      "message0": "resolve code of %1 data: %2 regex: %3",
       "args0": [
         {
           "type": "input_value",
@@ -33,7 +33,7 @@ Blockly.Blocks['dataresolver_resolveCode'] = {
 Blockly.Blocks['dataresolver_resolveInviteCode'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveInviteCode of %1 data: %2",
+      "message0": "resolve invitecode of %1 data: %2",
       "args0": [
         {
           "type": "input_value",
@@ -53,7 +53,7 @@ Blockly.Blocks['dataresolver_resolveInviteCode'] = {
 Blockly.Blocks['dataresolver_resolveGuildTemplateCode'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveGuildTemplateCode of %1 data: %2",
+      "message0": "resolve guildtemplatecode of %1 data: %2",
       "args0": [
         {
           "type": "input_value",
@@ -73,7 +73,7 @@ Blockly.Blocks['dataresolver_resolveGuildTemplateCode'] = {
 Blockly.Blocks['dataresolver_resolveImage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveImage of %1 image: %2",
+      "message0": "resolve image of %1 image: %2",
       "args0": [
         {
           "type": "input_value",
@@ -93,7 +93,7 @@ Blockly.Blocks['dataresolver_resolveImage'] = {
 Blockly.Blocks['dataresolver_resolveBase64'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveBase64 of %1 data: %2",
+      "message0": "resolve base64 of %1 data: %2",
       "args0": [
         {
           "type": "input_value",
@@ -113,7 +113,7 @@ Blockly.Blocks['dataresolver_resolveBase64'] = {
 Blockly.Blocks['dataresolver_resolveFile'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveFile of %1 resource: %2",
+      "message0": "resolve file of %1 resource: %2",
       "args0": [
         {
           "type": "input_value",
@@ -133,7 +133,7 @@ Blockly.Blocks['dataresolver_resolveFile'] = {
 Blockly.Blocks['dataresolver_resolveFileAsBuffer'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveFileAsBuffer of %1 resource: %2",
+      "message0": "resolve fileasbuffer of %1 resource: %2",
       "args0": [
         {
           "type": "input_value",

@@ -38,10 +38,10 @@ Blockly.Blocks['dmchannel_recipient'] = {
   }
 };
 
-Blockly.Blocks['dmchannel_lastMessageId'] = {
+Blockly.Blocks['dmchannel_lastmessageid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "lastMessageId of %1",
+      "message0": "last messageid of %1",
       "args0": [
         {
           "type": "input_value",
@@ -54,10 +54,10 @@ Blockly.Blocks['dmchannel_lastMessageId'] = {
   }
 };
 
-Blockly.Blocks['dmchannel_lastPinTimestamp'] = {
+Blockly.Blocks['dmchannel_lastpintimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "lastPinTimestamp of %1",
+      "message0": "last pintimestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -86,10 +86,10 @@ Blockly.Blocks['dmchannel_partial'] = {
   }
 };
 
-Blockly.Blocks['dmchannel_lastMessage'] = {
+Blockly.Blocks['dmchannel_lastmessage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "lastMessage of %1",
+      "message0": "last message of %1",
       "args0": [
         {
           "type": "input_value",
@@ -102,10 +102,10 @@ Blockly.Blocks['dmchannel_lastMessage'] = {
   }
 };
 
-Blockly.Blocks['dmchannel_lastPinAt'] = {
+Blockly.Blocks['dmchannel_lastpinat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "lastPinAt of %1",
+      "message0": "last pinat of %1",
       "args0": [
         {
           "type": "input_value",
@@ -150,10 +150,10 @@ Blockly.Blocks['dmchannel_id'] = {
   }
 };
 
-Blockly.Blocks['dmchannel_createdTimestamp'] = {
+Blockly.Blocks['dmchannel_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -166,10 +166,10 @@ Blockly.Blocks['dmchannel_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['dmchannel_createdAt'] = {
+Blockly.Blocks['dmchannel_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -221,7 +221,7 @@ Blockly.Blocks['dmchannel_fetch'] = {
 Blockly.Blocks['dmchannel_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",
@@ -257,7 +257,7 @@ Blockly.Blocks['dmchannel_send'] = {
 Blockly.Blocks['dmchannel_sendTyping'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sendTyping of %1",
+      "message0": "send typing of %1",
       "args0": [
         {
           "type": "input_value",
@@ -273,7 +273,7 @@ Blockly.Blocks['dmchannel_sendTyping'] = {
 Blockly.Blocks['dmchannel_createMessageCollector'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createMessageCollector of %1 options: %2",
+      "message0": "create messagecollector of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -293,7 +293,7 @@ Blockly.Blocks['dmchannel_createMessageCollector'] = {
 Blockly.Blocks['dmchannel_awaitMessages'] = {
   init: function() {
     this.jsonInit({
-      "message0": "awaitMessages of %1 options: %2",
+      "message0": "await messages of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -313,7 +313,7 @@ Blockly.Blocks['dmchannel_awaitMessages'] = {
 Blockly.Blocks['dmchannel_createMessageComponentCollector'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createMessageComponentCollector of %1 options: %2",
+      "message0": "create messagecomponentcollector of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -333,7 +333,7 @@ Blockly.Blocks['dmchannel_createMessageComponentCollector'] = {
 Blockly.Blocks['dmchannel_awaitMessageComponent'] = {
   init: function() {
     this.jsonInit({
-      "message0": "awaitMessageComponent of %1 options: %2",
+      "message0": "await messagecomponent of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -369,7 +369,7 @@ Blockly.Blocks['dmchannel_delete'] = {
 Blockly.Blocks['dmchannel_isText'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isText of %1",
+      "message0": "is text of %1",
       "args0": [
         {
           "type": "input_value",
@@ -385,7 +385,7 @@ Blockly.Blocks['dmchannel_isText'] = {
 Blockly.Blocks['dmchannel_isVoice'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isVoice of %1",
+      "message0": "is voice of %1",
       "args0": [
         {
           "type": "input_value",
@@ -401,7 +401,7 @@ Blockly.Blocks['dmchannel_isVoice'] = {
 Blockly.Blocks['dmchannel_isThread'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isThread of %1",
+      "message0": "is thread of %1",
       "args0": [
         {
           "type": "input_value",

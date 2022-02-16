@@ -22,10 +22,10 @@ Blockly.Blocks['clientuser_verified'] = {
   }
 };
 
-Blockly.Blocks['clientuser_mfaEnabled'] = {
+Blockly.Blocks['clientuser_mfaenabled'] = {
   init: function() {
     this.jsonInit({
-      "message0": "mfaEnabled of %1",
+      "message0": "mfa enabled of %1",
       "args0": [
         {
           "type": "input_value",
@@ -150,10 +150,10 @@ Blockly.Blocks['clientuser_banner'] = {
   }
 };
 
-Blockly.Blocks['clientuser_accentColor'] = {
+Blockly.Blocks['clientuser_accentcolor'] = {
   init: function() {
     this.jsonInit({
-      "message0": "accentColor of %1",
+      "message0": "accent color of %1",
       "args0": [
         {
           "type": "input_value",
@@ -214,10 +214,10 @@ Blockly.Blocks['clientuser_partial'] = {
   }
 };
 
-Blockly.Blocks['clientuser_createdTimestamp'] = {
+Blockly.Blocks['clientuser_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -230,10 +230,10 @@ Blockly.Blocks['clientuser_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['clientuser_createdAt'] = {
+Blockly.Blocks['clientuser_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -246,10 +246,10 @@ Blockly.Blocks['clientuser_createdAt'] = {
   }
 };
 
-Blockly.Blocks['clientuser_defaultAvatarURL'] = {
+Blockly.Blocks['clientuser_defaultavatarurl'] = {
   init: function() {
     this.jsonInit({
-      "message0": "defaultAvatarURL of %1",
+      "message0": "default avatarurl of %1",
       "args0": [
         {
           "type": "input_value",
@@ -262,10 +262,10 @@ Blockly.Blocks['clientuser_defaultAvatarURL'] = {
   }
 };
 
-Blockly.Blocks['clientuser_hexAccentColor'] = {
+Blockly.Blocks['clientuser_hexaccentcolor'] = {
   init: function() {
     this.jsonInit({
-      "message0": "hexAccentColor of %1",
+      "message0": "hex accentcolor of %1",
       "args0": [
         {
           "type": "input_value",
@@ -294,10 +294,10 @@ Blockly.Blocks['clientuser_tag'] = {
   }
 };
 
-Blockly.Blocks['clientuser_dmChannel'] = {
+Blockly.Blocks['clientuser_dmchannel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "dmChannel of %1",
+      "message0": "dm channel of %1",
       "args0": [
         {
           "type": "input_value",
@@ -349,7 +349,7 @@ Blockly.Blocks['clientuser_edit'] = {
 Blockly.Blocks['clientuser_setUsername'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setUsername of %1 username: %2",
+      "message0": "set username of %1 username: %2",
       "args0": [
         {
           "type": "input_value",
@@ -369,7 +369,7 @@ Blockly.Blocks['clientuser_setUsername'] = {
 Blockly.Blocks['clientuser_setAvatar'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setAvatar of %1 avatar: %2",
+      "message0": "set avatar of %1 avatar: %2",
       "args0": [
         {
           "type": "input_value",
@@ -389,7 +389,7 @@ Blockly.Blocks['clientuser_setAvatar'] = {
 Blockly.Blocks['clientuser_setPresence'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setPresence of %1 data: %2",
+      "message0": "set presence of %1 data: %2",
       "args0": [
         {
           "type": "input_value",
@@ -409,7 +409,7 @@ Blockly.Blocks['clientuser_setPresence'] = {
 Blockly.Blocks['clientuser_setStatus'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setStatus of %1 status: %2 shardId: %3",
+      "message0": "set status of %1 status: %2 shardId: %3",
       "args0": [
         {
           "type": "input_value",
@@ -433,7 +433,7 @@ Blockly.Blocks['clientuser_setStatus'] = {
 Blockly.Blocks['clientuser_setActivity'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setActivity of %1 name: %2 options: %3",
+      "message0": "set activity of %1 name: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -457,7 +457,7 @@ Blockly.Blocks['clientuser_setActivity'] = {
 Blockly.Blocks['clientuser_setAFK'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setAFK of %1 afk: %2 shardId: %3",
+      "message0": "set afk of %1 afk: %2 shardId: %3",
       "args0": [
         {
           "type": "input_value",
@@ -481,7 +481,7 @@ Blockly.Blocks['clientuser_setAFK'] = {
 Blockly.Blocks['clientuser_avatarURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "avatarURL of %1 options: %2",
+      "message0": "avatar url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -501,7 +501,7 @@ Blockly.Blocks['clientuser_avatarURL'] = {
 Blockly.Blocks['clientuser_displayAvatarURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "displayAvatarURL of %1 options: %2",
+      "message0": "display avatarurl of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -521,7 +521,7 @@ Blockly.Blocks['clientuser_displayAvatarURL'] = {
 Blockly.Blocks['clientuser_bannerURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "bannerURL of %1 options: %2",
+      "message0": "banner url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -541,7 +541,7 @@ Blockly.Blocks['clientuser_bannerURL'] = {
 Blockly.Blocks['clientuser_createDM'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createDM of %1 force: %2",
+      "message0": "create dm of %1 force: %2",
       "args0": [
         {
           "type": "input_value",
@@ -561,7 +561,7 @@ Blockly.Blocks['clientuser_createDM'] = {
 Blockly.Blocks['clientuser_deleteDM'] = {
   init: function() {
     this.jsonInit({
-      "message0": "deleteDM of %1",
+      "message0": "delete dm of %1",
       "args0": [
         {
           "type": "input_value",
@@ -597,7 +597,7 @@ Blockly.Blocks['clientuser_equals'] = {
 Blockly.Blocks['clientuser_fetchFlags'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchFlags of %1 force: %2",
+      "message0": "fetch flags of %1 force: %2",
       "args0": [
         {
           "type": "input_value",
@@ -637,7 +637,7 @@ Blockly.Blocks['clientuser_fetch'] = {
 Blockly.Blocks['clientuser_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",

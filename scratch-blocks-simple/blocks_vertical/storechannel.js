@@ -38,10 +38,10 @@ Blockly.Blocks['storechannel_guild'] = {
   }
 };
 
-Blockly.Blocks['storechannel_guildId'] = {
+Blockly.Blocks['storechannel_guildid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "guildId of %1",
+      "message0": "guild id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -54,10 +54,10 @@ Blockly.Blocks['storechannel_guildId'] = {
   }
 };
 
-Blockly.Blocks['storechannel_permissionOverwrites'] = {
+Blockly.Blocks['storechannel_permissionoverwrites'] = {
   init: function() {
     this.jsonInit({
-      "message0": "permissionOverwrites of %1",
+      "message0": "permission overwrites of %1",
       "args0": [
         {
           "type": "input_value",
@@ -86,10 +86,10 @@ Blockly.Blocks['storechannel_name'] = {
   }
 };
 
-Blockly.Blocks['storechannel_rawPosition'] = {
+Blockly.Blocks['storechannel_rawposition'] = {
   init: function() {
     this.jsonInit({
-      "message0": "rawPosition of %1",
+      "message0": "raw position of %1",
       "args0": [
         {
           "type": "input_value",
@@ -102,10 +102,10 @@ Blockly.Blocks['storechannel_rawPosition'] = {
   }
 };
 
-Blockly.Blocks['storechannel_parentId'] = {
+Blockly.Blocks['storechannel_parentid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "parentId of %1",
+      "message0": "parent id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -134,10 +134,10 @@ Blockly.Blocks['storechannel_parent'] = {
   }
 };
 
-Blockly.Blocks['storechannel_permissionsLocked'] = {
+Blockly.Blocks['storechannel_permissionslocked'] = {
   init: function() {
     this.jsonInit({
-      "message0": "permissionsLocked of %1",
+      "message0": "permissions locked of %1",
       "args0": [
         {
           "type": "input_value",
@@ -262,10 +262,10 @@ Blockly.Blocks['storechannel_id'] = {
   }
 };
 
-Blockly.Blocks['storechannel_createdTimestamp'] = {
+Blockly.Blocks['storechannel_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -278,10 +278,10 @@ Blockly.Blocks['storechannel_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['storechannel_createdAt'] = {
+Blockly.Blocks['storechannel_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -329,7 +329,7 @@ Blockly.Blocks['storechannel_client'] = {
 Blockly.Blocks['storechannel_createInvite'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createInvite of %1 options: %2",
+      "message0": "create invite of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -349,7 +349,7 @@ Blockly.Blocks['storechannel_createInvite'] = {
 Blockly.Blocks['storechannel_fetchInvites'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchInvites of %1 cache: %2",
+      "message0": "fetch invites of %1 cache: %2",
       "args0": [
         {
           "type": "input_value",
@@ -369,7 +369,7 @@ Blockly.Blocks['storechannel_fetchInvites'] = {
 Blockly.Blocks['storechannel_permissionsFor'] = {
   init: function() {
     this.jsonInit({
-      "message0": "permissionsFor of %1 memberOrRole: %2 checkAdmin: %3",
+      "message0": "permissions for of %1 memberOrRole: %2 checkAdmin: %3",
       "args0": [
         {
           "type": "input_value",
@@ -393,7 +393,7 @@ Blockly.Blocks['storechannel_permissionsFor'] = {
 Blockly.Blocks['storechannel_lockPermissions'] = {
   init: function() {
     this.jsonInit({
-      "message0": "lockPermissions of %1",
+      "message0": "lock permissions of %1",
       "args0": [
         {
           "type": "input_value",
@@ -433,7 +433,7 @@ Blockly.Blocks['storechannel_edit'] = {
 Blockly.Blocks['storechannel_setName'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setName of %1 name: %2 reason: %3",
+      "message0": "set name of %1 name: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -457,7 +457,7 @@ Blockly.Blocks['storechannel_setName'] = {
 Blockly.Blocks['storechannel_setParent'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setParent of %1 channel: %2 options: %3",
+      "message0": "set parent of %1 channel: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -481,7 +481,7 @@ Blockly.Blocks['storechannel_setParent'] = {
 Blockly.Blocks['storechannel_setPosition'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setPosition of %1 position: %2 options: %3",
+      "message0": "set position of %1 position: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -565,7 +565,7 @@ Blockly.Blocks['storechannel_delete'] = {
 Blockly.Blocks['storechannel_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",
@@ -601,7 +601,7 @@ Blockly.Blocks['storechannel_fetch'] = {
 Blockly.Blocks['storechannel_isText'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isText of %1",
+      "message0": "is text of %1",
       "args0": [
         {
           "type": "input_value",
@@ -617,7 +617,7 @@ Blockly.Blocks['storechannel_isText'] = {
 Blockly.Blocks['storechannel_isVoice'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isVoice of %1",
+      "message0": "is voice of %1",
       "args0": [
         {
           "type": "input_value",
@@ -633,7 +633,7 @@ Blockly.Blocks['storechannel_isVoice'] = {
 Blockly.Blocks['storechannel_isThread'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isThread of %1",
+      "message0": "is thread of %1",
       "args0": [
         {
           "type": "input_value",

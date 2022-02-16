@@ -103,10 +103,10 @@ Blockly.Blocks['shard_args'] = {
   }
 };
 
-Blockly.Blocks['shard_execArgv'] = {
+Blockly.Blocks['shard_execargv'] = {
   init: function() {
     this.jsonInit({
-      "message0": "execArgv of %1",
+      "message0": "exec argv of %1",
       "args0": [
         {
           "type": "input_value",
@@ -262,7 +262,7 @@ Blockly.Blocks['shard_send'] = {
 Blockly.Blocks['shard_fetchClientValue'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchClientValue of %1 prop: %2",
+      "message0": "fetch clientvalue of %1 prop: %2",
       "args0": [
         {
           "type": "input_value",

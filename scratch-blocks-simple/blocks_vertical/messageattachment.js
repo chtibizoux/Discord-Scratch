@@ -70,10 +70,10 @@ Blockly.Blocks['messageattachment_url'] = {
   }
 };
 
-Blockly.Blocks['messageattachment_proxyURL'] = {
+Blockly.Blocks['messageattachment_proxyurl'] = {
   init: function() {
     this.jsonInit({
-      "message0": "proxyURL of %1",
+      "message0": "proxy url of %1",
       "args0": [
         {
           "type": "input_value",
@@ -118,10 +118,10 @@ Blockly.Blocks['messageattachment_width'] = {
   }
 };
 
-Blockly.Blocks['messageattachment_contentType'] = {
+Blockly.Blocks['messageattachment_contenttype'] = {
   init: function() {
     this.jsonInit({
-      "message0": "contentType of %1",
+      "message0": "content type of %1",
       "args0": [
         {
           "type": "input_value",
@@ -185,7 +185,7 @@ Blockly.Blocks['messageattachment_spoiler'] = {
 Blockly.Blocks['messageattachment_setDescription'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setDescription of %1 description: %2",
+      "message0": "set description of %1 description: %2",
       "args0": [
         {
           "type": "input_value",
@@ -205,7 +205,7 @@ Blockly.Blocks['messageattachment_setDescription'] = {
 Blockly.Blocks['messageattachment_setFile'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setFile of %1 attachment: %2 name: %3",
+      "message0": "set file of %1 attachment: %2 name: %3",
       "args0": [
         {
           "type": "input_value",
@@ -229,7 +229,7 @@ Blockly.Blocks['messageattachment_setFile'] = {
 Blockly.Blocks['messageattachment_setName'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setName of %1 name: %2",
+      "message0": "set name of %1 name: %2",
       "args0": [
         {
           "type": "input_value",
@@ -249,7 +249,7 @@ Blockly.Blocks['messageattachment_setName'] = {
 Blockly.Blocks['messageattachment_setSpoiler'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setSpoiler of %1 spoiler: %2",
+      "message0": "set spoiler of %1 spoiler: %2",
       "args0": [
         {
           "type": "input_value",

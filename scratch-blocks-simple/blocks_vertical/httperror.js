@@ -70,10 +70,10 @@ Blockly.Blocks['httperror_path'] = {
   }
 };
 
-Blockly.Blocks['httperror_requestData'] = {
+Blockly.Blocks['httperror_requestdata'] = {
   init: function() {
     this.jsonInit({
-      "message0": "requestData of %1",
+      "message0": "request data of %1",
       "args0": [
         {
           "type": "input_value",

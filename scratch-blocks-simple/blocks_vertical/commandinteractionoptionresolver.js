@@ -81,7 +81,7 @@ Blockly.Blocks['commandinteractionoptionresolver_get'] = {
 Blockly.Blocks['commandinteractionoptionresolver_getSubcommand'] = {
   init: function() {
     this.jsonInit({
-      "message0": "getSubcommand of %1 required: %2",
+      "message0": "get subcommand of %1 required: %2",
       "args0": [
         {
           "type": "input_value",
@@ -101,7 +101,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getSubcommand'] = {
 Blockly.Blocks['commandinteractionoptionresolver_getSubcommandGroup'] = {
   init: function() {
     this.jsonInit({
-      "message0": "getSubcommandGroup of %1 required: %2",
+      "message0": "get subcommandgroup of %1 required: %2",
       "args0": [
         {
           "type": "input_value",
@@ -121,7 +121,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getSubcommandGroup'] = {
 Blockly.Blocks['commandinteractionoptionresolver_getBoolean'] = {
   init: function() {
     this.jsonInit({
-      "message0": "getBoolean of %1 name: %2 required: %3",
+      "message0": "get boolean of %1 name: %2 required: %3",
       "args0": [
         {
           "type": "input_value",
@@ -145,7 +145,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getBoolean'] = {
 Blockly.Blocks['commandinteractionoptionresolver_getChannel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "getChannel of %1 name: %2 required: %3",
+      "message0": "get channel of %1 name: %2 required: %3",
       "args0": [
         {
           "type": "input_value",
@@ -169,7 +169,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getChannel'] = {
 Blockly.Blocks['commandinteractionoptionresolver_getString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "getString of %1 name: %2 required: %3",
+      "message0": "get string of %1 name: %2 required: %3",
       "args0": [
         {
           "type": "input_value",
@@ -193,7 +193,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getString'] = {
 Blockly.Blocks['commandinteractionoptionresolver_getInteger'] = {
   init: function() {
     this.jsonInit({
-      "message0": "getInteger of %1 name: %2 required: %3",
+      "message0": "get integer of %1 name: %2 required: %3",
       "args0": [
         {
           "type": "input_value",
@@ -217,7 +217,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getInteger'] = {
 Blockly.Blocks['commandinteractionoptionresolver_getNumber'] = {
   init: function() {
     this.jsonInit({
-      "message0": "getNumber of %1 name: %2 required: %3",
+      "message0": "get number of %1 name: %2 required: %3",
       "args0": [
         {
           "type": "input_value",
@@ -241,7 +241,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getNumber'] = {
 Blockly.Blocks['commandinteractionoptionresolver_getUser'] = {
   init: function() {
     this.jsonInit({
-      "message0": "getUser of %1 name: %2 required: %3",
+      "message0": "get user of %1 name: %2 required: %3",
       "args0": [
         {
           "type": "input_value",
@@ -265,7 +265,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getUser'] = {
 Blockly.Blocks['commandinteractionoptionresolver_getMember'] = {
   init: function() {
     this.jsonInit({
-      "message0": "getMember of %1 name: %2 required: %3",
+      "message0": "get member of %1 name: %2 required: %3",
       "args0": [
         {
           "type": "input_value",
@@ -289,7 +289,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getMember'] = {
 Blockly.Blocks['commandinteractionoptionresolver_getRole'] = {
   init: function() {
     this.jsonInit({
-      "message0": "getRole of %1 name: %2 required: %3",
+      "message0": "get role of %1 name: %2 required: %3",
       "args0": [
         {
           "type": "input_value",
@@ -313,7 +313,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getRole'] = {
 Blockly.Blocks['commandinteractionoptionresolver_getMentionable'] = {
   init: function() {
     this.jsonInit({
-      "message0": "getMentionable of %1 name: %2 required: %3",
+      "message0": "get mentionable of %1 name: %2 required: %3",
       "args0": [
         {
           "type": "input_value",
@@ -337,7 +337,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getMentionable'] = {
 Blockly.Blocks['commandinteractionoptionresolver_getMessage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "getMessage of %1 name: %2 required: %3",
+      "message0": "get message of %1 name: %2 required: %3",
       "args0": [
         {
           "type": "input_value",
@@ -361,7 +361,7 @@ Blockly.Blocks['commandinteractionoptionresolver_getMessage'] = {
 Blockly.Blocks['commandinteractionoptionresolver_getFocused'] = {
   init: function() {
     this.jsonInit({
-      "message0": "getFocused of %1 getFull: %2",
+      "message0": "get focused of %1 getFull: %2",
       "args0": [
         {
           "type": "input_value",

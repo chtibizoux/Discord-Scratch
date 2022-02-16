@@ -102,10 +102,10 @@ Blockly.Blocks['user_banner'] = {
   }
 };
 
-Blockly.Blocks['user_accentColor'] = {
+Blockly.Blocks['user_accentcolor'] = {
   init: function() {
     this.jsonInit({
-      "message0": "accentColor of %1",
+      "message0": "accent color of %1",
       "args0": [
         {
           "type": "input_value",
@@ -166,10 +166,10 @@ Blockly.Blocks['user_partial'] = {
   }
 };
 
-Blockly.Blocks['user_createdTimestamp'] = {
+Blockly.Blocks['user_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -182,10 +182,10 @@ Blockly.Blocks['user_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['user_createdAt'] = {
+Blockly.Blocks['user_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -198,10 +198,10 @@ Blockly.Blocks['user_createdAt'] = {
   }
 };
 
-Blockly.Blocks['user_defaultAvatarURL'] = {
+Blockly.Blocks['user_defaultavatarurl'] = {
   init: function() {
     this.jsonInit({
-      "message0": "defaultAvatarURL of %1",
+      "message0": "default avatarurl of %1",
       "args0": [
         {
           "type": "input_value",
@@ -214,10 +214,10 @@ Blockly.Blocks['user_defaultAvatarURL'] = {
   }
 };
 
-Blockly.Blocks['user_hexAccentColor'] = {
+Blockly.Blocks['user_hexaccentcolor'] = {
   init: function() {
     this.jsonInit({
-      "message0": "hexAccentColor of %1",
+      "message0": "hex accentcolor of %1",
       "args0": [
         {
           "type": "input_value",
@@ -246,10 +246,10 @@ Blockly.Blocks['user_tag'] = {
   }
 };
 
-Blockly.Blocks['user_dmChannel'] = {
+Blockly.Blocks['user_dmchannel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "dmChannel of %1",
+      "message0": "dm channel of %1",
       "args0": [
         {
           "type": "input_value",
@@ -281,7 +281,7 @@ Blockly.Blocks['user_client'] = {
 Blockly.Blocks['user_avatarURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "avatarURL of %1 options: %2",
+      "message0": "avatar url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -301,7 +301,7 @@ Blockly.Blocks['user_avatarURL'] = {
 Blockly.Blocks['user_displayAvatarURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "displayAvatarURL of %1 options: %2",
+      "message0": "display avatarurl of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -321,7 +321,7 @@ Blockly.Blocks['user_displayAvatarURL'] = {
 Blockly.Blocks['user_bannerURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "bannerURL of %1 options: %2",
+      "message0": "banner url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -341,7 +341,7 @@ Blockly.Blocks['user_bannerURL'] = {
 Blockly.Blocks['user_createDM'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createDM of %1 force: %2",
+      "message0": "create dm of %1 force: %2",
       "args0": [
         {
           "type": "input_value",
@@ -361,7 +361,7 @@ Blockly.Blocks['user_createDM'] = {
 Blockly.Blocks['user_deleteDM'] = {
   init: function() {
     this.jsonInit({
-      "message0": "deleteDM of %1",
+      "message0": "delete dm of %1",
       "args0": [
         {
           "type": "input_value",
@@ -397,7 +397,7 @@ Blockly.Blocks['user_equals'] = {
 Blockly.Blocks['user_fetchFlags'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchFlags of %1 force: %2",
+      "message0": "fetch flags of %1 force: %2",
       "args0": [
         {
           "type": "input_value",
@@ -437,7 +437,7 @@ Blockly.Blocks['user_fetch'] = {
 Blockly.Blocks['user_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",

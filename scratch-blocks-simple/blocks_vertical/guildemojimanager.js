@@ -129,7 +129,7 @@ Blockly.Blocks['guildemojimanager_resolve'] = {
 Blockly.Blocks['guildemojimanager_resolveId'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveId of %1 emoji: %2",
+      "message0": "resolve id of %1 emoji: %2",
       "args0": [
         {
           "type": "input_value",
@@ -149,7 +149,7 @@ Blockly.Blocks['guildemojimanager_resolveId'] = {
 Blockly.Blocks['guildemojimanager_resolveIdentifier'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveIdentifier of %1 emoji: %2",
+      "message0": "resolve identifier of %1 emoji: %2",
       "args0": [
         {
           "type": "input_value",

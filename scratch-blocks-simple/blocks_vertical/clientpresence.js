@@ -6,10 +6,10 @@ goog.require('Blockly.Blocks');
 goog.require('Blockly.Colours');
 goog.require('Blockly.constants');
 goog.require('Blockly.ScratchBlocks.VerticalExtensions');
-Blockly.Blocks['clientpresence_userId'] = {
+Blockly.Blocks['clientpresence_userid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "userId of %1",
+      "message0": "user id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -102,10 +102,10 @@ Blockly.Blocks['clientpresence_activities'] = {
   }
 };
 
-Blockly.Blocks['clientpresence_clientStatus'] = {
+Blockly.Blocks['clientpresence_clientstatus'] = {
   init: function() {
     this.jsonInit({
-      "message0": "clientStatus of %1",
+      "message0": "client status of %1",
       "args0": [
         {
           "type": "input_value",

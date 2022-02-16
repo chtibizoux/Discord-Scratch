@@ -22,10 +22,10 @@ Blockly.Blocks['applicationcommand_id'] = {
   }
 };
 
-Blockly.Blocks['applicationcommand_applicationId'] = {
+Blockly.Blocks['applicationcommand_applicationid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "applicationId of %1",
+      "message0": "application id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -54,10 +54,10 @@ Blockly.Blocks['applicationcommand_guild'] = {
   }
 };
 
-Blockly.Blocks['applicationcommand_guildId'] = {
+Blockly.Blocks['applicationcommand_guildid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "guildId of %1",
+      "message0": "guild id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -150,10 +150,10 @@ Blockly.Blocks['applicationcommand_options'] = {
   }
 };
 
-Blockly.Blocks['applicationcommand_defaultPermission'] = {
+Blockly.Blocks['applicationcommand_defaultpermission'] = {
   init: function() {
     this.jsonInit({
-      "message0": "defaultPermission of %1",
+      "message0": "default permission of %1",
       "args0": [
         {
           "type": "input_value",
@@ -182,10 +182,10 @@ Blockly.Blocks['applicationcommand_version'] = {
   }
 };
 
-Blockly.Blocks['applicationcommand_createdTimestamp'] = {
+Blockly.Blocks['applicationcommand_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -198,10 +198,10 @@ Blockly.Blocks['applicationcommand_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['applicationcommand_createdAt'] = {
+Blockly.Blocks['applicationcommand_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -269,7 +269,7 @@ Blockly.Blocks['applicationcommand_edit'] = {
 Blockly.Blocks['applicationcommand_setName'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setName of %1 name: %2",
+      "message0": "set name of %1 name: %2",
       "args0": [
         {
           "type": "input_value",
@@ -289,7 +289,7 @@ Blockly.Blocks['applicationcommand_setName'] = {
 Blockly.Blocks['applicationcommand_setDescription'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setDescription of %1 description: %2",
+      "message0": "set description of %1 description: %2",
       "args0": [
         {
           "type": "input_value",
@@ -309,7 +309,7 @@ Blockly.Blocks['applicationcommand_setDescription'] = {
 Blockly.Blocks['applicationcommand_setDefaultPermission'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setDefaultPermission of %1 defaultPermission: %2",
+      "message0": "set defaultpermission of %1 defaultPermission: %2",
       "args0": [
         {
           "type": "input_value",
@@ -329,7 +329,7 @@ Blockly.Blocks['applicationcommand_setDefaultPermission'] = {
 Blockly.Blocks['applicationcommand_setOptions'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setOptions of %1 options: %2",
+      "message0": "set options of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -389,7 +389,7 @@ Blockly.Blocks['applicationcommand_equals'] = {
 Blockly.Blocks['applicationcommand_optionsEqual'] = {
   init: function() {
     this.jsonInit({
-      "message0": "optionsEqual of %1 existing: %2 options: %3 enforceOptionOrder: %4",
+      "message0": "options equal of %1 existing: %2 options: %3 enforceOptionOrder: %4",
       "args0": [
         {
           "type": "input_value",

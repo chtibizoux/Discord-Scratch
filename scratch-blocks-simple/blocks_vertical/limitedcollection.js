@@ -6,10 +6,10 @@ goog.require('Blockly.Blocks');
 goog.require('Blockly.Colours');
 goog.require('Blockly.constants');
 goog.require('Blockly.ScratchBlocks.VerticalExtensions');
-Blockly.Blocks['limitedcollection_maxSize'] = {
+Blockly.Blocks['limitedcollection_maxsize'] = {
   init: function() {
     this.jsonInit({
-      "message0": "maxSize of %1",
+      "message0": "max size of %1",
       "args0": [
         {
           "type": "input_value",
@@ -22,10 +22,10 @@ Blockly.Blocks['limitedcollection_maxSize'] = {
   }
 };
 
-Blockly.Blocks['limitedcollection_keepOverLimit'] = {
+Blockly.Blocks['limitedcollection_keepoverlimit'] = {
   init: function() {
     this.jsonInit({
-      "message0": "keepOverLimit of %1",
+      "message0": "keep overlimit of %1",
       "args0": [
         {
           "type": "input_value",

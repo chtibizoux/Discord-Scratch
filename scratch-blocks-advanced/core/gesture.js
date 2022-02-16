@@ -397,8 +397,8 @@ Blockly.Gesture.prototype.updateIsDraggingBlock_ = function() {
       (this.targetBlock_.type == "sensing_thenobject" || this.targetBlock_.type == "sensing_catcherror")) {
       this.targetBlock_.duplicate = true;
     }
-    if (this.targetBlock_.parentBlock_.type == "sensing_getwithid" &&
-      this.targetBlock_.type == "sensing_getwithidobject") {
+    if (this.targetBlock_.parentBlock_.type.includes("fetch") &&
+      this.targetBlock_.type == "sensing_fetchobject") {
       this.targetBlock_.duplicate = true;
     }
     if (this.targetBlock_.parentBlock_.type == "event_on" &&

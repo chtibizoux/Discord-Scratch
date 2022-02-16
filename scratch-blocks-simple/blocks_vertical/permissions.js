@@ -22,10 +22,10 @@ Blockly.Blocks['permissions_bitfield'] = {
   }
 };
 
-Blockly.Blocks['permissions_FLAGS'] = {
+Blockly.Blocks['permissions_flags'] = {
   init: function() {
     this.jsonInit({
-      "message0": "FLAGS of %1",
+      "message0": " flags of %1",
       "args0": [
         {
           "type": "input_value",
@@ -38,10 +38,10 @@ Blockly.Blocks['permissions_FLAGS'] = {
   }
 };
 
-Blockly.Blocks['permissions_ALL'] = {
+Blockly.Blocks['permissions_all'] = {
   init: function() {
     this.jsonInit({
-      "message0": "ALL of %1",
+      "message0": " all of %1",
       "args0": [
         {
           "type": "input_value",
@@ -54,10 +54,10 @@ Blockly.Blocks['permissions_ALL'] = {
   }
 };
 
-Blockly.Blocks['permissions_DEFAULT'] = {
+Blockly.Blocks['permissions_default'] = {
   init: function() {
     this.jsonInit({
-      "message0": "DEFAULT of %1",
+      "message0": " default of %1",
       "args0": [
         {
           "type": "input_value",
@@ -70,10 +70,10 @@ Blockly.Blocks['permissions_DEFAULT'] = {
   }
 };
 
-Blockly.Blocks['permissions_STAGE_MODERATOR'] = {
+Blockly.Blocks['permissions_stage_moderator'] = {
   init: function() {
     this.jsonInit({
-      "message0": "STAGE_MODERATOR of %1",
+      "message0": " stage_moderator of %1",
       "args0": [
         {
           "type": "input_value",
@@ -161,7 +161,7 @@ Blockly.Blocks['permissions_has'] = {
 Blockly.Blocks['permissions_toArray'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toArray of %1",
+      "message0": "to array of %1",
       "args0": [
         {
           "type": "input_value",

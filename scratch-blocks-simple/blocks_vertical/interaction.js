@@ -54,10 +54,10 @@ Blockly.Blocks['interaction_token'] = {
   }
 };
 
-Blockly.Blocks['interaction_applicationId'] = {
+Blockly.Blocks['interaction_applicationid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "applicationId of %1",
+      "message0": "application id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -70,10 +70,10 @@ Blockly.Blocks['interaction_applicationId'] = {
   }
 };
 
-Blockly.Blocks['interaction_channelId'] = {
+Blockly.Blocks['interaction_channelid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "channelId of %1",
+      "message0": "channel id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -86,10 +86,10 @@ Blockly.Blocks['interaction_channelId'] = {
   }
 };
 
-Blockly.Blocks['interaction_guildId'] = {
+Blockly.Blocks['interaction_guildid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "guildId of %1",
+      "message0": "guild id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -150,10 +150,10 @@ Blockly.Blocks['interaction_version'] = {
   }
 };
 
-Blockly.Blocks['interaction_memberPermissions'] = {
+Blockly.Blocks['interaction_memberpermissions'] = {
   init: function() {
     this.jsonInit({
-      "message0": "memberPermissions of %1",
+      "message0": "member permissions of %1",
       "args0": [
         {
           "type": "input_value",
@@ -182,10 +182,10 @@ Blockly.Blocks['interaction_locale'] = {
   }
 };
 
-Blockly.Blocks['interaction_guildLocale'] = {
+Blockly.Blocks['interaction_guildlocale'] = {
   init: function() {
     this.jsonInit({
-      "message0": "guildLocale of %1",
+      "message0": "guild locale of %1",
       "args0": [
         {
           "type": "input_value",
@@ -198,10 +198,10 @@ Blockly.Blocks['interaction_guildLocale'] = {
   }
 };
 
-Blockly.Blocks['interaction_createdTimestamp'] = {
+Blockly.Blocks['interaction_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -214,10 +214,10 @@ Blockly.Blocks['interaction_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['interaction_createdAt'] = {
+Blockly.Blocks['interaction_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -281,7 +281,7 @@ Blockly.Blocks['interaction_client'] = {
 Blockly.Blocks['interaction_inGuild'] = {
   init: function() {
     this.jsonInit({
-      "message0": "inGuild of %1",
+      "message0": "in guild of %1",
       "args0": [
         {
           "type": "input_value",
@@ -297,7 +297,7 @@ Blockly.Blocks['interaction_inGuild'] = {
 Blockly.Blocks['interaction_inCachedGuild'] = {
   init: function() {
     this.jsonInit({
-      "message0": "inCachedGuild of %1",
+      "message0": "in cachedguild of %1",
       "args0": [
         {
           "type": "input_value",
@@ -313,7 +313,7 @@ Blockly.Blocks['interaction_inCachedGuild'] = {
 Blockly.Blocks['interaction_inRawGuild'] = {
   init: function() {
     this.jsonInit({
-      "message0": "inRawGuild of %1",
+      "message0": "in rawguild of %1",
       "args0": [
         {
           "type": "input_value",
@@ -329,7 +329,7 @@ Blockly.Blocks['interaction_inRawGuild'] = {
 Blockly.Blocks['interaction_isApplicationCommand'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isApplicationCommand of %1",
+      "message0": "is applicationcommand of %1",
       "args0": [
         {
           "type": "input_value",
@@ -345,7 +345,7 @@ Blockly.Blocks['interaction_isApplicationCommand'] = {
 Blockly.Blocks['interaction_isCommand'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isCommand of %1",
+      "message0": "is command of %1",
       "args0": [
         {
           "type": "input_value",
@@ -361,7 +361,7 @@ Blockly.Blocks['interaction_isCommand'] = {
 Blockly.Blocks['interaction_isContextMenu'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isContextMenu of %1",
+      "message0": "is contextmenu of %1",
       "args0": [
         {
           "type": "input_value",
@@ -377,7 +377,7 @@ Blockly.Blocks['interaction_isContextMenu'] = {
 Blockly.Blocks['interaction_isUserContextMenu'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isUserContextMenu of %1",
+      "message0": "is usercontextmenu of %1",
       "args0": [
         {
           "type": "input_value",
@@ -393,7 +393,7 @@ Blockly.Blocks['interaction_isUserContextMenu'] = {
 Blockly.Blocks['interaction_isMessageContextMenu'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isMessageContextMenu of %1",
+      "message0": "is messagecontextmenu of %1",
       "args0": [
         {
           "type": "input_value",
@@ -409,7 +409,7 @@ Blockly.Blocks['interaction_isMessageContextMenu'] = {
 Blockly.Blocks['interaction_isAutocomplete'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isAutocomplete of %1",
+      "message0": "is autocomplete of %1",
       "args0": [
         {
           "type": "input_value",
@@ -425,7 +425,7 @@ Blockly.Blocks['interaction_isAutocomplete'] = {
 Blockly.Blocks['interaction_isMessageComponent'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isMessageComponent of %1",
+      "message0": "is messagecomponent of %1",
       "args0": [
         {
           "type": "input_value",
@@ -441,7 +441,7 @@ Blockly.Blocks['interaction_isMessageComponent'] = {
 Blockly.Blocks['interaction_isButton'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isButton of %1",
+      "message0": "is button of %1",
       "args0": [
         {
           "type": "input_value",
@@ -457,7 +457,7 @@ Blockly.Blocks['interaction_isButton'] = {
 Blockly.Blocks['interaction_isSelectMenu'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isSelectMenu of %1",
+      "message0": "is selectmenu of %1",
       "args0": [
         {
           "type": "input_value",

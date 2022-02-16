@@ -38,7 +38,11 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
     '<block type="message_webhookID" id="message_webhookID"></block>' +
     '<block type="message_edits" id="message_edits"></block>' +
     '<block type="message_embeds" id="message_embeds"></block>' +
+    '<block type="message_components" id="message_components"></block>' +
+    '<block type="message_attachments" id="message_attachments"></block>' +
+    '<block type="message_stickers" id="message_stickers"></block>' +
     '<block type="message_reactions" id="message_reactions"></block>' +
+    '<block type="message_interaction" id="message_interaction"></block>' +
     '<block type="message_removereactions" id="message_removereactions"></block>' +
     '<block type="message_reactionsresolve" id="message_reactionsresolve"></block>' +
     '<block type="message_reactionsresolveid" id="message_reactionsresolveid"></block>' +
@@ -101,18 +105,7 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
           '<field name="TEXT">Hello word !</field>' +
         '</shadow>' +
       '</value></block>' +
-    '<block type="message_delete" id="message_delete">' +
-      '<value name="TIMEOUT">' +
-        '<shadow type="math_number">' +
-          '<field name="NUM"></field>' +
-        '</shadow>' +
-      '</value>' +
-      '<value name="REASON">' +
-        '<shadow type="text">' +
-          '<field name="TEXT">Important</field>' +
-        '</shadow>' +
-      '</value>' +
-    '</block>' +
+    '<block type="message_delete" id="message_delete"></block>' +
     '<block type="message_react" id="message_react">' +
       '<value name="REACTION">' +
         '<shadow type="message_reaction">' +
@@ -134,12 +127,34 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
         '</shadow>' +
       '</value>' +
     '</block>' +
+    '<block type="message_resolveComponent" id="message_resolveComponent">' +
+      '<value name="CUSTOMID">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">id</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="message_startThread" id="message_startThread"></block>' +
     '<block type="message_crosspost" id="message_crosspost"></block>' +
     '<block type="message_suppressembeds" id="message_suppressembeds"></block>' +
-  '</category>' +
-  '<category name="%{BKY_CATEGORY_CLIENT}" id="client" colour="#4C97FF" secondaryColour="#3373CC">' +
+    '<block type="message_removeAttachments" id="message_removeAttachments"></block>' +
+    '<block type="message_createReactionCollector" id="message_createReactionCollector"></block>' +
+    '<block type="message_awaitReactions" id="message_awaitReactions"></block>' +
+    '<block type="message_createMessageComponentCollector" id="message_createMessageComponentCollector"></block>' +
+    '<block type="message_awaitMessageComponent" id="message_awaitMessageComponent"></block>' +
+    '<block type="message_fetchReference" id="message_fetchReference"></block>' +
+    '<block type="message_fetch" id="message_fetch"></block>' +
   '</category>' +
   '<category name="%{BKY_CATEGORY_USER}" id="user" colour="#4C97FF" secondaryColour="#3373CC">' +
+    '<block type="user_createdm" id="user_createdm"></block>' +
+    '<block type="user_deletedm" id="user_deletedm"></block>' +
+    '<block type="user_send" id="user_send">' +
+      '<value name="MESSAGE">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">message</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
   '</category>' +
   '<category name="%{BKY_CATEGORY_CHANNEL}" id="channel" colour="#4C97FF" secondaryColour="#3373CC">' +
     // '<block type="channel_send" id="channel_send">' +
@@ -154,11 +169,68 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
     // '</block>' +
   '</category>' +
   '<category name="%{BKY_CATEGORY_GUILD}" id="guild" colour="#4C97FF" secondaryColour="#3373CC">' +
-    // '<block type="guild_systemchannel" id="guild_systemchannel">' +
-    //   '<value name="GUILD">' +
-    //     '<block type="event_variables"></block>' +
-    //   '</value>' +
-    // '</block>' +
+    '<block type="guild_createguild" id="guild_createguild">' +
+      '<value name="NAME">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">name</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="guild_createcommand" id="guild_createcommand"></block>' +
+    '<block type="guild_createcommandforguild" id="guild_createcommandforguild">' +
+      '<value name="GUILDID">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">guild id</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="guild_deletecommand" id="guild_deletecommand">' +
+      '<value name="COMMAND">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">id</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="guild_deletecommandforguild" id="guild_deletecommandforguild">' +
+      '<value name="COMMAND">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">id</field>' +
+        '</shadow>' +
+      '</value>' +
+      '<value name="GUILDID">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">id</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="guild_editcommand" id="guild_editcommand">' +
+      '<value name="COMMAND">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">id</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="guild_editcommandforguild" id="guild_editcommandforguild">' +
+      '<value name="COMMAND">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">id</field>' +
+        '</shadow>' +
+      '</value>' +
+      '<value name="GUILDID">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">id</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="guild_setcommands" id="guild_setcommands"></block>' +
+    '<block type="guild_setcommandsforguild" id="guild_setcommandsforguild">' +
+      '<value name="GUILDID">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">guild id</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="guild_systemchannel" id="guild_systemchannel"></block>' +
   '</category>' +
   '<category name="%{BKY_CATEGORY_MEMBER}" id="member" colour="#4C97FF" secondaryColour="#3373CC">' +
   '</category>' +
@@ -300,6 +372,7 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
       '</value>' +
     '</block>' +
     '<block type="sensing_bot" id="sensing_bot"></block>' +
+    '<block type="sensing_user" id="sensing_user"></block>' +
     '<block type="sensing_then" id="sensing_then">' +
       '<value name="OBJECT">' +
         '<block type="sensing_thenobject"></block>' +
@@ -308,9 +381,9 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
         '<block type="sensing_catcherror"></block>' +
       '</value>' +
     '</block>' +
-    '<block type="sensing_getwithid" id="sensing_getwithid">' +
+    '<block type="sensing_fetch" id="sensing_fetch">' +
       '<value name="GETOBJECT">' +
-        '<block type="sensing_getwithidobject"></block>' +
+        '<block type="sensing_fetchobject"></block>' +
       '</value>' +
       '<value name="ID">' +
         '<shadow type="text">' +
@@ -326,6 +399,41 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
         '<block type="sensing_bot"></block>' +
       '</value>' +
     '</block>' +
+    '<block type="sensing_readyAt" id="sensing_readyAt"></block>' +
+    '<block type="sensing_readyTimestamp" id="sensing_readyTimestamp"></block>' +
+    '<block type="sensing_options" id="sensing_options"></block>' +
+    '<block type="sensing_isReady" id="sensing_isReady"></block>' +
+    // '<block type="sensing_fetchInvite" id="sensing_fetchInvite">' +
+    //   '<value name="GETOBJECT">' +
+    //     '<block type="sensing_fetchobject"></block>' +
+    //   '</value>' +
+    //   '<value name="INVITE">' +
+    //     '<shadow type="text">' +
+    //       '<field name="TEXT">https://discord.gg/invite</field>' +
+    //     '</shadow>' +
+    //   '</value>' +
+    // '</block>' +
+    // '<block type="sensing_fetchGuildTemplate" id="sensing_fetchGuildTemplate">' +
+    //   '<value name="GETOBJECT">' +
+    //     '<block type="sensing_fetchobject"></block>' +
+    //   '</value>' +
+    //   '<value name="TEMPLATE">' +
+    //     '<shadow type="text">' +
+    //       '<field name="TEXT">https://discord.gg/template</field>' +
+    //     '</shadow>' +
+    //   '</value>' +
+    // '</block>' +
+    // '<block type="sensing_fetchWebhook" id="sensing_fetchWebhook">' +
+    //   '<value name="GETOBJECT">' +
+    //     '<block type="sensing_fetchobject"></block>' +
+    //   '</value>' +
+    //   '<value name="ID">' +
+    //     '<shadow type="text">' +
+    //       '<field name="TEXT">id</field>' +
+    //     '</shadow>' +
+    //   '</value>' +
+    // '</block>' +
+    '<block type="sensing_generateInvite" id="sensing_generateInvite"></block>' +
     '<block type="sensing_resetdatetonow" id="sensing_resetdatetonow"></block>' +
     '<block type="sensing_resetdate" id="sensing_resetdate">' +
       '<value name="VALUE">' +
@@ -343,8 +451,6 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
     '</block>' +
     '<block type="sensing_getdate" id="sensing_getdate"></block>' +
     '<block type="sensing_current" id="sensing_current"></block>' +
-    '<block type="sensing_username" id="sensing_username"></block>' +
-    '<block type="sensing_userid" id="sensing_userid"></block>' +
   '</category>' +
   '<category name="%{BKY_CATEGORY_OPERATORS}" id="operators" colour="#40BF4A" secondaryColour="#389438">' +
     '<block type="operator_add" id="operator_add">' +

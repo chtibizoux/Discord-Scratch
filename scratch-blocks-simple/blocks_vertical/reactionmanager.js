@@ -77,7 +77,7 @@ Blockly.Blocks['reactionmanager_resolve'] = {
 Blockly.Blocks['reactionmanager_resolveId'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveId of %1 reaction: %2",
+      "message0": "resolve id of %1 reaction: %2",
       "args0": [
         {
           "type": "input_value",
@@ -97,7 +97,7 @@ Blockly.Blocks['reactionmanager_resolveId'] = {
 Blockly.Blocks['reactionmanager_removeAll'] = {
   init: function() {
     this.jsonInit({
-      "message0": "removeAll of %1",
+      "message0": "remove all of %1",
       "args0": [
         {
           "type": "input_value",

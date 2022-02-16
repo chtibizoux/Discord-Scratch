@@ -6,10 +6,10 @@ goog.require('Blockly.Blocks');
 goog.require('Blockly.Colours');
 goog.require('Blockly.constants');
 goog.require('Blockly.ScratchBlocks.VerticalExtensions');
-Blockly.Blocks['guildauditlogsentry_targetType'] = {
+Blockly.Blocks['guildauditlogsentry_targettype'] = {
   init: function() {
     this.jsonInit({
-      "message0": "targetType of %1",
+      "message0": "target type of %1",
       "args0": [
         {
           "type": "input_value",
@@ -22,10 +22,10 @@ Blockly.Blocks['guildauditlogsentry_targetType'] = {
   }
 };
 
-Blockly.Blocks['guildauditlogsentry_actionType'] = {
+Blockly.Blocks['guildauditlogsentry_actiontype'] = {
   init: function() {
     this.jsonInit({
-      "message0": "actionType of %1",
+      "message0": "action type of %1",
       "args0": [
         {
           "type": "input_value",
@@ -150,10 +150,10 @@ Blockly.Blocks['guildauditlogsentry_target'] = {
   }
 };
 
-Blockly.Blocks['guildauditlogsentry_createdTimestamp'] = {
+Blockly.Blocks['guildauditlogsentry_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -166,10 +166,10 @@ Blockly.Blocks['guildauditlogsentry_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['guildauditlogsentry_createdAt'] = {
+Blockly.Blocks['guildauditlogsentry_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",

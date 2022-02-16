@@ -151,10 +151,10 @@ Blockly.Blocks['collector_next'] = {
   }
 };
 
-Blockly.Blocks['collector_endReason'] = {
+Blockly.Blocks['collector_endreason'] = {
   init: function() {
     this.jsonInit({
-      "message0": "endReason of %1",
+      "message0": "end reason of %1",
       "args0": [
         {
           "type": "input_value",
@@ -170,7 +170,7 @@ Blockly.Blocks['collector_endReason'] = {
 Blockly.Blocks['collector_handleCollect'] = {
   init: function() {
     this.jsonInit({
-      "message0": "handleCollect of %1 args: %2",
+      "message0": "handle collect of %1 args: %2",
       "args0": [
         {
           "type": "input_value",
@@ -190,7 +190,7 @@ Blockly.Blocks['collector_handleCollect'] = {
 Blockly.Blocks['collector_handleDispose'] = {
   init: function() {
     this.jsonInit({
-      "message0": "handleDispose of %1 args: %2",
+      "message0": "handle dispose of %1 args: %2",
       "args0": [
         {
           "type": "input_value",
@@ -230,7 +230,7 @@ Blockly.Blocks['collector_stop'] = {
 Blockly.Blocks['collector_resetTimer'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resetTimer of %1 options: %2",
+      "message0": "reset timer of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -250,7 +250,7 @@ Blockly.Blocks['collector_resetTimer'] = {
 Blockly.Blocks['collector_checkEnd'] = {
   init: function() {
     this.jsonInit({
-      "message0": "checkEnd of %1",
+      "message0": "check end of %1",
       "args0": [
         {
           "type": "input_value",

@@ -6,10 +6,10 @@ goog.require('Blockly.Blocks');
 goog.require('Blockly.Colours');
 goog.require('Blockly.constants');
 goog.require('Blockly.ScratchBlocks.VerticalExtensions');
-Blockly.Blocks['snowflakeutil_EPOCH'] = {
+Blockly.Blocks['snowflakeutil_epoch'] = {
   init: function() {
     this.jsonInit({
-      "message0": "EPOCH of %1",
+      "message0": " epoch of %1",
       "args0": [
         {
           "type": "input_value",
@@ -65,7 +65,7 @@ Blockly.Blocks['snowflakeutil_deconstruct'] = {
 Blockly.Blocks['snowflakeutil_timestampFrom'] = {
   init: function() {
     this.jsonInit({
-      "message0": "timestampFrom of %1 snowflake: %2",
+      "message0": "timestamp from of %1 snowflake: %2",
       "args0": [
         {
           "type": "input_value",

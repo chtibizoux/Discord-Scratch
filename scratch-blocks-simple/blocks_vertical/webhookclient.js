@@ -77,10 +77,10 @@ Blockly.Blocks['webhookclient_id'] = {
   }
 };
 
-Blockly.Blocks['webhookclient_createdTimestamp'] = {
+Blockly.Blocks['webhookclient_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -93,10 +93,10 @@ Blockly.Blocks['webhookclient_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['webhookclient_createdAt'] = {
+Blockly.Blocks['webhookclient_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -164,7 +164,7 @@ Blockly.Blocks['webhookclient_send'] = {
 Blockly.Blocks['webhookclient_sendSlackMessage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sendSlackMessage of %1 body: %2",
+      "message0": "send slackmessage of %1 body: %2",
       "args0": [
         {
           "type": "input_value",
@@ -208,7 +208,7 @@ Blockly.Blocks['webhookclient_edit'] = {
 Blockly.Blocks['webhookclient_fetchMessage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchMessage of %1 message: %2 cacheOrOptions: %3",
+      "message0": "fetch message of %1 message: %2 cacheOrOptions: %3",
       "args0": [
         {
           "type": "input_value",
@@ -232,7 +232,7 @@ Blockly.Blocks['webhookclient_fetchMessage'] = {
 Blockly.Blocks['webhookclient_editMessage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "editMessage of %1 message: %2 options: %3",
+      "message0": "edit message of %1 message: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -276,7 +276,7 @@ Blockly.Blocks['webhookclient_delete'] = {
 Blockly.Blocks['webhookclient_deleteMessage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "deleteMessage of %1 message: %2 threadId: %3",
+      "message0": "delete message of %1 message: %2 threadId: %3",
       "args0": [
         {
           "type": "input_value",

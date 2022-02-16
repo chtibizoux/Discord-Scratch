@@ -22,10 +22,10 @@ Blockly.Blocks['userflags_bitfield'] = {
   }
 };
 
-Blockly.Blocks['userflags_FLAGS'] = {
+Blockly.Blocks['userflags_flags'] = {
   init: function() {
     this.jsonInit({
-      "message0": "FLAGS of %1",
+      "message0": " flags of %1",
       "args0": [
         {
           "type": "input_value",
@@ -201,7 +201,7 @@ Blockly.Blocks['userflags_serialize'] = {
 Blockly.Blocks['userflags_toArray'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toArray of %1 hasParams: %2",
+      "message0": "to array of %1 hasParams: %2",
       "args0": [
         {
           "type": "input_value",

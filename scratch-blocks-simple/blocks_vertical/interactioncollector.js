@@ -55,10 +55,10 @@ Blockly.Blocks['interactioncollector_on'] = {
   }
 };
 
-Blockly.Blocks['interactioncollector_messageId'] = {
+Blockly.Blocks['interactioncollector_messageid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "messageId of %1",
+      "message0": "message id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -71,10 +71,10 @@ Blockly.Blocks['interactioncollector_messageId'] = {
   }
 };
 
-Blockly.Blocks['interactioncollector_channelId'] = {
+Blockly.Blocks['interactioncollector_channelid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "channelId of %1",
+      "message0": "channel id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -87,10 +87,10 @@ Blockly.Blocks['interactioncollector_channelId'] = {
   }
 };
 
-Blockly.Blocks['interactioncollector_guildId'] = {
+Blockly.Blocks['interactioncollector_guildid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "guildId of %1",
+      "message0": "guild id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -103,10 +103,10 @@ Blockly.Blocks['interactioncollector_guildId'] = {
   }
 };
 
-Blockly.Blocks['interactioncollector_interactionType'] = {
+Blockly.Blocks['interactioncollector_interactiontype'] = {
   init: function() {
     this.jsonInit({
-      "message0": "interactionType of %1",
+      "message0": "interaction type of %1",
       "args0": [
         {
           "type": "input_value",
@@ -119,10 +119,10 @@ Blockly.Blocks['interactioncollector_interactionType'] = {
   }
 };
 
-Blockly.Blocks['interactioncollector_componentType'] = {
+Blockly.Blocks['interactioncollector_componenttype'] = {
   init: function() {
     this.jsonInit({
-      "message0": "componentType of %1",
+      "message0": "component type of %1",
       "args0": [
         {
           "type": "input_value",
@@ -167,10 +167,10 @@ Blockly.Blocks['interactioncollector_total'] = {
   }
 };
 
-Blockly.Blocks['interactioncollector_endReason'] = {
+Blockly.Blocks['interactioncollector_endreason'] = {
   init: function() {
     this.jsonInit({
-      "message0": "endReason of %1",
+      "message0": "end reason of %1",
       "args0": [
         {
           "type": "input_value",
@@ -318,7 +318,7 @@ Blockly.Blocks['interactioncollector_empty'] = {
 Blockly.Blocks['interactioncollector_handleCollect'] = {
   init: function() {
     this.jsonInit({
-      "message0": "handleCollect of %1 args: %2",
+      "message0": "handle collect of %1 args: %2",
       "args0": [
         {
           "type": "input_value",
@@ -338,7 +338,7 @@ Blockly.Blocks['interactioncollector_handleCollect'] = {
 Blockly.Blocks['interactioncollector_handleDispose'] = {
   init: function() {
     this.jsonInit({
-      "message0": "handleDispose of %1 args: %2",
+      "message0": "handle dispose of %1 args: %2",
       "args0": [
         {
           "type": "input_value",
@@ -378,7 +378,7 @@ Blockly.Blocks['interactioncollector_stop'] = {
 Blockly.Blocks['interactioncollector_resetTimer'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resetTimer of %1 options: %2",
+      "message0": "reset timer of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -398,7 +398,7 @@ Blockly.Blocks['interactioncollector_resetTimer'] = {
 Blockly.Blocks['interactioncollector_checkEnd'] = {
   init: function() {
     this.jsonInit({
-      "message0": "checkEnd of %1",
+      "message0": "check end of %1",
       "args0": [
         {
           "type": "input_value",

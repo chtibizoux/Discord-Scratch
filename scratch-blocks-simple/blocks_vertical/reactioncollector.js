@@ -109,10 +109,10 @@ Blockly.Blocks['reactioncollector_total'] = {
   }
 };
 
-Blockly.Blocks['reactioncollector_endReason'] = {
+Blockly.Blocks['reactioncollector_endreason'] = {
   init: function() {
     this.jsonInit({
-      "message0": "endReason of %1",
+      "message0": "end reason of %1",
       "args0": [
         {
           "type": "input_value",
@@ -264,7 +264,7 @@ Blockly.Blocks['reactioncollector_empty'] = {
 Blockly.Blocks['reactioncollector_handleCollect'] = {
   init: function() {
     this.jsonInit({
-      "message0": "handleCollect of %1 args: %2",
+      "message0": "handle collect of %1 args: %2",
       "args0": [
         {
           "type": "input_value",
@@ -284,7 +284,7 @@ Blockly.Blocks['reactioncollector_handleCollect'] = {
 Blockly.Blocks['reactioncollector_handleDispose'] = {
   init: function() {
     this.jsonInit({
-      "message0": "handleDispose of %1 args: %2",
+      "message0": "handle dispose of %1 args: %2",
       "args0": [
         {
           "type": "input_value",
@@ -324,7 +324,7 @@ Blockly.Blocks['reactioncollector_stop'] = {
 Blockly.Blocks['reactioncollector_resetTimer'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resetTimer of %1 options: %2",
+      "message0": "reset timer of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -344,7 +344,7 @@ Blockly.Blocks['reactioncollector_resetTimer'] = {
 Blockly.Blocks['reactioncollector_checkEnd'] = {
   init: function() {
     this.jsonInit({
-      "message0": "checkEnd of %1",
+      "message0": "check end of %1",
       "args0": [
         {
           "type": "input_value",

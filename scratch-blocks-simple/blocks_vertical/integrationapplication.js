@@ -22,10 +22,10 @@ Blockly.Blocks['integrationapplication_bot'] = {
   }
 };
 
-Blockly.Blocks['integrationapplication_termsOfServiceURL'] = {
+Blockly.Blocks['integrationapplication_termsofserviceurl'] = {
   init: function() {
     this.jsonInit({
-      "message0": "termsOfServiceURL of %1",
+      "message0": "terms ofserviceurl of %1",
       "args0": [
         {
           "type": "input_value",
@@ -38,10 +38,10 @@ Blockly.Blocks['integrationapplication_termsOfServiceURL'] = {
   }
 };
 
-Blockly.Blocks['integrationapplication_privacyPolicyURL'] = {
+Blockly.Blocks['integrationapplication_privacypolicyurl'] = {
   init: function() {
     this.jsonInit({
-      "message0": "privacyPolicyURL of %1",
+      "message0": "privacy policyurl of %1",
       "args0": [
         {
           "type": "input_value",
@@ -54,10 +54,10 @@ Blockly.Blocks['integrationapplication_privacyPolicyURL'] = {
   }
 };
 
-Blockly.Blocks['integrationapplication_rpcOrigins'] = {
+Blockly.Blocks['integrationapplication_rpcorigins'] = {
   init: function() {
     this.jsonInit({
-      "message0": "rpcOrigins of %1",
+      "message0": "rpc origins of %1",
       "args0": [
         {
           "type": "input_value",
@@ -118,10 +118,10 @@ Blockly.Blocks['integrationapplication_cover'] = {
   }
 };
 
-Blockly.Blocks['integrationapplication_verifyKey'] = {
+Blockly.Blocks['integrationapplication_verifykey'] = {
   init: function() {
     this.jsonInit({
-      "message0": "verifyKey of %1",
+      "message0": "verify key of %1",
       "args0": [
         {
           "type": "input_value",
@@ -198,10 +198,10 @@ Blockly.Blocks['integrationapplication_icon'] = {
   }
 };
 
-Blockly.Blocks['integrationapplication_createdTimestamp'] = {
+Blockly.Blocks['integrationapplication_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -214,10 +214,10 @@ Blockly.Blocks['integrationapplication_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['integrationapplication_createdAt'] = {
+Blockly.Blocks['integrationapplication_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -233,7 +233,7 @@ Blockly.Blocks['integrationapplication_createdAt'] = {
 Blockly.Blocks['integrationapplication_iconURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "iconURL of %1 options: %2",
+      "message0": "icon url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -253,7 +253,7 @@ Blockly.Blocks['integrationapplication_iconURL'] = {
 Blockly.Blocks['integrationapplication_coverURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "coverURL of %1 options: %2",
+      "message0": "cover url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -273,7 +273,7 @@ Blockly.Blocks['integrationapplication_coverURL'] = {
 Blockly.Blocks['integrationapplication_fetchAssets'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchAssets of %1",
+      "message0": "fetch assets of %1",
       "args0": [
         {
           "type": "input_value",
@@ -289,7 +289,7 @@ Blockly.Blocks['integrationapplication_fetchAssets'] = {
 Blockly.Blocks['integrationapplication_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",

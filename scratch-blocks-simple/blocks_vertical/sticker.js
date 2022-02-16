@@ -86,10 +86,10 @@ Blockly.Blocks['sticker_name'] = {
   }
 };
 
-Blockly.Blocks['sticker_packId'] = {
+Blockly.Blocks['sticker_packid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "packId of %1",
+      "message0": "pack id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -134,10 +134,10 @@ Blockly.Blocks['sticker_available'] = {
   }
 };
 
-Blockly.Blocks['sticker_guildId'] = {
+Blockly.Blocks['sticker_guildid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "guildId of %1",
+      "message0": "guild id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -166,10 +166,10 @@ Blockly.Blocks['sticker_user'] = {
   }
 };
 
-Blockly.Blocks['sticker_sortValue'] = {
+Blockly.Blocks['sticker_sortvalue'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sortValue of %1",
+      "message0": "sort value of %1",
       "args0": [
         {
           "type": "input_value",
@@ -182,10 +182,10 @@ Blockly.Blocks['sticker_sortValue'] = {
   }
 };
 
-Blockly.Blocks['sticker_createdTimestamp'] = {
+Blockly.Blocks['sticker_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -198,10 +198,10 @@ Blockly.Blocks['sticker_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['sticker_createdAt'] = {
+Blockly.Blocks['sticker_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -297,7 +297,7 @@ Blockly.Blocks['sticker_fetch'] = {
 Blockly.Blocks['sticker_fetchPack'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchPack of %1",
+      "message0": "fetch pack of %1",
       "args0": [
         {
           "type": "input_value",
@@ -313,7 +313,7 @@ Blockly.Blocks['sticker_fetchPack'] = {
 Blockly.Blocks['sticker_fetchUser'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchUser of %1",
+      "message0": "fetch user of %1",
       "args0": [
         {
           "type": "input_value",

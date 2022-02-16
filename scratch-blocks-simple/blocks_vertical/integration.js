@@ -118,10 +118,10 @@ Blockly.Blocks['integration_role'] = {
   }
 };
 
-Blockly.Blocks['integration_enableEmoticons'] = {
+Blockly.Blocks['integration_enableemoticons'] = {
   init: function() {
     this.jsonInit({
-      "message0": "enableEmoticons of %1",
+      "message0": "enable emoticons of %1",
       "args0": [
         {
           "type": "input_value",
@@ -166,10 +166,10 @@ Blockly.Blocks['integration_account'] = {
   }
 };
 
-Blockly.Blocks['integration_syncedAt'] = {
+Blockly.Blocks['integration_syncedat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "syncedAt of %1",
+      "message0": "synced at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -182,10 +182,10 @@ Blockly.Blocks['integration_syncedAt'] = {
   }
 };
 
-Blockly.Blocks['integration_subscriberCount'] = {
+Blockly.Blocks['integration_subscribercount'] = {
   init: function() {
     this.jsonInit({
-      "message0": "subscriberCount of %1",
+      "message0": "subscriber count of %1",
       "args0": [
         {
           "type": "input_value",
@@ -230,10 +230,10 @@ Blockly.Blocks['integration_roles'] = {
   }
 };
 
-Blockly.Blocks['integration_expireBehavior'] = {
+Blockly.Blocks['integration_expirebehavior'] = {
   init: function() {
     this.jsonInit({
-      "message0": "expireBehavior of %1",
+      "message0": "expire behavior of %1",
       "args0": [
         {
           "type": "input_value",
@@ -246,10 +246,10 @@ Blockly.Blocks['integration_expireBehavior'] = {
   }
 };
 
-Blockly.Blocks['integration_expireGracePeriod'] = {
+Blockly.Blocks['integration_expiregraceperiod'] = {
   init: function() {
     this.jsonInit({
-      "message0": "expireGracePeriod of %1",
+      "message0": "expire graceperiod of %1",
       "args0": [
         {
           "type": "input_value",

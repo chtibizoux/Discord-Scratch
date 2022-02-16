@@ -54,10 +54,10 @@ Blockly.Blocks['discordapierror_code'] = {
   }
 };
 
-Blockly.Blocks['discordapierror_httpStatus'] = {
+Blockly.Blocks['discordapierror_httpstatus'] = {
   init: function() {
     this.jsonInit({
-      "message0": "httpStatus of %1",
+      "message0": "http status of %1",
       "args0": [
         {
           "type": "input_value",
@@ -70,10 +70,10 @@ Blockly.Blocks['discordapierror_httpStatus'] = {
   }
 };
 
-Blockly.Blocks['discordapierror_requestData'] = {
+Blockly.Blocks['discordapierror_requestdata'] = {
   init: function() {
     this.jsonInit({
-      "message0": "requestData of %1",
+      "message0": "request data of %1",
       "args0": [
         {
           "type": "input_value",

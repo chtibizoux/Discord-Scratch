@@ -22,10 +22,10 @@ Blockly.Blocks['stageinstance_id'] = {
   }
 };
 
-Blockly.Blocks['stageinstance_guildId'] = {
+Blockly.Blocks['stageinstance_guildid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "guildId of %1",
+      "message0": "guild id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -38,10 +38,10 @@ Blockly.Blocks['stageinstance_guildId'] = {
   }
 };
 
-Blockly.Blocks['stageinstance_channelId'] = {
+Blockly.Blocks['stageinstance_channelid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "channelId of %1",
+      "message0": "channel id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -70,10 +70,10 @@ Blockly.Blocks['stageinstance_topic'] = {
   }
 };
 
-Blockly.Blocks['stageinstance_privacyLevel'] = {
+Blockly.Blocks['stageinstance_privacylevel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "privacyLevel of %1",
+      "message0": "privacy level of %1",
       "args0": [
         {
           "type": "input_value",
@@ -86,10 +86,10 @@ Blockly.Blocks['stageinstance_privacyLevel'] = {
   }
 };
 
-Blockly.Blocks['stageinstance_discoverableDisabled'] = {
+Blockly.Blocks['stageinstance_discoverabledisabled'] = {
   init: function() {
     this.jsonInit({
-      "message0": "discoverableDisabled of %1",
+      "message0": "discoverable disabled of %1",
       "args0": [
         {
           "type": "input_value",
@@ -134,10 +134,10 @@ Blockly.Blocks['stageinstance_guild'] = {
   }
 };
 
-Blockly.Blocks['stageinstance_createdTimestamp'] = {
+Blockly.Blocks['stageinstance_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -150,10 +150,10 @@ Blockly.Blocks['stageinstance_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['stageinstance_createdAt'] = {
+Blockly.Blocks['stageinstance_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -221,7 +221,7 @@ Blockly.Blocks['stageinstance_delete'] = {
 Blockly.Blocks['stageinstance_setTopic'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setTopic of %1 topic: %2",
+      "message0": "set topic of %1 topic: %2",
       "args0": [
         {
           "type": "input_value",

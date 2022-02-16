@@ -38,10 +38,10 @@ Blockly.Blocks['widget_name'] = {
   }
 };
 
-Blockly.Blocks['widget_instantInvite'] = {
+Blockly.Blocks['widget_instantinvite'] = {
   init: function() {
     this.jsonInit({
-      "message0": "instantInvite of %1",
+      "message0": "instant invite of %1",
       "args0": [
         {
           "type": "input_value",
@@ -86,10 +86,10 @@ Blockly.Blocks['widget_members'] = {
   }
 };
 
-Blockly.Blocks['widget_presenceCount'] = {
+Blockly.Blocks['widget_presencecount'] = {
   init: function() {
     this.jsonInit({
-      "message0": "presenceCount of %1",
+      "message0": "presence count of %1",
       "args0": [
         {
           "type": "input_value",

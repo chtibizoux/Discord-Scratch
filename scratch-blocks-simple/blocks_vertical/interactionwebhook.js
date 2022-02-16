@@ -77,7 +77,7 @@ Blockly.Blocks['interactionwebhook_send'] = {
 Blockly.Blocks['interactionwebhook_fetchMessage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchMessage of %1 message: %2 cacheOrOptions: %3",
+      "message0": "fetch message of %1 message: %2 cacheOrOptions: %3",
       "args0": [
         {
           "type": "input_value",
@@ -101,7 +101,7 @@ Blockly.Blocks['interactionwebhook_fetchMessage'] = {
 Blockly.Blocks['interactionwebhook_editMessage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "editMessage of %1 message: %2 options: %3",
+      "message0": "edit message of %1 message: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -125,7 +125,7 @@ Blockly.Blocks['interactionwebhook_editMessage'] = {
 Blockly.Blocks['interactionwebhook_deleteMessage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "deleteMessage of %1 message: %2 threadId: %3",
+      "message0": "delete message of %1 message: %2 threadId: %3",
       "args0": [
         {
           "type": "input_value",

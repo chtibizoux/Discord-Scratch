@@ -102,10 +102,10 @@ Blockly.Blocks['activity_state'] = {
   }
 };
 
-Blockly.Blocks['activity_applicationId'] = {
+Blockly.Blocks['activity_applicationid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "applicationId of %1",
+      "message0": "application id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -134,10 +134,10 @@ Blockly.Blocks['activity_timestamps'] = {
   }
 };
 
-Blockly.Blocks['activity_syncId'] = {
+Blockly.Blocks['activity_syncid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "syncId of %1",
+      "message0": "sync id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -230,10 +230,10 @@ Blockly.Blocks['activity_emoji'] = {
   }
 };
 
-Blockly.Blocks['activity_sessionId'] = {
+Blockly.Blocks['activity_sessionid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sessionId of %1",
+      "message0": "session id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -262,10 +262,10 @@ Blockly.Blocks['activity_buttons'] = {
   }
 };
 
-Blockly.Blocks['activity_createdTimestamp'] = {
+Blockly.Blocks['activity_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -278,10 +278,10 @@ Blockly.Blocks['activity_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['activity_createdAt'] = {
+Blockly.Blocks['activity_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -317,7 +317,7 @@ Blockly.Blocks['activity_equals'] = {
 Blockly.Blocks['activity_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",

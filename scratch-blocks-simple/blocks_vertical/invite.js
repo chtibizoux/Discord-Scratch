@@ -38,10 +38,10 @@ Blockly.Blocks['invite_code'] = {
   }
 };
 
-Blockly.Blocks['invite_presenceCount'] = {
+Blockly.Blocks['invite_presencecount'] = {
   init: function() {
     this.jsonInit({
-      "message0": "presenceCount of %1",
+      "message0": "presence count of %1",
       "args0": [
         {
           "type": "input_value",
@@ -54,10 +54,10 @@ Blockly.Blocks['invite_presenceCount'] = {
   }
 };
 
-Blockly.Blocks['invite_memberCount'] = {
+Blockly.Blocks['invite_membercount'] = {
   init: function() {
     this.jsonInit({
-      "message0": "memberCount of %1",
+      "message0": "member count of %1",
       "args0": [
         {
           "type": "input_value",
@@ -86,10 +86,10 @@ Blockly.Blocks['invite_temporary'] = {
   }
 };
 
-Blockly.Blocks['invite_maxAge'] = {
+Blockly.Blocks['invite_maxage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "maxAge of %1",
+      "message0": "max age of %1",
       "args0": [
         {
           "type": "input_value",
@@ -118,10 +118,10 @@ Blockly.Blocks['invite_uses'] = {
   }
 };
 
-Blockly.Blocks['invite_maxUses'] = {
+Blockly.Blocks['invite_maxuses'] = {
   init: function() {
     this.jsonInit({
-      "message0": "maxUses of %1",
+      "message0": "max uses of %1",
       "args0": [
         {
           "type": "input_value",
@@ -134,10 +134,10 @@ Blockly.Blocks['invite_maxUses'] = {
   }
 };
 
-Blockly.Blocks['invite_inviterId'] = {
+Blockly.Blocks['invite_inviterid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "inviterId of %1",
+      "message0": "inviter id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -166,10 +166,10 @@ Blockly.Blocks['invite_inviter'] = {
   }
 };
 
-Blockly.Blocks['invite_targetUser'] = {
+Blockly.Blocks['invite_targetuser'] = {
   init: function() {
     this.jsonInit({
-      "message0": "targetUser of %1",
+      "message0": "target user of %1",
       "args0": [
         {
           "type": "input_value",
@@ -182,10 +182,10 @@ Blockly.Blocks['invite_targetUser'] = {
   }
 };
 
-Blockly.Blocks['invite_targetApplication'] = {
+Blockly.Blocks['invite_targetapplication'] = {
   init: function() {
     this.jsonInit({
-      "message0": "targetApplication of %1",
+      "message0": "target application of %1",
       "args0": [
         {
           "type": "input_value",
@@ -198,10 +198,10 @@ Blockly.Blocks['invite_targetApplication'] = {
   }
 };
 
-Blockly.Blocks['invite_targetType'] = {
+Blockly.Blocks['invite_targettype'] = {
   init: function() {
     this.jsonInit({
-      "message0": "targetType of %1",
+      "message0": "target type of %1",
       "args0": [
         {
           "type": "input_value",
@@ -214,10 +214,10 @@ Blockly.Blocks['invite_targetType'] = {
   }
 };
 
-Blockly.Blocks['invite_channelId'] = {
+Blockly.Blocks['invite_channelid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "channelId of %1",
+      "message0": "channel id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -246,10 +246,10 @@ Blockly.Blocks['invite_channel'] = {
   }
 };
 
-Blockly.Blocks['invite_createdTimestamp'] = {
+Blockly.Blocks['invite_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -262,10 +262,10 @@ Blockly.Blocks['invite_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['invite_stageInstance'] = {
+Blockly.Blocks['invite_stageinstance'] = {
   init: function() {
     this.jsonInit({
-      "message0": "stageInstance of %1",
+      "message0": "stage instance of %1",
       "args0": [
         {
           "type": "input_value",
@@ -278,10 +278,10 @@ Blockly.Blocks['invite_stageInstance'] = {
   }
 };
 
-Blockly.Blocks['invite_guildScheduledEvent'] = {
+Blockly.Blocks['invite_guildscheduledevent'] = {
   init: function() {
     this.jsonInit({
-      "message0": "guildScheduledEvent of %1",
+      "message0": "guild scheduledevent of %1",
       "args0": [
         {
           "type": "input_value",
@@ -294,10 +294,10 @@ Blockly.Blocks['invite_guildScheduledEvent'] = {
   }
 };
 
-Blockly.Blocks['invite_createdAt'] = {
+Blockly.Blocks['invite_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -326,10 +326,10 @@ Blockly.Blocks['invite_deletable'] = {
   }
 };
 
-Blockly.Blocks['invite_expiresTimestamp'] = {
+Blockly.Blocks['invite_expirestimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "expiresTimestamp of %1",
+      "message0": "expires timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -342,10 +342,10 @@ Blockly.Blocks['invite_expiresTimestamp'] = {
   }
 };
 
-Blockly.Blocks['invite_expiresAt'] = {
+Blockly.Blocks['invite_expiresat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "expiresAt of %1",
+      "message0": "expires at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -390,10 +390,10 @@ Blockly.Blocks['invite_client'] = {
   }
 };
 
-Blockly.Blocks['invite_INVITES_PATTERN'] = {
+Blockly.Blocks['invite_invites_pattern'] = {
   init: function() {
     this.jsonInit({
-      "message0": "INVITES_PATTERN of %1",
+      "message0": " invites_pattern of %1",
       "args0": [
         {
           "type": "input_value",
@@ -429,7 +429,7 @@ Blockly.Blocks['invite_delete'] = {
 Blockly.Blocks['invite_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",

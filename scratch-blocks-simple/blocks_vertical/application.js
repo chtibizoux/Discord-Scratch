@@ -70,10 +70,10 @@ Blockly.Blocks['application_icon'] = {
   }
 };
 
-Blockly.Blocks['application_createdTimestamp'] = {
+Blockly.Blocks['application_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -86,10 +86,10 @@ Blockly.Blocks['application_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['application_createdAt'] = {
+Blockly.Blocks['application_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -105,7 +105,7 @@ Blockly.Blocks['application_createdAt'] = {
 Blockly.Blocks['application_iconURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "iconURL of %1 options: %2",
+      "message0": "icon url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -125,7 +125,7 @@ Blockly.Blocks['application_iconURL'] = {
 Blockly.Blocks['application_coverURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "coverURL of %1 options: %2",
+      "message0": "cover url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -145,7 +145,7 @@ Blockly.Blocks['application_coverURL'] = {
 Blockly.Blocks['application_fetchAssets'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchAssets of %1",
+      "message0": "fetch assets of %1",
       "args0": [
         {
           "type": "input_value",
@@ -161,7 +161,7 @@ Blockly.Blocks['application_fetchAssets'] = {
 Blockly.Blocks['application_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",

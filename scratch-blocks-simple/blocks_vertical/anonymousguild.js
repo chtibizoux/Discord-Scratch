@@ -54,10 +54,10 @@ Blockly.Blocks['anonymousguild_description'] = {
   }
 };
 
-Blockly.Blocks['anonymousguild_verificationLevel'] = {
+Blockly.Blocks['anonymousguild_verificationlevel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "verificationLevel of %1",
+      "message0": "verification level of %1",
       "args0": [
         {
           "type": "input_value",
@@ -70,10 +70,10 @@ Blockly.Blocks['anonymousguild_verificationLevel'] = {
   }
 };
 
-Blockly.Blocks['anonymousguild_vanityURLCode'] = {
+Blockly.Blocks['anonymousguild_vanityurlcode'] = {
   init: function() {
     this.jsonInit({
-      "message0": "vanityURLCode of %1",
+      "message0": "vanity urlcode of %1",
       "args0": [
         {
           "type": "input_value",
@@ -86,10 +86,10 @@ Blockly.Blocks['anonymousguild_vanityURLCode'] = {
   }
 };
 
-Blockly.Blocks['anonymousguild_nsfwLevel'] = {
+Blockly.Blocks['anonymousguild_nsfwlevel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "nsfwLevel of %1",
+      "message0": "nsfw level of %1",
       "args0": [
         {
           "type": "input_value",
@@ -166,10 +166,10 @@ Blockly.Blocks['anonymousguild_features'] = {
   }
 };
 
-Blockly.Blocks['anonymousguild_createdTimestamp'] = {
+Blockly.Blocks['anonymousguild_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -182,10 +182,10 @@ Blockly.Blocks['anonymousguild_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['anonymousguild_createdAt'] = {
+Blockly.Blocks['anonymousguild_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -198,10 +198,10 @@ Blockly.Blocks['anonymousguild_createdAt'] = {
   }
 };
 
-Blockly.Blocks['anonymousguild_nameAcronym'] = {
+Blockly.Blocks['anonymousguild_nameacronym'] = {
   init: function() {
     this.jsonInit({
-      "message0": "nameAcronym of %1",
+      "message0": "name acronym of %1",
       "args0": [
         {
           "type": "input_value",
@@ -265,7 +265,7 @@ Blockly.Blocks['anonymousguild_client'] = {
 Blockly.Blocks['anonymousguild_bannerURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "bannerURL of %1 options: %2",
+      "message0": "banner url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -285,7 +285,7 @@ Blockly.Blocks['anonymousguild_bannerURL'] = {
 Blockly.Blocks['anonymousguild_splashURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "splashURL of %1 options: %2",
+      "message0": "splash url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -305,7 +305,7 @@ Blockly.Blocks['anonymousguild_splashURL'] = {
 Blockly.Blocks['anonymousguild_iconURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "iconURL of %1 options: %2",
+      "message0": "icon url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -341,7 +341,7 @@ Blockly.Blocks['anonymousguild_fetch'] = {
 Blockly.Blocks['anonymousguild_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",

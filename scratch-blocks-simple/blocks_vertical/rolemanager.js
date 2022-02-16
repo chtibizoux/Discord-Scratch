@@ -54,10 +54,10 @@ Blockly.Blocks['rolemanager_everyone'] = {
   }
 };
 
-Blockly.Blocks['rolemanager_premiumSubscriberRole'] = {
+Blockly.Blocks['rolemanager_premiumsubscriberrole'] = {
   init: function() {
     this.jsonInit({
-      "message0": "premiumSubscriberRole of %1",
+      "message0": "premium subscriberrole of %1",
       "args0": [
         {
           "type": "input_value",
@@ -149,7 +149,7 @@ Blockly.Blocks['rolemanager_resolve'] = {
 Blockly.Blocks['rolemanager_resolveId'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveId of %1 role: %2",
+      "message0": "resolve id of %1 role: %2",
       "args0": [
         {
           "type": "input_value",
@@ -241,7 +241,7 @@ Blockly.Blocks['rolemanager_delete'] = {
 Blockly.Blocks['rolemanager_setPositions'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setPositions of %1 rolePositions: %2",
+      "message0": "set positions of %1 rolePositions: %2",
       "args0": [
         {
           "type": "input_value",
@@ -261,7 +261,7 @@ Blockly.Blocks['rolemanager_setPositions'] = {
 Blockly.Blocks['rolemanager_comparePositions'] = {
   init: function() {
     this.jsonInit({
-      "message0": "comparePositions of %1 role1: %2 role2: %3",
+      "message0": "compare positions of %1 role1: %2 role2: %3",
       "args0": [
         {
           "type": "input_value",
@@ -285,7 +285,7 @@ Blockly.Blocks['rolemanager_comparePositions'] = {
 Blockly.Blocks['rolemanager_botRoleFor'] = {
   init: function() {
     this.jsonInit({
-      "message0": "botRoleFor of %1 user: %2",
+      "message0": "bot rolefor of %1 user: %2",
       "args0": [
         {
           "type": "input_value",

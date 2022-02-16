@@ -22,10 +22,10 @@ Blockly.Blocks['guildchannelmanager_guild'] = {
   }
 };
 
-Blockly.Blocks['guildchannelmanager_channelCountWithoutThreads'] = {
+Blockly.Blocks['guildchannelmanager_channelcountwithoutthreads'] = {
   init: function() {
     this.jsonInit({
-      "message0": "channelCountWithoutThreads of %1",
+      "message0": "channel countwithoutthreads of %1",
       "args0": [
         {
           "type": "input_value",
@@ -93,7 +93,7 @@ Blockly.Blocks['guildchannelmanager_resolve'] = {
 Blockly.Blocks['guildchannelmanager_resolveId'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveId of %1 channel: %2",
+      "message0": "resolve id of %1 channel: %2",
       "args0": [
         {
           "type": "input_value",
@@ -161,7 +161,7 @@ Blockly.Blocks['guildchannelmanager_fetch'] = {
 Blockly.Blocks['guildchannelmanager_setPositions'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setPositions of %1 channelPositions: %2",
+      "message0": "set positions of %1 channelPositions: %2",
       "args0": [
         {
           "type": "input_value",
@@ -181,7 +181,7 @@ Blockly.Blocks['guildchannelmanager_setPositions'] = {
 Blockly.Blocks['guildchannelmanager_fetchActiveThreads'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchActiveThreads of %1 cache: %2",
+      "message0": "fetch activethreads of %1 cache: %2",
       "args0": [
         {
           "type": "input_value",

@@ -34,57 +34,77 @@ Blockly.Blocks['event_on'] = {
    */
   init: function() {
     this.appendDummyInput()
-        .appendField('on')
+      .appendField('on')
         .appendField(new Blockly.FieldDropdown([
-          ["ready", "ready"],
-          ["warn", "warn"],
-          ["debug", "debug"],
-          ["error", "error"],
-          ["message", "message"],
+          ["channelCreate", "channelCreate"],
+          ["channelDelete", "channelDelete"],
+          ["guildBanAdd", "guildBanAdd"],
+          ["guildBanRemove", "guildBanRemove"],
+          ["guildUnavailable", "guildUnavailable"],
+          ["guildDelete", "guildDelete"],
+          ["emojiCreate", "emojiCreate"],
+          ["emojiDelete", "emojiDelete"],
+          ["emojiUpdate", "emojiUpdate"],
+          ["guildIntegrationsUpdate", "guildIntegrationsUpdate"],
+          ["guildMemberRemove", "guildMemberRemove"],
+          ["guildMemberUpdate", "guildMemberUpdate"],
+          ["guildMemberAvailable", "guildMemberAvailable"],
+          ["roleCreate", "roleCreate"],
+          ["roleDelete", "roleDelete"],
+          ["roleUpdate", "roleUpdate"],
+          ["guildScheduledEventCreate", "guildScheduledEventCreate"],
+          ["guildScheduledEventDelete", "guildScheduledEventDelete"],
+          ["guildScheduledEventUpdate", "guildScheduledEventUpdate"],
+          ["guildScheduledEventUserAdd", "guildScheduledEventUserAdd"],
+          ["guildScheduledEventUserRemove", "guildScheduledEventUserRemove"],
+          ["stickerCreate", "stickerCreate"],
+          ["stickerDelete", "stickerDelete"],
+          ["stickerUpdate", "stickerUpdate"],
+          ["guildUpdate", "guildUpdate"],
+          ["interactionCreate", "interactionCreate"],
+          ["inviteCreate", "inviteCreate"],
+          ["inviteDelete", "inviteDelete"],
+          ["messageCreate", "messageCreate"],
           ["messageDelete", "messageDelete"],
           ["messageDeleteBulk", "messageDeleteBulk"],
           ["messageReactionAdd", "messageReactionAdd"],
           ["messageReactionRemove", "messageReactionRemove"],
           ["messageReactionRemoveAll", "messageReactionRemoveAll"],
           ["messageReactionRemoveEmoji", "messageReactionRemoveEmoji"],
-          ["messageUpdate", "messageUpdate"],
           ["presenceUpdate", "presenceUpdate"],
-          ["channelCreate", "channelCreate"],
-          ["channelDelete", "channelDelete"],
+          ["stageInstanceCreate", "stageInstanceCreate"],
+          ["stageInstanceDelete", "stageInstanceDelete"],
+          ["stageInstanceUpdate", "stageInstanceUpdate"],
+          ["threadCreate", "threadCreate"],
+          ["threadDelete", "threadDelete"],
+          ["threadListSync", "threadListSync"],
+          ["threadMembersUpdate", "threadMembersUpdate"],
+          ["threadMemberUpdate", "threadMemberUpdate"],
+          ["typingStart", "typingStart"],
+          ["userUpdate", "userUpdate"],
+          ["voiceStateUpdate", "voiceStateUpdate"],
+          ["webhookUpdate", "webhookUpdate"],
+          ["warn", "warn"],
           ["channelPinsUpdate", "channelPinsUpdate"],
           ["channelUpdate", "channelUpdate"],
-          ["emojiCreate", "emojiCreate"],
-          ["emojiDelete", "emojiDelete"],
-          ["emojiUpdate", "emojiUpdate"],
-          ["userUpdate", "userUpdate"],
-          ["guildBanAdd", "guildBanAdd"],
-          ["guildBanRemove", "guildBanRemove"],
           ["guildCreate", "guildCreate"],
-          ["guildDelete", "guildDelete"],
-          ["guildIntegrationsUpdate", "guildIntegrationsUpdate"],
           ["guildMemberAdd", "guildMemberAdd"],
-          ["guildMemberAvailable", "guildMemberAvailable"],
-          ["guildMemberRemove", "guildMemberRemove"],
           ["guildMembersChunk", "guildMembersChunk"],
-          ["guildMemberSpeaking", "guildMemberSpeaking"],
-          ["guildMemberUpdate", "guildMemberUpdate"],
-          ["guildUnavailable", "guildUnavailable"],
-          ["guildUpdate", "guildUpdate"],
-          ["invalidated", "invalidated"],
-          ["inviteCreate", "inviteCreate"],
-          ["inviteDelete", "inviteDelete"],
-          ["rateLimit", "rateLimit"],
-          ["roleCreate", "roleCreate"],
-          ["roleDelete", "roleDelete"],
-          ["roleUpdate", "roleUpdate"],
-          ["shardDisconnect", "shardDisconnect"],
-          ["shardError", "shardError"],
-          ["shardReady", "shardReady"],
-          ["shardReconnecting", "shardReconnecting"],
+          ["messageUpdate", "messageUpdate"],
           ["shardResume", "shardResume"],
-          ["typingStart", "typingStart"],
-          ["voiceStateUpdate", "voiceStateUpdate"],
-          ["webhookUpdate", "webhookUpdate"]
+          ["threadUpdate", "threadUpdate"],
+          ["shardReady", "shardReady"],
+          ["shardDisconnect", "shardDisconnect"],
+          ["shardReconnecting", "shardReconnecting"],
+          ["invalidated", "invalidated"],
+          ["ready", "ready"],
+          ["shardError", "shardError"],
+          ["error", "error"],
+          ["debug", "debug"],
+          ["rateLimit", "rateLimit"],
+          ["apiRequest", "apiRequest"],
+          ["apiResponse", "apiResponse"],
+          ["invalidRequestWarning", "invalidRequestWarning"],
         ]), "ACTION");
     this.appendStatementInput('DO');
     this.setColour(Blockly.Colours.event.primary);
@@ -115,9 +135,151 @@ Blockly.Blocks['event_on'] = {
       var action = this.getFieldValue("ACTION");
       switch (action) {
         case "channelCreate":
+          this.addOutputs(["channel"]);
+          break;
         case "channelDelete":
+          this.addOutputs(["channel"]);
+          break;
+        case "guildBanAdd":
+          this.addOutputs(["ban"]);
+          break;
+        case "guildBanRemove":
+          this.addOutputs(["ban"]);
+          break;
+        case "guildUnavailable":
+          this.addOutputs(["guild"]);
+          break;
+        case "guildDelete":
+          this.addOutputs(["guild"]);
+          break;
+        case "emojiCreate":
+          this.addOutputs(["emoji"]);
+          break;
+        case "emojiDelete":
+          this.addOutputs(["emoji"]);
+          break;
+        case "emojiUpdate":
+          this.addOutputs(["oldEmoji", "newEmoji"]);
+          break;
+        case "guildIntegrationsUpdate":
+          this.addOutputs(["guild"]);
+          break;
+        case "guildMemberRemove":
+          this.addOutputs(["member"]);
+          break;
+        case "guildMemberUpdate":
+          this.addOutputs(["oldMember", "newMember"]);
+          break;
+        case "guildMemberAvailable":
+          this.addOutputs(["member"]);
+          break;
+        case "roleCreate":
+          this.addOutputs(["role"]);
+          break;
+        case "roleDelete":
+          this.addOutputs(["role"]);
+          break;
+        case "roleUpdate":
+          this.addOutputs(["oldRole", "newRole"]);
+          break;
+        case "guildScheduledEventCreate":
+          this.addOutputs(["guildScheduledEvent"]);
+          break;
+        case "guildScheduledEventDelete":
+          this.addOutputs(["guildScheduledEvent"]);
+          break;
+        case "guildScheduledEventUpdate":
+          this.addOutputs(["oldGuildScheduledEvent", "newGuildScheduledEvent"]);
+          break;
+        case "guildScheduledEventUserAdd":
+          this.addOutputs(["guildScheduledEvent", "user"]);
+          break;
+        case "guildScheduledEventUserRemove":
+          this.addOutputs(["guildScheduledEvent", "user"]);
+          break;
+        case "stickerCreate":
+          this.addOutputs(["sticker"]);
+          break;
+        case "stickerDelete":
+          this.addOutputs(["sticker"]);
+          break;
+        case "stickerUpdate":
+          this.addOutputs(["oldSticker", "newSticker"]);
+          break;
+        case "guildUpdate":
+          this.addOutputs(["oldGuild", "newGuild"]);
+          break;
+        case "interactionCreate":
+          this.addOutputs(["interaction"]);
+          break;
+        case "inviteCreate":
+          this.addOutputs(["invite"]);
+          break;
+        case "inviteDelete":
+          this.addOutputs(["invite"]);
+          break;
+        case "messageCreate":
+          this.addOutputs(["message"]);
+          break;
+        case "messageDelete":
+          this.addOutputs(["message"]);
+          break;
+        case "messageDeleteBulk":
+          this.addOutputs(["messages"]);
+          break;
+        case "messageReactionAdd":
+          this.addOutputs(["messageReaction", "user"]);
+          break;
+        case "messageReactionRemove":
+          this.addOutputs(["messageReaction", "user"]);
+          break;
+        case "messageReactionRemoveAll":
+          this.addOutputs(["message", "reactions"]);
+          break;
+        case "messageReactionRemoveEmoji":
+          this.addOutputs(["reaction"]);
+          break;
+        case "presenceUpdate":
+          this.addOutputs(["oldPresence", "newPresence"]);
+          break;
+        case "stageInstanceCreate":
+          this.addOutputs(["stageInstance"]);
+          break;
+        case "stageInstanceDelete":
+          this.addOutputs(["stageInstance"]);
+          break;
+        case "stageInstanceUpdate":
+          this.addOutputs(["oldStageInstance", "newStageInstance"]);
+          break;
+        case "threadCreate":
+          this.addOutputs(["thread"]);
+          break;
+        case "threadDelete":
+          this.addOutputs(["thread"]);
+          break;
+        case "threadListSync":
+          this.addOutputs(["threads"]);
+          break;
+        case "threadMembersUpdate":
+          this.addOutputs(["oldMembers", "newMembers"]);
+          break;
+        case "threadMemberUpdate":
+          this.addOutputs(["oldMember", "newMember"]);
+          break;
+        case "typingStart":
+          this.addOutputs(["typing"]);
+          break;
+        case "userUpdate":
+          this.addOutputs(["oldUser", "newUser"]);
+          break;
+        case "voiceStateUpdate":
+          this.addOutputs(["oldState", "newState"]);
+          break;
         case "webhookUpdate":
           this.addOutputs(["channel"]);
+          break;
+        case "warn":
+          this.addOutputs(["info"]);
           break;
         case "channelPinsUpdate":
           this.addOutputs(["channel", "time"]);
@@ -125,105 +287,56 @@ Blockly.Blocks['event_on'] = {
         case "channelUpdate":
           this.addOutputs(["oldChannel", "newChannel"]);
           break;
-        case "warn":
-        case "debug":
-          this.addOutputs(["info"]);
-          break;
-        case "emojiCreate":
-        case "emojiDelete":
-          this.addOutputs(["emoji"]);
-          break;
-        case "emojiUpdate":
-          this.addOutputs(["oldEmoji", "newEmoji"]);
-          break;
-        case "error":
-          this.addOutputs(["error"]);
-          break;
-        case "guildBanAdd":
-        case "guildBanRemove":
-          this.addOutputs(["guild", "user"]);
-          break;
         case "guildCreate":
-        case "guildDelete":
-        case "guildUnavailable":
-        case "guildIntegrationsUpdate":
           this.addOutputs(["guild"]);
           break;
         case "guildMemberAdd":
-        case "guildMemberAvailable":
-        case "guildMemberRemove":
           this.addOutputs(["member"]);
           break;
         case "guildMembersChunk":
           this.addOutputs(["members", "guild", "chunk"]);
           break;
-        case "guildMemberSpeaking":
-          this.addOutputs(["member", "speaking"]);
-          break;
-        case "guildMemberUpdate":
-          this.addOutputs(["oldMember", "newMember"]);
-          break;
-        case "guildUpdate":
-          this.addOutputs(["oldGuild", "newGuild", "invalidated"]);
-          break;
-        case "inviteCreate":
-        case "inviteDelete":
-          this.addOutputs(["invite"]);
-          break;
-        case "message":
-        case "messageDelete":
-        case "messageReactionRemoveAll":
-          this.addOutputs(["message"]);
-          break;
-        case "messageDeleteBulk":
-          this.addOutputs(["messages"]);
-          break;
-        case "messageReactionAdd":
-        case "messageReactionRemove":
-          this.addOutputs(["messageReaction"]);
-          break;
-        case "messageReactionRemoveEmoji":
-          this.addOutputs(["reaction"]);
-          break;
         case "messageUpdate":
           this.addOutputs(["oldMessage", "newMessage"]);
-          break;
-        case "presenceUpdate":
-          this.addOutputs(["oldPresence", "newPresence"]);
-          break;
-        case "rateLimit":
-          this.addOutputs(["rateLimitData"]);
-          break;
-        case "roleCreate":
-        case "roleDelete":
-          this.addOutputs(["role"]);
-          break;
-        case "roleUpdate":
-          this.addOutputs(["oldRole", "newRole"]);
-          break;
-        case "shardDisconnect":
-          this.addOutputs(["event", "id"]);
-          break;
-        case "shardError":
-          this.addOutputs(["error", "shardID"]);
-          break;
-        case "shardReady":
-          this.addOutputs(["id", "unavailableGuilds"]);
-          break;
-        case "shardReconnecting":
-          this.addOutputs(["id"]);
           break;
         case "shardResume":
           this.addOutputs(["id", "replayedEvents"]);
           break;
-        case "typingStart":
-          this.addOutputs(["channel", "user"]);
+        case "threadUpdate":
+          this.addOutputs(["oldThread", "newThread"]);
           break;
-        case "userUpdate":
-          this.addOutputs(["oldUser", "newUser"]);
+        case "shardReady":
+          this.addOutputs(["id", "unavailableGuilds"]);
           break;
-        case "voiceStateUpdate":
-          this.addOutputs(["oldState", "newState"]);
+        case "shardDisconnect":
+          this.addOutputs(["event", "id"]);
+          break;
+        case "shardReconnecting":
+          this.addOutputs(["id"]);
+          break;
+        case "ready":
+          this.addOutputs(["client"]);
+          break;
+        case "shardError":
+          this.addOutputs(["error", "shardId"]);
+          break;
+        case "error":
+          this.addOutputs(["error"]);
+          break;
+        case "debug":
+          this.addOutputs(["info"]);
+          break;
+        case "rateLimit":
+          this.addOutputs(["rateLimitData"]);
+          break;
+        case "apiRequest":
+          this.addOutputs(["request"]);
+          break;
+        case "apiResponse":
+          this.addOutputs(["request", "response"]);
+          break;
+        case "invalidRequestWarning":
+          this.addOutputs(["invalidRequestWarningData"]);
           break;
       }
       this.render(true);

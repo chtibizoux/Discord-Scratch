@@ -38,10 +38,10 @@ Blockly.Blocks['welcomechannel_description'] = {
   }
 };
 
-Blockly.Blocks['welcomechannel_channelId'] = {
+Blockly.Blocks['welcomechannel_channelid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "channelId of %1",
+      "message0": "channel id of %1",
       "args0": [
         {
           "type": "input_value",

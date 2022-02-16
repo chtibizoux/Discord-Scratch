@@ -77,7 +77,7 @@ Blockly.Blocks['threadmanager_resolve'] = {
 Blockly.Blocks['threadmanager_resolveId'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveId of %1 thread: %2",
+      "message0": "resolve id of %1 thread: %2",
       "args0": [
         {
           "type": "input_value",
@@ -141,7 +141,7 @@ Blockly.Blocks['threadmanager_fetch'] = {
 Blockly.Blocks['threadmanager_fetchArchived'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchArchived of %1 options: %2 cache: %3",
+      "message0": "fetch archived of %1 options: %2 cache: %3",
       "args0": [
         {
           "type": "input_value",
@@ -165,7 +165,7 @@ Blockly.Blocks['threadmanager_fetchArchived'] = {
 Blockly.Blocks['threadmanager_fetchActive'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchActive of %1 cache: %2",
+      "message0": "fetch active of %1 cache: %2",
       "args0": [
         {
           "type": "input_value",

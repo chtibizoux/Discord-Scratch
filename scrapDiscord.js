@@ -112,10 +112,10 @@ Blockly.Blocks['${value.name.toLowerCase()}_on'] = {
           // [ 'name', 'description', 'type', 'meta', 'access', 'readonly', 'nullable', 'abstract', 'see', 'deprecated', 'props', 'scope' ]
           if (!prop.deprecated && !prop.access) {
             data += `
-Blockly.Blocks['${value.name.toLowerCase()}_${prop.name}'] = {
+Blockly.Blocks['${value.name.toLowerCase()}_${prop.name.toLowerCase()}'] = {
   init: function() {
     this.jsonInit({
-      "message0": "${prop.name} of %1",
+      "message0": "${prop.name.replace(/([A-Z])/, " $1").toLocaleLowerCase()} of %1",
       "args0": [
         {
           "type": "input_value",
@@ -129,9 +129,9 @@ Blockly.Blocks['${value.name.toLowerCase()}_${prop.name}'] = {
 };
 `;
             toolbox += `
-    '<block type="${value.name.toLowerCase()}_${prop.name}" id="${value.name.toLowerCase()}_${prop.name}"></block>' +`;
+    '<block type="${value.name.toLowerCase()}_${prop.name.toLowerCase()}" id="${value.name.toLowerCase()}_${prop.name}"></block>' +`;
             javascript += `
-Blockly.JavaScript['${value.name.toLowerCase()}_${prop.name}'] = function(block) {
+Blockly.JavaScript['${value.name.toLowerCase()}_${prop.name.toLowerCase()}'] = function(block) {
     var ${value.name.toLowerCase()} = Blockly.JavaScript.valueToCode(block, '${value.name.toUpperCase()}', Blockly.JavaScript.ORDER_NONE) || "null";
     return [${value.name.toLowerCase()} + ".${prop.name}", Blockly.JavaScript.ORDER_NONE];
 };`;
@@ -203,7 +203,7 @@ Blockly.JavaScript['${value.name.toLowerCase()}_${prop.name}'] = function(block)
 Blockly.Blocks['${value.name.toLowerCase()}_${method.name}'] = {
   init: function() {
     this.jsonInit({
-      "message0": "${method.name} of %1${paramsIDs}",
+      "message0": "${method.name.replace(/([A-Z])/, " $1").toLocaleLowerCase()} of %1${paramsIDs}",
       "args0": [
         {
           "type": "input_value",

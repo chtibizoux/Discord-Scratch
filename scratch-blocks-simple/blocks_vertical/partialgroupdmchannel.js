@@ -86,10 +86,10 @@ Blockly.Blocks['partialgroupdmchannel_id'] = {
   }
 };
 
-Blockly.Blocks['partialgroupdmchannel_createdTimestamp'] = {
+Blockly.Blocks['partialgroupdmchannel_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -102,10 +102,10 @@ Blockly.Blocks['partialgroupdmchannel_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['partialgroupdmchannel_createdAt'] = {
+Blockly.Blocks['partialgroupdmchannel_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -153,7 +153,7 @@ Blockly.Blocks['partialgroupdmchannel_client'] = {
 Blockly.Blocks['partialgroupdmchannel_iconURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "iconURL of %1 options: %2",
+      "message0": "icon url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -173,7 +173,7 @@ Blockly.Blocks['partialgroupdmchannel_iconURL'] = {
 Blockly.Blocks['partialgroupdmchannel_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",
@@ -225,7 +225,7 @@ Blockly.Blocks['partialgroupdmchannel_fetch'] = {
 Blockly.Blocks['partialgroupdmchannel_isText'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isText of %1",
+      "message0": "is text of %1",
       "args0": [
         {
           "type": "input_value",
@@ -241,7 +241,7 @@ Blockly.Blocks['partialgroupdmchannel_isText'] = {
 Blockly.Blocks['partialgroupdmchannel_isVoice'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isVoice of %1",
+      "message0": "is voice of %1",
       "args0": [
         {
           "type": "input_value",
@@ -257,7 +257,7 @@ Blockly.Blocks['partialgroupdmchannel_isVoice'] = {
 Blockly.Blocks['partialgroupdmchannel_isThread'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isThread of %1",
+      "message0": "is thread of %1",
       "args0": [
         {
           "type": "input_value",

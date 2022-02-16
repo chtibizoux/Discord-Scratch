@@ -22,10 +22,10 @@ Blockly.Blocks['commandinteraction_options'] = {
   }
 };
 
-Blockly.Blocks['commandinteraction_channelId'] = {
+Blockly.Blocks['commandinteraction_channelid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "channelId of %1",
+      "message0": "channel id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -38,10 +38,10 @@ Blockly.Blocks['commandinteraction_channelId'] = {
   }
 };
 
-Blockly.Blocks['commandinteraction_commandId'] = {
+Blockly.Blocks['commandinteraction_commandid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "commandId of %1",
+      "message0": "command id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -54,10 +54,10 @@ Blockly.Blocks['commandinteraction_commandId'] = {
   }
 };
 
-Blockly.Blocks['commandinteraction_commandName'] = {
+Blockly.Blocks['commandinteraction_commandname'] = {
   init: function() {
     this.jsonInit({
-      "message0": "commandName of %1",
+      "message0": "command name of %1",
       "args0": [
         {
           "type": "input_value",
@@ -198,10 +198,10 @@ Blockly.Blocks['commandinteraction_token'] = {
   }
 };
 
-Blockly.Blocks['commandinteraction_applicationId'] = {
+Blockly.Blocks['commandinteraction_applicationid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "applicationId of %1",
+      "message0": "application id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -214,10 +214,10 @@ Blockly.Blocks['commandinteraction_applicationId'] = {
   }
 };
 
-Blockly.Blocks['commandinteraction_guildId'] = {
+Blockly.Blocks['commandinteraction_guildid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "guildId of %1",
+      "message0": "guild id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -278,10 +278,10 @@ Blockly.Blocks['commandinteraction_version'] = {
   }
 };
 
-Blockly.Blocks['commandinteraction_memberPermissions'] = {
+Blockly.Blocks['commandinteraction_memberpermissions'] = {
   init: function() {
     this.jsonInit({
-      "message0": "memberPermissions of %1",
+      "message0": "member permissions of %1",
       "args0": [
         {
           "type": "input_value",
@@ -310,10 +310,10 @@ Blockly.Blocks['commandinteraction_locale'] = {
   }
 };
 
-Blockly.Blocks['commandinteraction_guildLocale'] = {
+Blockly.Blocks['commandinteraction_guildlocale'] = {
   init: function() {
     this.jsonInit({
-      "message0": "guildLocale of %1",
+      "message0": "guild locale of %1",
       "args0": [
         {
           "type": "input_value",
@@ -326,10 +326,10 @@ Blockly.Blocks['commandinteraction_guildLocale'] = {
   }
 };
 
-Blockly.Blocks['commandinteraction_createdTimestamp'] = {
+Blockly.Blocks['commandinteraction_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -342,10 +342,10 @@ Blockly.Blocks['commandinteraction_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['commandinteraction_createdAt'] = {
+Blockly.Blocks['commandinteraction_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -409,7 +409,7 @@ Blockly.Blocks['commandinteraction_client'] = {
 Blockly.Blocks['commandinteraction_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",
@@ -425,7 +425,7 @@ Blockly.Blocks['commandinteraction_toString'] = {
 Blockly.Blocks['commandinteraction_deferReply'] = {
   init: function() {
     this.jsonInit({
-      "message0": "deferReply of %1 options: %2",
+      "message0": "defer reply of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -465,7 +465,7 @@ Blockly.Blocks['commandinteraction_reply'] = {
 Blockly.Blocks['commandinteraction_fetchReply'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchReply of %1",
+      "message0": "fetch reply of %1",
       "args0": [
         {
           "type": "input_value",
@@ -481,7 +481,7 @@ Blockly.Blocks['commandinteraction_fetchReply'] = {
 Blockly.Blocks['commandinteraction_editReply'] = {
   init: function() {
     this.jsonInit({
-      "message0": "editReply of %1 options: %2",
+      "message0": "edit reply of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -501,7 +501,7 @@ Blockly.Blocks['commandinteraction_editReply'] = {
 Blockly.Blocks['commandinteraction_deleteReply'] = {
   init: function() {
     this.jsonInit({
-      "message0": "deleteReply of %1",
+      "message0": "delete reply of %1",
       "args0": [
         {
           "type": "input_value",
@@ -517,7 +517,7 @@ Blockly.Blocks['commandinteraction_deleteReply'] = {
 Blockly.Blocks['commandinteraction_followUp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "followUp of %1 options: %2",
+      "message0": "follow up of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -537,7 +537,7 @@ Blockly.Blocks['commandinteraction_followUp'] = {
 Blockly.Blocks['commandinteraction_inGuild'] = {
   init: function() {
     this.jsonInit({
-      "message0": "inGuild of %1",
+      "message0": "in guild of %1",
       "args0": [
         {
           "type": "input_value",
@@ -553,7 +553,7 @@ Blockly.Blocks['commandinteraction_inGuild'] = {
 Blockly.Blocks['commandinteraction_inCachedGuild'] = {
   init: function() {
     this.jsonInit({
-      "message0": "inCachedGuild of %1",
+      "message0": "in cachedguild of %1",
       "args0": [
         {
           "type": "input_value",
@@ -569,7 +569,7 @@ Blockly.Blocks['commandinteraction_inCachedGuild'] = {
 Blockly.Blocks['commandinteraction_inRawGuild'] = {
   init: function() {
     this.jsonInit({
-      "message0": "inRawGuild of %1",
+      "message0": "in rawguild of %1",
       "args0": [
         {
           "type": "input_value",
@@ -585,7 +585,7 @@ Blockly.Blocks['commandinteraction_inRawGuild'] = {
 Blockly.Blocks['commandinteraction_isApplicationCommand'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isApplicationCommand of %1",
+      "message0": "is applicationcommand of %1",
       "args0": [
         {
           "type": "input_value",
@@ -601,7 +601,7 @@ Blockly.Blocks['commandinteraction_isApplicationCommand'] = {
 Blockly.Blocks['commandinteraction_isCommand'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isCommand of %1",
+      "message0": "is command of %1",
       "args0": [
         {
           "type": "input_value",
@@ -617,7 +617,7 @@ Blockly.Blocks['commandinteraction_isCommand'] = {
 Blockly.Blocks['commandinteraction_isContextMenu'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isContextMenu of %1",
+      "message0": "is contextmenu of %1",
       "args0": [
         {
           "type": "input_value",
@@ -633,7 +633,7 @@ Blockly.Blocks['commandinteraction_isContextMenu'] = {
 Blockly.Blocks['commandinteraction_isUserContextMenu'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isUserContextMenu of %1",
+      "message0": "is usercontextmenu of %1",
       "args0": [
         {
           "type": "input_value",
@@ -649,7 +649,7 @@ Blockly.Blocks['commandinteraction_isUserContextMenu'] = {
 Blockly.Blocks['commandinteraction_isMessageContextMenu'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isMessageContextMenu of %1",
+      "message0": "is messagecontextmenu of %1",
       "args0": [
         {
           "type": "input_value",
@@ -665,7 +665,7 @@ Blockly.Blocks['commandinteraction_isMessageContextMenu'] = {
 Blockly.Blocks['commandinteraction_isAutocomplete'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isAutocomplete of %1",
+      "message0": "is autocomplete of %1",
       "args0": [
         {
           "type": "input_value",
@@ -681,7 +681,7 @@ Blockly.Blocks['commandinteraction_isAutocomplete'] = {
 Blockly.Blocks['commandinteraction_isMessageComponent'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isMessageComponent of %1",
+      "message0": "is messagecomponent of %1",
       "args0": [
         {
           "type": "input_value",
@@ -697,7 +697,7 @@ Blockly.Blocks['commandinteraction_isMessageComponent'] = {
 Blockly.Blocks['commandinteraction_isButton'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isButton of %1",
+      "message0": "is button of %1",
       "args0": [
         {
           "type": "input_value",
@@ -713,7 +713,7 @@ Blockly.Blocks['commandinteraction_isButton'] = {
 Blockly.Blocks['commandinteraction_isSelectMenu'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isSelectMenu of %1",
+      "message0": "is selectmenu of %1",
       "args0": [
         {
           "type": "input_value",

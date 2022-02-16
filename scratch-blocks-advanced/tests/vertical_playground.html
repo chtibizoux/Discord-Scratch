@@ -17,7 +17,6 @@
     <script src="../blocks_common/colour.js"></script>
     <script src="../blocks_vertical/channel.js"></script>
     <script src="../blocks_vertical/data.js"></script>
-    <script src="../blocks_vertical/client.js"></script>
     <script src="../blocks_vertical/collection.js"></script>
     <script src="../blocks_vertical/control.js"></script>
     <script src="../blocks_vertical/event.js"></script>
@@ -318,6 +317,8 @@
     <style>
       html, body {
         height: 100%;
+        margin: 0;
+        padding: 0;
       }
 
       body {
@@ -332,9 +333,11 @@
       }
 
       #blocklyDiv {
-        float: right;
-        height: 95%;
-        width: 70%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
       }
 
       #collaborators {
@@ -482,7 +485,6 @@
       </block>
     </xml>
 
-    <!-- Sidebar -->
     <h1>Vertical Blocks</h1>
     <p>
       <a href="javascript:void(workspace.setVisible(true))">Show</a>

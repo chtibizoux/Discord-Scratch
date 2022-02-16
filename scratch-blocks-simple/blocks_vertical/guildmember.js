@@ -22,10 +22,10 @@ Blockly.Blocks['guildmember_guild'] = {
   }
 };
 
-Blockly.Blocks['guildmember_joinedTimestamp'] = {
+Blockly.Blocks['guildmember_joinedtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "joinedTimestamp of %1",
+      "message0": "joined timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -38,10 +38,10 @@ Blockly.Blocks['guildmember_joinedTimestamp'] = {
   }
 };
 
-Blockly.Blocks['guildmember_premiumSinceTimestamp'] = {
+Blockly.Blocks['guildmember_premiumsincetimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "premiumSinceTimestamp of %1",
+      "message0": "premium sincetimestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -86,10 +86,10 @@ Blockly.Blocks['guildmember_pending'] = {
   }
 };
 
-Blockly.Blocks['guildmember_communicationDisabledUntilTimestamp'] = {
+Blockly.Blocks['guildmember_communicationdisableduntiltimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "communicationDisabledUntilTimestamp of %1",
+      "message0": "communication disableduntiltimestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -182,10 +182,10 @@ Blockly.Blocks['guildmember_voice'] = {
   }
 };
 
-Blockly.Blocks['guildmember_joinedAt'] = {
+Blockly.Blocks['guildmember_joinedat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "joinedAt of %1",
+      "message0": "joined at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -198,10 +198,10 @@ Blockly.Blocks['guildmember_joinedAt'] = {
   }
 };
 
-Blockly.Blocks['guildmember_communicationDisabledUntil'] = {
+Blockly.Blocks['guildmember_communicationdisableduntil'] = {
   init: function() {
     this.jsonInit({
-      "message0": "communicationDisabledUntil of %1",
+      "message0": "communication disableduntil of %1",
       "args0": [
         {
           "type": "input_value",
@@ -214,10 +214,10 @@ Blockly.Blocks['guildmember_communicationDisabledUntil'] = {
   }
 };
 
-Blockly.Blocks['guildmember_premiumSince'] = {
+Blockly.Blocks['guildmember_premiumsince'] = {
   init: function() {
     this.jsonInit({
-      "message0": "premiumSince of %1",
+      "message0": "premium since of %1",
       "args0": [
         {
           "type": "input_value",
@@ -246,10 +246,10 @@ Blockly.Blocks['guildmember_presence'] = {
   }
 };
 
-Blockly.Blocks['guildmember_displayColor'] = {
+Blockly.Blocks['guildmember_displaycolor'] = {
   init: function() {
     this.jsonInit({
-      "message0": "displayColor of %1",
+      "message0": "display color of %1",
       "args0": [
         {
           "type": "input_value",
@@ -262,10 +262,10 @@ Blockly.Blocks['guildmember_displayColor'] = {
   }
 };
 
-Blockly.Blocks['guildmember_displayHexColor'] = {
+Blockly.Blocks['guildmember_displayhexcolor'] = {
   init: function() {
     this.jsonInit({
-      "message0": "displayHexColor of %1",
+      "message0": "display hexcolor of %1",
       "args0": [
         {
           "type": "input_value",
@@ -294,10 +294,10 @@ Blockly.Blocks['guildmember_id'] = {
   }
 };
 
-Blockly.Blocks['guildmember_displayName'] = {
+Blockly.Blocks['guildmember_displayname'] = {
   init: function() {
     this.jsonInit({
-      "message0": "displayName of %1",
+      "message0": "display name of %1",
       "args0": [
         {
           "type": "input_value",
@@ -409,7 +409,7 @@ Blockly.Blocks['guildmember_client'] = {
 Blockly.Blocks['guildmember_avatarURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "avatarURL of %1 options: %2",
+      "message0": "avatar url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -429,7 +429,7 @@ Blockly.Blocks['guildmember_avatarURL'] = {
 Blockly.Blocks['guildmember_displayAvatarURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "displayAvatarURL of %1 options: %2",
+      "message0": "display avatarurl of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -449,7 +449,7 @@ Blockly.Blocks['guildmember_displayAvatarURL'] = {
 Blockly.Blocks['guildmember_isCommunicationDisabled'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isCommunicationDisabled of %1",
+      "message0": "is communicationdisabled of %1",
       "args0": [
         {
           "type": "input_value",
@@ -465,7 +465,7 @@ Blockly.Blocks['guildmember_isCommunicationDisabled'] = {
 Blockly.Blocks['guildmember_permissionsIn'] = {
   init: function() {
     this.jsonInit({
-      "message0": "permissionsIn of %1 channel: %2",
+      "message0": "permissions in of %1 channel: %2",
       "args0": [
         {
           "type": "input_value",
@@ -509,7 +509,7 @@ Blockly.Blocks['guildmember_edit'] = {
 Blockly.Blocks['guildmember_setNickname'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setNickname of %1 nick: %2 reason: %3",
+      "message0": "set nickname of %1 nick: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -533,7 +533,7 @@ Blockly.Blocks['guildmember_setNickname'] = {
 Blockly.Blocks['guildmember_createDM'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createDM of %1 force: %2",
+      "message0": "create dm of %1 force: %2",
       "args0": [
         {
           "type": "input_value",
@@ -553,7 +553,7 @@ Blockly.Blocks['guildmember_createDM'] = {
 Blockly.Blocks['guildmember_deleteDM'] = {
   init: function() {
     this.jsonInit({
-      "message0": "deleteDM of %1",
+      "message0": "delete dm of %1",
       "args0": [
         {
           "type": "input_value",
@@ -609,7 +609,7 @@ Blockly.Blocks['guildmember_ban'] = {
 Blockly.Blocks['guildmember_disableCommunicationUntil'] = {
   init: function() {
     this.jsonInit({
-      "message0": "disableCommunicationUntil of %1 communicationDisabledUntil: %2 reason: %3",
+      "message0": "disable communicationuntil of %1 communicationDisabledUntil: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -697,7 +697,7 @@ Blockly.Blocks['guildmember_equals'] = {
 Blockly.Blocks['guildmember_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",

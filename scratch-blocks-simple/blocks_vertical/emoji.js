@@ -86,10 +86,10 @@ Blockly.Blocks['emoji_url'] = {
   }
 };
 
-Blockly.Blocks['emoji_createdTimestamp'] = {
+Blockly.Blocks['emoji_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -102,10 +102,10 @@ Blockly.Blocks['emoji_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['emoji_createdAt'] = {
+Blockly.Blocks['emoji_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -137,7 +137,7 @@ Blockly.Blocks['emoji_client'] = {
 Blockly.Blocks['emoji_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",

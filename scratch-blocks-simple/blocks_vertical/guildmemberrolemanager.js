@@ -118,10 +118,10 @@ Blockly.Blocks['guildmemberrolemanager_highest'] = {
   }
 };
 
-Blockly.Blocks['guildmemberrolemanager_premiumSubscriberRole'] = {
+Blockly.Blocks['guildmemberrolemanager_premiumsubscriberrole'] = {
   init: function() {
     this.jsonInit({
-      "message0": "premiumSubscriberRole of %1",
+      "message0": "premium subscriberrole of %1",
       "args0": [
         {
           "type": "input_value",
@@ -134,10 +134,10 @@ Blockly.Blocks['guildmemberrolemanager_premiumSubscriberRole'] = {
   }
 };
 
-Blockly.Blocks['guildmemberrolemanager_botRole'] = {
+Blockly.Blocks['guildmemberrolemanager_botrole'] = {
   init: function() {
     this.jsonInit({
-      "message0": "botRole of %1",
+      "message0": "bot role of %1",
       "args0": [
         {
           "type": "input_value",
@@ -261,7 +261,7 @@ Blockly.Blocks['guildmemberrolemanager_resolve'] = {
 Blockly.Blocks['guildmemberrolemanager_resolveId'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveId of %1 idOrInstance: %2",
+      "message0": "resolve id of %1 idOrInstance: %2",
       "args0": [
         {
           "type": "input_value",

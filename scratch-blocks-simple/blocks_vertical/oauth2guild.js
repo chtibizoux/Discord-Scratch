@@ -102,10 +102,10 @@ Blockly.Blocks['oauth2guild_features'] = {
   }
 };
 
-Blockly.Blocks['oauth2guild_createdTimestamp'] = {
+Blockly.Blocks['oauth2guild_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -118,10 +118,10 @@ Blockly.Blocks['oauth2guild_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['oauth2guild_createdAt'] = {
+Blockly.Blocks['oauth2guild_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -134,10 +134,10 @@ Blockly.Blocks['oauth2guild_createdAt'] = {
   }
 };
 
-Blockly.Blocks['oauth2guild_nameAcronym'] = {
+Blockly.Blocks['oauth2guild_nameacronym'] = {
   init: function() {
     this.jsonInit({
-      "message0": "nameAcronym of %1",
+      "message0": "name acronym of %1",
       "args0": [
         {
           "type": "input_value",
@@ -201,7 +201,7 @@ Blockly.Blocks['oauth2guild_client'] = {
 Blockly.Blocks['oauth2guild_iconURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "iconURL of %1 options: %2",
+      "message0": "icon url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -237,7 +237,7 @@ Blockly.Blocks['oauth2guild_fetch'] = {
 Blockly.Blocks['oauth2guild_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",

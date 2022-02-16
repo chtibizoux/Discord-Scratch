@@ -54,10 +54,10 @@ Blockly.Blocks['messagementions_roles'] = {
   }
 };
 
-Blockly.Blocks['messagementions_crosspostedChannels'] = {
+Blockly.Blocks['messagementions_crosspostedchannels'] = {
   init: function() {
     this.jsonInit({
-      "message0": "crosspostedChannels of %1",
+      "message0": "crossposted channels of %1",
       "args0": [
         {
           "type": "input_value",
@@ -70,10 +70,10 @@ Blockly.Blocks['messagementions_crosspostedChannels'] = {
   }
 };
 
-Blockly.Blocks['messagementions_repliedUser'] = {
+Blockly.Blocks['messagementions_replieduser'] = {
   init: function() {
     this.jsonInit({
-      "message0": "repliedUser of %1",
+      "message0": "replied user of %1",
       "args0": [
         {
           "type": "input_value",
@@ -118,10 +118,10 @@ Blockly.Blocks['messagementions_channels'] = {
   }
 };
 
-Blockly.Blocks['messagementions_EVERYONE_PATTERN'] = {
+Blockly.Blocks['messagementions_everyone_pattern'] = {
   init: function() {
     this.jsonInit({
-      "message0": "EVERYONE_PATTERN of %1",
+      "message0": " everyone_pattern of %1",
       "args0": [
         {
           "type": "input_value",
@@ -134,10 +134,10 @@ Blockly.Blocks['messagementions_EVERYONE_PATTERN'] = {
   }
 };
 
-Blockly.Blocks['messagementions_USERS_PATTERN'] = {
+Blockly.Blocks['messagementions_users_pattern'] = {
   init: function() {
     this.jsonInit({
-      "message0": "USERS_PATTERN of %1",
+      "message0": " users_pattern of %1",
       "args0": [
         {
           "type": "input_value",
@@ -150,10 +150,10 @@ Blockly.Blocks['messagementions_USERS_PATTERN'] = {
   }
 };
 
-Blockly.Blocks['messagementions_ROLES_PATTERN'] = {
+Blockly.Blocks['messagementions_roles_pattern'] = {
   init: function() {
     this.jsonInit({
-      "message0": "ROLES_PATTERN of %1",
+      "message0": " roles_pattern of %1",
       "args0": [
         {
           "type": "input_value",
@@ -166,10 +166,10 @@ Blockly.Blocks['messagementions_ROLES_PATTERN'] = {
   }
 };
 
-Blockly.Blocks['messagementions_CHANNELS_PATTERN'] = {
+Blockly.Blocks['messagementions_channels_pattern'] = {
   init: function() {
     this.jsonInit({
-      "message0": "CHANNELS_PATTERN of %1",
+      "message0": " channels_pattern of %1",
       "args0": [
         {
           "type": "input_value",

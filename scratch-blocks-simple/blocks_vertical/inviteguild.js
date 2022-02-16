@@ -6,10 +6,10 @@ goog.require('Blockly.Blocks');
 goog.require('Blockly.Colours');
 goog.require('Blockly.constants');
 goog.require('Blockly.ScratchBlocks.VerticalExtensions');
-Blockly.Blocks['inviteguild_welcomeScreen'] = {
+Blockly.Blocks['inviteguild_welcomescreen'] = {
   init: function() {
     this.jsonInit({
-      "message0": "welcomeScreen of %1",
+      "message0": "welcome screen of %1",
       "args0": [
         {
           "type": "input_value",
@@ -70,10 +70,10 @@ Blockly.Blocks['inviteguild_description'] = {
   }
 };
 
-Blockly.Blocks['inviteguild_verificationLevel'] = {
+Blockly.Blocks['inviteguild_verificationlevel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "verificationLevel of %1",
+      "message0": "verification level of %1",
       "args0": [
         {
           "type": "input_value",
@@ -86,10 +86,10 @@ Blockly.Blocks['inviteguild_verificationLevel'] = {
   }
 };
 
-Blockly.Blocks['inviteguild_vanityURLCode'] = {
+Blockly.Blocks['inviteguild_vanityurlcode'] = {
   init: function() {
     this.jsonInit({
-      "message0": "vanityURLCode of %1",
+      "message0": "vanity urlcode of %1",
       "args0": [
         {
           "type": "input_value",
@@ -102,10 +102,10 @@ Blockly.Blocks['inviteguild_vanityURLCode'] = {
   }
 };
 
-Blockly.Blocks['inviteguild_nsfwLevel'] = {
+Blockly.Blocks['inviteguild_nsfwlevel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "nsfwLevel of %1",
+      "message0": "nsfw level of %1",
       "args0": [
         {
           "type": "input_value",
@@ -182,10 +182,10 @@ Blockly.Blocks['inviteguild_features'] = {
   }
 };
 
-Blockly.Blocks['inviteguild_createdTimestamp'] = {
+Blockly.Blocks['inviteguild_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -198,10 +198,10 @@ Blockly.Blocks['inviteguild_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['inviteguild_createdAt'] = {
+Blockly.Blocks['inviteguild_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -214,10 +214,10 @@ Blockly.Blocks['inviteguild_createdAt'] = {
   }
 };
 
-Blockly.Blocks['inviteguild_nameAcronym'] = {
+Blockly.Blocks['inviteguild_nameacronym'] = {
   init: function() {
     this.jsonInit({
-      "message0": "nameAcronym of %1",
+      "message0": "name acronym of %1",
       "args0": [
         {
           "type": "input_value",
@@ -281,7 +281,7 @@ Blockly.Blocks['inviteguild_client'] = {
 Blockly.Blocks['inviteguild_bannerURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "bannerURL of %1 options: %2",
+      "message0": "banner url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -301,7 +301,7 @@ Blockly.Blocks['inviteguild_bannerURL'] = {
 Blockly.Blocks['inviteguild_splashURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "splashURL of %1 options: %2",
+      "message0": "splash url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -321,7 +321,7 @@ Blockly.Blocks['inviteguild_splashURL'] = {
 Blockly.Blocks['inviteguild_iconURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "iconURL of %1 options: %2",
+      "message0": "icon url of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -357,7 +357,7 @@ Blockly.Blocks['inviteguild_fetch'] = {
 Blockly.Blocks['inviteguild_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",

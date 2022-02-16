@@ -61,7 +61,7 @@ Blockly.Blocks['cachedmanager_resolve'] = {
 Blockly.Blocks['cachedmanager_resolveId'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveId of %1 idOrInstance: %2",
+      "message0": "resolve id of %1 idOrInstance: %2",
       "args0": [
         {
           "type": "input_value",

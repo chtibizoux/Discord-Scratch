@@ -38,10 +38,10 @@ Blockly.Blocks['guildpreviewemoji_roles'] = {
   }
 };
 
-Blockly.Blocks['guildpreviewemoji_requiresColons'] = {
+Blockly.Blocks['guildpreviewemoji_requirescolons'] = {
   init: function() {
     this.jsonInit({
-      "message0": "requiresColons of %1",
+      "message0": "requires colons of %1",
       "args0": [
         {
           "type": "input_value",
@@ -166,10 +166,10 @@ Blockly.Blocks['guildpreviewemoji_url'] = {
   }
 };
 
-Blockly.Blocks['guildpreviewemoji_createdTimestamp'] = {
+Blockly.Blocks['guildpreviewemoji_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -182,10 +182,10 @@ Blockly.Blocks['guildpreviewemoji_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['guildpreviewemoji_createdAt'] = {
+Blockly.Blocks['guildpreviewemoji_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -217,7 +217,7 @@ Blockly.Blocks['guildpreviewemoji_client'] = {
 Blockly.Blocks['guildpreviewemoji_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",

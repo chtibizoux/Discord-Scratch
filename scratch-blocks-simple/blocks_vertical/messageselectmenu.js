@@ -6,10 +6,10 @@ goog.require('Blockly.Blocks');
 goog.require('Blockly.Colours');
 goog.require('Blockly.constants');
 goog.require('Blockly.ScratchBlocks.VerticalExtensions');
-Blockly.Blocks['messageselectmenu_customId'] = {
+Blockly.Blocks['messageselectmenu_customid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "customId of %1",
+      "message0": "custom id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -38,10 +38,10 @@ Blockly.Blocks['messageselectmenu_placeholder'] = {
   }
 };
 
-Blockly.Blocks['messageselectmenu_minValues'] = {
+Blockly.Blocks['messageselectmenu_minvalues'] = {
   init: function() {
     this.jsonInit({
-      "message0": "minValues of %1",
+      "message0": "min values of %1",
       "args0": [
         {
           "type": "input_value",
@@ -54,10 +54,10 @@ Blockly.Blocks['messageselectmenu_minValues'] = {
   }
 };
 
-Blockly.Blocks['messageselectmenu_maxValues'] = {
+Blockly.Blocks['messageselectmenu_maxvalues'] = {
   init: function() {
     this.jsonInit({
-      "message0": "maxValues of %1",
+      "message0": "max values of %1",
       "args0": [
         {
           "type": "input_value",
@@ -121,7 +121,7 @@ Blockly.Blocks['messageselectmenu_type'] = {
 Blockly.Blocks['messageselectmenu_setCustomId'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setCustomId of %1 customId: %2",
+      "message0": "set customid of %1 customId: %2",
       "args0": [
         {
           "type": "input_value",
@@ -141,7 +141,7 @@ Blockly.Blocks['messageselectmenu_setCustomId'] = {
 Blockly.Blocks['messageselectmenu_setDisabled'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setDisabled of %1 disabled: %2",
+      "message0": "set disabled of %1 disabled: %2",
       "args0": [
         {
           "type": "input_value",
@@ -161,7 +161,7 @@ Blockly.Blocks['messageselectmenu_setDisabled'] = {
 Blockly.Blocks['messageselectmenu_setMaxValues'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setMaxValues of %1 maxValues: %2",
+      "message0": "set maxvalues of %1 maxValues: %2",
       "args0": [
         {
           "type": "input_value",
@@ -181,7 +181,7 @@ Blockly.Blocks['messageselectmenu_setMaxValues'] = {
 Blockly.Blocks['messageselectmenu_setMinValues'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setMinValues of %1 minValues: %2",
+      "message0": "set minvalues of %1 minValues: %2",
       "args0": [
         {
           "type": "input_value",
@@ -201,7 +201,7 @@ Blockly.Blocks['messageselectmenu_setMinValues'] = {
 Blockly.Blocks['messageselectmenu_setPlaceholder'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setPlaceholder of %1 placeholder: %2",
+      "message0": "set placeholder of %1 placeholder: %2",
       "args0": [
         {
           "type": "input_value",
@@ -221,7 +221,7 @@ Blockly.Blocks['messageselectmenu_setPlaceholder'] = {
 Blockly.Blocks['messageselectmenu_addOptions'] = {
   init: function() {
     this.jsonInit({
-      "message0": "addOptions of %1 options: %2",
+      "message0": "add options of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -241,7 +241,7 @@ Blockly.Blocks['messageselectmenu_addOptions'] = {
 Blockly.Blocks['messageselectmenu_setOptions'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setOptions of %1 options: %2",
+      "message0": "set options of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -261,7 +261,7 @@ Blockly.Blocks['messageselectmenu_setOptions'] = {
 Blockly.Blocks['messageselectmenu_spliceOptions'] = {
   init: function() {
     this.jsonInit({
-      "message0": "spliceOptions of %1 index: %2 deleteCount: %3 options: %4",
+      "message0": "splice options of %1 index: %2 deleteCount: %3 options: %4",
       "args0": [
         {
           "type": "input_value",
@@ -289,7 +289,7 @@ Blockly.Blocks['messageselectmenu_spliceOptions'] = {
 Blockly.Blocks['messageselectmenu_toJSON'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toJSON of %1",
+      "message0": "to json of %1",
       "args0": [
         {
           "type": "input_value",
@@ -305,7 +305,7 @@ Blockly.Blocks['messageselectmenu_toJSON'] = {
 Blockly.Blocks['messageselectmenu_normalizeOption'] = {
   init: function() {
     this.jsonInit({
-      "message0": "normalizeOption of %1 option: %2",
+      "message0": "normalize option of %1 option: %2",
       "args0": [
         {
           "type": "input_value",
@@ -325,7 +325,7 @@ Blockly.Blocks['messageselectmenu_normalizeOption'] = {
 Blockly.Blocks['messageselectmenu_normalizeOptions'] = {
   init: function() {
     this.jsonInit({
-      "message0": "normalizeOptions of %1 options: %2",
+      "message0": "normalize options of %1 options: %2",
       "args0": [
         {
           "type": "input_value",

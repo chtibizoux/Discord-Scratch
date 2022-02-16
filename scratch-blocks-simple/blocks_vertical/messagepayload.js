@@ -70,10 +70,10 @@ Blockly.Blocks['messagepayload_files'] = {
   }
 };
 
-Blockly.Blocks['messagepayload_isWebhook'] = {
+Blockly.Blocks['messagepayload_iswebhook'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isWebhook of %1",
+      "message0": "is webhook of %1",
       "args0": [
         {
           "type": "input_value",
@@ -86,10 +86,10 @@ Blockly.Blocks['messagepayload_isWebhook'] = {
   }
 };
 
-Blockly.Blocks['messagepayload_isUser'] = {
+Blockly.Blocks['messagepayload_isuser'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isUser of %1",
+      "message0": "is user of %1",
       "args0": [
         {
           "type": "input_value",
@@ -102,10 +102,10 @@ Blockly.Blocks['messagepayload_isUser'] = {
   }
 };
 
-Blockly.Blocks['messagepayload_isMessage'] = {
+Blockly.Blocks['messagepayload_ismessage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isMessage of %1",
+      "message0": "is message of %1",
       "args0": [
         {
           "type": "input_value",
@@ -118,10 +118,10 @@ Blockly.Blocks['messagepayload_isMessage'] = {
   }
 };
 
-Blockly.Blocks['messagepayload_isMessageManager'] = {
+Blockly.Blocks['messagepayload_ismessagemanager'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isMessageManager of %1",
+      "message0": "is messagemanager of %1",
       "args0": [
         {
           "type": "input_value",
@@ -134,10 +134,10 @@ Blockly.Blocks['messagepayload_isMessageManager'] = {
   }
 };
 
-Blockly.Blocks['messagepayload_isInteraction'] = {
+Blockly.Blocks['messagepayload_isinteraction'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isInteraction of %1",
+      "message0": "is interaction of %1",
       "args0": [
         {
           "type": "input_value",
@@ -153,7 +153,7 @@ Blockly.Blocks['messagepayload_isInteraction'] = {
 Blockly.Blocks['messagepayload_makeContent'] = {
   init: function() {
     this.jsonInit({
-      "message0": "makeContent of %1",
+      "message0": "make content of %1",
       "args0": [
         {
           "type": "input_value",
@@ -169,7 +169,7 @@ Blockly.Blocks['messagepayload_makeContent'] = {
 Blockly.Blocks['messagepayload_resolveData'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveData of %1",
+      "message0": "resolve data of %1",
       "args0": [
         {
           "type": "input_value",
@@ -185,7 +185,7 @@ Blockly.Blocks['messagepayload_resolveData'] = {
 Blockly.Blocks['messagepayload_resolveFiles'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveFiles of %1",
+      "message0": "resolve files of %1",
       "args0": [
         {
           "type": "input_value",
@@ -201,7 +201,7 @@ Blockly.Blocks['messagepayload_resolveFiles'] = {
 Blockly.Blocks['messagepayload_resolveFile'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveFile of %1 fileLike: %2",
+      "message0": "resolve file of %1 fileLike: %2",
       "args0": [
         {
           "type": "input_value",

@@ -118,10 +118,10 @@ Blockly.Blocks['widgetmember_mute'] = {
   }
 };
 
-Blockly.Blocks['widgetmember_selfDeaf'] = {
+Blockly.Blocks['widgetmember_selfdeaf'] = {
   init: function() {
     this.jsonInit({
-      "message0": "selfDeaf of %1",
+      "message0": "self deaf of %1",
       "args0": [
         {
           "type": "input_value",
@@ -134,10 +134,10 @@ Blockly.Blocks['widgetmember_selfDeaf'] = {
   }
 };
 
-Blockly.Blocks['widgetmember_selfMute'] = {
+Blockly.Blocks['widgetmember_selfmute'] = {
   init: function() {
     this.jsonInit({
-      "message0": "selfMute of %1",
+      "message0": "self mute of %1",
       "args0": [
         {
           "type": "input_value",
@@ -166,10 +166,10 @@ Blockly.Blocks['widgetmember_suppress'] = {
   }
 };
 
-Blockly.Blocks['widgetmember_channelId'] = {
+Blockly.Blocks['widgetmember_channelid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "channelId of %1",
+      "message0": "channel id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -182,10 +182,10 @@ Blockly.Blocks['widgetmember_channelId'] = {
   }
 };
 
-Blockly.Blocks['widgetmember_avatarURL'] = {
+Blockly.Blocks['widgetmember_avatarurl'] = {
   init: function() {
     this.jsonInit({
-      "message0": "avatarURL of %1",
+      "message0": "avatar url of %1",
       "args0": [
         {
           "type": "input_value",

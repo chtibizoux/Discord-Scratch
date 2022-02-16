@@ -410,10 +410,10 @@ Blockly.Blocks['client_application'] = {
   }
 };
 
-Blockly.Blocks['client_readyAt'] = {
+Blockly.Blocks['client_readyat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "readyAt of %1",
+      "message0": "ready at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -442,10 +442,10 @@ Blockly.Blocks['client_emojis'] = {
   }
 };
 
-Blockly.Blocks['client_readyTimestamp'] = {
+Blockly.Blocks['client_readytimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "readyTimestamp of %1",
+      "message0": "ready timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -513,7 +513,7 @@ Blockly.Blocks['client_login'] = {
 Blockly.Blocks['client_isReady'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isReady of %1",
+      "message0": "is ready of %1",
       "args0": [
         {
           "type": "input_value",
@@ -545,7 +545,7 @@ Blockly.Blocks['client_destroy'] = {
 Blockly.Blocks['client_fetchInvite'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchInvite of %1 invite: %2 options: %3",
+      "message0": "fetch invite of %1 invite: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -569,7 +569,7 @@ Blockly.Blocks['client_fetchInvite'] = {
 Blockly.Blocks['client_fetchGuildTemplate'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchGuildTemplate of %1 template: %2",
+      "message0": "fetch guildtemplate of %1 template: %2",
       "args0": [
         {
           "type": "input_value",
@@ -589,7 +589,7 @@ Blockly.Blocks['client_fetchGuildTemplate'] = {
 Blockly.Blocks['client_fetchWebhook'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchWebhook of %1 id: %2 token: %3",
+      "message0": "fetch webhook of %1 id: %2 token: %3",
       "args0": [
         {
           "type": "input_value",
@@ -613,7 +613,7 @@ Blockly.Blocks['client_fetchWebhook'] = {
 Blockly.Blocks['client_fetchVoiceRegions'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchVoiceRegions of %1",
+      "message0": "fetch voiceregions of %1",
       "args0": [
         {
           "type": "input_value",
@@ -629,7 +629,7 @@ Blockly.Blocks['client_fetchVoiceRegions'] = {
 Blockly.Blocks['client_fetchSticker'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchSticker of %1 id: %2",
+      "message0": "fetch sticker of %1 id: %2",
       "args0": [
         {
           "type": "input_value",
@@ -649,7 +649,7 @@ Blockly.Blocks['client_fetchSticker'] = {
 Blockly.Blocks['client_fetchPremiumStickerPacks'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchPremiumStickerPacks of %1",
+      "message0": "fetch premiumstickerpacks of %1",
       "args0": [
         {
           "type": "input_value",
@@ -665,7 +665,7 @@ Blockly.Blocks['client_fetchPremiumStickerPacks'] = {
 Blockly.Blocks['client_sweepMessages'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sweepMessages of %1 lifetime: %2",
+      "message0": "sweep messages of %1 lifetime: %2",
       "args0": [
         {
           "type": "input_value",
@@ -685,7 +685,7 @@ Blockly.Blocks['client_sweepMessages'] = {
 Blockly.Blocks['client_fetchGuildPreview'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchGuildPreview of %1 guild: %2",
+      "message0": "fetch guildpreview of %1 guild: %2",
       "args0": [
         {
           "type": "input_value",
@@ -705,7 +705,7 @@ Blockly.Blocks['client_fetchGuildPreview'] = {
 Blockly.Blocks['client_fetchGuildWidget'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchGuildWidget of %1 guild: %2",
+      "message0": "fetch guildwidget of %1 guild: %2",
       "args0": [
         {
           "type": "input_value",
@@ -725,7 +725,7 @@ Blockly.Blocks['client_fetchGuildWidget'] = {
 Blockly.Blocks['client_generateInvite'] = {
   init: function() {
     this.jsonInit({
-      "message0": "generateInvite of %1 options: %2",
+      "message0": "generate invite of %1 options: %2",
       "args0": [
         {
           "type": "input_value",

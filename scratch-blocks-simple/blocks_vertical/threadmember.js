@@ -22,10 +22,10 @@ Blockly.Blocks['threadmember_thread'] = {
   }
 };
 
-Blockly.Blocks['threadmember_joinedTimestamp'] = {
+Blockly.Blocks['threadmember_joinedtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "joinedTimestamp of %1",
+      "message0": "joined timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -70,10 +70,10 @@ Blockly.Blocks['threadmember_flags'] = {
   }
 };
 
-Blockly.Blocks['threadmember_guildMember'] = {
+Blockly.Blocks['threadmember_guildmember'] = {
   init: function() {
     this.jsonInit({
-      "message0": "guildMember of %1",
+      "message0": "guild member of %1",
       "args0": [
         {
           "type": "input_value",
@@ -86,10 +86,10 @@ Blockly.Blocks['threadmember_guildMember'] = {
   }
 };
 
-Blockly.Blocks['threadmember_joinedAt'] = {
+Blockly.Blocks['threadmember_joinedat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "joinedAt of %1",
+      "message0": "joined at of %1",
       "args0": [
         {
           "type": "input_value",

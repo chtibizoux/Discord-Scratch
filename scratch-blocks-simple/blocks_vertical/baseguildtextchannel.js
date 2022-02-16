@@ -70,10 +70,10 @@ Blockly.Blocks['baseguildtextchannel_topic'] = {
   }
 };
 
-Blockly.Blocks['baseguildtextchannel_lastMessageId'] = {
+Blockly.Blocks['baseguildtextchannel_lastmessageid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "lastMessageId of %1",
+      "message0": "last messageid of %1",
       "args0": [
         {
           "type": "input_value",
@@ -86,10 +86,10 @@ Blockly.Blocks['baseguildtextchannel_lastMessageId'] = {
   }
 };
 
-Blockly.Blocks['baseguildtextchannel_lastPinTimestamp'] = {
+Blockly.Blocks['baseguildtextchannel_lastpintimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "lastPinTimestamp of %1",
+      "message0": "last pintimestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -102,10 +102,10 @@ Blockly.Blocks['baseguildtextchannel_lastPinTimestamp'] = {
   }
 };
 
-Blockly.Blocks['baseguildtextchannel_defaultAutoArchiveDuration'] = {
+Blockly.Blocks['baseguildtextchannel_defaultautoarchiveduration'] = {
   init: function() {
     this.jsonInit({
-      "message0": "defaultAutoArchiveDuration of %1",
+      "message0": "default autoarchiveduration of %1",
       "args0": [
         {
           "type": "input_value",
@@ -118,10 +118,10 @@ Blockly.Blocks['baseguildtextchannel_defaultAutoArchiveDuration'] = {
   }
 };
 
-Blockly.Blocks['baseguildtextchannel_lastMessage'] = {
+Blockly.Blocks['baseguildtextchannel_lastmessage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "lastMessage of %1",
+      "message0": "last message of %1",
       "args0": [
         {
           "type": "input_value",
@@ -134,10 +134,10 @@ Blockly.Blocks['baseguildtextchannel_lastMessage'] = {
   }
 };
 
-Blockly.Blocks['baseguildtextchannel_lastPinAt'] = {
+Blockly.Blocks['baseguildtextchannel_lastpinat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "lastPinAt of %1",
+      "message0": "last pinat of %1",
       "args0": [
         {
           "type": "input_value",
@@ -166,10 +166,10 @@ Blockly.Blocks['baseguildtextchannel_guild'] = {
   }
 };
 
-Blockly.Blocks['baseguildtextchannel_guildId'] = {
+Blockly.Blocks['baseguildtextchannel_guildid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "guildId of %1",
+      "message0": "guild id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -182,10 +182,10 @@ Blockly.Blocks['baseguildtextchannel_guildId'] = {
   }
 };
 
-Blockly.Blocks['baseguildtextchannel_permissionOverwrites'] = {
+Blockly.Blocks['baseguildtextchannel_permissionoverwrites'] = {
   init: function() {
     this.jsonInit({
-      "message0": "permissionOverwrites of %1",
+      "message0": "permission overwrites of %1",
       "args0": [
         {
           "type": "input_value",
@@ -214,10 +214,10 @@ Blockly.Blocks['baseguildtextchannel_name'] = {
   }
 };
 
-Blockly.Blocks['baseguildtextchannel_rawPosition'] = {
+Blockly.Blocks['baseguildtextchannel_rawposition'] = {
   init: function() {
     this.jsonInit({
-      "message0": "rawPosition of %1",
+      "message0": "raw position of %1",
       "args0": [
         {
           "type": "input_value",
@@ -230,10 +230,10 @@ Blockly.Blocks['baseguildtextchannel_rawPosition'] = {
   }
 };
 
-Blockly.Blocks['baseguildtextchannel_parentId'] = {
+Blockly.Blocks['baseguildtextchannel_parentid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "parentId of %1",
+      "message0": "parent id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -262,10 +262,10 @@ Blockly.Blocks['baseguildtextchannel_parent'] = {
   }
 };
 
-Blockly.Blocks['baseguildtextchannel_permissionsLocked'] = {
+Blockly.Blocks['baseguildtextchannel_permissionslocked'] = {
   init: function() {
     this.jsonInit({
-      "message0": "permissionsLocked of %1",
+      "message0": "permissions locked of %1",
       "args0": [
         {
           "type": "input_value",
@@ -390,10 +390,10 @@ Blockly.Blocks['baseguildtextchannel_id'] = {
   }
 };
 
-Blockly.Blocks['baseguildtextchannel_createdTimestamp'] = {
+Blockly.Blocks['baseguildtextchannel_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -406,10 +406,10 @@ Blockly.Blocks['baseguildtextchannel_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['baseguildtextchannel_createdAt'] = {
+Blockly.Blocks['baseguildtextchannel_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -457,7 +457,7 @@ Blockly.Blocks['baseguildtextchannel_client'] = {
 Blockly.Blocks['baseguildtextchannel_setDefaultAutoArchiveDuration'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setDefaultAutoArchiveDuration of %1 defaultAutoArchiveDuration: %2 reason: %3",
+      "message0": "set defaultautoarchiveduration of %1 defaultAutoArchiveDuration: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -481,7 +481,7 @@ Blockly.Blocks['baseguildtextchannel_setDefaultAutoArchiveDuration'] = {
 Blockly.Blocks['baseguildtextchannel_setNSFW'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setNSFW of %1 nsfw: %2 reason: %3",
+      "message0": "set nsfw of %1 nsfw: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -505,7 +505,7 @@ Blockly.Blocks['baseguildtextchannel_setNSFW'] = {
 Blockly.Blocks['baseguildtextchannel_setType'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setType of %1 type: %2 reason: %3",
+      "message0": "set type of %1 type: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -529,7 +529,7 @@ Blockly.Blocks['baseguildtextchannel_setType'] = {
 Blockly.Blocks['baseguildtextchannel_fetchWebhooks'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchWebhooks of %1",
+      "message0": "fetch webhooks of %1",
       "args0": [
         {
           "type": "input_value",
@@ -545,7 +545,7 @@ Blockly.Blocks['baseguildtextchannel_fetchWebhooks'] = {
 Blockly.Blocks['baseguildtextchannel_createWebhook'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createWebhook of %1 name: %2 options: %3",
+      "message0": "create webhook of %1 name: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -569,7 +569,7 @@ Blockly.Blocks['baseguildtextchannel_createWebhook'] = {
 Blockly.Blocks['baseguildtextchannel_setTopic'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setTopic of %1 topic: %2 reason: %3",
+      "message0": "set topic of %1 topic: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -593,7 +593,7 @@ Blockly.Blocks['baseguildtextchannel_setTopic'] = {
 Blockly.Blocks['baseguildtextchannel_createInvite'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createInvite of %1 options: %2",
+      "message0": "create invite of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -613,7 +613,7 @@ Blockly.Blocks['baseguildtextchannel_createInvite'] = {
 Blockly.Blocks['baseguildtextchannel_fetchInvites'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchInvites of %1 cache: %2",
+      "message0": "fetch invites of %1 cache: %2",
       "args0": [
         {
           "type": "input_value",
@@ -653,7 +653,7 @@ Blockly.Blocks['baseguildtextchannel_send'] = {
 Blockly.Blocks['baseguildtextchannel_sendTyping'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sendTyping of %1",
+      "message0": "send typing of %1",
       "args0": [
         {
           "type": "input_value",
@@ -669,7 +669,7 @@ Blockly.Blocks['baseguildtextchannel_sendTyping'] = {
 Blockly.Blocks['baseguildtextchannel_createMessageCollector'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createMessageCollector of %1 options: %2",
+      "message0": "create messagecollector of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -689,7 +689,7 @@ Blockly.Blocks['baseguildtextchannel_createMessageCollector'] = {
 Blockly.Blocks['baseguildtextchannel_awaitMessages'] = {
   init: function() {
     this.jsonInit({
-      "message0": "awaitMessages of %1 options: %2",
+      "message0": "await messages of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -709,7 +709,7 @@ Blockly.Blocks['baseguildtextchannel_awaitMessages'] = {
 Blockly.Blocks['baseguildtextchannel_createMessageComponentCollector'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createMessageComponentCollector of %1 options: %2",
+      "message0": "create messagecomponentcollector of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -729,7 +729,7 @@ Blockly.Blocks['baseguildtextchannel_createMessageComponentCollector'] = {
 Blockly.Blocks['baseguildtextchannel_awaitMessageComponent'] = {
   init: function() {
     this.jsonInit({
-      "message0": "awaitMessageComponent of %1 options: %2",
+      "message0": "await messagecomponent of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -749,7 +749,7 @@ Blockly.Blocks['baseguildtextchannel_awaitMessageComponent'] = {
 Blockly.Blocks['baseguildtextchannel_bulkDelete'] = {
   init: function() {
     this.jsonInit({
-      "message0": "bulkDelete of %1 messages: %2 filterOld: %3",
+      "message0": "bulk delete of %1 messages: %2 filterOld: %3",
       "args0": [
         {
           "type": "input_value",
@@ -773,7 +773,7 @@ Blockly.Blocks['baseguildtextchannel_bulkDelete'] = {
 Blockly.Blocks['baseguildtextchannel_permissionsFor'] = {
   init: function() {
     this.jsonInit({
-      "message0": "permissionsFor of %1 memberOrRole: %2 checkAdmin: %3",
+      "message0": "permissions for of %1 memberOrRole: %2 checkAdmin: %3",
       "args0": [
         {
           "type": "input_value",
@@ -797,7 +797,7 @@ Blockly.Blocks['baseguildtextchannel_permissionsFor'] = {
 Blockly.Blocks['baseguildtextchannel_lockPermissions'] = {
   init: function() {
     this.jsonInit({
-      "message0": "lockPermissions of %1",
+      "message0": "lock permissions of %1",
       "args0": [
         {
           "type": "input_value",
@@ -837,7 +837,7 @@ Blockly.Blocks['baseguildtextchannel_edit'] = {
 Blockly.Blocks['baseguildtextchannel_setName'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setName of %1 name: %2 reason: %3",
+      "message0": "set name of %1 name: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -861,7 +861,7 @@ Blockly.Blocks['baseguildtextchannel_setName'] = {
 Blockly.Blocks['baseguildtextchannel_setParent'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setParent of %1 channel: %2 options: %3",
+      "message0": "set parent of %1 channel: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -885,7 +885,7 @@ Blockly.Blocks['baseguildtextchannel_setParent'] = {
 Blockly.Blocks['baseguildtextchannel_setPosition'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setPosition of %1 position: %2 options: %3",
+      "message0": "set position of %1 position: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -969,7 +969,7 @@ Blockly.Blocks['baseguildtextchannel_delete'] = {
 Blockly.Blocks['baseguildtextchannel_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",
@@ -1005,7 +1005,7 @@ Blockly.Blocks['baseguildtextchannel_fetch'] = {
 Blockly.Blocks['baseguildtextchannel_isText'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isText of %1",
+      "message0": "is text of %1",
       "args0": [
         {
           "type": "input_value",
@@ -1021,7 +1021,7 @@ Blockly.Blocks['baseguildtextchannel_isText'] = {
 Blockly.Blocks['baseguildtextchannel_isVoice'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isVoice of %1",
+      "message0": "is voice of %1",
       "args0": [
         {
           "type": "input_value",
@@ -1037,7 +1037,7 @@ Blockly.Blocks['baseguildtextchannel_isVoice'] = {
 Blockly.Blocks['baseguildtextchannel_isThread'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isThread of %1",
+      "message0": "is thread of %1",
       "args0": [
         {
           "type": "input_value",

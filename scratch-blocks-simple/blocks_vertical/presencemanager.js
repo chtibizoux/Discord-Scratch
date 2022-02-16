@@ -61,7 +61,7 @@ Blockly.Blocks['presencemanager_resolve'] = {
 Blockly.Blocks['presencemanager_resolveId'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveId of %1 presence: %2",
+      "message0": "resolve id of %1 presence: %2",
       "args0": [
         {
           "type": "input_value",

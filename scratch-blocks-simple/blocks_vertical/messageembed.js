@@ -198,10 +198,10 @@ Blockly.Blocks['messageembed_footer'] = {
   }
 };
 
-Blockly.Blocks['messageembed_createdAt'] = {
+Blockly.Blocks['messageembed_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -214,10 +214,10 @@ Blockly.Blocks['messageembed_createdAt'] = {
   }
 };
 
-Blockly.Blocks['messageembed_hexColor'] = {
+Blockly.Blocks['messageembed_hexcolor'] = {
   init: function() {
     this.jsonInit({
-      "message0": "hexColor of %1",
+      "message0": "hex color of %1",
       "args0": [
         {
           "type": "input_value",
@@ -269,7 +269,7 @@ Blockly.Blocks['messageembed_equals'] = {
 Blockly.Blocks['messageembed_addField'] = {
   init: function() {
     this.jsonInit({
-      "message0": "addField of %1 name: %2 value: %3 inline: %4",
+      "message0": "add field of %1 name: %2 value: %3 inline: %4",
       "args0": [
         {
           "type": "input_value",
@@ -297,7 +297,7 @@ Blockly.Blocks['messageembed_addField'] = {
 Blockly.Blocks['messageembed_addFields'] = {
   init: function() {
     this.jsonInit({
-      "message0": "addFields of %1 fields: %2",
+      "message0": "add fields of %1 fields: %2",
       "args0": [
         {
           "type": "input_value",
@@ -317,7 +317,7 @@ Blockly.Blocks['messageembed_addFields'] = {
 Blockly.Blocks['messageembed_spliceFields'] = {
   init: function() {
     this.jsonInit({
-      "message0": "spliceFields of %1 index: %2 deleteCount: %3 fields: %4",
+      "message0": "splice fields of %1 index: %2 deleteCount: %3 fields: %4",
       "args0": [
         {
           "type": "input_value",
@@ -345,7 +345,7 @@ Blockly.Blocks['messageembed_spliceFields'] = {
 Blockly.Blocks['messageembed_setFields'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setFields of %1 fields: %2",
+      "message0": "set fields of %1 fields: %2",
       "args0": [
         {
           "type": "input_value",
@@ -365,7 +365,7 @@ Blockly.Blocks['messageembed_setFields'] = {
 Blockly.Blocks['messageembed_setAuthor'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setAuthor of %1 options: %2 deprecatedIconURL: %3 deprecatedURL: %4",
+      "message0": "set author of %1 options: %2 deprecatedIconURL: %3 deprecatedURL: %4",
       "args0": [
         {
           "type": "input_value",
@@ -393,7 +393,7 @@ Blockly.Blocks['messageembed_setAuthor'] = {
 Blockly.Blocks['messageembed_setColor'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setColor of %1 color: %2",
+      "message0": "set color of %1 color: %2",
       "args0": [
         {
           "type": "input_value",
@@ -413,7 +413,7 @@ Blockly.Blocks['messageembed_setColor'] = {
 Blockly.Blocks['messageembed_setDescription'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setDescription of %1 description: %2",
+      "message0": "set description of %1 description: %2",
       "args0": [
         {
           "type": "input_value",
@@ -433,7 +433,7 @@ Blockly.Blocks['messageembed_setDescription'] = {
 Blockly.Blocks['messageembed_setFooter'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setFooter of %1 options: %2 deprecatedIconURL: %3",
+      "message0": "set footer of %1 options: %2 deprecatedIconURL: %3",
       "args0": [
         {
           "type": "input_value",
@@ -457,7 +457,7 @@ Blockly.Blocks['messageembed_setFooter'] = {
 Blockly.Blocks['messageembed_setImage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setImage of %1 url: %2",
+      "message0": "set image of %1 url: %2",
       "args0": [
         {
           "type": "input_value",
@@ -477,7 +477,7 @@ Blockly.Blocks['messageembed_setImage'] = {
 Blockly.Blocks['messageembed_setThumbnail'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setThumbnail of %1 url: %2",
+      "message0": "set thumbnail of %1 url: %2",
       "args0": [
         {
           "type": "input_value",
@@ -497,7 +497,7 @@ Blockly.Blocks['messageembed_setThumbnail'] = {
 Blockly.Blocks['messageembed_setTimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setTimestamp of %1 timestamp: %2",
+      "message0": "set timestamp of %1 timestamp: %2",
       "args0": [
         {
           "type": "input_value",
@@ -517,7 +517,7 @@ Blockly.Blocks['messageembed_setTimestamp'] = {
 Blockly.Blocks['messageembed_setTitle'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setTitle of %1 title: %2",
+      "message0": "set title of %1 title: %2",
       "args0": [
         {
           "type": "input_value",
@@ -537,7 +537,7 @@ Blockly.Blocks['messageembed_setTitle'] = {
 Blockly.Blocks['messageembed_setURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setURL of %1 url: %2",
+      "message0": "set url of %1 url: %2",
       "args0": [
         {
           "type": "input_value",
@@ -557,7 +557,7 @@ Blockly.Blocks['messageembed_setURL'] = {
 Blockly.Blocks['messageembed_toJSON'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toJSON of %1",
+      "message0": "to json of %1",
       "args0": [
         {
           "type": "input_value",
@@ -573,7 +573,7 @@ Blockly.Blocks['messageembed_toJSON'] = {
 Blockly.Blocks['messageembed_normalizeField'] = {
   init: function() {
     this.jsonInit({
-      "message0": "normalizeField of %1 name: %2 value: %3 inline: %4",
+      "message0": "normalize field of %1 name: %2 value: %3 inline: %4",
       "args0": [
         {
           "type": "input_value",
@@ -601,7 +601,7 @@ Blockly.Blocks['messageembed_normalizeField'] = {
 Blockly.Blocks['messageembed_normalizeFields'] = {
   init: function() {
     this.jsonInit({
-      "message0": "normalizeFields of %1 fields: %2",
+      "message0": "normalize fields of %1 fields: %2",
       "args0": [
         {
           "type": "input_value",

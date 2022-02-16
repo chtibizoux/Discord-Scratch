@@ -149,7 +149,7 @@ Blockly.Blocks['permissionoverwrites_delete'] = {
 Blockly.Blocks['permissionoverwrites_resolveOverwriteOptions'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveOverwriteOptions of %1 options: %2 initialPermissions: %3",
+      "message0": "resolve overwriteoptions of %1 options: %2 initialPermissions: %3",
       "args0": [
         {
           "type": "input_value",

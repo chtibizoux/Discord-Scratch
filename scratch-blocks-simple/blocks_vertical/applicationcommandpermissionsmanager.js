@@ -22,10 +22,10 @@ Blockly.Blocks['applicationcommandpermissionsmanager_guild'] = {
   }
 };
 
-Blockly.Blocks['applicationcommandpermissionsmanager_guildId'] = {
+Blockly.Blocks['applicationcommandpermissionsmanager_guildid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "guildId of %1",
+      "message0": "guild id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -38,10 +38,10 @@ Blockly.Blocks['applicationcommandpermissionsmanager_guildId'] = {
   }
 };
 
-Blockly.Blocks['applicationcommandpermissionsmanager_commandId'] = {
+Blockly.Blocks['applicationcommandpermissionsmanager_commandid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "commandId of %1",
+      "message0": "command id of %1",
       "args0": [
         {
           "type": "input_value",

@@ -33,7 +33,7 @@ Blockly.Blocks['util_flatten'] = {
 Blockly.Blocks['util_splitMessage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "splitMessage of %1 text: %2 options: %3",
+      "message0": "split message of %1 text: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -57,7 +57,7 @@ Blockly.Blocks['util_splitMessage'] = {
 Blockly.Blocks['util_escapeMarkdown'] = {
   init: function() {
     this.jsonInit({
-      "message0": "escapeMarkdown of %1 text: %2 options: %3",
+      "message0": "escape markdown of %1 text: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -81,7 +81,7 @@ Blockly.Blocks['util_escapeMarkdown'] = {
 Blockly.Blocks['util_escapeCodeBlock'] = {
   init: function() {
     this.jsonInit({
-      "message0": "escapeCodeBlock of %1 text: %2",
+      "message0": "escape codeblock of %1 text: %2",
       "args0": [
         {
           "type": "input_value",
@@ -101,7 +101,7 @@ Blockly.Blocks['util_escapeCodeBlock'] = {
 Blockly.Blocks['util_escapeInlineCode'] = {
   init: function() {
     this.jsonInit({
-      "message0": "escapeInlineCode of %1 text: %2",
+      "message0": "escape inlinecode of %1 text: %2",
       "args0": [
         {
           "type": "input_value",
@@ -121,7 +121,7 @@ Blockly.Blocks['util_escapeInlineCode'] = {
 Blockly.Blocks['util_escapeItalic'] = {
   init: function() {
     this.jsonInit({
-      "message0": "escapeItalic of %1 text: %2",
+      "message0": "escape italic of %1 text: %2",
       "args0": [
         {
           "type": "input_value",
@@ -141,7 +141,7 @@ Blockly.Blocks['util_escapeItalic'] = {
 Blockly.Blocks['util_escapeBold'] = {
   init: function() {
     this.jsonInit({
-      "message0": "escapeBold of %1 text: %2",
+      "message0": "escape bold of %1 text: %2",
       "args0": [
         {
           "type": "input_value",
@@ -161,7 +161,7 @@ Blockly.Blocks['util_escapeBold'] = {
 Blockly.Blocks['util_escapeUnderline'] = {
   init: function() {
     this.jsonInit({
-      "message0": "escapeUnderline of %1 text: %2",
+      "message0": "escape underline of %1 text: %2",
       "args0": [
         {
           "type": "input_value",
@@ -181,7 +181,7 @@ Blockly.Blocks['util_escapeUnderline'] = {
 Blockly.Blocks['util_escapeStrikethrough'] = {
   init: function() {
     this.jsonInit({
-      "message0": "escapeStrikethrough of %1 text: %2",
+      "message0": "escape strikethrough of %1 text: %2",
       "args0": [
         {
           "type": "input_value",
@@ -201,7 +201,7 @@ Blockly.Blocks['util_escapeStrikethrough'] = {
 Blockly.Blocks['util_escapeSpoiler'] = {
   init: function() {
     this.jsonInit({
-      "message0": "escapeSpoiler of %1 text: %2",
+      "message0": "escape spoiler of %1 text: %2",
       "args0": [
         {
           "type": "input_value",
@@ -221,7 +221,7 @@ Blockly.Blocks['util_escapeSpoiler'] = {
 Blockly.Blocks['util_fetchRecommendedShards'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchRecommendedShards of %1 token: %2 options: %3",
+      "message0": "fetch recommendedshards of %1 token: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -245,7 +245,7 @@ Blockly.Blocks['util_fetchRecommendedShards'] = {
 Blockly.Blocks['util_verifyString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "verifyString of %1 data: %2 error: %3 errorMessage: %4 allowEmpty: %5",
+      "message0": "verify string of %1 data: %2 error: %3 errorMessage: %4 allowEmpty: %5",
       "args0": [
         {
           "type": "input_value",
@@ -277,7 +277,7 @@ Blockly.Blocks['util_verifyString'] = {
 Blockly.Blocks['util_resolveColor'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveColor of %1 color: %2",
+      "message0": "resolve color of %1 color: %2",
       "args0": [
         {
           "type": "input_value",
@@ -297,7 +297,7 @@ Blockly.Blocks['util_resolveColor'] = {
 Blockly.Blocks['util_discordSort'] = {
   init: function() {
     this.jsonInit({
-      "message0": "discordSort of %1 collection: %2",
+      "message0": "discord sort of %1 collection: %2",
       "args0": [
         {
           "type": "input_value",
@@ -317,7 +317,7 @@ Blockly.Blocks['util_discordSort'] = {
 Blockly.Blocks['util_cleanContent'] = {
   init: function() {
     this.jsonInit({
-      "message0": "cleanContent of %1 str: %2 channel: %3",
+      "message0": "clean content of %1 str: %2 channel: %3",
       "args0": [
         {
           "type": "input_value",
@@ -341,7 +341,7 @@ Blockly.Blocks['util_cleanContent'] = {
 Blockly.Blocks['util_cleanCodeBlockContent'] = {
   init: function() {
     this.jsonInit({
-      "message0": "cleanCodeBlockContent of %1 text: %2",
+      "message0": "clean codeblockcontent of %1 text: %2",
       "args0": [
         {
           "type": "input_value",

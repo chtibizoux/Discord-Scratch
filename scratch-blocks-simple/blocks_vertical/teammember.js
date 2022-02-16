@@ -38,10 +38,10 @@ Blockly.Blocks['teammember_permissions'] = {
   }
 };
 
-Blockly.Blocks['teammember_membershipState'] = {
+Blockly.Blocks['teammember_membershipstate'] = {
   init: function() {
     this.jsonInit({
-      "message0": "membershipState of %1",
+      "message0": "membership state of %1",
       "args0": [
         {
           "type": "input_value",
@@ -105,7 +105,7 @@ Blockly.Blocks['teammember_client'] = {
 Blockly.Blocks['teammember_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",

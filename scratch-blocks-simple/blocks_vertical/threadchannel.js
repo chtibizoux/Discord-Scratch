@@ -22,10 +22,10 @@ Blockly.Blocks['threadchannel_guild'] = {
   }
 };
 
-Blockly.Blocks['threadchannel_guildId'] = {
+Blockly.Blocks['threadchannel_guildid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "guildId of %1",
+      "message0": "guild id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -86,10 +86,10 @@ Blockly.Blocks['threadchannel_name'] = {
   }
 };
 
-Blockly.Blocks['threadchannel_parentId'] = {
+Blockly.Blocks['threadchannel_parentid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "parentId of %1",
+      "message0": "parent id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -150,10 +150,10 @@ Blockly.Blocks['threadchannel_archived'] = {
   }
 };
 
-Blockly.Blocks['threadchannel_autoArchiveDuration'] = {
+Blockly.Blocks['threadchannel_autoarchiveduration'] = {
   init: function() {
     this.jsonInit({
-      "message0": "autoArchiveDuration of %1",
+      "message0": "auto archiveduration of %1",
       "args0": [
         {
           "type": "input_value",
@@ -166,10 +166,10 @@ Blockly.Blocks['threadchannel_autoArchiveDuration'] = {
   }
 };
 
-Blockly.Blocks['threadchannel_archiveTimestamp'] = {
+Blockly.Blocks['threadchannel_archivetimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "archiveTimestamp of %1",
+      "message0": "archive timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -182,10 +182,10 @@ Blockly.Blocks['threadchannel_archiveTimestamp'] = {
   }
 };
 
-Blockly.Blocks['threadchannel_ownerId'] = {
+Blockly.Blocks['threadchannel_ownerid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "ownerId of %1",
+      "message0": "owner id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -198,10 +198,10 @@ Blockly.Blocks['threadchannel_ownerId'] = {
   }
 };
 
-Blockly.Blocks['threadchannel_lastMessageId'] = {
+Blockly.Blocks['threadchannel_lastmessageid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "lastMessageId of %1",
+      "message0": "last messageid of %1",
       "args0": [
         {
           "type": "input_value",
@@ -214,10 +214,10 @@ Blockly.Blocks['threadchannel_lastMessageId'] = {
   }
 };
 
-Blockly.Blocks['threadchannel_lastPinTimestamp'] = {
+Blockly.Blocks['threadchannel_lastpintimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "lastPinTimestamp of %1",
+      "message0": "last pintimestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -230,10 +230,10 @@ Blockly.Blocks['threadchannel_lastPinTimestamp'] = {
   }
 };
 
-Blockly.Blocks['threadchannel_rateLimitPerUser'] = {
+Blockly.Blocks['threadchannel_ratelimitperuser'] = {
   init: function() {
     this.jsonInit({
-      "message0": "rateLimitPerUser of %1",
+      "message0": "rate limitperuser of %1",
       "args0": [
         {
           "type": "input_value",
@@ -246,10 +246,10 @@ Blockly.Blocks['threadchannel_rateLimitPerUser'] = {
   }
 };
 
-Blockly.Blocks['threadchannel_messageCount'] = {
+Blockly.Blocks['threadchannel_messagecount'] = {
   init: function() {
     this.jsonInit({
-      "message0": "messageCount of %1",
+      "message0": "message count of %1",
       "args0": [
         {
           "type": "input_value",
@@ -262,10 +262,10 @@ Blockly.Blocks['threadchannel_messageCount'] = {
   }
 };
 
-Blockly.Blocks['threadchannel_memberCount'] = {
+Blockly.Blocks['threadchannel_membercount'] = {
   init: function() {
     this.jsonInit({
-      "message0": "memberCount of %1",
+      "message0": "member count of %1",
       "args0": [
         {
           "type": "input_value",
@@ -278,10 +278,10 @@ Blockly.Blocks['threadchannel_memberCount'] = {
   }
 };
 
-Blockly.Blocks['threadchannel_guildMembers'] = {
+Blockly.Blocks['threadchannel_guildmembers'] = {
   init: function() {
     this.jsonInit({
-      "message0": "guildMembers of %1",
+      "message0": "guild members of %1",
       "args0": [
         {
           "type": "input_value",
@@ -294,10 +294,10 @@ Blockly.Blocks['threadchannel_guildMembers'] = {
   }
 };
 
-Blockly.Blocks['threadchannel_archivedAt'] = {
+Blockly.Blocks['threadchannel_archivedat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "archivedAt of %1",
+      "message0": "archived at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -438,10 +438,10 @@ Blockly.Blocks['threadchannel_unarchivable'] = {
   }
 };
 
-Blockly.Blocks['threadchannel_lastMessage'] = {
+Blockly.Blocks['threadchannel_lastmessage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "lastMessage of %1",
+      "message0": "last message of %1",
       "args0": [
         {
           "type": "input_value",
@@ -454,10 +454,10 @@ Blockly.Blocks['threadchannel_lastMessage'] = {
   }
 };
 
-Blockly.Blocks['threadchannel_lastPinAt'] = {
+Blockly.Blocks['threadchannel_lastpinat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "lastPinAt of %1",
+      "message0": "last pinat of %1",
       "args0": [
         {
           "type": "input_value",
@@ -502,10 +502,10 @@ Blockly.Blocks['threadchannel_id'] = {
   }
 };
 
-Blockly.Blocks['threadchannel_createdTimestamp'] = {
+Blockly.Blocks['threadchannel_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -518,10 +518,10 @@ Blockly.Blocks['threadchannel_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['threadchannel_createdAt'] = {
+Blockly.Blocks['threadchannel_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -601,7 +601,7 @@ Blockly.Blocks['threadchannel_leave'] = {
 Blockly.Blocks['threadchannel_permissionsFor'] = {
   init: function() {
     this.jsonInit({
-      "message0": "permissionsFor of %1 memberOrRole: %2 checkAdmin: %3",
+      "message0": "permissions for of %1 memberOrRole: %2 checkAdmin: %3",
       "args0": [
         {
           "type": "input_value",
@@ -625,7 +625,7 @@ Blockly.Blocks['threadchannel_permissionsFor'] = {
 Blockly.Blocks['threadchannel_fetchOwner'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchOwner of %1 options: %2",
+      "message0": "fetch owner of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -645,7 +645,7 @@ Blockly.Blocks['threadchannel_fetchOwner'] = {
 Blockly.Blocks['threadchannel_fetchStarterMessage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchStarterMessage of %1 options: %2",
+      "message0": "fetch startermessage of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -689,7 +689,7 @@ Blockly.Blocks['threadchannel_edit'] = {
 Blockly.Blocks['threadchannel_setArchived'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setArchived of %1 archived: %2 reason: %3",
+      "message0": "set archived of %1 archived: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -713,7 +713,7 @@ Blockly.Blocks['threadchannel_setArchived'] = {
 Blockly.Blocks['threadchannel_setAutoArchiveDuration'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setAutoArchiveDuration of %1 autoArchiveDuration: %2 reason: %3",
+      "message0": "set autoarchiveduration of %1 autoArchiveDuration: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -737,7 +737,7 @@ Blockly.Blocks['threadchannel_setAutoArchiveDuration'] = {
 Blockly.Blocks['threadchannel_setInvitable'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setInvitable of %1 invitable: %2 reason: %3",
+      "message0": "set invitable of %1 invitable: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -761,7 +761,7 @@ Blockly.Blocks['threadchannel_setInvitable'] = {
 Blockly.Blocks['threadchannel_setLocked'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setLocked of %1 locked: %2 reason: %3",
+      "message0": "set locked of %1 locked: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -785,7 +785,7 @@ Blockly.Blocks['threadchannel_setLocked'] = {
 Blockly.Blocks['threadchannel_setName'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setName of %1 name: %2 reason: %3",
+      "message0": "set name of %1 name: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -809,7 +809,7 @@ Blockly.Blocks['threadchannel_setName'] = {
 Blockly.Blocks['threadchannel_setRateLimitPerUser'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setRateLimitPerUser of %1 rateLimitPerUser: %2 reason: %3",
+      "message0": "set ratelimitperuser of %1 rateLimitPerUser: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -873,7 +873,7 @@ Blockly.Blocks['threadchannel_send'] = {
 Blockly.Blocks['threadchannel_sendTyping'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sendTyping of %1",
+      "message0": "send typing of %1",
       "args0": [
         {
           "type": "input_value",
@@ -889,7 +889,7 @@ Blockly.Blocks['threadchannel_sendTyping'] = {
 Blockly.Blocks['threadchannel_createMessageCollector'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createMessageCollector of %1 options: %2",
+      "message0": "create messagecollector of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -909,7 +909,7 @@ Blockly.Blocks['threadchannel_createMessageCollector'] = {
 Blockly.Blocks['threadchannel_awaitMessages'] = {
   init: function() {
     this.jsonInit({
-      "message0": "awaitMessages of %1 options: %2",
+      "message0": "await messages of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -929,7 +929,7 @@ Blockly.Blocks['threadchannel_awaitMessages'] = {
 Blockly.Blocks['threadchannel_createMessageComponentCollector'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createMessageComponentCollector of %1 options: %2",
+      "message0": "create messagecomponentcollector of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -949,7 +949,7 @@ Blockly.Blocks['threadchannel_createMessageComponentCollector'] = {
 Blockly.Blocks['threadchannel_awaitMessageComponent'] = {
   init: function() {
     this.jsonInit({
-      "message0": "awaitMessageComponent of %1 options: %2",
+      "message0": "await messagecomponent of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -969,7 +969,7 @@ Blockly.Blocks['threadchannel_awaitMessageComponent'] = {
 Blockly.Blocks['threadchannel_bulkDelete'] = {
   init: function() {
     this.jsonInit({
-      "message0": "bulkDelete of %1 messages: %2 filterOld: %3",
+      "message0": "bulk delete of %1 messages: %2 filterOld: %3",
       "args0": [
         {
           "type": "input_value",
@@ -993,7 +993,7 @@ Blockly.Blocks['threadchannel_bulkDelete'] = {
 Blockly.Blocks['threadchannel_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",
@@ -1029,7 +1029,7 @@ Blockly.Blocks['threadchannel_fetch'] = {
 Blockly.Blocks['threadchannel_isText'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isText of %1",
+      "message0": "is text of %1",
       "args0": [
         {
           "type": "input_value",
@@ -1045,7 +1045,7 @@ Blockly.Blocks['threadchannel_isText'] = {
 Blockly.Blocks['threadchannel_isVoice'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isVoice of %1",
+      "message0": "is voice of %1",
       "args0": [
         {
           "type": "input_value",
@@ -1061,7 +1061,7 @@ Blockly.Blocks['threadchannel_isVoice'] = {
 Blockly.Blocks['threadchannel_isThread'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isThread of %1",
+      "message0": "is thread of %1",
       "args0": [
         {
           "type": "input_value",

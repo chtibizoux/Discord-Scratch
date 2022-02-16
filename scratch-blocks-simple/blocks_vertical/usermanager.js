@@ -41,7 +41,7 @@ Blockly.Blocks['usermanager_client'] = {
 Blockly.Blocks['usermanager_createDM'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createDM of %1 user: %2 options: %3",
+      "message0": "create dm of %1 user: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -65,7 +65,7 @@ Blockly.Blocks['usermanager_createDM'] = {
 Blockly.Blocks['usermanager_deleteDM'] = {
   init: function() {
     this.jsonInit({
-      "message0": "deleteDM of %1 user: %2",
+      "message0": "delete dm of %1 user: %2",
       "args0": [
         {
           "type": "input_value",
@@ -109,7 +109,7 @@ Blockly.Blocks['usermanager_fetch'] = {
 Blockly.Blocks['usermanager_fetchFlags'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchFlags of %1 user: %2 options: %3",
+      "message0": "fetch flags of %1 user: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -177,7 +177,7 @@ Blockly.Blocks['usermanager_resolve'] = {
 Blockly.Blocks['usermanager_resolveId'] = {
   init: function() {
     this.jsonInit({
-      "message0": "resolveId of %1 user: %2",
+      "message0": "resolve id of %1 user: %2",
       "args0": [
         {
           "type": "input_value",

@@ -70,10 +70,10 @@ Blockly.Blocks['newschannel_topic'] = {
   }
 };
 
-Blockly.Blocks['newschannel_lastMessageId'] = {
+Blockly.Blocks['newschannel_lastmessageid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "lastMessageId of %1",
+      "message0": "last messageid of %1",
       "args0": [
         {
           "type": "input_value",
@@ -86,10 +86,10 @@ Blockly.Blocks['newschannel_lastMessageId'] = {
   }
 };
 
-Blockly.Blocks['newschannel_lastPinTimestamp'] = {
+Blockly.Blocks['newschannel_lastpintimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "lastPinTimestamp of %1",
+      "message0": "last pintimestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -102,10 +102,10 @@ Blockly.Blocks['newschannel_lastPinTimestamp'] = {
   }
 };
 
-Blockly.Blocks['newschannel_defaultAutoArchiveDuration'] = {
+Blockly.Blocks['newschannel_defaultautoarchiveduration'] = {
   init: function() {
     this.jsonInit({
-      "message0": "defaultAutoArchiveDuration of %1",
+      "message0": "default autoarchiveduration of %1",
       "args0": [
         {
           "type": "input_value",
@@ -118,10 +118,10 @@ Blockly.Blocks['newschannel_defaultAutoArchiveDuration'] = {
   }
 };
 
-Blockly.Blocks['newschannel_lastMessage'] = {
+Blockly.Blocks['newschannel_lastmessage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "lastMessage of %1",
+      "message0": "last message of %1",
       "args0": [
         {
           "type": "input_value",
@@ -134,10 +134,10 @@ Blockly.Blocks['newschannel_lastMessage'] = {
   }
 };
 
-Blockly.Blocks['newschannel_lastPinAt'] = {
+Blockly.Blocks['newschannel_lastpinat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "lastPinAt of %1",
+      "message0": "last pinat of %1",
       "args0": [
         {
           "type": "input_value",
@@ -166,10 +166,10 @@ Blockly.Blocks['newschannel_guild'] = {
   }
 };
 
-Blockly.Blocks['newschannel_guildId'] = {
+Blockly.Blocks['newschannel_guildid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "guildId of %1",
+      "message0": "guild id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -182,10 +182,10 @@ Blockly.Blocks['newschannel_guildId'] = {
   }
 };
 
-Blockly.Blocks['newschannel_permissionOverwrites'] = {
+Blockly.Blocks['newschannel_permissionoverwrites'] = {
   init: function() {
     this.jsonInit({
-      "message0": "permissionOverwrites of %1",
+      "message0": "permission overwrites of %1",
       "args0": [
         {
           "type": "input_value",
@@ -214,10 +214,10 @@ Blockly.Blocks['newschannel_name'] = {
   }
 };
 
-Blockly.Blocks['newschannel_rawPosition'] = {
+Blockly.Blocks['newschannel_rawposition'] = {
   init: function() {
     this.jsonInit({
-      "message0": "rawPosition of %1",
+      "message0": "raw position of %1",
       "args0": [
         {
           "type": "input_value",
@@ -230,10 +230,10 @@ Blockly.Blocks['newschannel_rawPosition'] = {
   }
 };
 
-Blockly.Blocks['newschannel_parentId'] = {
+Blockly.Blocks['newschannel_parentid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "parentId of %1",
+      "message0": "parent id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -262,10 +262,10 @@ Blockly.Blocks['newschannel_parent'] = {
   }
 };
 
-Blockly.Blocks['newschannel_permissionsLocked'] = {
+Blockly.Blocks['newschannel_permissionslocked'] = {
   init: function() {
     this.jsonInit({
-      "message0": "permissionsLocked of %1",
+      "message0": "permissions locked of %1",
       "args0": [
         {
           "type": "input_value",
@@ -390,10 +390,10 @@ Blockly.Blocks['newschannel_id'] = {
   }
 };
 
-Blockly.Blocks['newschannel_createdTimestamp'] = {
+Blockly.Blocks['newschannel_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -406,10 +406,10 @@ Blockly.Blocks['newschannel_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['newschannel_createdAt'] = {
+Blockly.Blocks['newschannel_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -457,7 +457,7 @@ Blockly.Blocks['newschannel_client'] = {
 Blockly.Blocks['newschannel_addFollower'] = {
   init: function() {
     this.jsonInit({
-      "message0": "addFollower of %1 channel: %2 reason: %3",
+      "message0": "add follower of %1 channel: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -481,7 +481,7 @@ Blockly.Blocks['newschannel_addFollower'] = {
 Blockly.Blocks['newschannel_setDefaultAutoArchiveDuration'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setDefaultAutoArchiveDuration of %1 defaultAutoArchiveDuration: %2 reason: %3",
+      "message0": "set defaultautoarchiveduration of %1 defaultAutoArchiveDuration: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -505,7 +505,7 @@ Blockly.Blocks['newschannel_setDefaultAutoArchiveDuration'] = {
 Blockly.Blocks['newschannel_setNSFW'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setNSFW of %1 nsfw: %2 reason: %3",
+      "message0": "set nsfw of %1 nsfw: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -529,7 +529,7 @@ Blockly.Blocks['newschannel_setNSFW'] = {
 Blockly.Blocks['newschannel_setType'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setType of %1 type: %2 reason: %3",
+      "message0": "set type of %1 type: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -553,7 +553,7 @@ Blockly.Blocks['newschannel_setType'] = {
 Blockly.Blocks['newschannel_fetchWebhooks'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchWebhooks of %1",
+      "message0": "fetch webhooks of %1",
       "args0": [
         {
           "type": "input_value",
@@ -569,7 +569,7 @@ Blockly.Blocks['newschannel_fetchWebhooks'] = {
 Blockly.Blocks['newschannel_createWebhook'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createWebhook of %1 name: %2 options: %3",
+      "message0": "create webhook of %1 name: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -593,7 +593,7 @@ Blockly.Blocks['newschannel_createWebhook'] = {
 Blockly.Blocks['newschannel_setTopic'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setTopic of %1 topic: %2 reason: %3",
+      "message0": "set topic of %1 topic: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -617,7 +617,7 @@ Blockly.Blocks['newschannel_setTopic'] = {
 Blockly.Blocks['newschannel_createInvite'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createInvite of %1 options: %2",
+      "message0": "create invite of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -637,7 +637,7 @@ Blockly.Blocks['newschannel_createInvite'] = {
 Blockly.Blocks['newschannel_fetchInvites'] = {
   init: function() {
     this.jsonInit({
-      "message0": "fetchInvites of %1 cache: %2",
+      "message0": "fetch invites of %1 cache: %2",
       "args0": [
         {
           "type": "input_value",
@@ -677,7 +677,7 @@ Blockly.Blocks['newschannel_send'] = {
 Blockly.Blocks['newschannel_sendTyping'] = {
   init: function() {
     this.jsonInit({
-      "message0": "sendTyping of %1",
+      "message0": "send typing of %1",
       "args0": [
         {
           "type": "input_value",
@@ -693,7 +693,7 @@ Blockly.Blocks['newschannel_sendTyping'] = {
 Blockly.Blocks['newschannel_createMessageCollector'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createMessageCollector of %1 options: %2",
+      "message0": "create messagecollector of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -713,7 +713,7 @@ Blockly.Blocks['newschannel_createMessageCollector'] = {
 Blockly.Blocks['newschannel_awaitMessages'] = {
   init: function() {
     this.jsonInit({
-      "message0": "awaitMessages of %1 options: %2",
+      "message0": "await messages of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -733,7 +733,7 @@ Blockly.Blocks['newschannel_awaitMessages'] = {
 Blockly.Blocks['newschannel_createMessageComponentCollector'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createMessageComponentCollector of %1 options: %2",
+      "message0": "create messagecomponentcollector of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -753,7 +753,7 @@ Blockly.Blocks['newschannel_createMessageComponentCollector'] = {
 Blockly.Blocks['newschannel_awaitMessageComponent'] = {
   init: function() {
     this.jsonInit({
-      "message0": "awaitMessageComponent of %1 options: %2",
+      "message0": "await messagecomponent of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -773,7 +773,7 @@ Blockly.Blocks['newschannel_awaitMessageComponent'] = {
 Blockly.Blocks['newschannel_bulkDelete'] = {
   init: function() {
     this.jsonInit({
-      "message0": "bulkDelete of %1 messages: %2 filterOld: %3",
+      "message0": "bulk delete of %1 messages: %2 filterOld: %3",
       "args0": [
         {
           "type": "input_value",
@@ -797,7 +797,7 @@ Blockly.Blocks['newschannel_bulkDelete'] = {
 Blockly.Blocks['newschannel_permissionsFor'] = {
   init: function() {
     this.jsonInit({
-      "message0": "permissionsFor of %1 memberOrRole: %2 checkAdmin: %3",
+      "message0": "permissions for of %1 memberOrRole: %2 checkAdmin: %3",
       "args0": [
         {
           "type": "input_value",
@@ -821,7 +821,7 @@ Blockly.Blocks['newschannel_permissionsFor'] = {
 Blockly.Blocks['newschannel_lockPermissions'] = {
   init: function() {
     this.jsonInit({
-      "message0": "lockPermissions of %1",
+      "message0": "lock permissions of %1",
       "args0": [
         {
           "type": "input_value",
@@ -861,7 +861,7 @@ Blockly.Blocks['newschannel_edit'] = {
 Blockly.Blocks['newschannel_setName'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setName of %1 name: %2 reason: %3",
+      "message0": "set name of %1 name: %2 reason: %3",
       "args0": [
         {
           "type": "input_value",
@@ -885,7 +885,7 @@ Blockly.Blocks['newschannel_setName'] = {
 Blockly.Blocks['newschannel_setParent'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setParent of %1 channel: %2 options: %3",
+      "message0": "set parent of %1 channel: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -909,7 +909,7 @@ Blockly.Blocks['newschannel_setParent'] = {
 Blockly.Blocks['newschannel_setPosition'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setPosition of %1 position: %2 options: %3",
+      "message0": "set position of %1 position: %2 options: %3",
       "args0": [
         {
           "type": "input_value",
@@ -993,7 +993,7 @@ Blockly.Blocks['newschannel_delete'] = {
 Blockly.Blocks['newschannel_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",
@@ -1029,7 +1029,7 @@ Blockly.Blocks['newschannel_fetch'] = {
 Blockly.Blocks['newschannel_isText'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isText of %1",
+      "message0": "is text of %1",
       "args0": [
         {
           "type": "input_value",
@@ -1045,7 +1045,7 @@ Blockly.Blocks['newschannel_isText'] = {
 Blockly.Blocks['newschannel_isVoice'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isVoice of %1",
+      "message0": "is voice of %1",
       "args0": [
         {
           "type": "input_value",
@@ -1061,7 +1061,7 @@ Blockly.Blocks['newschannel_isVoice'] = {
 Blockly.Blocks['newschannel_isThread'] = {
   init: function() {
     this.jsonInit({
-      "message0": "isThread of %1",
+      "message0": "is thread of %1",
       "args0": [
         {
           "type": "input_value",

@@ -27,6 +27,62 @@ goog.require('Blockly.Colours');
 goog.require('Blockly.constants');
 goog.require('Blockly.ScratchBlocks.VerticalExtensions');
 
+
+Blockly.Blocks['user_createdm'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "create dm channel with %1 options: %2",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "USER"
+        },
+        {
+          "type": "input_value",
+          "name": "OPTIONS"
+        }
+      ],
+      "category": Blockly.Categories.user,
+      "extensions": ["colours_user", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['user_deletedm'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "delete dm channel with %1",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "USER"
+        }
+      ],
+      "category": Blockly.Categories.user,
+      "extensions": ["colours_user", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['user_send'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "send %1 at %2",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "MESSAGE"
+        },
+        {
+          "type": "input_value",
+          "name": "USER"
+        }
+      ],
+      "category": Blockly.Categories.user,
+      "extensions": ["colours_user", "shape_statement"]
+    });
+  }
+};
 // Blockly.Blocks['user_'] = {
 //   init: function() {
 //     this.jsonInit({

@@ -54,10 +54,10 @@ Blockly.Blocks['guildtemplate_description'] = {
   }
 };
 
-Blockly.Blocks['guildtemplate_usageCount'] = {
+Blockly.Blocks['guildtemplate_usagecount'] = {
   init: function() {
     this.jsonInit({
-      "message0": "usageCount of %1",
+      "message0": "usage count of %1",
       "args0": [
         {
           "type": "input_value",
@@ -70,10 +70,10 @@ Blockly.Blocks['guildtemplate_usageCount'] = {
   }
 };
 
-Blockly.Blocks['guildtemplate_creatorId'] = {
+Blockly.Blocks['guildtemplate_creatorid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "creatorId of %1",
+      "message0": "creator id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -102,10 +102,10 @@ Blockly.Blocks['guildtemplate_creator'] = {
   }
 };
 
-Blockly.Blocks['guildtemplate_createdAt'] = {
+Blockly.Blocks['guildtemplate_createdat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdAt of %1",
+      "message0": "created at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -118,10 +118,10 @@ Blockly.Blocks['guildtemplate_createdAt'] = {
   }
 };
 
-Blockly.Blocks['guildtemplate_updatedAt'] = {
+Blockly.Blocks['guildtemplate_updatedat'] = {
   init: function() {
     this.jsonInit({
-      "message0": "updatedAt of %1",
+      "message0": "updated at of %1",
       "args0": [
         {
           "type": "input_value",
@@ -134,10 +134,10 @@ Blockly.Blocks['guildtemplate_updatedAt'] = {
   }
 };
 
-Blockly.Blocks['guildtemplate_guildId'] = {
+Blockly.Blocks['guildtemplate_guildid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "guildId of %1",
+      "message0": "guild id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -150,10 +150,10 @@ Blockly.Blocks['guildtemplate_guildId'] = {
   }
 };
 
-Blockly.Blocks['guildtemplate_serializedGuild'] = {
+Blockly.Blocks['guildtemplate_serializedguild'] = {
   init: function() {
     this.jsonInit({
-      "message0": "serializedGuild of %1",
+      "message0": "serialized guild of %1",
       "args0": [
         {
           "type": "input_value",
@@ -166,10 +166,10 @@ Blockly.Blocks['guildtemplate_serializedGuild'] = {
   }
 };
 
-Blockly.Blocks['guildtemplate_unSynced'] = {
+Blockly.Blocks['guildtemplate_unsynced'] = {
   init: function() {
     this.jsonInit({
-      "message0": "unSynced of %1",
+      "message0": "un synced of %1",
       "args0": [
         {
           "type": "input_value",
@@ -182,10 +182,10 @@ Blockly.Blocks['guildtemplate_unSynced'] = {
   }
 };
 
-Blockly.Blocks['guildtemplate_createdTimestamp'] = {
+Blockly.Blocks['guildtemplate_createdtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createdTimestamp of %1",
+      "message0": "created timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -198,10 +198,10 @@ Blockly.Blocks['guildtemplate_createdTimestamp'] = {
   }
 };
 
-Blockly.Blocks['guildtemplate_updatedTimestamp'] = {
+Blockly.Blocks['guildtemplate_updatedtimestamp'] = {
   init: function() {
     this.jsonInit({
-      "message0": "updatedTimestamp of %1",
+      "message0": "updated timestamp of %1",
       "args0": [
         {
           "type": "input_value",
@@ -262,10 +262,10 @@ Blockly.Blocks['guildtemplate_client'] = {
   }
 };
 
-Blockly.Blocks['guildtemplate_GUILD_TEMPLATES_PATTERN'] = {
+Blockly.Blocks['guildtemplate_guild_templates_pattern'] = {
   init: function() {
     this.jsonInit({
-      "message0": "GUILD_TEMPLATES_PATTERN of %1",
+      "message0": " guild_templates_pattern of %1",
       "args0": [
         {
           "type": "input_value",
@@ -281,7 +281,7 @@ Blockly.Blocks['guildtemplate_GUILD_TEMPLATES_PATTERN'] = {
 Blockly.Blocks['guildtemplate_createGuild'] = {
   init: function() {
     this.jsonInit({
-      "message0": "createGuild of %1 name: %2 icon: %3",
+      "message0": "create guild of %1 name: %2 icon: %3",
       "args0": [
         {
           "type": "input_value",
@@ -357,7 +357,7 @@ Blockly.Blocks['guildtemplate_sync'] = {
 Blockly.Blocks['guildtemplate_toString'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toString of %1",
+      "message0": "to string of %1",
       "args0": [
         {
           "type": "input_value",

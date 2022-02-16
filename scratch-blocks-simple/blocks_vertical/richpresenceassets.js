@@ -6,10 +6,10 @@ goog.require('Blockly.Blocks');
 goog.require('Blockly.Colours');
 goog.require('Blockly.constants');
 goog.require('Blockly.ScratchBlocks.VerticalExtensions');
-Blockly.Blocks['richpresenceassets_largeText'] = {
+Blockly.Blocks['richpresenceassets_largetext'] = {
   init: function() {
     this.jsonInit({
-      "message0": "largeText of %1",
+      "message0": "large text of %1",
       "args0": [
         {
           "type": "input_value",
@@ -22,10 +22,10 @@ Blockly.Blocks['richpresenceassets_largeText'] = {
   }
 };
 
-Blockly.Blocks['richpresenceassets_smallText'] = {
+Blockly.Blocks['richpresenceassets_smalltext'] = {
   init: function() {
     this.jsonInit({
-      "message0": "smallText of %1",
+      "message0": "small text of %1",
       "args0": [
         {
           "type": "input_value",
@@ -38,10 +38,10 @@ Blockly.Blocks['richpresenceassets_smallText'] = {
   }
 };
 
-Blockly.Blocks['richpresenceassets_largeImage'] = {
+Blockly.Blocks['richpresenceassets_largeimage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "largeImage of %1",
+      "message0": "large image of %1",
       "args0": [
         {
           "type": "input_value",
@@ -54,10 +54,10 @@ Blockly.Blocks['richpresenceassets_largeImage'] = {
   }
 };
 
-Blockly.Blocks['richpresenceassets_smallImage'] = {
+Blockly.Blocks['richpresenceassets_smallimage'] = {
   init: function() {
     this.jsonInit({
-      "message0": "smallImage of %1",
+      "message0": "small image of %1",
       "args0": [
         {
           "type": "input_value",
@@ -73,7 +73,7 @@ Blockly.Blocks['richpresenceassets_smallImage'] = {
 Blockly.Blocks['richpresenceassets_smallImageURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "smallImageURL of %1 options: %2",
+      "message0": "small imageurl of %1 options: %2",
       "args0": [
         {
           "type": "input_value",
@@ -93,7 +93,7 @@ Blockly.Blocks['richpresenceassets_smallImageURL'] = {
 Blockly.Blocks['richpresenceassets_largeImageURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "largeImageURL of %1 options: %2",
+      "message0": "large imageurl of %1 options: %2",
       "args0": [
         {
           "type": "input_value",

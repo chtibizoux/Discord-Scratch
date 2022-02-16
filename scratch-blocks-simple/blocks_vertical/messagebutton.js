@@ -22,10 +22,10 @@ Blockly.Blocks['messagebutton_label'] = {
   }
 };
 
-Blockly.Blocks['messagebutton_customId'] = {
+Blockly.Blocks['messagebutton_customid'] = {
   init: function() {
     this.jsonInit({
-      "message0": "customId of %1",
+      "message0": "custom id of %1",
       "args0": [
         {
           "type": "input_value",
@@ -121,7 +121,7 @@ Blockly.Blocks['messagebutton_type'] = {
 Blockly.Blocks['messagebutton_setCustomId'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setCustomId of %1 customId: %2",
+      "message0": "set customid of %1 customId: %2",
       "args0": [
         {
           "type": "input_value",
@@ -141,7 +141,7 @@ Blockly.Blocks['messagebutton_setCustomId'] = {
 Blockly.Blocks['messagebutton_setDisabled'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setDisabled of %1 disabled: %2",
+      "message0": "set disabled of %1 disabled: %2",
       "args0": [
         {
           "type": "input_value",
@@ -161,7 +161,7 @@ Blockly.Blocks['messagebutton_setDisabled'] = {
 Blockly.Blocks['messagebutton_setEmoji'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setEmoji of %1 emoji: %2",
+      "message0": "set emoji of %1 emoji: %2",
       "args0": [
         {
           "type": "input_value",
@@ -181,7 +181,7 @@ Blockly.Blocks['messagebutton_setEmoji'] = {
 Blockly.Blocks['messagebutton_setLabel'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setLabel of %1 label: %2",
+      "message0": "set label of %1 label: %2",
       "args0": [
         {
           "type": "input_value",
@@ -201,7 +201,7 @@ Blockly.Blocks['messagebutton_setLabel'] = {
 Blockly.Blocks['messagebutton_setStyle'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setStyle of %1 style: %2",
+      "message0": "set style of %1 style: %2",
       "args0": [
         {
           "type": "input_value",
@@ -221,7 +221,7 @@ Blockly.Blocks['messagebutton_setStyle'] = {
 Blockly.Blocks['messagebutton_setURL'] = {
   init: function() {
     this.jsonInit({
-      "message0": "setURL of %1 url: %2",
+      "message0": "set url of %1 url: %2",
       "args0": [
         {
           "type": "input_value",
@@ -241,7 +241,7 @@ Blockly.Blocks['messagebutton_setURL'] = {
 Blockly.Blocks['messagebutton_toJSON'] = {
   init: function() {
     this.jsonInit({
-      "message0": "toJSON of %1",
+      "message0": "to json of %1",
       "args0": [
         {
           "type": "input_value",
